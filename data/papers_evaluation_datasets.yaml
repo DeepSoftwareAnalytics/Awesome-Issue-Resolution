@@ -1,0 +1,187 @@
+# Evaluation Datasets
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "SWE-bench"
+  title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+  authors: "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2310.06770"
+
+- short_name: "SWE-bench Lite"
+  title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+  authors: "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2310.06770"
+
+- short_name: "SWE-bench Verified"
+  title: "Introducing SWE-bench Verified | OpenAI"
+  authors: "OpenAI"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://openai.com/index/introducing-swe-bench-verified/"
+
+- short_name: "SWE-bench-java"
+  title: "SWE-bench-java: A GitHub Issue Resolving Benchmark for Java"
+  authors: "Daoguang Zan, Zhirong Huang, Ailun Yu, Shaoxin Lin, Yifan Shi, Wei Liu, Dong Chen, Zongshuai Qi, Hao Yu, Lei Yu, Dezhi Ran, Muhan Zeng, Bo Shen, Pan Bian, Guangtai Liang, Bei Guan, Pengjie Huang, Tao Xie, Yongji Wang, Qianxiang Wang"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2408.14354"
+
+- short_name: "Visual SWE-bench"
+  title: "CodeV: Issue Resolving with Visual Data"
+  authors: "Linhao Zhang, Daoguang Zan, Quanshun Yang, Zhirong Huang, Dong Chen, Bo Shen, Tianyu Liu, Yongshun Gong, Huang Pengjie, Xudong Lu, Guangtai Liang, Lizhen Cui, Qianxiang Wang"
+  venue: "Findings of the ACL: ACL 2025 2025"
+  year: "2025"
+  links:
+    arxiv: "https://aclanthology.org/2025.findings-acl.384/"
+
+- short_name: "SWE-Lancer"
+  title: "SWE-Lancer: Can Frontier LLMs Earn \\1 Million from Real-World Freelance Software Engineering?"
+  authors: "Samuel Miserendino, Michele Wang, Tejal Patwardhan, Johannes Heidecke"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2502.12115"
+
+- short_name: "Multi-SWE-bench"
+  title: "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving"
+  authors: "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Linhao Zhang, Shulin Xin, Lu Chen, Qi Liu, Xiaojian Zhong, Aoyan Li, Siyao Liu, Yongsheng Xiao, Liangqiang Chen, Yuyu Zhang, Jing Su, Tianyu Liu, Rui Long, Kai Shen, Liang Xiang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.02605"
+
+- short_name: "SWE-PolyBench"
+  title: "SWE-PolyBench: A multi-language benchmark for repository level evaluation of coding agents"
+  authors: "Muhammad Shihab Rashid, Christian Bock, Yuan Zhuang, Alexander Buchholz, Tim Esler, Simon Valentin, Luca Franceschi, Martin Wistuba, Prabhu Teja Sivaprasad, Woo Jung Kim, Anoop Deoras, Giovanni Zappella, Laurent Callot"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.08703"
+
+- short_name: "SWE-bench Multilingual"
+  title: "SWE-smith: Scaling Data for Software Engineering Agents"
+  authors: "John Yang, Kilian Lieret, Carlos E. Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui, Ofir Press, Ludwig Schmidt, Diyi Yang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.21798"
+
+- short_name: "SwingArena"
+  title: "SwingArena: Competitive Programming Arena for Long-context GitHub Issue Solving"
+  authors: "Wendong Xu, Jing Xiong, Chenyang Zhao, Qiujiang Chen, Haoran Wang, Hui Shen, Zhongwei Wan, Jianbo Dai, Taiqiang Wu, He Xiao, Chaofan Tao, Z. Morley Mao, Ying Sheng, Zhijiang Guo, Hongxia Yang, Bei Yu, Lingpeng Kong, Quanquan Gu, Ngai Wong"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.23932"
+
+- short_name: "SWE-bench Multimodal"
+  title: "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?"
+  authors: "John Yang, Carlos E. Jimenez, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, Ori Press, Niklas Muennighoff, Gabriel Synnaeve, Karthik R. Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2410.03859"
+
+- short_name: "OmniGIRL"
+  title: "OmniGIRL: A Multilingual and Multimodal Benchmark for GitHub Issue Resolution"
+  authors: "Lianghong Guo, Wei Tao, Runhan Jiang, Yanlin Wang, Jiachi Chen, Xilin Liu, Yuchi Ma, Mingzhi Mao, Hongyu Zhang, Zibin Zheng"
+  venue: "ACM on Software Engineering 2025"
+  year: "2025"
+  links:
+    arxiv: "http://dx.doi.org/10.1145/3728871"
+
+- short_name: "SWE-bench-Live"
+  title: "SWE-bench Goes Live!"
+  authors: "Linghao Zhang, Shilin He, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie, Junhao Wang, Maoquan Wang, Yufan Huang, Shengyu Fu, Elsie Nallipogu, Qingwei Lin, Yingnong Dang, Saravan Rajmohan, Dongmei Zhang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.23419"
+
+- short_name: "SWE-Factory"
+  title: "SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks"
+  authors: "Lianghong Guo, Yanlin Wang, Caihua Li, Pengyu Yang, Jiachi Chen, Wei Tao, Yingtian Zou, Duyu Tang, Zibin Zheng"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.10954"
+
+- short_name: "SWE-MERA"
+  title: "SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks"
+  authors: "Pavel Adamenko, Mikhail Ivanov, Aidar Valeev, Rodion Levichev, Pavel Zadorozhny, Ivan Lopatin, Dmitry Babayev, Alena Fenogenova, Valentin Malykh"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2507.11059"
+
+- short_name: "SWE-Perf"
+  title: "SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories?"
+  authors: "Xinyi He, Qian Liu, Mingzhe Du, Lin Yan, Zhijie Fan, Yiming Huang, Zejian Yuan, Zejun Ma"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2507.12415"
+
+- short_name: "SWE-Bench Pro"
+  title: "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?"
+  authors: "Xiang Deng, Jeff Da, Edwin Pan, Yannis Yiming He, Charles Ide, Kanak Garg, Niklas Lauffer, Andrew Park, Nitin Pasari, Chetan Rane, Karmini Sampath, Maya Krishnan, Srivatsa Kundurthy, Sean Hendryx, Zifan Wang, Chen Bo Calvin Zhang, Noah Jacobson, Bing Liu, Brad Kenstler"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2509.16941"
+
+- short_name: "SWE-InfraBench"
+  title: "SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code"
+  authors: "Natalia Tarasova, Enrique Balp-Straffon, Aleksei Iancheruk, Yevhenii Sielskyi, Nikita Kozodoi, Liam H. Byrne, Jack Butler, Dayuan jiang, Marcin Czelej, Andrew Ang, Yash Shah, Roi Blanco, Sergei Ivanov"
+  venue: "NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling 2025"
+  year: "2025"
+  links:
+    arxiv: "https://openreview.net/forum?id=XX0ciUwfXa"
+
+- short_name: "SWE-Sharp-Bench"
+  title: "SWE-Sharp-Bench: A Reproducible Benchmark for C\\# Software Engineering Tasks"
+  authors: "Sanket Mhatre, Yasharth Bajpai, Sumit Gulwani, Emerson Murphy-Hill, Gustavo Soares"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2511.02352"
+
+- short_name: "SWE-fficiency"
+  title: "SWE-fficiency: Can Language Models Optimize Real-World Repositories on Real Workloads?"
+  authors: "Jeffrey Jian Ma, Milad Hashemi, Amir Yazdanbakhsh, Kevin Swersky, Ofir Press, Enhui Li, Vijay Janapa Reddi, Parthasarathy Ranganathan"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2511.06090"
+
+- short_name: "SWE-Compass"
+  title: "SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models"
+  authors: "Jingxuan Xu, Ken Deng, Weihao Li, Songwei Yu, Huaixi Tang, Haoyang Huang, Zhiyi Lai, Zizheng Zhan, Yanan Wu, Chenchen Zhang, Kepeng Lei, Yifan Yao, Xinping Lei, Wenqiang Zhu, Zongxian Feng, Han Li, Junqi Xiong, Dailin Li, Zuchen Gao, Kun Wu, Wen Xiang, Ziqi Zhan, Yuanxing Zhang, Wuxuan Gong, Ziyuan Gao, Guanxiang Wang, Yirong Xue, Mengtong Li, Mengfei Xie, Xiaojiang Zhang, Jinghui Wang, Wenhao Zhuang, Zheng Lin, Huiming Wang, Zhaoxiang Zhang, Yuqun Zhang, Haotian Zhang, Bin Chen, Jiaheng Liu"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2511.05459"
+
+- short_name: "SWE-Bench++"
+  title: "SWE-Bench++: A Framework for the Scalable Generation of Software Engineering Benchmarks from Open-Source Repositories"
+  authors: "Lilin Wang, Lucas Ramalho, Alan Celestino, Phuc Anthony Pham, Yu Liu, Umang Kumar Sinha, Andres Portillo, Onassis Osunwa, Gabriel Maduekwe"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2512.17419"
+
+- short_name: "SWE-EVO"
+  title: "SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios"
+  authors: "Minh V. T. Thai, Tue Le, Dung Nguyen Manh, Huy Phan Nhat, Nghi D. Q. Bui"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2512.18470"
+

@@ -1,0 +1,43 @@
+# Workflow
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "Agentless"
+  title: "Agentless: Demystifying LLM-based Software Engineering Agents"
+  authors: "Chunqiu Steven Xia, Yinlin Deng, Soren Dunn, Lingming Zhang"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2407.01489"
+
+- short_name: "Conversational Pipeline"
+  title: "Exploring the Potential of Conversational Test Suite Based Program Repair on SWE-bench"
+  authors: "Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo Franco Jaldin"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2410.04485"
+
+- short_name: "SynFix"
+  title: "SynFix: Dependency-Aware Program Repair via RelationGraph Analysis"
+  authors: "Xunzhu Tang, Jiechao Gao, Jin Xu, Tiezhu Sun, Yewei Song, Saad Ezzini, Wendk\\^uuni C. Ou\\'edraogo, Jacques Klein, Tegawend\\'e F. Bissyand\\'e"
+  venue: "Findings of the ACL: ACL 2025 2025"
+  year: "2025"
+  links:
+    arxiv: "https://aclanthology.org/2025.findings-acl.252/"
+
+- short_name: "CodeV"
+  title: "CodeV: Issue Resolving with Visual Data"
+  authors: "Linhao Zhang, Daoguang Zan, Quanshun Yang, Zhirong Huang, Dong Chen, Bo Shen, Tianyu Liu, Yongshun Gong, Huang Pengjie, Xudong Lu, Guangtai Liang, Lizhen Cui, Qianxiang Wang"
+  venue: "Findings of the ACL: ACL 2025 2025"
+  year: "2025"
+  links:
+    arxiv: "https://aclanthology.org/2025.findings-acl.384/"
+
+- short_name: "GUIRepair"
+  title: "Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Fixing"
+  authors: "Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.16136"
+

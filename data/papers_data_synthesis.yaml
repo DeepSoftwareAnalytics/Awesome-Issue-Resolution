@@ -1,0 +1,51 @@
+# Data Synthesis
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "Learn-by-interact"
+  title: "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments"
+  authors: "Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik"
+  venue: "The Thirteenth International Conference on Learning Representations 2025"
+  year: "2025"
+  links:
+    arxiv: "https://openreview.net/forum?id=3UKOzGWCVY"
+
+- short_name: "R2E-Gym"
+  title: "R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents"
+  authors: "Naman Jain, Jaskirat Singh, Manish Shetty, Liang Zheng, Koushik Sen, Ion Stoica"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.07164"
+
+- short_name: "SWE-Synth"
+  title: "SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs"
+  authors: "Minh V. T. Pham, Huy N. Phan, Hoang N. Phan, Cuong Le Chi, Tien N. Nguyen, Nghi D. Q. Bui"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.14757"
+
+- short_name: "SWE-smith"
+  title: "SWE-smith: Scaling Data for Software Engineering Agents"
+  authors: "John Yang, Kilian Lieret, Carlos E. Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui, Ofir Press, Ludwig Schmidt, Diyi Yang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.21798"
+
+- short_name: "SWE-Flow"
+  title: "SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner"
+  authors: "Lei Zhang, Jiaxi Yang, Min Yang, Jian Yang, Mouxiang Chen, Jiajun Zhang, Zeyu Cui, Binyuan Hui, Junyang Lin"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.09003"
+
+- short_name: "SWE-Mirror"
+  title: "SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories"
+  authors: "Junhao Wang, Daoguang Zan, Shulin Xin, Siyao Liu, Yurong Wu, Kai Shen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2509.08724"
+

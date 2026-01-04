@@ -1,0 +1,129 @@
+# RL-based Methods
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "SWE-RL"
+  title: "SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution"
+  authors: "Yuxiang Wei, Olivier Duchenne, Jade Copet, Quentin Carbonneaux, Lingming Zhang, Daniel Fried, Gabriel Synnaeve, Rishabh Singh, Sida I. Wang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2502.18449"
+
+- short_name: "SoRFT"
+  title: "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning"
+  authors: "Zexiong Ma, Chao Peng, Pengfei Gao, Xiangxin Meng, Yanzhen Zou, Bing Xie"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2502.20127"
+
+- short_name: "SEAlign"
+  title: "SEAlign: Alignment Training for Software Engineering Agent"
+  authors: "Kechi Zhang, Huangzhao Zhang, Ge Li, Jinliang You, Jia Li, Yunfei Zhao, Zhi Jin"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2503.18455"
+
+- short_name: "SWE-Dev<sub>1</sub>"
+  title: "SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development"
+  authors: "Yaxin Du, Yuzhu Cai, Yifan Zhou, Cheng Wang, Yu Qian, Xianghe Pang, Qian Liu, Yue Hu, Siheng Chen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.16975"
+
+- short_name: "Satori-SWE"
+  title: "Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software Engineering"
+  authors: "Guangtao Zeng, Maohao Shen, Delin Chen, Zhenting Qi, Subhro Das, Dan Gutfreund, David Cox, Gregory Wornell, Wei Lu, Zhang-Wei Hong, Chuang Gan"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.23604"
+
+- short_name: "Agent-RLVR"
+  title: "Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards"
+  authors: "Jeff Da, Clinton Wang, Xiang Deng, Yuntao Ma, Nikhil Barhate, Sean Hendryx"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.11425"
+
+- short_name: "DeepSWE"
+  title: "DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling RL"
+  authors: "Michael Luo, Naman Jain, Jaskirat Singh, Sijun Tan, Ameen Patel, Qingyang Wu, Alpay Ariyak, Colin Cai, Tarun Venkat, Shang Zhu, Ben Athiwaratkun, Manan Roongta, Ce Zhang, Li Erran Li, Raluca Ada Popa, Koushik Sen, Ion Stoica"
+  venue: "https://pretty-radio-b75.notion.site/DeepSWE-Training-a-Fully-Open-sourced-State-of-the-Art-Coding-Agent-by-Scaling-RL-22281902c1468193aabbe9a8c59bbe33 2025"
+  year: "2025"
+  links:
+
+- short_name: "SWE-Dev<sub>2</sub>"
+  title: "SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling"
+  authors: "Haoran Wang, Zhenyu Hou, Yao Wei, Jie Tang, Yuxiao Dong"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.07636"
+
+- short_name: "SWE-Swiss"
+  title: "SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution"
+  authors: "Zhenyu He, Qingping Yang, Wei Sheng, Xiaojian Zhong, Kechi Zhang, Chenxin An, Wenlei Shi, Tianle Cai, Di He, Jiaze Chen, Jingjing Xu"
+  venue: "https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88 2025"
+  year: "2025"
+  links:
+
+- short_name: "SeamlessFlow"
+  title: "SeamlessFlow: A Trainer Agent Isolation RL Framework Achieving Bubble-Free Pipelines via Tag Scheduling"
+  authors: "Jinghui Wang, Shaojie Wang, Yinghan Cui, Xuxing Chen, Chao Wang, Xiaojiang Zhang, Minglei Zhang, Jiarong Zhang, Wenhao Zhuang, Yuchen Cao, Wankang Bao, Haimo Li, Zheng Lin, Huiming Wang, Haoyang Huang, Zongxian Feng, Zizheng Zhan, Ken Deng, Wen Xiang, Huaixi Tang, Kun Wu, Mengtong Li, Mengfei Xie, Junyi Peng, Haotian Zhang, Bin Chen, Bing Yu"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2508.11553"
+
+- short_name: "DAPO"
+  title: "Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning"
+  authors: "Alexander Golubev, Maria Trofimova, Sergei Polezhaev, Ibragim Badertdinov, Maksim Nekrashevich, Anton Shevtsov, Simon Karasik, Sergey Abramov, Andrei Andriushchenko, Filipp Fisin, Sergei Skvortsov, Boris Yangel"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2508.03501"
+
+- short_name: "Kimi-Dev"
+  title: "Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents"
+  authors: "Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu, Yibo Miao, Bofei Gao, Yejie Wang, Yingwei Ma, Yanhao Li, Yue Liu, Zhenxing Hu, Kaitai Zhang, Shuyi Wang, Huarong Chen, Flood Sung, Yang Liu, Yang Gao, Zhilin Yang, Tianyu Liu"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2509.23045"
+
+- short_name: "FoldGRPO"
+  title: "Scaling Long-Horizon LLM Agent via Context-Folding"
+  authors: "Weiwei Sun, Miao Lu, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2510.11967"
+
+- short_name: "GRPO-based Method"
+  title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
+  authors: "Ruiyi Wang, Prithviraj Ammanabrolu"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2510.01132"
+
+- short_name: "Self-play SWE-RL"
+  title: "Toward Training Superintelligent Software Agents through Self-Play SWE-RL"
+  authors: "Yuxiang Wei, Zhiqing Sun, Emily McMilin, Jonas Gehring, David Zhang, Gabriel Synnaeve, Daniel Fried, Lingming Zhang, Sida Wang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2512.18552"
+
+- short_name: "SWE-RM"
+  title: "SWE-RM: Execution-free Feedback For Software Engineering Agents"
+  authors: "KaShun Shum, Binyuan Hui, Jiawei Chen, Lei Zhang, X. W., Jiaxi Yang, Yuzhen Huang, Junyang Lin, Junxian He"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2512.21919"
+

@@ -1,0 +1,60 @@
+site_name: Awesome Issue Resolution
+site_description: Advances, Frontiers, and Future of Issue Resolution in Software Engineering - A Comprehensive Survey
+site_url: https://DeepSoftwareAnalytics.github.io/Awesome-Issue-Resolution/
+
+repo_name: DeepSoftwareAnalytics/Awesome-Issue-Resolution
+repo_url: https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/custom.css
+
+# 包含 PDF 文件到构建输出
+docs_dir: docs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.extra
+
+nav:
+  - Home: index.md
+  - Paper: paper.md
+  - Tables & Resources: tables.md
+  - About: about.md
+  - Cite: cite.md

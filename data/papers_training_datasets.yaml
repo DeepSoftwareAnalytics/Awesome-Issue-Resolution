@@ -1,0 +1,131 @@
+# Training Datasets
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "SWE-bench-train"
+  title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+  authors: "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2310.06770"
+
+- short_name: "SWE-bench-extra"
+  title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+  authors: "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2310.06770"
+
+- short_name: "Multi-SWE-RL"
+  title: "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving"
+  authors: "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Linhao Zhang, Shulin Xin, Lu Chen, Qi Liu, Xiaojian Zhong, Aoyan Li, Siyao Liu, Yongsheng Xiao, Liangqiang Chen, Yuyu Zhang, Jing Su, Tianyu Liu, Rui Long, Kai Shen, Liang Xiang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.02605"
+
+- short_name: "R2E-Gym"
+  title: "R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents"
+  authors: "Naman Jain, Jaskirat Singh, Manish Shetty, Liang Zheng, Koushik Sen, Ion Stoica"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.07164"
+
+- short_name: "SWE-Synth"
+  title: "SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs"
+  authors: "Minh V. T. Pham, Huy N. Phan, Hoang N. Phan, Cuong Le Chi, Tien N. Nguyen, Nghi D. Q. Bui"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.14757"
+
+- short_name: "LocAgent"
+  title: "OrcaLoca: An LLM Agent Framework for Software Issue Localization"
+  authors: "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2502.00350"
+
+- short_name: "SWE-Smith"
+  title: "SWE-smith: Scaling Data for Software Engineering Agents"
+  authors: "John Yang, Kilian Lieret, Carlos E. Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui, Ofir Press, Ludwig Schmidt, Diyi Yang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2504.21798"
+
+- short_name: "SWE-Fixer"
+  title: "SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution"
+  authors: "Chengxing Xie, Bowen Li, Chang Gao, He Du, Wai Lam, Difan Zou, Kai Chen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2501.05040"
+
+- short_name: "SWELoc"
+  title: "SweRank: Software Issue Localization with Code Ranking"
+  authors: "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz, Caiming Xiong, Heng Ji, Shafiq Joty"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.07849"
+
+- short_name: "SWE-Gym"
+  title: "Training Software Engineering Agents and Verifiers with SWE-Gym"
+  authors: "Jiayi Pan, Xingyao Wang, Graham Neubig, Navdeep Jaitly, Heng Ji, Alane Suhr, Yizhe Zhang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2412.21139"
+
+- short_name: "SWE-Flow"
+  title: "SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner"
+  authors: "Lei Zhang, Jiaxi Yang, Min Yang, Jian Yang, Mouxiang Chen, Jiajun Zhang, Zeyu Cui, Binyuan Hui, Junyang Lin"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.09003"
+
+- short_name: "SWE-Factory"
+  title: "SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks"
+  authors: "Lianghong Guo, Yanlin Wang, Caihua Li, Pengyu Yang, Jiachi Chen, Wei Tao, Yingtian Zou, Duyu Tang, Zibin Zheng"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.10954"
+
+- short_name: "Skywork-SWE"
+  title: "Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs"
+  authors: "Liang Zeng, Yongcong Li, Yuzhen Xiao, Changshi Li, Chris Yuhao Liu, Rui Yan, Tianwen Wei, Jujie He, Xuchen Song, Yang Liu, Yahui Zhou"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2506.19290"
+
+- short_name: "RepoForge"
+  title: "RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale"
+  authors: "Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur Leung, Gopi Krishnan Rajbahadur, Gustavo A. Oliva, Haoxiang Zhang, Aaditya Bhatia, Chong Chun Yong, Ahmed E. Hassan"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2508.01550"
+
+- short_name: "SWE-Mirror"
+  title: "SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories"
+  authors: "Junhao Wang, Daoguang Zan, Shulin Xin, Siyao Liu, Yurong Wu, Kai Shen"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2509.08724"
+
+- short_name: "SWE-Bench++"
+  title: "SWE-Bench++: A Framework for the Scalable Generation of Software Engineering Benchmarks from Open-Source Repositories"
+  authors: "Lilin Wang, Lucas Ramalho, Alan Celestino, Phuc Anthony Pham, Yu Liu, Umang Kumar Sinha, Andres Portillo, Onassis Osunwa, Gabriel Maduekwe"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2512.17419"
+

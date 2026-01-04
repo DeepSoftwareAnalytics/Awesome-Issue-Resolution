@@ -1,0 +1,59 @@
+# Single-Agent
+# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+
+- short_name: "SWE-agent"
+  title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"
+  authors: "John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press"
+  venue: "arXiv 2024"
+  year: "2024"
+  links:
+    arxiv: "https://arxiv.org/abs/2405.15793"
+
+- short_name: "PatchPilot"
+  title: "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification"
+  authors: "Hongwei Li, Yuheng Tang, Shiqi Wang, Wenbo Guo"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2502.02747"
+
+- short_name: "LCLM"
+  title: "Putting It All into Context: Simplifying Agents with LCLMs"
+  authors: "Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori Hashimoto"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.08120"
+
+- short_name: "DGM"
+  title: "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents"
+  authors: "Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2505.22954"
+
+- short_name: "SE-Agent"
+  title: "SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents"
+  authors: "Jiaye Lin, Yifu Guo, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng Wang, Mingguang Chen, Hongzhang Liu, Ronghao Chen, Yangfan He, Daxin Jiang, Binxing Jiao, Chen Hu, Huacan Wang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2508.02085"
+
+- short_name: "TOM-SWE"
+  title: "TOM-SWE: User Mental Modeling For Software Engineering Agents"
+  authors: "Xuhui Zhou, Valerie Chen, Zora Zhiruo Wang, Graham Neubig, Maarten Sap, Xingyao Wang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2510.21903"
+
+- short_name: "Live-SWE-agent"
+  title: "SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents"
+  authors: "Jiaye Lin, Yifu Guo, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng Wang, Mingguang Chen, Hongzhang Liu, Ronghao Chen, Yangfan He, Daxin Jiang, Binxing Jiao, Chen Hu, Huacan Wang"
+  venue: "arXiv 2025"
+  year: "2025"
+  links:
+    arxiv: "https://arxiv.org/abs/2508.02085"
+
