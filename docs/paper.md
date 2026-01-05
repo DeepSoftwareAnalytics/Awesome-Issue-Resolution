@@ -3,11 +3,11 @@
 ## Paper Preview
 
 <div class="pdf-viewer">
-  <embed src="../Advances, Frontiers, and Future of Issue Resolution in Software Engineering A Comprehensive Survey.pdf" type="application/pdf" width="100%" height="1000px" style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <embed src="../Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey.pdf" type="application/pdf" width="100%" height="1000px" style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 </div>
 
 <div class="paper-download">
-  <a href="../Advances, Frontiers, and Future of Issue Resolution in Software Engineering A Comprehensive Survey.pdf" class="download-btn" download>
+  <a href="../Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey.pdf" class="download-btn" download>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
     </svg>
