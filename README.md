@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey**
+**Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey**
 
 [![GitHub Stars](https://img.shields.io/github/stars/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=4c1)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution)
 [![Forks](https://img.shields.io/github/forks/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=blue)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/fork)
@@ -178,7 +178,7 @@ If you use this project or related survey in your research or system, please cit
 
 ```bibtex
 @misc{li2025awesome_issue_resolution,
-    title       = {Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
+    title       = {Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey},
     author      = {Caihua Li and Lianghong Guo and Yanlin Wang and Wei Tao and Zhenyu Shan and Mingwei Liu and Jiachi Chen and Haoyu Song and Duyu Tang and Hongyu Zhang and Zibin Zheng},
     year        = {2025},
     howpublished = {\url{https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution}}
