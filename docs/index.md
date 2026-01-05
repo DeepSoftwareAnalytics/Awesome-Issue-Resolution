@@ -2,7 +2,7 @@
 
 <div class="hero-section">
     <h1 class="hero-title">✨ Awesome Issue Resolution</h1>
-    <p class="hero-subtitle">Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey</p>
+    <p class="hero-subtitle">Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey</p>
     
     <!-- Dynamic Badges -->
     <div class="hero-badges-dynamic">
