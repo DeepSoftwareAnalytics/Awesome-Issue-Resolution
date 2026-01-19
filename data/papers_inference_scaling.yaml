@@ -1,35 +1,34 @@
-# Inference-time Scaling
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Inference-Time Scaling
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "SWE-Search"
-  title: "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement"
-  authors: "Antonis Antoniades, Albert Örwall, Kexun Zhang, Yuxi Xie, Anirudh Goyal, William Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+- short_name: SWE-Search
+  title: 'SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative
+    Refinement'
+  authors: Antonis Antoniades, Albert Orwall, Kexun Zhang, Yuxi Xie, Anirudh Goyal,
+    William Yang Wang
+  year: '2025'
+  venue: The Thirteenth International Conference on Learning Representations 2025
   links:
-    arxiv: "https://arxiv.org/abs/2410.20285"
-
-- short_name: "CodeMonkeys"
-  title: "CodeMonkeys: Scaling Test-Time Compute for Software Engineering"
-  authors: "Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher Ré, Azalia Mirhoseini"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=G7sIFXugTX
+- short_name: ReasoningBank
+  title: 'CodeMonkeys: Scaling Test-Time Compute for Software Engineering'
+  authors: Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher
+    Ré, Azalia Mirhoseini
+  year: '2025'
+  venue: arXiv preprint arXiv:2501.14723 2025
   links:
-    arxiv: "https://arxiv.org/abs/2501.14723"
-
-- short_name: "SWE-PRM"
-  title: "When Agents go Astray: Course-Correcting SWE Agents with PRMs"
-  authors: "Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, Yara Rizk"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2501.14723
+- short_name: SWE-PRM
+  title: 'When Agents go Astray: Course-Correcting SWE Agents with PRMs'
+  authors: Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, Yara Rizk
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.02360 2025
   links:
-    arxiv: "https://arxiv.org/abs/2509.02360"
-
-- short_name: "ReasoningBank"
-  title: "CodeMonkeys: Scaling Test-Time Compute for Software Engineering"
-  authors: "Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher Ré, Azalia Mirhoseini"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2509.02360
+- short_name: SIADAFIX
+  title: 'SIADAFIX: issue description response for adaptive program repair'
+  authors: Xin Cao, Nan Yu
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.16059 2025
   links:
-    arxiv: "https://arxiv.org/abs/2501.14723"
-
+    arxiv: https://arxiv.org/abs/2510.16059

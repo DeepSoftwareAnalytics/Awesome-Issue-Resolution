@@ -1,82 +1,122 @@
-# SFT-based Methods
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Supervised Fine-Tuning (SFT)
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "Lingma SWE-GPT"
-  title: "Lingma SWE-GPT: An Open Development-Process-Centric Language Model for Automated Software Improvement"
-  authors: "Yingwei Ma, Rongyu Cao, Yongchang Cao, Yue Zhang, Jue Chen, Yibo Liu, Yuchen Liu, Binhua Li, Fei Huang, Yongbin Li"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: Lingma SWE-GPT
+  title: 'SWE-GPT: A Process-Centric Language Model for Automated Software Improvement'
+  authors: Ma, Yingwei, Cao, Rongyu, Cao, Yongchang, Zhang, Yue, Chen, Jue, Liu, Yibo,
+    Liu, Yuchen et al.
+  year: '2025'
+  venue: Proceedings of the ACM on Software Engineering 2025
+- short_name: ReSAT
+  title: Repository Structure-Aware Training Makes SLMs Better Issue Resolver
+  authors: Zexiong Ma, Shengnan An, Zeqi Lin, Yanzhen Zou, Bing Xie
+  year: '2024'
+  venue: arXiv preprint arXiv:2412.19031 2024
   links:
-    arxiv: "https://arxiv.org/abs/2411.00622"
-
-- short_name: "Scaling data collection"
-  title: "Scaling Data Collection for Training SWE Agents"
-  authors: "Nebius"
-  venue: "https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents 2024"
-  year: "2024"
+    arxiv: https://arxiv.org/abs/2412.19031
+- short_name: Scaling data collection
+  title: Scaling Data Collection for Training SWE Agents
+  authors: Nebius
+  year: '2024'
+  venue: '2024'
   links:
-
-- short_name: "CodeXEmbed"
-  title: "CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task Code Retrieval"
-  authors: "Ye Liu, Rui Meng, Shafiq Joty, silvio savarese, Caiming Xiong, Yingbo Zhou, Semih Yavuz"
-  venue: "Second Conference on Language Modeling 2025"
-  year: "2025"
+    arxiv: https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents
+- short_name: CodeXEmbed
+  title: 'CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task
+    Code Retrieval'
+  authors: Ye Liu, Rui Meng, Shafiq Joty, silvio savarese, Caiming Xiong, Yingbo Zhou,
+    Semih Yavuz
+  year: '2025'
+  venue: Second Conference on Language Modeling 2025
   links:
-    arxiv: "https://openreview.net/forum?id=z3lG70Azbg"
-
-- short_name: "SWE-Gym"
-  title: "Training Software Engineering Agents and Verifiers with SWE-Gym"
-  authors: "Jiayi Pan, Xingyao Wang, Graham Neubig, Navdeep Jaitly, Heng Ji, Alane Suhr, Yizhe Zhang"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=z3lG70Azbg
+- short_name: SWE-Gym
+  title: Training Software Engineering Agents and Verifiers with SWE-Gym
+  authors: Pan, Jiayi, Wang, Xingyao, Neubig, Graham, Jaitly, Navdeep, Ji, Heng, Suhr,
+    Alane, Zhang, Yizhe
+  year: ''
+  venue: Forty-second International Conference on Machine Learning
+- short_name: Thinking Longer
+  title: 'Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling
+    Test-Time Compute'
+  authors: Yingwei Ma, Yongbin Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei
+    Huang et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.23803 2025
   links:
-    arxiv: "https://arxiv.org/abs/2412.21139"
-
-- short_name: "TSP"
-  title: "Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level Code Repair"
-  authors: "Bojian Xiong, Yikun Lei, Xikai Liu, Shaowei Zhang, Pengyun Zhu, Yan Liu, Yongqi Leng, Ling Shi, Meizhi Zhong, Yurong Zhang, Yan Gao, Yiwu, Yao Hu, Deyi Xiong"
-  venue: "2025 Conference on Empirical Methods in Natural Language Processing: Industry Track 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2503.23803
+- short_name: Search for training
+  title: Guided Search Strategies in Non-Serializable Environments with Applications
+    to Software Engineering Agents
+  authors: Karina Zainullina, Alexander Golubev, Maria Trofimova, Sergei Polezhaev,
+    Ibragim Badertdinov, Daria Litvintseva, Simon Karasik et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.13652 2025
   links:
-    arxiv: "https://aclanthology.org/2025.emnlp-industry.109/"
-    github: "https://github.com/Gengar0215/TSP-framework"
-
-- short_name: "Co-PatcheR"
-  title: "Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small Reasoning Models"
-  authors: "Yuheng Tang, Hongwei Li, Kaijie Zhu, Michael Yang, Yangruibo Ding, Wenbo Guo"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.13652
+- short_name: Co-PatcheR
+  title: 'Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small
+    Reasoning Models'
+  authors: Yuheng Tang, Hongwei Li, Kaijie Zhu, Michael Yang, Yangruibo Ding, Wenbo
+    Guo
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.18955 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.18955"
-
-- short_name: "SWE-Swiss"
-  title: "SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution"
-  authors: "Zhenyu He, Qingping Yang, Wei Sheng, Xiaojian Zhong, Kechi Zhang, Chenxin An, Wenlei Shi, Tianle Cai, Di He, Jiaze Chen, Jingjing Xu"
-  venue: "https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.18955
+- short_name: MCTS-Refined CoT
+  title: 'MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository
+    Issue Resolution'
+  authors: Yibo Wang, Zhihao Peng, Ying Wang, Zhao Wei, Hai Yu, Zhiliang Zhu
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.12728 2025
   links:
-
-- short_name: "Devstral"
-  title: "Devstral: Fine-tuning Language Models for Coding Agent Applications"
-  authors: "Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexander H. Liu, Alexandre Sablayrolles, Amélie Héliou, Amélie Martin, Anmol Agarwal, Andy Ehrenberg, Andy Lo, Antoine Roux, Arthur Darcet, Arthur Mensch, Baptiste Bout, Baptiste Rozière, Baudouin De Monicault, Chris Bamford, Christian Wallenwein, Christophe Renaudin, Clémence Lanfranchi, Clément Denoix, Corentin Barreau, Darius Dabert Devon Mizelle, Diego de las Casas, Elliot Chane-Sane, Emilien Fugier, Emma Bou Hanna, Gabrielle Berrada, Gauthier Delerce, Gauthier Guinet, Georgii Novikov, Graham Neubig, Guillaume Lample, Guillaume Martin, Himanshu Jaju, Jan Ludziejewski, Jason Rute, Jean-Malo Delignon, JeanHadrien Chabran, Joachim Studnia, Joep Barmentlo, Jonas Amar, Josselin Somerville Roberts, Julien Denize, Karan Saxena, Karmesh Yadav, Kartik Khandelwal, Khyathi Raghavi Chandu, Kush Jain, Lélio Renard Lavaud, Léonard Blier, Lingxiao Zhao, Louis Martin, Lucile Saulnier, Luyu Gao, Marie Pellat, Mathilde Guillaumin, Mathis Felardos, Matthieu Dinot, Maxime Darrin, Maximilian Augustin, Mickaël Seznec, Neha Gupta, Nikhil Raghuraman, Olivier Duchenne, Patricia Wang, Patrick von Platen, Patryk Saffer, Paul Jacob, Paul Wambergue, Paula Kurylowicz, Philomène Chagniot, Pierre Stock, Pravesh Agrawal, Rémi Delacourt, Roman Soletskyi, Romain Sauvestre, Sagar Vaze, Sanchit Gandhi, Sandeep Subramanian, Shashwat Dalal, Siddharth Gandhi, Soham Ghosh, Srijan Mishra, Sumukh Aithal, Szymon Antoniak, Teven Le Scao, Thibaut Lavril, Thibault Schueller, Thomas Foubert, Thomas Robert, Thomas Wang, Timothée Lacroix, Tom Bewley, Valeriia Nemychnikova, Victor Paltz, Virgile Richard, Wen-Ding Li, William Marshall, Xingyao Wang, Xuanyu Zhang, Yihan Wan, Yunhao Tang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.12728
+- short_name: SWE-Swiss
+  title: 'SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue
+    Resolution'
+  authors: He, Zhenyu, Yang, Qingping, Sheng, Wei, Zhong, Xiaojian, Zhang, Kechi,
+    An, Chenxin, Shi, Wenlei et al.
+  year: '2025'
+  venue: '2025'
   links:
-    arxiv: "https://arxiv.org/abs/2509.25193"
-
-- short_name: "Kimi-Dev"
-  title: "Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents"
-  authors: "Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu, Yibo Miao, Bofei Gao, Yejie Wang, Yingwei Ma, Yanhao Li, Yue Liu, Zhenxing Hu, Kaitai Zhang, Shuyi Wang, Huarong Chen, Flood Sung, Yang Liu, Yang Gao, Zhilin Yang, Tianyu Liu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88
+- short_name: Devstral
+  title: 'Devstral: Fine-tuning Language Models for Coding Agent Applications'
+  authors: Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexander H. Liu, Alexandre
+    Sablayrolles, Amélie Héliou, Amélie Martin et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.25193 2025
   links:
-    arxiv: "https://arxiv.org/abs/2509.23045"
-
-- short_name: "SWE-Compressor"
-  title: "Context as a Tool: Context Management for Long-Horizon SWE-Agents"
-  authors: "Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu, Bryan Dai"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2509.25193
+- short_name: Kimi-Dev
+  title: 'Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents'
+  authors: Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu,
+    Yibo Miao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.23045 2025
   links:
-    arxiv: "https://arxiv.org/abs/2512.22087"
-
+    arxiv: https://arxiv.org/abs/2509.23045
+- short_name: SWE-Compressor
+  title: 'Context as a Tool: Context Management for Long-Horizon SWE-Agents'
+  authors: Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu,
+    Bryan Dai
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.22087 2025
+  links:
+    arxiv: https://arxiv.org/abs/2512.22087
+- short_name: SWE-Lego
+  title: 'SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue
+    Resolving'
+  authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, Shaowei Wang, Ruoyu Wang,
+    Xiaohui Li et al.
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.01426 2026
+  links:
+    arxiv: https://arxiv.org/abs/2601.01426
+- short_name: Agentic Rubrics
+  title: Agentic Rubrics as Contextual Verifiers for SWE Agents
+  authors: Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.04171 2026
+  links:
+    arxiv: https://arxiv.org/abs/2601.04171

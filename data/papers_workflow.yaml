@@ -1,43 +1,43 @@
-# Workflow
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Workflow-Based Methods
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "Agentless"
-  title: "Agentless: Demystifying LLM-based Software Engineering Agents"
-  authors: "Chunqiu Steven Xia, Yinlin Deng, Soren Dunn, Lingming Zhang"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: Agentless
+  title: Demystifying LLM-Based Software Engineering Agents
+  authors: Chun Xia, Yinlin Deng, Soren Dunn, Lingming Zhang
+  year: '2025'
+  venue: Proceedings of the ACM on Software Engineering 2025
   links:
-    arxiv: "https://arxiv.org/abs/2407.01489"
-
-- short_name: "Conversational Pipeline"
-  title: "Exploring the Potential of Conversational Test Suite Based Program Repair on SWE-bench"
-  authors: "Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo Franco Jaldin"
-  venue: "arXiv 2024"
-  year: "2024"
+    website: https://api.semanticscholar.org/CorpusID:277850376
+- short_name: Conversational Pipeline
+  title: Exploring the Potential of Conversational Test Suite Based Program Repair
+    on SWE-bench
+  authors: Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo
+    Franco Jaldin
+  year: '2024'
+  venue: arXiv preprint arXiv:2410.04485 2024
   links:
-    arxiv: "https://arxiv.org/abs/2410.04485"
-
-- short_name: "SynFix"
-  title: "SynFix: Dependency-Aware Program Repair via RelationGraph Analysis"
-  authors: "Xunzhu Tang, Jiechao Gao, Jin Xu, Tiezhu Sun, Yewei Song, Saad Ezzini, Wendk\\^uuni C. Ou\\'edraogo, Jacques Klein, Tegawend\\'e F. Bissyand\\'e"
-  venue: "Findings of the ACL: ACL 2025 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2410.04485
+- short_name: SynFix
+  title: 'SynFix: Dependency-Aware Program Repair via RelationGraph Analysis'
+  authors: Tang, Xunzhu, Gao, Jiechao, Xu, Jin, Sun, Tiezhu, Song, Yewei, Ezzini,
+    Saad, Ouedraogo, Wendk\^uuni C. et al.
+  year: '2025'
+  venue: 'Findings of the Association for Computational Linguistics: ACL 2025 2025'
   links:
-    arxiv: "https://aclanthology.org/2025.findings-acl.252/"
-
-- short_name: "CodeV"
-  title: "CodeV: Issue Resolving with Visual Data"
-  authors: "Linhao Zhang, Daoguang Zan, Quanshun Yang, Zhirong Huang, Dong Chen, Bo Shen, Tianyu Liu, Yongshun Gong, Huang Pengjie, Xudong Lu, Guangtai Liang, Lizhen Cui, Qianxiang Wang"
-  venue: "Findings of the ACL: ACL 2025 2025"
-  year: "2025"
+    doi: http://dx.doi.org/10.18653/v1/2025.findings-acl.252
+    acl: https://aclanthology.org/2025.findings-acl.252/
+- short_name: CodeV
+  title: 'CodeV: Issue Resolving with Visual Data'
+  authors: Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong,
+    Shen, Bo, Liu, Tianyu et al.
+  year: '2025'
+  venue: 'Findings of the Association for Computational Linguistics: ACL 2025 2025'
   links:
-    arxiv: "https://aclanthology.org/2025.findings-acl.384/"
-
-- short_name: "GUIRepair"
-  title: "Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Fixing"
-  authors: "Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen"
-  venue: "arXiv 2025"
-  year: "2025"
-  links:
-    arxiv: "https://arxiv.org/abs/2506.16136"
-
+    doi: http://dx.doi.org/10.18653/v1/2025.findings-acl.384
+    acl: https://aclanthology.org/2025.findings-acl.384/
+- short_name: GUIRepair
+  title: 'Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual
+    Software Issue Fixing'
+  authors: Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen
+  year: '2025'
+  venue: ASE 2025

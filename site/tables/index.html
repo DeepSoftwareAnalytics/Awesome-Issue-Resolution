@@ -536,10 +536,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#evaluation-datasets-overview" class="md-nav__link">
+  <a href="#evaluation-training-datasets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 Evaluation Datasets Overview
+        Evaluation &amp; Training Datasets
       
     </span>
   </a>
@@ -550,7 +550,7 @@
   <a href="#training-trajectory-datasets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Training Trajectory Datasets
+        Training Trajectory Datasets
       
     </span>
   </a>
@@ -558,10 +558,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#supervised-fine-tuning-sft-models" class="md-nav__link">
+  <a href="#sft-based-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔧 Supervised Fine-Tuning (SFT) Models
+        SFT-based Methods
       
     </span>
   </a>
@@ -569,10 +569,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reinforcement-learning-rl-models" class="md-nav__link">
+  <a href="#rl-based-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🤖 Reinforcement Learning (RL) Models
+        RL-based Methods
       
     </span>
   </a>
@@ -583,7 +583,7 @@
   <a href="#general-foundation-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🌟 General Foundation Models
+        General Foundation Models
       
     </span>
   </a>
@@ -675,137 +675,38 @@
 <h1 id="tables-resources">Tables &amp; Resources<a class="headerlink" href="#tables-resources" title="Permanent link">&para;</a></h1>
 <p>This page contains statistical tables and resources from our comprehensive survey on Issue Resolution in Software Engineering.</p>
 <hr />
-<h2 id="evaluation-datasets-overview">📊 Evaluation Datasets Overview<a class="headerlink" href="#evaluation-datasets-overview" title="Permanent link">&para;</a></h2>
-<p><em>A comprehensive survey and statistical overview of issue resolution datasets. We categorize these datasetsbased on programming language, modality support, source repositories, data scale (Amount), and the availability ofreproducible execution environments.</em></p>
+<h3 id="evaluation-training-datasets">Evaluation &amp; Training Datasets<a class="headerlink" href="#evaluation-training-datasets" title="Permanent link">&para;</a></h3>
+<p><em>A comprehensive survey and statistical overview of issue resolution datasets. We categorize these datasets based on programming language, modality support, source repositories, data scale (Amount), and the availability of reproducible execution environments.</em></p>
 <table>
 <thead>
 <tr>
-<th>Dataset</th>
-<th>Language</th>
-<th>Multimodal</th>
-<th>Repos</th>
-<th>Amount</th>
-<th>Environment</th>
-<th>Link</th>
+<th><strong>Dataset</strong></th>
+<th><strong>Language</strong></th>
+<th><strong>Multimodal</strong></th>
+<th><strong>Repos</strong></th>
+<th><strong>Amount</strong></th>
+<th><strong>Environment</strong></th>
+<th><strong>Link</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SWE-bench-train</td>
+<td><strong>Single-PL Datasets</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SWE-Fixer</td>
 <td>Python</td>
 <td>❌</td>
-<td>37</td>
-<td>19k</td>
+<td>856</td>
+<td>115,406</td>
 <td>❌</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench/viewer/default/train" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench</td>
-<td>Python</td>
-<td>❌</td>
-<td>12</td>
-<td>2294</td>
-<td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench Lite</td>
-<td>Python</td>
-<td>❌</td>
-<td>12</td>
-<td>300</td>
-<td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench Verified</td>
-<td>Python</td>
-<td>❌</td>
-<td>/</td>
-<td>500</td>
-<td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench-java</td>
-<td>Java</td>
-<td>❌</td>
-<td>19</td>
-<td>1797</td>
-<td>✅</td>
-<td><a href="https://github.com/multi-swe-bench/multi-swe-bench-env" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/Daoguang/Multi-SWE-bench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench Multimodal</td>
-<td>JS,TS,HTML,CSS</td>
-<td>✅</td>
-<td>17</td>
-<td>619</td>
-<td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench-extra</td>
-<td>Python</td>
-<td>❌</td>
-<td>2k</td>
-<td>6.38k</td>
-<td>✅</td>
-<td><a href="https://huggingface.co/datasets/nebius/SWE-bench-extra" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>Visual SWE-bench</td>
-<td>Python</td>
-<td>✅</td>
-<td>11</td>
-<td>133</td>
-<td>✅</td>
-<td><a href="https://github.com/luolin101/CodeV" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/luolin101/Visual-SWE-bench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-Lancer</td>
-<td>JS, TS</td>
-<td>❌</td>
-<td>/</td>
-<td>1488</td>
-<td>✅</td>
-<td><a href="https://github.com/openai/frontier-evals" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-</tr>
-<tr>
-<td>Multi-SWE-bench</td>
-<td>Java, JS, TS, Go, Rust, C, C++</td>
-<td>❌</td>
-<td>76</td>
-<td>4,723</td>
-<td>✅</td>
-<td><a href="https://github.com/multi-swe-bench/multi-swe-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>R2E-Gym</td>
-<td>Python</td>
-<td>❌</td>
-<td>10</td>
-<td>8,135</td>
-<td>✅</td>
-<td><a href="https://github.com/R2E-Gym/R2E-Gym" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/R2E-Gym/datasets" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-PolyBench</td>
-<td>Python, Java, JS, TS</td>
-<td>❌</td>
-<td>21</td>
-<td>2110</td>
-<td>✅</td>
-<td><a href="https://github.com/amazon-science/SWE-PolyBench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/AmazonScience/SWE-PolyBench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a> <a href="https://huggingface.co/datasets/Sellopale/SWE-PolyBench_500" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>Loc-Bench</td>
-<td>Python</td>
-<td>❌</td>
-<td>/</td>
-<td>560</td>
-<td>❌</td>
-<td><a href="https://github.com/gersteinlab/LocAgent" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/czlll/Loc-Bench_V1" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/InternLM/SWE-Fixer"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Train-110K"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Eval"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-smith</td>
@@ -814,52 +715,79 @@
 <td>128</td>
 <td>50k</td>
 <td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-smith" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-smith" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/SWE-bench/SWE-smith"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-smith"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-bench Multilingual</td>
-<td>C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP</td>
-<td>❌</td>
-<td>42</td>
-<td>300</td>
-<td>✅</td>
-<td><a href="https://github.com/SWE-bench/SWE-bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-Fixer</td>
+<td>SWE-Lego</td>
 <td>Python</td>
 <td>❌</td>
-<td>856</td>
-<td>115406</td>
-<td>❌</td>
-<td><a href="https://github.com/InternLM/SWE-Fixer" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Train-110K" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Eval" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>OmniGIRL</td>
-<td>Python, TS, Java, JS</td>
+<td>3,251</td>
+<td>32,119</td>
 <td>✅</td>
-<td>15</td>
-<td>959</td>
-<td>✅</td>
-<td><a href="https://github.com/deepsoftwareanalytics/omnigirl" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/SWE-Lego/SWE-Lego"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/SWE-Lego/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-rebench</td>
 <td>Python</td>
 <td>❌</td>
-<td>30,000</td>
+<td>3,468</td>
 <td>21,336</td>
 <td>✅</td>
-<td><a href="https://huggingface.co/datasets/nebius/SWE-rebench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/SWE-rebench/SWE-bench-fork"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/nebius/SWE-rebench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-bench-Live</td>
+<td>SWE-bench-train</td>
 <td>Python</td>
 <td>❌</td>
-<td>93</td>
-<td>1319</td>
+<td>37</td>
+<td>19k</td>
+<td>❌</td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench/viewer/default/train"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Flow</td>
+<td>Python</td>
+<td>❌</td>
+<td>74</td>
+<td>18,081</td>
 <td>✅</td>
-<td><a href="https://github.com/microsoft/SWE-bench-Live" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-bench-Live/SWE-bench-Live" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/Hambaobao/SWE-Flow"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Skywork-SWE</td>
+<td>Python</td>
+<td>❌</td>
+<td>2,531</td>
+<td>10,169</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td>R2E-Gym</td>
+<td>Python</td>
+<td>❌</td>
+<td>10</td>
+<td>8,135</td>
+<td>✅</td>
+<td><a href="https://github.com/R2E-Gym/R2E-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/R2E-Gym/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>RepoForge</td>
+<td>Python</td>
+<td>❌</td>
+<td>-</td>
+<td>7.3k</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-bench-extra</td>
+<td>Python</td>
+<td>❌</td>
+<td>2k</td>
+<td>6.38k</td>
+<td>✅</td>
+<td><a href="https://huggingface.co/datasets/nebius/SWE-bench-extra"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Gym</td>
@@ -868,43 +796,70 @@
 <td>11</td>
 <td>2,438</td>
 <td>✅</td>
-<td><a href="https://github.com/SWE-Gym/SWE-Gym" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/SWE-Gym/datasets" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/SWE-Gym/SWE-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/SWE-Gym/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-Flow</td>
+<td>SWE-bench</td>
 <td>Python</td>
-<td>❌</td>
-<td>74</td>
-<td>18081</td>
-<td>✅</td>
-<td><a href="https://github.com/Hambaobao/SWE-Flow" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-</tr>
-<tr>
-<td>SWE-Factory</td>
-<td>Python, Java, JS, TS</td>
 <td>❌</td>
 <td>12</td>
-<td>430</td>
+<td>2,294</td>
 <td>✅</td>
-<td><a href="https://github.com/DeepSoftwareAnalytics/swe-factory" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/SWE-Factory" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-Bench-CL</td>
-<td>Python</td>
+<td>SWE-bench-java</td>
+<td>Java</td>
 <td>❌</td>
-<td>8</td>
-<td>273</td>
+<td>19</td>
+<td>1,797</td>
 <td>✅</td>
-<td><a href="https://github.com/thomasjoshi/agents-never-forget" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
+<td><a href="https://github.com/multi-swe-bench/multi-swe-bench-env"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/Daoguang/Multi-SWE-bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>Skywork-SWE</td>
+<td>FEA-bench</td>
 <td>Python</td>
 <td>❌</td>
-<td>2531</td>
-<td>10169</td>
+<td>83</td>
+<td>1,401</td>
 <td>✅</td>
-<td>/</td>
+<td><a href="https://github.com/microsoft/FEA-Bench/"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/microsoft/FEA-Bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench-Live</td>
+<td>Python</td>
+<td>❌</td>
+<td>164</td>
+<td>1,565</td>
+<td>✅</td>
+<td><a href="https://github.com/microsoft/SWE-bench-Live"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench-Live/SWE-bench-Live"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Loc-Bench</td>
+<td>Python</td>
+<td>❌</td>
+<td>-</td>
+<td>560</td>
+<td>❌</td>
+<td><a href="https://github.com/gersteinlab/LocAgent"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/czlll/Loc-Bench_V1"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench Verified</td>
+<td>Python</td>
+<td>❌</td>
+<td>-</td>
+<td>500</td>
+<td>✅</td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench Lite</td>
+<td>Python</td>
+<td>❌</td>
+<td>12</td>
+<td>300</td>
+<td>✅</td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-MERA</td>
@@ -913,52 +868,16 @@
 <td>200</td>
 <td>300</td>
 <td>✅</td>
-<td><a href="https://github.com/MERA-Evaluation/SWE-MERA-submissions" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/MERA-evaluation/SWE-MERA" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/MERA-Evaluation/SWE-MERA-submissions"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/MERA-evaluation/SWE-MERA"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-Perf</td>
+<td>SWE-Bench-CL</td>
 <td>Python</td>
 <td>❌</td>
-<td>12</td>
-<td>140</td>
+<td>8</td>
+<td>273</td>
 <td>✅</td>
-<td><a href="https://github.com/SWE-Perf/swe-perf" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-Perf/SWE-Perf" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>RepoForge</td>
-<td>Python</td>
-<td>❌</td>
-<td>/</td>
-<td>7.3k</td>
-<td>✅</td>
-<td>/</td>
-</tr>
-<tr>
-<td>SWE-Mirror</td>
-<td>Python, Rust, Go</td>
-<td>❌</td>
-<td>40</td>
-<td>60k</td>
-<td>✅</td>
-<td>/</td>
-</tr>
-<tr>
-<td>SWE-Bench Pro</td>
-<td>Go, TS, Python</td>
-<td>❌</td>
-<td>41</td>
-<td>1865</td>
-<td>✅</td>
-<td><a href="https://github.com/scaleapi/SWE-bench_Pro-os" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-InfraBench</td>
-<td>Python, TS</td>
-<td>❌</td>
-<td>/</td>
-<td>100</td>
-<td>✅</td>
-<td>/</td>
+<td><a href="https://github.com/thomasjoshi/agents-never-forget"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Sharp-Bench</td>
@@ -967,34 +886,25 @@
 <td>17</td>
 <td>150</td>
 <td>✅</td>
-<td><a href="https://github.com/microsoft/prose/tree/main/misc/SWE-Sharp-Bench" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/microsoft/SWE-Sharp-Bench" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/microsoft/prose/tree/main/misc/SWE-Sharp-Bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/microsoft/SWE-Sharp-Bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-fficiency</td>
-<td>Python, Cython</td>
+<td>SWE-Perf</td>
+<td>Python</td>
 <td>❌</td>
-<td>9</td>
-<td>498</td>
+<td>12</td>
+<td>140</td>
 <td>✅</td>
-<td><a href="https://github.com/swefficiency/swefficiency-site" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
+<td><a href="https://github.com/SWE-Perf/swe-perf"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-Perf/SWE-Perf"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
-<td>SWE-Compass</td>
-<td>Python, JS, TS, Java, C, C++, Go, Rust, Kotlin, C#</td>
-<td>❌</td>
-<td>/</td>
-<td>2000</td>
+<td>Visual SWE-bench</td>
+<td>Python</td>
 <td>✅</td>
-<td><a href="https://github.com/kwaipilot/SWE-Compass/" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/Kwaipilot/SWE-Compass" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-bench++</td>
-<td>Python, Go, TS, JS, Ruby, PHP, Java, Rust, C++, C#, C</td>
-<td>❌</td>
-<td>3,971</td>
-<td>1,782</td>
+<td>11</td>
+<td>133</td>
 <td>✅</td>
-<td><a href="https://github.com/TuringEnterprises/SWE-Bench-plus-plus" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/TuringEnterprises/SWE-Bench-plus-plus" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/luolin101/CodeV"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/luolin101/Visual-SWE-bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-EVO</td>
@@ -1003,79 +913,270 @@
 <td>7</td>
 <td>48</td>
 <td>✅</td>
-<td><a href="https://github.com/bdqnghi/SWE-EVO" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
+<td><a href="https://github.com/bdqnghi/SWE-EVO"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td><strong>Multi-PL Datasets</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SWE-Mirror</td>
+<td>Python, Rust, Go</td>
+<td>❌</td>
+<td>40</td>
+<td>60k</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Multi-SWE-bench</td>
+<td>Java, JS, TS, Go, Rust, C, C++</td>
+<td>❌</td>
+<td>76</td>
+<td>4,723</td>
+<td>✅</td>
+<td><a href="https://github.com/multi-swe-bench/multi-swe-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Swing-Bench</td>
+<td>Python, Go, C++, Rust</td>
+<td>❌</td>
+<td>400</td>
+<td>2300</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-PolyBench</td>
+<td>Python, Java, JS, TS</td>
+<td>❌</td>
+<td>21</td>
+<td>2,110</td>
+<td>✅</td>
+<td><a href="https://github.com/amazon-science/SWE-PolyBench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/AmazonScience/SWE-PolyBench"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/Sellopale/SWE-PolyBench_500"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Compass</td>
+<td>Python, JS, TS, Java, C, C++, Go, Rust, Kotlin, C#</td>
+<td>❌</td>
+<td>-</td>
+<td>2,000</td>
+<td>✅</td>
+<td><a href="https://github.com/kwaipilot/SWE-Compass/"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/Kwaipilot/SWE-Compass"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Bench Pro</td>
+<td>Python, Go, TS</td>
+<td>❌</td>
+<td>41</td>
+<td>1,865</td>
+<td>✅</td>
+<td><a href="https://github.com/scaleapi/SWE-bench_Pro-os"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench++</td>
+<td>Python, Go, TS, JS, Ruby, PHP, Java, Rust, C++, C#, C</td>
+<td>❌</td>
+<td>3,971</td>
+<td>1,782</td>
+<td>✅</td>
+<td><a href="https://github.com/TuringEnterprises/SWE-Bench-plus-plus"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/TuringEnterprises/SWE-Bench-plus-plus"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Lancer</td>
+<td>JS, TS</td>
+<td>❌</td>
+<td>-</td>
+<td>1,488</td>
+<td>✅</td>
+<td><a href="https://github.com/openai/frontier-evals"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>OmniGIRL</td>
+<td>Python, TS, Java, JS</td>
+<td>✅</td>
+<td>15</td>
+<td>959</td>
+<td>✅</td>
+<td><a href="https://github.com/deepsoftwareanalytics/omnigirl"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench Multimodal</td>
+<td>JS, TS, HTML, CSS</td>
+<td>✅</td>
+<td>17</td>
+<td>619</td>
+<td>✅</td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-fficiency</td>
+<td>Python, Cython</td>
+<td>❌</td>
+<td>9</td>
+<td>498</td>
+<td>✅</td>
+<td><a href="https://github.com/swefficiency/swefficiency-site"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Factory</td>
+<td>Python, Java, JS, TS</td>
+<td>❌</td>
+<td>12</td>
+<td>430</td>
+<td>✅</td>
+<td><a href="https://github.com/DeepSoftwareAnalytics/swe-factory"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/SWE-Factory"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench-Live-MultiLang \&amp; Windows</td>
+<td>Python, JS, TS, C, C++, C#, Java, Go, Rust</td>
+<td>❌</td>
+<td>238</td>
+<td>418</td>
+<td>✅</td>
+<td><a href="https://github.com/microsoft/SWE-bench-Live"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench-Live/MultiLang"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench-Live/Windows"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-bench Multilingual</td>
+<td>C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP</td>
+<td>❌</td>
+<td>42</td>
+<td>300</td>
+<td>✅</td>
+<td><a href="https://github.com/SWE-bench/SWE-bench"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-InfraBench</td>
+<td>Python, TS</td>
+<td>❌</td>
+<td>-</td>
+<td>100</td>
+<td>✅</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="training-trajectory-datasets">🎯 Training Trajectory Datasets<a class="headerlink" href="#training-trajectory-datasets" title="Permanent link">&para;</a></h2>
+<h3 id="training-trajectory-datasets">Training Trajectory Datasets<a class="headerlink" href="#training-trajectory-datasets" title="Permanent link">&para;</a></h3>
 <p><em>A survey of trajectory datasets used for agent training or analysis. We list the programming language, number of source repositories, and total trajectories for each dataset.</em></p>
 <table>
 <thead>
 <tr>
-<th>Dataset</th>
-<th>Language</th>
-<th>Repos</th>
-<th>Amount</th>
-<th>Link</th>
+<th><strong>Dataset</strong></th>
+<th><strong>Language</strong></th>
+<th><strong>Repos</strong></th>
+<th><strong>Amount</strong></th>
+<th><strong>Link</strong></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>SWE-Fixer</td>
+<td>Python</td>
+<td>856</td>
+<td>69,752</td>
+<td><a href="https://github.com/InternLM/SWE-Fixer"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Train-Editing-CoT-70K"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-rebench</td>
+<td>Python</td>
+<td>1,823</td>
+<td>67,074</td>
+<td><a href="https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
 <tr>
 <td>R2E-Gym</td>
 <td>Python</td>
 <td>10</td>
 <td>3,321</td>
-<td><a href="https://github.com/R2E-Gym/R2E-Gym" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/R2E-Gym/R2EGym-SFT-Trajectories" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-Gym</td>
-<td>Python</td>
-<td>11</td>
-<td>491</td>
-<td><a href="https://github.com/SWE-Gym/SWE-Gym" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/R2E-Gym/R2E-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/R2E-Gym/R2EGym-SFT-Trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Synth</td>
 <td>Python</td>
 <td>11</td>
 <td>3,018</td>
-<td><a href="https://github.com/FSoft-AI4Code/SWE-Synth" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/swesynth/SWE-Synth_Moatless-SFT-Trajectories" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>SWE-Fixer</td>
-<td>Python</td>
-<td>856</td>
-<td>69,752</td>
-<td><a href="https://github.com/InternLM/SWE-Fixer" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/internlm/SWE-Fixer-Train-Editing-CoT-70K" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/FSoft-AI4Code/SWE-Synth"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/swesynth/SWE-Synth_Moatless-SFT-Trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Factory</td>
 <td>Python</td>
 <td>10</td>
 <td>2,809</td>
-<td><a href="https://github.com/DeepSoftwareAnalytics/swe-factory" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a> <a href="https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/DeepSoftwareAnalytics/swe-factory"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Gym</td>
+<td>Python</td>
+<td>11</td>
+<td>491</td>
+<td><a href="https://github.com/SWE-Gym/SWE-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a> <a href="https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Lego</td>
+<td>Python</td>
+<td>3251</td>
+<td>14.6k</td>
+<td><a href="https://github.com/SWE-Lego/SWE-Lego"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="supervised-fine-tuning-sft-models">🔧 Supervised Fine-Tuning (SFT) Models<a class="headerlink" href="#supervised-fine-tuning-sft-models" title="Permanent link">&para;</a></h2>
+<h3 id="sft-based-methods">SFT-based Methods<a class="headerlink" href="#sft-based-methods" title="Permanent link">&para;</a></h3>
 <p><em>Overview of SFT-based methods for issue resolution. This table categorizes models by their base architecture and training scaffold (Sorted by Performance).</em></p>
 <table>
 <thead>
 <tr>
-<th>Model Name</th>
-<th>Base Model</th>
-<th>Size</th>
-<th>Arch.</th>
-<th>Training Scaffold</th>
-<th>Res.(\%)</th>
-<th>Code</th>
-<th>Data</th>
-<th>Model</th>
+<th><strong>Model Name</strong></th>
+<th><strong>Base Model</strong></th>
+<th><strong>Size</strong></th>
+<th><strong>Arch.</strong></th>
+<th><strong>Training Scaffold</strong></th>
+<th><strong>Res.(%)</strong></th>
+<th><strong>Code</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Model</strong></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>SWE-rebench-openhands-Qwen3-235B-A22B</td>
+<td>Qwen3-235B-A22B</td>
+<td>235B-A22B</td>
+<td>MoE</td>
+<td>OpenHands</td>
+<td>59.9</td>
+<td>-</td>
+<td><a href="https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-235B-A22B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Lego-Qwen3-32B</td>
+<td>Qwen3-32B</td>
+<td>32B</td>
+<td>Dense</td>
+<td>OpenHands</td>
+<td>57.6</td>
+<td><a href="https://github.com/SWE-Lego/SWE-Lego"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Lego/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-32B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-rebench-openhands-Qwen3-30B-A3B</td>
+<td>Qwen3-30B-A3B</td>
+<td>30B-A3B</td>
+<td>MoE</td>
+<td>OpenHands</td>
+<td>49.7</td>
+<td>-</td>
+<td><a href="https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-30B-A3B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
 <tr>
 <td>Devstral</td>
 <td>Mistral Small 3</td>
@@ -1083,28 +1184,116 @@
 <td>Dense</td>
 <td>OpenHands</td>
 <td>46.8</td>
-<td>/</td>
-<td><a href="https://mistral.ai/news/devstral" target="_blank"><img src="https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white" alt="Website"></a></td>
-<td><a href="https://huggingface.co/mistralai/Devstral-Small-2507" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td>-</td>
+<td><a href="https://mistral.ai/news/devstral"><img alt="Website" src="https://img.shields.io/badge/Website-blog-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/mistralai/Devstral-Small-2507"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Co-PatcheR</td>
+<td>Qwen2.5-Coder-14B</td>
+<td>3×14B</td>
+<td>Dense</td>
+<td>PatchPilot-mini</td>
+<td>46.0</td>
+<td><a href="https://github.com/ucsb-mlsec/Co-PatcheR"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/collections/UCSB-SURFI/co-patcher"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Swiss-32B</td>
+<td>Qwen2.5-32B-Instruct</td>
+<td>32B</td>
+<td>Dense</td>
+<td>Agentless</td>
+<td>45.0</td>
+<td><a href="https://github.com/zhenyuhe00/SWE-Swiss"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Swiss/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Swiss/models"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Lego-Qwen3-8B</td>
+<td>Qwen3-8B</td>
+<td>8B</td>
+<td>Dense</td>
+<td>OpenHands</td>
+<td>44.4</td>
+<td><a href="https://github.com/SWE-Lego/SWE-Lego"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Lego/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-8B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Lingma SWE-GPT</td>
+<td>Qwen2.5-72B-Instruct</td>
+<td>72B</td>
+<td>Dense</td>
+<td>SWESynInfer</td>
+<td>30.2</td>
+<td><a href="https://github.com/LingmaTongyi/Lingma-SWE-GPT"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-Gym-Qwen-32B</td>
+<td>Qwen2.5-Coder-32B</td>
+<td>32B</td>
+<td>Dense</td>
+<td>OpenHands, MoatlessTools</td>
+<td>20.6</td>
+<td><a href="https://github.com/SWE-Gym/SWE-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/SWE-Gym"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Lingma SWE-GPT</td>
+<td>Qwen2.5-Coder-7B</td>
+<td>7B</td>
+<td>Dense</td>
+<td>SWESynInfer</td>
+<td>18.2</td>
+<td><a href="https://github.com/LingmaTongyi/Lingma-SWE-GPT"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-Gym-Qwen-14B</td>
+<td>Qwen2.5-Coder-14B</td>
+<td>14B</td>
+<td>Dense</td>
+<td>OpenHands, MoatlessTools</td>
+<td>16.4</td>
+<td><a href="https://github.com/SWE-Gym/SWE-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/SWE-Gym"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>SWE-Gym-Qwen-7B</td>
+<td>Qwen2.5-Coder-7B</td>
+<td>7B</td>
+<td>Dense</td>
+<td>OpenHands, MoatlessTools</td>
+<td>10.6</td>
+<td><a href="https://github.com/SWE-Gym/SWE-Gym"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/SWE-Gym"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="reinforcement-learning-rl-models">🤖 Reinforcement Learning (RL) Models<a class="headerlink" href="#reinforcement-learning-rl-models" title="Permanent link">&para;</a></h2>
-<p><em>A comprehensive overview of specialized models for issue resolution, categorized by parameter size. The table details each model's base architecture, the training scaffold used for rollout, the type of reward signal employed (Outcome vs. Process), and their performance results (Res. \%) on issue resolution benchmarks.</em></p>
+<h3 id="rl-based-methods">RL-based Methods<a class="headerlink" href="#rl-based-methods" title="Permanent link">&para;</a></h3>
+<p><em>A comprehensive overview of specialized models for issue resolution, categorized by parameter size. The table details each model's base architecture, the training scaffold used for rollout, the type of reward signal employed (Outcome vs. Process), and their performance results (Res. %) on issue resolution benchmarks.</em></p>
 <table>
 <thead>
 <tr>
-<th>Model Name</th>
-<th>Base Model</th>
-<th>Size</th>
-<th>Arch.</th>
-<th>Train. Scaffold</th>
-<th>Reward</th>
-<th>Res.(\%)</th>
-<th>Code</th>
-<th>Data</th>
-<th>Model</th>
+<th><strong>Model Name</strong></th>
+<th><strong>Base Model</strong></th>
+<th><strong>Size</strong></th>
+<th><strong>Arch.</strong></th>
+<th><strong>Train. Scaffold</strong></th>
+<th><strong>Reward</strong></th>
+<th><strong>Res.(%)</strong></th>
+<th><strong>Code</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Model</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1128,9 +1317,9 @@
 <td>R2E-Gym</td>
 <td>Outcome</td>
 <td>60.4</td>
-<td><a href="https://github.com/meituan-longcat/LongCat-Flash-Thinking" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/meituan-longcat/LongCat-Flash-Thinking"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td><strong>72B Models</strong></td>
@@ -1152,57 +1341,9 @@
 <td>BugFixer + TestWriter</td>
 <td>Outcome</td>
 <td>60.4</td>
-<td><a href="https://github.com/MoonshotAI/Kimi-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/moonshotai/Kimi-Dev-72B" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td>Multi-turn RL(Nebius)</td>
-<td>Qwen2.5-72B-Instruct</td>
-<td>72B</td>
-<td>Dense</td>
-<td>SWE-agent</td>
-<td>Outcome</td>
-<td>39.0</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
-</tr>
-<tr>
-<td>Agent-RLVR-RM-72B</td>
-<td>Qwen2.5-Coder-72B</td>
-<td>72B</td>
-<td>Dense</td>
-<td>Localization + Repair</td>
-<td>Outcome</td>
-<td>27.8</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
-</tr>
-<tr>
-<td>Agent-RLVR-72B</td>
-<td>Qwen2.5-Coder-72B</td>
-<td>72B</td>
-<td>Dense</td>
-<td>Localization + Repair</td>
-<td>Outcome</td>
-<td>22.4</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
-</tr>
-<tr>
-<td><strong>70B Models</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="https://github.com/MoonshotAI/Kimi-Dev"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/moonshotai/Kimi-Dev-72B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-RL</td>
@@ -1212,33 +1353,45 @@
 <td>Agentless-mini</td>
 <td>Outcome</td>
 <td>41.0</td>
-<td><a href="https://github.com/facebookresearch/swe-rl" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td>/</td>
+<td><a href="https://github.com/facebookresearch/swe-rl"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
-<td><strong>36B Models</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>FoldAgent</td>
-<td>Seed-OSS-36B-Instruct</td>
-<td>36B</td>
+<td>Multi-turn RL(Nebius)</td>
+<td>Qwen2.5-72B-Instruct</td>
+<td>72B</td>
 <td>Dense</td>
-<td>FoldAgent</td>
-<td>Process</td>
-<td>58.0</td>
-<td><a href="https://github.com/sunnweiwei/FoldAgent" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://drive.google.com/file/u/0/d/1aX5xXAN5R-gLKd8A0AY-troxXJRawyAM/view?usp=sharing&pli=1" target="_blank"><img src="https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white" alt="Website"></a></td>
-<td>/</td>
+<td>SWE-agent</td>
+<td>Outcome</td>
+<td>39.0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Agent-RLVR-RM-72B</td>
+<td>Qwen2.5-Coder-72B</td>
+<td>72B</td>
+<td>Dense</td>
+<td>Localization + Repair</td>
+<td>Outcome</td>
+<td>27.8</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Agent-RLVR-72B</td>
+<td>Qwen2.5-Coder-72B</td>
+<td>72B</td>
+<td>Dense</td>
+<td>Localization + Repair</td>
+<td>Outcome</td>
+<td>22.4</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td><strong>32B Models</strong></td>
@@ -1258,35 +1411,47 @@
 <td>32B</td>
 <td>Dense</td>
 <td>SWE-Gym</td>
-<td>/</td>
+<td>-</td>
 <td>66.4</td>
-<td><a href="https://github.com/All-Hands-AI/OpenHands" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/OpenHands/openhands-critic-32b-exp-20250417" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/All-Hands-AI/OpenHands"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/OpenHands/openhands-critic-32b-exp-20250417"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>KAT-Dev-32B</td>
 <td>Qwen3-32B</td>
 <td>32B</td>
 <td>Dense</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
 <td>62.4</td>
-<td>/</td>
-<td>/</td>
-<td><a href="https://huggingface.co/Kwaipilot/KAT-Dev" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td>-</td>
+<td>-</td>
+<td><a href="https://huggingface.co/Kwaipilot/KAT-Dev"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Swiss-32B</td>
 <td>Qwen2.5-32B-Instruct</td>
 <td>32B</td>
 <td>Dense</td>
-<td>/</td>
+<td>-</td>
 <td>Outcome</td>
 <td>60.2</td>
-<td><a href="https://github.com/zhenyuhe00/SWE-Swiss" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/SWE-Swiss/datasets" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-<td><a href="https://huggingface.co/SWE-Swiss/models" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/zhenyuhe00/SWE-Swiss"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Swiss/datasets"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/SWE-Swiss/models"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>FoldAgent</td>
+<td>Seed-OSS-36B-Instruct</td>
+<td>36B</td>
+<td>Dense</td>
+<td>FoldAgent</td>
+<td>Process</td>
+<td>58.0</td>
+<td><a href="https://github.com/sunnweiwei/FoldAgent"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://drive.google.com/file/u/0/d/1aX5xXAN5R-gLKd8A0AY-troxXJRawyAM/view?usp=sharing\&amp;pli=1"><img alt="Website" src="https://img.shields.io/badge/Website-data-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></td>
+<td>-</td>
 </tr>
 <tr>
 <td>SeamlessFlow-32B</td>
@@ -1296,9 +1461,9 @@
 <td>SWE-agent</td>
 <td>Outcome</td>
 <td>45.8</td>
-<td><a href="https://github.com/Chojikun/seamlessflow" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td>/</td>
+<td><a href="https://github.com/Chojikun/seamlessflow"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>DeepSWE</td>
@@ -1308,21 +1473,21 @@
 <td>R2E-Gym</td>
 <td>Outcome</td>
 <td>42.2</td>
-<td><a href="https://github.com/agentica-project/rllm" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/datasets/R2E-Gym/R2E-Gym-Subset" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-<td><a href="https://huggingface.co/agentica-org/DeepSWE-Preview" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/agentica-project/rllm"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/datasets/R2E-Gym/R2E-Gym-Subset"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/agentica-org/DeepSWE-Preview"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SA-SWE-32B</td>
-<td>/</td>
+<td>-</td>
 <td>32B</td>
 <td>Dense</td>
 <td>SkyRL-Agent</td>
-<td>/</td>
+<td>-</td>
 <td>39.4</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>OpenHands LM v0.1</td>
@@ -1330,11 +1495,11 @@
 <td>32B</td>
 <td>Dense</td>
 <td>SWE-Gym</td>
-<td>/</td>
+<td>-</td>
 <td>37.2</td>
-<td><a href="https://github.com/All-Hands-AI/OpenHands" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/OpenHands/openhands-lm-32b-v0.1" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/All-Hands-AI/OpenHands"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/OpenHands/openhands-lm-32b-v0.1"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SWE-Dev-32B</td>
@@ -1344,9 +1509,9 @@
 <td>OpenHands</td>
 <td>Outcome</td>
 <td>36.6</td>
-<td><a href="https://github.com/THUDM/SWE-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/zai-org/SWE-Dev-32B" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/THUDM/SWE-Dev"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/zai-org/SWE-Dev-32B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Satori-SWE</td>
@@ -1356,9 +1521,9 @@
 <td>Retriever + Code editor</td>
 <td>Outcome</td>
 <td>35.8</td>
-<td><a href="https://github.com/satori-reasoning/Satori-SWE" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/Satori-reasoning" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-<td><a href="https://huggingface.co/Satori-reasoning" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/satori-reasoning/Satori-SWE"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/Satori-reasoning"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/Satori-reasoning"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SoRFT-32B</td>
@@ -1368,9 +1533,9 @@
 <td>Agentless</td>
 <td>Outcome</td>
 <td>30.8</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Agent-RLVR-32B</td>
@@ -1380,9 +1545,9 @@
 <td>Localization + Repair</td>
 <td>Outcome</td>
 <td>21.6</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td><strong>14B Models</strong></td>
@@ -1404,9 +1569,9 @@
 <td>Localization + Repair</td>
 <td>Outcome</td>
 <td>18.0</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>SEAlign-14B</td>
@@ -1416,36 +1581,12 @@
 <td>OpenHands</td>
 <td>Process</td>
 <td>17.7</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
-<td><strong>9B Models</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>SWE-Dev-9B</td>
-<td>GLM-4-9B</td>
-<td>9B</td>
-<td>Dense</td>
-<td>OpenHands</td>
-<td>Outcome</td>
-<td>13.6</td>
-<td><a href="https://github.com/THUDM/SWE-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/zai-org/SWE-Dev-9B" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td><strong>8B Models</strong></td>
+<td><strong>7-8B Models</strong></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1464,33 +1605,9 @@
 <td>SWE-agent</td>
 <td>Outcome</td>
 <td>27.4</td>
-<td><a href="https://github.com/Chojikun/seamlessflow" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td>/</td>
-</tr>
-<tr>
-<td>SWE-Dev-8B</td>
-<td>Llama-3.1-8B</td>
-<td>8B</td>
-<td>Dense</td>
-<td>OpenHands</td>
-<td>Outcome</td>
-<td>18.0</td>
-<td><a href="https://github.com/THUDM/SWE-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/zai-org/SWE-Dev-8B" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
-</tr>
-<tr>
-<td><strong>7B Models</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="https://github.com/Chojikun/seamlessflow"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>SWE-Dev-7B</td>
@@ -1500,9 +1617,9 @@
 <td>OpenHands</td>
 <td>Outcome</td>
 <td>23.4</td>
-<td><a href="https://github.com/THUDM/SWE-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td>/</td>
-<td><a href="https://huggingface.co/zai-org/SWE-Dev-7B" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/THUDM/SWE-Dev"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/zai-org/SWE-Dev-7B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SoRFT-7B</td>
@@ -1512,9 +1629,21 @@
 <td>Agentless</td>
 <td>Outcome</td>
 <td>21.4</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-Dev-8B</td>
+<td>Llama-3.1-8B</td>
+<td>8B</td>
+<td>Dense</td>
+<td>OpenHands</td>
+<td>Outcome</td>
+<td>18.0</td>
+<td><a href="https://github.com/THUDM/SWE-Dev"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/zai-org/SWE-Dev-8B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>SEAlign-7B</td>
@@ -1524,48 +1653,70 @@
 <td>OpenHands</td>
 <td>Process</td>
 <td>15.0</td>
-<td>/</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SWE-Dev-9B</td>
+<td>GLM-4-9B</td>
+<td>9B</td>
+<td>Dense</td>
+<td>OpenHands</td>
+<td>Outcome</td>
+<td>13.6</td>
+<td><a href="https://github.com/THUDM/SWE-Dev"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/zai-org/SWE-Dev-9B"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="general-foundation-models">🌟 General Foundation Models<a class="headerlink" href="#general-foundation-models" title="Permanent link">&para;</a></h2>
+<h3 id="general-foundation-models">General Foundation Models<a class="headerlink" href="#general-foundation-models" title="Permanent link">&para;</a></h3>
 <p><em>Overview of general foundation models evaluated on issue resolution. The table details the specific inference scaffolds (e.g., OpenHands, Agentless) employed during the evaluation process to achieve the reported results.</em></p>
 <table>
 <thead>
 <tr>
-<th>Model Name</th>
-<th>Size</th>
-<th>Arch.</th>
-<th>Inf. Scaffold</th>
-<th>Reward</th>
-<th>Res.(\%)</th>
-<th>Code</th>
-<th>Model</th>
+<th><strong>Model Name</strong></th>
+<th><strong>Size</strong></th>
+<th><strong>Arch.</strong></th>
+<th><strong>Inf. Scaffold</strong></th>
+<th><strong>Reward</strong></th>
+<th><strong>Res.(%)</strong></th>
+<th><strong>Code</strong></th>
+<th><strong>Model</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>MiMo-V2-Flash</td>
+<td>309B-A15B</td>
+<td>MoE</td>
+<td>Agentless</td>
+<td>Outcome</td>
+<td>73.4</td>
+<td><a href="https://github.com/XiaomiMiMo/MiMo-V2-Flash"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
 <td>KAT-Coder</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
 <td>Claude Code</td>
 <td>Outcome</td>
 <td>73.4</td>
-<td>/</td>
-<td><a href="https://www.modelscope.cn/models/Kwaipilot/KAT-Dev-72B-Exp" target="_blank"><img src="https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white" alt="Website"></a></td>
+<td>-</td>
+<td><a href="https://www.modelscope.cn/models/Kwaipilot/KAT-Dev-72B-Exp"><img alt="Website" src="https://img.shields.io/badge/Website-model-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Deepseek V3.2</td>
 <td>671B-A37B</td>
 <td>MoE</td>
 <td>Claude Code, RooCode</td>
-<td>/</td>
+<td>-</td>
 <td>73.1</td>
-<td><a href="https://github.com/deepseek-ai/DeepSeek-V3.2-Exp" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/deepseek-ai/DeepSeek-V3.2-Exp"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Kimi-K2-Instruct</td>
@@ -1574,8 +1725,8 @@
 <td>Agentless</td>
 <td>Outcome</td>
 <td>71.6</td>
-<td>/</td>
-<td><a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td>-</td>
+<td><a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Qwen3-Coder</td>
@@ -1584,8 +1735,18 @@
 <td>OpenHands</td>
 <td>Outcome</td>
 <td>69.6</td>
-<td><a href="https://github.com/QwenLM/Qwen3-Coder" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/collections/Qwen/qwen3-coder" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/QwenLM/Qwen3-Coder"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/collections/Qwen/qwen3-coder"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>GLM-4.6</td>
+<td>355B-A32B</td>
+<td>MoE</td>
+<td>OpenHands</td>
+<td>Outcome</td>
+<td>68.0</td>
+<td>-</td>
+<td><a href="https://huggingface.co/zai-org/GLM-4.6"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>gpt-oss-120b</td>
@@ -1594,8 +1755,8 @@
 <td>Internal tool</td>
 <td>Outcome</td>
 <td>62.0</td>
-<td><a href="https://github.com/openai/gpt-oss" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/openai/gpt-oss"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/openai/gpt-oss-120b"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Minimax M2</td>
@@ -1604,8 +1765,18 @@
 <td>R2E-Gym</td>
 <td>Outcome</td>
 <td>61.0</td>
-<td><a href="https://github.com/MiniMax-AI/MiniMax-M2" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/MiniMax-AI/MiniMax-M2"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>gpt-oss-20b</td>
+<td>20.9B-A3.6B</td>
+<td>MoE</td>
+<td>Internal tool</td>
+<td>Outcome</td>
+<td>60.0</td>
+<td><a href="https://github.com/openai/gpt-oss"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/openai/gpt-oss-20b"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>GLM-4.5-Air</td>
@@ -1614,8 +1785,8 @@
 <td>OpenHands</td>
 <td>Outcome</td>
 <td>57.6</td>
-<td>/</td>
-<td>/</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Minimax M1-80k</td>
@@ -1624,8 +1795,8 @@
 <td>Agentless</td>
 <td>Outcome</td>
 <td>56.0</td>
-<td><a href="https://github.com/MiniMax-AI/MiniMax-M1" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://www.modelscope.cn/models/MiniMax/MiniMax-M1-80k" target="_blank"><img src="https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white" alt="Website"></a></td>
+<td><a href="https://github.com/MiniMax-AI/MiniMax-M1"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://www.modelscope.cn/models/MiniMax/MiniMax-M1-80k"><img alt="Website" src="https://img.shields.io/badge/Website-model-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Minimax M1-40k</td>
@@ -1634,8 +1805,18 @@
 <td>Agentless</td>
 <td>Outcome</td>
 <td>55.6</td>
-<td><a href="https://github.com/MiniMax-AI/MiniMax-M1" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://www.modelscope.cn/models/MiniMax/MiniMax-M1-40k/summary" target="_blank"><img src="https://img.shields.io/badge/Website-4285F4?logo=google-chrome&logoColor=white" alt="Website"></a></td>
+<td><a href="https://github.com/MiniMax-AI/MiniMax-M1"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://www.modelscope.cn/models/MiniMax/MiniMax-M1-40k/summary"><img alt="Website" src="https://img.shields.io/badge/Website-model-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></td>
+</tr>
+<tr>
+<td>Seed1.5-Thinking</td>
+<td>200B-A20B</td>
+<td>MoE</td>
+<td>-</td>
+<td>Outcome</td>
+<td>47.0</td>
+<td><a href="https://github.com/ByteDance-Seed/Seed-Thinking-v1.5"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td>-</td>
 </tr>
 <tr>
 <td>Llama 4 Maverick</td>
@@ -1644,8 +1825,8 @@
 <td>mini-SWE-agent</td>
 <td>Outcome</td>
 <td>21.0</td>
-<td><a href="https://github.com/meta-llama/llama-models/tree/main/models/llama4" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/meta-llama/llama-models/tree/main/models/llama4"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 <tr>
 <td>Llama 4 Scout</td>
@@ -1654,8 +1835,8 @@
 <td>mini-SWE-agent</td>
 <td>Outcome</td>
 <td>9.1</td>
-<td><a href="https://github.com/meta-llama/llama-models/tree/main/models/llama4" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"></a></td>
-<td><a href="https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct" target="_blank"><img src="https://img.shields.io/badge/🤗-HuggingFace-yellow" alt="HuggingFace"></a></td>
+<td><a href="https://github.com/meta-llama/llama-models/tree/main/models/llama4"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></td>
+<td><a href="https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"><img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&amp;logoColor=white" /></a></td>
 </tr>
 </tbody>
 </table>

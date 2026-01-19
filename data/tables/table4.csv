@@ -1,0 +1,32 @@
+Model Name,Base Model,Size,Arch.,Train. Scaffold,Reward,Res.(%),Code,Data,Model
+**560B Models (MoE)**,,,,,,,,,
+LongCat-Flash-Think,LongCatFlash-Base,560B-A27B,MoE,R2E-Gym,Outcome,60.4,\ghlink{https://github.com/meituan-longcat/LongCat-Flash-Thinking},-,\hflink{https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking}
+**72B Models**,,,,,,,,,
+Kimi-Dev,Qwen 2.5-72B-Base,72B,Dense,BugFixer + TestWriter,Outcome,60.4,\ghlink{https://github.com/MoonshotAI/Kimi-Dev},-,\hflink{https://huggingface.co/moonshotai/Kimi-Dev-72B}
+SWE-RL,Llama-3.3-70B-Instruct,70B,Dense,Agentless-mini,Outcome,41.0,\ghlink{https://github.com/facebookresearch/swe-rl},-,-
+Multi-turn RL(Nebius),Qwen2.5-72B-Instruct,72B,Dense,SWE-agent,Outcome,39.0,-,-,-
+Agent-RLVR-RM-72B,Qwen2.5-Coder-72B,72B,Dense,Localization + Repair,Outcome,27.8,-,-,-
+Agent-RLVR-72B,Qwen2.5-Coder-72B,72B,Dense,Localization + Repair,Outcome,22.4,-,-,-
+**32B Models**,,,,,,,,,
+OpenHands Critic,Qwen2.5-Coder-32B,32B,Dense,SWE-Gym,-,66.4,\ghlink{https://github.com/All-Hands-AI/OpenHands},-,\hflink{https://huggingface.co/OpenHands/openhands-critic-32b-exp-20250417}
+KAT-Dev-32B,Qwen3-32B,32B,Dense,-,-,62.4,-,-,\hflink{https://huggingface.co/Kwaipilot/KAT-Dev}
+SWE-Swiss-32B,Qwen2.5-32B-Instruct,32B,Dense,-,Outcome,60.2,\ghlink{https://github.com/zhenyuhe00/SWE-Swiss},\hflink{https://huggingface.co/SWE-Swiss/datasets},\hflink{https://huggingface.co/SWE-Swiss/models}
+FoldAgent,Seed-OSS-36B-Instruct,36B,Dense,FoldAgent,Process,58.0,\ghlink{https://github.com/sunnweiwei/FoldAgent},\bloglink{https://drive.google.com/file/u/0/d/1aX5xXAN5R-gLKd8A0AY-troxXJRawyAM/view?usp=sharing\&pli=1},-
+SeamlessFlow-32B,Qwen3-32B,32B,Dense,SWE-agent,Outcome,45.8,\ghlink{https://github.com/Chojikun/seamlessflow},-,-
+DeepSWE,Qwen3-32B,32B,Dense,R2E-Gym,Outcome,42.2,\ghlink{https://github.com/agentica-project/rllm},\hflink{https://huggingface.co/datasets/R2E-Gym/R2E-Gym-Subset},\hflink{https://huggingface.co/agentica-org/DeepSWE-Preview}
+SA-SWE-32B,-,32B,Dense,SkyRL-Agent,-,39.4,-,-,-
+OpenHands LM v0.1,Qwen2.5-Coder-32B,32B,Dense,SWE-Gym,-,37.2,\ghlink{https://github.com/All-Hands-AI/OpenHands},-,\hflink{https://huggingface.co/OpenHands/openhands-lm-32b-v0.1}
+SWE-Dev-32B,Qwen2.5-Coder-32B,32B,Dense,OpenHands,Outcome,36.6,\ghlink{https://github.com/THUDM/SWE-Dev},-,\hflink{https://huggingface.co/zai-org/SWE-Dev-32B}
+Satori-SWE,Qwen2.5-Coder-32B,32B,Dense,Retriever + Code editor,Outcome,35.8,\ghlink{https://github.com/satori-reasoning/Satori-SWE},\hflink{https://huggingface.co/Satori-reasoning},\hflink{https://huggingface.co/Satori-reasoning}
+SoRFT-32B,Qwen2.5-Coder-32B,32B,Dense,Agentless,Outcome,30.8,-,-,-
+Agent-RLVR-32B,Qwen2.5-Coder-32B,32B,Dense,Localization + Repair,Outcome,21.6,-,-,-
+**14B Models**,,,,,,,,,
+Agent-RLVR-14B,Qwen2.5-Coder-14B,14B,Dense,Localization + Repair,Outcome,18.0,-,-,-
+SEAlign-14B,Qwen2.5-Coder-14B,14B,Dense,OpenHands,Process,17.7,-,-,-
+**7-8B Models**,,,,,,,,,
+SeamlessFlow-8B,Qwen3-8B,8B,Dense,SWE-agent,Outcome,27.4,\ghlink{https://github.com/Chojikun/seamlessflow},-,-
+SWE-Dev-7B,Qwen2.5-Coder-7B,7B,Dense,OpenHands,Outcome,23.4,\ghlink{https://github.com/THUDM/SWE-Dev},-,\hflink{https://huggingface.co/zai-org/SWE-Dev-7B}
+SoRFT-7B,Qwen2.5-Coder-7B,7B,Dense,Agentless,Outcome,21.4,-,-,-
+SWE-Dev-8B,Llama-3.1-8B,8B,Dense,OpenHands,Outcome,18.0,\ghlink{https://github.com/THUDM/SWE-Dev},-,\hflink{https://huggingface.co/zai-org/SWE-Dev-8B}
+SEAlign-7B,Qwen2.5-Coder-7B,7B,Dense,OpenHands,Process,15.0,-,-,-
+SWE-Dev-9B,GLM-4-9B,9B,Dense,OpenHands,Outcome,13.6,\ghlink{https://github.com/THUDM/SWE-Dev},-,\hflink{https://huggingface.co/zai-org/SWE-Dev-9B}

@@ -1,267 +1,296 @@
-# Tool
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Tool-Augmented Methods
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "MAGIS"
-  title: "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution"
-  authors: "Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: MAGIS
+  title: 'MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution'
+  authors: Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng
+  year: '2024'
+  venue: The Thirty-eighth Annual Conference on Neural Information Processing Systems
+    2024
   links:
-    arxiv: "https://arxiv.org/abs/2403.17927"
-
-- short_name: "AutoCodeRover"
-  title: "AutoCodeRover: Autonomous Program Improvement"
-  authors: "Yuntong Zhang, Haifeng Ruan, Zhiyu Fan, Abhik Roychoudhury"
-  venue: "33rd ACM SIGSOFT International Symposium on Software Testing and Analysis 2024"
-  year: "2024"
+    openreview: https://openreview.net/forum?id=qevq3FZ63J
+- short_name: AutoCodeRover
+  title: 'AutoCodeRover: Autonomous Program Improvement'
+  authors: Zhang, Yuntong, Ruan, Haifeng, Fan, Zhiyu, Roychoudhury, Abhik
+  year: '2024'
+  venue: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing
+    and Analysis 2024
   links:
-    arxiv: "http://dx.doi.org/10.1145/3650212.3680384"
-
-- short_name: "SWE-agent"
-  title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"
-  authors: "John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press"
-  venue: "arXiv 2024"
-  year: "2024"
+    doi: http://dx.doi.org/10.1145/3650212.3680384
+- short_name: SWE-agent
+  title: 'Swe-agent: Agent-computer interfaces enable automated software engineering'
+  authors: Yang, John, Jimenez, Carlos E, Wettig, Alexander, Lieret, Kilian, Yao,
+    Shunyu, Narasimhan, Karthik, Press, Ofir
+  year: '2024'
+  venue: Advances in Neural Information Processing Systems 2024
+- short_name: Alibaba LingmaAgent
+  title: 'Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive
+    Repository Exploration'
+  authors: Ma, Yingwei, Yang, Qingping, Cao, Rongyu, Li, Binhua, Huang, Fei, Li, Yongbin
+  year: '2025'
+  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
+    Software Engineering 2025
   links:
-    arxiv: "https://arxiv.org/abs/2405.15793"
-
-- short_name: "Alibaba LingmaAgent"
-  title: "Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive Repository Exploration"
-  authors: "Yingwei Ma, Qingping Yang, Rongyu Cao, Binhua Li, Fei Huang, Yongbin Li"
-  venue: "33rd ACM International Conference on the Foundations of Software Engineering 2025"
-  year: "2025"
+    doi: http://dx.doi.org/10.1145/3696630.3728549
+- short_name: OpenHands
+  title: 'OpenHands: An Open Platform for AI Software Developers as Generalist Agents'
+  authors: Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen
+    Zhuge, Jiayi Pan et al.
+  year: '2025'
+  venue: The Thirteenth International Conference on Learning Representations 2025
   links:
-    arxiv: "http://dx.doi.org/10.1145/3696630.3728549"
-
-- short_name: "OpenHands"
-  title: "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
-  authors: "Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen Zhuge, Jiayi Pan, Yueqi Song, Bowen Li, Jaskirat Singh, Hoang H. Tran, Fuqiang Li, Ren Ma, Mingzhang Zheng, Bill Qian, Yanjun Shao, Niklas Muennighoff, Yizhe Zhang, Binyuan Hui, Junyang Lin, Robert Brennan, Hao Peng, Heng Ji, Graham Neubig"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=OJd3ayDDoF
+- short_name: SpecRover
+  title: 'SpecRover: Code Intent Extraction via LLMs'
+  authors: Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury
+  year: '2025'
+  venue: ICSE 2025
+- short_name: MarsCode Agent
+  title: 'MarsCode Agent: AI-native Automated Bug Fixing'
+  authors: Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang,
+    Chao Peng
+  year: '2024'
+  venue: arXiv preprint arXiv:2409.00899 2024
   links:
-    arxiv: "https://arxiv.org/abs/2407.16741"
-
-- short_name: "SpecRover"
-  title: "SpecRover: Code Intent Extraction via LLMs"
-  authors: "Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury"
-  venue: "2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE) 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2409.00899
+- short_name: RepoGraph
+  title: 'RepoGraph: Enhancing AI Software Engineering with Repository-level Code
+    Graph'
+  authors: Ouyang, Siru, Yu, Wenhao, Ma, Kaixin, Xiao, Zilin, Zhang, Zhihan, Jia,
+    Mengzhao, Han, Jiawei et al.
+  year: ''
+  venue: The Thirteenth International Conference on Learning Representations
+- short_name: SuperCoder2.0
+  title: 'SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as
+    Autonomous Programmer'
+  authors: Anmol Gautam, Kishore Kumar, Adarsh Jha, Mukunda NS, Ishaan Bhola
+  year: '2024'
+  venue: arXiv preprint arXiv:2409.11190 2024
   links:
-    arxiv: "http://dx.doi.org/10.1109/ICSE55347.2025.00080"
-
-- short_name: "MarsCode Agent"
-  title: "MarsCode Agent: AI-native Automated Bug Fixing"
-  authors: "Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang, Chao Peng"
-  venue: "arXiv 2024"
-  year: "2024"
+    arxiv: https://arxiv.org/abs/2409.11190
+- short_name: EvoCoder
+  title: 'LLMs as Continuous Learners: Improving the Reproduction of Defective Code
+    in Software Issues'
+  authors: Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin
+    Li
+  year: '2024'
+  venue: arXiv preprint arXiv:2411.13941 2024
   links:
-    arxiv: "https://arxiv.org/abs/2409.00899"
-
-- short_name: "RepoGraph"
-  title: "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph"
-  authors: "Siru Ouyang, Wenhao Yu, Kaixin Ma, Zilin Xiao, Zhihan Zhang, Mengzhao Jia, Jiawei Han, Hongming Zhang, Dong Yu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2411.13941
+- short_name: AEGIS
+  title: 'AEGIS: An Agent-based Framework for General Bug Reproduction from Issue
+    Descriptions'
+  authors: Xinchen Wang, Pengfei Gao, Xiangxin Meng, Chao Peng, Ruida Hu, Yun Lin,
+    Cuiyun Gao
+  year: '2025'
+  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
+    Software Engineering 2025
+- short_name: CoRNStack
+  title: 'CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking'
+  authors: Tarun Suresh, Revanth Gangi Reddy, Yifei Xu, Zach Nussbaum, Andriy Mulyar,
+    Brandon Duderstadt, Heng Ji
+  year: '2025'
+  venue: The Thirteenth International Conference on Learning Representations 2025
   links:
-    arxiv: "https://arxiv.org/abs/2410.14684"
-
-- short_name: "SuperCoder2.0"
-  title: "SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as Autonomous Programmer"
-  authors: "Anmol Gautam, Kishore Kumar, Adarsh Jha, Mukunda NS, Ishaan Bhola"
-  venue: "arXiv 2024"
-  year: "2024"
+    openreview: https://openreview.net/forum?id=iyJOUELYir
+- short_name: OrcaLoca
+  title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
+  authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
+    Jishen Zhao
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
   links:
-    arxiv: "https://arxiv.org/abs/2409.11190"
-
-- short_name: "EvoCoder"
-  title: "LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues"
-  authors: "Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin Li"
-  venue: "arXiv 2024"
-  year: "2024"
+    openreview: https://openreview.net/forum?id=LyUfPOvM6I
+- short_name: DARS
+  title: 'DARS: Dynamic Action Re-Sampling to Enhance Coding Agent Performance by
+    Adaptive Tree Traversal'
+  authors: Vaibhav Aggarwal, Ojasv Kamal, Abhinav Japesh, Zhijing Jin, Bernhard Schölkopf
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.14269 2025
   links:
-    arxiv: "https://arxiv.org/abs/2411.13941"
-
-- short_name: "AEGIS"
-  title: "AEGIS: An Agent-based Framework for General Bug Reproduction from Issue Descriptions"
-  authors: "Xinchen Wang, Pengfei Gao, Xiangxin Meng, Chao Peng, Ruida Hu, Yun Lin, Cuiyun Gao"
-  venue: "arXiv 2024"
-  year: "2024"
+    arxiv: https://arxiv.org/abs/2503.14269
+- short_name: Otter
+  title: 'Otter: Generating Tests from Issues to Validate SWE Patches'
+  authors: Toufique Ahmed, Jatin Ganhotra, Rangeet Pan, Avraham Shinnar, Saurabh Sinha,
+    Martin Hirzel
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
   links:
-    arxiv: "https://arxiv.org/abs/2411.18015"
-
-- short_name: "OrcaLoca"
-  title: "OrcaLoca: An LLM Agent Framework for Software Issue Localization"
-  authors: "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=b0jYs6JOZu
+- short_name: Quadropic Insiders
+  title: 'Quadropic Insiders : Syntheo Tops Swelite Feb'
+  authors: Quadropic-Team
+  year: '2025'
+  venue: '2025'
   links:
-    arxiv: "https://arxiv.org/abs/2502.00350"
-
-- short_name: "Otter"
-  title: "Otter: Generating Tests from Issues to Validate SWE Patches"
-  authors: "Toufique Ahmed, Jatin Ganhotra, Rangeet Pan, Avraham Shinnar, Saurabh Sinha, Martin Hirzel"
-  venue: "arXiv 2025"
-  year: "2025"
+    website: https://insiders.quadropic.com/insiders/syntheo-tops-swelite-feb
+- short_name: Issue2Test
+  title: 'Issue2Test: Generating Reproducing Test Cases from Issue Reports'
+  authors: Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.16320 2025
   links:
-    arxiv: "https://arxiv.org/abs/2502.05368"
-
-- short_name: "CoRNStack"
-  title: "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking"
-  authors: "Tarun Suresh, Revanth Gangi Reddy, Yifei Xu, Zach Nussbaum, Andriy Mulyar, Brandon Duderstadt, Heng Ji"
-  venue: "The Thirteenth International Conference on Learning Representations 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2503.16320
+- short_name: KGCompass
+  title: Enhancing repository-level software repair via repository-aware knowledge
+    graphs
+  authors: Boyang Yang, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le, Haoye
+    Tian
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.21710 2025
   links:
-    arxiv: "https://openreview.net/forum?id=iyJOUELYir"
-
-- short_name: "Issue2Test"
-  title: "Issue2Test: Generating Reproducing Test Cases from Issue Reports"
-  authors: "Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2503.21710
+- short_name: CoSIL
+  title: Issue Localization via LLM-Driven Iterative Code Graph Searching
+  authors: Zhonghao Jiang, Xiaoxue Ren, Meng Yan, Wei Jiang, Yong Li, Zhongxin Liu
+  year: '2025'
+  venue: ASE 2025
+- short_name: InfantAgent-Next
+  title: 'InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction'
+  authors: Bin Lei, Weitai Kang, Zijian Zhang, Winson Chen, Xi Xie, Shan Zuo, Mimi
+    Xie et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.10887 2025
   links:
-    arxiv: "https://arxiv.org/abs/2503.16320"
-
-- short_name: "KGCompass"
-  title: "Enhancing repository-level software repair via repository-aware knowledge graphs"
-  authors: "Boyang Yang, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le, Haoye Tian"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.10887
+- short_name: Co-PatcheR
+  title: 'Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small
+    Reasoning Models'
+  authors: Yuheng Tang, Hongwei Li, Kaijie Zhu, Michael Yang, Yangruibo Ding, Wenbo
+    Guo
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.18955 2025
   links:
-    arxiv: "https://arxiv.org/abs/2503.21710"
-
-- short_name: "CoSIL"
-  title: "Issue Localization via LLM-Driven Iterative Code Graph Searching"
-  authors: "Zhonghao Jiang, Xiaoxue Ren, Meng Yan, Wei Jiang, Yong Li, Zhongxin Liu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.18955
+- short_name: SWERank
+  title: 'SweRank: Software Issue Localization with Code Ranking'
+  authors: Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen,
+    Yingbo Zhou, Semih Yavuz et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.07849 2025
   links:
-    arxiv: "https://arxiv.org/abs/2503.22424"
-
-- short_name: "InfantAgent-Next"
-  title: "InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction"
-  authors: "Bin Lei, Weitai Kang, Zijian Zhang, Winson Chen, Xi Xie, Shan Zuo, Mimi Xie, Ali Payani, Mingyi Hong, Yan Yan, Caiwen Ding"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.07849
+- short_name: Nemotron-CORTEXA
+  title: 'Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via
+    Improved Localization and Solution Diversity'
+  authors: Atefeh Sohrabizadeh, Jialin Song, Mingjie Liu, Rajarshi Roy, Chankyu Lee,
+    Jonathan Raiman, Bryan Catanzaro
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.10887"
-
-- short_name: "Co-PatcheR"
-  title: "Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small Reasoning Models"
-  authors: "Yuheng Tang, Hongwei Li, Kaijie Zhu, Michael Yang, Yangruibo Ding, Wenbo Guo"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=k6p8UKRdH7
+- short_name: LCLM
+  title: 'Putting It All into Context: Simplifying Agents with LCLMs'
+  authors: Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori
+    Hashimoto
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.08120 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.18955"
-
-- short_name: "SWERank"
-  title: "SweRank: Software Issue Localization with Code Ranking"
-  authors: "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz, Caiming Xiong, Heng Ji, Shafiq Joty"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.08120
+- short_name: SACL
+  title: 'SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented
+    Reranking and Localization'
+  authors: Dhruv Gupta, Gayathri Ganesh Lakshmy, Yiqing Xie
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.20081 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.07849"
-
-- short_name: "Nemotron-CORTEXA"
-  title: "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity"
-  authors: "Atefeh Sohrabizadeh, Jialin Song, Mingjie Liu, Rajarshi Roy, Chankyu Lee, Jonathan Raiman, Bryan Catanzaro"
-  venue: "Forty-second International Conference on Machine Learning 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.20081
+- short_name: SWE-Debate
+  title: 'SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution'
+  authors: Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao
+    Jia et al.
+  year: '2026'
+  venue: ICSE 2026
+- short_name: OpenHands-Versa
+  title: Coding Agents with Multimodal Browsing are Generalist Problem Solvers
+  authors: Soni, Aditya Bharat, Li, Boxuan, Wang, Xingyao, Chen, Valerie, Neubig,
+    Graham
+  year: ''
+  venue: ICML 2025 Workshop on Computer Use Agents
+- short_name: SemAgent
+  title: 'SemAgent: A Semantics Aware Program Repair Agent'
+  authors: Anvith Pabba, Alex Mathai, Anindya Chakraborty, Baishakhi Ray
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.16650 2025
   links:
-    arxiv: "https://openreview.net/forum?id=k6p8UKRdH7"
-
-- short_name: "LCLM"
-  title: "Putting It All into Context: Simplifying Agents with LCLMs"
-  authors: "Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori Hashimoto"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.16650
+- short_name: Repeton
+  title: 'Repeton: Structured Bug Repair with ReAct-Guided Patch-and-Test Cycles'
+  authors: Nguyen Phu Vinh, Anh Chung Hoang, Chris Ngo, Truong-Son Hy
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.08173 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.08120"
-
-- short_name: "SACL"
-  title: "SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented Reranking and Localization"
-  authors: "Dhruv Gupta, Gayathri Ganesh Lakshmy, Yiqing Xie"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.08173
+- short_name: cAST
+  title: 'cAST: Enhancing Code Retrieval-Augmented Generation with Structural Chunking
+    via Abstract Syntax Tree'
+  authors: Yilin Zhang, Xinran Zhao, Zora Zhiruo Wang, Chenyang Yang, Jiayi Wei, Tongshuang
+    Wu
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.15655 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.20081"
-
-- short_name: "SWE-Debate"
-  title: "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution"
-  authors: "Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao Jia, Tao Huang, Qianxiang Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.15655
+- short_name: Prometheus
+  title: 'Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual
+    Codebases'
+  authors: Zimin Chen, Yue Pan, Siyu Lu, Jiayi Xu, Claire Le Goues, Martin Monperrus,
+    He Ye
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.19942 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.23348"
-
-- short_name: "OpenHands-Versa"
-  title: "Coding Agents with Multimodal Browsing are Generalist Problem Solvers"
-  authors: "Aditya Bharat Soni, Boxuan Li, Xingyao Wang, Valerie Chen, Graham Neubig"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.19942
+- short_name: Git Context Controller
+  title: 'Git Context Controller: Manage the Context of LLM-based Agents like Git'
+  authors: Junde Wu
+  year: '2025'
+  venue: arXiv preprint arXiv:2508.00031 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.03011"
-
-- short_name: "Repeton"
-  title: "Repeton: Structured Bug Repair with ReAct-Guided Patch-and-Test Cycles"
-  authors: "Nguyen Phu Vinh, Anh Chung Hoang, Chris Ngo, Truong-Son Hy"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2508.00031
+- short_name: Trae Agent
+  title: 'Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling'
+  authors: Trae Research Team, Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang,
+    Ruida Hu, Yuanan Xiao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.23370 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.08173"
-
-- short_name: "cAST"
-  title: "cAST: Enhancing Code Retrieval-Augmented Generation with Structural Chunking via Abstract Syntax Tree"
-  authors: "Yilin Zhang, Xinran Zhao, Zora Zhiruo Wang, Chenyang Yang, Jiayi Wei, Tongshuang Wu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.23370
+- short_name: BugPilot
+  title: 'BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills'
+  authors: Atharv Sonwane, Isadora White, Hyunji Lee, Matheus Pereira, Lucas Caccia,
+    Minseon Kim, Zhengyan Shi et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.19898 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.15655"
-
-- short_name: "Prometheus"
-  title: "Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual Codebases"
-  authors: "Zimin Chen, Yue Pan, Siyu Lu, Jiayi Xu, Claire Le Goues, Martin Monperrus, He Ye"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2510.19898
+- short_name: TestPrune
+  title: 'When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue
+    Resolution'
+  authors: Yang Chen, Toufique Ahmed, Reyhaneh Jabbarvand, Martin Hirzel
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.18270 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.19942"
-
-- short_name: "Git Context Controller"
-  title: "Git Context Controller: Manage the Context of LLM-based Agents like Git"
-  authors: "Junde Wu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2510.18270
+- short_name: Meta-RAG
+  title: Meta-RAG on Large Codebases Using Code Summarization
+  authors: Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso
+  year: '2025'
+  venue: arXiv preprint arXiv:2508.02611 2025
   links:
-    arxiv: "https://arxiv.org/abs/2508.00031"
-
-- short_name: "Trae Agent"
-  title: "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling"
-  authors: "Trae Research Team, Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang, Ruida Hu, Yuanan Xiao, Yizhou Liu, Zhao Zhang, Junjie Chen, Cuiyun Gao, Yun Lin, Yingfei Xiong, Chao Peng, Xia Liu"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2508.02611
+- short_name: InfCode
+  title: 'InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable
+    Software Issue Resolution'
+  authors: KeFan Li, Mengfei Wang, Hengzhi Zhang, Zhichao Li, Yuan Yuan, Mu Li, Xiang
+    Gao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2511.16004 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.23370"
-
-- short_name: "TestPrune"
-  title: "When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue Resolution"
-  authors: "Yang Chen, Toufique Ahmed, Reyhaneh Jabbarvand, Martin Hirzel"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2511.16004
+- short_name: GraphLocator
+  title: 'GraphLocator: Graph-guided Causal Reasoning for Issue Localization'
+  authors: Wei Liu, Chao Peng, Pengfei Gao, Aofan Liu, Wei Zhang, Haiyan Zhao, Zhi
+    Jin
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.22469 2025
   links:
-    arxiv: "https://arxiv.org/abs/2510.18270"
-
-- short_name: "e-Otter++"
-  title: "Execution-Feedback Driven Test Generation from SWE Issues"
-  authors: "Toufique Ahmed, Jatin Ganhotra, Avraham Shinnar, Martin Hirzel"
-  venue: "arXiv 2025"
-  year: "2025"
-  links:
-    arxiv: "https://arxiv.org/abs/2508.06365"
-
-- short_name: "Meta-RAG"
-  title: "Meta-RAG on Large Codebases Using Code Summarization"
-  authors: "Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso"
-  venue: "arXiv 2025"
-  year: "2025"
-  links:
-    arxiv: "https://arxiv.org/abs/2508.02611"
-
+    arxiv: https://arxiv.org/abs/2512.22469

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-自动从 YAML 数据文件渲染论文列表到 Markdown 文档。
-使用原网站的格式：简单列表 + shields.io 风格图片徽章。
+Auto-render paper lists from YAML data files to Markdown documents.
+Uses shields.io style image badges.
 
-用法:
+Usage:
     python scripts/render_papers.py
 """
 import re
@@ -15,12 +15,23 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
 
-# shields.io 徽章 URL
+# Category list for counting unique papers
+CATEGORIES = [
+    "evaluation_datasets", "training_datasets", "single_agent", "multi_agent",
+    "workflow", "tool", "memory", "sft", "rl", "inference_scaling",
+    "data_collection", "data_synthesis", "data_analysis", "methods_analysis"
+]
+
+# shields.io badge URLs (different platforms use different colors and icons)
 ARXIV_BADGE = "https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white"
+OPENREVIEW_BADGE = "https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white"
+ACL_BADGE = "https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&logoColor=white"
+DOI_BADGE = "https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white"
+WEBSITE_BADGE = "https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white"
 GITHUB_BADGE = "https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white"
 HF_BADGE = "https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white"
 
-# 正则匹配 <!-- START PAPERS:xxx --> ... <!-- END PAPERS:xxx -->
+# Regex pattern: <!-- START PAPERS:xxx --> ... <!-- END PAPERS:xxx -->
 BLOCK_RE = re.compile(
     r"<!-- START PAPERS:(\w+) -->(.*?)<!-- END PAPERS:\1 -->",
     re.DOTALL
@@ -28,67 +39,132 @@ BLOCK_RE = re.compile(
 
 
 def badge_arxiv(url: str) -> str:
-    """生成 arXiv 图片徽章。"""
+    """Generate arXiv badge."""
     if not url:
         return ""
     return f'[![arXiv]({ARXIV_BADGE})]({url}){{: target="_blank" }}'
 
 
+def badge_openreview(url: str) -> str:
+    """Generate OpenReview badge."""
+    if not url:
+        return ""
+    return f'[![OpenReview]({OPENREVIEW_BADGE})]({url}){{: target="_blank" }}'
+
+
+def badge_acl(url: str) -> str:
+    """Generate ACL Anthology badge."""
+    if not url:
+        return ""
+    return f'[![ACL]({ACL_BADGE})]({url}){{: target="_blank" }}'
+
+
+def badge_doi(url: str) -> str:
+    """Generate DOI badge."""
+    if not url:
+        return ""
+    return f'[![DOI]({DOI_BADGE})]({url}){{: target="_blank" }}'
+
+
+def badge_website(url: str) -> str:
+    """Generate Website badge."""
+    if not url:
+        return ""
+    return f'[![Website]({WEBSITE_BADGE})]({url}){{: target="_blank" }}'
+
+
 def badge_github(url: str) -> str:
-    """生成 GitHub 图片徽章。"""
+    """Generate GitHub badge."""
     if not url:
         return ""
     return f'[![GitHub]({GITHUB_BADGE})]({url}){{: target="_blank" }}'
 
 
 def badge_huggingface(url: str) -> str:
-    """生成 HuggingFace 图片徽章。"""
+    """Generate HuggingFace badge."""
     if not url:
         return ""
     return f'[![HuggingFace]({HF_BADGE})]({url}){{: target="_blank" }}'
 
 
 def load_yaml(path: Path) -> list:
-    """加载 YAML 文件并返回条目列表。"""
+    """Load YAML file and return list of entries."""
     if not path.exists():
-        print(f"[WARN] {path} 不存在，跳过。", file=sys.stderr)
+        print(f"[WARN] {path} does not exist, skipping.", file=sys.stderr)
         return []
     try:
         data = yaml.safe_load(path.read_text(encoding="utf-8")) or []
         return data
     except Exception as ex:
-        print(f"[ERR] 加载 {path} 失败: {ex}", file=sys.stderr)
+        print(f"[ERR] Failed to load {path}: {ex}", file=sys.stderr)
         return []
 
 
+def count_unique_papers() -> int:
+    """Count unique papers across all categories."""
+    unique_papers = set()
+    
+    for category_id in CATEGORIES:
+        yaml_file = f"papers_{category_id}.yaml"
+        yaml_path = DATA_DIR / yaml_file
+        
+        entries = load_yaml(yaml_path)
+        if not entries:
+            continue
+        
+        for entry in entries:
+            # Use short_name as primary identifier
+            # Fall back to title if no short_name
+            short_name = entry.get('short_name', '').strip()
+            title = entry.get('title', '').strip()
+            if short_name:
+                unique_papers.add(('short_name', short_name.lower()))
+            elif title:
+                unique_papers.add(('title', title.lower()))
+    
+    return len(unique_papers)
+
+
 def render_paper_item(entry: dict) -> str:
-    """渲染单个论文为列表项 - 原网站格式。"""
+    """Render a single paper as a list item."""
     short_name = entry.get("short_name", "").strip()
     full_title = entry.get("title", "").strip()
     year = entry.get("year", "").strip()
     links = entry.get("links", {}) or {}
     
     arxiv = links.get("arxiv", "")
+    openreview = links.get("openreview", "")
+    acl = links.get("acl", "")
+    doi = links.get("doi", "")
+    website = links.get("website", "")
     github = links.get("github", "")
     huggingface = links.get("huggingface", "")
     
-    # 如果简短名称和完整标题相同，只显示一次
+    # If short name equals full title, show only once
     if short_name == full_title:
         if year:
             item = f"* **{short_name}** ({year})"
         else:
             item = f"* **{short_name}**"
     else:
-        # 简短名称 + 完整标题
+        # Short name + full title
         if year:
             item = f"* **{short_name}**: {full_title} ({year})"
         else:
             item = f"* **{short_name}**: {full_title}"
     
-    # 添加徽章
+    # Add badges (priority: arXiv > OpenReview > ACL > DOI > Website > GitHub > HuggingFace)
     badges = []
     if arxiv:
         badges.append(badge_arxiv(arxiv))
+    if openreview:
+        badges.append(badge_openreview(openreview))
+    if acl:
+        badges.append(badge_acl(acl))
+    if doi:
+        badges.append(badge_doi(doi))
+    if website:
+        badges.append(badge_website(website))
     if github:
         badges.append(badge_github(github))
     if huggingface:
@@ -101,13 +177,13 @@ def render_paper_item(entry: dict) -> str:
 
 
 def render_section(section_id: str) -> str:
-    """从 YAML 文件渲染所有论文为 Markdown 列表。"""
+    """Render all papers from YAML file as Markdown list."""
     yaml_file = f"papers_{section_id}.yaml"
     path = DATA_DIR / yaml_file
     entries = load_yaml(path)
     
     if not entries:
-        return f"\n<!-- 没有找到 {yaml_file} 中的论文 -->\n"
+        return f"\n<!-- No papers found in {yaml_file} -->\n"
     
     items = [render_paper_item(e) for e in entries]
     content = "\n".join(items)
@@ -115,54 +191,98 @@ def render_section(section_id: str) -> str:
     return f"\n{content}\n"
 
 
-def update_markdown_file(filepath: Path) -> int:
-    """更新 Markdown 文件中的论文列表。返回更新的块数量。"""
+def update_markdown_file(filepath: Path, update_badge: bool = False) -> int:
+    """Update paper lists in Markdown file. Returns number of blocks updated."""
     if not filepath.exists():
-        print(f"[WARN] {filepath} 不存在，跳过。", file=sys.stderr)
+        print(f"[WARN] {filepath} does not exist, skipping.", file=sys.stderr)
         return 0
     
-    content = filepath.read_text(encoding="utf-8")
+    original_content = filepath.read_text(encoding="utf-8")
+    content = original_content
+    
+    # Update paper count badge and abstract if requested (for index.md)
+    if update_badge:
+        unique_count = count_unique_papers()
+        print(f"  [INFO] Total unique works: {unique_count}")
+        # Update the badge in the HTML img tag
+        content = re.sub(
+            r'(<img src="https://img\.shields\.io/badge/papers-)\d+(-green\?style=for-the-badge&logo=googlescholar&logoColor=white")',
+            rf'\g<1>{unique_count}\g<2>',
+            content
+        )
+        # Update abstract text: "Based on a systematic review of XXX papers"
+        content = re.sub(
+            r'(Based on a systematic review of )\d+( papers and online resources)',
+            rf'\g<1>{unique_count}\g<2>',
+            content
+        )
     
     def replace_block(match):
         section_id = match.group(1)
         md = render_section(section_id)
         entries = load_yaml(DATA_DIR / f"papers_{section_id}.yaml")
-        print(f"  [OK] {section_id}: {len(entries)} 篇论文")
+        print(f"  [OK] {section_id}: {len(entries)} papers")
         return f"<!-- START PAPERS:{section_id} -->{md}<!-- END PAPERS:{section_id} -->"
     
     new_content, count = BLOCK_RE.subn(replace_block, content)
     
-    if new_content != content:
+    # Write if anything changed (badge or paper blocks)
+    if new_content != original_content:
         filepath.write_text(new_content, encoding="utf-8")
     
     return count
 
 
+def update_about_page():
+    """Update paper count in about.md."""
+    about_file = DOCS_DIR / "about.md"
+    if not about_file.exists():
+        return
+    
+    content = about_file.read_text(encoding="utf-8")
+    unique_count = count_unique_papers()
+    
+    # Update: "Based on a systematic review of XXX papers"
+    new_content = re.sub(
+        r'(Based on a systematic review of )\d+( papers and online resources)',
+        rf'\g<1>{unique_count}\g<2>',
+        content
+    )
+    
+    if new_content != content:
+        about_file.write_text(new_content, encoding="utf-8")
+        print(f"  [INFO] Updated about.md with {unique_count} papers")
+
+
 def main():
-    """主函数：更新所有文档文件。"""
+    """Main function: update all document files."""
     print("=" * 60)
-    print("自动更新论文列表（原网站样式 - 图片徽章）")
+    print("Auto-updating paper lists (shields.io style badges)")
     print("=" * 60)
     
     doc_files = [
-        DOCS_DIR / "index.md",
-        DOCS_DIR / "methods.md",
-        DOCS_DIR / "data.md",
-        DOCS_DIR / "analysis.md",
+        (DOCS_DIR / "index.md", True),  # Update badge for index.md
+        (DOCS_DIR / "methods.md", False),
+        (DOCS_DIR / "data.md", False),
+        (DOCS_DIR / "analysis.md", False),
     ]
     
     total_blocks = 0
     
-    for doc_file in doc_files:
+    for doc_file, update_badge in doc_files:
         if doc_file.exists():
-            print(f"\n处理 {doc_file.name}:")
-            count = update_markdown_file(doc_file)
+            print(f"\nProcessing {doc_file.name}:")
+            count = update_markdown_file(doc_file, update_badge=update_badge)
             total_blocks += count
             if count == 0:
-                print(f"  [INFO] 没有找到 <!-- START PAPERS:xxx --> 标记")
+                print(f"  [INFO] No <!-- START PAPERS:xxx --> markers found")
+    
+    # Update about.md
+    print(f"\nProcessing about.md:")
+    update_about_page()
     
     print("\n" + "=" * 60)
-    print(f"完成！共更新 {total_blocks} 个论文块。")
+    print(f"Done! Updated {total_blocks} paper blocks.")
     print("=" * 60)
 
 

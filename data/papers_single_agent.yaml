@@ -1,59 +1,88 @@
-# Single-Agent
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Single-Agent Systems
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "SWE-agent"
-  title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"
-  authors: "John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: SWE-agent
+  title: 'Swe-agent: Agent-computer interfaces enable automated software engineering'
+  authors: Yang, John, Jimenez, Carlos E, Wettig, Alexander, Lieret, Kilian, Yao,
+    Shunyu, Narasimhan, Karthik, Press, Ofir
+  year: '2024'
+  venue: Advances in Neural Information Processing Systems 2024
+- short_name: Aider
+  title: Aider
+  authors: Aider-AI
+  year: '2026'
+  venue: '2026'
   links:
-    arxiv: "https://arxiv.org/abs/2405.15793"
-
-- short_name: "PatchPilot"
-  title: "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification"
-  authors: "Hongwei Li, Yuheng Tang, Shiqi Wang, Wenbo Guo"
-  venue: "arXiv 2025"
-  year: "2025"
+    website: https://aider.chat/
+- short_name: Devin
+  title: SWE-bench technical report
+  authors: Cognition-Team
+  year: '2025'
+  venue: '2025'
   links:
-    arxiv: "https://arxiv.org/abs/2502.02747"
-
-- short_name: "LCLM"
-  title: "Putting It All into Context: Simplifying Agents with LCLMs"
-  authors: "Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori Hashimoto"
-  venue: "arXiv 2025"
-  year: "2025"
+    website: https://cognition.ai/blog/swe-bench-technical-report
+- short_name: PatchPilot
+  title: 'PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts
+    on Formal Verification'
+  authors: Hongwei Li, Yuheng Tang, Shiqi Wang, Wenbo Guo
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.08120"
-
-- short_name: "DGM"
-  title: "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents"
-  authors: "Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=ybODpT8ydV
+- short_name: LCLM
+  title: 'Putting It All into Context: Simplifying Agents with LCLMs'
+  authors: Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori
+    Hashimoto
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.08120 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.22954"
-
-- short_name: "SE-Agent"
-  title: "SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents"
-  authors: "Jiaye Lin, Yifu Guo, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng Wang, Mingguang Chen, Hongzhang Liu, Ronghao Chen, Yangfan He, Daxin Jiang, Binxing Jiao, Chen Hu, Huacan Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.08120
+- short_name: DGM
+  title: 'Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents'
+  authors: Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.22954 2025
   links:
-    arxiv: "https://arxiv.org/abs/2508.02085"
-
-- short_name: "TOM-SWE"
-  title: "TOM-SWE: User Mental Modeling For Software Engineering Agents"
-  authors: "Xuhui Zhou, Valerie Chen, Zora Zhiruo Wang, Graham Neubig, Maarten Sap, Xingyao Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.22954
+- short_name: Trae Agent
+  title: 'Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling'
+  authors: Trae Research Team, Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang,
+    Ruida Hu, Yuanan Xiao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.23370 2025
   links:
-    arxiv: "https://arxiv.org/abs/2510.21903"
-
-- short_name: "Live-SWE-agent"
-  title: "SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents"
-  authors: "Jiaye Lin, Yifu Guo, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng Wang, Mingguang Chen, Hongzhang Liu, Ronghao Chen, Yangfan He, Daxin Jiang, Binxing Jiao, Chen Hu, Huacan Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.23370
+- short_name: Live-SWE-agent
+  title: 'SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning
+    with LLM-Based Agents'
+  authors: Yifu Guo, Jiaye Lin, Huacan Wang, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng
+    Wang et al.
+  year: '2025'
+  venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
+    2025
   links:
-    arxiv: "https://arxiv.org/abs/2508.02085"
-
+    openreview: https://openreview.net/forum?id=isATAFP71B
+- short_name: Lita
+  title: 'Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs'
+  authors: Hankun Dai, Maoquan Wang, Mengnan Qi, Yikai Zhang, Zijian Jin, Yongqiang
+    Yao, Yufan Huang et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.25873 2025
+  links:
+    arxiv: https://arxiv.org/abs/2509.25873
+- short_name: TOM-SWE
+  title: 'TOM-SWE: User Mental Modeling For Software Engineering Agents'
+  authors: Xuhui Zhou, Valerie Chen, Zora Zhiruo Wang, Graham Neubig, Maarten Sap,
+    Xingyao Wang
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.21903 2025
+  links:
+    arxiv: https://arxiv.org/abs/2510.21903
+- short_name: Confucius Code Agent
+  title: 'Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases'
+  authors: Sherman Wong, Zhenting Qi, Zhaodong Wang, Nathan Hu, Samuel Lin, Jun Ge,
+    Erwin Gao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.10398 2025
+  links:
+    arxiv: https://arxiv.org/abs/2512.10398

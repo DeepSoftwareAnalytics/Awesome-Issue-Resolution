@@ -1,83 +1,97 @@
 # Methods Analysis
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "Context Retrieval"
-  title: "On The Importance of Reasoning for Context Retrieval in Repository-Level Code Editing"
-  authors: "Alexander Kovrigin, Aleksandra Eliseeva, Yaroslav Zharov, Timofey Bryksin"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: Context Retrieval
+  title: On The Importance of Reasoning for Context Retrieval in Repository-Level
+    Code Editing
+  authors: Alexander Kovrigin, Aleksandra Eliseeva, Yaroslav Zharov, Timofey Bryksin
+  year: '2024'
+  venue: arXiv preprint arXiv:2406.04464 2024
   links:
-    arxiv: "https://arxiv.org/abs/2406.04464"
-
-- short_name: "Evaluating software development agents"
-  title: "Evaluating Software Development Agents: Patch Patterns, Code Quality, and Issue Complexity in Real-World GitHub Scenarios"
-  authors: "Zhi Chen, Lingxiao Jiang"
-  venue: "2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2406.04464
+- short_name: Evaluating software development agents
+  title: 'Evaluating Software Development Agents: Patch Patterns, Code Quality, and
+    Issue Complexity in Real-World GitHub Scenarios'
+  authors: Chen, Zhi, Jiang, Lingxiao
+  year: '2025'
+  venue: 2025 IEEE International Conference on Software Analysis, Evolution and Reengineering
+    (SANER) 2025
   links:
-    arxiv: "http://dx.doi.org/10.1109/SANER64311.2025.00068"
-
-- short_name: "Overthinking"
-  title: "The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic Tasks"
-  authors: "Alejandro Cuadron, Dacheng Li, Wenjie Ma, Xingyao Wang, Yichuan Wang, Siyuan Zhuang, Shu Liu, Luis Gaspar Schroeder, Tian Xia, Huanzhi Mao, Nicholas Thumiger, Aditya Desai, Ion Stoica, Ana Klimovic, Graham Neubig, Joseph E. Gonzalez"
-  venue: "arXiv 2025"
-  year: "2025"
+    doi: http://dx.doi.org/10.1109/SANER64311.2025.00068
+- short_name: Overthinking
+  title: 'The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic
+    Tasks'
+  authors: Alejandro Cuadron, Dacheng Li, Wenjie Ma, Xingyao Wang, Yichuan Wang, Siyuan
+    Zhuang, Shu Liu et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2502.08235 2025
   links:
-    arxiv: "https://arxiv.org/abs/2502.08235"
-
-- short_name: "Beyond final code"
-  title: "Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios"
-  authors: "Zhi Chen, Wei Ma, Lingxiao Jiang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2502.08235
+- short_name: Beyond final code
+  title: 'Beyond Final Code: A Process-Oriented Error Analysis of Software Development
+    Agents in Real-World GitHub Scenarios'
+  authors: Zhi Chen, Wei Ma, Lingxiao Jiang
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.12374 2025
   links:
-    arxiv: "https://arxiv.org/abs/2503.12374"
-
-- short_name: "GSO"
-  title: "GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents"
-  authors: "Manish Shetty, Naman Jain, Jinjian Liu, Vijay Kethanaboyina, Koushik Sen, Ion Stoica"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2503.12374
+- short_name: GSO
+  title: 'GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents'
+  authors: Manish Shetty, Naman Jain, Jinjian Liu, Vijay Kethanaboyina, Koushik Sen,
+    Ion Stoica
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.23671 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.23671"
-
-- short_name: "Dissecting the SWE-Bench Leaderboards"
-  title: "Dissecting the SWE-Bench Leaderboards: Profiling Submitters and Architectures of LLM- and Agent-Based Repair Systems"
-  authors: "Matias Martinez, Xavier Franch"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.23671
+- short_name: Dissecting the SWE-Bench Leaderboards
+  title: 'Dissecting the SWE-Bench Leaderboards: Profiling Submitters and Architectures
+    of LLM- and Agent-Based Repair Systems'
+  authors: Matias Martinez, Xavier Franch
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.17208 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.17208"
-
-- short_name: "Security analysis"
-  title: "Are AI-Generated Fixes Secure? Analyzing LLM and Agent Patches on SWE-bench"
-  authors: "Amirali Sajadi, Kostadin Damevski, Preetha Chatterjee"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.17208
+- short_name: Security analysis
+  title: How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks
+    in LLM and Agentic Automated Program Repair on SWE-bench
+  authors: Amirali Sajadi, Kostadin Damevski, Preetha Chatterjee
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.02976 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.02976"
-
-- short_name: "Failures analysis"
-  title: "An Empirical Study on Failures in Automated Issue Solving"
-  authors: "Simiao Liu, Fang Liu, Liehao Li, Xin Tan, Yinghao Zhu, Xiaoli Lian, Li Zhang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.02976
+- short_name: Failures analysis
+  title: An Empirical Study on Failures in Automated Issue Solving
+  authors: Simiao Liu, Fang Liu, Liehao Li, Xin Tan, Yinghao Zhu, Xiaoli Lian, Li
+    Zhang
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.13941 2025
   links:
-    arxiv: "https://arxiv.org/abs/2509.13941"
-
-- short_name: "SeaView"
-  title: "SeaView: Software Engineering Agent Visual Interface for Enhanced Workflow"
-  authors: "Timothy Bula, Saurabh Pujar, Luca Buratti, Mihaela Bornea, Avirup Sil"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2509.13941
+- short_name: SeaView
+  title: 'SeaView: Software Engineering Agent Visual Interface for Enhanced Workflow'
+  authors: Timothy Bula, Saurabh Pujar, Luca Buratti, Mihaela Bornea, Avirup Sil
+  year: '2025'
+  venue: arXiv preprint arXiv:2504.08696 2025
   links:
-    arxiv: "https://arxiv.org/abs/2504.08696"
-
-- short_name: "SWEnergy"
-  title: "SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution Frameworks with SLMs"
-  authors: "Arihant Tripathy, Ch Pavan Harshit, Karthik Vaidhyanathan"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2504.08696
+- short_name: SWEnergy
+  title: 'SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution
+    Frameworks with SLMs'
+  authors: Arihant Tripathy, Ch Pavan Harshit, Karthik Vaidhyanathan
+  year: '2026'
+  venue: ICSE Workshops 2026
+- short_name: Strong-Weak Model Collaboration
+  title: An Empirical Study on Strong-Weak Model Collaboration for Repo-level Code
+    Generation
+  authors: Shubham Gandhi, Atharva Naik, Yiqing Xie, Carolyn Rose
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.20182 2025
   links:
-    arxiv: "https://arxiv.org/abs/2512.09543"
-
+    arxiv: https://arxiv.org/abs/2505.20182
+- short_name: Agents in the Wild
+  title: Agents in the Wild
+  authors: LogicStar-AI, SRILab
+  year: '2025'
+  venue: '2025'
+  links:
+    website: https://insights.logicstar.ai/

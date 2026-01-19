@@ -1,0 +1,13 @@
+Model Name,Base Model,Size,Arch.,Training Scaffold,Res.(%),Code,Data,Model
+SWE-rebench-openhands-Qwen3-235B-A22B,Qwen3-235B-A22B,235B-A22B,MoE,OpenHands,59.9,-,\hflink{https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories},\hflink{https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-235B-A22B}
+SWE-Lego-Qwen3-32B,Qwen3-32B,32B,Dense,OpenHands,57.6,\ghlink{https://github.com/SWE-Lego/SWE-Lego},\hflink{https://huggingface.co/SWE-Lego/datasets},\hflink{https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-32B}
+SWE-rebench-openhands-Qwen3-30B-A3B,Qwen3-30B-A3B,30B-A3B,MoE,OpenHands,49.7,-,\hflink{https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories},\hflink{https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-30B-A3B}
+Devstral,Mistral Small 3,22B,Dense,OpenHands,46.8,-,\bloglink{https://mistral.ai/news/devstral},\hflink{https://huggingface.co/mistralai/Devstral-Small-2507}
+Co-PatcheR,Qwen2.5-Coder-14B,3$\times$14B,Dense,PatchPilot-mini,46.0,\ghlink{https://github.com/ucsb-mlsec/Co-PatcheR},-,\hflink{https://huggingface.co/collections/UCSB-SURFI/co-patcher}
+SWE-Swiss-32B,Qwen2.5-32B-Instruct,32B,Dense,Agentless,45.0,\ghlink{https://github.com/zhenyuhe00/SWE-Swiss},\hflink{https://huggingface.co/SWE-Swiss/datasets},\hflink{https://huggingface.co/SWE-Swiss/models}
+SWE-Lego-Qwen3-8B,Qwen3-8B,8B,Dense,OpenHands,44.4,\ghlink{https://github.com/SWE-Lego/SWE-Lego},\hflink{https://huggingface.co/SWE-Lego/datasets},\hflink{https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-8B}
+Lingma SWE-GPT,Qwen2.5-72B-Instruct,72B,Dense,SWESynInfer,30.2,\ghlink{https://github.com/LingmaTongyi/Lingma-SWE-GPT},-,-
+SWE-Gym-Qwen-32B,Qwen2.5-Coder-32B,32B,Dense,"OpenHands, MoatlessTools",20.6,\ghlink{https://github.com/SWE-Gym/SWE-Gym},-,\hflink{https://huggingface.co/SWE-Gym}
+Lingma SWE-GPT,Qwen2.5-Coder-7B,7B,Dense,SWESynInfer,18.2,\ghlink{https://github.com/LingmaTongyi/Lingma-SWE-GPT},-,-
+SWE-Gym-Qwen-14B,Qwen2.5-Coder-14B,14B,Dense,"OpenHands, MoatlessTools",16.4,\ghlink{https://github.com/SWE-Gym/SWE-Gym},-,\hflink{https://huggingface.co/SWE-Gym}
+SWE-Gym-Qwen-7B,Qwen2.5-Coder-7B,7B,Dense,"OpenHands, MoatlessTools",10.6,\ghlink{https://github.com/SWE-Gym/SWE-Gym},-,\hflink{https://huggingface.co/SWE-Gym}

@@ -753,10 +753,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#opacity-in-resource-consumption" class="md-nav__link">
+  <a href="#lack-of-efficiency-aware-evaluation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opacity in resource consumption
+        Lack of efficiency-aware evaluation
       
     </span>
   </a>
@@ -786,10 +786,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lack-of-fine-grained-reward-signals" class="md-nav__link">
+  <a href="#lack-of-fine-grained-rewards" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lack of fine-grained reward signals
+        Lack of fine-grained rewards
       
     </span>
   </a>
@@ -808,10 +808,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lack-of-universality-across-se-domains" class="md-nav__link">
+  <a href="#lack-of-autonomous-context-management-mechanisms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lack of universality across SE domains
+        Lack of autonomous context management mechanisms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insufficient-patch-validation-and-human-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insufficient patch validation and human review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lack-of-universality-across-swe-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lack of universality across SWE domains
       
     </span>
   </a>
@@ -986,19 +1008,32 @@
         <a href="https://github.com/sindresorhus/awesome" target="_blank">
             <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" style="height: 28px;">
         </a>
-        <a href="paper/" target="_blank">
+        <a href="paper/">
             <img src="https://img.shields.io/badge/PAPER-PDF-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Paper">
         </a>
         <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
             <img src="https://img.shields.io/badge/arXiv-2501.XXXXX-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv">
         </a>
-        <a href="tables/" target="_blank">
+        <a href="tables/">
             <img src="https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks" alt="Tables">
         </a>
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-135-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-176-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+    </div>
+
+    <!-- Interactive Exploration Badges -->
+    <div class="hero-badges-interactive" style="margin-top: 15px;">
+        <a href="https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a" target="_blank">
+            <img src="https://img.shields.io/badge/🎧_NotebookLM-Listen_&_Explore-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="NotebookLM">
+        </a>
+        <a href="https://discord.gg/3nF2EYTD" target="_blank">
+            <img src="https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+        </a>
+        <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues" target="_blank">
+            <img src="https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Issues">
+        </a>
     </div>
 
     <div class="hero-image">
@@ -1009,7 +1044,7 @@
 <hr />
 <h2 id="abstract">📖 Abstract<a class="headerlink" href="#abstract" title="Permanent link">&para;</a></h2>
 <div class="abstract-content">
-<p>Based on a systematic review of 135 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution">GitHub repository</a> and project documentation website. </p>
+<p>Based on a systematic review of 176 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution">GitHub repository</a> and project documentation website. </p>
 <p><strong>🔍 Explore This Survey:</strong></p>
 <ul>
 <li>📊 <strong><a href="#data">Data</a></strong>: Evaluation and training datasets, data collection and synthesis methods</li>
@@ -1029,28 +1064,29 @@
 <h3 id="evaluation-datasets">Evaluation Datasets<a class="headerlink" href="#evaluation-datasets" title="Permanent link">&para;</a></h3>
 <!-- START PAPERS:evaluation_datasets -->
 <ul>
-<li><strong>SWE-bench</strong>: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2024) <a href="https://arxiv.org/abs/2310.06770" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench Lite</strong>: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2024) <a href="https://arxiv.org/abs/2310.06770" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench Verified</strong>: Introducing SWE-bench Verified | OpenAI (2024) <a href="https://openai.com/index/introducing-swe-bench-verified/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-bench Lite</strong>: SWE-bench: Can Language Models Resolve Real-world Github Issues? (2024)</li>
+<li><strong>SWE-bench Verified</strong>: Introducing SWE-bench Verified | OpenAI (2024)</li>
 <li><strong>SWE-bench-java</strong>: SWE-bench-java: A GitHub Issue Resolving Benchmark for Java (2024) <a href="https://arxiv.org/abs/2408.14354" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Visual SWE-bench</strong>: CodeV: Issue Resolving with Visual Data (2025) <a href="https://aclanthology.org/2025.findings-acl.384/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Lancer</strong>: SWE-Lancer: Can Frontier LLMs Earn \1 Million from Real-World Freelance Software Engineering? (2025) <a href="https://arxiv.org/abs/2502.12115" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Multi-SWE-bench</strong>: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) <a href="https://arxiv.org/abs/2504.02605" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Visual SWE-bench</strong>: CodeV: Issue Resolving with Visual Data (2025) <a href="https://aclanthology.org/2025.findings-acl.384/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a> <a href="http://dx.doi.org/10.18653/v1/2025.findings-acl.384" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Lancer</strong>: SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World
+                  Freelance Software Engineering? (2025)</li>
+<li><strong>FEA-Bench</strong>: FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation
+                  for Feature Implementation (2025) <a href="https://aclanthology.org/2025.acl-long.839/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a></li>
+<li><strong>Multi-SWE-bench</strong>: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) <a href="https://openreview.net/forum?id=MhBZzkz4h9" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-PolyBench</strong>: SWE-PolyBench: A multi-language benchmark for repository level evaluation of coding agents (2025) <a href="https://arxiv.org/abs/2504.08703" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench Multilingual</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2504.21798" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-bench Multilingual</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://openreview.net/forum?id=63iVrXc8cC" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SwingArena</strong>: SwingArena: Competitive Programming Arena for Long-context GitHub Issue Solving (2025) <a href="https://arxiv.org/abs/2505.23932" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench Multimodal</strong>: SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains? (2024) <a href="https://arxiv.org/abs/2410.03859" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OmniGIRL</strong>: OmniGIRL: A Multilingual and Multimodal Benchmark for GitHub Issue Resolution (2025) <a href="http://dx.doi.org/10.1145/3728871" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench-Live</strong>: SWE-bench Goes Live! (2025) <a href="https://arxiv.org/abs/2505.23419" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-bench Multimodal</strong>: SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains? (2025) <a href="https://openreview.net/forum?id=riTiq3i21b" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>OmniGIRL</strong>: Omnigirl: A multilingual and multimodal benchmark for github issue resolution (2025)</li>
+<li><strong>SWE-bench-Live</strong>: SWE-bench Goes Live! (2025) <a href="https://openreview.net/forum?id=OGWkr7gXka" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Factory</strong>: SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks (2025) <a href="https://arxiv.org/abs/2506.10954" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-MERA</strong>: SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks (2025) <a href="https://arxiv.org/abs/2507.11059" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Perf</strong>: SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories? (2025) <a href="https://arxiv.org/abs/2507.12415" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Perf</strong>: SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories? (2025) <a href="https://openreview.net/forum?id=KxFaKvtBiG" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Bench Pro</strong>: SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks? (2025) <a href="https://arxiv.org/abs/2509.16941" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-InfraBench</strong>: SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code (2025) <a href="https://openreview.net/forum?id=XX0ciUwfXa" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-InfraBench</strong>: SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code (2025) <a href="https://openreview.net/forum?id=XX0ciUwfXa" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Sharp-Bench</strong>: SWE-Sharp-Bench: A Reproducible Benchmark for C# Software Engineering Tasks (2025) <a href="https://arxiv.org/abs/2511.02352" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-fficiency</strong>: SWE-fficiency: Can Language Models Optimize Real-World Repositories on Real Workloads? (2025) <a href="https://arxiv.org/abs/2511.06090" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Compass</strong>: SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models (2025) <a href="https://arxiv.org/abs/2511.05459" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Bench++</strong>: SWE-Bench++: A Framework for the Scalable Generation of Software Engineering Benchmarks from Open-Source Repositories (2025) <a href="https://arxiv.org/abs/2512.17419" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-EVO</strong>: SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios (2025) <a href="https://arxiv.org/abs/2512.18470" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:evaluation_datasets -->
@@ -1058,30 +1094,29 @@
 <h3 id="training-datasets">Training Datasets<a class="headerlink" href="#training-datasets" title="Permanent link">&para;</a></h3>
 <!-- START PAPERS:training_datasets -->
 <ul>
-<li><strong>SWE-bench-train</strong>: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2024) <a href="https://arxiv.org/abs/2310.06770" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-bench-extra</strong>: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2024) <a href="https://arxiv.org/abs/2310.06770" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Multi-SWE-RL</strong>: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) <a href="https://arxiv.org/abs/2504.02605" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>R2E-Gym</strong>: R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents (2025) <a href="https://arxiv.org/abs/2504.07164" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-bench-extra</strong>: SWE-bench: Can Language Models Resolve Real-world Github Issues? (2024)</li>
+<li><strong>Multi-SWE-RL</strong>: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) <a href="https://openreview.net/forum?id=MhBZzkz4h9" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>R2E-Gym</strong>: R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents (2025) <a href="https://openreview.net/forum?id=7evvwwdo3z" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Synth</strong>: SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs (2025) <a href="https://arxiv.org/abs/2504.14757" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>LocAgent</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://arxiv.org/abs/2502.00350" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Smith</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2504.21798" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Fixer</strong>: SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution (2025) <a href="https://arxiv.org/abs/2501.05040" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>LocAgent</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://openreview.net/forum?id=LyUfPOvM6I" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Smith</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://openreview.net/forum?id=63iVrXc8cC" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Fixer</strong>: SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution</li>
 <li><strong>SWELoc</strong>: SweRank: Software Issue Localization with Code Ranking (2025) <a href="https://arxiv.org/abs/2505.07849" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Gym</strong>: Training Software Engineering Agents and Verifiers with SWE-Gym (2025) <a href="https://arxiv.org/abs/2412.21139" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Flow</strong>: SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner (2025) <a href="https://arxiv.org/abs/2506.09003" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Gym</strong>: Training Software Engineering Agents and Verifiers with SWE-Gym</li>
+<li><strong>SWE-Flow</strong>: Synthesizing Software Engineering Data in a Test-Driven Manner (2025) <a href="https://openreview.net/forum?id=P9DQ2IExgS" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Factory</strong>: SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks (2025) <a href="https://arxiv.org/abs/2506.10954" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Skywork-SWE</strong>: Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs (2025) <a href="https://arxiv.org/abs/2506.19290" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>RepoForge</strong>: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale (2025) <a href="https://arxiv.org/abs/2508.01550" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Mirror</strong>: SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories (2025) <a href="https://arxiv.org/abs/2509.08724" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Bench++</strong>: SWE-Bench++: A Framework for the Scalable Generation of Software Engineering Benchmarks from Open-Source Repositories (2025) <a href="https://arxiv.org/abs/2512.17419" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Lego</strong>: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) <a href="https://arxiv.org/abs/2601.01426" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:training_datasets -->
 
 <h3 id="data-collection">Data Collection<a class="headerlink" href="#data-collection" title="Permanent link">&para;</a></h3>
 <!-- START PAPERS:data_collection -->
 <ul>
-<li><strong>SWE-rebench</strong>: SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2505.20411" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>RepoLaunch</strong>: SWE-bench Goes Live! (2025) <a href="https://arxiv.org/abs/2505.23419" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-rebench</strong>: SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents (2025) <a href="https://openreview.net/forum?id=nMpJoVmRy1" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>RepoLaunch</strong>: SWE-bench Goes Live! (2025) <a href="https://openreview.net/forum?id=OGWkr7gXka" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Factory</strong>: SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks (2025) <a href="https://arxiv.org/abs/2506.10954" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-MERA</strong>: SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks (2025) <a href="https://arxiv.org/abs/2507.11059" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>RepoForge</strong>: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale (2025) <a href="https://arxiv.org/abs/2508.01550" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
@@ -1092,11 +1127,11 @@
 <h3 id="data-synthesis">Data Synthesis<a class="headerlink" href="#data-synthesis" title="Permanent link">&para;</a></h3>
 <!-- START PAPERS:data_synthesis -->
 <ul>
-<li><strong>Learn-by-interact</strong>: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments (2025) <a href="https://openreview.net/forum?id=3UKOzGWCVY" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>R2E-Gym</strong>: R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents (2025) <a href="https://arxiv.org/abs/2504.07164" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Learn-by-interact</strong>: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments (2025) <a href="https://openreview.net/forum?id=3UKOzGWCVY" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>R2E-Gym</strong>: R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents (2025) <a href="https://openreview.net/forum?id=7evvwwdo3z" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Synth</strong>: SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs (2025) <a href="https://arxiv.org/abs/2504.14757" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-smith</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2504.21798" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Flow</strong>: SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner (2025) <a href="https://arxiv.org/abs/2506.09003" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-smith</strong>: SWE-smith: Scaling Data for Software Engineering Agents (2025) <a href="https://openreview.net/forum?id=63iVrXc8cC" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Flow</strong>: Synthesizing Software Engineering Data in a Test-Driven Manner (2025) <a href="https://openreview.net/forum?id=P9DQ2IExgS" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Mirror</strong>: SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories (2025) <a href="https://arxiv.org/abs/2509.08724" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:data_synthesis -->
@@ -1108,32 +1143,40 @@
 <h4 id="single-agent">Single-Agent<a class="headerlink" href="#single-agent" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:single_agent -->
 <ul>
-<li><strong>SWE-agent</strong>: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (2024) <a href="https://arxiv.org/abs/2405.15793" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>PatchPilot</strong>: PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification (2025) <a href="https://arxiv.org/abs/2502.02747" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-agent</strong>: Swe-agent: Agent-computer interfaces enable automated software engineering (2024)</li>
+<li><strong>Aider</strong> (2026) <a href="https://aider.chat/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
+<li><strong>Devin</strong>: SWE-bench technical report (2025) <a href="https://cognition.ai/blog/swe-bench-technical-report" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
+<li><strong>PatchPilot</strong>: PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification (2025) <a href="https://openreview.net/forum?id=ybODpT8ydV" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>LCLM</strong>: Putting It All into Context: Simplifying Agents with LCLMs (2025) <a href="https://arxiv.org/abs/2505.08120" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>DGM</strong>: Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents (2025) <a href="https://arxiv.org/abs/2505.22954" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SE-Agent</strong>: SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents (2025) <a href="https://arxiv.org/abs/2508.02085" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Trae Agent</strong>: Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling (2025) <a href="https://arxiv.org/abs/2507.23370" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Live-SWE-agent</strong>: SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents (2025) <a href="https://openreview.net/forum?id=isATAFP71B" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>Lita</strong>: Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs (2025) <a href="https://arxiv.org/abs/2509.25873" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>TOM-SWE</strong>: TOM-SWE: User Mental Modeling For Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2510.21903" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Live-SWE-agent</strong>: SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents (2025) <a href="https://arxiv.org/abs/2508.02085" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Confucius Code Agent</strong>: Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases (2025) <a href="https://arxiv.org/abs/2512.10398" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:single_agent -->
 
 <h4 id="multi-agent">Multi-Agent<a class="headerlink" href="#multi-agent" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:multi_agent -->
 <ul>
-<li><strong>MAGIS</strong>: MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution (2024) <a href="https://arxiv.org/abs/2403.17927" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>AutoCodeRover</strong>: AutoCodeRover: Autonomous Program Improvement (2024) <a href="http://dx.doi.org/10.1145/3650212.3680384" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>MAGIS</strong>: MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution (2024) <a href="https://openreview.net/forum?id=qevq3FZ63J" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>AutoCodeRover</strong>: AutoCodeRover: Autonomous Program Improvement (2024) <a href="http://dx.doi.org/10.1145/3650212.3680384" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
 <li><strong>CodeR</strong>: CodeR: Issue Resolving with Multi-Agent and Task Graphs (2024) <a href="https://arxiv.org/abs/2406.01304" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OpenHands</strong>: OpenHands: An Open Platform for AI Software Developers as Generalist Agents (2025) <a href="https://arxiv.org/abs/2407.16741" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OrcaLora</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://arxiv.org/abs/2502.00350" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>DEI</strong>: Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents (2024) <a href="https://arxiv.org/abs/2408.07060" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>OpenHands</strong>: OpenHands: An Open Platform for AI Software Developers as Generalist Agents (2025) <a href="https://openreview.net/forum?id=OJd3ayDDoF" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>AgentScope</strong>: SWE-Bench - AgentScope (2025) <a href="https://doc.agentscope.io/v0/en/tutorial/swe.html" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
+<li><strong>OrcaLora</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://openreview.net/forum?id=LyUfPOvM6I" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>DEI</strong>: Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents (2025) <a href="https://openreview.net/forum?id=cKlzKs3Nnb" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>MarsCode Agent</strong>: MarsCode Agent: AI-native Automated Bug Fixing (2024) <a href="https://arxiv.org/abs/2409.00899" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Search</strong>: SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (2025) <a href="https://arxiv.org/abs/2410.20285" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Lingxi</strong>: Lingxi/docs/Lingxi Technical Report 2505.pdf at master · lingxi-agent/Lingxi (2026) <a href="https://github.com/lingxi-agent/Lingxi/blob/master/docs/Lingxi%20Technical%20Report%202505.pdf" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></li>
+<li><strong>Devlo</strong>: Achieving SOTA on SWE-bench (2026) <a href="https://devlo.ai/blog/devlo-swe-bench-sota/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
+<li><strong>Refact.ai Agent</strong>: AI Coding Agent for Software Development - Refact.ai (2025) <a href="https://refact.ai/blog/2025/open-source-sota-on-swe-bench-verified-refact-ai/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
+<li><strong>HyperAgent</strong>: HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale (2024) <a href="https://arxiv.org/abs/2409.16299" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Search</strong>: SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (2025) <a href="https://openreview.net/forum?id=G7sIFXugTX" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>CodeCoR</strong>: CodeCoR: An LLM-Based Self-Reflective Multi-Agent Framework for Code Generation (2025) <a href="https://arxiv.org/abs/2501.07811" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Agent KB</strong>: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving (2025) <a href="https://arxiv.org/abs/2507.06229" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Debate</strong>: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution (2025) <a href="https://arxiv.org/abs/2507.23348" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Debate</strong>: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution (2026)</li>
 <li><strong>SWE-Exp</strong>: SWE-Exp: Experience-Driven Software Issue Resolution (2025) <a href="https://arxiv.org/abs/2507.23361" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Trae Agent</strong>: Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling (2025) <a href="https://arxiv.org/abs/2507.23370" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Meta-RAG</strong>: Meta-RAG on Large Codebases Using Code Summarization (2025) <a href="https://arxiv.org/abs/2508.02611" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:multi_agent -->
@@ -1141,50 +1184,55 @@
 <h4 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:workflow -->
 <ul>
-<li><strong>Agentless</strong>: Agentless: Demystifying LLM-based Software Engineering Agents (2024) <a href="https://arxiv.org/abs/2407.01489" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Agentless</strong>: Demystifying LLM-Based Software Engineering Agents (2025) <a href="https://api.semanticscholar.org/CorpusID:277850376" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
 <li><strong>Conversational Pipeline</strong>: Exploring the Potential of Conversational Test Suite Based Program Repair on SWE-bench (2024) <a href="https://arxiv.org/abs/2410.04485" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SynFix</strong>: SynFix: Dependency-Aware Program Repair via RelationGraph Analysis (2025) <a href="https://aclanthology.org/2025.findings-acl.252/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>CodeV</strong>: CodeV: Issue Resolving with Visual Data (2025) <a href="https://aclanthology.org/2025.findings-acl.384/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>GUIRepair</strong>: Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Fixing (2025) <a href="https://arxiv.org/abs/2506.16136" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SynFix</strong>: SynFix: Dependency-Aware Program Repair via RelationGraph Analysis (2025) <a href="https://aclanthology.org/2025.findings-acl.252/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a> <a href="http://dx.doi.org/10.18653/v1/2025.findings-acl.252" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>CodeV</strong>: CodeV: Issue Resolving with Visual Data (2025) <a href="https://aclanthology.org/2025.findings-acl.384/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a> <a href="http://dx.doi.org/10.18653/v1/2025.findings-acl.384" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>GUIRepair</strong>: Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Fixing (2025)</li>
 </ul>
 <!-- END PAPERS:workflow -->
 
 <h4 id="tool">Tool<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:tool -->
 <ul>
-<li><strong>MAGIS</strong>: MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution (2024) <a href="https://arxiv.org/abs/2403.17927" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>AutoCodeRover</strong>: AutoCodeRover: Autonomous Program Improvement (2024) <a href="http://dx.doi.org/10.1145/3650212.3680384" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-agent</strong>: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (2024) <a href="https://arxiv.org/abs/2405.15793" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Alibaba LingmaAgent</strong>: Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive Repository Exploration (2025) <a href="http://dx.doi.org/10.1145/3696630.3728549" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OpenHands</strong>: OpenHands: An Open Platform for AI Software Developers as Generalist Agents (2025) <a href="https://arxiv.org/abs/2407.16741" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SpecRover</strong>: SpecRover: Code Intent Extraction via LLMs (2025) <a href="http://dx.doi.org/10.1109/ICSE55347.2025.00080" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>MAGIS</strong>: MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution (2024) <a href="https://openreview.net/forum?id=qevq3FZ63J" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>AutoCodeRover</strong>: AutoCodeRover: Autonomous Program Improvement (2024) <a href="http://dx.doi.org/10.1145/3650212.3680384" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>SWE-agent</strong>: Swe-agent: Agent-computer interfaces enable automated software engineering (2024)</li>
+<li><strong>Alibaba LingmaAgent</strong>: Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive Repository Exploration (2025) <a href="http://dx.doi.org/10.1145/3696630.3728549" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>OpenHands</strong>: OpenHands: An Open Platform for AI Software Developers as Generalist Agents (2025) <a href="https://openreview.net/forum?id=OJd3ayDDoF" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SpecRover</strong>: SpecRover: Code Intent Extraction via LLMs (2025)</li>
 <li><strong>MarsCode Agent</strong>: MarsCode Agent: AI-native Automated Bug Fixing (2024) <a href="https://arxiv.org/abs/2409.00899" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>RepoGraph</strong>: RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph (2025) <a href="https://arxiv.org/abs/2410.14684" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>RepoGraph</strong>: RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph</li>
 <li><strong>SuperCoder2.0</strong>: SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as Autonomous Programmer (2024) <a href="https://arxiv.org/abs/2409.11190" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>EvoCoder</strong>: LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues (2024) <a href="https://arxiv.org/abs/2411.13941" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>AEGIS</strong>: AEGIS: An Agent-based Framework for General Bug Reproduction from Issue Descriptions (2024) <a href="https://arxiv.org/abs/2411.18015" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OrcaLoca</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://arxiv.org/abs/2502.00350" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Otter</strong>: Otter: Generating Tests from Issues to Validate SWE Patches (2025) <a href="https://arxiv.org/abs/2502.05368" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>CoRNStack</strong>: CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking (2025) <a href="https://openreview.net/forum?id=iyJOUELYir" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>AEGIS</strong>: AEGIS: An Agent-based Framework for General Bug Reproduction from Issue Descriptions (2025)</li>
+<li><strong>CoRNStack</strong>: CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking (2025) <a href="https://openreview.net/forum?id=iyJOUELYir" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>OrcaLoca</strong>: OrcaLoca: An LLM Agent Framework for Software Issue Localization (2025) <a href="https://openreview.net/forum?id=LyUfPOvM6I" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>DARS</strong>: DARS: Dynamic Action Re-Sampling to Enhance Coding Agent Performance by Adaptive Tree Traversal (2025) <a href="https://arxiv.org/abs/2503.14269" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Otter</strong>: Otter: Generating Tests from Issues to Validate SWE Patches (2025) <a href="https://openreview.net/forum?id=b0jYs6JOZu" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>Quadropic Insiders</strong>: Quadropic Insiders : Syntheo Tops Swelite Feb (2025) <a href="https://insiders.quadropic.com/insiders/syntheo-tops-swelite-feb" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
 <li><strong>Issue2Test</strong>: Issue2Test: Generating Reproducing Test Cases from Issue Reports (2025) <a href="https://arxiv.org/abs/2503.16320" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>KGCompass</strong>: Enhancing repository-level software repair via repository-aware knowledge graphs (2025) <a href="https://arxiv.org/abs/2503.21710" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>CoSIL</strong>: Issue Localization via LLM-Driven Iterative Code Graph Searching (2025) <a href="https://arxiv.org/abs/2503.22424" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>CoSIL</strong>: Issue Localization via LLM-Driven Iterative Code Graph Searching (2025)</li>
 <li><strong>InfantAgent-Next</strong>: InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction (2025) <a href="https://arxiv.org/abs/2505.10887" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Co-PatcheR</strong>: Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small Reasoning Models (2025) <a href="https://arxiv.org/abs/2505.18955" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWERank</strong>: SweRank: Software Issue Localization with Code Ranking (2025) <a href="https://arxiv.org/abs/2505.07849" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Nemotron-CORTEXA</strong>: Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity (2025) <a href="https://openreview.net/forum?id=k6p8UKRdH7" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Nemotron-CORTEXA</strong>: Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity (2025) <a href="https://openreview.net/forum?id=k6p8UKRdH7" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>LCLM</strong>: Putting It All into Context: Simplifying Agents with LCLMs (2025) <a href="https://arxiv.org/abs/2505.08120" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SACL</strong>: SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented Reranking and Localization (2025) <a href="https://arxiv.org/abs/2506.20081" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Debate</strong>: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution (2025) <a href="https://arxiv.org/abs/2507.23348" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>OpenHands-Versa</strong>: Coding Agents with Multimodal Browsing are Generalist Problem Solvers (2025) <a href="https://arxiv.org/abs/2506.03011" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Debate</strong>: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution (2026)</li>
+<li><strong>OpenHands-Versa</strong>: Coding Agents with Multimodal Browsing are Generalist Problem Solvers</li>
+<li><strong>SemAgent</strong>: SemAgent: A Semantics Aware Program Repair Agent (2025) <a href="https://arxiv.org/abs/2506.16650" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Repeton</strong>: Repeton: Structured Bug Repair with ReAct-Guided Patch-and-Test Cycles (2025) <a href="https://arxiv.org/abs/2506.08173" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>cAST</strong>: cAST: Enhancing Code Retrieval-Augmented Generation with Structural Chunking via Abstract Syntax Tree (2025) <a href="https://arxiv.org/abs/2506.15655" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Prometheus</strong>: Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual Codebases (2025) <a href="https://arxiv.org/abs/2507.19942" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Git Context Controller</strong>: Git Context Controller: Manage the Context of LLM-based Agents like Git (2025) <a href="https://arxiv.org/abs/2508.00031" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Trae Agent</strong>: Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling (2025) <a href="https://arxiv.org/abs/2507.23370" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>BugPilot</strong>: BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills (2025) <a href="https://arxiv.org/abs/2510.19898" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>TestPrune</strong>: When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue Resolution (2025) <a href="https://arxiv.org/abs/2510.18270" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>e-Otter++</strong>: Execution-Feedback Driven Test Generation from SWE Issues (2025) <a href="https://arxiv.org/abs/2508.06365" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Meta-RAG</strong>: Meta-RAG on Large Codebases Using Code Summarization (2025) <a href="https://arxiv.org/abs/2508.02611" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>InfCode</strong>: InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution (2025) <a href="https://arxiv.org/abs/2511.16004" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>GraphLocator</strong>: GraphLocator: Graph-guided Causal Reasoning for Issue Localization (2025) <a href="https://arxiv.org/abs/2512.22469" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:tool -->
 
@@ -1193,23 +1241,25 @@
 <ul>
 <li><strong>Infant Agent</strong>: Infant Agent: A Tool-Integrated, Logic-Driven Agent with Cost-Effective API Usage (2024) <a href="https://arxiv.org/abs/2411.01114" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>EvoCoder</strong>: LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues (2024) <a href="https://arxiv.org/abs/2411.13941" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Learn-by-interact</strong>: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments (2025) <a href="https://openreview.net/forum?id=3UKOzGWCVY" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Learn-by-interact</strong>: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments (2025) <a href="https://openreview.net/forum?id=3UKOzGWCVY" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>DGM</strong>: Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents (2025) <a href="https://arxiv.org/abs/2505.22954" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>ExpeRepair</strong>: EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair (2025) <a href="https://arxiv.org/abs/2506.10484" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Agent KB</strong>: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving (2025) <a href="https://arxiv.org/abs/2507.06229" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Exp</strong>: SWE-Exp: Experience-Driven Software Issue Resolution (2025) <a href="https://arxiv.org/abs/2507.23361" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>RepoMem</strong>: Improving Code Localization with Repository Memory (2025) <a href="https://arxiv.org/abs/2510.01003" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>AgentDiet</strong>: Improving the Efficiency of LLM Agent Systems through Trajectory Reduction (2025) <a href="https://arxiv.org/abs/2509.23586" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>ReasoningBank</strong>: ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory (2025) <a href="https://arxiv.org/abs/2509.25140" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>MemGovern</strong>: MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences (2026) <a href="https://arxiv.org/abs/2601.06789" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:memory -->
 
 <h4 id="inference-time-scaling">Inference-time Scaling<a class="headerlink" href="#inference-time-scaling" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:inference_scaling -->
 <ul>
-<li><strong>SWE-Search</strong>: SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (2025) <a href="https://arxiv.org/abs/2410.20285" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>CodeMonkeys</strong>: CodeMonkeys: Scaling Test-Time Compute for Software Engineering (2025) <a href="https://arxiv.org/abs/2501.14723" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-PRM</strong>: When Agents go Astray: Course-Correcting SWE Agents with PRMs (2025) <a href="https://arxiv.org/abs/2509.02360" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Search</strong>: SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (2025) <a href="https://openreview.net/forum?id=G7sIFXugTX" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
 <li><strong>ReasoningBank</strong>: CodeMonkeys: Scaling Test-Time Compute for Software Engineering (2025) <a href="https://arxiv.org/abs/2501.14723" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-PRM</strong>: When Agents go Astray: Course-Correcting SWE Agents with PRMs (2025) <a href="https://arxiv.org/abs/2509.02360" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SIADAFIX</strong>: SIADAFIX: issue description response for adaptive program repair (2025) <a href="https://arxiv.org/abs/2510.16059" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:inference_scaling -->
 
@@ -1217,38 +1267,63 @@
 <h4 id="sft-based-methods">SFT-based Methods<a class="headerlink" href="#sft-based-methods" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:sft -->
 <ul>
-<li><strong>Lingma SWE-GPT</strong>: Lingma SWE-GPT: An Open Development-Process-Centric Language Model for Automated Software Improvement (2024) <a href="https://arxiv.org/abs/2411.00622" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Scaling data collection</strong>: Scaling Data Collection for Training SWE Agents (2024)</li>
-<li><strong>CodeXEmbed</strong>: CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task Code Retrieval (2025) <a href="https://openreview.net/forum?id=z3lG70Azbg" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Gym</strong>: Training Software Engineering Agents and Verifiers with SWE-Gym (2025) <a href="https://arxiv.org/abs/2412.21139" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>TSP</strong>: Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level Code Repair (2025) <a href="https://aclanthology.org/2025.emnlp-industry.109/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a> <a href="https://github.com/Gengar0215/TSP-framework" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repo-24292F?logo=github&amp;logoColor=white" /></a></li>
+<li><strong>Lingma SWE-GPT</strong>: SWE-GPT: A Process-Centric Language Model for Automated Software Improvement (2025)</li>
+<li><strong>ReSAT</strong>: Repository Structure-Aware Training Makes SLMs Better Issue Resolver (2024) <a href="https://arxiv.org/abs/2412.19031" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Scaling data collection</strong>: Scaling Data Collection for Training SWE Agents (2024) <a href="https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>CodeXEmbed</strong>: CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task Code Retrieval (2025) <a href="https://openreview.net/forum?id=z3lG70Azbg" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Gym</strong>: Training Software Engineering Agents and Verifiers with SWE-Gym</li>
+<li><strong>Thinking Longer</strong>: Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute (2025) <a href="https://arxiv.org/abs/2503.23803" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Search for training</strong>: Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2505.13652" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Co-PatcheR</strong>: Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small Reasoning Models (2025) <a href="https://arxiv.org/abs/2505.18955" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Swiss</strong>: SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution (2025)</li>
+<li><strong>MCTS-Refined CoT</strong>: MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository Issue Resolution (2025) <a href="https://arxiv.org/abs/2506.12728" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Swiss</strong>: SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution (2025) <a href="https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Devstral</strong>: Devstral: Fine-tuning Language Models for Coding Agent Applications (2025) <a href="https://arxiv.org/abs/2509.25193" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Kimi-Dev</strong>: Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents (2025) <a href="https://arxiv.org/abs/2509.23045" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SWE-Compressor</strong>: Context as a Tool: Context Management for Long-Horizon SWE-Agents (2025) <a href="https://arxiv.org/abs/2512.22087" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Lego</strong>: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) <a href="https://arxiv.org/abs/2601.01426" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Agentic Rubrics</strong>: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) <a href="https://arxiv.org/abs/2601.04171" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:sft -->
 
 <h4 id="rl-based-methods">RL-based Methods<a class="headerlink" href="#rl-based-methods" title="Permanent link">&para;</a></h4>
 <!-- START PAPERS:rl -->
 <ul>
-<li><strong>SWE-RL</strong>: SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution (2025) <a href="https://arxiv.org/abs/2502.18449" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SoRFT</strong>: SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning (2025) <a href="https://arxiv.org/abs/2502.20127" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SEAlign</strong>: SEAlign: Alignment Training for Software Engineering Agent (2025) <a href="https://arxiv.org/abs/2503.18455" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Dev<sub>1</sub></strong>: SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development (2025) <a href="https://arxiv.org/abs/2505.16975" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-RL</strong>: SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution (2025) <a href="https://openreview.net/forum?id=ULblO61XZ0" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>SoRFT</strong>: SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning (2025) <a href="https://aclanthology.org/2025.acl-long.559/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a></li>
+<li><strong>SEAlign</strong>: SEAlign: Alignment Training for Software Engineering Agent (2026)</li>
+<li><strong>SWE-Dev1</strong>: SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development (2025) <a href="https://arxiv.org/abs/2505.16975" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Satori-SWE</strong>: Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software Engineering (2025) <a href="https://arxiv.org/abs/2505.23604" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Agent-RLVR</strong>: Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards (2025) <a href="https://arxiv.org/abs/2506.11425" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>DeepSWE</strong>: DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling RL (2025)</li>
-<li><strong>SWE-Dev<sub>2</sub></strong>: SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling (2025) <a href="https://arxiv.org/abs/2506.07636" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Swiss</strong>: SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution (2025)</li>
+<li><strong>DeepSWE</strong>: DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling RL (2025) <a href="https://pretty-radio-b75.notion.site/DeepSWE-Training-a-Fully-Open-sourced-State-of-the-Art-Coding-Agent-by-Scaling-RL-22281902c1468193aabbe9a8c59bbe33" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Dev2</strong>: SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling (2025) <a href="https://arxiv.org/abs/2506.07636" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Tool-integrated RL</strong>: Tool-integrated Reinforcement Learning for Repo Deep Search (2025) <a href="https://arxiv.org/abs/2508.03012" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Swiss</strong>: SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution (2025) <a href="https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SeamlessFlow</strong>: SeamlessFlow: A Trainer Agent Isolation RL Framework Achieving Bubble-Free Pipelines via Tag Scheduling (2025) <a href="https://arxiv.org/abs/2508.11553" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>DAPO</strong>: Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning (2025) <a href="https://arxiv.org/abs/2508.03501" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>CoreThink</strong>: CoreThink: A Symbolic Reasoning Layer to reason over Long Horizon Tasks with LLMs (2025) <a href="https://arxiv.org/abs/2509.00971" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>CWM</strong>: CWM: An Open-Weights LLM for Research on Code Generation with World Models (2025) <a href="https://arxiv.org/abs/2510.02387" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>EntroPO</strong>: Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization (2025) <a href="https://arxiv.org/abs/2509.12434" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Kimi-Dev</strong>: Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents (2025) <a href="https://arxiv.org/abs/2509.23045" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>FoldGRPO</strong>: Scaling Long-Horizon LLM Agent via Context-Folding (2025) <a href="https://arxiv.org/abs/2510.11967" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>GRPO-based Method</strong>: A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning (2025) <a href="https://arxiv.org/abs/2510.01132" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>GRPO-based Method</strong>: A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning (2025) <a href="https://openreview.net/forum?id=yPWJG9wgll" target="_blank"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&amp;logoColor=white" /></a></li>
+<li><strong>TSP</strong>: Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level Code Repair (2025) <a href="https://aclanthology.org/2025.emnlp-industry.109/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a> <a href="http://dx.doi.org/10.18653/v1/2025.emnlp-industry.109" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
 <li><strong>Self-play SWE-RL</strong>: Toward Training Superintelligent Software Agents through Self-Play SWE-RL (2025) <a href="https://arxiv.org/abs/2512.18552" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-Playground</strong>: Training Versatile Coding Agents in Synthetic Environments (2025) <a href="https://arxiv.org/abs/2512.12216" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Supervised RL</strong>: Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning (2025) <a href="https://arxiv.org/abs/2510.25992" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>OSCA</strong>: Scaling LLM Inference Efficiently with Optimized Sample Compute Allocation (2025) <a href="https://aclanthology.org/2025.naacl-long.404/" target="_blank"><img alt="ACL" src="https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&amp;logoColor=white" /></a> <a href="http://dx.doi.org/10.18653/v1/2025.naacl-long.404" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
 <li><strong>SWE-RM</strong>: SWE-RM: Execution-free Feedback For Software Engineering Agents (2025) <a href="https://arxiv.org/abs/2512.21919" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>One Tool Is Enough</strong>: One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents (2025) <a href="https://arxiv.org/abs/2512.20957" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Let It Flow</strong>: Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model within an Open Agentic Learning Ecosystem (2025) <a href="https://arxiv.org/abs/2512.24873" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>KAT-Coder</strong>: KAT-Coder Technical Report (2025) <a href="https://arxiv.org/abs/2510.18779" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Seed1.5-Thinking</strong>: Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning (2025) <a href="https://arxiv.org/abs/2504.13914" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Deepseek V3.2</strong>: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models (2025) <a href="https://arxiv.org/abs/2512.02556" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Kimi-K2-Instruct</strong>: Kimi K2: Open Agentic Intelligence (2025) <a href="https://arxiv.org/abs/2507.20534" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>GLM-4.6</strong>: gpt-oss-120b &amp; gpt-oss-20b model card (2025) <a href="https://arxiv.org/abs/2508.10925" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Qwen3-Coder</strong>: Qwen3 Technical Report (2025) <a href="https://arxiv.org/abs/2505.09388" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>GLM-4.6</strong>: Glm-4.5: Agentic, reasoning, and coding (arc) foundation models (2025) <a href="https://arxiv.org/abs/2508.06471" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Minimax M2</strong>: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention (2025) <a href="https://arxiv.org/abs/2506.13585" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>LongCat-Flash-Think</strong>: Introducing LongCat-Flash-Thinking: A Technical Report (2025) <a href="https://arxiv.org/abs/2509.18883" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>MiMo-V2-Flash</strong>: MiMo-V2-Flash Technical Report (2026) <a href="https://arxiv.org/abs/2601.02780" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:rl -->
 
@@ -1258,15 +1333,15 @@
 <h3 id="data-analysis">Data Analysis<a class="headerlink" href="#data-analysis" title="Permanent link">&para;</a></h3>
 <!-- START PAPERS:data_analysis -->
 <ul>
-<li><strong>SWE-bench Verified</strong>: Introducing SWE-bench Verified | OpenAI (2024) <a href="https://openai.com/index/introducing-swe-bench-verified/" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWE-Bench+</strong>: SWE-Bench+: Enhanced Coding Benchmark for LLMs (2024) <a href="https://arxiv.org/abs/2410.06992" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Patch Correctness</strong>: Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study (2025) <a href="http://arxiv.org/abs/2503.15223" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWE-bench Verified</strong>: Introducing SWE-bench Verified | OpenAI (2024)</li>
+<li><strong>Patch Correctness</strong>: Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study (2025) <a href="https://arxiv.org/abs/2503.15223" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>UTBoost</strong>: UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench (2025) <a href="https://arxiv.org/abs/2506.09289" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Trustworthiness</strong>: Is Your Automated Software Engineer Trustworthy? (2025) <a href="https://arxiv.org/abs/2506.17812" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Rigorous agentic benchmarks</strong>: Establishing Best Practices for Building Rigorous Agentic Benchmarks (2025) <a href="https://arxiv.org/abs/2507.02825" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>The SWE-Bench Illusion</strong>: The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason (2025) <a href="https://arxiv.org/abs/2506.12286" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Revisiting SWE-Bench</strong>: Revisiting SWE-Bench: On the Importance of Data Quality for LLM-Based Code Models (2025)</li>
-<li><strong>SPICE</strong>: SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity, Test Coverage, and Effort Estimation (2025) <a href="https://arxiv.org/abs/2507.09108" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Revisiting SWE-Bench</strong>: Revisiting SWE-Bench: On the Importance of Data Quality for LLM-Based Code Models (2025) <a href="http://dx.doi.org/10.1109/ICSE-Companion66252.2025.00075" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
+<li><strong>SPICE</strong>: SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity,
+               Test Coverage, and Effort Estimation (2025)</li>
 <li><strong>Data contamination</strong>: Does SWE-Bench-Verified Test Agent Ability or Model Memory? (2025) <a href="https://arxiv.org/abs/2512.10218" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:data_analysis -->
@@ -1275,15 +1350,17 @@
 <!-- START PAPERS:methods_analysis -->
 <ul>
 <li><strong>Context Retrieval</strong>: On The Importance of Reasoning for Context Retrieval in Repository-Level Code Editing (2024) <a href="https://arxiv.org/abs/2406.04464" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Evaluating software development agents</strong>: Evaluating Software Development Agents: Patch Patterns, Code Quality, and Issue Complexity in Real-World GitHub Scenarios (2025) <a href="http://dx.doi.org/10.1109/SANER64311.2025.00068" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Evaluating software development agents</strong>: Evaluating Software Development Agents: Patch Patterns, Code Quality, and Issue Complexity in Real-World GitHub Scenarios (2025) <a href="http://dx.doi.org/10.1109/SANER64311.2025.00068" target="_blank"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></li>
 <li><strong>Overthinking</strong>: The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic Tasks (2025) <a href="https://arxiv.org/abs/2502.08235" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Beyond final code</strong>: Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios (2025) <a href="https://arxiv.org/abs/2503.12374" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>GSO</strong>: GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents (2025) <a href="https://arxiv.org/abs/2505.23671" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Dissecting the SWE-Bench Leaderboards</strong>: Dissecting the SWE-Bench Leaderboards: Profiling Submitters and Architectures of LLM- and Agent-Based Repair Systems (2025) <a href="https://arxiv.org/abs/2506.17208" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>Security analysis</strong>: Are AI-Generated Fixes Secure? Analyzing LLM and Agent Patches on SWE-bench (2025) <a href="https://arxiv.org/abs/2507.02976" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Security analysis</strong>: How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks in LLM and Agentic Automated Program Repair on SWE-bench (2025) <a href="https://arxiv.org/abs/2507.02976" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>Failures analysis</strong>: An Empirical Study on Failures in Automated Issue Solving (2025) <a href="https://arxiv.org/abs/2509.13941" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
 <li><strong>SeaView</strong>: SeaView: Software Engineering Agent Visual Interface for Enhanced Workflow (2025) <a href="https://arxiv.org/abs/2504.08696" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
-<li><strong>SWEnergy</strong>: SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution Frameworks with SLMs (2025) <a href="https://arxiv.org/abs/2512.09543" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>SWEnergy</strong>: SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution Frameworks with SLMs (2026)</li>
+<li><strong>Strong-Weak Model Collaboration</strong>: An Empirical Study on Strong-Weak Model Collaboration for Repo-level Code Generation (2025) <a href="https://arxiv.org/abs/2505.20182" target="_blank"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></li>
+<li><strong>Agents in the Wild</strong> (2025) <a href="https://insights.logicstar.ai/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&amp;logoColor=white" /></a></li>
 </ul>
 <!-- END PAPERS:methods_analysis -->
 
@@ -1291,19 +1368,23 @@
 <h2 id="challenges-and-opportunities">🚀 Challenges and Opportunities<a class="headerlink" href="#challenges-and-opportunities" title="Permanent link">&para;</a></h2>
 <div class="challenges-content">
 <h3 id="high-computational-overhead">High computational overhead<a class="headerlink" href="#high-computational-overhead" title="Permanent link">&para;</a></h3>
-<p>The scalability of SWE agents is bottlenecked by the high costs of sandboxed environments and long-context inference. Optimization strategies are required to streamline these resource-intensive loops without sacrificing performance.</p>
-<h3 id="opacity-in-resource-consumption">Opacity in resource consumption<a class="headerlink" href="#opacity-in-resource-consumption" title="Permanent link">&para;</a></h3>
-<p>Benchmarks often overlook efficiency, masking the high costs of techniques like inference-time scaling. Standardized reporting of latency and token usage is crucial for guiding the development of cost-effective agents.</p>
+<p>In online RL, performing concurrent rollouts necessitates the simultaneous orchestration of numerous sandboxed containers, which incurs substantial storage footprints and computational costs. Similarly, verifying instances during data construction requires extensive parallel validation. This highlights the need for lightweight sandboxing and optimized resource scheduling.</p>
+<h3 id="lack-of-efficiency-aware-evaluation">Lack of efficiency-aware evaluation<a class="headerlink" href="#lack-of-efficiency-aware-evaluation" title="Permanent link">&para;</a></h3>
+<p>Current evaluations of issue resolution methods mainly focus on effectiveness metrics such as resolve rates while overlooking efficiency metrics like API costs and inference time. This oversight creates a biased domain where the computational and economic burdens of high-performing models are obscured. Consequently, future research must integrate both resolve rates and efficiency metrics into the evaluation framework to objectively reflect the comprehensive performance of issue resolution methods.</p>
 <h3 id="limited-visually-grounded-reasoning">Limited visually-grounded reasoning<a class="headerlink" href="#limited-visually-grounded-reasoning" title="Permanent link">&para;</a></h3>
-<p>Reliance on text proxies for UI interpretation limits effectiveness. Future research can adopt intrinsic multi-modal solutions, such as code-centric MLLMs, to better bridge the gap between visual rendering and underlying code logic.</p>
+<p>Multimodal tasks are rare in current benchmarks, hindering the evaluation of visually-dependent tasks such as frontend development and data visualization. Moreover, existing methods often simply flatten visuals into text, failing to capture the critical alignment between rendering and code. To address this, future research must prioritize constructing multimodal benchmarks and training specialized code-centric models.</p>
 <h3 id="safety-risks-in-autonomous-resolution">Safety risks in autonomous resolution<a class="headerlink" href="#safety-risks-in-autonomous-resolution" title="Permanent link">&para;</a></h3>
-<p>High autonomy carries risks of destructive actions, such as accidental code deletion. Future systems should integrate safeguards, such as Git-based version control, to ensure autonomous modifications remain secure and reversible.</p>
-<h3 id="lack-of-fine-grained-reward-signals">Lack of fine-grained reward signals<a class="headerlink" href="#lack-of-fine-grained-reward-signals" title="Permanent link">&para;</a></h3>
-<p>Reinforcement learning is hindered by sparse, binary feedback. Integrating fine-grained signals from compiler diagnostics and execution traces is necessary to guide models through complex reasoning steps.</p>
+<p>Recently, some agents have exhibited unsafe behaviors on coding tasks, including <a href="https://www.businessinsider.com/replit-agent-deleted-user-codebase-2025">deleting a user's codebase</a> and <a href="https://github.com/SWE-bench/SWE-bench/issues/465">cheating during evaluation</a>. These failures motivate safer agent frameworks and more robust model safety alignment to prevent reward hacking in real deployments.</p>
+<h3 id="lack-of-fine-grained-rewards">Lack of fine-grained rewards<a class="headerlink" href="#lack-of-fine-grained-rewards" title="Permanent link">&para;</a></h3>
+<p>Most RL methods for issue resolution still rely on outcome-level rewards, typically the binary test pass/fail signal. However, issue resolution requires multi-turn interaction with the environment, and an outcome reward makes credit assignment across action steps ambiguous. A promising direction is to design finer-grained process rewards to provide denser supervision and improve policy optimization.</p>
 <h3 id="data-leakage-and-contamination">Data leakage and contamination<a class="headerlink" href="#data-leakage-and-contamination" title="Permanent link">&para;</a></h3>
-<p>As benchmarks approach saturation, evaluation validity is compromised by data leakage. Future frameworks must strictly enforce decontamination protocols to ensure fairness and reliability.</p>
-<h3 id="lack-of-universality-across-se-domains">Lack of universality across SE domains<a class="headerlink" href="#lack-of-universality-across-se-domains" title="Permanent link">&para;</a></h3>
-<p>While current issue resolution tasks mirror development workflows, they represent only a fraction of the full Software Development Life Cycle (SDLC). Future research should broaden the scope of issue resolution tasks to develop more versatile automated software generation methods.</p>
+<p>As benchmarks like SWE-Bench approach saturation, evaluation reliability is threatened by significant data leakage and quality control issues. Models may inadvertently memorize solutions due to unclear training cutoff dates, while the benchmarks themselves frequently suffer from invalid instances—including ambiguous descriptions, solution hints, and insufficient test coverage. To restore trust, future frameworks must prioritize rigorous data curation and decontamination protocols to guarantee the validity of comparative assessments.</p>
+<h3 id="lack-of-autonomous-context-management-mechanisms">Lack of autonomous context management mechanisms<a class="headerlink" href="#lack-of-autonomous-context-management-mechanisms" title="Permanent link">&para;</a></h3>
+<p>Issue resolution tasks often require long-horizon, multi-turn interaction between the model and the code environment. This both raises API cost and degrades performance due to context rot. A promising solution is to construct an autonomous context management mechanism that proactively compresses and curates the model's interaction history.</p>
+<h3 id="insufficient-patch-validation-and-human-review">Insufficient patch validation and human review<a class="headerlink" href="#insufficient-patch-validation-and-human-review" title="Permanent link">&para;</a></h3>
+<p>Since gold tests are unavailable in real-world development, relying solely on generation capability is insufficient. Future agents should incorporate intrinsic validation mechanisms, utilizing regression testing and dependency analysis to prevent feature regression. Additionally, to bridge the trust gap, research can prioritize human-centric interfaces, such as visual explanations and concise summaries, that assist developers in efficiently reviewing and accepting model-generated solutions.</p>
+<h3 id="lack-of-universality-across-swe-domains">Lack of universality across SWE domains<a class="headerlink" href="#lack-of-universality-across-swe-domains" title="Permanent link">&para;</a></h3>
+<p>While existing research predominantly focuses on the implementation and integration phases of the Software Development Life Cycle (SDLC), it often fails to address the comprehensive needs of the broader software engineering field. Future research should therefore broaden its scope to encompass diverse lifecycle stages—such as requirements analysis and architectural design—to develop more versatile automated software generation methods.</p>
 </div>
 <hr />
 <h2 id="more-to-read">📚 More to read<a class="headerlink" href="#more-to-read" title="Permanent link">&para;</a></h2>

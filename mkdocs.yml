@@ -37,8 +37,14 @@ theme:
 extra_css:
   - stylesheets/custom.css
 
-# 包含 PDF 文件到构建输出
+# Include PDF files in build output
 docs_dir: docs
+
+# Validation settings - suppress warnings for internal directory links
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: ignore
 
 plugins:
   - search

@@ -1,75 +1,90 @@
-# Memory
-# Auto-generated from papers_raw/taxonomy.tex and papers_raw/main.bib
+# Memory-Enhanced Methods
+# Auto-generated from taxonomy.tex and BibTeX file
 
-- short_name: "Infant Agent"
-  title: "Infant Agent: A Tool-Integrated, Logic-Driven Agent with Cost-Effective API Usage"
-  authors: "Bin Lei, Yuchen Li, Yiming Zeng, Tao Ren, Yi Luo, Tianyu Shi, Zitian Gao, Zeyu Hu, Weitai Kang, Qiuwu Chen"
-  venue: "arXiv 2024"
-  year: "2024"
+- short_name: Infant Agent
+  title: 'Infant Agent: A Tool-Integrated, Logic-Driven Agent with Cost-Effective
+    API Usage'
+  authors: Bin Lei, Yuchen Li, Yiming Zeng, Tao Ren, Yi Luo, Tianyu Shi, Zitian Gao
+    et al.
+  year: '2024'
+  venue: arXiv preprint arXiv:2411.01114 2024
   links:
-    arxiv: "https://arxiv.org/abs/2411.01114"
-
-- short_name: "EvoCoder"
-  title: "LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues"
-  authors: "Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin Li"
-  venue: "arXiv 2024"
-  year: "2024"
+    arxiv: https://arxiv.org/abs/2411.01114
+- short_name: EvoCoder
+  title: 'LLMs as Continuous Learners: Improving the Reproduction of Defective Code
+    in Software Issues'
+  authors: Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin
+    Li
+  year: '2024'
+  venue: arXiv preprint arXiv:2411.13941 2024
   links:
-    arxiv: "https://arxiv.org/abs/2411.13941"
-
-- short_name: "Learn-by-interact"
-  title: "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments"
-  authors: "Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik"
-  venue: "The Thirteenth International Conference on Learning Representations 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2411.13941
+- short_name: Learn-by-interact
+  title: 'Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in
+    Realistic Environments'
+  authors: Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik
+  year: '2025'
+  venue: The Thirteenth International Conference on Learning Representations 2025
   links:
-    arxiv: "https://openreview.net/forum?id=3UKOzGWCVY"
-
-- short_name: "DGM"
-  title: "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents"
-  authors: "Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune"
-  venue: "arXiv 2025"
-  year: "2025"
+    openreview: https://openreview.net/forum?id=3UKOzGWCVY
+- short_name: DGM
+  title: 'Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents'
+  authors: Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune
+  year: '2025'
+  venue: arXiv preprint arXiv:2505.22954 2025
   links:
-    arxiv: "https://arxiv.org/abs/2505.22954"
-
-- short_name: "ExpeRepair"
-  title: "EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair"
-  authors: "Fangwen Mu, Junjie Wang, Lin Shi, Song Wang, Shoubin Li, Qing Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2505.22954
+- short_name: ExpeRepair
+  title: 'EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair'
+  authors: Fangwen Mu, Junjie Wang, Lin Shi, Song Wang, Shoubin Li, Qing Wang
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.10484 2025
   links:
-    arxiv: "https://arxiv.org/abs/2506.10484"
-
-- short_name: "Agent KB"
-  title: "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving"
-  authors: "Xiangru Tang, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting Du, Xinming Wei, Peng Xia, Fang Wu, He Zhu, Ge Zhang, Jiaheng Liu, Xingyao Wang, Sirui Hong, Chenglin Wu, Hao Cheng, Chi Wang, Wangchunshu Zhou"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2506.10484
+- short_name: Agent KB
+  title: 'Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving'
+  authors: Xiangru Tang, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting
+    Du, Xinming Wei et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.06229 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.06229"
-
-- short_name: "SWE-Exp"
-  title: "SWE-Exp: Experience-Driven Software Issue Resolution"
-  authors: "Silin Chen, Shaoxin Lin, Xiaodong Gu, Yuling Shi, Heng Lian, Longfei Yun, Dong Chen, Weiguo Sun, Lin Cao, Qianxiang Wang"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.06229
+- short_name: SWE-Exp
+  title: 'SWE-Exp: Experience-Driven Software Issue Resolution'
+  authors: Silin Chen, Shaoxin Lin, Xiaodong Gu, Yuling Shi, Heng Lian, Longfei Yun,
+    Dong Chen et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.23361 2025
   links:
-    arxiv: "https://arxiv.org/abs/2507.23361"
-
-- short_name: "RepoMem"
-  title: "Improving Code Localization with Repository Memory"
-  authors: "Boshi Wang, Weijian Xu, Yunsheng Li, Mei Gao, Yujia Xie, Huan Sun, Dongdong Chen"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2507.23361
+- short_name: RepoMem
+  title: Improving Code Localization with Repository Memory
+  authors: Boshi Wang, Weijian Xu, Yunsheng Li, Mei Gao, Yujia Xie, Huan Sun, Dongdong
+    Chen
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.01003 2025
   links:
-    arxiv: "https://arxiv.org/abs/2510.01003"
-
-- short_name: "ReasoningBank"
-  title: "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory"
-  authors: "Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister"
-  venue: "arXiv 2025"
-  year: "2025"
+    arxiv: https://arxiv.org/abs/2510.01003
+- short_name: AgentDiet
+  title: Improving the Efficiency of LLM Agent Systems through Trajectory Reduction
+  authors: Yuan-An Xiao, Pengfei Gao, Chao Peng, Yingfei Xiong
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.23586 2025
   links:
-    arxiv: "https://arxiv.org/abs/2509.25140"
-
+    arxiv: https://arxiv.org/abs/2509.23586
+- short_name: ReasoningBank
+  title: 'ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory'
+  authors: Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun
+    Han et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.25140 2025
+  links:
+    arxiv: https://arxiv.org/abs/2509.25140
+- short_name: MemGovern
+  title: 'MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences'
+  authors: Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi
+    Wang et al.
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.06789 2026
+  links:
+    arxiv: https://arxiv.org/abs/2601.06789
