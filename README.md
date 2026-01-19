@@ -626,8 +626,6 @@ Existing surveys primarily focus on code generation or other tasks within the so
 - [Agents in software engineering: survey, landscape, and vision](https://doi.org/10.1007/s10515-025-00544-2)
 - [A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System](https://arxiv.org/abs/2510.09721)
 
-> **Note:** The BibTeX sources and automated scripts for managing these references are maintained in the `bib2data/` directory for internal use. These resources are not required for general users contributing papers to this project.
-
 ---
 
 ## 📄 Citation
@@ -650,7 +648,8 @@ If you use this project or related survey in your research or system, please cit
 }
 ```
 
-Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
+> Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
+
 ---
 
 ## 🙏 Acknowledgements
