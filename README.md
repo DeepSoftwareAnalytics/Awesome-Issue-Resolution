@@ -25,14 +25,32 @@
 
 Based on a systematic review of **176 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website. 
 
+<!-- START EXPLORE -->
 **🔍 Explore This Survey:**
 
-- 📊 **[Data](#-complete-paper-list)**: Evaluation and training datasets, data collection and synthesis methods
-- 🛠️ **[Methods](#-complete-paper-list)**: Training-free (agent/workflow) and training-based (SFT/RL) approaches  
-- 🔍 **[Analysis](#-complete-paper-list)**: Insights into both data characteristics and method performance
+- 📊 **[Data](#-data)**: Evaluation and training datasets, data collection and synthesis methods
+  - [📊 Evaluation Datasets](#-evaluation-datasets)
+  - [🎯 Training Datasets](#-training-datasets)
+  - [📥 Data Collection Methods](#-data-collection)
+  - [🔬 Data Synthesis Methods](#-data-synthesis)
+- 🛠️ **[Methods](#%EF%B8%8F-methods)**: Training-free (agent/workflow) and training-based (SFT/RL) approaches
+  - **Training-free Methods**
+    - [🤖 Single-Agent Systems](#-single-agent-systems)
+    - [👥 Multi-Agent Systems](#-multi-agent-systems)
+    - [🔄 Workflow-Based Methods](#-workflow-based-methods)
+    - [🛠️ Tool-Augmented Methods](#%EF%B8%8F-tool-augmented-methods)
+    - [🧠 Memory-Enhanced Methods](#-memory-enhanced-methods)
+    - [⚡ Inference-Time Scaling](#-inference-time-scaling)
+  - **Training-based Methods**
+    - [📚 Supervised Fine-Tuning (SFT)](#-supervised-fine-tuning-sft)
+    - [🎮 Reinforcement Learning (RL)](#-reinforcement-learning-rl)
+- 🔍 **[Analysis](#-analysis)**: Insights into both data characteristics and method performance
+  - [📈 Data Analysis](#-data-analysis)
+  - [🔍 Methods Analysis](#-methods-analysis)
 - 📋 **[Tables & Resources](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)**: Comprehensive statistical tables and resources
 - 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
 - 🤝 **[Contributing](#-contributing)**: How to contribute to this project
+<!-- END EXPLORE -->
 
 **🎙️ Interactive Exploration:**
 
