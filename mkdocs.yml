@@ -30,8 +30,9 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-    - toc.follow
+    - toc.integrate
     - navigation.indexes
+    - navigation.expand
   icon:
     repo: fontawesome/brands/github
 

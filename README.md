@@ -556,7 +556,6 @@ The application of LLMs in the programming domain has witnessed explosive growth
 - **Repository-Level Code Completion**: [RLCoder: Reinforcement Learning for Repository-Level Code Completion](https://doi.org/10.1109/ICSE55347.2025.00014)
 - **Domain-Specific Benchmarks**: [Top General Performance = Top Domain Performance? DomainCodeBench](https://arxiv.org/abs/2412.18573)
 - **Long-Context Code Models**: [Long Code Arena](https://arxiv.org/abs/2406.11612)
-- **Repository-Level Generation**: [FEA-Bench](https://aclanthology.org/2025.acl-long.839/)
 - **Multitask Fine-Tuning**: [MFTCoder: Boosting Code LLMs with Multitask Fine-Tuning](https://doi.org/10.1145/3637528.3671609)
 - **RAG for Code**: [RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry](https://doi.org/10.1145/3696630.3728549), [Repoformer: Selective Retrieval for Repository-Level Code Completion](https://openreview.net/forum?id=ZUnIGtP0Nf), [CodeRAG-Bench](https://aclanthology.org/2025.findings-naacl.176/)
 - **Code Generation Survey**: [A Survey on Large Language Models for Code Generation](https://doi.org/10.1145/3747588)

@@ -29,17 +29,22 @@
 
 ### Citation
 
+<!-- START CITATION -->
 If you use this project or related survey in your research or system, please cite the following BibTeX:
 
 ```bibtex
-@misc{li2025awesome_issue_resolution,
-    title       = {Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey},
-    author      = {Caihua Li and Lianghong Guo and Yanlin Wang and Daya Guo and Wei Tao and Zhenyu Shan and Mingwei Liu and Jiachi Chen and Haoyu Song and Duyu Tang and Hongyu Zhang and Zibin Zheng},
-    year        = {2025},
-    howpublished = {\url{https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution}}
+@article{li2026advances,
+  title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
+  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Liu, Runze and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
+  journal={TechRxiv},
+  year={2026},
+  page={1375056},
+  dor={10.36227/techrxiv.176779734.47868328/v2},
+  publisher={IEEE}
 }
 ```
 
 Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
+<!-- END CITATION -->
 
 

@@ -251,6 +251,33 @@ def main():
     update_cite_page(bib_data)
     print()
     
+    # Update paper.md
+    print("📝 Updating docs/paper.md...")
+    paper_path = ROOT / "docs" / "paper.md"
+    if paper_path.exists():
+        try:
+            content = paper_path.read_text(encoding='utf-8')
+            bibtex_str = generate_bibtex_block(CITATION_BIB)
+            citation_block = f"""If you use this project or related survey in your research or system, please cite the following BibTeX:
+
+```bibtex
+{bibtex_str}
+```
+
+Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.)."""
+            
+            pattern = re.compile(r'(<!-- START CITATION -->).*?(<!-- END CITATION -->)', re.DOTALL)
+            new_content = pattern.sub(f'\\1\n{citation_block}\n\\2', content)
+            
+            if new_content != content:
+                paper_path.write_text(new_content, encoding='utf-8')
+                print("✓ Updated citation in paper.md")
+            else:
+                print("[WARN] Citation markers not found in paper.md")
+        except Exception as e:
+            print(f"[ERROR] Failed to update paper.md: {e}")
+    print()
+    
     print("=" * 70)
     print("  ✅ Citation generation complete!")
     print("=" * 70)

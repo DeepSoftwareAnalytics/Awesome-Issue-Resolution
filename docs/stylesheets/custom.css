@@ -1,5 +1,5 @@
 /* ============================================
-   Awesome Issue Resolution - 匹配原网站样式
+   Awesome Issue Resolution - Custom Styles
    https://noranotdora.github.io/
    ============================================ */
 
@@ -37,7 +37,7 @@
 }
 
 /* ============================================
-   Header & Tabs - 深蓝色渐变
+   Header & Tabs - Deep Blue Gradient
    ============================================ */
 .md-header {
   background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
@@ -45,7 +45,7 @@
 }
 
 /* ============================================
-   Hero Section - 紫色渐变
+   Hero Section - Purple Gradient
    ============================================ */
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
@@ -164,7 +164,7 @@
 
 .hero-badges-dynamic img {
   height: 28px;
-  border-radius: 4px;
+  border-radius: 14px;
 }
 
 /* Quick Navigation Pills */
@@ -227,7 +227,7 @@
   }
 }
 
-/* Top Navigation Tabs - 深蓝色渐变 */
+/* Top Navigation Tabs - Deep Blue Gradient */
 .md-tabs {
   background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%) !important;
 }
@@ -243,26 +243,32 @@
   opacity: 1;
 }
 
-/* 隐藏右侧 TOC 导航 */
+/* Hide right sidebar - TOC integrated into left sidebar */
 .md-sidebar--secondary {
   display: none !important;
 }
 
-/* 左侧导航栏标题改为 Table of contents */
-.md-nav--primary .md-nav__title {
-  display: none;
+/* Expand all navigation items in left sidebar */
+.md-nav__item--nested .md-nav {
+  display: block !important;
+  max-height: none !important;
 }
 
-.md-nav--primary > .md-nav__list::before {
-  content: "Table of contents";
-  display: block;
-  font-weight: 700;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: var(--md-default-fg-color--light);
-  padding: 0 0.6rem 0.4rem;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.05em;
+.md-nav__toggle ~ .md-nav {
+  display: block !important;
+}
+
+/* Ensure all TOC items in left sidebar are visible */
+.md-sidebar--primary .md-nav--secondary {
+  display: block !important;
+}
+
+.md-sidebar--primary .md-nav__list {
+  display: block !important;
+}
+
+.md-sidebar--primary .md-nav__item {
+  display: block !important;
 }
 
 /* Hide the duplicate H1 title */
@@ -358,12 +364,12 @@
   font-weight: 600;
 }
 
-/* 论文链接徽章样式 */
+/* Paper link badge styles - Rounded corners */
 .md-typeset ul li a img {
   height: 20px;
   vertical-align: middle;
   margin-left: 6px;
-  border-radius: 3px;
+  border-radius: 12px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -372,7 +378,7 @@
   opacity: 0.85;
 }
 
-/* 链接样式 */
+/* Link styles */
 .md-typeset ul li a {
   text-decoration: none;
   border-bottom: none;
@@ -588,6 +594,7 @@
   vertical-align: middle;
   height: 18px;
   margin: 0 2px;
+  border-radius: 9px;
 }
 
 /* Table captions (italic text before table) */
