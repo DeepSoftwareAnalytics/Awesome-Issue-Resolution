@@ -30,7 +30,8 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-    - toc.integrate
+    - toc.follow
+    - navigation.indexes
   icon:
     repo: fontawesome/brands/github
 
@@ -46,6 +47,11 @@ validation:
   absolute_links: warn
   unrecognized_links: ignore
 
+# Exclude files from site build
+exclude_docs: |
+  images/README.md
+  **/README.md
+
 plugins:
   - search
 
@@ -55,6 +61,8 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 4
+      title: On this page
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.extra

@@ -306,30 +306,35 @@ def generate_papers_section() -> str:
 
 
 def generate_tables_section() -> str:
-    """Generate the tables section from converted markdown files."""
-    tables_dir = ROOT / "docs" / "tables"
+    """Generate the tables section from tables.md file."""
+    tables_md = ROOT / "docs" / "tables.md"
     
-    if not tables_dir.exists():
-        print("[WARN] Tables directory not found, skipping tables section")
+    if not tables_md.exists():
+        print("[WARN] tables.md not found, skipping tables section")
         return "\n\nNo tables available yet.\n"
     
-    content = ["\n## 📋 Statistical Tables\n"]
-    content.append("Comprehensive tables and statistics about issue resolution datasets, methods, and benchmarks.\n")
+    try:
+        content_text = tables_md.read_text(encoding="utf-8")
+        
+        # Extract content after the first "---" separator
+        # Skip the page title and intro text
+        lines = content_text.split('\n')
+        start_idx = 0
+        for i, line in enumerate(lines):
+            if line.strip() == '---' and i > 0:
+                start_idx = i + 1
+                break
+        
+        if start_idx > 0:
+            # Get the tables content
+            table_content = '\n'.join(lines[start_idx:])
+            return f"\n## 📋 Statistical Tables\n\nComprehensive tables and statistics about issue resolution datasets, methods, and benchmarks.\n\n{table_content}\n"
+        else:
+            return "\n\nNo tables available yet.\n"
     
-    # Read all individual table files
-    table_files = sorted(tables_dir.glob("table*.md"))
-    
-    for table_file in table_files:
-        try:
-            table_content = table_file.read_text(encoding="utf-8")
-            content.append(f"\n{table_content}\n")
-        except Exception as e:
-            print(f"[WARN] Failed to read {table_file}: {e}")
-    
-    if len(content) == 2:  # Only header added
-        content.append("\nNo tables available yet.\n")
-    
-    return "\n".join(content)
+    except Exception as e:
+        print(f"[WARN] Failed to read tables.md: {e}")
+        return "\n\nNo tables available yet.\n"
 
 
 def generate_usage_section() -> str:
