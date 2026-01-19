@@ -30,13 +30,17 @@ We welcome Pull Requests to add new papers or fix errors!
 
 We would like to express our sincere gratitude to:
 
-- **[@chao-peng](https://github.com/chao-peng){: target="_blank" }** ([Dr. Chao Peng](https://chao-peng.github.io){: target="_blank" }), ByteDance Software Engineering Lab, for providing valuable suggestions on the Challenges and Opportunities section of our survey.
-
-- **[@EuniAI/awesome-code-agents](https://github.com/EuniAI/awesome-code-agents){: target="_blank" }** for providing an excellent reference on managing survey papers through documentation systems and inspiring our project structure.
+- The **authors of cited papers** who provided valuable feedback on how their work is presented in this survey, greatly improving its accuracy and comprehensiveness.
 
 - All **contributors** who have helped improve this project through issues, pull requests, and discussions.
 
 - The **open-source community** for developing the amazing tools and frameworks that made this project possible.
+
+### Special Thanks
+
+- **[@chao-peng](https://github.com/chao-peng){: target="_blank" }** ([Dr. Chao Peng](https://chao-peng.github.io){: target="_blank" }), ByteDance Software Engineering Lab, for providing valuable suggestions on the Challenges and Opportunities section of our survey.
+
+- **[@EuniAI/awesome-code-agents](https://github.com/EuniAI/awesome-code-agents){: target="_blank" }** for providing an excellent reference on managing survey papers through documentation systems and inspiring our project structure.
 
 ---
 

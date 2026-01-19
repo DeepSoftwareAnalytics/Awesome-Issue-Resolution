@@ -21,7 +21,7 @@
 
 **Title**: Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey
 
-**Authors**: Caihua Li, Lianghong Guo, Yanlin Wang, Wei Tao, Zhenyu Shan, Mingwei Liu, Jiachi Chen, Haoyu Song, Duyu Tang, Hongyu Zhang, Zibin Zheng
+**Authors**: Caihua Li, Lianghong Guo, Yanlin Wang, Daya Guo, Wei Tao, Zhenyu Shan, Mingwei Liu, Jiachi Chen, Haoyu Song, Duyu Tang, Hongyu Zhang, Zibin Zheng
 
 **Institutions**: Sun Yat-sen University, Independent Researcher, Hangzhou Normal University, Zhejiang University, Huawei Technologies Co, Ltd, Chongqing University
 
@@ -35,7 +35,7 @@ If you use this project or related survey in your research or system, please cit
 ```bibtex
 @article{li2026advances,
   title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
-  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Liu, Runze and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
+  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
   journal={TechRxiv},
   year={2026},
   page={1375056},

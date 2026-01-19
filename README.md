@@ -639,7 +639,7 @@ If you use this project or related survey in your research or system, please cit
 ```bibtex
 @article{li2026advances,
   title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
-  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Liu, Runze and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
+  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
   journal={TechRxiv},
   year={2026},
   page={1375056},
@@ -648,21 +648,24 @@ If you use this project or related survey in your research or system, please cit
 }
 ```
 
-> Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
-
+Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
 ---
 
 ## 🙏 Acknowledgements
 
 We would like to express our sincere gratitude to:
 
-- **[@chao-peng](https://github.com/chao-peng)** ([Dr. Chao Peng](https://chao-peng.github.io)), ByteDance Software Engineering Lab, for providing valuable suggestions on the Challenges and Opportunities section of our survey.
-
-- **[@EuniAI/awesome-code-agents](https://github.com/EuniAI/awesome-code-agents)** for providing an excellent reference on managing survey papers through documentation systems and inspiring our project structure.
+- The **authors of cited papers** who provided valuable feedback on how their work is presented in this survey, greatly improving its accuracy and comprehensiveness.
 
 - All **contributors** who have helped improve this project through issues, pull requests, and discussions.
 
 - The **open-source community** for developing the amazing tools and frameworks that made this project possible.
+
+### Special Thanks
+
+- **[@chao-peng](https://github.com/chao-peng)** ([Dr. Chao Peng](https://chao-peng.github.io)), ByteDance Software Engineering Lab, for providing valuable suggestions on the Challenges and Opportunities section of our survey.
+
+- **[@EuniAI/awesome-code-agents](https://github.com/EuniAI/awesome-code-agents)** for providing an excellent reference on managing survey papers through documentation systems and inspiring our project structure.
 
 ---
 
