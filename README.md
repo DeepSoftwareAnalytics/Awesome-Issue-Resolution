@@ -15,6 +15,12 @@
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
+**🎙️ Interactive Exploration:**
+
+[![NotebookLM](https://img.shields.io/badge/🎧_NotebookLM-Listen_&_Explore-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a)
+[![Discord](https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/3nF2EYTD)
+[![Issues](https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues)
+
 <img src="docs/images/awesome-issue-resolution.png" alt="Awesome Issue Resolution" width="60%">
 
 </div>
@@ -51,16 +57,6 @@ Based on a systematic review of **176 papers and online resources**, this survey
 - 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
 - 🤝 **[Contributing](#-contributing)**: How to contribute to this project
 <!-- END EXPLORE -->
-
-**🎙️ Interactive Exploration:**
-
-<div align="center">
-
-[![NotebookLM](https://img.shields.io/badge/🎧_NotebookLM-Listen_&_Explore-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a)
-[![Discord](https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/3nF2EYTD)
-[![Issues](https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues)
-
-</div>
 
 ---
 
@@ -102,7 +98,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 
 ### 🎯 Training Datasets
 
-*Datasets for training issue resolution agents*
+*Datasets for training issue resolution systems*
 
 - **SWE-bench-extra**: SWE-bench: Can Language Models Resolve Real-world Github Issues? (2024)
 - **Multi-SWE-RL**: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=MhBZzkz4h9)
@@ -230,7 +226,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 
 ### 📚 Supervised Fine-Tuning (SFT)
 
-*Models trained via supervised learning*
+*Models trained via supervised fine-tuning*
 
 - **Lingma SWE-GPT**: SWE-GPT: A Process-Centric Language Model for Automated Software Improvement (2025)
 - **ReSAT**: Repository Structure-Aware Training Makes SLMs Better Issue Resolver (2024) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.19031)
