@@ -8,12 +8,15 @@
 [![Forks](https://img.shields.io/github/forks/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=blue)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/fork)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Paper](https://img.shields.io/badge/PAPER-PDF-4285F4?style=for-the-badge&logo=googledocs&logoColor=white)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)
-[![arXiv](https://img.shields.io/badge/arXiv-2501.XXXXX-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.11655-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.11655)
+[![Hugging Face](https://img.shields.io/badge/🤗_HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
 ![Papers Count](https://img.shields.io/badge/papers-176-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
+
+> 🤗 **HF Paper**: [https://huggingface.co/papers/2601.11655](https://huggingface.co/papers/2601.11655) (Upvotes appreciated! ⬆️)
 
 **🎙️ Interactive Exploration:**
 
@@ -632,19 +635,19 @@ Existing surveys primarily focus on code generation or other tasks within the so
 
 If you use this project or related survey in your research or system, please cite the following:
 
-**Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.** (2026). *Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey*. TechRxiv.  DOI: [10.36227/techrxiv.176779734.47868328/v2](https://doi.org/10.36227/techrxiv.176779734.47868328/v2)
+**Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.** (2026). *Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey*. arXiv preprint arXiv:2601.11655.
 
 **BibTeX:**
 
 ```bibtex
 @article{li2026advances,
-  title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
+  title={Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey},
   author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
-  journal={TechRxiv},
+  journal={arXiv preprint arXiv:2601.11655},
   year={2026},
-  page={1375056},
-  dor={10.36227/techrxiv.176779734.47868328/v2},
-  publisher={IEEE}
+  eprint={2601.11655},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE}
 }
 ```
 

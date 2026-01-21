@@ -7,6 +7,12 @@
 </div>
 
 <div class="paper-download">
+  <a href="https://arxiv.org/abs/2601.11655" class="download-btn" target="_blank" rel="noopener noreferrer" style="margin-right: 10px;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+    </svg>
+    View on arXiv
+  </a>
   <a href="../Advances and Frontiers of LLM-based Issue Resolution in Software Engineering A Comprehensive Survey.pdf" class="download-btn" download>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
@@ -34,17 +40,17 @@ If you use this project or related survey in your research or system, please cit
 
 ```bibtex
 @article{li2026advances,
-  title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
+  title={Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey},
   author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
-  journal={TechRxiv},
+  journal={arXiv preprint arXiv:2601.11655},
   year={2026},
-  page={1375056},
-  dor={10.36227/techrxiv.176779734.47868328/v2},
-  publisher={IEEE}
+  eprint={2601.11655},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE}
 }
 ```
 
-Once published on arXiv or at a conference, please replace the entry with the official citation information (authors, DOI/arXiv ID, conference name, etc.).
+For the latest version, please visit: [https://arxiv.org/abs/2601.11655](https://arxiv.org/abs/2601.11655)
 <!-- END CITATION -->
 
 

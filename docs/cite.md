@@ -4,29 +4,29 @@ If you find this survey helpful for your research or project, please consider ci
 
 ## Formatted Citation
 
-**Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.** (2026). *Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey*. TechRxiv.  DOI: [10.36227/techrxiv.176779734.47868328/v2](https://doi.org/10.36227/techrxiv.176779734.47868328/v2)
+**Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.** (2026). *Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey*. arXiv preprint arXiv:2601.11655.
 
 ## BibTeX
 
 ```bibtex
 @article{li2026advances,
-  title={Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey},
+  title={Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey},
   author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
-  journal={TechRxiv},
+  journal={arXiv preprint arXiv:2601.11655},
   year={2026},
-  page={1375056},
-  dor={10.36227/techrxiv.176779734.47868328/v2},
-  publisher={IEEE}
+  eprint={2601.11655},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE}
 }
 ```
 
 ## Other Formats
 
 ### APA
-Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al. (2026). Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey. *TechRxiv*.
+Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al. (2026). Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey. *arXiv preprint arXiv:2601.11655*.
 
 ### MLA
-Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.. "Advances, Frontiers, and Future of Issue Resolution in Software Engineering: A Comprehensive Survey." *TechRxiv* (2026).
+Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.. "Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey." *arXiv preprint arXiv:2601.11655* (2026).
 
 ---
 
