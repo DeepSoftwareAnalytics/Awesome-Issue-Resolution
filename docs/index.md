@@ -18,8 +18,11 @@
         <a href="paper/">
             <img src="https://img.shields.io/badge/PAPER-PDF-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Paper">
         </a>
-        <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
-            <img src="https://img.shields.io/badge/arXiv-2501.XXXXX-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv">
+        <a href="https://arxiv.org/abs/2601.11655" target="_blank">
+            <img src="https://img.shields.io/badge/arXiv-2601.11655-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv">
+        </a>
+        <a href="https://huggingface.co/papers/2601.11655" target="_blank">
+            <img src="https://img.shields.io/badge/🤗_HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000" alt="Hugging Face">
         </a>
         <a href="tables/">
             <img src="https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks" alt="Tables">
