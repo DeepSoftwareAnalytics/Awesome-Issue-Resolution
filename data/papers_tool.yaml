@@ -1,6 +1,3 @@
-# Tool-Augmented Methods
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: MAGIS
   title: 'MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution'
   authors: Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng
@@ -294,3 +291,12 @@
   venue: arXiv preprint arXiv:2512.22469 2025
   links:
     arxiv: https://arxiv.org/abs/2512.22469
+- short_name: SWE-Tester
+  title: 'SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World
+    Repositories'
+  authors: Aditya Bharat Soni, Rajat Ghosh, Vaishnavi Bhargava, Valerie Chen, Debojyoti
+    Dutta
+  venue: arXiv preprint arXiv:2601.13713
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2601.13713

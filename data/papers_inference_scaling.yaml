@@ -1,6 +1,3 @@
-# Inference-Time Scaling
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: SWE-Search
   title: 'SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative
     Refinement'
@@ -32,3 +29,11 @@
   venue: arXiv preprint arXiv:2510.16059 2025
   links:
     arxiv: https://arxiv.org/abs/2510.16059
+- short_name: Agentic Rubrics
+  title: Agentic Rubrics as Contextual Verifiers for SWE Agents
+  authors: Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He
+  venue: arXiv preprint arXiv:2601.04171
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2601.04171
+    website: https://scale.com/research/agenticrubrics

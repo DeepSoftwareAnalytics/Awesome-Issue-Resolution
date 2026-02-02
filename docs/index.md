@@ -13,7 +13,7 @@
             <img src="https://img.shields.io/github/forks/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=blue" alt="Forks">
         </a>
         <a href="https://github.com/sindresorhus/awesome" target="_blank">
-            <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" style="height: 28px;">
+            <img src="https://img.shields.io/badge/Awesome-FC60A8?style=for-the-badge&logo=awesomelists&logoColor=white" alt="Awesome">
         </a>
         <a href="paper/">
             <img src="https://img.shields.io/badge/PAPER-PDF-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Paper">
@@ -30,7 +30,7 @@
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-176-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-178-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
     </div>
     
     <!-- Interactive Exploration Badges -->
@@ -57,7 +57,7 @@
 
 <div class="abstract-content" markdown="1">
 
-Based on a systematic review of 176 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
+Based on a systematic review of 178 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
 
 **🔍 Explore This Survey:**
 
@@ -250,6 +250,7 @@ This section covers both training-free and training-based methods for issue reso
 * **Meta-RAG**: Meta-RAG on Large Codebases Using Code Summarization (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.02611){: target="_blank" }
 * **InfCode**: InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.16004){: target="_blank" }
 * **GraphLocator**: GraphLocator: Graph-guided Causal Reasoning for Issue Localization (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22469){: target="_blank" }
+* **SWE-Tester**: SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.13713){: target="_blank" }
 <!-- END PAPERS:tool -->
 
 #### Memory
@@ -266,6 +267,7 @@ This section covers both training-free and training-based methods for issue reso
 * **AgentDiet**: Improving the Efficiency of LLM Agent Systems through Trajectory Reduction (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.23586){: target="_blank" }
 * **ReasoningBank**: ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.25140){: target="_blank" }
 * **MemGovern**: MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.06789){: target="_blank" }
+* **MemGovern**: MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.06789){: target="_blank" } [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/QuantaAlpha/MemGovern){: target="_blank" }
 <!-- END PAPERS:memory -->
 
 #### Inference-time Scaling
@@ -275,6 +277,7 @@ This section covers both training-free and training-based methods for issue reso
 * **ReasoningBank**: CodeMonkeys: Scaling Test-Time Compute for Software Engineering (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.14723){: target="_blank" }
 * **SWE-PRM**: When Agents go Astray: Course-Correcting SWE Agents with PRMs (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.02360){: target="_blank" }
 * **SIADAFIX**: SIADAFIX: issue description response for adaptive program repair (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.16059){: target="_blank" }
+* **Agentic Rubrics**: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.04171){: target="_blank" } [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://scale.com/research/agenticrubrics){: target="_blank" }
 <!-- END PAPERS:inference_scaling -->
 
 ### 🧠 Training-based Methods
@@ -297,6 +300,7 @@ This section covers both training-free and training-based methods for issue reso
 * **SWE-Compressor**: Context as a Tool: Context Management for Long-Horizon SWE-Agents (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22087){: target="_blank" }
 * **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426){: target="_blank" }
 * **Agentic Rubrics**: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.04171){: target="_blank" }
+* **CGM**: Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level Software Engineering Tasks (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.16901){: target="_blank" } [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/codefuse-ai/CodeFuse-CGM){: target="_blank" } [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B){: target="_blank" }
 <!-- END PAPERS:sft -->
 
 #### RL-based Methods

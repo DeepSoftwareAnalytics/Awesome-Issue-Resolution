@@ -1,6 +1,3 @@
-# Supervised Fine-Tuning (SFT)
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: Lingma SWE-GPT
   title: 'SWE-GPT: A Process-Centric Language Model for Automated Software Improvement'
   authors: Ma, Yingwei, Cao, Rongyu, Cao, Yongchang, Zhang, Yue, Chen, Jue, Liu, Yibo,
@@ -120,3 +117,15 @@
   venue: arXiv preprint arXiv:2601.04171 2026
   links:
     arxiv: https://arxiv.org/abs/2601.04171
+- short_name: CGM
+  title: 'Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level
+    Software Engineering Tasks'
+  authors: Hongyuan Tao, Ying Zhang, Zhenhao Tang, Hongen Peng, Xukun Zhu, Bingchang
+    Liu, Yingguang Yang, Ziyin Zhang, Zhaogui Xu, Haipeng Zhang, Linchao Zhu, Rui
+    Wang, Hang Yu, Jianguo Li, Peng Di
+  venue: NeurIPS 2025
+  year: '2025'
+  links:
+    arxiv: https://arxiv.org/abs/2505.16901
+    github: https://github.com/codefuse-ai/CodeFuse-CGM
+    huggingface: https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B

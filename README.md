@@ -6,13 +6,13 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=4c1)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution)
 [![Forks](https://img.shields.io/github/forks/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&logo=github&color=blue)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/fork)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Awesome](https://img.shields.io/badge/Awesome-FC60A8?style=for-the-badge&logo=awesomelists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![Paper](https://img.shields.io/badge/PAPER-PDF-4285F4?style=for-the-badge&logo=googledocs&logoColor=white)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)
 [![arXiv](https://img.shields.io/badge/arXiv-2601.11655-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.11655)
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-176-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-178-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -32,7 +32,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **176 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website. 
+Based on a systematic review of **178 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website. 
 
 <!-- START EXPLORE -->
 **🔍 Explore This Survey:**
@@ -67,7 +67,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 176 works** across 14 categories
+> **Total: 178 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -101,7 +101,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 
 ### 🎯 Training Datasets
 
-*Datasets for training issue resolution systems*
+*Datasets for training issue resolution agents*
 
 - **SWE-bench-extra**: SWE-bench: Can Language Models Resolve Real-world Github Issues? (2024)
 - **Multi-SWE-RL**: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving (2025) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=MhBZzkz4h9)
@@ -210,6 +210,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 - **Meta-RAG**: Meta-RAG on Large Codebases Using Code Summarization (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.02611)
 - **InfCode**: InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.16004)
 - **GraphLocator**: GraphLocator: Graph-guided Causal Reasoning for Issue Localization (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22469)
+- **SWE-Tester**: SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.13713)
 
 ### 🧠 Memory-Enhanced Methods
 
@@ -226,10 +227,11 @@ Based on a systematic review of **176 papers and online resources**, this survey
 - **AgentDiet**: Improving the Efficiency of LLM Agent Systems through Trajectory Reduction (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.23586)
 - **ReasoningBank**: ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.25140)
 - **MemGovern**: MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.06789)
+- **MemGovern**: MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.06789) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/QuantaAlpha/MemGovern)
 
 ### 📚 Supervised Fine-Tuning (SFT)
 
-*Models trained via supervised fine-tuning*
+*Models trained via supervised learning*
 
 - **Lingma SWE-GPT**: SWE-GPT: A Process-Centric Language Model for Automated Software Improvement (2025)
 - **ReSAT**: Repository Structure-Aware Training Makes SLMs Better Issue Resolver (2024) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.19031)
@@ -246,6 +248,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 - **SWE-Compressor**: Context as a Tool: Context Management for Long-Horizon SWE-Agents (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22087)
 - **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426)
 - **Agentic Rubrics**: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.04171)
+- **CGM**: Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level Software Engineering Tasks (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.16901) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/codefuse-ai/CodeFuse-CGM) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B)
 
 ### 🎮 Reinforcement Learning (RL)
 
@@ -296,6 +299,7 @@ Based on a systematic review of **176 papers and online resources**, this survey
 - **ReasoningBank**: CodeMonkeys: Scaling Test-Time Compute for Software Engineering (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.14723)
 - **SWE-PRM**: When Agents go Astray: Course-Correcting SWE Agents with PRMs (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.02360)
 - **SIADAFIX**: SIADAFIX: issue description response for adaptive program repair (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.16059)
+- **Agentic Rubrics**: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.04171) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://scale.com/research/agenticrubrics)
 
 ### 📥 Data Collection Methods
 

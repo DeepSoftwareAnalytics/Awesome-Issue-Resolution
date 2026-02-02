@@ -1,6 +1,3 @@
-# Memory-Enhanced Methods
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: Infant Agent
   title: 'Infant Agent: A Tool-Integrated, Logic-Driven Agent with Cost-Effective
     API Usage'
@@ -88,3 +85,13 @@
   venue: arXiv preprint arXiv:2601.06789 2026
   links:
     arxiv: https://arxiv.org/abs/2601.06789
+- short_name: MemGovern
+  title: 'MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences'
+  authors: Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi
+    Wang, Xiaoming Yu, Jianghao Yin, Sen Hu, Yue Hu, Shaolei Zhang, Yanbing Liu, Ronghao
+    Chen, Huacan Wang
+  venue: arXiv preprint arXiv:2601.06789
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2601.06789
+    github: https://github.com/QuantaAlpha/MemGovern
