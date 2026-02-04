@@ -30,7 +30,7 @@
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-178-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-181-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
     </div>
     
     <!-- Interactive Exploration Badges -->
@@ -57,7 +57,7 @@
 
 <div class="abstract-content" markdown="1">
 
-Based on a systematic review of 178 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
+Based on a systematic review of 181 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
 
 **🔍 Explore This Survey:**
 
@@ -128,6 +128,7 @@ This section covers the datasets used for evaluation and training, as well as me
 * **RepoForge**: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.01550){: target="_blank" }
 * **SWE-Mirror**: SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.08724){: target="_blank" }
 * **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426){: target="_blank" }
+* **SWE-Universe**: SWE-Universe: Scale Real-World Verifiable Environments to Millions (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/abs/2602.02361){: target="_blank" }
 <!-- END PAPERS:training_datasets -->
 
 ### Data Collection
@@ -139,6 +140,7 @@ This section covers the datasets used for evaluation and training, as well as me
 * **SWE-MERA**: SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.11059){: target="_blank" }
 * **RepoForge**: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.01550){: target="_blank" }
 * **Multi-Docker-Eval**: Multi-Docker-Eval: A `Shovel of the Gold Rush' Benchmark on Automatic Environment Building for Software Engineering (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.06915){: target="_blank" }
+* **DockSmith**: DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.00592){: target="_blank" } [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/8sj7df9k8m5x8/docksmith){: target="_blank" }
 <!-- END PAPERS:data_collection -->
 
 ### Data Synthesis
@@ -251,6 +253,7 @@ This section covers both training-free and training-based methods for issue reso
 * **InfCode**: InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.16004){: target="_blank" }
 * **GraphLocator**: GraphLocator: Graph-guided Causal Reasoning for Issue Localization (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22469){: target="_blank" }
 * **SWE-Tester**: SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.13713){: target="_blank" }
+* **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084){: target="_blank" } [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/){: target="_blank" } [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo){: target="_blank" }
 <!-- END PAPERS:tool -->
 
 #### Memory

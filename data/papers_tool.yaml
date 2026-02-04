@@ -300,3 +300,13 @@
   year: '2026'
   links:
     arxiv: https://arxiv.org/abs/2601.13713
+- short_name: Closing the Loop
+  title: 'Closing the Loop: Universal Repository Representation with RPG-Encoder'
+  authors: Jane Luo, Chengyu Yin, Xin Zhang, Qingtao Li, Steven Liu, Yiming Huang,
+    Jie Wu, Hao Liu, Yangyu Huang, Yu Kang, Fangkai Yang, Ying Xin, Scarlett Li
+  venue: arXiv preprint arXiv:2602.02084
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2602.02084
+    github: https://github.com/microsoft/RPG-ZeroRepo
+    website: https://ayanami2003.github.io/RPG-Encoder/

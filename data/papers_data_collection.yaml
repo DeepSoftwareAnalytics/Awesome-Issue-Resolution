@@ -1,6 +1,3 @@
-# Data Collection
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: SWE-rebench
   title: 'SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated
     Evaluation of Software Engineering Agents'
@@ -56,3 +53,13 @@
   venue: arXiv preprint arXiv:2512.06915 2025
   links:
     arxiv: https://arxiv.org/abs/2512.06915
+- short_name: DockSmith
+  title: 'DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder'
+  authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
+    Zhe Xie, Mengqiang Ren, Xin Wu, Zhewei Huang, Liangyu Chen, Yingwei Ma, Qi Han,
+    Xiangyu Zhang
+  venue: arXiv preprint arXiv:2602.00592
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2602.00592
+    huggingface: https://huggingface.co/collections/8sj7df9k8m5x8/docksmith

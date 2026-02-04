@@ -1,6 +1,3 @@
-# Training Datasets
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: SWE-bench-extra
   title: 'SWE-bench: Can Language Models Resolve Real-world Github Issues?'
   authors: Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei,
@@ -123,3 +120,12 @@
   venue: arXiv preprint arXiv:2601.01426 2026
   links:
     arxiv: https://arxiv.org/abs/2601.01426
+- short_name: SWE-Universe
+  title: 'SWE-Universe: Scale Real-World Verifiable Environments to Millions'
+  authors: Mouxiang Chen, Lei Zhang, Yunlong Feng, Xuwu Wang, Wenting Zhao, Ruisheng
+    Cao, Jiaxi Yang, Jiawei Chen, Mingze Li, Zeyao Ma, Hao Ge, Zongmeng Zhang, Zeyu
+    Cui, Dayiheng Liu, Jingren Zhou, Jianling Sun, Junyang Lin, Binyuan Hui
+  venue: arXiv preprint arXiv:2602.02361
+  year: '2026'
+  links:
+    arxiv: https://www.arxiv.org/abs/2602.02361
