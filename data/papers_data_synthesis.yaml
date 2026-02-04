@@ -1,6 +1,3 @@
-# Data Synthesis
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: Learn-by-interact
   title: 'Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in
     Realistic Environments'
@@ -52,3 +49,13 @@
   venue: arXiv preprint arXiv:2509.08724 2025
   links:
     arxiv: https://arxiv.org/abs/2509.08724
+- short_name: SWE-World
+  title: 'SWE-World: Building Software Engineering Agents in Docker-Free Environments'
+  authors: Shuang Sun, Huatong Song, Lisheng Huang, Jinhao Jiang, Ran Le, Zhihao Lv,
+    Zongchao Chen, Yiwen Hu, Wenyang Luo, Wayne Xin Zhao, Yang Song, Hongteng Xu,
+    Tao Zhang, Ji-Rong Wen
+  venue: arXiv preprint arXiv:2602.03419
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2602.03419
+    github: https://github.com/RUCAIBox/SWE-World

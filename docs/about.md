@@ -2,7 +2,7 @@
 
 ## About This Project
 
-Based on a systematic review of 181 papers and online resources, this project establishes a holistic theoretical framework for Issue Resolution in software engineering. This website is designed to facilitate efficient literature retrieval and exploration.
+Based on a systematic review of 183 papers and online resources, this project establishes a holistic theoretical framework for Issue Resolution in software engineering. This website is designed to facilitate efficient literature retrieval and exploration.
 
 
 ---
