@@ -306,3 +306,12 @@
   links:
     arxiv: https://arxiv.org/abs/2602.03411
     github: https://github.com/RUCAIBox/SWE-Master
+- short_name: SWE-Protégé
+  title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks
+    Small Language Models as Software Engineering Agents'
+  authors: Patrick Tser Jern Kon, Archana Pradeep, Ang Chen, Alexander P. Ellis, Warren
+    Hunt, Zijian Wang, John Yang, Samuel Thompson
+  venue: arxiv
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2602.22124

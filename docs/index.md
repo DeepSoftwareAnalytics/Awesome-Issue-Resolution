@@ -30,7 +30,7 @@
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-183-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-186-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
     </div>
     
     <!-- Interactive Exploration Badges -->
@@ -57,7 +57,7 @@
 
 <div class="abstract-content" markdown="1">
 
-Based on a systematic review of 183 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
+Based on a systematic review of 186 papers and online resources, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how Large Language Models (LLMs) are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our [GitHub repository](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution) and project documentation website. 
 
 **🔍 Explore This Survey:**
 
@@ -108,6 +108,7 @@ This section covers the datasets used for evaluation and training, as well as me
 * **SWE-fficiency**: SWE-fficiency: Can Language Models Optimize Real-World Repositories on Real Workloads? (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.06090){: target="_blank" }
 * **SWE-Compass**: SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.05459){: target="_blank" }
 * **SWE-EVO**: SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.18470){: target="_blank" }
+* **SWE Context Bench**: SWE Context Bench: A Benchmark for Context Learning in Coding (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2602.08316){: target="_blank" }
 <!-- END PAPERS:evaluation_datasets -->
 
 ### Training Datasets
@@ -305,6 +306,7 @@ This section covers both training-free and training-based methods for issue reso
 * **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426){: target="_blank" }
 * **Agentic Rubrics**: Agentic Rubrics as Contextual Verifiers for SWE Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.04171){: target="_blank" }
 * **CGM**: Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level Software Engineering Tasks (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.16901){: target="_blank" } [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/codefuse-ai/CodeFuse-CGM){: target="_blank" } [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B){: target="_blank" }
+* **SWE-Replay**: SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22129){: target="_blank" }
 <!-- END PAPERS:sft -->
 
 #### RL-based Methods
@@ -347,6 +349,7 @@ This section covers both training-free and training-based methods for issue reso
 * **LongCat-Flash-Think**: Introducing LongCat-Flash-Thinking: A Technical Report (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.18883){: target="_blank" }
 * **MiMo-V2-Flash**: MiMo-V2-Flash Technical Report (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.02780){: target="_blank" }
 * **SWE-Master**: SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03411){: target="_blank" } [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-Master){: target="_blank" }
+* **SWE-Protégé**: SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering Agents (2026) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.22124){: target="_blank" }
 <!-- END PAPERS:rl -->
 
 ---

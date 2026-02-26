@@ -129,3 +129,10 @@
     arxiv: https://arxiv.org/abs/2505.16901
     github: https://github.com/codefuse-ai/CodeFuse-CGM
     huggingface: https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B
+- short_name: SWE-Replay
+  title: 'SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents'
+  authors: Yifeng Ding, Lingming Zhang
+  venue: arxiv
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2601.22129

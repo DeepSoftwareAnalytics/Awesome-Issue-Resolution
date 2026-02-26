@@ -1,6 +1,3 @@
-# Evaluation Datasets
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: SWE-bench Lite
   title: 'SWE-bench: Can Language Models Resolve Real-world Github Issues?'
   authors: Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei,
@@ -181,3 +178,10 @@
   venue: arXiv preprint arXiv:2512.18470 2025
   links:
     arxiv: https://arxiv.org/abs/2512.18470
+- short_name: SWE Context Bench
+  title: 'SWE Context Bench: A Benchmark for Context Learning in Coding'
+  authors: Jared Zhu, Minhao Hu, Junde Wu
+  venue: arxiv
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/pdf/2602.08316
