@@ -63,3 +63,13 @@
   links:
     arxiv: https://arxiv.org/abs/2602.00592
     huggingface: https://huggingface.co/collections/8sj7df9k8m5x8/docksmith
+- short_name: MEnvAgent
+  title: 'MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software
+    Engineering'
+  authors: Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan,
+    Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang
+  venue: arxiv
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2601.22859
+    github: https://github.com/ernie-research/MEnvAgent

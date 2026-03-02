@@ -315,3 +315,13 @@
   year: '2026'
   links:
     arxiv: https://arxiv.org/abs/2602.22124
+- short_name: SWE-MiniSandbox
+  title: 'SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software
+    Engineering Agents'
+  authors: Danlong Yuan, Wei Wu, Zhengren Wang, Xueliang Zhao, Huishuai Zhang, Dongyan
+    Zhao
+  venue: arxiv
+  year: '2026'
+  links:
+    arxiv: https://arxiv.org/abs/2602.11210v1
+    github: http://github.com/lblankl/SWE-MiniSandbox
