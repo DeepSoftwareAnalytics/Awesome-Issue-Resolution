@@ -1,13 +1,12 @@
-# Multi-Agent Systems
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: MAGIS
   title: 'MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution'
   authors: Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng
   year: '2024'
   venue: The Thirty-eighth Annual Conference on Neural Information Processing Systems
     2024
+  month: 2024-03
   links:
+    arxiv: https://arxiv.org/abs/2403.17927v2
     openreview: https://openreview.net/forum?id=qevq3FZ63J
 - short_name: AutoCodeRover
   title: 'AutoCodeRover: Autonomous Program Improvement'
@@ -15,30 +14,36 @@
   year: '2024'
   venue: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing
     and Analysis 2024
+  month: 2024-04
   links:
+    arxiv: https://arxiv.org/abs/2404.05427v3
     doi: http://dx.doi.org/10.1145/3650212.3680384
 - short_name: CodeR
   title: 'CodeR: Issue Resolving with Multi-Agent and Task Graphs'
   authors: Dong Chen, Shaoxin Lin, Muhan Zeng, Daoguang Zan, Jian-Gang Wang, Anton
     Cheshkov, Jun Sun et al.
   year: '2024'
-  venue: arXiv preprint arXiv:2406.01304 2024
+  venue: arXiv preprint arXiv:2406.01304
+  month: 2024-06
   links:
     arxiv: https://arxiv.org/abs/2406.01304
 - short_name: OpenHands
   title: 'OpenHands: An Open Platform for AI Software Developers as Generalist Agents'
   authors: Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen
     Zhuge, Jiayi Pan et al.
-  year: '2025'
+  year: '2024'
   venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2024-07
   links:
+    arxiv: https://arxiv.org/abs/2407.16741v3
     openreview: https://openreview.net/forum?id=OJd3ayDDoF
 - short_name: AgentScope
   title: SWE-Bench - AgentScope
   authors: Wenhao Zhang, Yuexiang Xie amd Dawei Gao, Xuchen Pan, Yaliang Li, Bolin
     Ding, Jingren Zhou
   year: '2025'
-  venue: '2025'
+  venue: '-'
+  month: 2025-06
   links:
     website: https://doc.agentscope.io/v0/en/tutorial/swe.html
 - short_name: OrcaLora
@@ -47,44 +52,52 @@
     Jishen Zhao
   year: '2025'
   venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-02
   links:
+    arxiv: https://arxiv.org/abs/2502.00350v2
     openreview: https://openreview.net/forum?id=LyUfPOvM6I
 - short_name: DEI
   title: 'Diversity Empowers Intelligence: Integrating Expertise of Software Engineering
     Agents'
   authors: Kexun Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh R N,
     Tian Lan et al.
-  year: '2025'
+  year: '2024'
   venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2024-08
   links:
+    arxiv: https://arxiv.org/abs/2408.07060v1
     openreview: https://openreview.net/forum?id=cKlzKs3Nnb
 - short_name: MarsCode Agent
   title: 'MarsCode Agent: AI-native Automated Bug Fixing'
   authors: Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang,
     Chao Peng
   year: '2024'
-  venue: arXiv preprint arXiv:2409.00899 2024
+  venue: arXiv preprint arXiv:2409.00899
+  month: 2024-09
   links:
     arxiv: https://arxiv.org/abs/2409.00899
 - short_name: Lingxi
   title: Lingxi/docs/Lingxi Technical Report 2505.pdf at master · lingxi-agent/Lingxi
   authors: Xu Yang
-  year: '2026'
-  venue: '2026'
+  year: '2025'
+  venue: '-'
+  month: 2025-03
   links:
     github: https://github.com/lingxi-agent/Lingxi/blob/master/docs/Lingxi%20Technical%20Report%202505.pdf
 - short_name: Devlo
   title: Achieving SOTA on SWE-bench
   authors: Devlo
-  year: '2026'
-  venue: '2026'
+  year: '2025'
+  venue: '-'
+  month: 2025-05
   links:
     website: https://devlo.ai/blog/devlo-swe-bench-sota/
 - short_name: Refact.ai Agent
   title: AI Coding Agent for Software Development - Refact.ai
   authors: Sergey Vakhreev
   year: '2025'
-  venue: '2025'
+  venue: '-'
+  month: 2025-05
   links:
     website: https://refact.ai/blog/2025/open-source-sota-on-swe-bench-verified-refact-ai/
 - short_name: HyperAgent
@@ -92,51 +105,32 @@
     at Scale'
   authors: Huy Nhat Phan, Tien N. Nguyen, Phong X. Nguyen, Nghi D. Q. Bui
   year: '2024'
-  venue: arXiv preprint arXiv:2409.16299 2024
+  venue: arXiv preprint arXiv:2409.16299
+  month: 2024-09
   links:
     arxiv: https://arxiv.org/abs/2409.16299
-- short_name: SWE-Search
-  title: 'SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative
-    Refinement'
-  authors: Antonis Antoniades, Albert Orwall, Kexun Zhang, Yuxi Xie, Anirudh Goyal,
-    William Yang Wang
-  year: '2025'
-  venue: The Thirteenth International Conference on Learning Representations 2025
-  links:
-    openreview: https://openreview.net/forum?id=G7sIFXugTX
 - short_name: CodeCoR
   title: 'CodeCoR: An LLM-Based Self-Reflective Multi-Agent Framework for Code Generation'
   authors: Ruwei Pan, Hongyu Zhang, Chao Liu
   year: '2025'
-  venue: arXiv preprint arXiv:2501.07811 2025
+  venue: arXiv preprint arXiv:2501.07811
+  month: 2025-01
   links:
     arxiv: https://arxiv.org/abs/2501.07811
-- short_name: Agent KB
-  title: 'Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving'
-  authors: Xiangru Tang, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting
-    Du, Xinming Wei et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2507.06229 2025
-  links:
-    arxiv: https://arxiv.org/abs/2507.06229
 - short_name: SWE-Debate
   title: 'SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution'
   authors: Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao
     Jia et al.
-  year: '2026'
-  venue: ICSE 2026
-- short_name: SWE-Exp
-  title: 'SWE-Exp: Experience-Driven Software Issue Resolution'
-  authors: Silin Chen, Shaoxin Lin, Xiaodong Gu, Yuling Shi, Heng Lian, Longfei Yun,
-    Dong Chen et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.23361 2025
+  venue: ICSE 2026
+  month: 2025-07
   links:
-    arxiv: https://arxiv.org/abs/2507.23361
+    arxiv: https://arxiv.org/abs/2507.23348v1
 - short_name: Meta-RAG
   title: Meta-RAG on Large Codebases Using Code Summarization
   authors: Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso
   year: '2025'
-  venue: arXiv preprint arXiv:2508.02611 2025
+  venue: arXiv preprint arXiv:2508.02611
+  month: 2025-08
   links:
     arxiv: https://arxiv.org/abs/2508.02611

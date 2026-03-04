@@ -1,30 +1,33 @@
-# Data Analysis
-# Auto-generated from taxonomy.tex and BibTeX file
-
 - short_name: SWE-bench Verified
   title: Introducing SWE-bench Verified | OpenAI
   authors: OpenAI
   year: '2024'
-  venue: '2024'
+  venue: '-'
+  month: 2024-08
+  links:
+    website: https://openai.com/index/introducing-swe-bench-verified/
 - short_name: Patch Correctness
   title: Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study
   authors: You Wang, Michael Pradel, Zhongxin Liu
   year: '2025'
-  venue: arXiv preprint arXiv:2503.15223 2025
+  venue: arXiv preprint arXiv:2503.15223
+  month: 2025-03
   links:
     arxiv: https://arxiv.org/abs/2503.15223
 - short_name: UTBoost
   title: 'UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench'
   authors: Boxi Yu, Yuxuan Zhu, Pinjia He, Daniel Kang
   year: '2025'
-  venue: arXiv preprint arXiv:2506.09289 2025
+  venue: arXiv preprint arXiv:2506.09289
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.09289
 - short_name: Trustworthiness
   title: Is Your Automated Software Engineer Trustworthy?
   authors: Noble Saji Mathews, Meiyappan Nagappan
   year: '2025'
-  venue: arXiv preprint arXiv:2506.17812 2025
+  venue: arXiv preprint arXiv:2506.17812
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.17812
 - short_name: Rigorous agentic benchmarks
@@ -32,14 +35,16 @@
   authors: Yuxuan Zhu, Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha
     Cui, Sayash Kapoor et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.02825 2025
+  venue: arXiv preprint arXiv:2507.02825
+  month: 2025-07
   links:
     arxiv: https://arxiv.org/abs/2507.02825
 - short_name: The SWE-Bench Illusion
   title: 'The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason'
   authors: Shanchao Liang, Spandan Garg, Roshanak Zilouchian Moghaddam
   year: '2025'
-  venue: arXiv preprint arXiv:2506.12286 2025
+  venue: arXiv preprint arXiv:2506.12286
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.12286
 - short_name: Revisiting SWE-Bench
@@ -49,6 +54,7 @@
   year: '2025'
   venue: '2025 IEEE/ACM 47th International Conference on Software Engineering: Companion
     Proceedings (ICSE-Companion) 2025'
+  month: 2025-04
   links:
     doi: http://dx.doi.org/10.1109/ICSE-Companion66252.2025.00075
 - short_name: SPICE
@@ -58,10 +64,14 @@
     Yihao Chen, Zhilong Chen, Arthur Leung et al.
   year: '2025'
   venue: ASE 2025
+  month: 2025-07
+  links:
+    arxiv: https://arxiv.org/abs/2507.09108v5
 - short_name: Data contamination
   title: Does SWE-Bench-Verified Test Agent Ability or Model Memory?
   authors: Thanosan Prathifkumar, Noble Saji Mathews, Meiyappan Nagappan
   year: '2025'
-  venue: arXiv preprint arXiv:2512.10218 2025
+  venue: arXiv preprint arXiv:2512.10218
+  month: 2025-12
   links:
     arxiv: https://arxiv.org/abs/2512.10218

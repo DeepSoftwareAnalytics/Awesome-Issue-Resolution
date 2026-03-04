@@ -1,5 +1,6 @@
-# Private source data (maintainer only)
+# Private maintenance docs (maintainer only, not for GitHub)
 bib2data/
+mantainess/
 
 # Python cache
 __pycache__/

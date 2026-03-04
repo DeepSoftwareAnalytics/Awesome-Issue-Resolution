@@ -1,4 +1,18 @@
-mkdocs>=1.5.0
-mkdocs-material>=9.5.0
-pymdown-extensions>=10.0
+# Database Management System Requirements
 
+# Database & ORM
+SQLAlchemy==2.0.25
+PyYAML==6.0.1
+
+# REST API
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Data Processing
+pandas==2.1.4
+
+# Web scraping for months
+requests==2.31.0
+
+# Optional: For better database browser
+datasette==0.64.5

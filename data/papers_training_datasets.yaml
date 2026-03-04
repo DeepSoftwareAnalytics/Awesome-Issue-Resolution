@@ -2,8 +2,11 @@
   title: 'SWE-bench: Can Language Models Resolve Real-world Github Issues?'
   authors: Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei,
     Ofir Press, Karthik R. Narasimhan
-  year: '2024'
+  year: '2023'
   venue: ICLR 2024
+  month: 2023-10
+  links:
+    arxiv: https://arxiv.org/abs/2310.06770v3
 - short_name: Multi-SWE-RL
   title: 'Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving'
   authors: Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang,
@@ -11,33 +14,19 @@
   year: '2025'
   venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
     Datasets and Benchmarks Track 2025
+  month: 2025-04
   links:
+    arxiv: https://arxiv.org/abs/2504.02605v1
     openreview: https://openreview.net/forum?id=MhBZzkz4h9
-- short_name: R2E-Gym
-  title: 'R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling
-    Open-Weights SWE Agents'
-  authors: Naman Jain, Jaskirat Singh, Manish Shetty, Tianjun Zhang, Liang Zheng,
-    Koushik Sen, Ion Stoica
-  year: '2025'
-  venue: Second Conference on Language Modeling 2025
-  links:
-    openreview: https://openreview.net/forum?id=7evvwwdo3z
-- short_name: SWE-Synth
-  title: 'SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language
-    Models in Resolving Real-World Bugs'
-  authors: Minh V. T. Pham, Huy N. Phan, Hoang N. Phan, Cuong Le Chi, Tien N. Nguyen,
-    Nghi D. Q. Bui
-  year: '2025'
-  venue: arXiv preprint arXiv:2504.14757 2025
-  links:
-    arxiv: https://arxiv.org/abs/2504.14757
 - short_name: LocAgent
   title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
   authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
     Jishen Zhao
   year: '2025'
   venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-02
   links:
+    arxiv: https://arxiv.org/abs/2502.00350v2
     openreview: https://openreview.net/forum?id=LyUfPOvM6I
 - short_name: SWE-Smith
   title: 'SWE-smith: Scaling Data for Software Engineering Agents'
@@ -46,86 +35,57 @@
   year: '2025'
   venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
     Datasets and Benchmarks Track 2025
+  month: 2025-04
   links:
+    arxiv: https://arxiv.org/abs/2504.21798v2
     openreview: https://openreview.net/forum?id=63iVrXc8cC
 - short_name: SWE-Fixer
   title: 'SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub
     Issue Resolution'
   authors: Xie, Chengxing, Li, Bowen, Gao, Chang, Du, He, Lam, Wai, Zou, Difan, Chen,
     Kai
-  year: ''
+  year: '2025'
   venue: ICLR 2025 Third Workshop on Deep Learning for Code
+  month: 2025-01
+  links:
+    arxiv: https://arxiv.org/abs/2501.05040v3
 - short_name: SWELoc
   title: 'SweRank: Software Issue Localization with Code Ranking'
   authors: Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen,
     Yingbo Zhou, Semih Yavuz et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2505.07849 2025
+  venue: arXiv preprint arXiv:2505.07849
+  month: 2025-05
   links:
     arxiv: https://arxiv.org/abs/2505.07849
-- short_name: SWE-Gym
-  title: Training Software Engineering Agents and Verifiers with SWE-Gym
-  authors: Pan, Jiayi, Wang, Xingyao, Neubig, Graham, Jaitly, Navdeep, Ji, Heng, Suhr,
-    Alane, Zhang, Yizhe
-  year: ''
-  venue: Forty-second International Conference on Machine Learning
-- short_name: SWE-Flow
-  title: Synthesizing Software Engineering Data in a Test-Driven Manner
-  authors: Lei Zhang, Jiaxi Yang, Min Yang, Jian Yang, Mouxiang Chen, Jiajun Zhang,
-    Zeyu Cui et al.
-  year: '2025'
-  venue: Forty-second International Conference on Machine Learning 2025
-  links:
-    openreview: https://openreview.net/forum?id=P9DQ2IExgS
-- short_name: SWE-Factory
-  title: 'SWE-Factory: Your Automated Factory for Issue Resolution Training Data and
-    Evaluation Benchmarks'
-  authors: Lianghong Guo, Yanlin Wang, Caihua Li, Wei Tao, Pengyu Yang, Jiachi Chen,
-    Haoyu Song et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2506.10954 2025
-  links:
-    arxiv: https://arxiv.org/abs/2506.10954
 - short_name: Skywork-SWE
   title: 'Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs'
   authors: Liang Zeng, Yongcong Li, Yuzhen Xiao, Changshi Li, Chris Yuhao Liu, Rui
     Yan, Tianwen Wei et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2506.19290 2025
+  venue: arXiv preprint arXiv:2506.19290
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.19290
-- short_name: RepoForge
-  title: 'RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data
-    Curation Pipeline Synergizing SFT and RL at Scale'
-  authors: Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur
-    Leung, Gopi Krishnan Rajbahadur et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2508.01550 2025
-  links:
-    arxiv: https://arxiv.org/abs/2508.01550
-- short_name: SWE-Mirror
-  title: 'SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across
-    Repositories'
-  authors: Junhao Wang, Daoguang Zan, Shulin Xin, Siyao Liu, Yurong Wu, Kai Shen
-  year: '2025'
-  venue: arXiv preprint arXiv:2509.08724 2025
-  links:
-    arxiv: https://arxiv.org/abs/2509.08724
-- short_name: SWE-Lego
-  title: 'SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue
-    Resolving'
-  authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, Shaowei Wang, Ruoyu Wang,
-    Xiaohui Li et al.
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.01426 2026
-  links:
-    arxiv: https://arxiv.org/abs/2601.01426
 - short_name: SWE-Universe
   title: 'SWE-Universe: Scale Real-World Verifiable Environments to Millions'
   authors: Mouxiang Chen, Lei Zhang, Yunlong Feng, Xuwu Wang, Wenting Zhao, Ruisheng
     Cao, Jiaxi Yang, Jiawei Chen, Mingze Li, Zeyao Ma, Hao Ge, Zongmeng Zhang, Zeyu
     Cui, Dayiheng Liu, Jingren Zhou, Jianling Sun, Junyang Lin, Binyuan Hui
-  venue: arXiv preprint arXiv:2602.02361
   year: '2026'
+  venue: arXiv preprint arXiv:2602.02361
+  month: 2026-02
   links:
     arxiv: https://www.arxiv.org/abs/2602.02361
+- short_name: daVinci-Dev
+  title: 'daVinci-Dev: Agent-native Mid-training for Software Engineering'
+  authors: Ji Zeng, Dayuan Fu, Tiantian Mi, Yumin Zhuang, Yaxing Huang, Xuefeng Li,
+    Lyumanshan Ye, Muhang Xie, Qishuo Hua, Zhen Huang, Mohan Jiang, Hanning Wang,
+    Jifan Lin, Yang Xiao, Jie Sun, Yunze Wu, Pengfei Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.18418
+  month: 2026-01
+  links:
+    arxiv: https://arxiv.org/abs/2601.18418
+    github: https://github.com/GAIR-NLP/daVinci-Dev
+    huggingface: https://huggingface.co/datasets/GAIR/daVinci-Dev

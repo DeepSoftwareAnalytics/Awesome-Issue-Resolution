@@ -281,7 +281,7 @@ def main():
     print("\n" + "=" * 70)
     print("  ✅ Validation complete!")
     print("=" * 70)
-    print("\n💡 Tip: Run 'python scripts/render_tables.py' to update the website")
+    print("\n[TIP] Run 'python view/render_tables.py' to update the website")
 
 
 if __name__ == "__main__":

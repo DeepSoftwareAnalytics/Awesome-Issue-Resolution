@@ -584,6 +584,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -710,15 +727,62 @@
 <ul>
 <li><strong>Comprehensive Coverage</strong>: Covers three major sections - Data, Methods, and Analysis</li>
 <li><strong>Convenient Retrieval</strong>: Supports full-text search and categorical browsing</li>
+<li><strong>Database-Driven</strong>: All paper and table data is managed in a local SQLite database</li>
+<li><strong>Admin Interface</strong>: Web-based admin panel at <code>/admin</code> for CRUD operations, arXiv auto-fill, and one-click site build</li>
+<li><strong>Two-Way Sync</strong>: Data can be exported to YAML/CSV (<code>data/</code>) or re-imported from files at any time</li>
 </ul>
+<hr />
+<h3 id="common-operations">Common Operations<a class="headerlink" href="#common-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Command / Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full update + start server</td>
+<td><code>python start.py</code> (refreshes news, renders README/docs, builds site)</td>
+</tr>
+<tr>
+<td>Re-import data then full update</td>
+<td><code>python start.py --init</code></td>
+</tr>
+<tr>
+<td>Start server without updates</td>
+<td><code>python start.py --no-update</code></td>
+</tr>
+<tr>
+<td>Refresh news section only</td>
+<td><code>python start.py --news</code></td>
+</tr>
+<tr>
+<td>Re-render README/docs from DB</td>
+<td><code>python start.py --render</code> or <strong>Render from DB</strong> in admin</td>
+</tr>
+<tr>
+<td>Build static site only</td>
+<td><code>python start.py --build</code> or <strong>Build Website</strong> in admin</td>
+</tr>
+<tr>
+<td>Export DB → YAML/CSV</td>
+<td><strong>Sync to Data</strong> in admin</td>
+</tr>
+<tr>
+<td>Import YAML/CSV → DB</td>
+<td><strong>Import from Data</strong> in admin</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="contribution-guide">Contribution Guide<a class="headerlink" href="#contribution-guide" title="Permanent link">&para;</a></h2>
 <p>We welcome Pull Requests to add new papers or fix errors!</p>
 <ol>
 <li>Fork this repository</li>
 <li>Add paper entries in the corresponding YAML file under <code>data/</code> directory (e.g., <code>papers_evaluation_datasets.yaml</code>, <code>papers_single_agent.yaml</code>, etc.)</li>
-<li>Follow the existing format with fields: <code>short_name</code>, <code>title</code>, <code>authors</code>, <code>venue</code>, <code>year</code>, and <code>links</code> (arxiv, github, huggingface)</li>
-<li>Run <code>python scripts/render_papers.py</code> to update the documentation</li>
+<li>Follow the existing format with fields: <code>short_name</code>, <code>title</code>, <code>authors</code>, <code>venue</code>, <code>month</code>, and <code>links</code> (arxiv, github, huggingface)</li>
+<li>Run <code>python start.py --render</code> to regenerate the README and docs from the database</li>
 <li>Submit a PR with your changes</li>
 </ol>
 <hr />
@@ -748,7 +812,7 @@
 <h2 id="interactive-exploration">Interactive Exploration<a class="headerlink" href="#interactive-exploration" title="Permanent link">&para;</a></h2>
 <div align="center">
 <p><a href="https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a" target="_blank"><img alt="NotebookLM" src="https://img.shields.io/badge/🎧_NotebookLM-Listen_&amp;_Explore-4285F4?style=for-the-badge&amp;logo=google&amp;logoColor=white" /></a>
-<a href="https://discord.gg/3nF2EYTD" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" /></a>
+<a href="https://discord.gg/awBHrRJx" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" /></a>
 <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a></p>
 </div>
 <hr />

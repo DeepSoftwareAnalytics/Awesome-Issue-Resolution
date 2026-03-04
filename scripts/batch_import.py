@@ -206,9 +206,9 @@ def import_papers_from_csv(csv_file):
     if response in ('', 'y', 'yes'):
         import subprocess
         print("\n▶ Rendering papers...")
-        subprocess.run([sys.executable, str(ROOT / "scripts" / "render_papers.py")])
+        subprocess.run([sys.executable, str(ROOT / "view" / "render_papers.py")])
         print("\n▶ Syncing README...")
-        subprocess.run([sys.executable, str(ROOT / "scripts" / "sync_readme.py")])
+        subprocess.run([sys.executable, str(ROOT / "view" / "sync_readme.py")])
         print("\n✅ Update complete!")
     
     return True

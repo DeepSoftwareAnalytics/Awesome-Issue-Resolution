@@ -1,0 +1,12 @@
+- short_name: Immersion in the GitHub Universe
+  title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
+  authors: Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai
+    Sun, Xin Zhao, Ruihua Song, Yuan Zhang, Peng Wang, Cheng Chen, Jirong Wen, Kai
+    Jia
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.09892
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.09892
+    github: https://github.com/AweAI-Team/ScaleSWE
+    huggingface: https://huggingface.co/collections/AweAI-Team/scale-swe

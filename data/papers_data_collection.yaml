@@ -6,7 +6,9 @@
   year: '2025'
   venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
     Datasets and Benchmarks Track 2025
+  month: 2025-05
   links:
+    arxiv: https://arxiv.org/abs/2505.20411v2
     openreview: https://openreview.net/forum?id=nMpJoVmRy1
 - short_name: RepoLaunch
   title: SWE-bench Goes Live!
@@ -15,7 +17,9 @@
   year: '2025'
   venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
     Datasets and Benchmarks Track 2025
+  month: 2025-05
   links:
+    arxiv: https://arxiv.org/abs/2505.23419v2
     openreview: https://openreview.net/forum?id=OGWkr7gXka
 - short_name: SWE-Factory
   title: 'SWE-Factory: Your Automated Factory for Issue Resolution Training Data and
@@ -23,7 +27,8 @@
   authors: Lianghong Guo, Yanlin Wang, Caihua Li, Wei Tao, Pengyu Yang, Jiachi Chen,
     Haoyu Song et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2506.10954 2025
+  venue: arXiv preprint arXiv:2506.10954
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.10954
 - short_name: SWE-MERA
@@ -32,7 +37,8 @@
   authors: Pavel Adamenko, Mikhail Ivanov, Aidar Valeev, Rodion Levichev, Pavel Zadorozhny,
     Ivan Lopatin, Dmitry Babayev et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.11059 2025
+  venue: arXiv preprint arXiv:2507.11059
+  month: 2025-07
   links:
     arxiv: https://arxiv.org/abs/2507.11059
 - short_name: RepoForge
@@ -41,7 +47,8 @@
   authors: Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur
     Leung, Gopi Krishnan Rajbahadur et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2508.01550 2025
+  venue: arXiv preprint arXiv:2508.01550
+  month: 2025-08
   links:
     arxiv: https://arxiv.org/abs/2508.01550
 - short_name: Multi-Docker-Eval
@@ -50,7 +57,8 @@
   authors: Kelin Fu, Tianyu Liu, Zeyu Shang, Yingwei Ma, Jian Yang, Jiaheng Liu, Kaigui
     Bian
   year: '2025'
-  venue: arXiv preprint arXiv:2512.06915 2025
+  venue: arXiv preprint arXiv:2512.06915
+  month: 2025-12
   links:
     arxiv: https://arxiv.org/abs/2512.06915
 - short_name: DockSmith
@@ -58,8 +66,9 @@
   authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
     Zhe Xie, Mengqiang Ren, Xin Wu, Zhewei Huang, Liangyu Chen, Yingwei Ma, Qi Han,
     Xiangyu Zhang
-  venue: arXiv preprint arXiv:2602.00592
   year: '2026'
+  venue: arXiv preprint arXiv:2602.00592
+  month: 2026-02
   links:
     arxiv: https://arxiv.org/abs/2602.00592
     huggingface: https://huggingface.co/collections/8sj7df9k8m5x8/docksmith
@@ -68,8 +77,9 @@
     Engineering'
   authors: Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan,
     Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang
-  venue: arxiv
   year: '2026'
+  venue: arXiv preprint arXiv:2601.22859
+  month: 2026-01
   links:
     arxiv: https://arxiv.org/abs/2601.22859
     github: https://github.com/ernie-research/MEnvAgent

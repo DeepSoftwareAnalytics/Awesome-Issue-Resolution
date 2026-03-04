@@ -83,7 +83,7 @@ def run_conversion():
     print("▶ [Step 2/3] Rendering tables to Markdown...")
     try:
         result = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "render_tables.py")],
+            [sys.executable, str(ROOT / "view" / "render_tables.py")],
             capture_output=True,
             text=True,
             encoding='utf-8',
@@ -101,7 +101,7 @@ def run_conversion():
     print("▶ [Step 3/3] Syncing to README...")
     try:
         result = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "sync_readme.py")],
+            [sys.executable, str(ROOT / "view" / "sync_readme.py")],
             capture_output=True,
             text=True,
             encoding='utf-8',

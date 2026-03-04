@@ -4,7 +4,9 @@
   authors: Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik
   year: '2025'
   venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2025-01
   links:
+    arxiv: https://arxiv.org/abs/2501.10893v1
     openreview: https://openreview.net/forum?id=3UKOzGWCVY
 - short_name: R2E-Gym
   title: 'R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling
@@ -13,7 +15,9 @@
     Koushik Sen, Ion Stoica
   year: '2025'
   venue: Second Conference on Language Modeling 2025
+  month: 2025-04
   links:
+    arxiv: https://arxiv.org/abs/2504.07164
     openreview: https://openreview.net/forum?id=7evvwwdo3z
 - short_name: SWE-Synth
   title: 'SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language
@@ -21,7 +25,8 @@
   authors: Minh V. T. Pham, Huy N. Phan, Hoang N. Phan, Cuong Le Chi, Tien N. Nguyen,
     Nghi D. Q. Bui
   year: '2025'
-  venue: arXiv preprint arXiv:2504.14757 2025
+  venue: arXiv preprint arXiv:2504.14757
+  month: 2025-04
   links:
     arxiv: https://arxiv.org/abs/2504.14757
 - short_name: SWE-smith
@@ -31,7 +36,9 @@
   year: '2025'
   venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
     Datasets and Benchmarks Track 2025
+  month: 2025-04
   links:
+    arxiv: https://arxiv.org/abs/2504.21798v2
     openreview: https://openreview.net/forum?id=63iVrXc8cC
 - short_name: SWE-Flow
   title: Synthesizing Software Engineering Data in a Test-Driven Manner
@@ -39,14 +46,17 @@
     Zeyu Cui et al.
   year: '2025'
   venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-06
   links:
+    arxiv: https://arxiv.org/abs/2506.09003v2
     openreview: https://openreview.net/forum?id=P9DQ2IExgS
 - short_name: SWE-Mirror
   title: 'SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across
     Repositories'
   authors: Junhao Wang, Daoguang Zan, Shulin Xin, Siyao Liu, Yurong Wu, Kai Shen
   year: '2025'
-  venue: arXiv preprint arXiv:2509.08724 2025
+  venue: arXiv preprint arXiv:2509.08724
+  month: 2025-09
   links:
     arxiv: https://arxiv.org/abs/2509.08724
 - short_name: SWE-World
@@ -54,8 +64,20 @@
   authors: Shuang Sun, Huatong Song, Lisheng Huang, Jinhao Jiang, Ran Le, Zhihao Lv,
     Zongchao Chen, Yiwen Hu, Wenyang Luo, Wayne Xin Zhao, Yang Song, Hongteng Xu,
     Tao Zhang, Ji-Rong Wen
-  venue: arXiv preprint arXiv:2602.03419
   year: '2026'
+  venue: arXiv preprint arXiv:2602.03419
+  month: 2026-02
   links:
     arxiv: https://arxiv.org/abs/2602.03419
     github: https://github.com/RUCAIBox/SWE-World
+- short_name: SWE-Hub
+  title: 'SWE-Hub: A Unified Production System for Scalable, Executable Software Engineering
+    Tasks'
+  authors: Yucheng Zeng, Shupeng Li, Daxiang Dong, Ruijie Xu, Zimo Chen, Liwei Zheng,
+    Yuxuan Li, Zhe Zhou, Haotian Zhao, Lun Tian, Heng Xiao, Tianshu Zhu, Longkun Hao,
+    Jianmin Wu
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.00575
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2603.00575

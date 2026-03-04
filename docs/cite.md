@@ -38,4 +38,4 @@ Li, Caihua, Guo, Lianghong, Wang, Yanlin, et al.. "Advances and Frontiers of LLM
 
 ---
 
-**Note**: This citation information is automatically generated from `docs/citation.bib`. If the paper is published on arXiv or at a conference, the citation will be updated accordingly.
+Note: This citation information reflects the current arXiv preprint. Once the paper is formally published at a conference or journal, the citation will be updated with the official venue, DOI, and page numbers.

@@ -1,0 +1,14 @@
+# Ignore SQLite database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Ignore backup files
+backups/
+
+# Keep Python files
+!*.py
+
+# Keep SQL schema
+!*.sql

@@ -4,7 +4,8 @@
   authors: Bin Lei, Yuchen Li, Yiming Zeng, Tao Ren, Yi Luo, Tianyu Shi, Zitian Gao
     et al.
   year: '2024'
-  venue: arXiv preprint arXiv:2411.01114 2024
+  venue: arXiv preprint arXiv:2411.01114
+  month: 2024-11
   links:
     arxiv: https://arxiv.org/abs/2411.01114
 - short_name: EvoCoder
@@ -13,29 +14,24 @@
   authors: Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin
     Li
   year: '2024'
-  venue: arXiv preprint arXiv:2411.13941 2024
+  venue: arXiv preprint arXiv:2411.13941
+  month: 2024-11
   links:
     arxiv: https://arxiv.org/abs/2411.13941
-- short_name: Learn-by-interact
-  title: 'Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in
-    Realistic Environments'
-  authors: Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik
-  year: '2025'
-  venue: The Thirteenth International Conference on Learning Representations 2025
-  links:
-    openreview: https://openreview.net/forum?id=3UKOzGWCVY
 - short_name: DGM
   title: 'Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents'
   authors: Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune
   year: '2025'
-  venue: arXiv preprint arXiv:2505.22954 2025
+  venue: arXiv preprint arXiv:2505.22954
+  month: 2025-05
   links:
     arxiv: https://arxiv.org/abs/2505.22954
 - short_name: ExpeRepair
   title: 'EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair'
   authors: Fangwen Mu, Junjie Wang, Lin Shi, Song Wang, Shoubin Li, Qing Wang
   year: '2025'
-  venue: arXiv preprint arXiv:2506.10484 2025
+  venue: arXiv preprint arXiv:2506.10484
+  month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.10484
 - short_name: Agent KB
@@ -43,7 +39,8 @@
   authors: Xiangru Tang, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting
     Du, Xinming Wei et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.06229 2025
+  venue: arXiv preprint arXiv:2507.06229
+  month: 2025-07
   links:
     arxiv: https://arxiv.org/abs/2507.06229
 - short_name: SWE-Exp
@@ -51,7 +48,8 @@
   authors: Silin Chen, Shaoxin Lin, Xiaodong Gu, Yuling Shi, Heng Lian, Longfei Yun,
     Dong Chen et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.23361 2025
+  venue: arXiv preprint arXiv:2507.23361
+  month: 2025-07
   links:
     arxiv: https://arxiv.org/abs/2507.23361
 - short_name: RepoMem
@@ -59,39 +57,24 @@
   authors: Boshi Wang, Weijian Xu, Yunsheng Li, Mei Gao, Yujia Xie, Huan Sun, Dongdong
     Chen
   year: '2025'
-  venue: arXiv preprint arXiv:2510.01003 2025
+  venue: arXiv preprint arXiv:2510.01003
+  month: 2025-10
   links:
     arxiv: https://arxiv.org/abs/2510.01003
 - short_name: AgentDiet
   title: Improving the Efficiency of LLM Agent Systems through Trajectory Reduction
   authors: Yuan-An Xiao, Pengfei Gao, Chao Peng, Yingfei Xiong
   year: '2025'
-  venue: arXiv preprint arXiv:2509.23586 2025
+  venue: arXiv preprint arXiv:2509.23586
+  month: 2025-09
   links:
     arxiv: https://arxiv.org/abs/2509.23586
-- short_name: ReasoningBank
-  title: 'ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory'
-  authors: Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun
-    Han et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2509.25140 2025
-  links:
-    arxiv: https://arxiv.org/abs/2509.25140
 - short_name: MemGovern
   title: 'MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences'
   authors: Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi
     Wang et al.
   year: '2026'
-  venue: arXiv preprint arXiv:2601.06789 2026
-  links:
-    arxiv: https://arxiv.org/abs/2601.06789
-- short_name: MemGovern
-  title: 'MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences'
-  authors: Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi
-    Wang, Xiaoming Yu, Jianghao Yin, Sen Hu, Yue Hu, Shaolei Zhang, Yanbing Liu, Ronghao
-    Chen, Huacan Wang
   venue: arXiv preprint arXiv:2601.06789
-  year: '2026'
+  month: 2026-01
   links:
     arxiv: https://arxiv.org/abs/2601.06789
-    github: https://github.com/QuantaAlpha/MemGovern

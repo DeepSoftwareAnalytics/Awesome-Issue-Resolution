@@ -30,7 +30,7 @@
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-188-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-196-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
     </div>
     
     <!-- Interactive Exploration Badges -->
@@ -38,7 +38,7 @@
         <a href="https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a" target="_blank">
             <img src="https://img.shields.io/badge/🎧_NotebookLM-Listen_&_Explore-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="NotebookLM">
         </a>
-        <a href="https://discord.gg/3nF2EYTD" target="_blank">
+        <a href="https://discord.gg/awBHrRJx" target="_blank">
             <img src="https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
         </a>
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues" target="_blank">

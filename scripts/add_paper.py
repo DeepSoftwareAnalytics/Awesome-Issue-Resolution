@@ -233,7 +233,7 @@ def run_update_scripts():
     # Render papers
     print("\n▶ Rendering papers...")
     try:
-        subprocess.run([sys.executable, str(ROOT / "scripts" / "render_papers.py")], check=True)
+        subprocess.run([sys.executable, str(ROOT / "view" / "render_papers.py")], check=True)
         print("  ✅ Success")
     except:
         print("  ⚠️ Warning")
@@ -241,7 +241,7 @@ def run_update_scripts():
     # Sync README
     print("\n▶ Syncing README...")
     try:
-        subprocess.run([sys.executable, str(ROOT / "scripts" / "sync_readme.py")], check=True)
+        subprocess.run([sys.executable, str(ROOT / "view" / "sync_readme.py")], check=True)
         print("  ✅ Success")
     except:
         print("  ⚠️ Warning")
