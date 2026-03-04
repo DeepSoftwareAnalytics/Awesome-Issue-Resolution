@@ -1,0 +1,3651 @@
+{
+  "generated": "2026-03-04",
+  "stats": {
+    "total": 196,
+    "data": 48,
+    "methods": 128,
+    "analysis": 21
+  },
+  "papers": [
+    {
+      "id": 196,
+      "short_name": "BeyondSWE",
+      "title": "BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing?",
+      "authors": "Guoxin Chen, Fanzhe Meng, Jiale Zhao, Minghao Li, Daixuan Cheng, Huatong Song, Jie Chen, Yuzhi Lin, Hui Chen, Xin Zhao, Ruihua Song, Chang Liu, Cheng Chen, Kai Jia, Ji-Rong Wen",
+      "venue": "arXiv preprint arXiv:2603.03194",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.03194",
+        "github": "https://github.com/AweAI-Team/BeyondSWE",
+        "huggingface": "https://huggingface.co/datasets/AweAI-Team/BeyondSWE",
+        "website": "https://aweai-team.github.io/BeyondSWE/"
+      }
+    },
+    {
+      "id": 190,
+      "short_name": "SWE-Adept",
+      "title": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+      "authors": "Kang He, Kaushik Roy",
+      "venue": "arXiv preprint arXiv:2603.01327",
+      "month": "2026-03",
+      "category": "tool, multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.01327"
+      }
+    },
+    {
+      "id": 195,
+      "short_name": "Immersion in the GitHub Universe",
+      "title": "Immersion in the GitHub Universe: Scaling Coding Agents to Mastery",
+      "authors": "Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai Sun, Xin Zhao, Ruihua Song, Yuan Zhang, Peng Wang, Cheng Chen, Jirong Wen, Kai Jia",
+      "venue": "arXiv preprint arXiv:2602.09892",
+      "month": "2026-02",
+      "category": "sft, data_collection, training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.09892",
+        "github": "https://github.com/AweAI-Team/ScaleSWE",
+        "huggingface": "https://huggingface.co/collections/AweAI-Team/scale-swe"
+      }
+    },
+    {
+      "id": 193,
+      "short_name": "SWE-rebench V2",
+      "title": "SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale",
+      "authors": "Ibragim Badertdinov, Maksim Nekrashevich, Anton Shevtsov, Alexander Golubev",
+      "venue": "arXiv preprint arXiv:2602.23866",
+      "month": "2026-02",
+      "category": "data_collection, training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.23866"
+      }
+    },
+    {
+      "id": 192,
+      "short_name": "SWE-ABS",
+      "title": "SWE-ABS: Adversarial Benchmark Strengthening Exposes Inflated Success Rates on Test-based Benchmark",
+      "authors": "Boxi Yu, Yang Cao, Yuzhong Zhang, Liting Lin, Junjielong Xu, Zhiqing Zhong, Qinghua Xu, Guancheng Wang, Jialun Cao, Shing-Chi Cheung, Pinjia He, Lionel Briand",
+      "venue": "arXiv preprint arXiv:2603.00520",
+      "month": "2026-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.00520"
+      }
+    },
+    {
+      "id": 191,
+      "short_name": "SWE-Hub",
+      "title": "SWE-Hub: A Unified Production System for Scalable, Executable Software Engineering Tasks",
+      "authors": "Yucheng Zeng, Shupeng Li, Daxiang Dong, Ruijie Xu, Zimo Chen, Liwei Zheng, Yuxuan Li, Zhe Zhou, Haotian Zhao, Lun Tian, Heng Xiao, Tianshu Zhu, Longkun Hao, Jianmin Wu",
+      "venue": "arXiv preprint arXiv:2603.00575",
+      "month": "2026-02",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.00575"
+      }
+    },
+    {
+      "id": 184,
+      "short_name": "SWE-Universe",
+      "title": "SWE-Universe: Scale Real-World Verifiable Environments to Millions",
+      "authors": "Mouxiang Chen, Lei Zhang, Yunlong Feng, Xuwu Wang, Wenting Zhao, Ruisheng Cao, Jiaxi Yang, Jiawei Chen, Mingze Li, Zeyao Ma, Hao Ge, Zongmeng Zhang, Zeyu Cui, Dayiheng Liu, Jingren Zhou, Jianling Sun, Junyang Lin, Binyuan Hui",
+      "venue": "arXiv preprint arXiv:2602.02361",
+      "month": "2026-02",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://www.arxiv.org/abs/2602.02361"
+      }
+    },
+    {
+      "id": 176,
+      "short_name": "Closing the Loop",
+      "title": "Closing the Loop: Universal Repository Representation with RPG-Encoder",
+      "authors": "Jane Luo, Chengyu Yin, Xin Zhang, Qingtao Li, Steven Liu, Yiming Huang, Jie Wu, Hao Liu, Yangyu Huang, Yu Kang, Fangkai Yang, Ying Xin, Scarlett Li",
+      "venue": "arXiv preprint arXiv:2602.02084",
+      "month": "2026-02",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.02084",
+        "github": "https://github.com/microsoft/RPG-ZeroRepo",
+        "website": "https://ayanami2003.github.io/RPG-Encoder/"
+      }
+    },
+    {
+      "id": 123,
+      "short_name": "SWE-MiniSandbox",
+      "title": "SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software Engineering Agents",
+      "authors": "Danlong Yuan, Wei Wu, Zhengren Wang, Xueliang Zhao, Huishuai Zhang, Dongyan Zhao",
+      "venue": "arXiv preprint arXiv:2602.11210",
+      "month": "2026-02",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.11210v1",
+        "github": "http://github.com/lblankl/SWE-MiniSandbox"
+      }
+    },
+    {
+      "id": 122,
+      "short_name": "SWE-Protégé",
+      "title": "SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering Agents",
+      "authors": "Patrick Tser Jern Kon, Archana Pradeep, Ang Chen, Alexander P. Ellis, Warren Hunt, Zijian Wang, John Yang, Samuel Thompson",
+      "venue": "arXiv preprint arXiv:2602.22124",
+      "month": "2026-02",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.22124"
+      }
+    },
+    {
+      "id": 121,
+      "short_name": "SWE-Master",
+      "title": "SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training",
+      "authors": "Huatong Song, Lisheng Huang, Shuang Sun, Jinhao Jiang, Ran Le, Daixuan Cheng, Guoxin Chen, Yiwen Hu, Zongchao Chen, Wayne Xin Zhao, Yang Song, Tao Zhang, Ji-Rong Wen",
+      "venue": "arXiv preprint arXiv:2602.03411",
+      "month": "2026-02",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.03411",
+        "github": "https://github.com/RUCAIBox/SWE-Master"
+      }
+    },
+    {
+      "id": 44,
+      "short_name": "SWE Context Bench",
+      "title": "SWE Context Bench: A Benchmark for Context Learning in Coding",
+      "authors": "Jared Zhu, Minhao Hu, Junde Wu",
+      "venue": "arXiv preprint arXiv:2602.08316",
+      "month": "2026-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/pdf/2602.08316"
+      }
+    },
+    {
+      "id": 24,
+      "short_name": "SWE-World",
+      "title": "SWE-World: Building Software Engineering Agents in Docker-Free Environments",
+      "authors": "Shuang Sun, Huatong Song, Lisheng Huang, Jinhao Jiang, Ran Le, Zhihao Lv, Zongchao Chen, Yiwen Hu, Wenyang Luo, Wayne Xin Zhao, Yang Song, Hongteng Xu, Tao Zhang, Ji-Rong Wen",
+      "venue": "arXiv preprint arXiv:2602.03419",
+      "month": "2026-02",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.03419",
+        "github": "https://github.com/RUCAIBox/SWE-World"
+      }
+    },
+    {
+      "id": 16,
+      "short_name": "DockSmith",
+      "title": "DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder",
+      "authors": "Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou, Zhe Xie, Mengqiang Ren, Xin Wu, Zhewei Huang, Liangyu Chen, Yingwei Ma, Qi Han, Xiangyu Zhang",
+      "venue": "arXiv preprint arXiv:2602.00592",
+      "month": "2026-02",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.00592",
+        "huggingface": "https://huggingface.co/collections/8sj7df9k8m5x8/docksmith"
+      }
+    },
+    {
+      "id": 197,
+      "short_name": "daVinci-Dev",
+      "title": "daVinci-Dev: Agent-native Mid-training for Software Engineering",
+      "authors": "Ji Zeng, Dayuan Fu, Tiantian Mi, Yumin Zhuang, Yaxing Huang, Xuefeng Li, Lyumanshan Ye, Muhang Xie, Qishuo Hua, Zhen Huang, Mohan Jiang, Hanning Wang, Jifan Lin, Yang Xiao, Jie Sun, Yunze Wu, Pengfei Liu",
+      "venue": "arXiv preprint arXiv:2601.18418",
+      "month": "2026-01",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.18418",
+        "github": "https://github.com/GAIR-NLP/daVinci-Dev",
+        "huggingface": "https://huggingface.co/datasets/GAIR/daVinci-Dev"
+      }
+    },
+    {
+      "id": 194,
+      "short_name": "SWE-Manager",
+      "title": "SWE-Manager: Selecting and Synthesizing Golden Proposals Before Coding",
+      "authors": "Boyin Tan, Haoning Deng, Junyuan Zhang, Junjielong Xu, Pinjia He, Youcheng Sun",
+      "venue": "arXiv preprint arXiv:2601.22956",
+      "month": "2026-01",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.22956",
+        "github": "https://github.com/shuaijiumei/SWE-Manager"
+      }
+    },
+    {
+      "id": 175,
+      "short_name": "SWE-Tester",
+      "title": "SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories",
+      "authors": "Aditya Bharat Soni, Rajat Ghosh, Vaishnavi Bhargava, Valerie Chen, Debojyoti Dutta",
+      "venue": "arXiv preprint arXiv:2601.13713",
+      "month": "2026-01",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.13713"
+      }
+    },
+    {
+      "id": 137,
+      "short_name": "SWE-Replay",
+      "title": "SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents",
+      "authors": "Yifeng Ding, Lingming Zhang",
+      "venue": "arXiv preprint arXiv:2601.22129",
+      "month": "2026-01",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.22129"
+      }
+    },
+    {
+      "id": 135,
+      "short_name": "SWE-Lego",
+      "title": "SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving",
+      "authors": "Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, Shaowei Wang, Ruoyu Wang, Xiaohui Li et al.",
+      "venue": "arXiv preprint arXiv:2601.01426",
+      "month": "2026-01",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.01426"
+      }
+    },
+    {
+      "id": 120,
+      "short_name": "MiMo-V2-Flash",
+      "title": "MiMo-V2-Flash Technical Report",
+      "authors": "Xiaomi-LLM-Core-Team, Bangjun Xiao, Bingquan Xia, Bo Yang, Bofei Gao, Bowen Shen, Chen Zhang et al.",
+      "venue": "arXiv preprint arXiv:2601.02780",
+      "month": "2026-01",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.02780"
+      }
+    },
+    {
+      "id": 58,
+      "short_name": "MemGovern",
+      "title": "MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences",
+      "authors": "Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi Wang et al.",
+      "venue": "arXiv preprint arXiv:2601.06789",
+      "month": "2026-01",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.06789"
+      }
+    },
+    {
+      "id": 49,
+      "short_name": "Agentic Rubrics",
+      "title": "Agentic Rubrics as Contextual Verifiers for SWE Agents",
+      "authors": "Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He",
+      "venue": "arXiv preprint arXiv:2601.04171",
+      "month": "2026-01",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.04171",
+        "website": "https://scale.com/research/agenticrubrics"
+      }
+    },
+    {
+      "id": 17,
+      "short_name": "MEnvAgent",
+      "title": "MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering",
+      "authors": "Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan, Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang",
+      "venue": "arXiv preprint arXiv:2601.22859",
+      "month": "2026-01",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.22859",
+        "github": "https://github.com/ernie-research/MEnvAgent"
+      }
+    },
+    {
+      "id": 174,
+      "short_name": "GraphLocator",
+      "title": "GraphLocator: Graph-guided Causal Reasoning for Issue Localization",
+      "authors": "Wei Liu, Chao Peng, Pengfei Gao, Aofan Liu, Wei Zhang, Haiyan Zhao, Zhi Jin",
+      "venue": "arXiv preprint arXiv:2512.22469",
+      "month": "2025-12",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.22469"
+      }
+    },
+    {
+      "id": 147,
+      "short_name": "Confucius Code Agent",
+      "title": "Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases",
+      "authors": "Sherman Wong, Zhenting Qi, Zhaodong Wang, Nathan Hu, Samuel Lin, Jun Ge, Erwin Gao et al.",
+      "venue": "arXiv preprint arXiv:2512.10398",
+      "month": "2025-12",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.10398"
+      }
+    },
+    {
+      "id": 134,
+      "short_name": "SWE-Compressor",
+      "title": "Context as a Tool: Context Management for Long-Horizon SWE-Agents",
+      "authors": "Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu, Bryan Dai",
+      "venue": "arXiv preprint arXiv:2512.22087",
+      "month": "2025-12",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.22087"
+      }
+    },
+    {
+      "id": 114,
+      "short_name": "Deepseek V3.2",
+      "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+      "authors": "DeepSeek-AI, Aixin Liu, Aoxue Mei, Bangcai Lin, Bing Xue, Bingxuan Wang, Bingzheng Xu et al.",
+      "venue": "arXiv preprint arXiv:2512.02556",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.02556"
+      }
+    },
+    {
+      "id": 111,
+      "short_name": "Let It Flow",
+      "title": "Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model within an Open Agentic Learning Ecosystem",
+      "authors": "Weixun Wang, XiaoXiao Xu, Wanhe An, Fangwen Dai, Wei Gao, Yancheng He, Ju Huang et al.",
+      "venue": "arXiv preprint arXiv:2512.24873",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.24873"
+      }
+    },
+    {
+      "id": 110,
+      "short_name": "One Tool Is Enough",
+      "title": "One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents",
+      "authors": "Zhaoxi Zhang, Yitong Duan, Yanzhi Zhang, Yiming Xu, Weikang Li, Jiahui Liang, Deguo Xia et al.",
+      "venue": "arXiv preprint arXiv:2512.20957",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.20957"
+      }
+    },
+    {
+      "id": 109,
+      "short_name": "SWE-RM",
+      "title": "SWE-RM: Execution-free Feedback For Software Engineering Agents",
+      "authors": "KaShun Shum, Binyuan Hui, Jiawei Chen, Lei Zhang, X. W., Jiaxi Yang, Yuzhen Huang et al.",
+      "venue": "arXiv preprint arXiv:2512.21919",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.21919"
+      }
+    },
+    {
+      "id": 106,
+      "short_name": "SWE-Playground",
+      "title": "Training Versatile Coding Agents in Synthetic Environments",
+      "authors": "Yiqi Zhu, Apurva Gandhi, Graham Neubig",
+      "venue": "arXiv preprint arXiv:2512.12216",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.12216"
+      }
+    },
+    {
+      "id": 105,
+      "short_name": "Self-play SWE-RL",
+      "title": "Toward Training Superintelligent Software Agents through Self-Play SWE-RL",
+      "authors": "Yuxiang Wei, Zhiqing Sun, Emily McMilin, Jonas Gehring, David Zhang, Gabriel Synnaeve, Daniel Fried et al.",
+      "venue": "arXiv preprint arXiv:2512.18552",
+      "month": "2025-12",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.18552"
+      }
+    },
+    {
+      "id": 68,
+      "short_name": "SWEnergy",
+      "title": "SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution Frameworks with SLMs",
+      "authors": "Arihant Tripathy, Ch Pavan Harshit, Karthik Vaidhyanathan",
+      "venue": "ICSE Workshops 2026",
+      "month": "2025-12",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.09543v2"
+      }
+    },
+    {
+      "id": 43,
+      "short_name": "SWE-EVO",
+      "title": "SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios",
+      "authors": "Minh V. T. Thai, Tue Le, Dung Nguyen Manh, Huy Phan Nhat, Nghi D. Q. Bui",
+      "venue": "arXiv preprint arXiv:2512.18470",
+      "month": "2025-12",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.18470"
+      }
+    },
+    {
+      "id": 39,
+      "short_name": "SWE-InfraBench",
+      "title": "SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code",
+      "authors": "Natalia Tarasova, Enrique Balp-Straffon, Aleksei Iancheruk, Yevhenii Sielskyi, Nikita Kozodoi, Liam H. Byrne, Jack Butler et al.",
+      "venue": "NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling 2025",
+      "month": "2025-12",
+      "category": "evaluation_datasets",
+      "links": {
+        "openreview": "https://openreview.net/forum?id=XX0ciUwfXa"
+      }
+    },
+    {
+      "id": 15,
+      "short_name": "Multi-Docker-Eval",
+      "title": "Multi-Docker-Eval: A `Shovel of the Gold Rush' Benchmark on Automatic Environment Building for Software Engineering",
+      "authors": "Kelin Fu, Tianyu Liu, Zeyu Shang, Yingwei Ma, Jian Yang, Jiaheng Liu, Kaigui Bian",
+      "venue": "arXiv preprint arXiv:2512.06915",
+      "month": "2025-12",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.06915"
+      }
+    },
+    {
+      "id": 9,
+      "short_name": "Data contamination",
+      "title": "Does SWE-Bench-Verified Test Agent Ability or Model Memory?",
+      "authors": "Thanosan Prathifkumar, Noble Saji Mathews, Meiyappan Nagappan",
+      "venue": "arXiv preprint arXiv:2512.10218",
+      "month": "2025-12",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2512.10218"
+      }
+    },
+    {
+      "id": 173,
+      "short_name": "InfCode",
+      "title": "InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution",
+      "authors": "KeFan Li, Mengfei Wang, Hengzhi Zhang, Zhichao Li, Yuan Yuan, Mu Li, Xiang Gao et al.",
+      "venue": "arXiv preprint arXiv:2511.16004",
+      "month": "2025-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2511.16004"
+      }
+    },
+    {
+      "id": 104,
+      "short_name": "TSP",
+      "title": "Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level Code Repair",
+      "authors": "Xiong, Bojian, Lei, Yikun, Liu, Xikai, Zhang, Shaowei, Zhu, Pengyun, Liu, Yan, Leng, Yongqi et al.",
+      "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track 2025",
+      "month": "2025-11",
+      "category": "rl",
+      "links": {
+        "doi": "https://aclanthology.org/2025.emnlp-industry.109/"
+      }
+    },
+    {
+      "id": 42,
+      "short_name": "SWE-Compass",
+      "title": "SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models",
+      "authors": "Jingxuan Xu, Ken Deng, Weihao Li, Songwei Yu, Huaixi Tang, Haoyang Huang, Zhiyi Lai et al.",
+      "venue": "arXiv preprint arXiv:2511.05459",
+      "month": "2025-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2511.05459"
+      }
+    },
+    {
+      "id": 41,
+      "short_name": "SWE-fficiency",
+      "title": "SWE-fficiency: Can Language Models Optimize Real-World Repositories on Real Workloads?",
+      "authors": "Jeffrey Jian Ma, Milad Hashemi, Amir Yazdanbakhsh, Kevin Swersky, Ofir Press, Enhui Li, Vijay Janapa Reddi et al.",
+      "venue": "arXiv preprint arXiv:2511.06090",
+      "month": "2025-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2511.06090"
+      }
+    },
+    {
+      "id": 40,
+      "short_name": "SWE-Sharp-Bench",
+      "title": "SWE-Sharp-Bench: A Reproducible Benchmark for C# Software Engineering Tasks",
+      "authors": "Sanket Mhatre, Yasharth Bajpai, Sumit Gulwani, Emerson Murphy-Hill, Gustavo Soares",
+      "venue": "arXiv preprint arXiv:2511.02352",
+      "month": "2025-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2511.02352"
+      }
+    },
+    {
+      "id": 172,
+      "short_name": "TestPrune",
+      "title": "When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue Resolution",
+      "authors": "Yang Chen, Toufique Ahmed, Reyhaneh Jabbarvand, Martin Hirzel",
+      "venue": "arXiv preprint arXiv:2510.18270",
+      "month": "2025-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.18270"
+      }
+    },
+    {
+      "id": 171,
+      "short_name": "BugPilot",
+      "title": "BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills",
+      "authors": "Atharv Sonwane, Isadora White, Hyunji Lee, Matheus Pereira, Lucas Caccia, Minseon Kim, Zhengyan Shi et al.",
+      "venue": "arXiv preprint arXiv:2510.19898",
+      "month": "2025-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.19898"
+      }
+    },
+    {
+      "id": 146,
+      "short_name": "TOM-SWE",
+      "title": "TOM-SWE: User Mental Modeling For Software Engineering Agents",
+      "authors": "Xuhui Zhou, Valerie Chen, Zora Zhiruo Wang, Graham Neubig, Maarten Sap, Xingyao Wang",
+      "venue": "arXiv preprint arXiv:2510.21903",
+      "month": "2025-10",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.21903"
+      }
+    },
+    {
+      "id": 112,
+      "short_name": "KAT-Coder",
+      "title": "KAT-Coder Technical Report",
+      "authors": "Zizheng Zhan, Ken Deng, Jinghui Wang, Xiaojiang Zhang, Huaixi Tang, Minglei Zhang, Zhiyi Lai et al.",
+      "venue": "arXiv preprint arXiv:2510.18779",
+      "month": "2025-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.18779"
+      }
+    },
+    {
+      "id": 107,
+      "short_name": "Supervised RL",
+      "title": "Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning",
+      "authors": "Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, Yanfei Chen et al.",
+      "venue": "arXiv preprint arXiv:2510.25992",
+      "month": "2025-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.25992"
+      }
+    },
+    {
+      "id": 103,
+      "short_name": "GRPO-based Method",
+      "title": "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning",
+      "authors": "Ruiyi Wang, Prithviraj Ammanabrolu",
+      "venue": "First Workshop on Multi-Turn Interactions in Large Language Models 2025",
+      "month": "2025-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.01132",
+        "openreview": "https://openreview.net/forum?id=yPWJG9wgll",
+        "website": "https://neurips.cc/virtual/2025/loc/san-diego/127960"
+      }
+    },
+    {
+      "id": 102,
+      "short_name": "FoldGRPO",
+      "title": "Scaling Long-Horizon LLM Agent via Context-Folding",
+      "authors": "Weiwei Sun, Miao Lu, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen",
+      "venue": "arXiv preprint arXiv:2510.11967",
+      "month": "2025-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.11967"
+      }
+    },
+    {
+      "id": 99,
+      "short_name": "CWM",
+      "title": "CWM: An Open-Weights LLM for Research on Code Generation with World Models",
+      "authors": "FAIR CodeGen team, Jade Copet, Quentin Carbonneaux, Gal Cohen, Jonas Gehring, Jacob Kahn, Jannik Kossen et al.",
+      "venue": "arXiv preprint arXiv:2510.02387",
+      "month": "2025-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.02387"
+      }
+    },
+    {
+      "id": 56,
+      "short_name": "RepoMem",
+      "title": "Improving Code Localization with Repository Memory",
+      "authors": "Boshi Wang, Weijian Xu, Yunsheng Li, Mei Gao, Yujia Xie, Huan Sun, Dongdong Chen",
+      "venue": "arXiv preprint arXiv:2510.01003",
+      "month": "2025-10",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.01003"
+      }
+    },
+    {
+      "id": 48,
+      "short_name": "SIADAFIX",
+      "title": "SIADAFIX: issue description response for adaptive program repair",
+      "authors": "Xin Cao, Nan Yu",
+      "venue": "arXiv preprint arXiv:2510.16059",
+      "month": "2025-10",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2510.16059"
+      }
+    },
+    {
+      "id": 163,
+      "short_name": "Nemotron-CORTEXA",
+      "title": "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "authors": "Atefeh Sohrabizadeh, Jialin Song, Mingjie Liu, Rajarshi Roy, Chankyu Lee, Jonathan Raiman, Bryan Catanzaro",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-09",
+      "category": "tool",
+      "links": {
+        "openreview": "https://openreview.net/forum?id=k6p8UKRdH7",
+        "website": "https://research.nvidia.com/labs/adlr/cortexa/"
+      }
+    },
+    {
+      "id": 145,
+      "short_name": "Lita",
+      "title": "Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs",
+      "authors": "Hankun Dai, Maoquan Wang, Mengnan Qi, Yikai Zhang, Zijian Jin, Yongqiang Yao, Yufan Huang et al.",
+      "venue": "arXiv preprint arXiv:2509.25873",
+      "month": "2025-09",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.25873"
+      }
+    },
+    {
+      "id": 133,
+      "short_name": "Devstral",
+      "title": "Devstral: Fine-tuning Language Models for Coding Agent Applications",
+      "authors": "Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexander H. Liu, Alexandre Sablayrolles, Amélie Héliou, Amélie Martin et al.",
+      "venue": "arXiv preprint arXiv:2509.25193",
+      "month": "2025-09",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.25193"
+      }
+    },
+    {
+      "id": 119,
+      "short_name": "LongCat-Flash-Think",
+      "title": "Introducing LongCat-Flash-Thinking: A Technical Report",
+      "authors": "Meituan-LongCat-Team, Anchun Gui, Bei Li, Bingyang Tao, Bole Zhou, Borun Chen, Chao Zhang et al.",
+      "venue": "arXiv preprint arXiv:2509.18883",
+      "month": "2025-09",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.18883"
+      }
+    },
+    {
+      "id": 101,
+      "short_name": "Kimi-Dev",
+      "title": "Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents",
+      "authors": "Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu, Yibo Miao et al.",
+      "venue": "arXiv preprint arXiv:2509.23045",
+      "month": "2025-09",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.23045"
+      }
+    },
+    {
+      "id": 100,
+      "short_name": "EntroPO",
+      "title": "Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization",
+      "authors": "Jiahao Yu, Zelei Cheng, Xian Wu, Xinyu Xing",
+      "venue": "arXiv preprint arXiv:2509.12434",
+      "month": "2025-09",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.12434"
+      }
+    },
+    {
+      "id": 98,
+      "short_name": "CoreThink",
+      "title": "CoreThink: A Symbolic Reasoning Layer to reason over Long Horizon Tasks with LLMs",
+      "authors": "Jay Vaghasiya, Omkar Ghugarkar, Vishvesh Bhat, Vipul Dholaria, Julian McAuley",
+      "venue": "arXiv preprint arXiv:2509.00971",
+      "month": "2025-09",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.00971"
+      }
+    },
+    {
+      "id": 66,
+      "short_name": "Failures analysis",
+      "title": "An Empirical Study on Failures in Automated Issue Solving",
+      "authors": "Simiao Liu, Fang Liu, Liehao Li, Xin Tan, Yinghao Zhu, Xiaoli Lian, Li Zhang",
+      "venue": "arXiv preprint arXiv:2509.13941",
+      "month": "2025-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.13941"
+      }
+    },
+    {
+      "id": 57,
+      "short_name": "AgentDiet",
+      "title": "Improving the Efficiency of LLM Agent Systems through Trajectory Reduction",
+      "authors": "Yuan-An Xiao, Pengfei Gao, Chao Peng, Yingfei Xiong",
+      "venue": "arXiv preprint arXiv:2509.23586",
+      "month": "2025-09",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.23586"
+      }
+    },
+    {
+      "id": 47,
+      "short_name": "SWE-PRM",
+      "title": "When Agents go Astray: Course-Correcting SWE Agents with PRMs",
+      "authors": "Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, Yara Rizk",
+      "venue": "arXiv preprint arXiv:2509.02360",
+      "month": "2025-09",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.02360"
+      }
+    },
+    {
+      "id": 38,
+      "short_name": "SWE-Bench Pro",
+      "title": "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?",
+      "authors": "Xiang Deng, Jeff Da, Edwin Pan, Yannis Yiming He, Charles Ide, Kanak Garg, Niklas Lauffer et al.",
+      "venue": "arXiv preprint arXiv:2509.16941",
+      "month": "2025-09",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.16941"
+      }
+    },
+    {
+      "id": 23,
+      "short_name": "SWE-Mirror",
+      "title": "SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories",
+      "authors": "Junhao Wang, Daoguang Zan, Shulin Xin, Siyao Liu, Yurong Wu, Kai Shen",
+      "venue": "arXiv preprint arXiv:2509.08724",
+      "month": "2025-09",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2509.08724"
+      }
+    },
+    {
+      "id": 170,
+      "short_name": "Git Context Controller",
+      "title": "Git Context Controller: Manage the Context of LLM-based Agents like Git",
+      "authors": "Junde Wu",
+      "venue": "arXiv preprint arXiv:2508.00031",
+      "month": "2025-08",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.00031"
+      }
+    },
+    {
+      "id": 144,
+      "short_name": "Live-SWE-agent",
+      "title": "SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents",
+      "authors": "Yifu Guo, Jiaye Lin, Huacan Wang, Yuzhen Han, Sen Hu, Ziyi Ni, Licheng Wang et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems 2025",
+      "month": "2025-08",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.02085v6",
+        "openreview": "https://openreview.net/forum?id=isATAFP71B"
+      }
+    },
+    {
+      "id": 116,
+      "short_name": "GLM-4.6",
+      "title": "gpt-oss-120b & gpt-oss-20b model card",
+      "authors": "Agarwal, Sandhini, Ahmad, Lama, Ai, Jason, Altman, Sam, Applebaum, Andy, Arbus, Edwin, Arora, Rahul K et al.",
+      "venue": "arXiv preprint arXiv:2508.10925",
+      "month": "2025-08",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.10925"
+      }
+    },
+    {
+      "id": 97,
+      "short_name": "DAPO",
+      "title": "Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning",
+      "authors": "Alexander Golubev, Maria Trofimova, Sergei Polezhaev, Ibragim Badertdinov, Maksim Nekrashevich, Anton Shevtsov, Simon Karasik et al.",
+      "venue": "arXiv preprint arXiv:2508.03501",
+      "month": "2025-08",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.03501"
+      }
+    },
+    {
+      "id": 96,
+      "short_name": "SeamlessFlow",
+      "title": "SeamlessFlow: A Trainer Agent Isolation RL Framework Achieving Bubble-Free Pipelines via Tag Scheduling",
+      "authors": "Jinghui Wang, Shaojie Wang, Yinghan Cui, Xuxing Chen, Chao Wang, Xiaojiang Zhang, Minglei Zhang et al.",
+      "venue": "arXiv preprint arXiv:2508.11553",
+      "month": "2025-08",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.11553"
+      }
+    },
+    {
+      "id": 95,
+      "short_name": "SWE-Swiss",
+      "title": "SWE-Swiss: A Multi-Task Fine-Tuning and RL Recipe for High-Performance Issue Resolution",
+      "authors": "He, Zhenyu, Yang, Qingping, Sheng, Wei, Zhong, Xiaojian, Zhang, Kechi, An, Chenxin, Shi, Wenlei et al.",
+      "venue": "-",
+      "month": "2025-08",
+      "category": "rl",
+      "links": {
+        "website": "https://www.notion.so/SWE-Swiss-A-Multi-Task-Fine-Tuning-and-RL-Recipe-for-High-Performance-Issue-Resolution-21e174dedd4880ea829ed4c861c44f88"
+      }
+    },
+    {
+      "id": 94,
+      "short_name": "Tool-integrated RL",
+      "title": "Tool-integrated Reinforcement Learning for Repo Deep Search",
+      "authors": "Zexiong Ma, Chao Peng, Qunhong Zeng, Pengfei Gao, Yanzhen Zou, Bing Xie",
+      "venue": "arXiv preprint arXiv:2508.03012",
+      "month": "2025-08",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.03012"
+      }
+    },
+    {
+      "id": 85,
+      "short_name": "Meta-RAG",
+      "title": "Meta-RAG on Large Codebases Using Code Summarization",
+      "authors": "Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso",
+      "venue": "arXiv preprint arXiv:2508.02611",
+      "month": "2025-08",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.02611"
+      }
+    },
+    {
+      "id": 14,
+      "short_name": "RepoForge",
+      "title": "RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale",
+      "authors": "Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur Leung, Gopi Krishnan Rajbahadur et al.",
+      "venue": "arXiv preprint arXiv:2508.01550",
+      "month": "2025-08",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2508.01550"
+      }
+    },
+    {
+      "id": 187,
+      "short_name": "SynFix",
+      "title": "SynFix: Dependency-Aware Program Repair via RelationGraph Analysis",
+      "authors": "Tang, Xunzhu, Gao, Jiechao, Xu, Jin, Sun, Tiezhu, Song, Yewei, Ezzini, Saad, Ouedraogo, Wendk\\^uuni C. et al.",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025 2025",
+      "month": "2025-07",
+      "category": "workflow",
+      "links": {
+        "website": "https://ezzini.github.io/CSAL/publication/tang-2025-synfix/",
+        "doi": "https://aclanthology.org/2025.findings-acl.252.pdf"
+      }
+    },
+    {
+      "id": 169,
+      "short_name": "Prometheus",
+      "title": "Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual Codebases",
+      "authors": "Zimin Chen, Yue Pan, Siyu Lu, Jiayi Xu, Claire Le Goues, Martin Monperrus, He Ye",
+      "venue": "arXiv preprint arXiv:2507.19942",
+      "month": "2025-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.19942"
+      }
+    },
+    {
+      "id": 143,
+      "short_name": "Trae Agent",
+      "title": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling",
+      "authors": "Trae Research Team, Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang, Ruida Hu, Yuanan Xiao et al.",
+      "venue": "arXiv preprint arXiv:2507.23370",
+      "month": "2025-07",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.23370"
+      }
+    },
+    {
+      "id": 115,
+      "short_name": "Kimi-K2-Instruct",
+      "title": "Kimi K2: Open Agentic Intelligence",
+      "authors": "Kimi Team, Yifan Bai, Yiping Bao, Guanduo Chen, Jiahao Chen, Ningxin Chen, Ruijue Chen et al.",
+      "venue": "arXiv preprint arXiv:2507.20534",
+      "month": "2025-07",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.20534"
+      }
+    },
+    {
+      "id": 92,
+      "short_name": "DeepSWE",
+      "title": "DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling RL",
+      "authors": "Michael Luo, Naman Jain, Jaskirat Singh, Sijun Tan, Ameen Patel, Qingyang Wu, Alpay Ariyak et al.",
+      "venue": "-",
+      "month": "2025-07",
+      "category": "rl",
+      "links": {
+        "website": "https://pretty-radio-b75.notion.site/DeepSWE-Training-a-Fully-Open-sourced-State-of-the-Art-Coding-Agent-by-Scaling-RL-22281902c1468193aabbe9a8c59bbe33"
+      }
+    },
+    {
+      "id": 84,
+      "short_name": "SWE-Debate",
+      "title": "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution",
+      "authors": "Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao Jia et al.",
+      "venue": "ICSE 2026",
+      "month": "2025-07",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.23348v1"
+      }
+    },
+    {
+      "id": 65,
+      "short_name": "Security analysis",
+      "title": "How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks in LLM and Agentic Automated Program Repair on SWE-bench",
+      "authors": "Amirali Sajadi, Kostadin Damevski, Preetha Chatterjee",
+      "venue": "arXiv preprint arXiv:2507.02976",
+      "month": "2025-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.02976"
+      }
+    },
+    {
+      "id": 55,
+      "short_name": "SWE-Exp",
+      "title": "SWE-Exp: Experience-Driven Software Issue Resolution",
+      "authors": "Silin Chen, Shaoxin Lin, Xiaodong Gu, Yuling Shi, Heng Lian, Longfei Yun, Dong Chen et al.",
+      "venue": "arXiv preprint arXiv:2507.23361",
+      "month": "2025-07",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.23361"
+      }
+    },
+    {
+      "id": 54,
+      "short_name": "Agent KB",
+      "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+      "authors": "Xiangru Tang, Tianrui Qin, Tianhao Peng, Ziyang Zhou, Daniel Shao, Tingting Du, Xinming Wei et al.",
+      "venue": "arXiv preprint arXiv:2507.06229",
+      "month": "2025-07",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.06229"
+      }
+    },
+    {
+      "id": 37,
+      "short_name": "SWE-Perf",
+      "title": "SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories?",
+      "authors": "Xinyi He, Qian Liu, Mingzhe Du, Lin Yan, ZhiJie Fan, Yiming Huang, Zejian Yuan et al.",
+      "venue": "NeurIPS 2025 Fourth Workshop on Deep Learning for Code 2025",
+      "month": "2025-07",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.12415v1",
+        "openreview": "https://openreview.net/forum?id=KxFaKvtBiG"
+      }
+    },
+    {
+      "id": 13,
+      "short_name": "SWE-MERA",
+      "title": "SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks",
+      "authors": "Pavel Adamenko, Mikhail Ivanov, Aidar Valeev, Rodion Levichev, Pavel Zadorozhny, Ivan Lopatin, Dmitry Babayev et al.",
+      "venue": "arXiv preprint arXiv:2507.11059",
+      "month": "2025-07",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.11059"
+      }
+    },
+    {
+      "id": 8,
+      "short_name": "SPICE",
+      "title": "SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity,\n               Test Coverage, and Effort Estimation",
+      "authors": "Gustavo A. Oliva, Gopi Krishnan Rajbahadur, Aaditya Bhatia, Haoxiang Zhang, Yihao Chen, Zhilong Chen, Arthur Leung et al.",
+      "venue": "ASE 2025",
+      "month": "2025-07",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.09108v5"
+      }
+    },
+    {
+      "id": 5,
+      "short_name": "Rigorous agentic benchmarks",
+      "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+      "authors": "Yuxuan Zhu, Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha Cui, Sayash Kapoor et al.",
+      "venue": "arXiv preprint arXiv:2507.02825",
+      "month": "2025-07",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2507.02825"
+      }
+    },
+    {
+      "id": 189,
+      "short_name": "GUIRepair",
+      "title": "Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual Software Issue Fixing",
+      "authors": "Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen",
+      "venue": "ASE 2025",
+      "month": "2025-06",
+      "category": "workflow",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.16136v1"
+      }
+    },
+    {
+      "id": 183,
+      "short_name": "Skywork-SWE",
+      "title": "Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs",
+      "authors": "Liang Zeng, Yongcong Li, Yuzhen Xiao, Changshi Li, Chris Yuhao Liu, Rui Yan, Tianwen Wei et al.",
+      "venue": "arXiv preprint arXiv:2506.19290",
+      "month": "2025-06",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.19290"
+      }
+    },
+    {
+      "id": 168,
+      "short_name": "cAST",
+      "title": "cAST: Enhancing Code Retrieval-Augmented Generation with Structural Chunking via Abstract Syntax Tree",
+      "authors": "Yilin Zhang, Xinran Zhao, Zora Zhiruo Wang, Chenyang Yang, Jiayi Wei, Tongshuang Wu",
+      "venue": "arXiv preprint arXiv:2506.15655",
+      "month": "2025-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.15655"
+      }
+    },
+    {
+      "id": 167,
+      "short_name": "Repeton",
+      "title": "Repeton: Structured Bug Repair with ReAct-Guided Patch-and-Test Cycles",
+      "authors": "Nguyen Phu Vinh, Anh Chung Hoang, Chris Ngo, Truong-Son Hy",
+      "venue": "arXiv preprint arXiv:2506.08173",
+      "month": "2025-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.08173"
+      }
+    },
+    {
+      "id": 166,
+      "short_name": "SemAgent",
+      "title": "SemAgent: A Semantics Aware Program Repair Agent",
+      "authors": "Anvith Pabba, Alex Mathai, Anindya Chakraborty, Baishakhi Ray",
+      "venue": "arXiv preprint arXiv:2506.16650",
+      "month": "2025-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.16650"
+      }
+    },
+    {
+      "id": 165,
+      "short_name": "OpenHands-Versa",
+      "title": "Coding Agents with Multimodal Browsing are Generalist Problem Solvers",
+      "authors": "Soni, Aditya Bharat, Li, Boxuan, Wang, Xingyao, Chen, Valerie, Neubig, Graham",
+      "venue": "ICML 2025 Workshop on Computer Use Agents",
+      "month": "2025-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.03011v1"
+      }
+    },
+    {
+      "id": 164,
+      "short_name": "SACL",
+      "title": "SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented Reranking and Localization",
+      "authors": "Dhruv Gupta, Gayathri Ganesh Lakshmy, Yiqing Xie",
+      "venue": "arXiv preprint arXiv:2506.20081",
+      "month": "2025-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.20081"
+      }
+    },
+    {
+      "id": 132,
+      "short_name": "MCTS-Refined CoT",
+      "title": "MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository Issue Resolution",
+      "authors": "Yibo Wang, Zhihao Peng, Ying Wang, Zhao Wei, Hai Yu, Zhiliang Zhu",
+      "venue": "arXiv preprint arXiv:2506.12728",
+      "month": "2025-06",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.12728"
+      }
+    },
+    {
+      "id": 118,
+      "short_name": "Minimax M2",
+      "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
+      "authors": "Chen, Aili, Li, Aonian, Gong, Bangwei, Jiang, Binyang, Fei, Bo, Yang, Bo, Shan, Boji et al.",
+      "venue": "arXiv preprint arXiv:2506.13585",
+      "month": "2025-06",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.13585"
+      }
+    },
+    {
+      "id": 93,
+      "short_name": "SWE-Dev2",
+      "title": "SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling",
+      "authors": "Haoran Wang, Zhenyu Hou, Yao Wei, Jie Tang, Yuxiao Dong",
+      "venue": "arXiv preprint arXiv:2506.07636",
+      "month": "2025-06",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.07636"
+      }
+    },
+    {
+      "id": 91,
+      "short_name": "Agent-RLVR",
+      "title": "Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards",
+      "authors": "Jeff Da, Clinton Wang, Xiang Deng, Yuntao Ma, Nikhil Barhate, Sean Hendryx",
+      "venue": "arXiv preprint arXiv:2506.11425",
+      "month": "2025-06",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.11425"
+      }
+    },
+    {
+      "id": 75,
+      "short_name": "AgentScope",
+      "title": "SWE-Bench - AgentScope",
+      "authors": "Wenhao Zhang, Yuexiang Xie amd Dawei Gao, Xuchen Pan, Yaliang Li, Bolin Ding, Jingren Zhou",
+      "venue": "-",
+      "month": "2025-06",
+      "category": "multi_agent",
+      "links": {
+        "website": "https://doc.agentscope.io/v0/en/tutorial/swe.html"
+      }
+    },
+    {
+      "id": 64,
+      "short_name": "Dissecting the SWE-Bench Leaderboards",
+      "title": "Dissecting the SWE-Bench Leaderboards: Profiling Submitters and Architectures of LLM- and Agent-Based Repair Systems",
+      "authors": "Matias Martinez, Xavier Franch",
+      "venue": "arXiv preprint arXiv:2506.17208",
+      "month": "2025-06",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.17208"
+      }
+    },
+    {
+      "id": 53,
+      "short_name": "ExpeRepair",
+      "title": "EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair",
+      "authors": "Fangwen Mu, Junjie Wang, Lin Shi, Song Wang, Shoubin Li, Qing Wang",
+      "venue": "arXiv preprint arXiv:2506.10484",
+      "month": "2025-06",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.10484"
+      }
+    },
+    {
+      "id": 22,
+      "short_name": "SWE-Flow",
+      "title": "Synthesizing Software Engineering Data in a Test-Driven Manner",
+      "authors": "Lei Zhang, Jiaxi Yang, Min Yang, Jian Yang, Mouxiang Chen, Jiajun Zhang, Zeyu Cui et al.",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-06",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.09003v2",
+        "openreview": "https://openreview.net/forum?id=P9DQ2IExgS"
+      }
+    },
+    {
+      "id": 12,
+      "short_name": "SWE-Factory",
+      "title": "SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks",
+      "authors": "Lianghong Guo, Yanlin Wang, Caihua Li, Wei Tao, Pengyu Yang, Jiachi Chen, Haoyu Song et al.",
+      "venue": "arXiv preprint arXiv:2506.10954",
+      "month": "2025-06",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.10954"
+      }
+    },
+    {
+      "id": 6,
+      "short_name": "The SWE-Bench Illusion",
+      "title": "The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason",
+      "authors": "Shanchao Liang, Spandan Garg, Roshanak Zilouchian Moghaddam",
+      "venue": "arXiv preprint arXiv:2506.12286",
+      "month": "2025-06",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.12286"
+      }
+    },
+    {
+      "id": 4,
+      "short_name": "Trustworthiness",
+      "title": "Is Your Automated Software Engineer Trustworthy?",
+      "authors": "Noble Saji Mathews, Meiyappan Nagappan",
+      "venue": "arXiv preprint arXiv:2506.17812",
+      "month": "2025-06",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.17812"
+      }
+    },
+    {
+      "id": 3,
+      "short_name": "UTBoost",
+      "title": "UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench",
+      "authors": "Boxi Yu, Yuxuan Zhu, Pinjia He, Daniel Kang",
+      "venue": "arXiv preprint arXiv:2506.09289",
+      "month": "2025-06",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2506.09289"
+      }
+    },
+    {
+      "id": 182,
+      "short_name": "SWELoc",
+      "title": "SweRank: Software Issue Localization with Code Ranking",
+      "authors": "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz et al.",
+      "venue": "arXiv preprint arXiv:2505.07849",
+      "month": "2025-05",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.07849"
+      }
+    },
+    {
+      "id": 162,
+      "short_name": "SWERank",
+      "title": "SweRank: Software Issue Localization with Code Ranking",
+      "authors": "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz et al.",
+      "venue": "arXiv preprint arXiv:2505.07849",
+      "month": "2025-05",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.07849"
+      }
+    },
+    {
+      "id": 161,
+      "short_name": "InfantAgent-Next",
+      "title": "InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction",
+      "authors": "Bin Lei, Weitai Kang, Zijian Zhang, Winson Chen, Xi Xie, Shan Zuo, Mimi Xie et al.",
+      "venue": "arXiv preprint arXiv:2505.10887",
+      "month": "2025-05",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.10887"
+      }
+    },
+    {
+      "id": 142,
+      "short_name": "LCLM",
+      "title": "Putting It All into Context: Simplifying Agents with LCLMs",
+      "authors": "Mingjian Jiang, Yangjun Ruan, Luis Lastras, Pavan Kapanipathi, Tatsunori Hashimoto",
+      "venue": "arXiv preprint arXiv:2505.08120",
+      "month": "2025-05",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.08120"
+      }
+    },
+    {
+      "id": 136,
+      "short_name": "CGM",
+      "title": "Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level Software Engineering Tasks",
+      "authors": "Hongyuan Tao, Ying Zhang, Zhenhao Tang, Hongen Peng, Xukun Zhu, Bingchang Liu, Yingguang Yang, Ziyin Zhang, Zhaogui Xu, Haipeng Zhang, Linchao Zhu, Rui Wang, Hang Yu, Jianguo Li, Peng Di",
+      "venue": "arXiv preprint arXiv:2505.16901",
+      "month": "2025-05",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.16901",
+        "github": "https://github.com/codefuse-ai/CodeFuse-CGM",
+        "huggingface": "https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B"
+      }
+    },
+    {
+      "id": 131,
+      "short_name": "Co-PatcheR",
+      "title": "Co-PatcheR: Collaborative Software Patching with Component(s)-specific Small Reasoning Models",
+      "authors": "Yuheng Tang, Hongwei Li, Kaijie Zhu, Michael Yang, Yangruibo Ding, Wenbo Guo",
+      "venue": "arXiv preprint arXiv:2505.18955",
+      "month": "2025-05",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.18955"
+      }
+    },
+    {
+      "id": 130,
+      "short_name": "Search for training",
+      "title": "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents",
+      "authors": "Karina Zainullina, Alexander Golubev, Maria Trofimova, Sergei Polezhaev, Ibragim Badertdinov, Daria Litvintseva, Simon Karasik et al.",
+      "venue": "arXiv preprint arXiv:2505.13652",
+      "month": "2025-05",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.13652"
+      }
+    },
+    {
+      "id": 117,
+      "short_name": "Qwen3-Coder",
+      "title": "Qwen3 Technical Report",
+      "authors": "An Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng, Bowen Yu et al.",
+      "venue": "arXiv preprint arXiv:2505.09388",
+      "month": "2025-05",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.09388"
+      }
+    },
+    {
+      "id": 90,
+      "short_name": "Satori-SWE",
+      "title": "Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software Engineering",
+      "authors": "Guangtao Zeng, Maohao Shen, Delin Chen, Zhenting Qi, Subhro Das, Dan Gutfreund, David Cox et al.",
+      "venue": "arXiv preprint arXiv:2505.23604",
+      "month": "2025-05",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.23604"
+      }
+    },
+    {
+      "id": 89,
+      "short_name": "SWE-Dev1",
+      "title": "SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development",
+      "authors": "Yaxin Du, Yuzhu Cai, Yifan Zhou, Cheng Wang, Yu Qian, Xianghe Pang, Qian Liu et al.",
+      "venue": "arXiv preprint arXiv:2505.16975",
+      "month": "2025-05",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.16975"
+      }
+    },
+    {
+      "id": 81,
+      "short_name": "Refact.ai Agent",
+      "title": "AI Coding Agent for Software Development - Refact.ai",
+      "authors": "Sergey Vakhreev",
+      "venue": "-",
+      "month": "2025-05",
+      "category": "multi_agent",
+      "links": {
+        "website": "https://refact.ai/blog/2025/open-source-sota-on-swe-bench-verified-refact-ai/"
+      }
+    },
+    {
+      "id": 80,
+      "short_name": "Devlo",
+      "title": "Achieving SOTA on SWE-bench",
+      "authors": "Devlo",
+      "venue": "-",
+      "month": "2025-05",
+      "category": "multi_agent",
+      "links": {
+        "website": "https://devlo.ai/blog/devlo-swe-bench-sota/"
+      }
+    },
+    {
+      "id": 70,
+      "short_name": "Agents in the Wild",
+      "title": "Agents in the Wild",
+      "authors": "LogicStar-AI, SRILab",
+      "venue": "-",
+      "month": "2025-05",
+      "category": "methods_analysis",
+      "links": {
+        "website": "https://insights.logicstar.ai/"
+      }
+    },
+    {
+      "id": 69,
+      "short_name": "Strong-Weak Model Collaboration",
+      "title": "An Empirical Study on Strong-Weak Model Collaboration for Repo-level Code Generation",
+      "authors": "Shubham Gandhi, Atharva Naik, Yiqing Xie, Carolyn Rose",
+      "venue": "arXiv preprint arXiv:2505.20182",
+      "month": "2025-05",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.20182"
+      }
+    },
+    {
+      "id": 63,
+      "short_name": "GSO",
+      "title": "GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents",
+      "authors": "Manish Shetty, Naman Jain, Jinjian Liu, Vijay Kethanaboyina, Koushik Sen, Ion Stoica",
+      "venue": "arXiv preprint arXiv:2505.23671",
+      "month": "2025-05",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.23671"
+      }
+    },
+    {
+      "id": 52,
+      "short_name": "DGM",
+      "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+      "authors": "Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune",
+      "venue": "arXiv preprint arXiv:2505.22954",
+      "month": "2025-05",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.22954"
+      }
+    },
+    {
+      "id": 36,
+      "short_name": "SWE-bench-Live",
+      "title": "SWE-bench Goes Live!",
+      "authors": "Linghao Zhang, Shilin He, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie, Junhao Wang et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.23419v2",
+        "openreview": "https://openreview.net/forum?id=OGWkr7gXka"
+      }
+    },
+    {
+      "id": 35,
+      "short_name": "OmniGIRL",
+      "title": "Omnigirl: A multilingual and multimodal benchmark for github issue resolution",
+      "authors": "Guo, Lianghong, Tao, Wei, Jiang, Runhan, Wang, Yanlin, Chen, Jiachi, Liu, Xilin, Ma, Yuchi et al.",
+      "venue": "Proceedings of the ACM on Software Engineering 2025",
+      "month": "2025-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.04606v1"
+      }
+    },
+    {
+      "id": 33,
+      "short_name": "SwingArena",
+      "title": "SwingArena: Competitive Programming Arena for Long-context GitHub Issue Solving",
+      "authors": "Wendong Xu, Jing Xiong, Chenyang Zhao, Qiujiang Chen, Haoran Wang, Hui Shen, Zhongwei Wan et al.",
+      "venue": "arXiv preprint arXiv:2505.23932",
+      "month": "2025-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.23932"
+      }
+    },
+    {
+      "id": 11,
+      "short_name": "RepoLaunch",
+      "title": "SWE-bench Goes Live!",
+      "authors": "Linghao Zhang, Shilin He, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie, Junhao Wang et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-05",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.23419v2",
+        "openreview": "https://openreview.net/forum?id=OGWkr7gXka"
+      }
+    },
+    {
+      "id": 10,
+      "short_name": "SWE-rebench",
+      "title": "SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents",
+      "authors": "Ibragim Badertdinov, Alexander Golubev, Maksim Nekrashevich, Anton Shevtsov, Simon Karasik, Andrei Andriushchenko, Maria Trofimova et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-05",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2505.20411v2",
+        "openreview": "https://openreview.net/forum?id=nMpJoVmRy1"
+      }
+    },
+    {
+      "id": 180,
+      "short_name": "SWE-Smith",
+      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+      "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-04",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.21798v2",
+        "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
+      }
+    },
+    {
+      "id": 178,
+      "short_name": "Multi-SWE-RL",
+      "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
+      "authors": "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang, Qi Liu et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-04",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.02605v1",
+        "openreview": "https://openreview.net/forum?id=MhBZzkz4h9"
+      }
+    },
+    {
+      "id": 113,
+      "short_name": "Seed1.5-Thinking",
+      "title": "Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning",
+      "authors": "ByteDance Seed, :, Jiaze Chen, Tiantian Fan, Xin Liu, Lingjun Liu, Zhiqi Lin et al.",
+      "venue": "arXiv preprint arXiv:2504.13914",
+      "month": "2025-04",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.13914"
+      }
+    },
+    {
+      "id": 67,
+      "short_name": "SeaView",
+      "title": "SeaView: Software Engineering Agent Visual Interface for Enhanced Workflow",
+      "authors": "Timothy Bula, Saurabh Pujar, Luca Buratti, Mihaela Bornea, Avirup Sil",
+      "venue": "arXiv preprint arXiv:2504.08696",
+      "month": "2025-04",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.08696"
+      }
+    },
+    {
+      "id": 32,
+      "short_name": "SWE-bench Multilingual",
+      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+      "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-04",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.21798v2",
+        "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
+      }
+    },
+    {
+      "id": 31,
+      "short_name": "SWE-PolyBench",
+      "title": "SWE-PolyBench: A multi-language benchmark for repository level evaluation of coding agents",
+      "authors": "Muhammad Shihab Rashid, Christian Bock, Yuan Zhuang, Alexander Buchholz, Tim Esler, Simon Valentin, Luca Franceschi et al.",
+      "venue": "arXiv preprint arXiv:2504.08703",
+      "month": "2025-04",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.08703"
+      }
+    },
+    {
+      "id": 30,
+      "short_name": "Multi-SWE-bench",
+      "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
+      "authors": "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang, Qi Liu et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-04",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.02605v1",
+        "openreview": "https://openreview.net/forum?id=MhBZzkz4h9"
+      }
+    },
+    {
+      "id": 21,
+      "short_name": "SWE-smith",
+      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+      "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
+      "month": "2025-04",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.21798v2",
+        "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
+      }
+    },
+    {
+      "id": 20,
+      "short_name": "SWE-Synth",
+      "title": "SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs",
+      "authors": "Minh V. T. Pham, Huy N. Phan, Hoang N. Phan, Cuong Le Chi, Tien N. Nguyen, Nghi D. Q. Bui",
+      "venue": "arXiv preprint arXiv:2504.14757",
+      "month": "2025-04",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.14757"
+      }
+    },
+    {
+      "id": 19,
+      "short_name": "R2E-Gym",
+      "title": "R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents",
+      "authors": "Naman Jain, Jaskirat Singh, Manish Shetty, Tianjun Zhang, Liang Zheng, Koushik Sen, Ion Stoica",
+      "venue": "Second Conference on Language Modeling 2025",
+      "month": "2025-04",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2504.07164",
+        "openreview": "https://openreview.net/forum?id=7evvwwdo3z"
+      }
+    },
+    {
+      "id": 7,
+      "short_name": "Revisiting SWE-Bench",
+      "title": "Revisiting SWE-Bench: On the Importance of Data Quality for LLM-Based Code Models",
+      "authors": "Aleithan, Reem",
+      "venue": "2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion) 2025",
+      "month": "2025-04",
+      "category": "data_analysis",
+      "links": {
+        "doi": "http://dx.doi.org/10.1109/ICSE-Companion66252.2025.00075"
+      }
+    },
+    {
+      "id": 160,
+      "short_name": "CoSIL",
+      "title": "Issue Localization via LLM-Driven Iterative Code Graph Searching",
+      "authors": "Zhonghao Jiang, Xiaoxue Ren, Meng Yan, Wei Jiang, Yong Li, Zhongxin Liu",
+      "venue": "ASE 2025",
+      "month": "2025-03",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.22424v3"
+      }
+    },
+    {
+      "id": 159,
+      "short_name": "KGCompass",
+      "title": "Enhancing repository-level software repair via repository-aware knowledge graphs",
+      "authors": "Boyang Yang, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le, Haoye Tian",
+      "venue": "arXiv preprint arXiv:2503.21710",
+      "month": "2025-03",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.21710"
+      }
+    },
+    {
+      "id": 158,
+      "short_name": "Issue2Test",
+      "title": "Issue2Test: Generating Reproducing Test Cases from Issue Reports",
+      "authors": "Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah",
+      "venue": "arXiv preprint arXiv:2503.16320",
+      "month": "2025-03",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.16320"
+      }
+    },
+    {
+      "id": 155,
+      "short_name": "DARS",
+      "title": "DARS: Dynamic Action Re-Sampling to Enhance Coding Agent Performance by Adaptive Tree Traversal",
+      "authors": "Vaibhav Aggarwal, Ojasv Kamal, Abhinav Japesh, Zhijing Jin, Bernhard Schölkopf",
+      "venue": "arXiv preprint arXiv:2503.14269",
+      "month": "2025-03",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.14269"
+      }
+    },
+    {
+      "id": 129,
+      "short_name": "Thinking Longer",
+      "title": "Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute",
+      "authors": "Yingwei Ma, Yongbin Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei Huang et al.",
+      "venue": "arXiv preprint arXiv:2503.23803",
+      "month": "2025-03",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.23803"
+      }
+    },
+    {
+      "id": 88,
+      "short_name": "SEAlign",
+      "title": "SEAlign: Alignment Training for Software Engineering Agent",
+      "authors": "Kechi Zhang, Huangzhao Zhang, Ge Li, Jinliang You, Jia Li, Yunfei Zhao, Zhi Jin",
+      "venue": "ICSE 2026",
+      "month": "2025-03",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.18455",
+        "doi": "https://conf.researchr.org/details/icse-2026/icse-2026-research-track/46/SEAlign-Alignment-Training-for-Software-Engineering-Agent"
+      }
+    },
+    {
+      "id": 79,
+      "short_name": "Lingxi",
+      "title": "Lingxi/docs/Lingxi Technical Report 2505.pdf at master · lingxi-agent/Lingxi",
+      "authors": "Xu Yang",
+      "venue": "-",
+      "month": "2025-03",
+      "category": "multi_agent",
+      "links": {
+        "github": "https://github.com/lingxi-agent/Lingxi/blob/master/docs/Lingxi%20Technical%20Report%202505.pdf"
+      }
+    },
+    {
+      "id": 62,
+      "short_name": "Beyond final code",
+      "title": "Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios",
+      "authors": "Zhi Chen, Wei Ma, Lingxiao Jiang",
+      "venue": "arXiv preprint arXiv:2503.12374",
+      "month": "2025-03",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.12374"
+      }
+    },
+    {
+      "id": 29,
+      "short_name": "FEA-Bench",
+      "title": "FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation\n                  for Feature Implementation",
+      "authors": "Wei Li, Xin Zhang, Zhongxin Guo, Shaoguang Mao, Wen Luo, Guangyue Peng, Yangyu Huang et al.",
+      "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational\n                  Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria,\n                  July 27 - August 1, 2025 2025",
+      "month": "2025-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.06680v2"
+      }
+    },
+    {
+      "id": 2,
+      "short_name": "Patch Correctness",
+      "title": "Are \"Solved Issues\" in SWE-bench Really Solved Correctly? An Empirical Study",
+      "authors": "You Wang, Michael Pradel, Zhongxin Liu",
+      "venue": "arXiv preprint arXiv:2503.15223",
+      "month": "2025-03",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.15223"
+      }
+    },
+    {
+      "id": 179,
+      "short_name": "LocAgent",
+      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-02",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.00350v2",
+        "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
+      }
+    },
+    {
+      "id": 157,
+      "short_name": "Quadropic Insiders",
+      "title": "Quadropic Insiders : Syntheo Tops Swelite Feb",
+      "authors": "Quadropic-Team",
+      "venue": "-",
+      "month": "2025-02",
+      "category": "tool",
+      "links": {
+        "website": "https://insiders.quadropic.com/insiders/syntheo-tops-swelite-feb"
+      }
+    },
+    {
+      "id": 156,
+      "short_name": "Otter",
+      "title": "Otter: Generating Tests from Issues to Validate SWE Patches",
+      "authors": "Toufique Ahmed, Jatin Ganhotra, Rangeet Pan, Avraham Shinnar, Saurabh Sinha, Martin Hirzel",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-02",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.05368v2",
+        "openreview": "https://openreview.net/forum?id=b0jYs6JOZu"
+      }
+    },
+    {
+      "id": 154,
+      "short_name": "OrcaLoca",
+      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-02",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.00350v2",
+        "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
+      }
+    },
+    {
+      "id": 141,
+      "short_name": "PatchPilot",
+      "title": "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification",
+      "authors": "Hongwei Li, Yuheng Tang, Shiqi Wang, Wenbo Guo",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-02",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.02747v2",
+        "openreview": "https://openreview.net/forum?id=ybODpT8ydV"
+      }
+    },
+    {
+      "id": 87,
+      "short_name": "SoRFT",
+      "title": "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+      "authors": "Zexiong Ma, Chao Peng, Pengfei Gao, Xiangxin Meng, Yanzhen Zou, Bing Xie",
+      "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational\n                  Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria,\n                  July 27 - August 1, 2025 2025",
+      "month": "2025-02",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.20127v1"
+      }
+    },
+    {
+      "id": 86,
+      "short_name": "SWE-RL",
+      "title": "SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution",
+      "authors": "Yuxiang Wei, Olivier Duchenne, Jade Copet, Quentin Carbonneaux, LINGMING ZHANG, Daniel Fried, Gabriel Synnaeve et al.",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems 2025",
+      "month": "2025-02",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.18449v2",
+        "openreview": "https://openreview.net/forum?id=ULblO61XZ0"
+      }
+    },
+    {
+      "id": 76,
+      "short_name": "OrcaLora",
+      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
+      "venue": "Forty-second International Conference on Machine Learning 2025",
+      "month": "2025-02",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.00350v2",
+        "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
+      }
+    },
+    {
+      "id": 61,
+      "short_name": "Overthinking",
+      "title": "The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic Tasks",
+      "authors": "Alejandro Cuadron, Dacheng Li, Wenjie Ma, Xingyao Wang, Yichuan Wang, Siyuan Zhuang, Shu Liu et al.",
+      "venue": "arXiv preprint arXiv:2502.08235",
+      "month": "2025-02",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.08235"
+      }
+    },
+    {
+      "id": 28,
+      "short_name": "SWE-Lancer",
+      "title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World\n                  Freelance Software Engineering?",
+      "authors": "Samuel Miserendino, Michele Wang, Tejal Patwardhan, Johannes Heidecke",
+      "venue": "ICML 2025",
+      "month": "2025-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2502.12115v4"
+      }
+    },
+    {
+      "id": 181,
+      "short_name": "SWE-Fixer",
+      "title": "SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution",
+      "authors": "Xie, Chengxing, Li, Bowen, Gao, Chang, Du, He, Lam, Wai, Zou, Difan, Chen, Kai",
+      "venue": "ICLR 2025 Third Workshop on Deep Learning for Code",
+      "month": "2025-01",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2501.05040v3"
+      }
+    },
+    {
+      "id": 83,
+      "short_name": "CodeCoR",
+      "title": "CodeCoR: An LLM-Based Self-Reflective Multi-Agent Framework for Code Generation",
+      "authors": "Ruwei Pan, Hongyu Zhang, Chao Liu",
+      "venue": "arXiv preprint arXiv:2501.07811",
+      "month": "2025-01",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2501.07811"
+      }
+    },
+    {
+      "id": 46,
+      "short_name": "ReasoningBank",
+      "title": "CodeMonkeys: Scaling Test-Time Compute for Software Engineering",
+      "authors": "Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher Ré, Azalia Mirhoseini",
+      "venue": "arXiv preprint arXiv:2501.14723",
+      "month": "2025-01",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2501.14723"
+      }
+    },
+    {
+      "id": 18,
+      "short_name": "Learn-by-interact",
+      "title": "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+      "authors": "Hongjin SU, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, Tao Yu, Sercan O Arik",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2025-01",
+      "category": "data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2501.10893v1",
+        "openreview": "https://openreview.net/forum?id=3UKOzGWCVY"
+      }
+    },
+    {
+      "id": 188,
+      "short_name": "CodeV",
+      "title": "CodeV: Issue Resolving with Visual Data",
+      "authors": "Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong, Shen, Bo, Liu, Tianyu et al.",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025 2025",
+      "month": "2024-12",
+      "category": "workflow",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2412.17315v1",
+        "doi": "http://dx.doi.org/10.18653/v1/2025.findings-acl.384"
+      }
+    },
+    {
+      "id": 153,
+      "short_name": "CoRNStack",
+      "title": "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+      "authors": "Tarun Suresh, Revanth Gangi Reddy, Yifei Xu, Zach Nussbaum, Andriy Mulyar, Brandon Duderstadt, Heng Ji",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2024-12",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2412.01007v3",
+        "openreview": "https://openreview.net/forum?id=iyJOUELYir"
+      }
+    },
+    {
+      "id": 128,
+      "short_name": "SWE-Gym",
+      "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+      "authors": "Pan, Jiayi, Wang, Xingyao, Neubig, Graham, Jaitly, Navdeep, Ji, Heng, Suhr, Alane, Zhang, Yizhe",
+      "venue": "Forty-second International Conference on Machine Learning",
+      "month": "2024-12",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2412.21139v2"
+      }
+    },
+    {
+      "id": 126,
+      "short_name": "Scaling data collection",
+      "title": "Scaling Data Collection for Training SWE Agents",
+      "authors": "Nebius",
+      "venue": "2024",
+      "month": "2024-12",
+      "category": "sft",
+      "links": {
+        "website": "https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents"
+      }
+    },
+    {
+      "id": 125,
+      "short_name": "ReSAT",
+      "title": "Repository Structure-Aware Training Makes SLMs Better Issue Resolver",
+      "authors": "Zexiong Ma, Shengnan An, Zeqi Lin, Yanzhen Zou, Bing Xie",
+      "venue": "arXiv preprint arXiv:2412.19031",
+      "month": "2024-12",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2412.19031"
+      }
+    },
+    {
+      "id": 27,
+      "short_name": "Visual SWE-bench",
+      "title": "CodeV: Issue Resolving with Visual Data",
+      "authors": "Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong, Shen, Bo, Liu, Tianyu et al.",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025 2025",
+      "month": "2024-12",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2412.17315v1",
+        "doi": "http://dx.doi.org/10.18653/v1/2025.findings-acl.384"
+      }
+    },
+    {
+      "id": 152,
+      "short_name": "AEGIS",
+      "title": "AEGIS: An Agent-based Framework for General Bug Reproduction from Issue Descriptions",
+      "authors": "Xinchen Wang, Pengfei Gao, Xiangxin Meng, Chao Peng, Ruida Hu, Yun Lin, Cuiyun Gao",
+      "venue": "Proceedings of the 33rd ACM International Conference on the Foundations of Software Engineering 2025",
+      "month": "2024-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2411.18015v1"
+      }
+    },
+    {
+      "id": 127,
+      "short_name": "CodeXEmbed",
+      "title": "CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task Code Retrieval",
+      "authors": "Ye Liu, Rui Meng, Shafiq Joty, silvio savarese, Caiming Xiong, Yingbo Zhou, Semih Yavuz",
+      "venue": "Second Conference on Language Modeling 2025",
+      "month": "2024-11",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2411.12644",
+        "openreview": "https://openreview.net/forum?id=z3lG70Azbg"
+      }
+    },
+    {
+      "id": 124,
+      "short_name": "Lingma SWE-GPT",
+      "title": "SWE-GPT: A Process-Centric Language Model for Automated Software Improvement",
+      "authors": "Ma, Yingwei, Cao, Rongyu, Cao, Yongchang, Zhang, Yue, Chen, Jue, Liu, Yibo, Liu, Yuchen et al.",
+      "venue": "Proceedings of the ACM on Software Engineering 2025",
+      "month": "2024-11",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2411.00622",
+        "github": "https://github.com/LingmaTongyi/Lingma-SWE-GPT",
+        "doi": "https://dl.acm.org/doi/abs/10.1145/3728981"
+      }
+    },
+    {
+      "id": 51,
+      "short_name": "EvoCoder",
+      "title": "LLMs as Continuous Learners: Improving the Reproduction of Defective Code in Software Issues",
+      "authors": "Yalan Lin, Yingwei Ma, Rongyu Cao, Binhua Li, Fei Huang, Xiaodong Gu, Yongbin Li",
+      "venue": "arXiv preprint arXiv:2411.13941",
+      "month": "2024-11",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2411.13941"
+      }
+    },
+    {
+      "id": 50,
+      "short_name": "Infant Agent",
+      "title": "Infant Agent: A Tool-Integrated, Logic-Driven Agent with Cost-Effective API Usage",
+      "authors": "Bin Lei, Yuchen Li, Yiming Zeng, Tao Ren, Yi Luo, Tianyu Shi, Zitian Gao et al.",
+      "venue": "arXiv preprint arXiv:2411.01114",
+      "month": "2024-11",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2411.01114"
+      }
+    },
+    {
+      "id": 186,
+      "short_name": "Conversational Pipeline",
+      "title": "Exploring the Potential of Conversational Test Suite Based Program Repair on SWE-bench",
+      "authors": "Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo Franco Jaldin",
+      "venue": "arXiv preprint arXiv:2410.04485",
+      "month": "2024-10",
+      "category": "workflow",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.04485"
+      }
+    },
+    {
+      "id": 150,
+      "short_name": "RepoGraph",
+      "title": "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+      "authors": "Ouyang, Siru, Yu, Wenhao, Ma, Kaixin, Xiao, Zilin, Zhang, Zhihan, Jia, Mengzhao, Han, Jiawei et al.",
+      "venue": "The Thirteenth International Conference on Learning Representations",
+      "month": "2024-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.14684v2"
+      }
+    },
+    {
+      "id": 108,
+      "short_name": "OSCA",
+      "title": "Scaling LLM Inference Efficiently with Optimized Sample Compute Allocation",
+      "authors": "Zhang, Kexun, Zhou, Shang, Wang, Danqing, Wang, William Yang, Li, Lei",
+      "venue": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) 2025",
+      "month": "2024-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.22480",
+        "doi": "https://aclanthology.org/2025.naacl-long.404/"
+      }
+    },
+    {
+      "id": 60,
+      "short_name": "Evaluating software development agents",
+      "title": "Evaluating Software Development Agents: Patch Patterns, Code Quality, and Issue Complexity in Real-World GitHub Scenarios",
+      "authors": "Chen, Zhi, Jiang, Lingxiao",
+      "venue": "2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) 2025",
+      "month": "2024-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.12468v2",
+        "doi": "http://dx.doi.org/10.1109/SANER64311.2025.00068"
+      }
+    },
+    {
+      "id": 45,
+      "short_name": "SWE-Search",
+      "title": "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement",
+      "authors": "Antonis Antoniades, Albert Orwall, Kexun Zhang, Yuxi Xie, Anirudh Goyal, William Yang Wang",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2024-10",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.20285v6",
+        "openreview": "https://openreview.net/forum?id=G7sIFXugTX"
+      }
+    },
+    {
+      "id": 34,
+      "short_name": "SWE-bench Multimodal",
+      "title": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "authors": "John Yang, Carlos E Jimenez, Alex L Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, Ori Press et al.",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2024-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2410.03859v1",
+        "openreview": "https://openreview.net/forum?id=riTiq3i21b"
+      }
+    },
+    {
+      "id": 151,
+      "short_name": "SuperCoder2.0",
+      "title": "SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as Autonomous Programmer",
+      "authors": "Anmol Gautam, Kishore Kumar, Adarsh Jha, Mukunda NS, Ishaan Bhola",
+      "venue": "arXiv preprint arXiv:2409.11190",
+      "month": "2024-09",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2409.11190"
+      }
+    },
+    {
+      "id": 82,
+      "short_name": "HyperAgent",
+      "title": "HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale",
+      "authors": "Huy Nhat Phan, Tien N. Nguyen, Phong X. Nguyen, Nghi D. Q. Bui",
+      "venue": "arXiv preprint arXiv:2409.16299",
+      "month": "2024-09",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2409.16299"
+      }
+    },
+    {
+      "id": 78,
+      "short_name": "MarsCode Agent",
+      "title": "MarsCode Agent: AI-native Automated Bug Fixing",
+      "authors": "Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang, Chao Peng",
+      "venue": "arXiv preprint arXiv:2409.00899",
+      "month": "2024-09",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2409.00899"
+      }
+    },
+    {
+      "id": 149,
+      "short_name": "SpecRover",
+      "title": "SpecRover: Code Intent Extraction via LLMs",
+      "authors": "Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury",
+      "venue": "ICSE 2025",
+      "month": "2024-08",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2408.02232v4"
+      }
+    },
+    {
+      "id": 77,
+      "short_name": "DEI",
+      "title": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "authors": "Kexun Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh R N, Tian Lan et al.",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2024-08",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2408.07060v1",
+        "openreview": "https://openreview.net/forum?id=cKlzKs3Nnb"
+      }
+    },
+    {
+      "id": 26,
+      "short_name": "SWE-bench-java",
+      "title": "SWE-bench-java: A GitHub Issue Resolving Benchmark for Java",
+      "authors": "Daoguang Zan, Zhirong Huang, Ailun Yu, Shaoxin Lin, Yifan Shi, Wei Liu, Dong Chen et al.",
+      "venue": "arXiv preprint arXiv:2408.14354",
+      "month": "2024-08",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2408.14354"
+      }
+    },
+    {
+      "id": 1,
+      "short_name": "SWE-bench Verified",
+      "title": "Introducing SWE-bench Verified | OpenAI",
+      "authors": "OpenAI",
+      "venue": "-",
+      "month": "2024-08",
+      "category": "data_analysis",
+      "links": {
+        "website": "https://openai.com/index/introducing-swe-bench-verified/"
+      }
+    },
+    {
+      "id": 185,
+      "short_name": "Agentless",
+      "title": "Demystifying LLM-Based Software Engineering Agents",
+      "authors": "Chun Xia, Yinlin Deng, Soren Dunn, Lingming Zhang",
+      "venue": "Proceedings of the ACM on Software Engineering 2025",
+      "month": "2024-07",
+      "category": "workflow",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2407.01489v2",
+        "website": "https://api.semanticscholar.org/CorpusID:277850376"
+      }
+    },
+    {
+      "id": 74,
+      "short_name": "OpenHands",
+      "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "authors": "Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen Zhuge, Jiayi Pan et al.",
+      "venue": "The Thirteenth International Conference on Learning Representations 2025",
+      "month": "2024-07",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2407.16741v3",
+        "openreview": "https://openreview.net/forum?id=OJd3ayDDoF"
+      }
+    },
+    {
+      "id": 148,
+      "short_name": "Alibaba LingmaAgent",
+      "title": "Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive Repository Exploration",
+      "authors": "Ma, Yingwei, Yang, Qingping, Cao, Rongyu, Li, Binhua, Huang, Fei, Li, Yongbin",
+      "venue": "Proceedings of the 33rd ACM International Conference on the Foundations of Software Engineering 2025",
+      "month": "2024-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2406.01422v2",
+        "doi": "http://dx.doi.org/10.1145/3696630.3728549"
+      }
+    },
+    {
+      "id": 73,
+      "short_name": "CodeR",
+      "title": "CodeR: Issue Resolving with Multi-Agent and Task Graphs",
+      "authors": "Dong Chen, Shaoxin Lin, Muhan Zeng, Daoguang Zan, Jian-Gang Wang, Anton Cheshkov, Jun Sun et al.",
+      "venue": "arXiv preprint arXiv:2406.01304",
+      "month": "2024-06",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2406.01304"
+      }
+    },
+    {
+      "id": 59,
+      "short_name": "Context Retrieval",
+      "title": "On The Importance of Reasoning for Context Retrieval in Repository-Level Code Editing",
+      "authors": "Alexander Kovrigin, Aleksandra Eliseeva, Yaroslav Zharov, Timofey Bryksin",
+      "venue": "arXiv preprint arXiv:2406.04464",
+      "month": "2024-06",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2406.04464"
+      }
+    },
+    {
+      "id": 138,
+      "short_name": "SWE-agent",
+      "title": "Swe-agent: Agent-computer interfaces enable automated software engineering",
+      "authors": "Yang, John, Jimenez, Carlos E, Wettig, Alexander, Lieret, Kilian, Yao, Shunyu, Narasimhan, Karthik, Press, Ofir",
+      "venue": "Advances in Neural Information Processing Systems 2024",
+      "month": "2024-05",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2405.15793v3"
+      }
+    },
+    {
+      "id": 72,
+      "short_name": "AutoCodeRover",
+      "title": "AutoCodeRover: Autonomous Program Improvement",
+      "authors": "Zhang, Yuntong, Ruan, Haifeng, Fan, Zhiyu, Roychoudhury, Abhik",
+      "venue": "Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis 2024",
+      "month": "2024-04",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2404.05427v3",
+        "doi": "http://dx.doi.org/10.1145/3650212.3680384"
+      }
+    },
+    {
+      "id": 140,
+      "short_name": "Devin",
+      "title": "SWE-bench technical report",
+      "authors": "Cognition-Team",
+      "venue": "2025",
+      "month": "2024-03",
+      "category": "single_agent",
+      "links": {
+        "website": "https://cognition.ai/blog/swe-bench-technical-report"
+      }
+    },
+    {
+      "id": 71,
+      "short_name": "MAGIS",
+      "title": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "authors": "Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng",
+      "venue": "The Thirty-eighth Annual Conference on Neural Information Processing Systems 2024",
+      "month": "2024-03",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2403.17927v2",
+        "openreview": "https://openreview.net/forum?id=qevq3FZ63J"
+      }
+    },
+    {
+      "id": 177,
+      "short_name": "SWE-bench-extra",
+      "title": "SWE-bench: Can Language Models Resolve Real-world Github Issues?",
+      "authors": "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik R. Narasimhan",
+      "venue": "ICLR 2024",
+      "month": "2023-10",
+      "category": "training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2310.06770v3"
+      }
+    },
+    {
+      "id": 139,
+      "short_name": "Aider",
+      "title": "Aider",
+      "authors": "Aider AI",
+      "venue": "-",
+      "month": "2023-06",
+      "category": "single_agent",
+      "links": {
+        "github": "https://github.com/Aider-AI/aider",
+        "website": "https://aider.chat/"
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "id": 14,
+      "name": "FEA-bench",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "83",
+      "amount": "1,401",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/microsoft/FEA-Bench/",
+        "huggingface": "https://huggingface.co/datasets/microsoft/FEA-Bench"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Loc-Bench",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "No",
+      "repos": "",
+      "amount": "560",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/gersteinlab/LocAgent",
+        "huggingface": "https://huggingface.co/datasets/czlll/Loc-Bench_V1"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Multi-SWE-bench",
+      "language": "Java, JS, TS, Go, Rust, C, C++",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "76",
+      "amount": "4,723",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/multi-swe-bench/multi-swe-bench",
+        "huggingface": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench"
+      }
+    },
+    {
+      "id": 33,
+      "name": "OmniGIRL",
+      "language": "Python, TS, Java, JS",
+      "multimodal": "Yes",
+      "environment": "Yes",
+      "repos": "15",
+      "amount": "959",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/deepsoftwareanalytics/omnigirl",
+        "huggingface": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL"
+      }
+    },
+    {
+      "id": 8,
+      "name": "R2E-Gym",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "10",
+      "amount": "8,135",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/R2E-Gym/R2E-Gym",
+        "huggingface": "https://huggingface.co/R2E-Gym/datasets"
+      }
+    },
+    {
+      "id": 9,
+      "name": "RepoForge",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "",
+      "amount": "7.3k",
+      "category": "single-pl",
+      "links": {}
+    },
+    {
+      "id": 30,
+      "name": "SWE-Bench Pro",
+      "language": "Python, Go, TS",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "41",
+      "amount": "1,865",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/scaleapi/SWE-bench_Pro-os",
+        "huggingface": "https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro"
+      }
+    },
+    {
+      "id": 20,
+      "name": "SWE-Bench-CL",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "8",
+      "amount": "273",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/thomasjoshi/agents-never-forget"
+      }
+    },
+    {
+      "id": 29,
+      "name": "SWE-Compass",
+      "language": "Python, JS, TS, Java, C, C++, Go, Rust, Kotlin, C#",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "",
+      "amount": "2,000",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/kwaipilot/SWE-Compass/",
+        "huggingface": "https://huggingface.co/datasets/Kwaipilot/SWE-Compass"
+      }
+    },
+    {
+      "id": 24,
+      "name": "SWE-EVO",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "7",
+      "amount": "48",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/bdqnghi/SWE-EVO"
+      }
+    },
+    {
+      "id": 36,
+      "name": "SWE-Factory",
+      "language": "Python, Java, JS, TS",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "12",
+      "amount": "430",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/DeepSoftwareAnalytics/swe-factory",
+        "huggingface": "https://huggingface.co/SWE-Factory"
+      }
+    },
+    {
+      "id": 1,
+      "name": "SWE-Fixer",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "No",
+      "repos": "856",
+      "amount": "115,406",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/InternLM/SWE-Fixer",
+        "huggingface": "https://huggingface.co/datasets/internlm/SWE-Fixer-Train-110K, https://huggingface.co/datasets/internlm/SWE-Fixer-Eval"
+      }
+    },
+    {
+      "id": 6,
+      "name": "SWE-Flow",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "74",
+      "amount": "18,081",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/Hambaobao/SWE-Flow"
+      }
+    },
+    {
+      "id": 11,
+      "name": "SWE-Gym",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "11",
+      "amount": "2,438",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-Gym/SWE-Gym",
+        "huggingface": "https://huggingface.co/SWE-Gym/datasets"
+      }
+    },
+    {
+      "id": 39,
+      "name": "SWE-InfraBench",
+      "language": "Python, TS",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "",
+      "amount": "100",
+      "category": "multi-pl",
+      "links": {}
+    },
+    {
+      "id": 32,
+      "name": "SWE-Lancer",
+      "language": "JS, TS",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "",
+      "amount": "1,488",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/openai/frontier-evals"
+      }
+    },
+    {
+      "id": 3,
+      "name": "SWE-Lego",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "3,251",
+      "amount": "32,119",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-Lego/SWE-Lego",
+        "huggingface": "https://huggingface.co/SWE-Lego/datasets"
+      }
+    },
+    {
+      "id": 19,
+      "name": "SWE-MERA",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "200",
+      "amount": "300",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/MERA-Evaluation/SWE-MERA-submissions",
+        "huggingface": "https://huggingface.co/datasets/MERA-evaluation/SWE-MERA"
+      }
+    },
+    {
+      "id": 25,
+      "name": "SWE-Mirror",
+      "language": "Python, Rust, Go",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "40",
+      "amount": "60k",
+      "category": "multi-pl",
+      "links": {}
+    },
+    {
+      "id": 22,
+      "name": "SWE-Perf",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "12",
+      "amount": "140",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-Perf/swe-perf",
+        "huggingface": "https://huggingface.co/datasets/SWE-Perf/SWE-Perf"
+      }
+    },
+    {
+      "id": 28,
+      "name": "SWE-PolyBench",
+      "language": "Python, Java, JS, TS",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "21",
+      "amount": "2,110",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/amazon-science/SWE-PolyBench",
+        "huggingface": "https://huggingface.co/datasets/AmazonScience/SWE-PolyBench, https://huggingface.co/datasets/Sellopale/SWE-PolyBench_500"
+      }
+    },
+    {
+      "id": 21,
+      "name": "SWE-Sharp-Bench",
+      "language": "C#",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "17",
+      "amount": "150",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/microsoft/prose/tree/main/misc/SWE-Sharp-Bench",
+        "huggingface": "https://huggingface.co/datasets/microsoft/SWE-Sharp-Bench"
+      }
+    },
+    {
+      "id": 12,
+      "name": "SWE-bench",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "12",
+      "amount": "2,294",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/princeton-nlp/SWE-bench"
+      }
+    },
+    {
+      "id": 18,
+      "name": "SWE-bench Lite",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "12",
+      "amount": "300",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite"
+      }
+    },
+    {
+      "id": 38,
+      "name": "SWE-bench Multilingual",
+      "language": "C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "42",
+      "amount": "300",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual"
+      }
+    },
+    {
+      "id": 34,
+      "name": "SWE-bench Multimodal",
+      "language": "JS, TS, HTML, CSS",
+      "multimodal": "Yes",
+      "environment": "Yes",
+      "repos": "17",
+      "amount": "619",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal"
+      }
+    },
+    {
+      "id": 17,
+      "name": "SWE-bench Verified",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "",
+      "amount": "500",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified"
+      }
+    },
+    {
+      "id": 31,
+      "name": "SWE-bench++",
+      "language": "Python, Go, TS, JS, Ruby, PHP, Java, Rust, C++, C#, C",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "3,971",
+      "amount": "1,782",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/TuringEnterprises/SWE-Bench-plus-plus",
+        "huggingface": "https://huggingface.co/datasets/TuringEnterprises/SWE-Bench-plus-plus"
+      }
+    },
+    {
+      "id": 15,
+      "name": "SWE-bench-Live",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "164",
+      "amount": "1,565",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/microsoft/SWE-bench-Live",
+        "huggingface": "https://huggingface.co/datasets/SWE-bench-Live/SWE-bench-Live"
+      }
+    },
+    {
+      "id": 37,
+      "name": "SWE-bench-Live-MultiLang \\& Windows",
+      "language": "Python, JS, TS, C, C++, C#, Java, Go, Rust",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "238",
+      "amount": "418",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/microsoft/SWE-bench-Live",
+        "huggingface": "https://huggingface.co/datasets/SWE-bench-Live/MultiLang, https://huggingface.co/datasets/SWE-bench-Live/Windows"
+      }
+    },
+    {
+      "id": 10,
+      "name": "SWE-bench-extra",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "2k",
+      "amount": "6.38k",
+      "category": "single-pl",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/nebius/SWE-bench-extra"
+      }
+    },
+    {
+      "id": 13,
+      "name": "SWE-bench-java",
+      "language": "Java",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "19",
+      "amount": "1,797",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/multi-swe-bench/multi-swe-bench-env",
+        "huggingface": "https://huggingface.co/datasets/Daoguang/Multi-SWE-bench"
+      }
+    },
+    {
+      "id": 5,
+      "name": "SWE-bench-train",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "No",
+      "repos": "37",
+      "amount": "19k",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-bench",
+        "huggingface": "https://huggingface.co/datasets/princeton-nlp/SWE-bench/viewer/default/train"
+      }
+    },
+    {
+      "id": 35,
+      "name": "SWE-fficiency",
+      "language": "Python, Cython",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "9",
+      "amount": "498",
+      "category": "multi-pl",
+      "links": {
+        "github": "https://github.com/swefficiency/swefficiency-site"
+      }
+    },
+    {
+      "id": 4,
+      "name": "SWE-rebench",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "3,468",
+      "amount": "21,336",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-rebench/SWE-bench-fork",
+        "huggingface": "https://huggingface.co/datasets/nebius/SWE-rebench"
+      }
+    },
+    {
+      "id": 2,
+      "name": "SWE-smith",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "128",
+      "amount": "50k",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SWE-bench/SWE-smith",
+        "huggingface": "https://huggingface.co/datasets/SWE-bench/SWE-smith"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Skywork-SWE",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "2,531",
+      "amount": "10,169",
+      "category": "single-pl",
+      "links": {}
+    },
+    {
+      "id": 27,
+      "name": "Swing-Bench",
+      "language": "Python, Go, C++, Rust",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "400",
+      "amount": "2300",
+      "category": "multi-pl",
+      "links": {}
+    },
+    {
+      "id": 23,
+      "name": "Visual SWE-bench",
+      "language": "Python",
+      "multimodal": "Yes",
+      "environment": "Yes",
+      "repos": "11",
+      "amount": "133",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/luolin101/CodeV",
+        "huggingface": "https://huggingface.co/datasets/luolin101/Visual-SWE-bench"
+      }
+    }
+  ],
+  "training_datasets": [
+    {
+      "id": 3,
+      "name": "R2E-Gym",
+      "language": "Python",
+      "repos": "10",
+      "amount": "3,321",
+      "links": {
+        "github": "https://github.com/R2E-Gym/R2E-Gym",
+        "huggingface": "https://huggingface.co/datasets/R2E-Gym/R2EGym-SFT-Trajectories"
+      }
+    },
+    {
+      "id": 5,
+      "name": "SWE-Factory",
+      "language": "Python",
+      "repos": "10",
+      "amount": "2,809",
+      "links": {
+        "github": "https://github.com/DeepSoftwareAnalytics/swe-factory",
+        "huggingface": "https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K"
+      }
+    },
+    {
+      "id": 1,
+      "name": "SWE-Fixer",
+      "language": "Python",
+      "repos": "856",
+      "amount": "69,752",
+      "links": {
+        "github": "https://github.com/InternLM/SWE-Fixer",
+        "huggingface": "https://huggingface.co/datasets/internlm/SWE-Fixer-Train-Editing-CoT-70K"
+      }
+    },
+    {
+      "id": 6,
+      "name": "SWE-Gym",
+      "language": "Python",
+      "repos": "11",
+      "amount": "491",
+      "links": {
+        "github": "https://github.com/SWE-Gym/SWE-Gym",
+        "huggingface": "https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories"
+      }
+    },
+    {
+      "id": 7,
+      "name": "SWE-Lego",
+      "language": "Python",
+      "repos": "3251",
+      "amount": "14.6k",
+      "links": {
+        "github": "https://github.com/SWE-Lego/SWE-Lego"
+      }
+    },
+    {
+      "id": 4,
+      "name": "SWE-Synth",
+      "language": "Python",
+      "repos": "11",
+      "amount": "3,018",
+      "links": {
+        "github": "https://github.com/FSoft-AI4Code/SWE-Synth",
+        "huggingface": "https://huggingface.co/datasets/swesynth/SWE-Synth_Moatless-SFT-Trajectories"
+      }
+    },
+    {
+      "id": 2,
+      "name": "SWE-rebench",
+      "language": "Python",
+      "repos": "1,823",
+      "amount": "67,074",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories"
+      }
+    }
+  ],
+  "sft_methods": [
+    {
+      "id": 1,
+      "model_name": "SWE-rebench-openhands-Qwen3-235B-A22B",
+      "base_model": "Qwen3-235B-A22B",
+      "training_scaffold": "OpenHands",
+      "resolution_percent": "59.9",
+      "links": {
+        "huggingface": "https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-235B-A22B"
+      }
+    },
+    {
+      "id": 2,
+      "model_name": "SWE-Lego-Qwen3-32B",
+      "base_model": "Qwen3-32B",
+      "training_scaffold": "OpenHands",
+      "resolution_percent": "57.6",
+      "links": {
+        "github": "https://github.com/SWE-Lego/SWE-Lego",
+        "huggingface": "https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-32B"
+      }
+    },
+    {
+      "id": 3,
+      "model_name": "CGM-SWE-PY",
+      "base_model": "Qwen2.5-Coder-72B",
+      "training_scaffold": "Graph RAG",
+      "resolution_percent": "50.4",
+      "links": {
+        "github": "https://github.com/codefuse-ai/CodeFuse-CGM",
+        "huggingface": "https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B"
+      }
+    },
+    {
+      "id": 4,
+      "model_name": "SWE-rebench-openhands-Qwen3-30B-A3B",
+      "base_model": "Qwen3-30B-A3B",
+      "training_scaffold": "OpenHands",
+      "resolution_percent": "49.7",
+      "links": {
+        "huggingface": "https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-30B-A3B"
+      }
+    },
+    {
+      "id": 5,
+      "model_name": "Devstral",
+      "base_model": "Mistral Small 3",
+      "training_scaffold": "OpenHands",
+      "resolution_percent": "46.8",
+      "links": {
+        "huggingface": "https://huggingface.co/mistralai/Devstral-Small-2507"
+      }
+    },
+    {
+      "id": 6,
+      "model_name": "Co-PatcheR",
+      "base_model": "Qwen2.5-Coder-14B",
+      "training_scaffold": "PatchPilot-mini",
+      "resolution_percent": "46.0",
+      "links": {
+        "github": "https://github.com/ucsb-mlsec/Co-PatcheR",
+        "huggingface": "https://huggingface.co/collections/UCSB-SURFI/co-patcher"
+      }
+    },
+    {
+      "id": 7,
+      "model_name": "SWE-Swiss-32B",
+      "base_model": "Qwen2.5-32B-Instruct",
+      "training_scaffold": "Agentless",
+      "resolution_percent": "45.0",
+      "links": {
+        "github": "https://github.com/zhenyuhe00/SWE-Swiss",
+        "huggingface": "https://huggingface.co/SWE-Swiss/models"
+      }
+    },
+    {
+      "id": 8,
+      "model_name": "SWE-Lego-Qwen3-8B",
+      "base_model": "Qwen3-8B",
+      "training_scaffold": "OpenHands",
+      "resolution_percent": "44.4",
+      "links": {
+        "github": "https://github.com/SWE-Lego/SWE-Lego",
+        "huggingface": "https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-8B"
+      }
+    },
+    {
+      "id": 9,
+      "model_name": "Lingma SWE-GPT",
+      "base_model": "Qwen2.5-72B-Instruct",
+      "training_scaffold": "SWESynInfer",
+      "resolution_percent": "30.2",
+      "links": {
+        "github": "https://github.com/LingmaTongyi/Lingma-SWE-GPT"
+      }
+    },
+    {
+      "id": 10,
+      "model_name": "SWE-Gym-Qwen-32B",
+      "base_model": "Qwen2.5-Coder-32B",
+      "training_scaffold": "OpenHands, MoatlessTools",
+      "resolution_percent": "20.6",
+      "links": {
+        "github": "https://github.com/SWE-Gym/SWE-Gym",
+        "huggingface": "https://huggingface.co/SWE-Gym"
+      }
+    },
+    {
+      "id": 11,
+      "model_name": "SWE-Gym-Qwen-14B",
+      "base_model": "Qwen2.5-Coder-14B",
+      "training_scaffold": "OpenHands, MoatlessTools",
+      "resolution_percent": "16.4",
+      "links": {
+        "github": "https://github.com/SWE-Gym/SWE-Gym",
+        "huggingface": "https://huggingface.co/SWE-Gym"
+      }
+    },
+    {
+      "id": 12,
+      "model_name": "SWE-Gym-Qwen-7B",
+      "base_model": "Qwen2.5-Coder-7B",
+      "training_scaffold": "OpenHands, MoatlessTools",
+      "resolution_percent": "10.6",
+      "links": {
+        "github": "https://github.com/SWE-Gym/SWE-Gym",
+        "huggingface": "https://huggingface.co/SWE-Gym"
+      }
+    }
+  ],
+  "rl_methods": [
+    {
+      "id": 7,
+      "model_name": "OpenHands Critic",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "SWE-Gym",
+      "reward_type": "",
+      "resolution_percent": "66.4",
+      "links": {
+        "github": "https://github.com/All-Hands-AI/OpenHands",
+        "huggingface": "https://huggingface.co/OpenHands/openhands-critic-32b-exp-20250417"
+      }
+    },
+    {
+      "id": 8,
+      "model_name": "KAT-Dev-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "",
+      "reward_type": "",
+      "resolution_percent": "62.4",
+      "links": {
+        "huggingface": "https://huggingface.co/Kwaipilot/KAT-Dev"
+      }
+    },
+    {
+      "id": 2,
+      "model_name": "Kimi-Dev",
+      "size": "72B",
+      "architecture": "Dense",
+      "training_scaffold": "BugFixer + TestWriter",
+      "reward_type": "Outcome",
+      "resolution_percent": "60.4",
+      "links": {
+        "github": "https://github.com/MoonshotAI/Kimi-Dev",
+        "huggingface": "https://huggingface.co/moonshotai/Kimi-Dev-72B"
+      }
+    },
+    {
+      "id": 1,
+      "model_name": "LongCat-Flash-Think",
+      "size": "560B-A27B",
+      "architecture": "MoE",
+      "training_scaffold": "R2E-Gym",
+      "reward_type": "Outcome",
+      "resolution_percent": "60.4",
+      "links": {
+        "github": "https://github.com/meituan-longcat/LongCat-Flash-Thinking",
+        "huggingface": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking"
+      }
+    },
+    {
+      "id": 9,
+      "model_name": "SWE-Swiss-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "",
+      "reward_type": "Outcome",
+      "resolution_percent": "60.2",
+      "links": {
+        "github": "https://github.com/zhenyuhe00/SWE-Swiss",
+        "huggingface": "https://huggingface.co/SWE-Swiss/models"
+      }
+    },
+    {
+      "id": 10,
+      "model_name": "FoldAgent",
+      "size": "36B",
+      "architecture": "Dense",
+      "training_scaffold": "FoldAgent",
+      "reward_type": "Process",
+      "resolution_percent": "58.0",
+      "links": {
+        "github": "https://github.com/sunnweiwei/FoldAgent"
+      }
+    },
+    {
+      "id": 11,
+      "model_name": "SeamlessFlow-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "SWE-agent",
+      "reward_type": "Outcome",
+      "resolution_percent": "45.8",
+      "links": {
+        "github": "https://github.com/Chojikun/seamlessflow"
+      }
+    },
+    {
+      "id": 12,
+      "model_name": "DeepSWE",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "R2E-Gym",
+      "reward_type": "Outcome",
+      "resolution_percent": "42.2",
+      "links": {
+        "github": "https://github.com/agentica-project/rllm",
+        "huggingface": "https://huggingface.co/agentica-org/DeepSWE-Preview"
+      }
+    },
+    {
+      "id": 3,
+      "model_name": "SWE-RL",
+      "size": "70B",
+      "architecture": "Dense",
+      "training_scaffold": "Agentless-mini",
+      "reward_type": "Outcome",
+      "resolution_percent": "41.0",
+      "links": {
+        "github": "https://github.com/facebookresearch/swe-rl"
+      }
+    },
+    {
+      "id": 13,
+      "model_name": "SA-SWE-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "SkyRL-Agent",
+      "reward_type": "",
+      "resolution_percent": "39.4",
+      "links": {}
+    },
+    {
+      "id": 4,
+      "model_name": "Multi-turn RL(Nebius)",
+      "size": "72B",
+      "architecture": "Dense",
+      "training_scaffold": "SWE-agent",
+      "reward_type": "Outcome",
+      "resolution_percent": "39.0",
+      "links": {}
+    },
+    {
+      "id": 14,
+      "model_name": "OpenHands LM v0.1",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "SWE-Gym",
+      "reward_type": "",
+      "resolution_percent": "37.2",
+      "links": {
+        "github": "https://github.com/All-Hands-AI/OpenHands",
+        "huggingface": "https://huggingface.co/OpenHands/openhands-lm-32b-v0.1"
+      }
+    },
+    {
+      "id": 15,
+      "model_name": "SWE-Dev-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "36.6",
+      "links": {
+        "github": "https://github.com/THUDM/SWE-Dev",
+        "huggingface": "https://huggingface.co/zai-org/SWE-Dev-32B"
+      }
+    },
+    {
+      "id": 16,
+      "model_name": "Satori-SWE",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "Retriever + Code editor",
+      "reward_type": "Outcome",
+      "resolution_percent": "35.8",
+      "links": {
+        "github": "https://github.com/satori-reasoning/Satori-SWE",
+        "huggingface": "https://huggingface.co/Satori-reasoning"
+      }
+    },
+    {
+      "id": 17,
+      "model_name": "SoRFT-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "30.8",
+      "links": {}
+    },
+    {
+      "id": 5,
+      "model_name": "Agent-RLVR-RM-72B",
+      "size": "72B",
+      "architecture": "Dense",
+      "training_scaffold": "Localization + Repair",
+      "reward_type": "Outcome",
+      "resolution_percent": "27.8",
+      "links": {}
+    },
+    {
+      "id": 21,
+      "model_name": "SeamlessFlow-8B",
+      "size": "8B",
+      "architecture": "Dense",
+      "training_scaffold": "SWE-agent",
+      "reward_type": "Outcome",
+      "resolution_percent": "27.4",
+      "links": {
+        "github": "https://github.com/Chojikun/seamlessflow"
+      }
+    },
+    {
+      "id": 22,
+      "model_name": "SWE-Dev-7B",
+      "size": "7B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "23.4",
+      "links": {
+        "github": "https://github.com/THUDM/SWE-Dev",
+        "huggingface": "https://huggingface.co/zai-org/SWE-Dev-7B"
+      }
+    },
+    {
+      "id": 6,
+      "model_name": "Agent-RLVR-72B",
+      "size": "72B",
+      "architecture": "Dense",
+      "training_scaffold": "Localization + Repair",
+      "reward_type": "Outcome",
+      "resolution_percent": "22.4",
+      "links": {}
+    },
+    {
+      "id": 18,
+      "model_name": "Agent-RLVR-32B",
+      "size": "32B",
+      "architecture": "Dense",
+      "training_scaffold": "Localization + Repair",
+      "reward_type": "Outcome",
+      "resolution_percent": "21.6",
+      "links": {}
+    },
+    {
+      "id": 23,
+      "model_name": "SoRFT-7B",
+      "size": "7B",
+      "architecture": "Dense",
+      "training_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "21.4",
+      "links": {}
+    },
+    {
+      "id": 24,
+      "model_name": "SWE-Dev-8B",
+      "size": "8B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "18.0",
+      "links": {
+        "github": "https://github.com/THUDM/SWE-Dev",
+        "huggingface": "https://huggingface.co/zai-org/SWE-Dev-8B"
+      }
+    },
+    {
+      "id": 19,
+      "model_name": "Agent-RLVR-14B",
+      "size": "14B",
+      "architecture": "Dense",
+      "training_scaffold": "Localization + Repair",
+      "reward_type": "Outcome",
+      "resolution_percent": "18.0",
+      "links": {}
+    },
+    {
+      "id": 20,
+      "model_name": "SEAlign-14B",
+      "size": "14B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Process",
+      "resolution_percent": "17.7",
+      "links": {}
+    },
+    {
+      "id": 25,
+      "model_name": "SEAlign-7B",
+      "size": "7B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Process",
+      "resolution_percent": "15.0",
+      "links": {}
+    },
+    {
+      "id": 26,
+      "model_name": "SWE-Dev-9B",
+      "size": "9B",
+      "architecture": "Dense",
+      "training_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "13.6",
+      "links": {
+        "github": "https://github.com/THUDM/SWE-Dev",
+        "huggingface": "https://huggingface.co/zai-org/SWE-Dev-9B"
+      }
+    }
+  ],
+  "foundation_models": [
+    {
+      "id": 2,
+      "model_name": "KAT-Coder",
+      "size": "",
+      "architecture": "",
+      "inference_scaffold": "Claude Code",
+      "reward_type": "Outcome",
+      "resolution_percent": "73.4",
+      "links": {
+        "huggingface": "https://www.modelscope.cn/models/Kwaipilot/KAT-Dev-72B-Exp"
+      }
+    },
+    {
+      "id": 1,
+      "model_name": "MiMo-V2-Flash",
+      "size": "309B-A15B",
+      "architecture": "MoE",
+      "inference_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "73.4",
+      "links": {
+        "github": "https://github.com/XiaomiMiMo/MiMo-V2-Flash",
+        "huggingface": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash"
+      }
+    },
+    {
+      "id": 3,
+      "model_name": "Deepseek V3.2",
+      "size": "671B-A37B",
+      "architecture": "MoE",
+      "inference_scaffold": "Claude Code, RooCode",
+      "reward_type": "",
+      "resolution_percent": "73.1",
+      "links": {
+        "github": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+        "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale"
+      }
+    },
+    {
+      "id": 4,
+      "model_name": "Kimi-K2-Instruct",
+      "size": "1T",
+      "architecture": "MoE",
+      "inference_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "71.6",
+      "links": {
+        "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
+      }
+    },
+    {
+      "id": 5,
+      "model_name": "Qwen3-Coder",
+      "size": "480B-A35B",
+      "architecture": "MoE",
+      "inference_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "69.6",
+      "links": {
+        "github": "https://github.com/QwenLM/Qwen3-Coder",
+        "huggingface": "https://huggingface.co/collections/Qwen/qwen3-coder"
+      }
+    },
+    {
+      "id": 6,
+      "model_name": "GLM-4.6",
+      "size": "355B-A32B",
+      "architecture": "MoE",
+      "inference_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "68.0",
+      "links": {
+        "huggingface": "https://huggingface.co/zai-org/GLM-4.6"
+      }
+    },
+    {
+      "id": 7,
+      "model_name": "gpt-oss-120b",
+      "size": "116.8B-A5.1B",
+      "architecture": "MoE",
+      "inference_scaffold": "Internal tool",
+      "reward_type": "Outcome",
+      "resolution_percent": "62.0",
+      "links": {
+        "github": "https://github.com/openai/gpt-oss",
+        "huggingface": "https://huggingface.co/openai/gpt-oss-120b"
+      }
+    },
+    {
+      "id": 8,
+      "model_name": "Minimax M2",
+      "size": "230B-10B",
+      "architecture": "MoE",
+      "inference_scaffold": "R2E-Gym",
+      "reward_type": "Outcome",
+      "resolution_percent": "61.0",
+      "links": {
+        "github": "https://github.com/MiniMax-AI/MiniMax-M2",
+        "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2"
+      }
+    },
+    {
+      "id": 9,
+      "model_name": "gpt-oss-20b",
+      "size": "20.9B-A3.6B",
+      "architecture": "MoE",
+      "inference_scaffold": "Internal tool",
+      "reward_type": "Outcome",
+      "resolution_percent": "60.0",
+      "links": {
+        "github": "https://github.com/openai/gpt-oss",
+        "huggingface": "https://huggingface.co/openai/gpt-oss-20b"
+      }
+    },
+    {
+      "id": 10,
+      "model_name": "GLM-4.5-Air",
+      "size": "106B-A12B",
+      "architecture": "MoE",
+      "inference_scaffold": "OpenHands",
+      "reward_type": "Outcome",
+      "resolution_percent": "57.6",
+      "links": {}
+    },
+    {
+      "id": 11,
+      "model_name": "Minimax M1-80k",
+      "size": "456B-A45.9B",
+      "architecture": "MoE",
+      "inference_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "56.0",
+      "links": {
+        "github": "https://github.com/MiniMax-AI/MiniMax-M1",
+        "huggingface": "https://www.modelscope.cn/models/MiniMax/MiniMax-M1-80k"
+      }
+    },
+    {
+      "id": 12,
+      "model_name": "Minimax M1-40k",
+      "size": "456B-A45.9B",
+      "architecture": "MoE",
+      "inference_scaffold": "Agentless",
+      "reward_type": "Outcome",
+      "resolution_percent": "55.6",
+      "links": {
+        "github": "https://github.com/MiniMax-AI/MiniMax-M1",
+        "huggingface": "https://www.modelscope.cn/models/MiniMax/MiniMax-M1-40k/summary"
+      }
+    },
+    {
+      "id": 13,
+      "model_name": "Seed1.5-Thinking",
+      "size": "200B-A20B",
+      "architecture": "MoE",
+      "inference_scaffold": "",
+      "reward_type": "Outcome",
+      "resolution_percent": "47.0",
+      "links": {
+        "github": "https://github.com/ByteDance-Seed/Seed-Thinking-v1.5"
+      }
+    },
+    {
+      "id": 14,
+      "model_name": "Llama 4 Maverick",
+      "size": "400B-A17B",
+      "architecture": "MoE",
+      "inference_scaffold": "mini-SWE-agent",
+      "reward_type": "Outcome",
+      "resolution_percent": "21.0",
+      "links": {
+        "github": "https://github.com/meta-llama/llama-models/tree/main/models/llama4",
+        "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+      }
+    },
+    {
+      "id": 15,
+      "model_name": "Llama 4 Scout",
+      "size": "109B-17B",
+      "architecture": "MoE",
+      "inference_scaffold": "mini-SWE-agent",
+      "reward_type": "Outcome",
+      "resolution_percent": "9.1",
+      "links": {
+        "github": "https://github.com/meta-llama/llama-models/tree/main/models/llama4",
+        "huggingface": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    }
+  ]
+}

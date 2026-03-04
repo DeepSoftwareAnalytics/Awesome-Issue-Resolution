@@ -56,6 +56,9 @@ jobs:
       - name: Render README and docs from database
         run: python view/render_from_db.py
 
+      - name: Export database to static admin JSON
+        run: python scripts/export_admin_json.py
+
       - name: Build MkDocs site
         run: mkdocs build
 

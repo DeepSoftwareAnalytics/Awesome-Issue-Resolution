@@ -53,6 +53,9 @@ exclude_docs: |
   images/README.md
   **/README.md
 
+# Copy admin HTML and generated JSON as-is (not processed as markdown)
+hooks: []
+
 plugins:
   - search
 
@@ -72,5 +75,6 @@ nav:
   - Home: index.md
   - Paper: paper.md
   - Tables & Resources: tables.md
+  - Admin: admin/index.md
   - About: about.md
   - Cite: cite.md

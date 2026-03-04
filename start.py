@@ -100,6 +100,20 @@ def render_markdown():
     return result.returncode
 
 
+def export_admin_json():
+    """Export database to docs/admin/data.json for the static admin page."""
+    print('[INFO] Exporting admin JSON...')
+    result = subprocess.run(
+        [sys.executable, 'scripts/export_admin_json.py'],
+        cwd=str(ROOT)
+    )
+    if result.returncode == 0:
+        print('[OK] Admin JSON exported.')
+    else:
+        print('[WARN] Admin JSON export encountered an error (non-fatal).')
+    return result.returncode
+
+
 def build_site():
     """Run mkdocs build."""
     print('[INFO] Building static site with MkDocs...')
@@ -113,9 +127,10 @@ def build_site():
 
 
 def run_full_update():
-    """Run the full update pipeline: news -> render -> build."""
+    """Run the full update pipeline: news -> render -> export JSON -> build."""
     update_news()
     render_markdown()
+    export_admin_json()
     build_site()
 
 

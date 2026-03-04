@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin · Awesome Issue Resolution</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: #f0f2f5; color: #333; min-height: 100vh; }
+
+  /* ── Header ── */
+  header { background: linear-gradient(135deg,#667eea,#764ba2);
+            color: #fff; padding: 18px 28px;
+            display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 1.3rem; font-weight: 700; }
+  header a  { color: rgba(255,255,255,.85); font-size: .85rem; text-decoration: none; }
+  header a:hover { color: #fff; }
+  .badge-ro { background: rgba(255,255,255,.2); border-radius: 20px;
+              padding: 3px 10px; font-size: .75rem; margin-left: 10px; }
+
+  /* ── Stat cards ── */
+  .stats { display: flex; gap: 14px; padding: 20px 28px 0; flex-wrap: wrap; }
+  .stat-card { background: #fff; border-radius: 12px; padding: 18px 24px;
+               box-shadow: 0 2px 8px rgba(0,0,0,.06); flex: 1; min-width: 130px; }
+  .stat-card h3 { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em;
+                  color: #888; margin-bottom: 6px; }
+  .stat-card .num { font-size: 2rem; font-weight: 700; color: #667eea; }
+
+  /* ── Tabs ── */
+  .tabs { display: flex; gap: 6px; padding: 18px 28px 0; flex-wrap: wrap; }
+  .tab  { padding: 8px 18px; border-radius: 22px; border: none; cursor: pointer;
+          background: #fff; color: #555; font-size: .88rem; font-weight: 500;
+          box-shadow: 0 1px 4px rgba(0,0,0,.08); transition: all .15s; }
+  .tab:hover  { background: #eef0ff; color: #667eea; }
+  .tab.active { background: linear-gradient(135deg,#667eea,#764ba2); color: #fff; }
+
+  /* ── Toolbar ── */
+  .toolbar { display: flex; gap: 10px; padding: 16px 28px; align-items: center; flex-wrap: wrap; }
+  .search-box { flex: 1; min-width: 220px; padding: 9px 14px; border: 1.5px solid #dde;
+                border-radius: 8px; font-size: .9rem; outline: none; transition: border-color .2s; }
+  .search-box:focus { border-color: #667eea; }
+  select.filter { padding: 9px 12px; border: 1.5px solid #dde; border-radius: 8px;
+                  font-size: .88rem; background: #fff; cursor: pointer; outline: none; }
+  .btn { padding: 9px 16px; border-radius: 8px; border: none; cursor: pointer;
+         font-size: .85rem; font-weight: 600; transition: opacity .15s; }
+  .btn:hover { opacity: .85; }
+  .btn-primary  { background: linear-gradient(135deg,#667eea,#764ba2); color: #fff; }
+  .btn-outline  { background: #fff; color: #667eea;
+                  border: 1.5px solid #667eea; }
+  .btn-success  { background: #28a745; color: #fff; }
+
+  /* ── Table ── */
+  .table-wrap { padding: 0 28px 28px; overflow-x: auto; }
+  table  { width: 100%; border-collapse: collapse; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+  thead  { background: #f8f9ff; }
+  th     { padding: 12px 14px; font-size: .78rem; text-transform: uppercase;
+           letter-spacing: .06em; color: #888; text-align: left;
+           border-bottom: 2px solid #eef; white-space: nowrap; cursor: pointer; }
+  th:hover { color: #667eea; }
+  td     { padding: 10px 14px; font-size: .88rem; border-bottom: 1px solid #f0f2f5;
+           vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbff; }
+  .cb-col { width: 36px; text-align: center; }
+  input[type=checkbox] { width: 15px; height: 15px; cursor: pointer; accent-color: #667eea; }
+
+  /* ── Badges / links ── */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px;
+           font-size: .75rem; font-weight: 600; }
+  .badge-cat  { background: #eef0ff; color: #667eea; }
+  .link-btn   { display: inline-flex; align-items: center; gap: 4px;
+                padding: 3px 8px; border-radius: 6px; font-size: .75rem;
+                font-weight: 600; text-decoration: none; white-space: nowrap;
+                margin: 1px; }
+  .link-arxiv { background: #fde8e8; color: #b31b1b; }
+  .link-gh    { background: #e8f0e8; color: #1a7f37; }
+  .link-hf    { background: #fff3e0; color: #e65100; }
+  .link-web   { background: #e3f2fd; color: #1565c0; }
+
+  /* ── Pagination ── */
+  .pagination { display: flex; gap: 6px; padding: 10px 28px 20px;
+                align-items: center; flex-wrap: wrap; }
+  .page-btn   { padding: 6px 12px; border-radius: 6px; border: 1.5px solid #dde;
+                background: #fff; cursor: pointer; font-size: .85rem; }
+  .page-btn.active { background: #667eea; color: #fff; border-color: #667eea; }
+  .page-info  { font-size: .85rem; color: #888; margin-left: 8px; }
+
+  /* ── Toast ── */
+  #toast { position: fixed; bottom: 28px; right: 28px; background: #333; color: #fff;
+           padding: 12px 20px; border-radius: 10px; font-size: .9rem;
+           display: none; z-index: 9999; box-shadow: 0 4px 16px rgba(0,0,0,.2); }
+
+  /* ── Read-only notice ── */
+  .ro-notice { background: #fff8e1; border-left: 4px solid #ffc107;
+               padding: 10px 16px; margin: 16px 28px 0;
+               border-radius: 0 8px 8px 0; font-size: .85rem; color: #555; }
+  .ro-notice a { color: #667eea; }
+
+  .generated { font-size: .75rem; color: #aaa; padding: 0 28px 6px; text-align: right; }
+
+  /* bool */
+  .bool-yes { color: #1a7f37; background: #dafbe1; padding: 2px 7px;
+              border-radius: 4px; font-size: .8rem; font-weight: 600; }
+  .bool-no  { color: #6e7781; background: #f6f8fa; padding: 2px 7px;
+              border-radius: 4px; font-size: .8rem; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:12px">
+    <h1>✨ Awesome Issue Resolution</h1>
+    <span class="badge-ro">Read-Only</span>
+  </div>
+  <a href="../">← Back to Docs</a>
+</header>
+
+<div class="ro-notice">
+  📖 This is a <strong>read-only</strong> view of the paper database.
+  To add or edit entries, run <code>python start.py</code> locally.
+  See the <a href="./">setup guide</a>.
+</div>
+
+<div class="stats" id="stats-grid">
+  <div class="stat-card"><h3>Total Works</h3><div class="num" id="s-total">–</div></div>
+  <div class="stat-card"><h3>Data</h3><div class="num" id="s-data">–</div></div>
+  <div class="stat-card"><h3>Methods</h3><div class="num" id="s-methods">–</div></div>
+  <div class="stat-card"><h3>Analysis</h3><div class="num" id="s-analysis">–</div></div>
+</div>
+
+<div class="tabs" id="tabs">
+  <button class="tab active" data-tab="papers">Papers</button>
+  <button class="tab" data-tab="datasets">Datasets</button>
+  <button class="tab" data-tab="training">Training Datasets</button>
+  <button class="tab" data-tab="sft">SFT Methods</button>
+  <button class="tab" data-tab="rl">RL Methods</button>
+  <button class="tab" data-tab="foundation">Foundation Models</button>
+</div>
+
+<div class="toolbar">
+  <input class="search-box" id="search" type="text" placeholder="Search…">
+  <select class="filter" id="filter-cat" style="display:none"></select>
+  <select class="filter" id="filter-year" style="display:none"></select>
+  <button class="btn btn-outline" onclick="clearFilters()">Clear</button>
+  <div style="flex:1"></div>
+  <button class="btn btn-primary" id="btn-select-all" onclick="toggleSelectAll()">Select All</button>
+  <button class="btn btn-success" onclick="exportSelected()">Export CSV</button>
+  <button class="btn btn-outline" onclick="copyLinks()">Copy Links</button>
+</div>
+
+<div class="table-wrap"><div id="table-container"></div></div>
+<div class="pagination" id="pagination"></div>
+<div class="generated" id="generated"></div>
+<div id="toast"></div>
+
+<script>
+const PAGE_SIZE = 50;
+let DB = null;
+let currentTab = 'papers';
+let currentPage = 1;
+let filteredData = [];
+let sortField = null, sortDir = 1;
+
+// ── Load data ────────────────────────────────────────────────────────────────
+fetch('data.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    DB = data;
+    document.getElementById('s-total').textContent    = data.stats.total;
+    document.getElementById('s-data').textContent     = data.stats.data;
+    document.getElementById('s-methods').textContent  = data.stats.methods;
+    document.getElementById('s-analysis').textContent = data.stats.analysis;
+    document.getElementById('generated').textContent  = 'Data as of ' + data.generated;
+    initFilters();
+    renderTable();
+  })
+  .catch(e => {
+    document.getElementById('table-container').innerHTML =
+      `<div style="padding:40px;text-align:center;color:#e53e3e">
+        Failed to load data.json (${e.message}).<br>
+        If running locally, serve via <code>python -m http.server</code> in the docs folder.
+      </div>`;
+  });
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+document.getElementById('tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.tab');
+  if (!btn) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  currentTab = btn.dataset.tab;
+  currentPage = 1;
+  sortField = null;
+  initFilters();
+  renderTable();
+});
+
+// ── Filters ───────────────────────────────────────────────────────────────────
+function initFilters() {
+  const catEl  = document.getElementById('filter-cat');
+  const yearEl = document.getElementById('filter-year');
+  catEl.innerHTML  = '<option value="">All categories</option>';
+  yearEl.innerHTML = '<option value="">All years</option>';
+
+  if (currentTab === 'papers') {
+    catEl.style.display  = '';
+    yearEl.style.display = '';
+    const cats  = [...new Set(DB.papers.flatMap(p => p.category.split(',').map(c => c.trim()).filter(Boolean)))].sort();
+    const years = [...new Set(DB.papers.map(p => p.month ? p.month.slice(0,4) : '').filter(Boolean))].sort().reverse();
+    cats.forEach(c  => catEl.appendChild(new Option(c, c)));
+    years.forEach(y => yearEl.appendChild(new Option(y, y)));
+  } else if (currentTab === 'datasets' || currentTab === 'training') {
+    catEl.style.display  = currentTab === 'datasets' ? '' : 'none';
+    yearEl.style.display = 'none';
+    if (currentTab === 'datasets') {
+      const cats = [...new Set(DB.datasets.map(d => d.category).filter(Boolean))].sort();
+      cats.forEach(c => catEl.appendChild(new Option(c, c)));
+    }
+  } else {
+    catEl.style.display  = 'none';
+    yearEl.style.display = 'none';
+  }
+}
+
+function getRows() {
+  if (!DB) return [];
+  switch (currentTab) {
+    case 'papers':     return DB.papers;
+    case 'datasets':   return DB.datasets;
+    case 'training':   return DB.training_datasets;
+    case 'sft':        return DB.sft_methods;
+    case 'rl':         return DB.rl_methods;
+    case 'foundation': return DB.foundation_models;
+  }
+  return [];
+}
+
+function applyFilters() {
+  const q    = document.getElementById('search').value.toLowerCase().trim();
+  const cat  = document.getElementById('filter-cat').value;
+  const year = document.getElementById('filter-year').value;
+  let rows = getRows();
+
+  if (q) rows = rows.filter(r => JSON.stringify(r).toLowerCase().includes(q));
+  if (cat)  rows = rows.filter(r => r.category && r.category.split(',').map(c=>c.trim()).includes(cat));
+  if (year) rows = rows.filter(r => r.month && r.month.startsWith(year));
+
+  if (sortField) {
+    rows = [...rows].sort((a, b) => {
+      const av = (a[sortField] || '').toString();
+      const bv = (b[sortField] || '').toString();
+      const n1 = parseFloat(av), n2 = parseFloat(bv);
+      if (!isNaN(n1) && !isNaN(n2)) return (n1 - n2) * sortDir;
+      return av.localeCompare(bv) * sortDir;
+    });
+  }
+  return rows;
+}
+
+function clearFilters() {
+  document.getElementById('search').value = '';
+  document.getElementById('filter-cat').value = '';
+  document.getElementById('filter-year').value = '';
+  currentPage = 1;
+  renderTable();
+}
+
+document.getElementById('search').addEventListener('input', () => { currentPage = 1; renderTable(); });
+document.getElementById('filter-cat').addEventListener('change', () => { currentPage = 1; renderTable(); });
+document.getElementById('filter-year').addEventListener('change', () => { currentPage = 1; renderTable(); });
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function renderTable() {
+  filteredData = applyFilters();
+  const total  = filteredData.length;
+  const pages  = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  currentPage  = Math.min(currentPage, pages);
+  const slice  = filteredData.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+
+  const container = document.getElementById('table-container');
+  if (total === 0) {
+    container.innerHTML = '<div style="padding:40px;text-align:center;color:#888">No results found.</div>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  let html = '<table><thead><tr>';
+  html += '<th class="cb-col"><input type="checkbox" id="cb-all" onchange="toggleSelectAll()"></th>';
+
+  const cols = getColumns();
+  cols.forEach(c => {
+    const arrow = sortField === c.field ? (sortDir === 1 ? ' ▲' : ' ▼') : '';
+    html += `<th onclick="sortBy('${c.field}')">${c.label}${arrow}</th>`;
+  });
+  html += '</tr></thead><tbody>';
+
+  slice.forEach(row => {
+    html += `<tr><td class="cb-col"><input type="checkbox" class="row-cb" data-id="${row.id}"></td>`;
+    cols.forEach(c => { html += `<td>${c.render(row)}</td>`; });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  container.innerHTML = html;
+
+  // Pagination
+  let pag = '';
+  if (pages > 1) {
+    if (currentPage > 1) pag += `<button class="page-btn" onclick="goPage(${currentPage-1})">‹</button>`;
+    const start = Math.max(1, currentPage-2), end = Math.min(pages, currentPage+2);
+    if (start > 1)     pag += `<button class="page-btn" onclick="goPage(1)">1</button>${start>2?'…':''}`;
+    for (let i=start; i<=end; i++)
+      pag += `<button class="page-btn${i===currentPage?' active':''}" onclick="goPage(${i})">${i}</button>`;
+    if (end < pages)   pag += `${end<pages-1?'…':''}<button class="page-btn" onclick="goPage(${pages})">${pages}</button>`;
+    if (currentPage < pages) pag += `<button class="page-btn" onclick="goPage(${currentPage+1})">›</button>`;
+  }
+  pag += `<span class="page-info">Showing ${(currentPage-1)*PAGE_SIZE+1}–${Math.min(currentPage*PAGE_SIZE,total)} of ${total}</span>`;
+  document.getElementById('pagination').innerHTML = pag;
+}
+
+function goPage(n) { currentPage = n; renderTable(); }
+function sortBy(field) {
+  if (sortField === field) sortDir *= -1; else { sortField = field; sortDir = -1; }
+  renderTable();
+}
+
+// ── Column definitions ────────────────────────────────────────────────────────
+function renderLinks(links) {
+  if (!links) return '–';
+  const defs = [
+    ['arxiv',       'arXiv',  'link-arxiv'],
+    ['github',      'GitHub', 'link-gh'],
+    ['huggingface', 'HF',     'link-hf'],
+    ['website',     'Web',    'link-web'],
+  ];
+  return defs.filter(([k]) => links[k])
+    .map(([k,label,cls]) => `<a class="link-btn ${cls}" href="${links[k]}" target="_blank">${label}</a>`)
+    .join('') || '–';
+}
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function boolBadge(v) {
+  if (v === 'Yes') return '<span class="bool-yes">Yes</span>';
+  return '<span class="bool-no">No</span>';
+}
+
+function getColumns() {
+  switch (currentTab) {
+    case 'papers': return [
+      { field:'month',      label:'Date',     render: r => `<code>${esc(r.month)}</code>` },
+      { field:'short_name', label:'Name',     render: r => `<strong>${esc(r.short_name)}</strong>` },
+      { field:'title',      label:'Title',    render: r => esc(r.title) },
+      { field:'venue',      label:'Venue',    render: r => esc(r.venue) },
+      { field:'category',   label:'Category', render: r => r.category.split(',').map(c=>`<span class="badge badge-cat">${esc(c.trim())}</span>`).join(' ') },
+      { field:'links',      label:'Links',    render: r => renderLinks(r.links) },
+    ];
+    case 'datasets': return [
+      { field:'name',        label:'Dataset',     render: r => `<strong>${esc(r.name)}</strong>` },
+      { field:'language',    label:'Language',    render: r => esc(r.language)||'–' },
+      { field:'multimodal',  label:'Multimodal',  render: r => boolBadge(r.multimodal) },
+      { field:'environment', label:'Environment', render: r => boolBadge(r.environment) },
+      { field:'repos',       label:'Repos',       render: r => esc(r.repos)||'–' },
+      { field:'amount',      label:'Amount',      render: r => esc(r.amount)||'–' },
+      { field:'category',    label:'Category',    render: r => `<span class="badge badge-cat">${esc(r.category)}</span>` },
+      { field:'links',       label:'Links',       render: r => renderLinks(r.links) },
+    ];
+    case 'training': return [
+      { field:'name',     label:'Dataset',  render: r => `<strong>${esc(r.name)}</strong>` },
+      { field:'language', label:'Language', render: r => esc(r.language)||'–' },
+      { field:'repos',    label:'Repos',    render: r => esc(r.repos)||'–' },
+      { field:'amount',   label:'Amount',   render: r => esc(r.amount)||'–' },
+      { field:'links',    label:'Links',    render: r => renderLinks(r.links) },
+    ];
+    case 'sft': return [
+      { field:'model_name',         label:'Model',       render: r => `<strong>${esc(r.model_name)}</strong>` },
+      { field:'base_model',         label:'Base Model',  render: r => esc(r.base_model)||'–' },
+      { field:'training_scaffold',  label:'Scaffold',    render: r => esc(r.training_scaffold)||'–' },
+      { field:'resolution_percent', label:'Res. (%)',    render: r => r.resolution_percent||'–' },
+      { field:'links', label:'Links', render: r => renderLinks(r.links) },
+    ];
+    case 'rl':
+    case 'foundation': return [
+      { field:'model_name',         label:'Model',      render: r => `<strong>${esc(r.model_name)}</strong>` },
+      { field:'size',               label:'Size',       render: r => esc(r.size)||'–' },
+      { field:'architecture',       label:'Arch.',      render: r => esc(r.architecture)||'–' },
+      { field:'inference_scaffold', label:'Scaffold',   render: r => esc(r.inference_scaffold)||'–' },
+      { field:'reward_type',        label:'Reward',     render: r => esc(r.reward_type)||'–' },
+      { field:'resolution_percent', label:'Res. (%)',   render: r => r.resolution_percent||'–' },
+      { field:'links', label:'Links', render: r => renderLinks(r.links) },
+    ];
+  }
+  return [];
+}
+
+// ── Select / Export ───────────────────────────────────────────────────────────
+function getSelectedIds() {
+  return [...document.querySelectorAll('.row-cb:checked')].map(c => parseInt(c.dataset.id));
+}
+function toggleSelectAll() {
+  const cbAll = document.getElementById('cb-all');
+  const checked = cbAll ? cbAll.checked : false;
+  document.querySelectorAll('.row-cb').forEach(c => c.checked = checked);
+}
+
+function getSelectedRows() {
+  const ids = new Set(getSelectedIds());
+  return filteredData.filter(r => ids.has(r.id));
+}
+
+function exportSelected() {
+  const rows = getSelectedRows();
+  if (!rows.length) { showToast('Select at least one row first.'); return; }
+
+  let csv = '';
+  if (currentTab === 'papers') {
+    csv = 'short_name,title,authors,venue,month,category,arxiv\n';
+    rows.forEach(r => {
+      const arxiv = r.links?.arxiv || '';
+      csv += [r.short_name,r.title,r.authors,r.venue,r.month,r.category,arxiv]
+        .map(v => `"${(v||'').replace(/"/g,'""')}"`)
+        .join(',') + '\n';
+    });
+  } else {
+    const cols = getColumns().filter(c => c.field !== 'links');
+    csv = cols.map(c => c.label).join(',') + '\n';
+    rows.forEach(r => {
+      csv += cols.map(c => `"${(r[c.field]||'').toString().replace(/"/g,'""')}"`).join(',') + '\n';
+    });
+  }
+
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8;' }));
+  a.download = `${currentTab}_export.csv`;
+  a.click();
+  showToast(`Exported ${rows.length} rows as CSV.`);
+}
+
+function copyLinks() {
+  const rows = getSelectedRows();
+  if (!rows.length) { showToast('Select at least one row first.'); return; }
+
+  let links = [];
+  if (currentTab === 'papers') {
+    links = rows.map(r => {
+      const url = r.links?.arxiv || r.links?.github || r.links?.huggingface || r.links?.website || '';
+      // Normalise arXiv /abs/ or /html/ → /pdf/
+      return url.replace(/arxiv\.org\/(abs|html)\//, 'arxiv.org/pdf/');
+    }).filter(Boolean);
+  } else {
+    links = rows.flatMap(r => Object.values(r.links || {})).filter(Boolean);
+  }
+
+  navigator.clipboard.writeText(links.join('\n'))
+    .then(() => showToast('Copied! You can paste into NotebookLM to explore.'))
+    .catch(() => showToast('Copy failed — please use a browser that supports clipboard access.'));
+}
+
+// ── Toast ─────────────────────────────────────────────────────────────────────
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.style.display = 'block';
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.style.display = 'none', 3500);
+}
+</script>
+</body>
+</html>
