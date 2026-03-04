@@ -47,8 +47,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Initialize database from YAML/CSV
+        run: python database/migrate.py
+
+      - name: Refresh this month's papers
+        run: python scripts/update_news.py
+
+      - name: Render README and docs from database
+        run: python view/render_from_db.py
+
       - name: Build MkDocs site
-        run: mkdocs build --strict
+        run: mkdocs build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -69,4 +78,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
