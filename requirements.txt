@@ -15,5 +15,5 @@ pandas==2.1.4
 requests==2.31.0
 
 # Documentation site
-mkdocs==1.6.0
-mkdocs-material==9.5.18
+mkdocs>=1.5,<2.0
+mkdocs-material>=9.5,<10.0
