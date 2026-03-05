@@ -1,143 +1,70 @@
-- short_name: Alibaba LingmaAgent
-  title: 'Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive
-    Repository Exploration'
-  authors: Ma, Yingwei, Yang, Qingping, Cao, Rongyu, Li, Binhua, Huang, Fei, Li, Yongbin
-  year: '2024'
-  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
-    Software Engineering 2025
-  month: 2024-06
+- short_name: SWE-Adept
+  title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and
+    Structured Issue Resolution'
+  authors: Kang He, Kaushik Roy
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.01327
+  month: 2026-03
   links:
-    arxiv: https://arxiv.org/abs/2406.01422v2
-    doi: http://dx.doi.org/10.1145/3696630.3728549
-- short_name: SpecRover
-  title: 'SpecRover: Code Intent Extraction via LLMs'
-  authors: Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury
-  year: '2024'
-  venue: ICSE 2025
-  month: 2024-08
+    arxiv: https://arxiv.org/abs/2603.01327
+- short_name: Closing the Loop
+  title: 'Closing the Loop: Universal Repository Representation with RPG-Encoder'
+  authors: Jane Luo, Chengyu Yin, Xin Zhang, Qingtao Li, Steven Liu, Yiming Huang,
+    Jie Wu, Hao Liu, Yangyu Huang, Yu Kang, Fangkai Yang, Ying Xin, Scarlett Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.02084
+  month: 2026-02
   links:
-    arxiv: https://arxiv.org/abs/2408.02232v4
-- short_name: RepoGraph
-  title: 'RepoGraph: Enhancing AI Software Engineering with Repository-level Code
-    Graph'
-  authors: Ouyang, Siru, Yu, Wenhao, Ma, Kaixin, Xiao, Zilin, Zhang, Zhihan, Jia,
-    Mengzhao, Han, Jiawei et al.
-  year: '2024'
-  venue: The Thirteenth International Conference on Learning Representations
-  month: 2024-10
+    arxiv: https://arxiv.org/abs/2602.02084
+    github: https://github.com/microsoft/RPG-ZeroRepo
+    website: https://ayanami2003.github.io/RPG-Encoder/
+- short_name: SWE-Tester
+  title: 'SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World
+    Repositories'
+  authors: Aditya Bharat Soni, Rajat Ghosh, Vaishnavi Bhargava, Valerie Chen, Debojyoti
+    Dutta
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.13713
+  month: 2026-01
   links:
-    arxiv: https://arxiv.org/abs/2410.14684v2
-- short_name: SuperCoder2.0
-  title: 'SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as
-    Autonomous Programmer'
-  authors: Anmol Gautam, Kishore Kumar, Adarsh Jha, Mukunda NS, Ishaan Bhola
-  year: '2024'
-  venue: arXiv preprint arXiv:2409.11190
-  month: 2024-09
-  links:
-    arxiv: https://arxiv.org/abs/2409.11190
-- short_name: AEGIS
-  title: 'AEGIS: An Agent-based Framework for General Bug Reproduction from Issue
-    Descriptions'
-  authors: Xinchen Wang, Pengfei Gao, Xiangxin Meng, Chao Peng, Ruida Hu, Yun Lin,
-    Cuiyun Gao
-  year: '2024'
-  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
-    Software Engineering 2025
-  month: 2024-11
-  links:
-    arxiv: https://arxiv.org/abs/2411.18015v1
-- short_name: CoRNStack
-  title: 'CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking'
-  authors: Tarun Suresh, Revanth Gangi Reddy, Yifei Xu, Zach Nussbaum, Andriy Mulyar,
-    Brandon Duderstadt, Heng Ji
-  year: '2024'
-  venue: The Thirteenth International Conference on Learning Representations 2025
-  month: 2024-12
-  links:
-    arxiv: https://arxiv.org/abs/2412.01007v3
-    openreview: https://openreview.net/forum?id=iyJOUELYir
-- short_name: OrcaLoca
-  title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
-  authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
-    Jishen Zhao
+    arxiv: https://arxiv.org/abs/2601.13713
+- short_name: GraphLocator
+  title: 'GraphLocator: Graph-guided Causal Reasoning for Issue Localization'
+  authors: Wei Liu, Chao Peng, Pengfei Gao, Aofan Liu, Wei Zhang, Haiyan Zhao, Zhi
+    Jin
   year: '2025'
-  venue: Forty-second International Conference on Machine Learning 2025
-  month: 2025-02
+  venue: arXiv preprint arXiv:2512.22469
+  month: 2025-12
   links:
-    arxiv: https://arxiv.org/abs/2502.00350v2
-    openreview: https://openreview.net/forum?id=LyUfPOvM6I
-- short_name: DARS
-  title: 'DARS: Dynamic Action Re-Sampling to Enhance Coding Agent Performance by
-    Adaptive Tree Traversal'
-  authors: Vaibhav Aggarwal, Ojasv Kamal, Abhinav Japesh, Zhijing Jin, Bernhard Schölkopf
+    arxiv: https://arxiv.org/abs/2512.22469
+- short_name: InfCode
+  title: 'InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable
+    Software Issue Resolution'
+  authors: KeFan Li, Mengfei Wang, Hengzhi Zhang, Zhichao Li, Yuan Yuan, Mu Li, Xiang
+    Gao et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2503.14269
-  month: 2025-03
+  venue: arXiv preprint arXiv:2511.16004
+  month: 2025-11
   links:
-    arxiv: https://arxiv.org/abs/2503.14269
-- short_name: Otter
-  title: 'Otter: Generating Tests from Issues to Validate SWE Patches'
-  authors: Toufique Ahmed, Jatin Ganhotra, Rangeet Pan, Avraham Shinnar, Saurabh Sinha,
-    Martin Hirzel
+    arxiv: https://arxiv.org/abs/2511.16004
+- short_name: BugPilot
+  title: 'BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills'
+  authors: Atharv Sonwane, Isadora White, Hyunji Lee, Matheus Pereira, Lucas Caccia,
+    Minseon Kim, Zhengyan Shi et al.
   year: '2025'
-  venue: Forty-second International Conference on Machine Learning 2025
-  month: 2025-02
+  venue: arXiv preprint arXiv:2510.19898
+  month: 2025-10
   links:
-    arxiv: https://arxiv.org/abs/2502.05368v2
-    openreview: https://openreview.net/forum?id=b0jYs6JOZu
-- short_name: Quadropic Insiders
-  title: 'Quadropic Insiders : Syntheo Tops Swelite Feb'
-  authors: Quadropic-Team
+    arxiv: https://arxiv.org/abs/2510.19898
+- short_name: TestPrune
+  title: 'When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue
+    Resolution'
+  authors: Yang Chen, Toufique Ahmed, Reyhaneh Jabbarvand, Martin Hirzel
   year: '2025'
-  venue: '-'
-  month: 2025-02
+  venue: arXiv preprint arXiv:2510.18270
+  month: 2025-10
   links:
-    website: https://insiders.quadropic.com/insiders/syntheo-tops-swelite-feb
-- short_name: Issue2Test
-  title: 'Issue2Test: Generating Reproducing Test Cases from Issue Reports'
-  authors: Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah
-  year: '2025'
-  venue: arXiv preprint arXiv:2503.16320
-  month: 2025-03
-  links:
-    arxiv: https://arxiv.org/abs/2503.16320
-- short_name: KGCompass
-  title: Enhancing repository-level software repair via repository-aware knowledge
-    graphs
-  authors: Boyang Yang, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le, Haoye
-    Tian
-  year: '2025'
-  venue: arXiv preprint arXiv:2503.21710
-  month: 2025-03
-  links:
-    arxiv: https://arxiv.org/abs/2503.21710
-- short_name: CoSIL
-  title: Issue Localization via LLM-Driven Iterative Code Graph Searching
-  authors: Zhonghao Jiang, Xiaoxue Ren, Meng Yan, Wei Jiang, Yong Li, Zhongxin Liu
-  year: '2025'
-  venue: ASE 2025
-  month: 2025-03
-  links:
-    arxiv: https://arxiv.org/abs/2503.22424v3
-- short_name: InfantAgent-Next
-  title: 'InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction'
-  authors: Bin Lei, Weitai Kang, Zijian Zhang, Winson Chen, Xi Xie, Shan Zuo, Mimi
-    Xie et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2505.10887
-  month: 2025-05
-  links:
-    arxiv: https://arxiv.org/abs/2505.10887
-- short_name: SWERank
-  title: 'SweRank: Software Issue Localization with Code Ranking'
-  authors: Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen,
-    Yingbo Zhou, Semih Yavuz et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2505.07849
-  month: 2025-05
-  links:
-    arxiv: https://arxiv.org/abs/2505.07849
+    arxiv: https://arxiv.org/abs/2510.18270
 - short_name: Nemotron-CORTEXA
   title: 'Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via
     Improved Localization and Solution Diversity'
@@ -149,6 +76,24 @@
   links:
     website: https://research.nvidia.com/labs/adlr/cortexa/
     openreview: https://openreview.net/forum?id=k6p8UKRdH7
+- short_name: Git Context Controller
+  title: 'Git Context Controller: Manage the Context of LLM-based Agents like Git'
+  authors: Junde Wu
+  year: '2025'
+  venue: arXiv preprint arXiv:2508.00031
+  month: 2025-08
+  links:
+    arxiv: https://arxiv.org/abs/2508.00031
+- short_name: Prometheus
+  title: 'Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual
+    Codebases'
+  authors: Zimin Chen, Yue Pan, Siyu Lu, Jiayi Xu, Claire Le Goues, Martin Monperrus,
+    He Ye
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.19942
+  month: 2025-07
+  links:
+    arxiv: https://arxiv.org/abs/2507.19942
 - short_name: SACL
   title: 'SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented
     Reranking and Localization'
@@ -193,79 +138,143 @@
   month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.15655
-- short_name: Prometheus
-  title: 'Prometheus: Unified Knowledge Graphs for Issue Resolution in Multilingual
-    Codebases'
-  authors: Zimin Chen, Yue Pan, Siyu Lu, Jiayi Xu, Claire Le Goues, Martin Monperrus,
-    He Ye
+- short_name: InfantAgent-Next
+  title: 'InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction'
+  authors: Bin Lei, Weitai Kang, Zijian Zhang, Winson Chen, Xi Xie, Shan Zuo, Mimi
+    Xie et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2507.19942
-  month: 2025-07
+  venue: arXiv preprint arXiv:2505.10887
+  month: 2025-05
   links:
-    arxiv: https://arxiv.org/abs/2507.19942
-- short_name: Git Context Controller
-  title: 'Git Context Controller: Manage the Context of LLM-based Agents like Git'
-  authors: Junde Wu
+    arxiv: https://arxiv.org/abs/2505.10887
+- short_name: SWERank
+  title: 'SweRank: Software Issue Localization with Code Ranking'
+  authors: Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen,
+    Yingbo Zhou, Semih Yavuz et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2508.00031
-  month: 2025-08
+  venue: arXiv preprint arXiv:2505.07849
+  month: 2025-05
   links:
-    arxiv: https://arxiv.org/abs/2508.00031
-- short_name: BugPilot
-  title: 'BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills'
-  authors: Atharv Sonwane, Isadora White, Hyunji Lee, Matheus Pereira, Lucas Caccia,
-    Minseon Kim, Zhengyan Shi et al.
+    arxiv: https://arxiv.org/abs/2505.07849
+- short_name: DARS
+  title: 'DARS: Dynamic Action Re-Sampling to Enhance Coding Agent Performance by
+    Adaptive Tree Traversal'
+  authors: Vaibhav Aggarwal, Ojasv Kamal, Abhinav Japesh, Zhijing Jin, Bernhard Schölkopf
   year: '2025'
-  venue: arXiv preprint arXiv:2510.19898
-  month: 2025-10
+  venue: arXiv preprint arXiv:2503.14269
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2510.19898
-- short_name: TestPrune
-  title: 'When Old Meets New: Evaluating the Impact of Regression Tests on SWE Issue
-    Resolution'
-  authors: Yang Chen, Toufique Ahmed, Reyhaneh Jabbarvand, Martin Hirzel
+    arxiv: https://arxiv.org/abs/2503.14269
+- short_name: Issue2Test
+  title: 'Issue2Test: Generating Reproducing Test Cases from Issue Reports'
+  authors: Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah
   year: '2025'
-  venue: arXiv preprint arXiv:2510.18270
-  month: 2025-10
+  venue: arXiv preprint arXiv:2503.16320
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2510.18270
-- short_name: InfCode
-  title: 'InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable
-    Software Issue Resolution'
-  authors: KeFan Li, Mengfei Wang, Hengzhi Zhang, Zhichao Li, Yuan Yuan, Mu Li, Xiang
-    Gao et al.
+    arxiv: https://arxiv.org/abs/2503.16320
+- short_name: KGCompass
+  title: Enhancing repository-level software repair via repository-aware knowledge
+    graphs
+  authors: Boyang Yang, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le, Haoye
+    Tian
   year: '2025'
-  venue: arXiv preprint arXiv:2511.16004
-  month: 2025-11
+  venue: arXiv preprint arXiv:2503.21710
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2511.16004
-- short_name: GraphLocator
-  title: 'GraphLocator: Graph-guided Causal Reasoning for Issue Localization'
-  authors: Wei Liu, Chao Peng, Pengfei Gao, Aofan Liu, Wei Zhang, Haiyan Zhao, Zhi
-    Jin
+    arxiv: https://arxiv.org/abs/2503.21710
+- short_name: CoSIL
+  title: Issue Localization via LLM-Driven Iterative Code Graph Searching
+  authors: Zhonghao Jiang, Xiaoxue Ren, Meng Yan, Wei Jiang, Yong Li, Zhongxin Liu
   year: '2025'
-  venue: arXiv preprint arXiv:2512.22469
-  month: 2025-12
+  venue: ASE 2025
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2512.22469
-- short_name: SWE-Tester
-  title: 'SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World
-    Repositories'
-  authors: Aditya Bharat Soni, Rajat Ghosh, Vaishnavi Bhargava, Valerie Chen, Debojyoti
-    Dutta
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.13713
-  month: 2026-01
+    arxiv: https://arxiv.org/abs/2503.22424v3
+- short_name: OrcaLoca
+  title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
+  authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
+    Jishen Zhao
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-02
   links:
-    arxiv: https://arxiv.org/abs/2601.13713
-- short_name: Closing the Loop
-  title: 'Closing the Loop: Universal Repository Representation with RPG-Encoder'
-  authors: Jane Luo, Chengyu Yin, Xin Zhang, Qingtao Li, Steven Liu, Yiming Huang,
-    Jie Wu, Hao Liu, Yangyu Huang, Yu Kang, Fangkai Yang, Ying Xin, Scarlett Li
-  year: '2026'
-  venue: arXiv preprint arXiv:2602.02084
-  month: 2026-02
+    arxiv: https://arxiv.org/abs/2502.00350v2
+    openreview: https://openreview.net/forum?id=LyUfPOvM6I
+- short_name: Otter
+  title: 'Otter: Generating Tests from Issues to Validate SWE Patches'
+  authors: Toufique Ahmed, Jatin Ganhotra, Rangeet Pan, Avraham Shinnar, Saurabh Sinha,
+    Martin Hirzel
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-02
   links:
-    arxiv: https://arxiv.org/abs/2602.02084
-    github: https://github.com/microsoft/RPG-ZeroRepo
-    website: https://ayanami2003.github.io/RPG-Encoder/
+    arxiv: https://arxiv.org/abs/2502.05368v2
+    openreview: https://openreview.net/forum?id=b0jYs6JOZu
+- short_name: Quadropic Insiders
+  title: 'Quadropic Insiders : Syntheo Tops Swelite Feb'
+  authors: Quadropic-Team
+  year: '2025'
+  venue: '-'
+  month: 2025-02
+  links:
+    website: https://insiders.quadropic.com/insiders/syntheo-tops-swelite-feb
+- short_name: CoRNStack
+  title: 'CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking'
+  authors: Tarun Suresh, Revanth Gangi Reddy, Yifei Xu, Zach Nussbaum, Andriy Mulyar,
+    Brandon Duderstadt, Heng Ji
+  year: '2024'
+  venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2024-12
+  links:
+    arxiv: https://arxiv.org/abs/2412.01007v3
+    openreview: https://openreview.net/forum?id=iyJOUELYir
+- short_name: AEGIS
+  title: 'AEGIS: An Agent-based Framework for General Bug Reproduction from Issue
+    Descriptions'
+  authors: Xinchen Wang, Pengfei Gao, Xiangxin Meng, Chao Peng, Ruida Hu, Yun Lin,
+    Cuiyun Gao
+  year: '2024'
+  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
+    Software Engineering 2025
+  month: 2024-11
+  links:
+    arxiv: https://arxiv.org/abs/2411.18015v1
+- short_name: RepoGraph
+  title: 'RepoGraph: Enhancing AI Software Engineering with Repository-level Code
+    Graph'
+  authors: Ouyang, Siru, Yu, Wenhao, Ma, Kaixin, Xiao, Zilin, Zhang, Zhihan, Jia,
+    Mengzhao, Han, Jiawei et al.
+  year: '2024'
+  venue: The Thirteenth International Conference on Learning Representations
+  month: 2024-10
+  links:
+    arxiv: https://arxiv.org/abs/2410.14684v2
+- short_name: SuperCoder2.0
+  title: 'SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as
+    Autonomous Programmer'
+  authors: Anmol Gautam, Kishore Kumar, Adarsh Jha, Mukunda NS, Ishaan Bhola
+  year: '2024'
+  venue: arXiv preprint arXiv:2409.11190
+  month: 2024-09
+  links:
+    arxiv: https://arxiv.org/abs/2409.11190
+- short_name: SpecRover
+  title: 'SpecRover: Code Intent Extraction via LLMs'
+  authors: Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury
+  year: '2024'
+  venue: ICSE 2025
+  month: 2024-08
+  links:
+    arxiv: https://arxiv.org/abs/2408.02232v4
+- short_name: Alibaba LingmaAgent
+  title: 'Alibaba LingmaAgent: Improving Automated Issue Resolution via Comprehensive
+    Repository Exploration'
+  authors: Ma, Yingwei, Yang, Qingping, Cao, Rongyu, Li, Binhua, Huang, Fei, Li, Yongbin
+  year: '2024'
+  venue: Proceedings of the 33rd ACM International Conference on the Foundations of
+    Software Engineering 2025
+  month: 2024-06
+  links:
+    arxiv: https://arxiv.org/abs/2406.01422v2
+    doi: http://dx.doi.org/10.1145/3696630.3728549

@@ -1,3 +1,37 @@
+- short_name: Agentic Rubrics
+  title: Agentic Rubrics as Contextual Verifiers for SWE Agents
+  authors: Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.04171
+  month: 2026-01
+  links:
+    arxiv: https://arxiv.org/abs/2601.04171
+    website: https://scale.com/research/agenticrubrics
+- short_name: SIADAFIX
+  title: 'SIADAFIX: issue description response for adaptive program repair'
+  authors: Xin Cao, Nan Yu
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.16059
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.16059
+- short_name: SWE-PRM
+  title: 'When Agents go Astray: Course-Correcting SWE Agents with PRMs'
+  authors: Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, Yara Rizk
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.02360
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.02360
+- short_name: ReasoningBank
+  title: 'CodeMonkeys: Scaling Test-Time Compute for Software Engineering'
+  authors: Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher
+    Ré, Azalia Mirhoseini
+  year: '2025'
+  venue: arXiv preprint arXiv:2501.14723
+  month: 2025-01
+  links:
+    arxiv: https://arxiv.org/abs/2501.14723
 - short_name: SWE-Search
   title: 'SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative
     Refinement'
@@ -9,37 +43,3 @@
   links:
     arxiv: https://arxiv.org/abs/2410.20285v6
     openreview: https://openreview.net/forum?id=G7sIFXugTX
-- short_name: ReasoningBank
-  title: 'CodeMonkeys: Scaling Test-Time Compute for Software Engineering'
-  authors: Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher
-    Ré, Azalia Mirhoseini
-  year: '2025'
-  venue: arXiv preprint arXiv:2501.14723
-  month: 2025-01
-  links:
-    arxiv: https://arxiv.org/abs/2501.14723
-- short_name: SWE-PRM
-  title: 'When Agents go Astray: Course-Correcting SWE Agents with PRMs'
-  authors: Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, Yara Rizk
-  year: '2025'
-  venue: arXiv preprint arXiv:2509.02360
-  month: 2025-09
-  links:
-    arxiv: https://arxiv.org/abs/2509.02360
-- short_name: SIADAFIX
-  title: 'SIADAFIX: issue description response for adaptive program repair'
-  authors: Xin Cao, Nan Yu
-  year: '2025'
-  venue: arXiv preprint arXiv:2510.16059
-  month: 2025-10
-  links:
-    arxiv: https://arxiv.org/abs/2510.16059
-- short_name: Agentic Rubrics
-  title: Agentic Rubrics as Contextual Verifiers for SWE Agents
-  authors: Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.04171
-  month: 2026-01
-  links:
-    arxiv: https://arxiv.org/abs/2601.04171
-    website: https://scale.com/research/agenticrubrics

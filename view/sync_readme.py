@@ -343,39 +343,34 @@ def generate_tables_section() -> str:
 
 def generate_usage_section() -> str:
     """Generate usage instructions section."""
-    content = ["\n## 🚀 Quick Start\n"]
-    
-    content.append("""
-**Windows:**
-```cmd
-run.bat
-```
+    return """\n## 🚀 Quick Start
 
-**Linux/Mac:**
 ```bash
-chmod +x run.sh
-./run.sh
+# First time: install dependencies
+pip install flask flask-cors sqlalchemy pyyaml requests
+
+# Full update + start admin server
+# (refreshes news, re-renders README/docs, builds static site, then serves)
+python start.py
+
+# Or force re-import from YAML/CSV first
+python start.py --init
 ```
 
-**Options:**
-- `[1]` Add Paper - Interactive paper entry with duplicate check
-- `[2]` Add Table - Update statistical tables
-- `[3]` Batch Import - Import papers from CSV template
-- `[4]` Sync & Build - Render website and sync README
+Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 
-**Manual operations:**
-```bash
-# Local preview
-mkdocs serve
-
-# Deploy (or push to GitHub for auto-deploy via Actions)
-mkdocs gh-deploy
-```
+| Command | Description |
+|---------|-------------|
+| `python start.py` | Full update (news + render + build) then start server |
+| `python start.py --init` | Re-import from YAML/CSV, then full update + start |
+| `python start.py --no-update` | Start server without running update steps |
+| `python start.py --port 8080` | Use a custom port |
+| `python start.py --news` | Refresh This Month's Papers only and exit |
+| `python start.py --render` | Re-render README/docs from DB only and exit |
+| `python start.py --build` | Build static site (mkdocs) only and exit |
 
 ---
-""")
-    
-    return "\n".join(content)
+"""
 
 
 def update_readme() -> bool:

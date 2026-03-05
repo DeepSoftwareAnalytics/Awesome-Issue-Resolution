@@ -14,67 +14,73 @@ from models import Paper, Dataset, TrainingDataset, SFTMethod, RLMethod, Foundat
 
 
 def export_papers_to_yaml():
-    """Export paper data to YAML files"""
+    """Export paper data to YAML files.
+
+    Papers with multi-label categories (e.g. "sft, training_datasets") are
+    written into EVERY matching single-category YAML file so that sync_readme.py
+    picks them up correctly.
+    """
     session = get_session()
 
-    # Group by category
-    categories = {}
+    # Collect papers per individual (single) category
+    categories: dict = {}
     papers = session.query(Paper).all()
 
     for paper in papers:
-        if paper.category not in categories:
-            categories[paper.category] = []
-
         paper_data = {
             'short_name': paper.short_name,
             'title': paper.title,
             'authors': paper.authors,
             'year': paper.year,
-            'venue': paper.venue
+            'venue': paper.venue,
         }
 
         if paper.month:
             paper_data['month'] = paper.month
-
         if paper.abstract:
             paper_data['abstract'] = paper.abstract
 
-        # Add links
+        # Build links dict
         links = {}
-        if paper.arxiv_link:
-            links['arxiv'] = paper.arxiv_link
-        if paper.github_link:
-            links['github'] = paper.github_link
-        if paper.huggingface_link:
-            links['huggingface'] = paper.huggingface_link
-        if paper.website_link:
-            links['website'] = paper.website_link
-        if paper.doi_link:
-            links['doi'] = paper.doi_link
-        if paper.openreview_link:
-            links['openreview'] = paper.openreview_link
-
+        if paper.arxiv_link:      links['arxiv']       = paper.arxiv_link
+        if paper.github_link:     links['github']      = paper.github_link
+        if paper.huggingface_link:links['huggingface'] = paper.huggingface_link
+        if paper.website_link:    links['website']     = paper.website_link
+        if paper.doi_link:        links['doi']         = paper.doi_link
+        if paper.openreview_link: links['openreview']  = paper.openreview_link
         if links:
             paper_data['links'] = links
 
-        categories[paper.category].append(paper_data)
+        # Split comma-separated multi-label categories and add to each
+        raw_cats = paper.category or ''
+        single_cats = [c.strip() for c in raw_cats.split(',') if c.strip()]
+        if not single_cats:
+            single_cats = ['uncategorized']
 
-    # Save to files
+        for cat in single_cats:
+            categories.setdefault(cat, []).append(paper_data)
+
+    # Save one YAML file per individual category
     data_dir = Path('data')
     for category, papers_list in categories.items():
+        # Sort by month descending so YAML files are newest-first
+        papers_list.sort(key=lambda p: p.get('month', '') or '', reverse=True)
         file_path = data_dir / f'papers_{category}.yaml'
         with open(file_path, 'w', encoding='utf-8') as f:
-            yaml.dump(papers_list, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+            yaml.dump(papers_list, f, allow_unicode=True, sort_keys=False,
+                      default_flow_style=False)
 
+    session.close()
     return len(papers)
 
 
 def export_datasets_to_csv():
-    """Export datasets to CSV"""
+    """Export datasets to CSV (writes to data/export/, NOT data/tables/ which is the LaTeX source of truth)"""
     session = get_session()
     datasets = session.query(Dataset).order_by(Dataset.category, Dataset.id).all()
 
-    csv_file = Path('data/tables/table1.csv')
+    Path('data/export').mkdir(parents=True, exist_ok=True)
+    csv_file = Path('data/export/table1.csv')
 
     with open(csv_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
@@ -134,11 +140,12 @@ def export_datasets_to_csv():
 
 
 def export_training_datasets_to_csv():
-    """Export training datasets to CSV"""
+    """Export training datasets to CSV (writes to data/export/, NOT data/tables/ which is the LaTeX source of truth)"""
     session = get_session()
     datasets = session.query(TrainingDataset).all()
 
-    csv_file = Path('data/tables/table2.csv')
+    Path('data/export').mkdir(parents=True, exist_ok=True)
+    csv_file = Path('data/export/table2.csv')
 
     with open(csv_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
@@ -165,11 +172,12 @@ def export_training_datasets_to_csv():
 
 
 def export_sft_methods_to_csv():
-    """Export SFT methods to CSV"""
+    """Export SFT methods to CSV (writes to data/export/, NOT data/tables/ which is the LaTeX source of truth)"""
     session = get_session()
     methods = session.query(SFTMethod).order_by(SFTMethod.resolution_percent.desc()).all()
 
-    csv_file = Path('data/tables/table3.csv')
+    Path('data/export').mkdir(parents=True, exist_ok=True)
+    csv_file = Path('data/export/table3.csv')
 
     with open(csv_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
@@ -196,11 +204,12 @@ def export_sft_methods_to_csv():
 
 
 def export_rl_methods_to_csv():
-    """Export RL methods to CSV"""
+    """Export RL methods to CSV (writes to data/export/, NOT data/tables/ which is the LaTeX source of truth)"""
     session = get_session()
     methods = session.query(RLMethod).order_by(RLMethod.resolution_percent.desc()).all()
 
-    csv_file = Path('data/tables/table4.csv')
+    Path('data/export').mkdir(parents=True, exist_ok=True)
+    csv_file = Path('data/export/table4.csv')
 
     with open(csv_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
@@ -240,11 +249,12 @@ def export_rl_methods_to_csv():
 
 
 def export_foundation_models_to_csv():
-    """Export foundation models to CSV"""
+    """Export foundation models to CSV (writes to data/export/, NOT data/tables/ which is the LaTeX source of truth)"""
     session = get_session()
     models = session.query(FoundationModel).order_by(FoundationModel.resolution_percent.desc()).all()
 
-    csv_file = Path('data/tables/table5.csv')
+    Path('data/export').mkdir(parents=True, exist_ok=True)
+    csv_file = Path('data/export/table5.csv')
 
     with open(csv_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)

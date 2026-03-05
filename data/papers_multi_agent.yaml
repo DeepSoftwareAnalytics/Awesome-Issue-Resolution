@@ -1,42 +1,29 @@
-- short_name: MAGIS
-  title: 'MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution'
-  authors: Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng
-  year: '2024'
-  venue: The Thirty-eighth Annual Conference on Neural Information Processing Systems
-    2024
-  month: 2024-03
+- short_name: SWE-Adept
+  title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and
+    Structured Issue Resolution'
+  authors: Kang He, Kaushik Roy
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.01327
+  month: 2026-03
   links:
-    arxiv: https://arxiv.org/abs/2403.17927v2
-    openreview: https://openreview.net/forum?id=qevq3FZ63J
-- short_name: AutoCodeRover
-  title: 'AutoCodeRover: Autonomous Program Improvement'
-  authors: Zhang, Yuntong, Ruan, Haifeng, Fan, Zhiyu, Roychoudhury, Abhik
-  year: '2024'
-  venue: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing
-    and Analysis 2024
-  month: 2024-04
+    arxiv: https://arxiv.org/abs/2603.01327
+- short_name: Meta-RAG
+  title: Meta-RAG on Large Codebases Using Code Summarization
+  authors: Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso
+  year: '2025'
+  venue: arXiv preprint arXiv:2508.02611
+  month: 2025-08
   links:
-    arxiv: https://arxiv.org/abs/2404.05427v3
-    doi: http://dx.doi.org/10.1145/3650212.3680384
-- short_name: CodeR
-  title: 'CodeR: Issue Resolving with Multi-Agent and Task Graphs'
-  authors: Dong Chen, Shaoxin Lin, Muhan Zeng, Daoguang Zan, Jian-Gang Wang, Anton
-    Cheshkov, Jun Sun et al.
-  year: '2024'
-  venue: arXiv preprint arXiv:2406.01304
-  month: 2024-06
+    arxiv: https://arxiv.org/abs/2508.02611
+- short_name: SWE-Debate
+  title: 'SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution'
+  authors: Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao
+    Jia et al.
+  year: '2025'
+  venue: ICSE 2026
+  month: 2025-07
   links:
-    arxiv: https://arxiv.org/abs/2406.01304
-- short_name: OpenHands
-  title: 'OpenHands: An Open Platform for AI Software Developers as Generalist Agents'
-  authors: Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen
-    Zhuge, Jiayi Pan et al.
-  year: '2024'
-  venue: The Thirteenth International Conference on Learning Representations 2025
-  month: 2024-07
-  links:
-    arxiv: https://arxiv.org/abs/2407.16741v3
-    openreview: https://openreview.net/forum?id=OJd3ayDDoF
+    arxiv: https://arxiv.org/abs/2507.23348v1
 - short_name: AgentScope
   title: SWE-Bench - AgentScope
   authors: Wenhao Zhang, Yuexiang Xie amd Dawei Gao, Xuchen Pan, Yaliang Li, Bolin
@@ -46,44 +33,6 @@
   month: 2025-06
   links:
     website: https://doc.agentscope.io/v0/en/tutorial/swe.html
-- short_name: OrcaLora
-  title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
-  authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
-    Jishen Zhao
-  year: '2025'
-  venue: Forty-second International Conference on Machine Learning 2025
-  month: 2025-02
-  links:
-    arxiv: https://arxiv.org/abs/2502.00350v2
-    openreview: https://openreview.net/forum?id=LyUfPOvM6I
-- short_name: DEI
-  title: 'Diversity Empowers Intelligence: Integrating Expertise of Software Engineering
-    Agents'
-  authors: Kexun Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh R N,
-    Tian Lan et al.
-  year: '2024'
-  venue: The Thirteenth International Conference on Learning Representations 2025
-  month: 2024-08
-  links:
-    arxiv: https://arxiv.org/abs/2408.07060v1
-    openreview: https://openreview.net/forum?id=cKlzKs3Nnb
-- short_name: MarsCode Agent
-  title: 'MarsCode Agent: AI-native Automated Bug Fixing'
-  authors: Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang,
-    Chao Peng
-  year: '2024'
-  venue: arXiv preprint arXiv:2409.00899
-  month: 2024-09
-  links:
-    arxiv: https://arxiv.org/abs/2409.00899
-- short_name: Lingxi
-  title: Lingxi/docs/Lingxi Technical Report 2505.pdf at master · lingxi-agent/Lingxi
-  authors: Xu Yang
-  year: '2025'
-  venue: '-'
-  month: 2025-03
-  links:
-    github: https://github.com/lingxi-agent/Lingxi/blob/master/docs/Lingxi%20Technical%20Report%202505.pdf
 - short_name: Devlo
   title: Achieving SOTA on SWE-bench
   authors: Devlo
@@ -100,6 +49,41 @@
   month: 2025-05
   links:
     website: https://refact.ai/blog/2025/open-source-sota-on-swe-bench-verified-refact-ai/
+- short_name: Lingxi
+  title: Lingxi/docs/Lingxi Technical Report 2505.pdf at master · lingxi-agent/Lingxi
+  authors: Xu Yang
+  year: '2025'
+  venue: '-'
+  month: 2025-03
+  links:
+    github: https://github.com/lingxi-agent/Lingxi/blob/master/docs/Lingxi%20Technical%20Report%202505.pdf
+- short_name: OrcaLora
+  title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
+  authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
+    Jishen Zhao
+  year: '2025'
+  venue: Forty-second International Conference on Machine Learning 2025
+  month: 2025-02
+  links:
+    arxiv: https://arxiv.org/abs/2502.00350v2
+    openreview: https://openreview.net/forum?id=LyUfPOvM6I
+- short_name: CodeCoR
+  title: 'CodeCoR: An LLM-Based Self-Reflective Multi-Agent Framework for Code Generation'
+  authors: Ruwei Pan, Hongyu Zhang, Chao Liu
+  year: '2025'
+  venue: arXiv preprint arXiv:2501.07811
+  month: 2025-01
+  links:
+    arxiv: https://arxiv.org/abs/2501.07811
+- short_name: MarsCode Agent
+  title: 'MarsCode Agent: AI-native Automated Bug Fixing'
+  authors: Yizhou Liu, Pengfei Gao, Xinchen Wang, Jie Liu, Yexuan Shi, Zhao Zhang,
+    Chao Peng
+  year: '2024'
+  venue: arXiv preprint arXiv:2409.00899
+  month: 2024-09
+  links:
+    arxiv: https://arxiv.org/abs/2409.00899
 - short_name: HyperAgent
   title: 'HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks
     at Scale'
@@ -109,28 +93,53 @@
   month: 2024-09
   links:
     arxiv: https://arxiv.org/abs/2409.16299
-- short_name: CodeCoR
-  title: 'CodeCoR: An LLM-Based Self-Reflective Multi-Agent Framework for Code Generation'
-  authors: Ruwei Pan, Hongyu Zhang, Chao Liu
-  year: '2025'
-  venue: arXiv preprint arXiv:2501.07811
-  month: 2025-01
+- short_name: DEI
+  title: 'Diversity Empowers Intelligence: Integrating Expertise of Software Engineering
+    Agents'
+  authors: Kexun Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh R N,
+    Tian Lan et al.
+  year: '2024'
+  venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2024-08
   links:
-    arxiv: https://arxiv.org/abs/2501.07811
-- short_name: SWE-Debate
-  title: 'SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution'
-  authors: Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng Lian, Xin Wang, Yantao
-    Jia et al.
-  year: '2025'
-  venue: ICSE 2026
-  month: 2025-07
+    arxiv: https://arxiv.org/abs/2408.07060v1
+    openreview: https://openreview.net/forum?id=cKlzKs3Nnb
+- short_name: OpenHands
+  title: 'OpenHands: An Open Platform for AI Software Developers as Generalist Agents'
+  authors: Xingyao Wang, Boxuan Li, Yufan Song, Frank F. Xu, Xiangru Tang, Mingchen
+    Zhuge, Jiayi Pan et al.
+  year: '2024'
+  venue: The Thirteenth International Conference on Learning Representations 2025
+  month: 2024-07
   links:
-    arxiv: https://arxiv.org/abs/2507.23348v1
-- short_name: Meta-RAG
-  title: Meta-RAG on Large Codebases Using Code Summarization
-  authors: Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso
-  year: '2025'
-  venue: arXiv preprint arXiv:2508.02611
-  month: 2025-08
+    arxiv: https://arxiv.org/abs/2407.16741v3
+    openreview: https://openreview.net/forum?id=OJd3ayDDoF
+- short_name: CodeR
+  title: 'CodeR: Issue Resolving with Multi-Agent and Task Graphs'
+  authors: Dong Chen, Shaoxin Lin, Muhan Zeng, Daoguang Zan, Jian-Gang Wang, Anton
+    Cheshkov, Jun Sun et al.
+  year: '2024'
+  venue: arXiv preprint arXiv:2406.01304
+  month: 2024-06
   links:
-    arxiv: https://arxiv.org/abs/2508.02611
+    arxiv: https://arxiv.org/abs/2406.01304
+- short_name: AutoCodeRover
+  title: 'AutoCodeRover: Autonomous Program Improvement'
+  authors: Zhang, Yuntong, Ruan, Haifeng, Fan, Zhiyu, Roychoudhury, Abhik
+  year: '2024'
+  venue: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing
+    and Analysis 2024
+  month: 2024-04
+  links:
+    arxiv: https://arxiv.org/abs/2404.05427v3
+    doi: http://dx.doi.org/10.1145/3650212.3680384
+- short_name: MAGIS
+  title: 'MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution'
+  authors: Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, Yu Cheng
+  year: '2024'
+  venue: The Thirty-eighth Annual Conference on Neural Information Processing Systems
+    2024
+  month: 2024-03
+  links:
+    arxiv: https://arxiv.org/abs/2403.17927v2
+    openreview: https://openreview.net/forum?id=qevq3FZ63J

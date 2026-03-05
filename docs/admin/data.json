@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-04",
+  "generated": "2026-03-05",
   "stats": {
     "total": 196,
     "data": 48,
@@ -36,7 +36,7 @@
     },
     {
       "id": 195,
-      "short_name": "Immersion in the GitHub Universe",
+      "short_name": "Scale-SWE",
       "title": "Immersion in the GitHub Universe: Scaling Coding Agents to Mastery",
       "authors": "Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai Sun, Xin Zhao, Ruihua Song, Yuan Zhang, Peng Wang, Cheng Chen, Jirong Wen, Kai Jia",
       "venue": "arXiv preprint arXiv:2602.09892",

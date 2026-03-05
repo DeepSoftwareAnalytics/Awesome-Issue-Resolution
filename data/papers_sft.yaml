@@ -1,60 +1,60 @@
-- short_name: Lingma SWE-GPT
-  title: 'SWE-GPT: A Process-Centric Language Model for Automated Software Improvement'
-  authors: Ma, Yingwei, Cao, Rongyu, Cao, Yongchang, Zhang, Yue, Chen, Jue, Liu, Yibo,
-    Liu, Yuchen et al.
-  year: '2024'
-  venue: Proceedings of the ACM on Software Engineering 2025
-  month: 2024-11
+- short_name: Scale-SWE
+  title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
+  authors: Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai
+    Sun, Xin Zhao, Ruihua Song, Yuan Zhang, Peng Wang, Cheng Chen, Jirong Wen, Kai
+    Jia
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.09892
+  month: 2026-02
   links:
-    arxiv: https://arxiv.org/abs/2411.00622
-    github: https://github.com/LingmaTongyi/Lingma-SWE-GPT
-    doi: https://dl.acm.org/doi/abs/10.1145/3728981
-- short_name: ReSAT
-  title: Repository Structure-Aware Training Makes SLMs Better Issue Resolver
-  authors: Zexiong Ma, Shengnan An, Zeqi Lin, Yanzhen Zou, Bing Xie
-  year: '2024'
-  venue: arXiv preprint arXiv:2412.19031
-  month: 2024-12
+    arxiv: https://arxiv.org/abs/2602.09892
+    github: https://github.com/AweAI-Team/ScaleSWE
+    huggingface: https://huggingface.co/collections/AweAI-Team/scale-swe
+- short_name: SWE-Lego
+  title: 'SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue
+    Resolving'
+  authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, Shaowei Wang, Ruoyu Wang,
+    Xiaohui Li et al.
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.01426
+  month: 2026-01
   links:
-    arxiv: https://arxiv.org/abs/2412.19031
-- short_name: Scaling data collection
-  title: Scaling Data Collection for Training SWE Agents
-  authors: Nebius
-  year: '2024'
-  venue: '2024'
-  month: 2024-12
+    arxiv: https://arxiv.org/abs/2601.01426
+- short_name: SWE-Replay
+  title: 'SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents'
+  authors: Yifeng Ding, Lingming Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.22129
+  month: 2026-01
   links:
-    website: https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents
-- short_name: CodeXEmbed
-  title: 'CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task
-    Code Retrieval'
-  authors: Ye Liu, Rui Meng, Shafiq Joty, silvio savarese, Caiming Xiong, Yingbo Zhou,
-    Semih Yavuz
-  year: '2024'
-  venue: Second Conference on Language Modeling 2025
-  month: 2024-11
-  links:
-    arxiv: https://arxiv.org/abs/2411.12644
-    openreview: https://openreview.net/forum?id=z3lG70Azbg
-- short_name: SWE-Gym
-  title: Training Software Engineering Agents and Verifiers with SWE-Gym
-  authors: Pan, Jiayi, Wang, Xingyao, Neubig, Graham, Jaitly, Navdeep, Ji, Heng, Suhr,
-    Alane, Zhang, Yizhe
-  year: '2024'
-  venue: Forty-second International Conference on Machine Learning
-  month: 2024-12
-  links:
-    arxiv: https://arxiv.org/abs/2412.21139v2
-- short_name: Thinking Longer
-  title: 'Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling
-    Test-Time Compute'
-  authors: Yingwei Ma, Yongbin Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei
-    Huang et al.
+    arxiv: https://arxiv.org/abs/2601.22129
+- short_name: SWE-Compressor
+  title: 'Context as a Tool: Context Management for Long-Horizon SWE-Agents'
+  authors: Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu,
+    Bryan Dai
   year: '2025'
-  venue: arXiv preprint arXiv:2503.23803
-  month: 2025-03
+  venue: arXiv preprint arXiv:2512.22087
+  month: 2025-12
   links:
-    arxiv: https://arxiv.org/abs/2503.23803
+    arxiv: https://arxiv.org/abs/2512.22087
+- short_name: Devstral
+  title: 'Devstral: Fine-tuning Language Models for Coding Agent Applications'
+  authors: Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexander H. Liu, Alexandre
+    Sablayrolles, Amélie Héliou, Amélie Martin et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.25193
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.25193
+- short_name: MCTS-Refined CoT
+  title: 'MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository
+    Issue Resolution'
+  authors: Yibo Wang, Zhihao Peng, Ying Wang, Zhao Wei, Hai Yu, Zhiliang Zhu
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.12728
+  month: 2025-06
+  links:
+    arxiv: https://arxiv.org/abs/2506.12728
 - short_name: Search for training
   title: Guided Search Strategies in Non-Serializable Environments with Applications
     to Software Engineering Agents
@@ -75,43 +75,6 @@
   month: 2025-05
   links:
     arxiv: https://arxiv.org/abs/2505.18955
-- short_name: MCTS-Refined CoT
-  title: 'MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository
-    Issue Resolution'
-  authors: Yibo Wang, Zhihao Peng, Ying Wang, Zhao Wei, Hai Yu, Zhiliang Zhu
-  year: '2025'
-  venue: arXiv preprint arXiv:2506.12728
-  month: 2025-06
-  links:
-    arxiv: https://arxiv.org/abs/2506.12728
-- short_name: Devstral
-  title: 'Devstral: Fine-tuning Language Models for Coding Agent Applications'
-  authors: Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexander H. Liu, Alexandre
-    Sablayrolles, Amélie Héliou, Amélie Martin et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2509.25193
-  month: 2025-09
-  links:
-    arxiv: https://arxiv.org/abs/2509.25193
-- short_name: SWE-Compressor
-  title: 'Context as a Tool: Context Management for Long-Horizon SWE-Agents'
-  authors: Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu,
-    Bryan Dai
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.22087
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.22087
-- short_name: SWE-Lego
-  title: 'SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue
-    Resolving'
-  authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, Shaowei Wang, Ruoyu Wang,
-    Xiaohui Li et al.
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.01426
-  month: 2026-01
-  links:
-    arxiv: https://arxiv.org/abs/2601.01426
 - short_name: CGM
   title: 'Code Graph Model (CGM): A Graph-Integrated Large Language Model for Repository-Level
     Software Engineering Tasks'
@@ -125,11 +88,60 @@
     arxiv: https://arxiv.org/abs/2505.16901
     github: https://github.com/codefuse-ai/CodeFuse-CGM
     huggingface: https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B
-- short_name: SWE-Replay
-  title: 'SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents'
-  authors: Yifeng Ding, Lingming Zhang
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.22129
-  month: 2026-01
+- short_name: Thinking Longer
+  title: 'Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling
+    Test-Time Compute'
+  authors: Yingwei Ma, Yongbin Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei
+    Huang et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.23803
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2601.22129
+    arxiv: https://arxiv.org/abs/2503.23803
+- short_name: ReSAT
+  title: Repository Structure-Aware Training Makes SLMs Better Issue Resolver
+  authors: Zexiong Ma, Shengnan An, Zeqi Lin, Yanzhen Zou, Bing Xie
+  year: '2024'
+  venue: arXiv preprint arXiv:2412.19031
+  month: 2024-12
+  links:
+    arxiv: https://arxiv.org/abs/2412.19031
+- short_name: Scaling data collection
+  title: Scaling Data Collection for Training SWE Agents
+  authors: Nebius
+  year: '2024'
+  venue: '2024'
+  month: 2024-12
+  links:
+    website: https://nebius.com/blog/posts/scaling-data-collection-for-training-swe-agents
+- short_name: SWE-Gym
+  title: Training Software Engineering Agents and Verifiers with SWE-Gym
+  authors: Pan, Jiayi, Wang, Xingyao, Neubig, Graham, Jaitly, Navdeep, Ji, Heng, Suhr,
+    Alane, Zhang, Yizhe
+  year: '2024'
+  venue: Forty-second International Conference on Machine Learning
+  month: 2024-12
+  links:
+    arxiv: https://arxiv.org/abs/2412.21139v2
+- short_name: Lingma SWE-GPT
+  title: 'SWE-GPT: A Process-Centric Language Model for Automated Software Improvement'
+  authors: Ma, Yingwei, Cao, Rongyu, Cao, Yongchang, Zhang, Yue, Chen, Jue, Liu, Yibo,
+    Liu, Yuchen et al.
+  year: '2024'
+  venue: Proceedings of the ACM on Software Engineering 2025
+  month: 2024-11
+  links:
+    arxiv: https://arxiv.org/abs/2411.00622
+    github: https://github.com/LingmaTongyi/Lingma-SWE-GPT
+    doi: https://dl.acm.org/doi/abs/10.1145/3728981
+- short_name: CodeXEmbed
+  title: 'CodeXEmbed: A Generalist Embedding Model Family for Multilingual and Multi-task
+    Code Retrieval'
+  authors: Ye Liu, Rui Meng, Shafiq Joty, silvio savarese, Caiming Xiong, Yingbo Zhou,
+    Semih Yavuz
+  year: '2024'
+  venue: Second Conference on Language Modeling 2025
+  month: 2024-11
+  links:
+    arxiv: https://arxiv.org/abs/2411.12644
+    openreview: https://openreview.net/forum?id=z3lG70Azbg

@@ -1,19 +1,30 @@
-- short_name: SWE-bench Verified
-  title: Introducing SWE-bench Verified | OpenAI
-  authors: OpenAI
-  year: '2024'
-  venue: '-'
-  month: 2024-08
-  links:
-    website: https://openai.com/index/introducing-swe-bench-verified/
-- short_name: Patch Correctness
-  title: Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study
-  authors: You Wang, Michael Pradel, Zhongxin Liu
+- short_name: Data contamination
+  title: Does SWE-Bench-Verified Test Agent Ability or Model Memory?
+  authors: Thanosan Prathifkumar, Noble Saji Mathews, Meiyappan Nagappan
   year: '2025'
-  venue: arXiv preprint arXiv:2503.15223
-  month: 2025-03
+  venue: arXiv preprint arXiv:2512.10218
+  month: 2025-12
   links:
-    arxiv: https://arxiv.org/abs/2503.15223
+    arxiv: https://arxiv.org/abs/2512.10218
+- short_name: Rigorous agentic benchmarks
+  title: Establishing Best Practices for Building Rigorous Agentic Benchmarks
+  authors: Yuxuan Zhu, Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha
+    Cui, Sayash Kapoor et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.02825
+  month: 2025-07
+  links:
+    arxiv: https://arxiv.org/abs/2507.02825
+- short_name: SPICE
+  title: "SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity,\n   \
+    \            Test Coverage, and Effort Estimation"
+  authors: Gustavo A. Oliva, Gopi Krishnan Rajbahadur, Aaditya Bhatia, Haoxiang Zhang,
+    Yihao Chen, Zhilong Chen, Arthur Leung et al.
+  year: '2025'
+  venue: ASE 2025
+  month: 2025-07
+  links:
+    arxiv: https://arxiv.org/abs/2507.09108v5
 - short_name: UTBoost
   title: 'UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench'
   authors: Boxi Yu, Yuxuan Zhu, Pinjia He, Daniel Kang
@@ -30,15 +41,6 @@
   month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.17812
-- short_name: Rigorous agentic benchmarks
-  title: Establishing Best Practices for Building Rigorous Agentic Benchmarks
-  authors: Yuxuan Zhu, Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha
-    Cui, Sayash Kapoor et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2507.02825
-  month: 2025-07
-  links:
-    arxiv: https://arxiv.org/abs/2507.02825
 - short_name: The SWE-Bench Illusion
   title: 'The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason'
   authors: Shanchao Liang, Spandan Garg, Roshanak Zilouchian Moghaddam
@@ -57,21 +59,19 @@
   month: 2025-04
   links:
     doi: http://dx.doi.org/10.1109/ICSE-Companion66252.2025.00075
-- short_name: SPICE
-  title: "SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity,\n   \
-    \            Test Coverage, and Effort Estimation"
-  authors: Gustavo A. Oliva, Gopi Krishnan Rajbahadur, Aaditya Bhatia, Haoxiang Zhang,
-    Yihao Chen, Zhilong Chen, Arthur Leung et al.
+- short_name: Patch Correctness
+  title: Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study
+  authors: You Wang, Michael Pradel, Zhongxin Liu
   year: '2025'
-  venue: ASE 2025
-  month: 2025-07
+  venue: arXiv preprint arXiv:2503.15223
+  month: 2025-03
   links:
-    arxiv: https://arxiv.org/abs/2507.09108v5
-- short_name: Data contamination
-  title: Does SWE-Bench-Verified Test Agent Ability or Model Memory?
-  authors: Thanosan Prathifkumar, Noble Saji Mathews, Meiyappan Nagappan
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.10218
-  month: 2025-12
+    arxiv: https://arxiv.org/abs/2503.15223
+- short_name: SWE-bench Verified
+  title: Introducing SWE-bench Verified | OpenAI
+  authors: OpenAI
+  year: '2024'
+  venue: '-'
+  month: 2024-08
   links:
-    arxiv: https://arxiv.org/abs/2512.10218
+    website: https://openai.com/index/introducing-swe-bench-verified/

@@ -1,82 +1,202 @@
-- short_name: SWE-RL
-  title: 'SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software
-    Evolution'
-  authors: Yuxiang Wei, Olivier Duchenne, Jade Copet, Quentin Carbonneaux, LINGMING
-    ZHANG, Daniel Fried, Gabriel Synnaeve et al.
-  year: '2025'
-  venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
-    2025
-  month: 2025-02
+- short_name: SWE-Master
+  title: 'SWE-Master: Unleashing the Potential of Software Engineering Agents via
+    Post-Training'
+  authors: Huatong Song, Lisheng Huang, Shuang Sun, Jinhao Jiang, Ran Le, Daixuan
+    Cheng, Guoxin Chen, Yiwen Hu, Zongchao Chen, Wayne Xin Zhao, Yang Song, Tao Zhang,
+    Ji-Rong Wen
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.03411
+  month: 2026-02
   links:
-    arxiv: https://arxiv.org/abs/2502.18449v2
-    openreview: https://openreview.net/forum?id=ULblO61XZ0
-- short_name: SoRFT
-  title: 'SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning'
-  authors: Zexiong Ma, Chao Peng, Pengfei Gao, Xiangxin Meng, Yanzhen Zou, Bing Xie
-  year: '2025'
-  venue: "Proceedings of the 63rd Annual Meeting of the Association for Computational\n\
-    \                  Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria,\n\
-    \                  July 27 - August 1, 2025 2025"
-  month: 2025-02
+    arxiv: https://arxiv.org/abs/2602.03411
+    github: https://github.com/RUCAIBox/SWE-Master
+- short_name: SWE-Protégé
+  title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks
+    Small Language Models as Software Engineering Agents'
+  authors: Patrick Tser Jern Kon, Archana Pradeep, Ang Chen, Alexander P. Ellis, Warren
+    Hunt, Zijian Wang, John Yang, Samuel Thompson
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.22124
+  month: 2026-02
   links:
-    arxiv: https://arxiv.org/abs/2502.20127v1
-- short_name: SEAlign
-  title: 'SEAlign: Alignment Training for Software Engineering Agent'
-  authors: Kechi Zhang, Huangzhao Zhang, Ge Li, Jinliang You, Jia Li, Yunfei Zhao,
-    Zhi Jin
-  year: '2025'
-  venue: ICSE 2026
-  month: 2025-03
+    arxiv: https://arxiv.org/abs/2602.22124
+- short_name: SWE-MiniSandbox
+  title: 'SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software
+    Engineering Agents'
+  authors: Danlong Yuan, Wei Wu, Zhengren Wang, Xueliang Zhao, Huishuai Zhang, Dongyan
+    Zhao
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.11210
+  month: 2026-02
   links:
-    arxiv: https://arxiv.org/abs/2503.18455
-    doi: https://conf.researchr.org/details/icse-2026/icse-2026-research-track/46/SEAlign-Alignment-Training-for-Software-Engineering-Agent
-- short_name: SWE-Dev1
-  title: 'SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development'
-  authors: Yaxin Du, Yuzhu Cai, Yifan Zhou, Cheng Wang, Yu Qian, Xianghe Pang, Qian
-    Liu et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2505.16975
-  month: 2025-05
+    arxiv: https://arxiv.org/abs/2602.11210v1
+    github: http://github.com/lblankl/SWE-MiniSandbox
+- short_name: MiMo-V2-Flash
+  title: MiMo-V2-Flash Technical Report
+  authors: Xiaomi-LLM-Core-Team, Bangjun Xiao, Bingquan Xia, Bo Yang, Bofei Gao, Bowen
+    Shen, Chen Zhang et al.
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.02780
+  month: 2026-01
   links:
-    arxiv: https://arxiv.org/abs/2505.16975
-- short_name: Satori-SWE
-  title: 'Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software
-    Engineering'
-  authors: Guangtao Zeng, Maohao Shen, Delin Chen, Zhenting Qi, Subhro Das, Dan Gutfreund,
-    David Cox et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2505.23604
-  month: 2025-05
+    arxiv: https://arxiv.org/abs/2601.02780
+- short_name: SWE-Manager
+  title: 'SWE-Manager: Selecting and Synthesizing Golden Proposals Before Coding'
+  authors: Boyin Tan, Haoning Deng, Junyuan Zhang, Junjielong Xu, Pinjia He, Youcheng
+    Sun
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.22956
+  month: 2026-01
   links:
-    arxiv: https://arxiv.org/abs/2505.23604
-- short_name: Agent-RLVR
-  title: 'Agent-RLVR: Training Software Engineering Agents via Guidance and Environment
-    Rewards'
-  authors: Jeff Da, Clinton Wang, Xiang Deng, Yuntao Ma, Nikhil Barhate, Sean Hendryx
+    arxiv: https://arxiv.org/abs/2601.22956
+    github: https://github.com/shuaijiumei/SWE-Manager
+- short_name: Self-play SWE-RL
+  title: Toward Training Superintelligent Software Agents through Self-Play SWE-RL
+  authors: Yuxiang Wei, Zhiqing Sun, Emily McMilin, Jonas Gehring, David Zhang, Gabriel
+    Synnaeve, Daniel Fried et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2506.11425
-  month: 2025-06
+  venue: arXiv preprint arXiv:2512.18552
+  month: 2025-12
   links:
-    arxiv: https://arxiv.org/abs/2506.11425
-- short_name: DeepSWE
-  title: 'DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling
-    RL'
-  authors: Michael Luo, Naman Jain, Jaskirat Singh, Sijun Tan, Ameen Patel, Qingyang
-    Wu, Alpay Ariyak et al.
+    arxiv: https://arxiv.org/abs/2512.18552
+- short_name: SWE-Playground
+  title: Training Versatile Coding Agents in Synthetic Environments
+  authors: Yiqi Zhu, Apurva Gandhi, Graham Neubig
   year: '2025'
-  venue: '-'
-  month: 2025-07
+  venue: arXiv preprint arXiv:2512.12216
+  month: 2025-12
   links:
-    website: https://pretty-radio-b75.notion.site/DeepSWE-Training-a-Fully-Open-sourced-State-of-the-Art-Coding-Agent-by-Scaling-RL-22281902c1468193aabbe9a8c59bbe33
-- short_name: SWE-Dev2
-  title: 'SWE-Dev: Building Software Engineering Agents with Training and Inference
-    Scaling'
-  authors: Haoran Wang, Zhenyu Hou, Yao Wei, Jie Tang, Yuxiao Dong
+    arxiv: https://arxiv.org/abs/2512.12216
+- short_name: SWE-RM
+  title: 'SWE-RM: Execution-free Feedback For Software Engineering Agents'
+  authors: KaShun Shum, Binyuan Hui, Jiawei Chen, Lei Zhang, X. W., Jiaxi Yang, Yuzhen
+    Huang et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2506.07636
-  month: 2025-06
+  venue: arXiv preprint arXiv:2512.21919
+  month: 2025-12
   links:
-    arxiv: https://arxiv.org/abs/2506.07636
+    arxiv: https://arxiv.org/abs/2512.21919
+- short_name: One Tool Is Enough
+  title: 'One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents'
+  authors: Zhaoxi Zhang, Yitong Duan, Yanzhi Zhang, Yiming Xu, Weikang Li, Jiahui
+    Liang, Deguo Xia et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.20957
+  month: 2025-12
+  links:
+    arxiv: https://arxiv.org/abs/2512.20957
+- short_name: Let It Flow
+  title: 'Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model
+    within an Open Agentic Learning Ecosystem'
+  authors: Weixun Wang, XiaoXiao Xu, Wanhe An, Fangwen Dai, Wei Gao, Yancheng He,
+    Ju Huang et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.24873
+  month: 2025-12
+  links:
+    arxiv: https://arxiv.org/abs/2512.24873
+- short_name: Deepseek V3.2
+  title: 'DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models'
+  authors: DeepSeek-AI, Aixin Liu, Aoxue Mei, Bangcai Lin, Bing Xue, Bingxuan Wang,
+    Bingzheng Xu et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.02556
+  month: 2025-12
+  links:
+    arxiv: https://arxiv.org/abs/2512.02556
+- short_name: TSP
+  title: 'Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level
+    Code Repair'
+  authors: Xiong, Bojian, Lei, Yikun, Liu, Xikai, Zhang, Shaowei, Zhu, Pengyun, Liu,
+    Yan, Leng, Yongqi et al.
+  year: '2025'
+  venue: 'Proceedings of the 2025 Conference on Empirical Methods in Natural Language
+    Processing: Industry Track 2025'
+  month: 2025-11
+  links:
+    doi: https://aclanthology.org/2025.emnlp-industry.109/
+- short_name: CWM
+  title: 'CWM: An Open-Weights LLM for Research on Code Generation with World Models'
+  authors: FAIR CodeGen team, Jade Copet, Quentin Carbonneaux, Gal Cohen, Jonas Gehring,
+    Jacob Kahn, Jannik Kossen et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.02387
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.02387
+- short_name: FoldGRPO
+  title: Scaling Long-Horizon LLM Agent via Context-Folding
+  authors: Weiwei Sun, Miao Lu, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao
+    Chen
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.11967
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.11967
+- short_name: GRPO-based Method
+  title: A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning
+  authors: Ruiyi Wang, Prithviraj Ammanabrolu
+  year: '2025'
+  venue: First Workshop on Multi-Turn Interactions in Large Language Models 2025
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.01132
+    website: https://neurips.cc/virtual/2025/loc/san-diego/127960
+    openreview: https://openreview.net/forum?id=yPWJG9wgll
+- short_name: Supervised RL
+  title: 'Supervised Reinforcement Learning: From Expert Trajectories to Step-wise
+    Reasoning'
+  authors: Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, Yanfei
+    Chen et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.25992
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.25992
+- short_name: KAT-Coder
+  title: KAT-Coder Technical Report
+  authors: Zizheng Zhan, Ken Deng, Jinghui Wang, Xiaojiang Zhang, Huaixi Tang, Minglei
+    Zhang, Zhiyi Lai et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.18779
+  month: 2025-10
+  links:
+    arxiv: https://arxiv.org/abs/2510.18779
+- short_name: CoreThink
+  title: 'CoreThink: A Symbolic Reasoning Layer to reason over Long Horizon Tasks
+    with LLMs'
+  authors: Jay Vaghasiya, Omkar Ghugarkar, Vishvesh Bhat, Vipul Dholaria, Julian McAuley
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.00971
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.00971
+- short_name: EntroPO
+  title: Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization
+  authors: Jiahao Yu, Zelei Cheng, Xian Wu, Xinyu Xing
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.12434
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.12434
+- short_name: Kimi-Dev
+  title: 'Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents'
+  authors: Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu,
+    Yibo Miao et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.23045
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.23045
+- short_name: LongCat-Flash-Think
+  title: 'Introducing LongCat-Flash-Thinking: A Technical Report'
+  authors: Meituan-LongCat-Team, Anchun Gui, Bei Li, Bingyang Tao, Bole Zhou, Borun
+    Chen, Chao Zhang et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.18883
+  month: 2025-09
+  links:
+    arxiv: https://arxiv.org/abs/2509.18883
 - short_name: Tool-integrated RL
   title: Tool-integrated Reinforcement Learning for Repo Deep Search
   authors: Zexiong Ma, Chao Peng, Qunhong Zeng, Pengfei Gao, Yanzhen Zou, Bing Xie
@@ -115,98 +235,130 @@
   month: 2025-08
   links:
     arxiv: https://arxiv.org/abs/2508.03501
-- short_name: CoreThink
-  title: 'CoreThink: A Symbolic Reasoning Layer to reason over Long Horizon Tasks
-    with LLMs'
-  authors: Jay Vaghasiya, Omkar Ghugarkar, Vishvesh Bhat, Vipul Dholaria, Julian McAuley
+- short_name: GLM-4.6
+  title: gpt-oss-120b & gpt-oss-20b model card
+  authors: Agarwal, Sandhini, Ahmad, Lama, Ai, Jason, Altman, Sam, Applebaum, Andy,
+    Arbus, Edwin, Arora, Rahul K et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2509.00971
-  month: 2025-09
+  venue: arXiv preprint arXiv:2508.10925
+  month: 2025-08
   links:
-    arxiv: https://arxiv.org/abs/2509.00971
-- short_name: CWM
-  title: 'CWM: An Open-Weights LLM for Research on Code Generation with World Models'
-  authors: FAIR CodeGen team, Jade Copet, Quentin Carbonneaux, Gal Cohen, Jonas Gehring,
-    Jacob Kahn, Jannik Kossen et al.
+    arxiv: https://arxiv.org/abs/2508.10925
+- short_name: DeepSWE
+  title: 'DeepSWE: Training a State-of-the-Art Coding Agent from Scratch by Scaling
+    RL'
+  authors: Michael Luo, Naman Jain, Jaskirat Singh, Sijun Tan, Ameen Patel, Qingyang
+    Wu, Alpay Ariyak et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2510.02387
-  month: 2025-10
+  venue: '-'
+  month: 2025-07
   links:
-    arxiv: https://arxiv.org/abs/2510.02387
-- short_name: EntroPO
-  title: Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization
-  authors: Jiahao Yu, Zelei Cheng, Xian Wu, Xinyu Xing
+    website: https://pretty-radio-b75.notion.site/DeepSWE-Training-a-Fully-Open-sourced-State-of-the-Art-Coding-Agent-by-Scaling-RL-22281902c1468193aabbe9a8c59bbe33
+- short_name: Kimi-K2-Instruct
+  title: 'Kimi K2: Open Agentic Intelligence'
+  authors: Kimi Team, Yifan Bai, Yiping Bao, Guanduo Chen, Jiahao Chen, Ningxin Chen,
+    Ruijue Chen et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2509.12434
-  month: 2025-09
+  venue: arXiv preprint arXiv:2507.20534
+  month: 2025-07
   links:
-    arxiv: https://arxiv.org/abs/2509.12434
-- short_name: Kimi-Dev
-  title: 'Kimi-Dev: Agentless Training as Skill Prior for SWE-Agents'
-  authors: Zonghan Yang, Shengjie Wang, Kelin Fu, Wenyang He, Weimin Xiong, Yibo Liu,
-    Yibo Miao et al.
+    arxiv: https://arxiv.org/abs/2507.20534
+- short_name: Agent-RLVR
+  title: 'Agent-RLVR: Training Software Engineering Agents via Guidance and Environment
+    Rewards'
+  authors: Jeff Da, Clinton Wang, Xiang Deng, Yuntao Ma, Nikhil Barhate, Sean Hendryx
   year: '2025'
-  venue: arXiv preprint arXiv:2509.23045
-  month: 2025-09
+  venue: arXiv preprint arXiv:2506.11425
+  month: 2025-06
   links:
-    arxiv: https://arxiv.org/abs/2509.23045
-- short_name: FoldGRPO
-  title: Scaling Long-Horizon LLM Agent via Context-Folding
-  authors: Weiwei Sun, Miao Lu, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao
-    Chen
+    arxiv: https://arxiv.org/abs/2506.11425
+- short_name: SWE-Dev2
+  title: 'SWE-Dev: Building Software Engineering Agents with Training and Inference
+    Scaling'
+  authors: Haoran Wang, Zhenyu Hou, Yao Wei, Jie Tang, Yuxiao Dong
   year: '2025'
-  venue: arXiv preprint arXiv:2510.11967
-  month: 2025-10
+  venue: arXiv preprint arXiv:2506.07636
+  month: 2025-06
   links:
-    arxiv: https://arxiv.org/abs/2510.11967
-- short_name: GRPO-based Method
-  title: A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning
-  authors: Ruiyi Wang, Prithviraj Ammanabrolu
+    arxiv: https://arxiv.org/abs/2506.07636
+- short_name: Minimax M2
+  title: 'MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention'
+  authors: Chen, Aili, Li, Aonian, Gong, Bangwei, Jiang, Binyang, Fei, Bo, Yang, Bo,
+    Shan, Boji et al.
   year: '2025'
-  venue: First Workshop on Multi-Turn Interactions in Large Language Models 2025
-  month: 2025-10
+  venue: arXiv preprint arXiv:2506.13585
+  month: 2025-06
   links:
-    arxiv: https://arxiv.org/abs/2510.01132
-    website: https://neurips.cc/virtual/2025/loc/san-diego/127960
-    openreview: https://openreview.net/forum?id=yPWJG9wgll
-- short_name: TSP
-  title: 'Think-Search-Patch: A Retrieval-Augmented Reasoning Framework for Repository-Level
-    Code Repair'
-  authors: Xiong, Bojian, Lei, Yikun, Liu, Xikai, Zhang, Shaowei, Zhu, Pengyun, Liu,
-    Yan, Leng, Yongqi et al.
+    arxiv: https://arxiv.org/abs/2506.13585
+- short_name: SWE-Dev1
+  title: 'SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development'
+  authors: Yaxin Du, Yuzhu Cai, Yifan Zhou, Cheng Wang, Yu Qian, Xianghe Pang, Qian
+    Liu et al.
   year: '2025'
-  venue: 'Proceedings of the 2025 Conference on Empirical Methods in Natural Language
-    Processing: Industry Track 2025'
-  month: 2025-11
+  venue: arXiv preprint arXiv:2505.16975
+  month: 2025-05
   links:
-    doi: https://aclanthology.org/2025.emnlp-industry.109/
-- short_name: Self-play SWE-RL
-  title: Toward Training Superintelligent Software Agents through Self-Play SWE-RL
-  authors: Yuxiang Wei, Zhiqing Sun, Emily McMilin, Jonas Gehring, David Zhang, Gabriel
-    Synnaeve, Daniel Fried et al.
+    arxiv: https://arxiv.org/abs/2505.16975
+- short_name: Satori-SWE
+  title: 'Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software
+    Engineering'
+  authors: Guangtao Zeng, Maohao Shen, Delin Chen, Zhenting Qi, Subhro Das, Dan Gutfreund,
+    David Cox et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2512.18552
-  month: 2025-12
+  venue: arXiv preprint arXiv:2505.23604
+  month: 2025-05
   links:
-    arxiv: https://arxiv.org/abs/2512.18552
-- short_name: SWE-Playground
-  title: Training Versatile Coding Agents in Synthetic Environments
-  authors: Yiqi Zhu, Apurva Gandhi, Graham Neubig
+    arxiv: https://arxiv.org/abs/2505.23604
+- short_name: Qwen3-Coder
+  title: Qwen3 Technical Report
+  authors: An Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng,
+    Bowen Yu et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2512.12216
-  month: 2025-12
+  venue: arXiv preprint arXiv:2505.09388
+  month: 2025-05
   links:
-    arxiv: https://arxiv.org/abs/2512.12216
-- short_name: Supervised RL
-  title: 'Supervised Reinforcement Learning: From Expert Trajectories to Step-wise
-    Reasoning'
-  authors: Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, Yanfei
-    Chen et al.
+    arxiv: https://arxiv.org/abs/2505.09388
+- short_name: Seed1.5-Thinking
+  title: 'Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning'
+  authors: ByteDance Seed, :, Jiaze Chen, Tiantian Fan, Xin Liu, Lingjun Liu, Zhiqi
+    Lin et al.
   year: '2025'
-  venue: arXiv preprint arXiv:2510.25992
-  month: 2025-10
+  venue: arXiv preprint arXiv:2504.13914
+  month: 2025-04
   links:
-    arxiv: https://arxiv.org/abs/2510.25992
+    arxiv: https://arxiv.org/abs/2504.13914
+- short_name: SEAlign
+  title: 'SEAlign: Alignment Training for Software Engineering Agent'
+  authors: Kechi Zhang, Huangzhao Zhang, Ge Li, Jinliang You, Jia Li, Yunfei Zhao,
+    Zhi Jin
+  year: '2025'
+  venue: ICSE 2026
+  month: 2025-03
+  links:
+    arxiv: https://arxiv.org/abs/2503.18455
+    doi: https://conf.researchr.org/details/icse-2026/icse-2026-research-track/46/SEAlign-Alignment-Training-for-Software-Engineering-Agent
+- short_name: SWE-RL
+  title: 'SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software
+    Evolution'
+  authors: Yuxiang Wei, Olivier Duchenne, Jade Copet, Quentin Carbonneaux, LINGMING
+    ZHANG, Daniel Fried, Gabriel Synnaeve et al.
+  year: '2025'
+  venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
+    2025
+  month: 2025-02
+  links:
+    arxiv: https://arxiv.org/abs/2502.18449v2
+    openreview: https://openreview.net/forum?id=ULblO61XZ0
+- short_name: SoRFT
+  title: 'SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning'
+  authors: Zexiong Ma, Chao Peng, Pengfei Gao, Xiangxin Meng, Yanzhen Zou, Bing Xie
+  year: '2025'
+  venue: "Proceedings of the 63rd Annual Meeting of the Association for Computational\n\
+    \                  Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria,\n\
+    \                  July 27 - August 1, 2025 2025"
+  month: 2025-02
+  links:
+    arxiv: https://arxiv.org/abs/2502.20127v1
 - short_name: OSCA
   title: Scaling LLM Inference Efficiently with Optimized Sample Compute Allocation
   authors: Zhang, Kexun, Zhou, Shang, Wang, Danqing, Wang, William Yang, Li, Lei
@@ -218,155 +370,3 @@
   links:
     arxiv: https://arxiv.org/abs/2410.22480
     doi: https://aclanthology.org/2025.naacl-long.404/
-- short_name: SWE-RM
-  title: 'SWE-RM: Execution-free Feedback For Software Engineering Agents'
-  authors: KaShun Shum, Binyuan Hui, Jiawei Chen, Lei Zhang, X. W., Jiaxi Yang, Yuzhen
-    Huang et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.21919
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.21919
-- short_name: One Tool Is Enough
-  title: 'One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents'
-  authors: Zhaoxi Zhang, Yitong Duan, Yanzhi Zhang, Yiming Xu, Weikang Li, Jiahui
-    Liang, Deguo Xia et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.20957
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.20957
-- short_name: Let It Flow
-  title: 'Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model
-    within an Open Agentic Learning Ecosystem'
-  authors: Weixun Wang, XiaoXiao Xu, Wanhe An, Fangwen Dai, Wei Gao, Yancheng He,
-    Ju Huang et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.24873
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.24873
-- short_name: KAT-Coder
-  title: KAT-Coder Technical Report
-  authors: Zizheng Zhan, Ken Deng, Jinghui Wang, Xiaojiang Zhang, Huaixi Tang, Minglei
-    Zhang, Zhiyi Lai et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2510.18779
-  month: 2025-10
-  links:
-    arxiv: https://arxiv.org/abs/2510.18779
-- short_name: Seed1.5-Thinking
-  title: 'Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning'
-  authors: ByteDance Seed, :, Jiaze Chen, Tiantian Fan, Xin Liu, Lingjun Liu, Zhiqi
-    Lin et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2504.13914
-  month: 2025-04
-  links:
-    arxiv: https://arxiv.org/abs/2504.13914
-- short_name: Deepseek V3.2
-  title: 'DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models'
-  authors: DeepSeek-AI, Aixin Liu, Aoxue Mei, Bangcai Lin, Bing Xue, Bingxuan Wang,
-    Bingzheng Xu et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.02556
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.02556
-- short_name: Kimi-K2-Instruct
-  title: 'Kimi K2: Open Agentic Intelligence'
-  authors: Kimi Team, Yifan Bai, Yiping Bao, Guanduo Chen, Jiahao Chen, Ningxin Chen,
-    Ruijue Chen et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2507.20534
-  month: 2025-07
-  links:
-    arxiv: https://arxiv.org/abs/2507.20534
-- short_name: GLM-4.6
-  title: gpt-oss-120b & gpt-oss-20b model card
-  authors: Agarwal, Sandhini, Ahmad, Lama, Ai, Jason, Altman, Sam, Applebaum, Andy,
-    Arbus, Edwin, Arora, Rahul K et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2508.10925
-  month: 2025-08
-  links:
-    arxiv: https://arxiv.org/abs/2508.10925
-- short_name: Qwen3-Coder
-  title: Qwen3 Technical Report
-  authors: An Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng,
-    Bowen Yu et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2505.09388
-  month: 2025-05
-  links:
-    arxiv: https://arxiv.org/abs/2505.09388
-- short_name: Minimax M2
-  title: 'MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention'
-  authors: Chen, Aili, Li, Aonian, Gong, Bangwei, Jiang, Binyang, Fei, Bo, Yang, Bo,
-    Shan, Boji et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2506.13585
-  month: 2025-06
-  links:
-    arxiv: https://arxiv.org/abs/2506.13585
-- short_name: LongCat-Flash-Think
-  title: 'Introducing LongCat-Flash-Thinking: A Technical Report'
-  authors: Meituan-LongCat-Team, Anchun Gui, Bei Li, Bingyang Tao, Bole Zhou, Borun
-    Chen, Chao Zhang et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2509.18883
-  month: 2025-09
-  links:
-    arxiv: https://arxiv.org/abs/2509.18883
-- short_name: MiMo-V2-Flash
-  title: MiMo-V2-Flash Technical Report
-  authors: Xiaomi-LLM-Core-Team, Bangjun Xiao, Bingquan Xia, Bo Yang, Bofei Gao, Bowen
-    Shen, Chen Zhang et al.
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.02780
-  month: 2026-01
-  links:
-    arxiv: https://arxiv.org/abs/2601.02780
-- short_name: SWE-Master
-  title: 'SWE-Master: Unleashing the Potential of Software Engineering Agents via
-    Post-Training'
-  authors: Huatong Song, Lisheng Huang, Shuang Sun, Jinhao Jiang, Ran Le, Daixuan
-    Cheng, Guoxin Chen, Yiwen Hu, Zongchao Chen, Wayne Xin Zhao, Yang Song, Tao Zhang,
-    Ji-Rong Wen
-  year: '2026'
-  venue: arXiv preprint arXiv:2602.03411
-  month: 2026-02
-  links:
-    arxiv: https://arxiv.org/abs/2602.03411
-    github: https://github.com/RUCAIBox/SWE-Master
-- short_name: SWE-Protégé
-  title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks
-    Small Language Models as Software Engineering Agents'
-  authors: Patrick Tser Jern Kon, Archana Pradeep, Ang Chen, Alexander P. Ellis, Warren
-    Hunt, Zijian Wang, John Yang, Samuel Thompson
-  year: '2026'
-  venue: arXiv preprint arXiv:2602.22124
-  month: 2026-02
-  links:
-    arxiv: https://arxiv.org/abs/2602.22124
-- short_name: SWE-MiniSandbox
-  title: 'SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software
-    Engineering Agents'
-  authors: Danlong Yuan, Wei Wu, Zhengren Wang, Xueliang Zhao, Huishuai Zhang, Dongyan
-    Zhao
-  year: '2026'
-  venue: arXiv preprint arXiv:2602.11210
-  month: 2026-02
-  links:
-    arxiv: https://arxiv.org/abs/2602.11210v1
-    github: http://github.com/lblankl/SWE-MiniSandbox
-- short_name: SWE-Manager
-  title: 'SWE-Manager: Selecting and Synthesizing Golden Proposals Before Coding'
-  authors: Boyin Tan, Haoning Deng, Junyuan Zhang, Junjielong Xu, Pinjia He, Youcheng
-    Sun
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.22956
-  month: 2026-01
-  links:
-    arxiv: https://arxiv.org/abs/2601.22956
-    github: https://github.com/shuaijiumei/SWE-Manager

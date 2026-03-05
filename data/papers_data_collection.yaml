@@ -1,3 +1,85 @@
+- short_name: DockSmith
+  title: 'DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder'
+  authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
+    Zhe Xie, Mengqiang Ren, Xin Wu, Zhewei Huang, Liangyu Chen, Yingwei Ma, Qi Han,
+    Xiangyu Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.00592
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.00592
+    huggingface: https://huggingface.co/collections/8sj7df9k8m5x8/docksmith
+- short_name: SWE-rebench V2
+  title: 'SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale'
+  authors: Ibragim Badertdinov, Maksim Nekrashevich, Anton Shevtsov, Alexander Golubev
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.23866
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.23866
+- short_name: Scale-SWE
+  title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
+  authors: Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai
+    Sun, Xin Zhao, Ruihua Song, Yuan Zhang, Peng Wang, Cheng Chen, Jirong Wen, Kai
+    Jia
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.09892
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.09892
+    github: https://github.com/AweAI-Team/ScaleSWE
+    huggingface: https://huggingface.co/collections/AweAI-Team/scale-swe
+- short_name: MEnvAgent
+  title: 'MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software
+    Engineering'
+  authors: Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan,
+    Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.22859
+  month: 2026-01
+  links:
+    arxiv: https://arxiv.org/abs/2601.22859
+    github: https://github.com/ernie-research/MEnvAgent
+- short_name: Multi-Docker-Eval
+  title: 'Multi-Docker-Eval: A `Shovel of the Gold Rush'' Benchmark on Automatic Environment
+    Building for Software Engineering'
+  authors: Kelin Fu, Tianyu Liu, Zeyu Shang, Yingwei Ma, Jian Yang, Jiaheng Liu, Kaigui
+    Bian
+  year: '2025'
+  venue: arXiv preprint arXiv:2512.06915
+  month: 2025-12
+  links:
+    arxiv: https://arxiv.org/abs/2512.06915
+- short_name: RepoForge
+  title: 'RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data
+    Curation Pipeline Synergizing SFT and RL at Scale'
+  authors: Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur
+    Leung, Gopi Krishnan Rajbahadur et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2508.01550
+  month: 2025-08
+  links:
+    arxiv: https://arxiv.org/abs/2508.01550
+- short_name: SWE-MERA
+  title: 'SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models
+    on Software Engineering Tasks'
+  authors: Pavel Adamenko, Mikhail Ivanov, Aidar Valeev, Rodion Levichev, Pavel Zadorozhny,
+    Ivan Lopatin, Dmitry Babayev et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.11059
+  month: 2025-07
+  links:
+    arxiv: https://arxiv.org/abs/2507.11059
+- short_name: SWE-Factory
+  title: 'SWE-Factory: Your Automated Factory for Issue Resolution Training Data and
+    Evaluation Benchmarks'
+  authors: Lianghong Guo, Yanlin Wang, Caihua Li, Wei Tao, Pengyu Yang, Jiachi Chen,
+    Haoyu Song et al.
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.10954
+  month: 2025-06
+  links:
+    arxiv: https://arxiv.org/abs/2506.10954
 - short_name: SWE-rebench
   title: 'SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated
     Evaluation of Software Engineering Agents'
@@ -21,65 +103,3 @@
   links:
     arxiv: https://arxiv.org/abs/2505.23419v2
     openreview: https://openreview.net/forum?id=OGWkr7gXka
-- short_name: SWE-Factory
-  title: 'SWE-Factory: Your Automated Factory for Issue Resolution Training Data and
-    Evaluation Benchmarks'
-  authors: Lianghong Guo, Yanlin Wang, Caihua Li, Wei Tao, Pengyu Yang, Jiachi Chen,
-    Haoyu Song et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2506.10954
-  month: 2025-06
-  links:
-    arxiv: https://arxiv.org/abs/2506.10954
-- short_name: SWE-MERA
-  title: 'SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models
-    on Software Engineering Tasks'
-  authors: Pavel Adamenko, Mikhail Ivanov, Aidar Valeev, Rodion Levichev, Pavel Zadorozhny,
-    Ivan Lopatin, Dmitry Babayev et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2507.11059
-  month: 2025-07
-  links:
-    arxiv: https://arxiv.org/abs/2507.11059
-- short_name: RepoForge
-  title: 'RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data
-    Curation Pipeline Synergizing SFT and RL at Scale'
-  authors: Zhilong Chen, Chengzong Zhao, Boyuan Chen, Dayi Lin, Yihao Chen, Arthur
-    Leung, Gopi Krishnan Rajbahadur et al.
-  year: '2025'
-  venue: arXiv preprint arXiv:2508.01550
-  month: 2025-08
-  links:
-    arxiv: https://arxiv.org/abs/2508.01550
-- short_name: Multi-Docker-Eval
-  title: 'Multi-Docker-Eval: A `Shovel of the Gold Rush'' Benchmark on Automatic Environment
-    Building for Software Engineering'
-  authors: Kelin Fu, Tianyu Liu, Zeyu Shang, Yingwei Ma, Jian Yang, Jiaheng Liu, Kaigui
-    Bian
-  year: '2025'
-  venue: arXiv preprint arXiv:2512.06915
-  month: 2025-12
-  links:
-    arxiv: https://arxiv.org/abs/2512.06915
-- short_name: DockSmith
-  title: 'DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder'
-  authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
-    Zhe Xie, Mengqiang Ren, Xin Wu, Zhewei Huang, Liangyu Chen, Yingwei Ma, Qi Han,
-    Xiangyu Zhang
-  year: '2026'
-  venue: arXiv preprint arXiv:2602.00592
-  month: 2026-02
-  links:
-    arxiv: https://arxiv.org/abs/2602.00592
-    huggingface: https://huggingface.co/collections/8sj7df9k8m5x8/docksmith
-- short_name: MEnvAgent
-  title: 'MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software
-    Engineering'
-  authors: Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan,
-    Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang
-  year: '2026'
-  venue: arXiv preprint arXiv:2601.22859
-  month: 2026-01
-  links:
-    arxiv: https://arxiv.org/abs/2601.22859
-    github: https://github.com/ernie-research/MEnvAgent

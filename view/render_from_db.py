@@ -371,15 +371,45 @@ def sync_to_readme():
     return True
 
 
+def sync_papers_to_yaml_and_readme():
+    """Export DB papers → YAML files, then render the paper list into README.md."""
+    import subprocess
+    import sys as _sys
+
+    # Step A: DB → YAML (sync_service)
+    print("[INFO] Exporting papers from DB to YAML files...")
+    r = subprocess.run(
+        [_sys.executable, '-c',
+         'import sys; sys.path.insert(0, "."); '
+         'from services.sync_service import export_papers_to_yaml; export_papers_to_yaml()'],
+        cwd=str(ROOT)
+    )
+    if r.returncode != 0:
+        print("[WARN] YAML export encountered an error (non-fatal).")
+    else:
+        print("[OK] YAML files updated.")
+
+    # Step B: YAML → README paper list (sync_readme.py)
+    print("[INFO] Syncing paper list to README.md...")
+    r = subprocess.run([_sys.executable, 'view/sync_readme.py'], cwd=str(ROOT))
+    if r.returncode != 0:
+        print("[WARN] README paper list sync encountered an error (non-fatal).")
+    else:
+        print("[OK] README paper list updated.")
+
+
 def main():
     print("\n" + "=" * 70)
-    print("  Rendering Tables from Database")
+    print("  Rendering from Database")
     print("=" * 70 + "\n")
 
     db_path = ROOT / 'database' / 'survey.db'
     if not db_path.exists():
         print("[ERROR] Database not found! Run 'python start.py --init' first.")
         return False
+
+    print("[INFO] Exporting papers to YAML and updating README paper list...")
+    sync_papers_to_yaml_and_readme()
 
     print("[INFO] Generating tables for website...")
     if not sync_to_website():

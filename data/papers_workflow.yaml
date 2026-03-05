@@ -1,22 +1,3 @@
-- short_name: Agentless
-  title: Demystifying LLM-Based Software Engineering Agents
-  authors: Chun Xia, Yinlin Deng, Soren Dunn, Lingming Zhang
-  year: '2024'
-  venue: Proceedings of the ACM on Software Engineering 2025
-  month: 2024-07
-  links:
-    arxiv: https://arxiv.org/abs/2407.01489v2
-    website: https://api.semanticscholar.org/CorpusID:277850376
-- short_name: Conversational Pipeline
-  title: Exploring the Potential of Conversational Test Suite Based Program Repair
-    on SWE-bench
-  authors: Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo
-    Franco Jaldin
-  year: '2024'
-  venue: arXiv preprint arXiv:2410.04485
-  month: 2024-10
-  links:
-    arxiv: https://arxiv.org/abs/2410.04485
 - short_name: SynFix
   title: 'SynFix: Dependency-Aware Program Repair via RelationGraph Analysis'
   authors: Tang, Xunzhu, Gao, Jiechao, Xu, Jin, Sun, Tiezhu, Song, Yewei, Ezzini,
@@ -27,6 +8,15 @@
   links:
     website: https://ezzini.github.io/CSAL/publication/tang-2025-synfix/
     doi: https://aclanthology.org/2025.findings-acl.252.pdf
+- short_name: GUIRepair
+  title: 'Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual
+    Software Issue Fixing'
+  authors: Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen
+  year: '2025'
+  venue: ASE 2025
+  month: 2025-06
+  links:
+    arxiv: https://arxiv.org/abs/2506.16136v1
 - short_name: CodeV
   title: 'CodeV: Issue Resolving with Visual Data'
   authors: Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong,
@@ -37,12 +27,22 @@
   links:
     arxiv: https://arxiv.org/abs/2412.17315v1
     doi: http://dx.doi.org/10.18653/v1/2025.findings-acl.384
-- short_name: GUIRepair
-  title: 'Seeing is Fixing: Cross-Modal Reasoning with Multimodal LLMs for Visual
-    Software Issue Fixing'
-  authors: Kai Huang, Jian Zhang, Xiaofei Xie, Chunyang Chen
-  year: '2025'
-  venue: ASE 2025
-  month: 2025-06
+- short_name: Conversational Pipeline
+  title: Exploring the Potential of Conversational Test Suite Based Program Repair
+    on SWE-bench
+  authors: Anton Cheshkov, Pavel Zadorozhny, Rodion Levichev, Evgeny Maslov, Ronaldo
+    Franco Jaldin
+  year: '2024'
+  venue: arXiv preprint arXiv:2410.04485
+  month: 2024-10
   links:
-    arxiv: https://arxiv.org/abs/2506.16136v1
+    arxiv: https://arxiv.org/abs/2410.04485
+- short_name: Agentless
+  title: Demystifying LLM-Based Software Engineering Agents
+  authors: Chun Xia, Yinlin Deng, Soren Dunn, Lingming Zhang
+  year: '2024'
+  venue: Proceedings of the ACM on Software Engineering 2025
+  month: 2024-07
+  links:
+    arxiv: https://arxiv.org/abs/2407.01489v2
+    website: https://api.semanticscholar.org/CorpusID:277850376
