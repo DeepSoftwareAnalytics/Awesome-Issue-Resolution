@@ -1,8 +1,8 @@
 {
   "generated": "2026-03-05",
   "stats": {
-    "total": 197,
-    "data": 49,
+    "total": 198,
+    "data": 50,
     "methods": 128,
     "analysis": 21
   },
@@ -32,6 +32,19 @@
       "category": "tool, multi_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2603.01327"
+      }
+    },
+    {
+      "id": 199,
+      "short_name": "SWE-Bench Mobile",
+      "title": "SWE-Bench Mobile: Can Large Language Model Agents Develop Industry-Level Mobile Applications?",
+      "authors": "Muxin Tian, Zhe Wang, Blair Yang, Zhenwei Tang, Kunlun Zhu, Honghua Dong, Hanchen Li, Xinni Xie, Guangjing Wang, Jiaxuan You",
+      "venue": "arXiv preprint arXiv:2602.09540",
+      "month": "2026-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.09540",
+        "website": "https://swebenchmobile.com/"
       }
     },
     {

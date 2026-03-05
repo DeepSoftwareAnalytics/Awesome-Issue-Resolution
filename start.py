@@ -73,8 +73,8 @@ def init_database(force: bool = False):
 
 
 def update_news():
-    """Refresh the This Month's Papers section in docs/news.md and README.md."""
-    print('[INFO] Refreshing monthly news section...')
+    """Refresh the Recent Papers section in docs/news.md and README.md."""
+    print('[INFO] Refreshing Recent Papers news section...')
     result = subprocess.run(
         [sys.executable, 'scripts/update_news.py'],
         cwd=str(ROOT)
@@ -167,7 +167,7 @@ def main():
     )
     parser.add_argument(
         '--news', action='store_true',
-        help='Refresh the This Month\'s Papers section only and exit'
+        help='Refresh the Recent Papers section only and exit'
     )
     parser.add_argument(
         '--render', action='store_true',

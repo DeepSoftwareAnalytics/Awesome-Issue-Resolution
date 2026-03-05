@@ -39,6 +39,17 @@
   links:
     arxiv: https://arxiv.org/abs/2602.22764
     github: https://github.com/GhabiX/Rust-SWE-Bench
+- short_name: SWE-Bench Mobile
+  title: 'SWE-Bench Mobile: Can Large Language Model Agents Develop Industry-Level
+    Mobile Applications?'
+  authors: Muxin Tian, Zhe Wang, Blair Yang, Zhenwei Tang, Kunlun Zhu, Honghua Dong,
+    Hanchen Li, Xinni Xie, Guangjing Wang, Jiaxuan You
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.09540
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.09540
+    website: https://swebenchmobile.com/
 - short_name: SWE-InfraBench
   title: 'SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code'
   authors: Natalia Tarasova, Enrique Balp-Straffon, Aleksei Iancheruk, Yevhenii Sielskyi,

@@ -648,7 +648,8 @@ function renderPapersTable(items) {
                     <input type="checkbox" class="paper-checkbox" id="select-all-cb"
                         title="Select all" ${allChecked ? 'checked' : ''}
                         onchange="toggleSelectAll(this)">
-                </th>`;
+                </th>
+                <th title="Pin to Recent Papers section">Featured</th>`;
 
     sortableColumns.forEach(col => {
         if (col.sortable) {
@@ -669,11 +670,17 @@ function renderPapersTable(items) {
         const displayMonth = paper.month ? paper.month.replace('-', '.') : '';
         const monthValue = paper.month || '';
         const checked = selectedPapers.has(paper.id) ? 'checked' : '';
+        const featuredClass = paper.featured ? 'featured-star active' : 'featured-star';
+        const featuredTitle = paper.featured ? 'Remove from Recent Papers' : 'Pin to Recent Papers';
         html += `
-            <tr data-id="${paper.id}" data-type="papers" class="${selectedPapers.has(paper.id) ? 'row-selected' : ''}">
+            <tr data-id="${paper.id}" data-type="papers" class="${selectedPapers.has(paper.id) ? 'row-selected' : ''}${paper.featured ? ' row-featured' : ''}">
                 <td class="cb-col">
                     <input type="checkbox" class="paper-checkbox" data-id="${paper.id}"
                         ${checked} onchange="togglePaperSelection(this, ${paper.id})">
+                </td>
+                <td class="featured-col">
+                    <button class="${featuredClass}" data-id="${paper.id}"
+                        title="${featuredTitle}" onclick="toggleFeatured(${paper.id}, this)">★</button>
                 </td>
                 <td><span class="badge badge-primary">${paper.short_name}</span></td>
                 <td class="editable-cell truncate" data-field="title" data-value="${escapeHtml(paper.title)}" title="${paper.title}">${paper.title}</td>
@@ -693,6 +700,31 @@ function renderPapersTable(items) {
     setTimeout(() => attachColumnSortListeners('papers'), 100);
     
     return html;
+}
+
+
+// Toggle featured status for a paper
+function toggleFeatured(paperId, btn) {
+    fetch(`${API_BASE}/papers/${paperId}/toggle-featured`, { method: 'POST' })
+        .then(r => r.json())
+        .then(data => {
+            if (data.error) { showToast(data.error, 'error'); return; }
+            const row = btn.closest('tr');
+            if (data.featured) {
+                btn.classList.add('active');
+                btn.title = 'Remove from Recent Papers';
+                row.classList.add('row-featured');
+            } else {
+                btn.classList.remove('active');
+                btn.title = 'Pin to Recent Papers';
+                row.classList.remove('row-featured');
+            }
+            // Update local data cache
+            const paper = currentData.find(p => p.id === paperId);
+            if (paper) paper.featured = data.featured;
+            showToast(data.featured ? '★ Added to Recent Papers' : '☆ Removed from Recent Papers', 'success');
+        })
+        .catch(() => showToast('Failed to update featured status', 'error'));
 }
 
 // Attach column sort listeners

@@ -2,7 +2,7 @@
 Paper Model
 """
 from datetime import datetime
-from sqlalchemy import Column, Integer, String, Text, DateTime, Index
+from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, Index
 from .database import Base
 
 
@@ -24,6 +24,7 @@ class Paper(Base):
     website_link = Column(String)
     doi_link = Column(String)
     openreview_link = Column(String)
+    featured = Column(Boolean, default=False)  # Pinned to "Recent Papers" section
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
@@ -38,6 +39,7 @@ class Paper(Base):
             'venue': self.venue,
             'category': self.category,
             'abstract': self.abstract,
+            'featured': bool(self.featured),
             'links': {
                 'arxiv': self.arxiv_link,
                 'github': self.github_link,

@@ -352,6 +352,20 @@ def migrate_table5_foundation_models():
     print(f"[OK] Migrated {count} foundation models")
 
 
+def add_missing_columns():
+    """Add any columns that exist in the model but are missing from the DB (safe to re-run)."""
+    from models import get_engine
+    import sqlalchemy as sa
+    engine = get_engine()
+    with engine.connect() as conn:
+        inspector = sa.inspect(engine)
+        existing = {col['name'] for col in inspector.get_columns('papers')}
+        if 'featured' not in existing:
+            conn.execute(sa.text('ALTER TABLE papers ADD COLUMN featured BOOLEAN DEFAULT 0'))
+            conn.commit()
+            print("[OK] Added 'featured' column to papers table")
+
+
 def main():
     print("\n" + "="*70)
     print("  Data Migration: CSV/YAML → SQLite")
@@ -360,6 +374,10 @@ def main():
     # Initialize database
     print("[INFO] Initializing database...")
     init_db()
+
+    # Add any new columns to existing tables
+    print("[INFO] Checking for schema updates...")
+    add_missing_columns()
     
     # Migrate data
     print("\n[INFO] Migrating papers from YAML files...")

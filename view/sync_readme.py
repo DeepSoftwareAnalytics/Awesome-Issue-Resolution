@@ -365,7 +365,7 @@ Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 | `python start.py --init` | Re-import from YAML/CSV, then full update + start |
 | `python start.py --no-update` | Start server without running update steps |
 | `python start.py --port 8080` | Use a custom port |
-| `python start.py --news` | Refresh This Month's Papers only and exit |
+| `python start.py --news` | Refresh Recent Papers section only and exit |
 | `python start.py --render` | Re-render README/docs from DB only and exit |
 | `python start.py --build` | Build static site (mkdocs) only and exit |
 

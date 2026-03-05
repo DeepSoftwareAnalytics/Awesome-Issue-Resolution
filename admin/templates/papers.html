@@ -249,6 +249,23 @@
         .paper-checkbox { width: 16px; height: 16px; cursor: pointer; accent-color: #667eea; }
         tr.row-selected { background: #f0f0ff !important; }
 
+        /* Featured star column */
+        .featured-col { width: 52px; text-align: center; padding: 0 4px !important; }
+        .featured-star {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ccc;
+            line-height: 1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: color 0.2s, transform 0.15s;
+        }
+        .featured-star:hover { color: #f5a623; transform: scale(1.2); }
+        .featured-star.active { color: #f5a623; }
+        tr.row-featured { background: #fffbf0 !important; }
+
         .badge-primary {
             background: #e3f2fd;
             color: #1976d2;

@@ -167,6 +167,21 @@ def update_paper(paper_id):
         return jsonify({'error': str(e)}), 400
 
 
+@api.route('/papers/<int:paper_id>/toggle-featured', methods=['POST'])
+def toggle_featured(paper_id):
+    """Toggle the featured flag on a paper"""
+    paper = session.query(Paper).get(paper_id)
+    if not paper:
+        return jsonify({'error': 'Paper not found'}), 404
+    try:
+        paper.featured = not bool(paper.featured)
+        session.commit()
+        return jsonify({'id': paper.id, 'featured': bool(paper.featured)})
+    except Exception as e:
+        session.rollback()
+        return jsonify({'error': str(e)}), 400
+
+
 @api.route('/papers/<int:paper_id>', methods=['DELETE'])
 def delete_paper(paper_id):
     """Delete a paper"""

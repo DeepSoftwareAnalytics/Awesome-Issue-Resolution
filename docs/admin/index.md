@@ -40,7 +40,7 @@ Then open **[http://localhost:5000/admin](http://localhost:5000/admin)** in your
 | `python start.py` | Full update + start server (port 5000) |
 | `python start.py --init` | Re-import from YAML/CSV, then full update + start |
 | `python start.py --no-update` | Start server immediately without update steps |
-| `python start.py --news` | Refresh "This Month's Papers" only |
+| `python start.py --news` | Refresh "Recent Papers" section only |
 | `python start.py --render` | Re-render README/docs from DB only |
 | `python start.py --build` | Build static site only |
 
