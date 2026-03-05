@@ -1,8 +1,8 @@
 {
   "generated": "2026-03-05",
   "stats": {
-    "total": 196,
-    "data": 48,
+    "total": 197,
+    "data": 49,
     "methods": 128,
     "analysis": 21
   },
@@ -32,6 +32,19 @@
       "category": "tool, multi_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2603.01327"
+      }
+    },
+    {
+      "id": 198,
+      "short_name": "Rust-SWE-bench",
+      "title": "Evaluating and Improving Automated Repository-Level Rust Issue Resolution with LLM-based Agents",
+      "authors": "Jiahong Xiang, Wenxiao He, Xihua Wang, Hongliang Tian, Yuqun Zhang",
+      "venue": "arXiv preprint arXiv:2602.22764",
+      "month": "2026-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.22764",
+        "github": "https://github.com/GhabiX/Rust-SWE-Bench"
       }
     },
     {

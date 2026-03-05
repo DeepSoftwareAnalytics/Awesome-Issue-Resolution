@@ -29,6 +29,16 @@
   month: 2026-02
   links:
     arxiv: https://arxiv.org/abs/2603.00520
+- short_name: Rust-SWE-bench
+  title: Evaluating and Improving Automated Repository-Level Rust Issue Resolution
+    with LLM-based Agents
+  authors: Jiahong Xiang, Wenxiao He, Xihua Wang, Hongliang Tian, Yuqun Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.22764
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.22764
+    github: https://github.com/GhabiX/Rust-SWE-Bench
 - short_name: SWE-InfraBench
   title: 'SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code'
   authors: Natalia Tarasova, Enrique Balp-Straffon, Aleksei Iancheruk, Yevhenii Sielskyi,

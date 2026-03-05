@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-196-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-197-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -32,7 +32,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **196 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **197 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 > 🔎 **Browse & Export**: The full paper database is searchable and exportable at **[deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/)** — filter by category, date, or keyword, and export results as CSV.
 
@@ -96,7 +96,7 @@ Based on a systematic review of **196 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 196 works** across 14 categories
+> **Total: 197 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -106,6 +106,7 @@ Based on a systematic review of **196 papers and online resources**, this survey
 - `(2026-03)` **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE)
 - `(2026-02)` **SWE Context Bench**: SWE Context Bench: A Benchmark for Context Learning in Coding [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2602.08316)
 - `(2026-02)` **SWE-ABS**: SWE-ABS: Adversarial Benchmark Strengthening Exposes Inflated Success Rates on Test-based Benchmark [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.00520)
+- `(2026-02)` **Rust-SWE-bench**: Evaluating and Improving Automated Repository-Level Rust Issue Resolution with LLM-based Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.22764) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GhabiX/Rust-SWE-Bench)
 - `(2025-12)` **SWE-InfraBench**: SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=XX0ciUwfXa)
 - `(2025-12)` **SWE-EVO**: SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.18470)
 - `(2025-11)` **SWE-Sharp-Bench**: SWE-Sharp-Bench: A Reproducible Benchmark for C# Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.02352)
