@@ -63,6 +63,9 @@ def query_featured_papers() -> list[dict]:
             "month": p.month or "",
             "arxiv_link": p.arxiv_link or "",
             "github_link": p.github_link or "",
+            "website_link": p.website_link or "",
+            "huggingface_link": p.huggingface_link or "",
+            "openreview_link": p.openreview_link or "",
         })
     session.close()
     return result
@@ -80,10 +83,9 @@ def build_recent_papers_block(papers: list[dict]) -> str:
     for p in sorted_papers:
         short = p["short_name"]
         title = p["title"]
-        link = p["arxiv_link"] or ""
-        badge = make_badge(link)
         name_part = f"**{short}**" if short else f"**{title}**"
-        lines.append(f"- {name_part}: {title} {badge}".rstrip())
+        badges = _all_badges(p)
+        lines.append(f"- {name_part}: {title}{(' ' + badges) if badges else ''}".rstrip())
 
     return "\n".join(lines)
 
@@ -167,7 +169,9 @@ BADGE_ARXIV = "https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoCo
 BADGE_OPENREVIEW = "https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white"
 BADGE_ACL = "https://img.shields.io/badge/ACL-paper-0077B5?logo=googlescholar&logoColor=white"
 BADGE_DOI = "https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white"
-BADGE_WEBSITE = "https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white"
+BADGE_GITHUB = "https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white"
+BADGE_HF = "https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black"
+BADGE_WEBSITE = "https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white"
 
 
 def make_badge(link: str) -> str:
@@ -183,6 +187,22 @@ def make_badge(link: str) -> str:
     if "doi.org" in link:
         return f"[![DOI]({BADGE_DOI})]({link})"
     return f"[![Website]({BADGE_WEBSITE})]({link})"
+
+
+def _all_badges(p: dict) -> str:
+    """Return all available link badges for a paper, space-separated."""
+    parts = []
+    if p.get("arxiv_link"):
+        parts.append(f"[![arXiv]({BADGE_ARXIV})]({p['arxiv_link']})")
+    if p.get("openreview_link"):
+        parts.append(f"[![OpenReview]({BADGE_OPENREVIEW})]({p['openreview_link']})")
+    if p.get("github_link"):
+        parts.append(f"[![GitHub]({BADGE_GITHUB})]({p['github_link']})")
+    if p.get("huggingface_link"):
+        parts.append(f"[![HuggingFace]({BADGE_HF})]({p['huggingface_link']})")
+    if p.get("website_link"):
+        parts.append(f"[![Website]({BADGE_WEBSITE})]({p['website_link']})")
+    return " ".join(parts)
 
 
 def replace_block(text: str, start_marker: str, end_marker: str, new_content: str) -> str:

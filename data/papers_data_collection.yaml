@@ -92,14 +92,3 @@
   links:
     arxiv: https://arxiv.org/abs/2505.20411v2
     openreview: https://openreview.net/forum?id=nMpJoVmRy1
-- short_name: RepoLaunch
-  title: SWE-bench Goes Live!
-  authors: Linghao Zhang, Shilin He, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie,
-    Junhao Wang et al.
-  year: '2025'
-  venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
-    Datasets and Benchmarks Track 2025
-  month: 2025-05
-  links:
-    arxiv: https://arxiv.org/abs/2505.23419v2
-    openreview: https://openreview.net/forum?id=OGWkr7gXka

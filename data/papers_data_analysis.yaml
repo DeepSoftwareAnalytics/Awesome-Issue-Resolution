@@ -6,6 +6,14 @@
   month: 2025-12
   links:
     arxiv: https://arxiv.org/abs/2512.10218
+- short_name: Test Overfitting on SWE-bench
+  title: Investigating Test Overfitting on SWE-bench
+  authors: Toufique Ahmed, Jatin Ganhotra, Avraham Shinnar, Martin Hirzel
+  year: '2025'
+  venue: arXiv preprint arXiv:2511.16858
+  month: 2025-11
+  links:
+    arxiv: https://arxiv.org/abs/2511.16858
 - short_name: Rigorous agentic benchmarks
   title: Establishing Best Practices for Building Rigorous Agentic Benchmarks
   authors: Yuxuan Zhu, Tengjun Jin, Yada Pruksachatkun, Andy Zhang, Shu Liu, Sasha

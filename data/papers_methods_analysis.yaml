@@ -1,3 +1,15 @@
+- short_name: ContextBench
+  title: 'ContextBench: A Benchmark for Context Retrieval in Coding Agents'
+  authors: Han Li, Letian Zhu, Bohan Zhang, Rili Feng, Jiaming Wang, Yue Pan, Earl
+    T. Barr, Federica Sarro, Zhaoyang Chu, He Ye
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.05892
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.05892
+    github: https://github.com/EuniAI/ContextBench
+    huggingface: https://huggingface.co/datasets/Contextbench/ContextBench
+    website: https://contextbench.github.io/
 - short_name: SWEnergy
   title: 'SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution
     Frameworks with SLMs'

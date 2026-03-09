@@ -1,12 +1,38 @@
 {
-  "generated": "2026-03-05",
+  "generated": "2026-03-09",
   "stats": {
-    "total": 198,
-    "data": 50,
+    "total": 201,
+    "data": 51,
     "methods": 128,
-    "analysis": 21
+    "analysis": 23
   },
   "papers": [
+    {
+      "id": 201,
+      "short_name": "SWE-Atlas",
+      "title": "SWE-Atlas",
+      "authors": "Scale AI",
+      "venue": "-",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "website": "https://labs.scale.com/leaderboard/sweatlas-qna"
+      }
+    },
+    {
+      "id": 200,
+      "short_name": "SWE-CI",
+      "title": "SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration",
+      "authors": "Jialong Chen, Xander Xu, Hu Wei, Chuan Chen, Bing Zhao",
+      "venue": "arXiv preprint arXiv:2603.03823",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.03823",
+        "github": "https://github.com/SKYLENAGE-AI/SWE-CI",
+        "huggingface": "https://huggingface.co/datasets/skylenage/SWE-CI"
+      }
+    },
     {
       "id": 196,
       "short_name": "BeyondSWE",
@@ -32,6 +58,21 @@
       "category": "tool, multi_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2603.01327"
+      }
+    },
+    {
+      "id": 202,
+      "short_name": "ContextBench",
+      "title": "ContextBench: A Benchmark for Context Retrieval in Coding Agents",
+      "authors": "Han Li, Letian Zhu, Bohan Zhang, Rili Feng, Jiaming Wang, Yue Pan, Earl T. Barr, Federica Sarro, Zhaoyang Chu, He Ye",
+      "venue": "arXiv preprint arXiv:2602.05892",
+      "month": "2026-02",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.05892",
+        "github": "https://github.com/EuniAI/ContextBench",
+        "huggingface": "https://huggingface.co/datasets/Contextbench/ContextBench",
+        "website": "https://contextbench.github.io/"
       }
     },
     {
@@ -491,6 +532,18 @@
       "category": "data_analysis",
       "links": {
         "arxiv": "https://arxiv.org/abs/2512.10218"
+      }
+    },
+    {
+      "id": 203,
+      "short_name": "Test Overfitting on SWE-bench",
+      "title": "Investigating Test Overfitting on SWE-bench",
+      "authors": "Toufique Ahmed, Jatin Ganhotra, Avraham Shinnar, Martin Hirzel",
+      "venue": "arXiv preprint arXiv:2511.16858",
+      "month": "2025-11",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2511.16858"
       }
     },
     {
@@ -1545,19 +1598,6 @@
       "category": "evaluation_datasets",
       "links": {
         "arxiv": "https://arxiv.org/abs/2505.23932"
-      }
-    },
-    {
-      "id": 11,
-      "short_name": "RepoLaunch",
-      "title": "SWE-bench Goes Live!",
-      "authors": "Linghao Zhang, Shilin He, Chaoyun Zhang, Yu Kang, Bowen Li, Chengxing Xie, Junhao Wang et al.",
-      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
-      "month": "2025-05",
-      "category": "data_collection",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2505.23419v2",
-        "openreview": "https://openreview.net/forum?id=OGWkr7gXka"
       }
     },
     {

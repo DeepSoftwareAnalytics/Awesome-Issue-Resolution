@@ -11,6 +11,25 @@
     github: https://github.com/AweAI-Team/BeyondSWE
     huggingface: https://huggingface.co/datasets/AweAI-Team/BeyondSWE
     website: https://aweai-team.github.io/BeyondSWE/
+- short_name: SWE-CI
+  title: 'SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous
+    Integration'
+  authors: Jialong Chen, Xander Xu, Hu Wei, Chuan Chen, Bing Zhao
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.03823
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.03823
+    github: https://github.com/SKYLENAGE-AI/SWE-CI
+    huggingface: https://huggingface.co/datasets/skylenage/SWE-CI
+- short_name: SWE-Atlas
+  title: SWE-Atlas
+  authors: Scale AI
+  year: '2026'
+  venue: '-'
+  month: 2026-03
+  links:
+    website: https://labs.scale.com/leaderboard/sweatlas-qna
 - short_name: SWE Context Bench
   title: 'SWE Context Bench: A Benchmark for Context Learning in Coding'
   authors: Jared Zhu, Minhao Hu, Junde Wu
