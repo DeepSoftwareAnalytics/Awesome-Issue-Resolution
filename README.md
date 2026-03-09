@@ -16,8 +16,6 @@
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
-> 🤗 **HF Paper**: [https://huggingface.co/papers/2601.11655](https://huggingface.co/papers/2601.11655) (Upvotes appreciated! ⬆️)
-
 **🎙️ Interactive Exploration:**
 
 [![NotebookLM](https://img.shields.io/badge/🎧_NotebookLM-Listen_&_Explore-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://notebooklm.google.com/notebook/2b70100e-9d5a-46db-96f5-6ccb7b53890a)
@@ -33,8 +31,6 @@
 ## 📖 Abstract
 
 Based on a systematic review of **201 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
-
-> 🔎 **Browse & Export**: The full paper database is searchable and exportable at **[deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/)** — filter by category, date, or keyword, and export results as CSV.
 
 ## 📰 News
 
@@ -71,15 +67,6 @@ Based on a systematic review of **201 papers and online resources**, this survey
 - **Survey Launch (2026-01)**: Our survey paper is now publicly available on arXiv: [https://arxiv.org/abs/2601.11655](https://arxiv.org/abs/2601.11655). It covers 175 papers and resources on LLM-based GitHub issue resolution, with continuously updated datasets and leaderboards!
 <!-- END NEWS -->
 
----
-
-<!-- START DEMO -->
-<div align="center">
-<img src="docs/images/database.gif" alt="Admin Interface Demo" style="zoom:50%;" />
-
-</div>
-<!-- END DEMO -->
-
 <!-- START EXPLORE -->
 **🔍 Explore This Survey:**
 
@@ -106,6 +93,15 @@ Based on a systematic review of **201 papers and online resources**, this survey
 - 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
 - 🤝 **[Contributing](#-contributing)**: How to contribute to this project
 <!-- END EXPLORE -->
+
+> 🔎 **Browse & Export**: The full paper database is searchable and exportable at **[deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/)** — filter by category, date, or keyword, and export results as CSV.
+
+<!-- START DEMO -->
+<div align="center">
+<img src="docs/images/database.gif" alt="Admin Interface Demo" style="zoom:50%;" />
+
+</div>
+<!-- END DEMO -->
 
 ---
 
