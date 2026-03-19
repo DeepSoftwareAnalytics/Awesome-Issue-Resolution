@@ -1,12 +1,39 @@
 {
   "generated": "2026-03-19",
   "stats": {
-    "total": 201,
-    "data": 51,
-    "methods": 128,
+    "total": 203,
+    "data": 53,
+    "methods": 129,
     "analysis": 23
   },
   "papers": [
+    {
+      "id": 205,
+      "short_name": "OpenSWE",
+      "title": "daVinci-Env: Open SWE Environment Synthesis at Scale",
+      "authors": "Dayuan Fu, Shenyu Wu, Yunze Wu, Zerui Peng, Yaxing Huang, Jie Sun, Ji Zeng, Mohan Jiang, Lin Zhang, Yukun Li, Jiarui Hu, Liming Liu, Jinlong Hou, Pengfei Liu",
+      "venue": "arXiv preprint arXiv:2603.13023",
+      "month": "2026-03",
+      "category": "sft, data_collection, training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.13023",
+        "github": "https://github.com/GAIR-NLP/OpenSWE",
+        "huggingface": "https://huggingface.co/datasets/GAIR/OpenSWE"
+      }
+    },
+    {
+      "id": 204,
+      "short_name": "SWE-Skills-Bench",
+      "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?",
+      "authors": "Tingxu Han, Yi Zhang, Wei Song, Chunrong Fang, Zhenyu Chen, Youcheng Sun, Lijie Hu",
+      "venue": "arXiv preprint arXiv:2603.15401",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.15401",
+        "github": "https://github.com/GeniusHTX/SWE-Skills-Bench"
+      }
+    },
     {
       "id": 201,
       "short_name": "SWE-Atlas",
