@@ -30,6 +30,16 @@
   month: 2026-03
   links:
     website: https://labs.scale.com/leaderboard/sweatlas-qna
+- short_name: SWE-Skills-Bench
+  title: 'SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?'
+  authors: Tingxu Han, Yi Zhang, Wei Song, Chunrong Fang, Zhenyu Chen, Youcheng Sun,
+    Lijie Hu
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.15401
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.15401
+    github: https://github.com/GeniusHTX/SWE-Skills-Bench
 - short_name: SWE Context Bench
   title: 'SWE Context Bench: A Benchmark for Context Learning in Coding'
   authors: Jared Zhu, Minhao Hu, Junde Wu

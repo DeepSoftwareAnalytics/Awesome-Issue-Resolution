@@ -1,3 +1,15 @@
+- short_name: OpenSWE
+  title: 'daVinci-Env: Open SWE Environment Synthesis at Scale'
+  authors: Dayuan Fu, Shenyu Wu, Yunze Wu, Zerui Peng, Yaxing Huang, Jie Sun, Ji Zeng,
+    Mohan Jiang, Lin Zhang, Yukun Li, Jiarui Hu, Liming Liu, Jinlong Hou, Pengfei
+    Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.13023
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.13023
+    github: https://github.com/GAIR-NLP/OpenSWE
+    huggingface: https://huggingface.co/datasets/GAIR/OpenSWE
 - short_name: DockSmith
   title: 'DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder'
   authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
