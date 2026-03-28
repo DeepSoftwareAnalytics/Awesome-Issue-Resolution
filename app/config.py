@@ -42,3 +42,6 @@ ADMIN_PREFIX = '/admin'
 HOST = '0.0.0.0'
 PORT = 5000
 DEBUG = True
+
+README_IMAGE_PREFIX = 'app/docs/images'
+DOCS_IMAGE_PREFIX = 'images'

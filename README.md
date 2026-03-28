@@ -22,7 +22,7 @@
 [![Discord](https://img.shields.io/badge/💬_Discord-Join_Discussion-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/awBHrRJx)
 [![Issues](https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues)
 
-<img src="docs/images/awesome-issue-resolution.png" alt="Awesome Issue Resolution" width="60%">
+<img src="app/docs/images/awesome-issue-resolution.png" alt="Awesome Issue Resolution" width="60%">
 
 </div>
 
@@ -91,7 +91,7 @@ Based on a systematic review of **204 papers and online resources**, this survey
 
 <!-- START DEMO -->
 <div align="center">
-<img src="docs/images/database.gif" alt="Admin Interface Demo" style="zoom:50%;" />
+<img src="app/docs/images/database.gif" alt="Admin Interface Demo" style="zoom:50%;" />
 
 </div>
 <!-- END DEMO -->

@@ -126,6 +126,21 @@ USAGE_BLOCK_RE = re.compile(
 )
 
 
+def normalize_readme_asset_paths(content: str) -> str:
+    image_prefix = getattr(config, 'README_IMAGE_PREFIX', 'app/docs/images').rstrip('/')
+    content = re.sub(
+        r'(<img\s+[^>]*src=["\'])docs/images/',
+        rf'\1{image_prefix}/',
+        content
+    )
+    content = re.sub(
+        r'(\!\[[^\]]*\]\()docs/images/',
+        rf'\1{image_prefix}/',
+        content
+    )
+    return content
+
+
 def load_yaml(path: Path) -> List[Dict]:
     """Load YAML file and return list of entries."""
     if not path.exists():
@@ -381,7 +396,8 @@ def update_readme() -> bool:
         print(f"[ERROR] {README_PATH} does not exist!", file=sys.stderr)
         return False
     
-    content = README_PATH.read_text(encoding="utf-8")
+    raw_content = README_PATH.read_text(encoding="utf-8")
+    content = normalize_readme_asset_paths(raw_content)
     
     # Check if papers markers exist
     if "<!-- START PAPERS -->" not in content:
@@ -437,7 +453,7 @@ def update_readme() -> bool:
         )
     
     # Write back to file
-    if new_content != content:
+    if new_content != raw_content:
         README_PATH.write_text(new_content, encoding="utf-8")
         print("\n✓ README.md updated successfully!")
         return True
