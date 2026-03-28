@@ -70,7 +70,7 @@ jobs:
         if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: ./app/site
 
   deploy:
     environment:
