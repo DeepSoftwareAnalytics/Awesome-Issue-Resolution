@@ -19,9 +19,9 @@ DOCS_DIR = config.DOCS_DIR
 
 # Category list for counting unique papers
 CATEGORIES = [
-    "evaluation_datasets", "training_datasets", "single_agent", "multi_agent",
-    "workflow", "tool", "memory", "sft", "rl", "inference_scaling",
-    "data_collection", "data_synthesis", "data_analysis", "methods_analysis"
+    "evaluation_datasets", "training_datasets", "data_collection", "data_synthesis",
+    "single_agent", "multi_agent", "workflow", "tool", "memory",
+    "sft", "rl", "inference_scaling", "data_analysis", "methods_analysis"
 ]
 
 # shields.io badge URLs (different platforms use different colors and icons)
@@ -129,8 +129,8 @@ def count_unique_papers() -> int:
 
 def render_paper_item(entry: dict) -> str:
     """Render a single paper as a list item."""
-    short_name = entry.get("short_name", "").strip()
-    full_title = entry.get("title", "").strip()
+    short_name = re.sub(r"\s+", " ", entry.get("short_name", "").strip()).replace("`", "'")
+    full_title = re.sub(r"\s+", " ", entry.get("title", "").strip()).replace("`", "'")
     month = str(entry.get("month", "")).strip()
     links = entry.get("links", {}) or {}
 

@@ -130,10 +130,8 @@ Based on a systematic review of **204 papers and online resources**, this survey
 - `(2025-04)` **Multi-SWE-bench**: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.02605v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=MhBZzkz4h9)
 - `(2025-04)` **SWE-PolyBench**: SWE-PolyBench: A multi-language benchmark for repository level evaluation of coding agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.08703)
 - `(2025-04)` **SWE-bench Multilingual**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
-- `(2025-03)` **FEA-Bench**: FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation
-                  for Feature Implementation [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.06680v2)
-- `(2025-02)` **SWE-Lancer**: SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World
-                  Freelance Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2502.12115v4)
+- `(2025-03)` **FEA-Bench**: FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.06680v2)
+- `(2025-02)` **SWE-Lancer**: SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2502.12115v4)
 - `(2024-12)` **Visual SWE-bench**: CodeV: Issue Resolving with Visual Data [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.17315v1) [![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](http://dx.doi.org/10.18653/v1/2025.findings-acl.384)
 - `(2024-10)` **SWE-bench Multimodal**: SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.03859v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=riTiq3i21b)
 - `(2024-08)` **SWE-bench-java**: SWE-bench-java: A GitHub Issue Resolving Benchmark for Java [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2408.14354)
@@ -154,6 +152,34 @@ Based on a systematic review of **204 papers and online resources**, this survey
 - `(2025-02)` **LocAgent**: OrcaLoca: An LLM Agent Framework for Software Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2502.00350v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=LyUfPOvM6I)
 - `(2025-01)` **SWE-Fixer**: SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.05040v3)
 - `(2023-10)` **SWE-bench-extra**: SWE-bench: Can Language Models Resolve Real-world Github Issues? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2310.06770v3)
+
+### 📥 Data Collection Methods
+
+*Techniques for collecting training data*
+
+- `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
+- `(2026-02)` **DockSmith**: DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.00592) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/8sj7df9k8m5x8/docksmith)
+- `(2026-02)` **SWE-rebench V2**: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23866)
+- `(2026-02)` **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe)
+- `(2026-01)` **MEnvAgent**: MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22859) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ernie-research/MEnvAgent)
+- `(2025-12)` **Multi-Docker-Eval**: Multi-Docker-Eval: A 'Shovel of the Gold Rush' Benchmark on Automatic Environment Building for Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.06915)
+- `(2025-08)` **RepoForge**: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.01550)
+- `(2025-07)` **SWE-MERA**: SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.11059)
+- `(2025-06)` **SWE-Factory**: SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.10954)
+- `(2025-05)` **SWE-rebench**: SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.20411v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=nMpJoVmRy1)
+
+### 🔬 Data Synthesis Methods
+
+*Approaches for synthetic data generation*
+
+- `(2026-02)` **SWE-World**: SWE-World: Building Software Engineering Agents in Docker-Free Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03419) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-World)
+- `(2026-02)` **SWE-Hub**: SWE-Hub: A Unified Production System for Scalable, Executable Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.00575)
+- `(2025-09)` **SWE-Mirror**: SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.08724)
+- `(2025-06)` **SWE-Flow**: Synthesizing Software Engineering Data in a Test-Driven Manner [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.09003v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=P9DQ2IExgS)
+- `(2025-04)` **R2E-Gym**: R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07164) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=7evvwwdo3z)
+- `(2025-04)` **SWE-Synth**: SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.14757)
+- `(2025-04)` **SWE-smith**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
+- `(2025-01)` **Learn-by-interact**: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.10893v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=3UKOzGWCVY)
 
 ### 🤖 Single-Agent Systems
 
@@ -326,34 +352,6 @@ Based on a systematic review of **204 papers and online resources**, this survey
 - `(2025-01)` **ReasoningBank**: CodeMonkeys: Scaling Test-Time Compute for Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.14723)
 - `(2024-10)` **SWE-Search**: SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.20285v6) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=G7sIFXugTX)
 
-### 📥 Data Collection Methods
-
-*Techniques for collecting training data*
-
-- `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
-- `(2026-02)` **DockSmith**: DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.00592) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/8sj7df9k8m5x8/docksmith)
-- `(2026-02)` **SWE-rebench V2**: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23866)
-- `(2026-02)` **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe)
-- `(2026-01)` **MEnvAgent**: MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22859) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ernie-research/MEnvAgent)
-- `(2025-12)` **Multi-Docker-Eval**: Multi-Docker-Eval: A `Shovel of the Gold Rush' Benchmark on Automatic Environment Building for Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.06915)
-- `(2025-08)` **RepoForge**: RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.01550)
-- `(2025-07)` **SWE-MERA**: SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.11059)
-- `(2025-06)` **SWE-Factory**: SWE-Factory: Your Automated Factory for Issue Resolution Training Data and Evaluation Benchmarks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.10954)
-- `(2025-05)` **SWE-rebench**: SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.20411v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=nMpJoVmRy1)
-
-### 🔬 Data Synthesis Methods
-
-*Approaches for synthetic data generation*
-
-- `(2026-02)` **SWE-World**: SWE-World: Building Software Engineering Agents in Docker-Free Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03419) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-World)
-- `(2026-02)` **SWE-Hub**: SWE-Hub: A Unified Production System for Scalable, Executable Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.00575)
-- `(2025-09)` **SWE-Mirror**: SWE-Mirror: Scaling Issue-Resolving Datasets by Mirroring Issues Across Repositories [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.08724)
-- `(2025-06)` **SWE-Flow**: Synthesizing Software Engineering Data in a Test-Driven Manner [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.09003v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=P9DQ2IExgS)
-- `(2025-04)` **R2E-Gym**: R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07164) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=7evvwwdo3z)
-- `(2025-04)` **SWE-Synth**: SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.14757)
-- `(2025-04)` **SWE-smith**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
-- `(2025-01)` **Learn-by-interact**: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.10893v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=3UKOzGWCVY)
-
 ### 📈 Data Analysis
 
 *Analysis of datasets and benchmarks*
@@ -361,8 +359,7 @@ Based on a systematic review of **204 papers and online resources**, this survey
 - `(2025-12)` **Data contamination**: Does SWE-Bench-Verified Test Agent Ability or Model Memory? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.10218)
 - `(2025-11)` **Test Overfitting on SWE-bench**: Investigating Test Overfitting on SWE-bench [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.16858)
 - `(2025-07)` **Rigorous agentic benchmarks**: Establishing Best Practices for Building Rigorous Agentic Benchmarks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.02825)
-- `(2025-07)` **SPICE**: SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity,
-               Test Coverage, and Effort Estimation [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.09108v5)
+- `(2025-07)` **SPICE**: SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity, Test Coverage, and Effort Estimation [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.09108v5)
 - `(2025-06)` **UTBoost**: UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.09289)
 - `(2025-06)` **Trustworthiness**: Is Your Automated Software Engineer Trustworthy? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.17812)
 - `(2025-06)` **The SWE-Bench Illusion**: The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.12286)
@@ -585,9 +582,9 @@ Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 We welcome contributions! To add new papers or tables:
 
 1. Fork this repository
-2. Add entries via the admin interface (`python start.py` → `localhost:5000/admin`)  
+2. Add entries via the admin interface (`python app.py` → `localhost:5000/admin`)  
    — or manually edit the YAML/CSV files in `data/`
-3. Run `python start.py --init` if you edited files directly
+3. Run `python app.py --init` if you edited files directly
 4. Submit a PR with your changes
 
 ---

@@ -21,12 +21,12 @@ Based on a systematic review of 188 papers and online resources, this project es
 
 | Goal | Command / Action |
 |------|-----------------|
-| Full update + start server | `python start.py` (refreshes news, renders README/docs, builds site) |
-| Re-import data then full update | `python start.py --init` |
-| Start server without updates | `python start.py --no-update` |
-| Refresh news section only | `python start.py --news` |
-| Re-render README/docs from DB | `python start.py --render` or **Render from DB** in admin |
-| Build static site only | `python start.py --build` or **Build Website** in admin |
+| Full update + start server | `python app.py` (refreshes news, renders README/docs, builds site) |
+| Re-import data then full update | `python app.py --init` |
+| Start server without updates | `python app.py --no-update` |
+| Refresh news section only | `python app.py --news` |
+| Re-render README/docs from DB | `python app.py --render` or **Render from DB** in admin |
+| Build static site only | `python app.py --build` or **Build Website** in admin |
 | Export DB → YAML/CSV | **Sync to Data** in admin |
 | Import YAML/CSV → DB | **Import from Data** in admin |
 
@@ -39,7 +39,7 @@ We welcome Pull Requests to add new papers or fix errors!
 1. Fork this repository
 2. Add paper entries in the corresponding YAML file under `data/` directory (e.g., `papers_evaluation_datasets.yaml`, `papers_single_agent.yaml`, etc.)
 3. Follow the existing format with fields: `short_name`, `title`, `authors`, `venue`, `month`, and `links` (arxiv, github, huggingface)
-4. Run `python start.py --render` to regenerate the README and docs from the database
+4. Run `python app.py --render` to regenerate the README and docs from the database
 5. Submit a PR with your changes
 
 ---

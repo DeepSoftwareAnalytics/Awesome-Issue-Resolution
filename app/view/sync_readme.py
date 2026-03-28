@@ -47,6 +47,16 @@ CATEGORIES = {
         "yaml": "papers_training_datasets.yaml",
         "description": "Datasets for training issue resolution agents"
     },
+    "data_collection": {
+        "title": "📥 Data Collection Methods",
+        "yaml": "papers_data_collection.yaml",
+        "description": "Techniques for collecting training data"
+    },
+    "data_synthesis": {
+        "title": "🔬 Data Synthesis Methods",
+        "yaml": "papers_data_synthesis.yaml",
+        "description": "Approaches for synthetic data generation"
+    },
     "single_agent": {
         "title": "🤖 Single-Agent Systems",
         "yaml": "papers_single_agent.yaml",
@@ -86,16 +96,6 @@ CATEGORIES = {
         "title": "⚡ Inference-Time Scaling",
         "yaml": "papers_inference_scaling.yaml",
         "description": "Methods for scaling at inference time"
-    },
-    "data_collection": {
-        "title": "📥 Data Collection Methods",
-        "yaml": "papers_data_collection.yaml",
-        "description": "Techniques for collecting training data"
-    },
-    "data_synthesis": {
-        "title": "🔬 Data Synthesis Methods",
-        "yaml": "papers_data_synthesis.yaml",
-        "description": "Approaches for synthetic data generation"
     },
     "data_analysis": {
         "title": "📈 Data Analysis",
@@ -229,9 +229,8 @@ def count_unique_papers() -> int:
 
 
 def render_paper_item(entry: Dict) -> str:
-    """Render a single paper as a list item."""
-    short_name = entry.get("short_name", "").strip()
-    full_title = entry.get("title", "").strip()
+    short_name = re.sub(r"\s+", " ", entry.get("short_name", "").strip()).replace("`", "'")
+    full_title = re.sub(r"\s+", " ", entry.get("title", "").strip()).replace("`", "'")
     month = str(entry.get("month", "")).strip()
     links = entry.get("links", {}) or {}
 
