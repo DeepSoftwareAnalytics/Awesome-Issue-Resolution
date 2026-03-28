@@ -87,6 +87,8 @@ Based on a systematic review of **204 papers and online resources**, this survey
 - 🤝 **[Contributing](#-contributing)**: How to contribute to this project
 <!-- END EXPLORE -->
 
+> 🧭 **Survey Exploration Skill**: We provide a local skill at **`./skill/survey-repo-explorer`** to extract categorized paper links from survey READMEs and build a structured knowledgebase under **`./survey2knowledgebase`** for agent-assisted literature exploration.
+
 > 🔎 **Browse & Export**: The full paper database is searchable and exportable at **[deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/admin/)** — filter by category, date, or keyword, and export results as CSV.
 
 <!-- START DEMO -->
@@ -559,6 +561,9 @@ python app.py
 # Or force re-import from YAML/CSV first
 python app.py --init
 ```
+
+Survey exploration skill is available at **`./skill/survey-repo-explorer`**.  
+It can work with your local agent to build a categorized literature knowledgebase under **`./survey2knowledgebase`**.
 
 Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 

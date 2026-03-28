@@ -373,6 +373,9 @@ python app.py
 python app.py --init
 ```
 
+Survey exploration skill is available at **`./skill/survey-repo-explorer`**.  
+It can work with your local agent to build a categorized literature knowledgebase under **`./survey2knowledgebase`**.
+
 Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 
 | Command | Description |
