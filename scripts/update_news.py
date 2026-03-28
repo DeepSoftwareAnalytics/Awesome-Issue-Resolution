@@ -23,6 +23,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+APP_ROOT = ROOT / 'app'
+sys.path.insert(0, str(APP_ROOT))
+import config
 
 if sys.platform == 'win32':
     import os
@@ -30,7 +33,7 @@ if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')
 
-NEWS_PATH = ROOT / "docs" / "news.md"
+NEWS_PATH = config.DOCS_DIR / "news.md"
 README_PATH = ROOT / "README.md"
 
 START_RECENT = "<!-- START_RECENT_PAPERS -->"

@@ -18,7 +18,10 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-TABLES_DIR = ROOT / "data" / "tables"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+import config
+TABLES_DIR = config.DATA_DIR / "tables"
 
 
 def parse_number(value):
@@ -281,7 +284,7 @@ def main():
     print("\n" + "=" * 70)
     print("  ✅ Validation complete!")
     print("=" * 70)
-    print("\n[TIP] Run 'python view/render_tables.py' to update the website")
+    print("\n[TIP] Run 'python app/view/render_tables.py' to update the website")
 
 
 if __name__ == "__main__":

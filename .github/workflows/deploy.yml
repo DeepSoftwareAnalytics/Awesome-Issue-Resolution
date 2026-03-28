@@ -48,13 +48,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Initialize database from YAML/CSV
-        run: python database/migrate.py
+        run: python app/data/database/migrate.py
 
       - name: Refresh this month's papers
         run: python scripts/update_news.py
 
       - name: Render README and docs from database
-        run: python view/render_from_db.py
+        run: python app/view/render_from_db.py
 
       - name: Export database to static admin JSON
         run: python scripts/export_admin_json.py

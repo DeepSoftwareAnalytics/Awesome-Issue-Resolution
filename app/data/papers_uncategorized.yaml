@@ -1,0 +1,10 @@
+- short_name: RepoRepair
+  title: 'RepoRepair: Leveraging Code Documentation for Repository-Level Automated
+    Program Repair'
+  authors: Zhongqiang Pan, Chuanyi Li, Wenkang Zhong, Yi Feng, Bin Luo, Vincent Ng
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.01048
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.01048
+    github: https://github.com/ZhongQiangDev/RepoRepair

@@ -14,6 +14,9 @@ from datetime import date
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+APP_ROOT = ROOT / 'app'
+sys.path.insert(0, str(APP_ROOT))
+import config
 
 if sys.platform == 'win32':
     os.system('chcp 65001 >nul 2>&1')
@@ -21,7 +24,7 @@ if sys.platform == 'win32':
 
 from models import Paper, Dataset, TrainingDataset, SFTMethod, RLMethod, FoundationModel, get_session
 
-OUT_PATH = ROOT / 'docs' / 'admin' / 'data.json'
+OUT_PATH = config.DOCS_DIR / 'admin' / 'data.json'
 
 
 def export():

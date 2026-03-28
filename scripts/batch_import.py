@@ -19,8 +19,10 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
-TEMPLATES_DIR = ROOT / "templates"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+import config
+DATA_DIR = config.DATA_DIR
 
 VALID_CATEGORIES = [
     "evaluation_datasets", "training_datasets", "single_agent", "multi_agent",
@@ -206,9 +208,9 @@ def import_papers_from_csv(csv_file):
     if response in ('', 'y', 'yes'):
         import subprocess
         print("\n▶ Rendering papers...")
-        subprocess.run([sys.executable, str(ROOT / "view" / "render_papers.py")])
+        subprocess.run([sys.executable, str(config.script('render_papers'))])
         print("\n▶ Syncing README...")
-        subprocess.run([sys.executable, str(ROOT / "view" / "sync_readme.py")])
+        subprocess.run([sys.executable, str(config.script('sync_readme'))])
         print("\n✅ Update complete!")
     
     return True
@@ -219,7 +221,6 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python scripts/batch_import.py <csv_file>")
         print("\nExample:")
-        print("  python scripts/batch_import.py templates/papers_template.csv")
         print("  python scripts/batch_import.py my_papers.csv")
         return 1
     

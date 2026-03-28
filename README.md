@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-203-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-204-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -30,34 +30,27 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **203 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **204 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
 <!-- START NEWS -->
-> If you would like your work to be included in this repository, please cite [![Cite our survey](https://img.shields.io/badge/📖_Cite-our_survey-blue?style=flat)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/) our survey. We monitor citations and will update the repository promptly.
+> We continuously update the paper list in real time. If your work is unintentionally missing, please let us know by opening an issue. You are also welcome to cite [![Cite our survey](https://img.shields.io/badge/📖_Cite-our_survey-blue?style=flat)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/) our survey to support this project.
 
 ### Recent Papers
 
 <!-- START_RECENT_PAPERS -->
 - **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/)
+- **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - **SWE-Atlas**: SWE-Atlas [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://labs.scale.com/leaderboard/sweatlas-qna)
 - **SWE-CI**: SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03823) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/skylenage/SWE-CI)
 - **SWE-Skills-Bench**: SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.15401) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GeniusHTX/SWE-Skills-Bench)
 - **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/GAIR/OpenSWE)
-- **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/)
 - **DockSmith**: DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.00592) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/8sj7df9k8m5x8/docksmith)
-- **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/AweAI-Team/scale-swe)
 - **SWE Context Bench**: SWE Context Bench: A Benchmark for Context Learning in Coding [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2602.08316)
-- **SWE-ABS**: SWE-ABS: Adversarial Benchmark Strengthening Exposes Inflated Success Rates on Test-based Benchmark [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.00520)
-- **SWE-Hub**: SWE-Hub: A Unified Production System for Scalable, Executable Software Engineering Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.00575)
 - **SWE-Master**: SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03411) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-Master)
-- **SWE-MiniSandbox**: SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.11210v1) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](http://github.com/lblankl/SWE-MiniSandbox)
-- **SWE-Protégé**: SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.22124)
-- **SWE-Universe**: SWE-Universe: Scale Real-World Verifiable Environments to Millions [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/abs/2602.02361)
 - **SWE-World**: SWE-World: Building Software Engineering Agents in Docker-Free Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03419) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-World)
-- **SWE-rebench V2**: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23866)
 <!-- END_RECENT_PAPERS -->
 
 ### Recent Updates
@@ -109,7 +102,7 @@ Based on a systematic review of **203 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 203 works** across 14 categories
+> **Total: 204 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -213,6 +206,7 @@ Based on a systematic review of **203 papers and online resources**, this survey
 *Methods leveraging external tools*
 
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
+- `(2026-03)` **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - `(2026-02)` **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo)
 - `(2026-01)` **SWE-Tester**: SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.13713)
 - `(2025-12)` **GraphLocator**: GraphLocator: Graph-guided Causal Reasoning for Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22469)
@@ -563,23 +557,23 @@ pip install flask flask-cors sqlalchemy pyyaml requests
 
 # Full update + start admin server
 # (refreshes news, re-renders README/docs, builds static site, then serves)
-python start.py
+python app.py
 
 # Or force re-import from YAML/CSV first
-python start.py --init
+python app.py --init
 ```
 
 Open **http://localhost:5000/admin** to manage papers, datasets, and methods.
 
 | Command | Description |
 |---------|-------------|
-| `python start.py` | Full update (news + render + build) then start server |
-| `python start.py --init` | Re-import from YAML/CSV, then full update + start |
-| `python start.py --no-update` | Start server without running update steps |
-| `python start.py --port 8080` | Use a custom port |
-| `python start.py --news` | Refresh Recent Papers section only and exit |
-| `python start.py --render` | Re-render README/docs from DB only and exit |
-| `python start.py --build` | Build static site (mkdocs) only and exit |
+| `python app.py` | Full update (news + render + build) then start server |
+| `python app.py --init` | Re-import from YAML/CSV, then full update + start |
+| `python app.py --no-update` | Start server without running update steps |
+| `python app.py --port 8080` | Use a custom port |
+| `python app.py --news` | Refresh Recent Papers section only and exit |
+| `python app.py --render` | Re-render README/docs from DB only and exit |
+| `python app.py --build` | Build static site (mkdocs) only and exit |
 
 ---
 <!-- END USAGE -->

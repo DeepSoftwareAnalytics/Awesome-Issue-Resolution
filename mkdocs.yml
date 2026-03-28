@@ -7,7 +7,7 @@ repo_url: https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: app/docs/overrides
   palette:
     - scheme: default
       primary: blue
@@ -40,7 +40,8 @@ extra_css:
   - stylesheets/custom.css
 
 # Include PDF files in build output
-docs_dir: docs
+docs_dir: app/docs
+site_dir: app/site
 
 # Validation settings - suppress warnings for internal directory links
 validation:

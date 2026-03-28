@@ -1,30 +1,12 @@
-"""
-Application Configuration
-"""
-import os
+from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
 
-# Base directory
-BASE_DIR = Path(__file__).parent.absolute()
+_cfg_path = Path(__file__).resolve().parent / 'app' / 'config.py'
+_spec = spec_from_file_location('_app_config', _cfg_path)
+_module = module_from_spec(_spec)
+assert _spec and _spec.loader
+_spec.loader.exec_module(_module)
 
-# Database configuration
-DATABASE_PATH = BASE_DIR / 'database' / 'survey.db'
-DATABASE_URL = f'sqlite:///{DATABASE_PATH}'
-
-# Data directories
-DATA_DIR = BASE_DIR / 'data'
-DOCS_DIR = BASE_DIR / 'docs'
-SITE_DIR = BASE_DIR / 'site'
-
-# Admin interface
-ADMIN_TEMPLATE_DIR = BASE_DIR / 'admin' / 'templates'
-ADMIN_STATIC_DIR = BASE_DIR / 'admin' / 'static'
-
-# API configuration
-API_PREFIX = '/api'
-ADMIN_PREFIX = '/admin'
-
-# Server configuration
-HOST = '0.0.0.0'
-PORT = 5000
-DEBUG = True
+for _name in dir(_module):
+    if not _name.startswith('_'):
+        globals()[_name] = getattr(_module, _name)

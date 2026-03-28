@@ -1,0 +1,142 @@
+name: Missing Paper Submission
+description: Report a paper that should be included in this repository.
+title: "[Missing Paper]: "
+labels:
+  - paper-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us keep the paper list complete.
+        Please provide as much information as possible so we can review quickly.
+        If the work has multiple categories, you can select multiple options below.
+  - type: input
+    id: paper_title
+    attributes:
+      label: Paper title
+      description: Full title of the paper.
+      placeholder: "Example: SWE-Atlas: Context-Aware Evaluation for Repository-Level Issue Resolution"
+    validations:
+      required: true
+  - type: input
+    id: short_name
+    attributes:
+      label: Short name
+      description: Abbreviation or short name used in the community.
+      placeholder: "Example: SWE-Atlas"
+    validations:
+      required: false
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      description: Comma-separated author list.
+      placeholder: "First Author, Second Author, ..."
+    validations:
+      required: true
+  - type: input
+    id: publication_date
+    attributes:
+      label: Publication month
+      description: Format YYYY-MM (for example 2026-03).
+      placeholder: "2026-03"
+    validations:
+      required: false
+  - type: input
+    id: venue
+    attributes:
+      label: Venue
+      description: Conference, journal, workshop, or arXiv preprint.
+      placeholder: "Example: ICSE 2026 / arXiv preprint"
+    validations:
+      required: false
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category (can select multiple)
+      description: Select one or more categories.
+      multiple: true
+      options:
+        - evaluation_datasets
+        - training_datasets
+        - single_agent
+        - multi_agent
+        - workflow
+        - tool
+        - memory
+        - sft
+        - rl
+        - inference_scaling
+        - data_collection
+        - data_synthesis
+        - data_analysis
+        - methods_analysis
+    validations:
+      required: true
+  - type: input
+    id: arxiv
+    attributes:
+      label: arXiv link
+      placeholder: "https://arxiv.org/abs/..."
+    validations:
+      required: false
+  - type: input
+    id: github
+    attributes:
+      label: GitHub repository link
+      placeholder: "https://github.com/..."
+    validations:
+      required: false
+  - type: input
+    id: openreview
+    attributes:
+      label: OpenReview link
+      placeholder: "https://openreview.net/forum?id=..."
+    validations:
+      required: false
+  - type: input
+    id: doi
+    attributes:
+      label: DOI link
+      placeholder: "https://doi.org/..."
+    validations:
+      required: false
+  - type: input
+    id: website
+    attributes:
+      label: Project website link
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: input
+    id: huggingface
+    attributes:
+      label: HuggingFace link
+      placeholder: "https://huggingface.co/..."
+    validations:
+      required: false
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      description: Paste the abstract or a short summary.
+      placeholder: "Abstract text..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: submission_checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I have provided at least one valid paper link (arXiv/OpenReview/DOI/Website).
+          required: true
+        - label: I have checked this paper is not already in the repository.
+          required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional notes
+      description: Any extra context that helps maintainers review faster.
+      placeholder: "Optional notes..."
+    validations:
+      required: false

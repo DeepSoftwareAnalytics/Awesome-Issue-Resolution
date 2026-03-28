@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Search existing issues
+    url: https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/issues
+    about: Please search existing issues before submitting a new missing-paper request.
+  - name: Citation page
+    url: https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/
+    about: You can find citation information for this project here.

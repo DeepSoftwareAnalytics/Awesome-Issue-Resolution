@@ -16,9 +16,12 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-CITATION_BIB = ROOT / "docs" / "citation.bib"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+import config
+CITATION_BIB = config.DOCS_DIR / "citation.bib"
 README_PATH = ROOT / "README.md"
-CITE_PATH = ROOT / "docs" / "cite.md"
+CITE_PATH = config.DOCS_DIR / "cite.md"
 
 
 def parse_bibtex(bib_file):
@@ -253,7 +256,7 @@ def main():
     
     # Update paper.md
     print("📝 Updating docs/paper.md...")
-    paper_path = ROOT / "docs" / "paper.md"
+    paper_path = config.DOCS_DIR / "paper.md"
     if paper_path.exists():
         try:
             content = paper_path.read_text(encoding='utf-8')

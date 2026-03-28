@@ -18,7 +18,10 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_DIR = ROOT / "data" / "tables"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+import config
+CSV_DIR = config.DATA_DIR / "tables"
 
 
 def print_header():
@@ -65,7 +68,7 @@ def run_conversion():
     print("▶ [Step 1/3] Validating and sorting tables...")
     try:
         result = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "validate_tables.py")],
+            [sys.executable, str(config.script('validate_tables'))],
             capture_output=True,
             text=True,
             encoding='utf-8',
@@ -83,7 +86,7 @@ def run_conversion():
     print("▶ [Step 2/3] Rendering tables to Markdown...")
     try:
         result = subprocess.run(
-            [sys.executable, str(ROOT / "view" / "render_tables.py")],
+            [sys.executable, str(config.script('render_tables'))],
             capture_output=True,
             text=True,
             encoding='utf-8',
@@ -101,7 +104,7 @@ def run_conversion():
     print("▶ [Step 3/3] Syncing to README...")
     try:
         result = subprocess.run(
-            [sys.executable, str(ROOT / "view" / "sync_readme.py")],
+            [sys.executable, str(config.script('sync_readme'))],
             capture_output=True,
             text=True,
             encoding='utf-8',

@@ -19,7 +19,10 @@ if sys.platform == 'win32':
     sys.stderr.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+import config
+DATA_DIR = config.DATA_DIR
 
 # Available paper categories
 CATEGORIES = {
@@ -233,7 +236,7 @@ def run_update_scripts():
     # Render papers
     print("\n▶ Rendering papers...")
     try:
-        subprocess.run([sys.executable, str(ROOT / "view" / "render_papers.py")], check=True)
+        subprocess.run([sys.executable, str(config.script('render_papers'))], check=True)
         print("  ✅ Success")
     except:
         print("  ⚠️ Warning")
@@ -241,7 +244,7 @@ def run_update_scripts():
     # Sync README
     print("\n▶ Syncing README...")
     try:
-        subprocess.run([sys.executable, str(ROOT / "view" / "sync_readme.py")], check=True)
+        subprocess.run([sys.executable, str(config.script('sync_readme'))], check=True)
         print("  ✅ Success")
     except:
         print("  ⚠️ Warning")
