@@ -27,7 +27,7 @@ DATA_DIR = config.DATA_DIR
 VALID_CATEGORIES = [
     "evaluation_datasets", "training_datasets", "single_agent", "multi_agent",
     "workflow", "tool", "memory", "sft", "rl", "inference_scaling",
-    "data_collection", "data_synthesis", "data_analysis", "methods_analysis"
+    "data_collection", "data_synthesis", "data_analysis", "methods_analysis", "others"
 ]
 
 

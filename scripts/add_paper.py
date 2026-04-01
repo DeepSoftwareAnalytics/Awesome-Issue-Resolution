@@ -40,6 +40,7 @@ CATEGORIES = {
     "12": ("data_synthesis", "🔬 Data Synthesis Methods"),
     "13": ("data_analysis", "📈 Data Analysis"),
     "14": ("methods_analysis", "🔍 Methods Analysis"),
+    "15": ("others", "🧩 Others"),
 }
 
 

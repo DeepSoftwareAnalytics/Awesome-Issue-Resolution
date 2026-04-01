@@ -40,6 +40,15 @@
   links:
     arxiv: https://arxiv.org/abs/2603.15401
     github: https://github.com/GeniusHTX/SWE-Skills-Bench
+- short_name: MobileDev-Bench
+  title: 'MobileDev-Bench: A Comprehensive Benchmark for Evaluating Language Models
+    on Mobile Application Development'
+  authors: Moshood A. Fakorede, Krishna Upadhyay, A. B. Siddique, Umar Farooq
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.24946
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.24946
 - short_name: SWE Context Bench
   title: 'SWE Context Bench: A Benchmark for Context Learning in Coding'
   authors: Jared Zhu, Minhao Hu, Junde Wu
@@ -219,6 +228,14 @@
   month: 2025-03
   links:
     arxiv: https://arxiv.org/abs/2503.06680v2
+- short_name: SetUpAgent, SWEE-bench, SWA-bench
+  title: Automated Benchmark Generation for Repository-Level Coding Tasks
+  authors: Konstantinos Vergopoulos, Mark Niklas Müller, Martin Vechev
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.07701
+  month: 2025-03
+  links:
+    arxiv: https://arxiv.org/abs/2503.07701
 - short_name: SWE-Lancer
   title: "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World\n        \
     \          Freelance Software Engineering?"

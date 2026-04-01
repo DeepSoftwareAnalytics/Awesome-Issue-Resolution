@@ -71,6 +71,7 @@ body:
         - data_synthesis
         - data_analysis
         - methods_analysis
+        - others
     validations:
       required: true
   - type: input

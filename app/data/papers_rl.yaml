@@ -1,3 +1,12 @@
+- short_name: SWE-Fuse
+  title: 'SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning
+    and Entropy-aware RLVR Training'
+  authors: Xin-Cheng Wen, Binbin Chen, Haoxuan Lan, Hang Yu, Peng Di, Cuiyun Gao
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.07927
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.07927
 - short_name: SWE-Master
   title: 'SWE-Master: Unleashing the Potential of Software Engineering Agents via
     Post-Training'

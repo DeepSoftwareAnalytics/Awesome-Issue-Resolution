@@ -1,12 +1,61 @@
 {
-  "generated": "2026-03-28",
+  "generated": "2026-04-01",
   "stats": {
-    "total": 204,
-    "data": 53,
-    "methods": 130,
+    "total": 209,
+    "data": 57,
+    "methods": 131,
     "analysis": 23
   },
   "papers": [
+    {
+      "id": 210,
+      "short_name": "RepoLaunch",
+      "title": "RepoLaunch: Automating Build&Test Pipeline of Code Repositories on ANY Language and ANY Platform",
+      "authors": "Kenan Li, Rongzhi Li, Linghao Zhang, Qirui Jin, Liao Zhu, Xiaosong Huang, Geng Zhang, Yikai Zhang, Shilin He, Chengxing Xie, Xin Zhang, Zijian Jin, Bowen Li, Chaoyun Zhang, Yu Kang, Yufan Huang, Elsie Nallipogu, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang",
+      "venue": "arXiv preprint arXiv:2603.05026",
+      "month": "2026-03",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.05026"
+      }
+    },
+    {
+      "id": 209,
+      "short_name": "SWE-Fuse",
+      "title": "SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training",
+      "authors": "Xin-Cheng Wen, Binbin Chen, Haoxuan Lan, Hang Yu, Peng Di, Cuiyun Gao",
+      "venue": "arXiv preprint arXiv:2603.07927",
+      "month": "2026-03",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.07927"
+      }
+    },
+    {
+      "id": 208,
+      "short_name": "MobileDev-Bench",
+      "title": "MobileDev-Bench: A Comprehensive Benchmark for Evaluating Language Models on Mobile Application Development",
+      "authors": "Moshood A. Fakorede, Krishna Upadhyay, A. B. Siddique, Umar Farooq",
+      "venue": "arXiv preprint arXiv:2603.24946",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.24946"
+      }
+    },
+    {
+      "id": 207,
+      "short_name": "SWE-Next",
+      "title": "SWE-Next: Scalable Real-World Software Engineering Tasks for Agents",
+      "authors": "Jiarong Liang, Zhiheng Lyu, Zijie Liu, Xiangchao Chen, Ping Nie, Kai Zou, Wenhu Chen",
+      "venue": "arXiv preprint arXiv:2603.20691",
+      "month": "2026-03",
+      "category": "data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.20691",
+        "github": "https://github.com/TIGER-AI-Lab/SWE-Next"
+      }
+    },
     {
       "id": 206,
       "short_name": "RepoRepair",
@@ -1789,6 +1838,18 @@
       "category": "data_analysis",
       "links": {
         "doi": "http://dx.doi.org/10.1109/ICSE-Companion66252.2025.00075"
+      }
+    },
+    {
+      "id": 211,
+      "short_name": "SetUpAgent, SWEE-bench, SWA-bench",
+      "title": "Automated Benchmark Generation for Repository-Level Coding Tasks",
+      "authors": "Konstantinos Vergopoulos, Mark Niklas Müller, Martin Vechev",
+      "venue": "arXiv preprint arXiv:2503.07701",
+      "month": "2025-03",
+      "category": "data_collection,evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2503.07701"
       }
     },
     {

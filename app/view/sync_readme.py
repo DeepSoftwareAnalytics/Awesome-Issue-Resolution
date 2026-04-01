@@ -106,6 +106,11 @@ CATEGORIES = {
         "title": "🔍 Methods Analysis",
         "yaml": "papers_methods_analysis.yaml",
         "description": "Comparative analysis of different methods"
+    },
+    "others": {
+        "title": "🧩 Others",
+        "yaml": "papers_others.yaml",
+        "description": "Papers that do not fit existing categories"
     }
 }
 
@@ -281,6 +286,7 @@ def generate_papers_section() -> str:
     
     # Track unique works for accurate count
     unique_papers = set()
+    category_count = 0
     
     for category_id, category_info in CATEGORIES.items():
         yaml_file = category_info["yaml"]
@@ -289,6 +295,7 @@ def generate_papers_section() -> str:
         entries = load_yaml(yaml_path)
         if not entries:
             continue
+        category_count += 1
         
         # Add category title and description
         content.append(f"\n### {category_info['title']}\n")
@@ -318,7 +325,7 @@ def generate_papers_section() -> str:
     
     # Add summary at the beginning with unique count
     total_unique = len(unique_papers)
-    summary = f"\n> **Total: {total_unique} works** across {len(CATEGORIES)} categories\n"
+    summary = f"\n> **Total: {total_unique} works** across {category_count} categories\n"
     content.insert(1, summary)
     
     # Add empty line at the end to separate from comment marker

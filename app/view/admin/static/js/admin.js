@@ -9,6 +9,9 @@ let currentlyEditingCell = null;
 
 // Multi-select state: Map of paper.id → paper object for all checked papers
 const selectedPapers = new Map();
+const PAPER_CATEGORIES = ['sft', 'rl', 'data_collection', 'data_analysis', 'data_synthesis',
+    'evaluation_datasets', 'training_datasets', 'inference_scaling',
+    'methods_analysis', 'workflow', 'tool', 'memory', 'multi_agent', 'single_agent', 'others'];
 
 // Form field definitions for each entity type
 const FORM_FIELDS = {
@@ -19,9 +22,7 @@ const FORM_FIELDS = {
         { name: 'month', label: 'Date (YYYY-MM)', type: 'text', required: true, placeholder: '2026-01' },
         { name: 'venue', label: 'Venue', type: 'text', required: true },
         { name: 'category', label: 'Category', type: 'multiselect', required: true,
-          options: ['sft', 'rl', 'data_collection', 'data_analysis', 'data_synthesis',
-                    'evaluation_datasets', 'training_datasets', 'inference_scaling',
-                    'methods_analysis', 'workflow', 'tool', 'memory', 'multi_agent', 'single_agent'] },
+          options: PAPER_CATEGORIES },
         { name: 'abstract', label: 'Abstract', type: 'textarea', required: false },
         { name: 'arxiv_link', label: 'arXiv Link', type: 'url', required: false },
         { name: 'github_link', label: 'GitHub Link', type: 'url', required: false },
@@ -180,8 +181,7 @@ function initializeFilters() {
     // Initialize category options
     const categorySelect = document.getElementById('filter-category');
     if (categorySelect) {
-        const categories = ['sft', 'rl', 'data_collection', 'data_analysis', 'data_synthesis', 'evaluation_datasets', 'training_datasets', 'inference_scaling', 'methods_analysis', 'workflow', 'tool', 'memory', 'multi_agent', 'single_agent'];
-        categories.forEach(cat => {
+        PAPER_CATEGORIES.forEach(cat => {
             const option = document.createElement('option');
             option.value = cat;
             option.textContent = cat;
@@ -428,7 +428,7 @@ function startInlineEdit(cell) {
         // Category uses dropdown selection
         let categories = [];
         if (itemType === 'papers') {
-            categories = ['sft', 'rl', 'data_collection', 'data_analysis', 'data_synthesis', 'evaluation_datasets', 'training_datasets', 'inference_scaling', 'methods_analysis', 'workflow', 'tool', 'memory', 'multi_agent', 'single_agent'];
+            categories = PAPER_CATEGORIES;
         } else if (itemType === 'datasets') {
             categories = ['single-pl', 'multi-pl'];
         }

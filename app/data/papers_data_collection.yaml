@@ -10,6 +10,28 @@
     arxiv: https://arxiv.org/abs/2603.13023
     github: https://github.com/GAIR-NLP/OpenSWE
     huggingface: https://huggingface.co/datasets/GAIR/OpenSWE
+- short_name: SWE-Next
+  title: 'SWE-Next: Scalable Real-World Software Engineering Tasks for Agents'
+  authors: Jiarong Liang, Zhiheng Lyu, Zijie Liu, Xiangchao Chen, Ping Nie, Kai Zou,
+    Wenhu Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.20691
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.20691
+    github: https://github.com/TIGER-AI-Lab/SWE-Next
+- short_name: RepoLaunch
+  title: 'RepoLaunch: Automating Build&Test Pipeline of Code Repositories on ANY Language
+    and ANY Platform'
+  authors: Kenan Li, Rongzhi Li, Linghao Zhang, Qirui Jin, Liao Zhu, Xiaosong Huang,
+    Geng Zhang, Yikai Zhang, Shilin He, Chengxing Xie, Xin Zhang, Zijian Jin, Bowen
+    Li, Chaoyun Zhang, Yu Kang, Yufan Huang, Elsie Nallipogu, Saravan Rajmohan, Qingwei
+    Lin, Dongmei Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.05026
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.05026
 - short_name: DockSmith
   title: 'DockSmith: Scaling Reliable Coding Environments via an Agentic Docker Builder'
   authors: Jiaran Zhang, Luck Ma, Yanhao Li, Fanqi Wan, Di Qi, Xu Zhao, Jieyi Hou,
@@ -104,3 +126,11 @@
   links:
     arxiv: https://arxiv.org/abs/2505.20411v2
     openreview: https://openreview.net/forum?id=nMpJoVmRy1
+- short_name: SetUpAgent, SWEE-bench, SWA-bench
+  title: Automated Benchmark Generation for Repository-Level Coding Tasks
+  authors: Konstantinos Vergopoulos, Mark Niklas Müller, Martin Vechev
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.07701
+  month: 2025-03
+  links:
+    arxiv: https://arxiv.org/abs/2503.07701

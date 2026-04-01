@@ -21,7 +21,7 @@ DOCS_DIR = config.DOCS_DIR
 CATEGORIES = [
     "evaluation_datasets", "training_datasets", "data_collection", "data_synthesis",
     "single_agent", "multi_agent", "workflow", "tool", "memory",
-    "sft", "rl", "inference_scaling", "data_analysis", "methods_analysis"
+    "sft", "rl", "inference_scaling", "data_analysis", "methods_analysis", "others"
 ]
 
 # shields.io badge URLs (different platforms use different colors and icons)

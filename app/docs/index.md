@@ -30,7 +30,7 @@
         <a href="https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors" target="_blank">
             <img src="https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github" alt="Contributors">
         </a>
-        <img src="https://img.shields.io/badge/papers-204-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
+        <img src="https://img.shields.io/badge/papers-209-green?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Papers Count">
     </div>
     
     <!-- Interactive Exploration Badges -->
@@ -391,6 +391,11 @@ This section includes research works that provide in-depth analysis and discussi
 * **Strong-Weak Model Collaboration**: An Empirical Study on Strong-Weak Model Collaboration for Repo-level Code Generation (2025) [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.20182){: target="_blank" }
 * **Agents in the Wild** (2025) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://insights.logicstar.ai/){: target="_blank" }
 <!-- END PAPERS:methods_analysis -->
+
+### Others
+
+<!-- START PAPERS:others -->
+<!-- END PAPERS:others -->
 
 ---
 
