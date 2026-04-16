@@ -1,3 +1,13 @@
+- short_name: CODESTRUCT
+  title: 'CODESTRUCT: Code Agents over Structured Action Spaces'
+  authors: Myeongsoo Kim, Joe Hsu, Dingmin Wang, Shweta Garg, Varun Kumar, Murali
+    Krishna Ramanathan
+  year: '2026'
+  venue: Proceedings of the 64th Annual Meeting of the Association for Computational
+    Linguistics (ACL 2026)
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.05407
 - short_name: SynFix
   title: 'SynFix: Dependency-Aware Program Repair via RelationGraph Analysis'
   authors: Tang, Xunzhu, Gao, Jiechao, Xu, Jin, Sun, Tiezhu, Song, Yewei, Ezzini,

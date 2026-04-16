@@ -1,3 +1,11 @@
+- short_name: RTMC
+  title: 'RTMC: Step-Level Credit Assignment via Rollout Trees'
+  authors: Tao Wang, Suhang Zheng, Xiaoxiao Xu
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.11037
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.11037
 - short_name: SWE-Fuse
   title: 'SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning
     and Entropy-aware RLVR Training'
