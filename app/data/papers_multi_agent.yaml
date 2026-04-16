@@ -1,3 +1,12 @@
+- short_name: AgentForge
+  title: 'AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous
+    Software Engineering'
+  authors: Rajesh Kumar, Waqar Ali, Junaid Ahmed, Najma Imtiaz Ali, Shaban Usman
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.13120
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.13120
 - short_name: SWE-Adept
   title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and
     Structured Issue Resolution'
