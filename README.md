@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-209-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-217-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -30,7 +30,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **209 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **217 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
@@ -40,16 +40,16 @@ Based on a systematic review of **209 papers and online resources**, this survey
 ### Recent Papers
 
 <!-- START_RECENT_PAPERS -->
+- **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- **Agent-CoEvo**: Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.04580)
+- **SWE-Shield**: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance in LLM-based Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.05955)
+- **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/)
+- **GALA**: GALA: Multimodal Graph Alignment for Bug Localization in Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.08089)
+- **REAgent**: REAgent: Requirement-Driven LLM Agents for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.06861)
+- **RTMC**: RTMC: Step-Level Credit Assignment via Rollout Trees [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11037)
+- **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/KDEGroup)
 - **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/)
-- **MobileDev-Bench**: MobileDev-Bench: A Comprehensive Benchmark for Evaluating Language Models on Mobile Application Development [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.24946)
-- **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
-- **SWE-Atlas**: SWE-Atlas [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://labs.scale.com/leaderboard/sweatlas-qna)
-- **SWE-CI**: SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03823) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/skylenage/SWE-CI)
-- **SWE-Fuse**: SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.07927)
-- **SWE-Next**: SWE-Next: Scalable Real-World Software Engineering Tasks for Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.20691) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next)
-- **SWE-Skills-Bench**: SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.15401) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GeniusHTX/SWE-Skills-Bench)
-- **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/GAIR/OpenSWE)
 <!-- END_RECENT_PAPERS -->
 
 ### Recent Updates
@@ -103,13 +103,14 @@ Based on a systematic review of **209 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 209 works** across 14 categories
+> **Total: 217 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
 
 *Benchmarks for evaluating issue resolution systems*
 
+- `(2026-04)` **SWE-Shield**: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance in LLM-based Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.05955)
 - `(2026-03)` **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE)
 - `(2026-03)` **SWE-CI**: SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03823) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/skylenage/SWE-CI)
 - `(2026-03)` **SWE-Atlas** [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://labs.scale.com/leaderboard/sweatlas-qna)
@@ -143,6 +144,7 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Datasets for training issue resolution agents*
 
+- `(2026-04)` **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero)
 - `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
 - `(2026-02)` **SWE-Universe**: SWE-Universe: Scale Real-World Verifiable Environments to Millions [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/abs/2602.02361)
 - `(2026-02)` **SWE-rebench V2**: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23866)
@@ -191,6 +193,7 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Individual autonomous agents for issue resolution*
 
+- `(2026-04)` **REAgent**: REAgent: Requirement-Driven LLM Agents for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.06861)
 - `(2025-12)` **Confucius Code Agent**: Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.10398)
 - `(2025-10)` **TOM-SWE**: TOM-SWE: User Mental Modeling For Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.21903)
 - `(2025-09)` **Lita**: Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.25873)
@@ -206,6 +209,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Collaborative multi-agent frameworks*
 
+- `(2026-04)` **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- `(2026-04)` **Agent-CoEvo**: Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.04580)
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - `(2025-08)` **Meta-RAG**: Meta-RAG on Large Codebases Using Code Summarization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.02611)
 - `(2025-07)` **SWE-Debate**: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.23348v1)
@@ -237,6 +242,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Methods leveraging external tools*
 
+- `(2026-04)` **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- `(2026-04)` **GALA**: GALA: Multimodal Graph Alignment for Bug Localization in Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.08089)
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - `(2026-03)` **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - `(2026-02)` **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo)
@@ -287,6 +294,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Models trained via supervised learning*
 
+- `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
+- `(2026-04)` **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero)
 - `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
 - `(2026-02)` **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe)
 - `(2026-01)` **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426)
@@ -308,6 +317,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Models trained via reinforcement learning*
 
+- `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
+- `(2026-04)` **RTMC**: RTMC: Step-Level Credit Assignment via Rollout Trees [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11037)
 - `(2026-03)` **SWE-Fuse**: SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.07927)
 - `(2026-02)` **SWE-Master**: SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03411) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-Master)
 - `(2026-02)` **SWE-Protégé**: SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.22124)

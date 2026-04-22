@@ -1,3 +1,13 @@
+- short_name: SWE-Shield
+  title: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance
+    in LLM-based Issue Resolution
+  authors: Kai Yu, Zhenhao Zhou, Junhao Zeng, Ying Wang, Xueying Du, Zhiqiang Yuan,
+    Junwei Liu, Ziyu Zhou, Yujia Wang, Chong Wang, Xin Peng
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.05955
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.05955
 - short_name: BeyondSWE
   title: 'BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing?'
   authors: Guoxin Chen, Fanzhe Meng, Jiale Zhao, Minghao Li, Daixuan Cheng, Huatong

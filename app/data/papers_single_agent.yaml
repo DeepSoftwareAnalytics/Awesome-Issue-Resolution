@@ -1,3 +1,12 @@
+- short_name: REAgent
+  title: 'REAgent: Requirement-Driven LLM Agents for Software Issue Resolution'
+  authors: Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, Shaowei Wang, Haoli Bai,
+    Lifeng Shang, Junjie Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.06861
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.06861
 - short_name: Confucius Code Agent
   title: 'Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases'
   authors: Sherman Wong, Zhenting Qi, Zhaodong Wang, Nathan Hu, Samuel Lin, Jun Ge,

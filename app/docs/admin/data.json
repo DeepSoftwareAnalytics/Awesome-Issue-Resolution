@@ -1,12 +1,113 @@
 {
-  "generated": "2026-04-01",
+  "generated": "2026-04-22",
   "stats": {
-    "total": 209,
-    "data": 57,
-    "methods": 131,
+    "total": 217,
+    "data": 59,
+    "methods": 138,
     "analysis": 23
   },
   "papers": [
+    {
+      "id": 219,
+      "short_name": "Agent-CoEvo",
+      "title": "Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints",
+      "authors": "Kefan Li, Yuan Yuan, Mengfei Wang, Shihao Zheng, Wei Wang, Ping Yang, Mu Li, Weifeng Lv",
+      "venue": "arXiv preprint arXiv:2604.04580",
+      "month": "2026-04",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.04580"
+      }
+    },
+    {
+      "id": 218,
+      "short_name": "GALA",
+      "title": "GALA: Multimodal Graph Alignment for Bug Localization in Automated Program Repair",
+      "authors": "Zhuoyao Liu, Zhengran Zeng, Shu-Dong Huang, Yang Liu, Shikun Zhang, Wei Ye",
+      "venue": "arXiv preprint arXiv:2604.08089",
+      "month": "2026-04",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.08089"
+      }
+    },
+    {
+      "id": 217,
+      "short_name": "RTMC",
+      "title": "RTMC: Step-Level Credit Assignment via Rollout Trees",
+      "authors": "Tao Wang, Suhang Zheng, Xiaoxiao Xu",
+      "venue": "arXiv preprint arXiv:2604.11037",
+      "month": "2026-04",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.11037"
+      }
+    },
+    {
+      "id": 216,
+      "short_name": "SWE-Shield",
+      "title": "Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance in LLM-based Issue Resolution",
+      "authors": "Kai Yu, Zhenhao Zhou, Junhao Zeng, Ying Wang, Xueying Du, Zhiqiang Yuan, Junwei Liu, Ziyu Zhou, Yujia Wang, Chong Wang, Xin Peng",
+      "venue": "arXiv preprint arXiv:2604.05955",
+      "month": "2026-04",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.05955"
+      }
+    },
+    {
+      "id": 215,
+      "short_name": "From SWE-ZERO to SWE-HERO",
+      "title": "From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents",
+      "authors": "Nikolai Ludwig, Wasi Uddin Ahmad, Somshubra Majumdar, Boris Ginsburg",
+      "venue": "arXiv preprint arXiv:2604.01496",
+      "month": "2026-04",
+      "category": "sft,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.01496",
+        "huggingface": "https://huggingface.co/datasets/nvidia/SWE-Zero2Hero",
+        "website": "https://wasiahmad.github.io/publications/59_swezero2hero/"
+      }
+    },
+    {
+      "id": 214,
+      "short_name": "AgentForge",
+      "title": "AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering",
+      "authors": "Rajesh Kumar, Waqar Ali, Junaid Ahmed, Najma Imtiaz Ali, Shaban Usman",
+      "venue": "arXiv preprint arXiv:2604.13120",
+      "month": "2026-04",
+      "category": "tool,multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.13120",
+        "github": "https://github.com/raja21068/AutoCodeAI"
+      }
+    },
+    {
+      "id": 213,
+      "short_name": "SWE-AGILE",
+      "title": "SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context",
+      "authors": "Shuquan Lian, Juncheng Liu, Yazhe Chen, Yuhong Chen, Hui Li",
+      "venue": "arXiv preprint arXiv:2604.11716",
+      "month": "2026-04",
+      "category": "sft,rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.11716",
+        "github": "https://github.com/KDEGroup/SWE-AGILE",
+        "huggingface": "https://huggingface.co/KDEGroup"
+      }
+    },
+    {
+      "id": 212,
+      "short_name": "REAgent",
+      "title": "REAgent: Requirement-Driven LLM Agents for Software Issue Resolution",
+      "authors": "Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, Shaowei Wang, Haoli Bai, Lifeng Shang, Junjie Chen",
+      "venue": "arXiv preprint arXiv:2604.06861",
+      "month": "2026-04",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.06861"
+      }
+    },
     {
       "id": 210,
       "short_name": "RepoLaunch",

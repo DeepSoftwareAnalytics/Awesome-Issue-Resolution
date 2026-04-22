@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__exa__crawling_exa",
+      "mcp__exa__web_search_exa",
+      "mcp__exa__get_code_context_exa",
+      "mcp__websearch__bailian_web_search",
+      "WebFetch(domain:github.com)",
+      "Bash(gh repo view QuantaAlpha/EvoControl --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view GenSI-THUAIR/FLEX --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view CharlesQ9/Alita --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view MaximeRobeyns/self_improving_coding_agent --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view huangd1999/AgentCoder --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view EvoAgentX/EvoAgentX --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view JARVIS-Xs/SE-Agent --json name,description,readme,repositoryTopics)",
+      "Bash(gh repo view jennyzzt/dgm --json name,description,readme,repositoryTopics)",
+      "WebSearch",
+      "Bash(gh repo view JARVIS-Xs/SE-Agent --json name,description,stars,forks,topics)",
+      "Bash(gh repo view MaximeRobeyns/self_improving_coding_agent --json name,description,stars,forks,topics)",
+      "Bash(gh repo view huangd1999/AgentCoder --json name,description,stars,forks,topics)",
+      "Bash(gh repo view jennyzzt/dgm --json name,description,stars,forks,topics)",
+      "Bash(gh repo view EvoAgentX/EvoAgentX --json name,description,stars,forks,topics)"
+    ]
+  }
+}

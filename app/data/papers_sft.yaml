@@ -1,3 +1,25 @@
+- short_name: SWE-AGILE
+  title: 'SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning
+    Context'
+  authors: Shuquan Lian, Juncheng Liu, Yazhe Chen, Yuhong Chen, Hui Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.11716
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.11716
+    github: https://github.com/KDEGroup/SWE-AGILE
+    huggingface: https://huggingface.co/KDEGroup
+- short_name: From SWE-ZERO to SWE-HERO
+  title: 'From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning
+    for Software Engineering Agents'
+  authors: Nikolai Ludwig, Wasi Uddin Ahmad, Somshubra Majumdar, Boris Ginsburg
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.01496
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.01496
+    huggingface: https://huggingface.co/datasets/nvidia/SWE-Zero2Hero
+    website: https://wasiahmad.github.io/publications/59_swezero2hero/
 - short_name: OpenSWE
   title: 'daVinci-Env: Open SWE Environment Synthesis at Scale'
   authors: Dayuan Fu, Shenyu Wu, Yunze Wu, Zerui Peng, Yaxing Huang, Jie Sun, Ji Zeng,
