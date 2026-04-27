@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-209-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-217-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -30,7 +30,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **209 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **217 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
@@ -40,16 +40,16 @@ Based on a systematic review of **209 papers and online resources**, this survey
 ### Recent Papers
 
 <!-- START_RECENT_PAPERS -->
+- **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- **Agent-CoEvo**: Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.04580)
+- **SWE-Shield**: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance in LLM-based Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.05955)
+- **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/)
+- **GALA**: GALA: Multimodal Graph Alignment for Bug Localization in Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.08089)
+- **REAgent**: REAgent: Requirement-Driven LLM Agents for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.06861)
+- **RTMC**: RTMC: Step-Level Credit Assignment via Rollout Trees [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11037)
+- **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/KDEGroup)
 - **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/)
-- **MobileDev-Bench**: MobileDev-Bench: A Comprehensive Benchmark for Evaluating Language Models on Mobile Application Development [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.24946)
-- **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
-- **SWE-Atlas**: SWE-Atlas [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://labs.scale.com/leaderboard/sweatlas-qna)
-- **SWE-CI**: SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03823) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/skylenage/SWE-CI)
-- **SWE-Fuse**: SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.07927)
-- **SWE-Next**: SWE-Next: Scalable Real-World Software Engineering Tasks for Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.20691) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next)
-- **SWE-Skills-Bench**: SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.15401) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GeniusHTX/SWE-Skills-Bench)
-- **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/GAIR/OpenSWE)
 <!-- END_RECENT_PAPERS -->
 
 ### Recent Updates
@@ -103,13 +103,14 @@ Based on a systematic review of **209 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 209 works** across 14 categories
+> **Total: 217 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
 
 *Benchmarks for evaluating issue resolution systems*
 
+- `(2026-04)` **SWE-Shield**: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance in LLM-based Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.05955)
 - `(2026-03)` **BeyondSWE**: BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03194) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://aweai-team.github.io/BeyondSWE/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/BeyondSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE)
 - `(2026-03)` **SWE-CI**: SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.03823) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/skylenage/SWE-CI)
 - `(2026-03)` **SWE-Atlas** [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://labs.scale.com/leaderboard/sweatlas-qna)
@@ -143,6 +144,7 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Datasets for training issue resolution agents*
 
+- `(2026-04)` **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero)
 - `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
 - `(2026-02)` **SWE-Universe**: SWE-Universe: Scale Real-World Verifiable Environments to Millions [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/abs/2602.02361)
 - `(2026-02)` **SWE-rebench V2**: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23866)
@@ -191,6 +193,7 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Individual autonomous agents for issue resolution*
 
+- `(2026-04)` **REAgent**: REAgent: Requirement-Driven LLM Agents for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.06861)
 - `(2025-12)` **Confucius Code Agent**: Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.10398)
 - `(2025-10)` **TOM-SWE**: TOM-SWE: User Mental Modeling For Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.21903)
 - `(2025-09)` **Lita**: Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.25873)
@@ -206,6 +209,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Collaborative multi-agent frameworks*
 
+- `(2026-04)` **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- `(2026-04)` **Agent-CoEvo**: Beyond Fixed Tests: Repository-Level Issue Resolution as Coevolution of Code and Behavioral Constraints [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.04580)
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - `(2025-08)` **Meta-RAG**: Meta-RAG on Large Codebases Using Code Summarization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.02611)
 - `(2025-07)` **SWE-Debate**: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.23348v1)
@@ -237,6 +242,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Methods leveraging external tools*
 
+- `(2026-04)` **AgentForge**: AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous Software Engineering [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13120) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/raja21068/AutoCodeAI)
+- `(2026-04)` **GALA**: GALA: Multimodal Graph Alignment for Bug Localization in Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.08089)
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - `(2026-03)` **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - `(2026-02)` **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo)
@@ -287,6 +294,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Models trained via supervised learning*
 
+- `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
+- `(2026-04)` **From SWE-ZERO to SWE-HERO**: From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01496) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://wasiahmad.github.io/publications/59_swezero2hero/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nvidia/SWE-Zero2Hero)
 - `(2026-03)` **OpenSWE**: daVinci-Env: Open SWE Environment Synthesis at Scale [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.13023) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE)
 - `(2026-02)` **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe)
 - `(2026-01)` **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426)
@@ -308,6 +317,8 @@ Based on a systematic review of **209 papers and online resources**, this survey
 
 *Models trained via reinforcement learning*
 
+- `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
+- `(2026-04)` **RTMC**: RTMC: Step-Level Credit Assignment via Rollout Trees [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11037)
 - `(2026-03)` **SWE-Fuse**: SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.07927)
 - `(2026-02)` **SWE-Master**: SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.03411) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/RUCAIBox/SWE-Master)
 - `(2026-02)` **SWE-Protégé**: SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.22124)
@@ -408,8 +419,6 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-smith | Python | No | 128 | 50k | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-smith) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench/SWE-smith) |
 | SWE-Lego | Python | No | 3,251 | 32,119 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Lego/datasets) |
 | SWE-rebench | Python | No | 3,468 | 21,336 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-rebench/SWE-bench-fork) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-rebench) |
-| **SWE-rebench V2** | Python, JS, TS, Go, Rust, C, C++, Java, etc. (20 PL) | No | 3,600+ | 32,000+ | Yes | - |
-| OpenSWE | Python | No | 12,800 | 45,320 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE) |
 | SWE-bench-train | Python | No | 37 | 19k | No | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/princeton-nlp/SWE-bench/viewer/default/train) |
 | SWE-Flow | Python | No | 74 | 18,081 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Hambaobao/SWE-Flow) |
 | Skywork-SWE | Python | No | 2,531 | 10,169 | Yes | - |
@@ -418,11 +427,6 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-bench-extra | Python | No | 2k | 6.38k | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-bench-extra) |
 | SWE-Gym | Python | No | 11 | 2,438 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Gym/SWE-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Gym/datasets) |
 | SWE-bench | Python | No | 12 | 2,294 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/princeton-nlp/SWE-bench) |
-| BeyondSWE | Python | No | - | 500 | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) |
-| SWE-CI | Python | No | - | 100 | Yes | - |
-| SWE-Skills-Bench | Python | No | - | 565 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GeniusHTX/SWE-Skills-Bench) |
-| daVinci-Dev | Python | No | - | - | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/daVinci-Dev) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/daVinci-Dev) |
-| SWE-Next | Python | No | 3,971 | 2,308 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/TIGER-Lab/SWE-Next) |
 | SWE-bench-java | Java | No | 19 | 1,797 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/multi-swe-bench/multi-swe-bench-env) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/Daoguang/Multi-SWE-bench) |
 | FEA-bench | Python | No | 83 | 1,401 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/FEA-Bench/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/microsoft/FEA-Bench) |
 | SWE-bench-Live | Python | No | 164 | 1,565 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/SWE-bench-Live) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/SWE-bench-Live) |
@@ -432,10 +436,7 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-MERA | Python | No | 200 | 300 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/MERA-Evaluation/SWE-MERA-submissions) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/MERA-evaluation/SWE-MERA) |
 | SWE-Bench-CL | Python | No | 8 | 273 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/thomasjoshi/agents-never-forget) |
 | SWE-Sharp-Bench | C# | No | 17 | 150 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/prose/tree/main/misc/SWE-Sharp-Bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/microsoft/SWE-Sharp-Bench) |
-| Rust-SWE-bench | Rust | No | 34 | 500 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GhabiX/Rust-SWE-Bench) |
 | SWE-Perf | Python | No | 12 | 140 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Perf/swe-perf) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Perf/SWE-Perf) |
-| Scale-SWE | Python | No | 5,200 | 100,000 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe) |
-| SWE-Universe | Python | No | - | 807,693 | Yes | - |
 | Visual SWE-bench | Python | Yes | 11 | 133 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/luolin101/CodeV) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/luolin101/Visual-SWE-bench) |
 | SWE-EVO | Python | No | 7 | 48 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/bdqnghi/SWE-EVO) |
 | **Multi-PL Datasets** |  |  |  |  |  |  |
@@ -449,14 +450,11 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-Lancer | JS, TS | No | - | 1,488 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/openai/frontier-evals) |
 | OmniGIRL | Python, TS, Java, JS | Yes | 15 | 959 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/deepsoftwareanalytics/omnigirl) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL) |
 | SWE-bench Multimodal | JS, TS, HTML, CSS | Yes | 17 | 619 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) |
-| MobileDev-Bench | Java, Kotlin, TS, Dart | Yes | 18 | 384 | Yes | - |
-| SWE-Bench Mobile | Swift, Objective-C | Yes | - | - | Yes | - |
 | SWE-fficiency | Python, Cython | No | 9 | 498 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/swefficiency/swefficiency-site) |
 | SWE-Factory | Python, Java, JS, TS | No | 12 | 430 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/swe-factory) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Factory) |
 | SWE-bench-Live-MultiLang \& Windows | Python, JS, TS, C, C++, C#, Java, Go, Rust | No | 238 | 418 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/SWE-bench-Live) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/MultiLang) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/Windows) |
 | SWE-bench Multilingual | C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP | No | 42 | 300 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual) |
 | SWE-InfraBench | Python, TS | No | - | 100 | Yes | - |
-| Multi-Docker-Eval | Python, JS, TS, Go, Java, C, C++, Ruby, Kotlin, HTML | No | 40 | - | Yes | - |
 
 ---
 
@@ -473,7 +471,6 @@ _A survey of trajectory datasets used for agent training or analysis. We list th
 | SWE-Factory | Python | 10 | 2,809 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/swe-factory) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K) |
 | SWE-Gym | Python | 11 | 491 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Gym/SWE-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories) |
 | SWE-Lego | Python | 3251 | 14.6k | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) |
-| Multi-SWE-RL | Python | - | 4,723 | - |
 
 ---
 

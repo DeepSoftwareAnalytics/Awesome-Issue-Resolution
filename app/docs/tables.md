@@ -62,11 +62,18 @@ _A survey of trajectory datasets used for agent training or analysis. We list th
 |---|---|---|---|---|
 | SWE-Fixer | Python | 856 | 69,752 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/InternLM/SWE-Fixer) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/internlm/SWE-Fixer-Train-Editing-CoT-70K) |
 | SWE-rebench | Python | 1,823 | 67,074 | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories) |
+| SWE-rebench V2 | Python, JS, TS, Go, Rust, C, C++, Java, etc. | 3,600+ | 32,000+ | - |
+| Multi-SWE-RL | Python | - | 4,723 | - |
+| daVinci-Dev | Python | - | - | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/daVinci-Dev) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/daVinci-Dev) |
+| OpenSWE | Python | 12,800 | 45,320 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/OpenSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE) |
 | R2E-Gym | Python | 10 | 3,321 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/R2E-Gym/R2E-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/R2E-Gym/R2EGym-SFT-Trajectories) |
 | SWE-Synth | Python | 11 | 3,018 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/FSoft-AI4Code/SWE-Synth) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/swesynth/SWE-Synth_Moatless-SFT-Trajectories) |
 | SWE-Factory | Python | 10 | 2,809 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/swe-factory) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K) |
 | SWE-Gym | Python | 11 | 491 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Gym/SWE-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories) |
 | SWE-Lego | Python | 3251 | 14.6k | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) |
+| Scale-SWE | Python | 5,200 | 100,000 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe) |
+| SWE-Next | Python | 3,971 | 2,308 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/TIGER-Lab/SWE-Next) |
+| SWE-Universe | Python | - | 807,693 | - |
 
 ---
 

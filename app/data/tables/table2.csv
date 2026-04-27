@@ -1,8 +1,14 @@
 Dataset,Language,Repos,Amount,Link
 SWE-Fixer,Python,856,"69,752",\ghlink{https://github.com/InternLM/SWE-Fixer} \hflink{https://huggingface.co/datasets/internlm/SWE-Fixer-Train-Editing-CoT-70K}
 SWE-rebench,Python,"1,823","67,074",\hflink{https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories}
+SWE-rebench V2,"Python, JS, TS, Go, Rust, C, C++, Java, etc.","3,600+","32,000+",-
+Scale-SWE,Python,5200,"100,000",\ghlink{https://github.com/AweAI-Team/ScaleSWE} \hflink{https://huggingface.co/collections/AweAI-Team/scale-swe}
+SWE-Universe,Python,-,"807,693",-
 R2E-Gym,Python,10,"3,321",\ghlink{https://github.com/R2E-Gym/R2E-Gym} \hflink{https://huggingface.co/datasets/R2E-Gym/R2EGym-SFT-Trajectories}
 SWE-Synth,Python,11,"3,018",\ghlink{https://github.com/FSoft-AI4Code/SWE-Synth} \hflink{https://huggingface.co/datasets/swesynth/SWE-Synth_Moatless-SFT-Trajectories}
+SWE-Next,Python,3971,"2,308",\ghlink{https://github.com/TIGER-AI-Lab/SWE-Next} \hflink{https://huggingface.co/datasets/TIGER-Lab/SWE-Next}
 SWE-Factory,Python,10,"2,809",\ghlink{https://github.com/DeepSoftwareAnalytics/swe-factory} \hflink{https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K}
 SWE-Gym,Python,11,491,\ghlink{https://github.com/SWE-Gym/SWE-Gym} \hflink{https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories}
 SWE-Lego,Python,3251,14.6k,\ghlink{https://github.com/SWE-Lego/SWE-Lego}
+OpenSWE,Python,12800,45320,\ghlink{https://github.com/GAIR-NLP/OpenSWE} \hflink{https://huggingface.co/datasets/GAIR/OpenSWE}
+daVinci-Dev,Python,-,-,\ghlink{https://github.com/GAIR-NLP/daVinci-Dev} \hflink{https://huggingface.co/datasets/GAIR/daVinci-Dev}
