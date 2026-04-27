@@ -439,6 +439,10 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-Perf | Python | No | 12 | 140 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Perf/swe-perf) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Perf/SWE-Perf) |
 | Visual SWE-bench | Python | Yes | 11 | 133 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/luolin101/CodeV) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/luolin101/Visual-SWE-bench) |
 | SWE-EVO | Python | No | 7 | 48 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/bdqnghi/SWE-EVO) |
+| BeyondSWE | Python | No | - | 500 | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) |
+| SWE-CI | Python | No | - | 100 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) |
+| SWE-Skills-Bench | Python | No | - | 565 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GeniusHTX/SWE-Skills-Bench) |
+| Rust-SWE-bench | Rust | No | 34 | 500 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GhabiX/Rust-SWE-Bench) |
 | **Multi-PL Datasets** |  |  |  |  |  |  |
 | SWE-Mirror | Python, Rust, Go | No | 40 | 60k | Yes | - |
 | Multi-SWE-bench | Java, JS, TS, Go, Rust, C, C++ | No | 76 | 4,723 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/multi-swe-bench/multi-swe-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench) |
@@ -455,6 +459,8 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-bench-Live-MultiLang \& Windows | Python, JS, TS, C, C++, C#, Java, Go, Rust | No | 238 | 418 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/SWE-bench-Live) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/MultiLang) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/Windows) |
 | SWE-bench Multilingual | C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP | No | 42 | 300 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual) |
 | SWE-InfraBench | Python, TS | No | - | 100 | Yes | - |
+| MobileDev-Bench | Java, Kotlin, TS, Dart | Yes | 18 | 384 | Yes | - |
+| SWE-Bench Mobile | Swift, Objective-C | Yes | - | - | Yes | - |
 
 ---
 
@@ -471,6 +477,7 @@ _A survey of trajectory datasets used for agent training or analysis. We list th
 | SWE-Factory | Python | 10 | 2,809 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/swe-factory) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K) |
 | SWE-Gym | Python | 11 | 491 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Gym/SWE-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories) |
 | SWE-Lego | Python | 3251 | 14.6k | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) |
+| Multi-SWE-RL | Python | - | 4,723 | - | - |
 
 ---
 
