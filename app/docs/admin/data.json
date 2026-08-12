@@ -1,8 +1,8 @@
 {
   "generated": "2026-08-12",
   "stats": {
-    "total": 282,
-    "data": 78,
+    "total": 281,
+    "data": 77,
     "methods": 178,
     "analysis": 36
   },
@@ -2614,7 +2614,7 @@
       "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
       "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
       "month": "2025-04",
-      "category": "training_datasets",
+      "category": "training_datasets, data_synthesis",
       "links": {
         "arxiv": "https://arxiv.org/abs/2504.21798v2",
         "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
@@ -2693,19 +2693,6 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2504.02605v1",
         "openreview": "https://openreview.net/forum?id=MhBZzkz4h9"
-      }
-    },
-    {
-      "id": 21,
-      "short_name": "SWE-smith",
-      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
-      "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
-      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
-      "month": "2025-04",
-      "category": "data_synthesis",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2504.21798v2",
-        "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
       }
     },
     {

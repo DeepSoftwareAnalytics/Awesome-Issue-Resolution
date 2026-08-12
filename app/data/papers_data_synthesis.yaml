@@ -60,7 +60,7 @@
   month: 2025-04
   links:
     arxiv: https://arxiv.org/abs/2504.14757
-- short_name: SWE-smith
+- short_name: SWE-Smith
   title: 'SWE-smith: Scaling Data for Software Engineering Agents'
   authors: John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur,
     Yanzhe Zhang, Binyuan Hui et al.

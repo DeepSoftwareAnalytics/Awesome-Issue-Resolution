@@ -54,7 +54,7 @@ Based on a systematic review of **281 papers and online resources**, this survey
 
 ### Recent Updates
 
-- **Survey Update (2026-08)**: Our repository now covers 282 papers on LLM-based GitHub issue resolution!
+- **Survey Update (2026-08)**: Our repository now covers 281 papers on LLM-based GitHub issue resolution!
 - **Survey Update (2026-03)**: Our repository now covers 200+ papers on LLM-based GitHub issue resolution!
 - **Survey Update (2026-03)**: Added 21 new papers covering the latest advances in LLM-based issue resolution!
 - **Survey Launch (2026-01)**: Our survey paper is now publicly available on arXiv: [https://arxiv.org/abs/2601.11655](https://arxiv.org/abs/2601.11655). It covers 175 papers and resources on LLM-based GitHub issue resolution, with continuously updated datasets and leaderboards!
@@ -207,7 +207,7 @@ Based on a systematic review of **281 papers and online resources**, this survey
 - `(2025-06)` **SWE-Flow**: Synthesizing Software Engineering Data in a Test-Driven Manner [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.09003v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=P9DQ2IExgS)
 - `(2025-04)` **R2E-Gym**: R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07164) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=7evvwwdo3z)
 - `(2025-04)` **SWE-Synth**: SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.14757)
-- `(2025-04)` **SWE-smith**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
+- `(2025-04)` **SWE-Smith**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
 - `(2025-01)` **Learn-by-interact**: Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.10893v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=3UKOzGWCVY)
 
 ### 🤖 Single-Agent Systems
