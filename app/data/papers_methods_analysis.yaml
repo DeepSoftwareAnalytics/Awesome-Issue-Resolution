@@ -1,3 +1,373 @@
+- short_name: SWE-Review
+  title: 'SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review'
+  authors: Ruoyu Wang, Jierun Chen, Shaowei Wang, Chaofan Tao, Sidi Yang, Yuxin Jiang,
+    Kim-Hui Yap, Lifeng Shang, Xiaohui Li, Haoli Bai
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.06065
+  month: 2026-07
+  abstract: 'Coding agents increasingly generate pull requests (PRs) for real-world
+    software issues, yet one-shot PR generation remains open-loop: the PR is proposed
+    without systematic review, diagnosis, or revision. We introduce \textbf{SWE-Review},
+    a framework for closing this loop with agentic code review. Given an issue and
+    an AI-generated PR, a reviewer agent explores the repository, decides whether
+    the PR should be accepted, and provides structured feedback for revision. We evaluate
+    this setting with our proposed \textbf{SWE-Review-Bench} to measure both review
+    correctness and downstream revision usefulness. We further curate \textbf{SWE-Review-Traj}
+    dataset to study broader applications of agentic review and fill the data-scarcity
+    gap for open reviewer training. Experiments show that agentic review continuously
+    improves PRs through a generate-review-revise loop, outperforms single-turn fixed-context
+    review in both decision accuracy and resolve rate after revision, transfers beyond
+    review to improve issue-resolution models, and enables effective and efficient
+    test-time scaling. These results position agentic code review as a practical mechanism
+    for moving AI coding agents from one-shot PR generation toward closed-loop issue
+    resolution.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.06065
+    github: https://github.com/SWE-Lego/SWE-Review
+    huggingface: https://huggingface.co/collections/SWE-Lego/swe-review
+- short_name: Validation Evidence in LLM Repair Agents
+  title: 'Validation Evidence in LLM Repair Agents: How Much of What Passes Actually
+    Tests the Bug?'
+  authors: Xiaonan Xu, Wenjing Wu
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.28871
+  month: 2026-07
+  abstract: 'When a repair agent runs a test and sees it pass, the result is treated
+    as evidence about the reported defect. We measure how often that treatment is
+    warranted. BSG-VA (buggy-state/candidate-state/gold-fix validation analysis) captures
+    each validation command at its exact working-tree state, extracts a test-only
+    patch, and replays the command on the original buggy code (B), the candidate state
+    (S), and the developer gold fix (G). The captured outcome and the replay results
+    assign every event an evidence role, from gold-aligned bug-discriminating through
+    regression-only to misleading. Across 3,730 events in 643 rollouts on 110 tasks,
+    46.0% of positive comparable events carry no bug-discriminating information; 23.8%
+    of baseline rollouts, with no feedback injected, close with a patch whose entire
+    positive evidence base is of this kind. A three-arm experiment tests whether returning
+    the B-replay outcome to the agent changes this pattern. Bug-contrast feedback
+    reduces evidence-inadequate closure by 7.8 percentage points relative to an attention-matched
+    reminder (p = 0.0029) and raises bug-discriminating evidence by 7.4 points (p
+    = 0.011), with no detectable cost to repair success. Both estimates fall below
+    the prespecified 10-percentage-point smallest effect size of interest, so practical
+    magnitude remains uncertain. Roughly a third of the improvement traces to the
+    reminder alone; across two exploratory replications, varying the scaffold and
+    the model, the B-replay content adds a detectable increment only with gpt-5.6-sol
+    under the unconstrained tool-use loop. BSG-VA applies post hoc to any replayable
+    repair trajectory that preserves the required code states and execution environment.
+    Keywords: program repair agents, validation evidence, test adequacy, large language
+    models, software quality, controlled experiment.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.28871
+- short_name: How Do LLMs Read Bug Reports? An Empirical Study of Attention in LLMs
+    for Automated Program Repair
+  title: How Do LLMs Read Bug Reports? An Empirical Study of Attention in LLMs for
+    Automated Program Repair
+  authors: Ramtin Ehsani, Irene Manotas, Saurabh Pujar, Luca Buratti, Preetha Chatterjee
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.25873
+  month: 2026-07
+  abstract: Large Language Model (LLM)-based Automated Program Repair systems are
+    advancing rapidly, yet their performance remains inconsistent. Even when provided
+    with the same contextual information, an LLM may generate a correct patch for
+    one bug but fail on another closely related bug. Why this happens remains poorly
+    understood, and it is unclear how LLMs prioritize the diverse information in bug
+    reports and whether model attention affects repair success. In this paper, we
+    present the first empirical study of attention patterns in LLM-based program repair,
+    providing interpretable insights into how models process bug reports and where
+    their attention is concentrated during repair. We analyze 319 real-world Python
+    and Java bugs from SWE-bench Verified and Multi-SWE-bench to study (RQ1) how model
+    attention is distributed across bug report sections, (RQ2) how attention patterns
+    within each section differ between successful and unsuccessful repairs, and (RQ3)
+    how these patterns compare to information developers consider important for bug
+    fixing. We find that successful repairs are characterized by diffused attention
+    across multiple diagnostic components such as bug descriptions, stacktraces, and
+    test cases, while failures often exhibit over-localized attention toward metadata
+    such as version information. We further observe that stronger alignment between
+    model attention and developer-identified key sections and phrases is associated
+    with higher repair success. Our results provide the first empirical evidence that
+    attention misallocation is a key factor in LLM-based APR failures, and offer actionable
+    insights for designing more interpretable and reliable future APR systems.
+  links:
+    arxiv: https://arxiv.org/abs/2607.25873
+- short_name: Semantic Drift in Bug Resolution
+  title: 'Semantic Drift in Bug Resolution: How Behavioral Signals Propagate from
+    Reports to Tests and Patches'
+  authors: Wendkûuni C. Ouédraogo, Yinghua Li, Xueqi Dang, Paweł Borsukiewicz, Liang
+    Xiao, Lingfeng Bao, Anil Koyuncu, Jacques Klein, David Lo, Tegawendé F. Bissyandé
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.18550
+  month: 2026-07
+  abstract: 'Bug resolution is a cross-artifact process: natural-language reports
+    must expose actionable behavioral cues that can be reproduced by tests and corrected
+    by patches. Yet the extent to which these signals are preserved across artifacts
+    remains largely unquantified. We introduce Desc2Fix, a framework for measuring
+    semantic alignment between bug reports, triggering tests, and developer-written
+    fixes. Alignment is operationalized through structured behavioral anchors (e.g.,
+    reproduction steps, API/exception cues, expected vs. actual behavior), deterministic
+    similarity metrics (ROUGE, SBERT, CodeBERT, OpenAI embeddings), and LLM-based
+    judgments grounded in coverage, correctness, and specificity. We analyze 2,857
+    report-test-patch triplets from Defects4J and SWT-Bench using GPT-4o and DeepSeek-Chat.
+    LLMs reliably extract structured signals (up to 90% completeness) and exhibit
+    strong cross-model consistency, yielding a stable semantic input contract for
+    downstream reasoning. However, alignment is highly representation-sensitive: lexical
+    similarity alone is insufficient; full diffs provide the most stable basis for
+    judging report-patch correspondence; and structured summaries trade surface similarity
+    for predicate-level salience. Across more than 182,000 LLM alignment ratings,
+    both models show systematic optimism relative to humans (1-2 points on 5-point
+    scales) and only modest rank agreement, motivating bias-aware evaluation. Our
+    results demonstrate that behavioral alignment is measurable but not reducible
+    to similarity, and that structured anchors combined with embedding-based proxies
+    provide reproducible signals for ranking and filtering tests and candidate patches.
+    By transforming alignment into a controllable engineering signal, Desc2Fix enables
+    more reliable test generation, semantics-aware fault localization, principled
+    patch ranking, and improved bug report authoring.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.18550
+- short_name: Writing Bug Reports for Software Repair Agents
+  title: 'Writing Bug Reports for Software Repair Agents: What Information Matters
+    Most?'
+  authors: Vincenzo Luigi Bruno, Alessandro Giagnorio, Daniele Bifolco, Leon Wienges,
+    Massimiliano Di Penta, Gabriele Bavota
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.09553
+  month: 2026-07
+  abstract: Software development is increasingly moving toward agentic-first workflows.
+    This includes AI agents responsible for generating initial fixes for submitted
+    issue reports. In this setting, issue reports are no longer merely documentation
+    for human maintainers; they become the primary task specification for the agent.
+    However, little is known about how such reports should be written to maximize
+    the agent's chances of producing a correct fix. We study what makes a bug report
+    agent-ready. Starting from the SWE-bench Verified benchmark (i.e., a collection
+    of 500 real repository issues with human-written gold patches and test suites
+    for evaluating generated fixes) we manually classify each issue by change type
+    (e.g., bug fix vs refactoring) and annotate each sentence with its information
+    type, such as observed behavior, expected behavior, reproduction steps, localization
+    cues, and suggested fixes. We focus on the 441 issues representing bug reports,
+    and we run on them mini-swe-agent using three LLM backbones (i.e., GPT-5-mini,
+    MiniMax M2.5, and Gemini 3 Flash). We then fit a binomial regression model to
+    estimate the incremental association between each information type and agent success,
+    controlling for confounding factors. Our results suggest that agentic-first reports
+    benefit most from information that narrows the agent's search and repair space.
+    Localization cues, such as references to affected code areas, are positively associated
+    with successful repairs, while suggested fixes, expressed either in code or natural
+    language, show some of the strongest positive associations with pass probability.
+    An ablation study removing selected information types confirms that agents benefit
+    less from information traditionally useful to humans, such as reproduction steps,
+    and more from sentences that expose a repair direction, either through bug localization
+    or a suggested fix.
+  links:
+    arxiv: https://arxiv.org/abs/2607.09553
+- short_name: What Makes a Good Bug Report for an AI Agent?
+  title: What Makes a Good Bug Report for an AI Agent?
+  authors: Lara Khatib, Noble Saji Mathews, Meiyappan Nagappan, Pengyu Nie, Thomas
+    Zimmermann
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.07593
+  month: 2026-07
+  abstract: 'Automated program repair (APR) agents are transitioning from research
+    benchmarks to developer workflows, yet they still begin with bug reports written
+    for human developers. While decades of research have established what makes a
+    good bug report for humans (e.g., steps to reproduce, stack traces), it remains
+    unclear whether these features transfer to LLM-based agents. We study this question
+    in two analyses. First, we use statistical modeling to examine associations between
+    27 bug-report features and repair success across 433 SWE-bench Verified issues
+    attempted by 87 repair agents. We find that fix suggestions, reproduction scripts,
+    repository source code, and localization info are associated with higher resolution
+    likelihood, while longer reports are associated with lower odds. Second, we conduct
+    controlled ablations across 2 models and 17 problem-statement mutations on SWE-bench
+    Pro, varying the information available to an agent while holding the underlying
+    task fixed. We remove or isolate selected bug-report content, delete fault-localization
+    cues, and test structural changes that flatten lists or remove section headers.
+    We find that both models depend on localization cues and expected behavior, and
+    that structural changes alone can reduce solve rates, even without removing any
+    content. The two models diverge in how they handle missing information: Qwen searches
+    more widely and can exhaust its turn budget, while Gemma commits to a plausible
+    interpretation early and patches on it. Our findings indicate that a good bug
+    report for an agent overlaps with, but is not identical to, a good report for
+    a human: agents benefit most from concrete, executable, and well-localized information,
+    whereas some qualities long emphasized for human readers, such as natural language
+    steps to reproduce and readable descriptions, contribute little or even correlate
+    with lower success.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.07593
+- short_name: To Run or Not to Run
+  title: 'To Run or Not to Run: Analyzing the Cost-Effectiveness of Code Execution
+    in LLM-Based Program Repair'
+  authors: Zhihao Lin, Junhua Zhu, Mingyi Zhou, Xin Wang, Zhensu Sun, Renyu Yang,
+    David Lo, Li Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.26978
+  month: 2026-06
+  abstract: 'LLM-based agents for program repair are increasingly built on a "generate-run-revise"
+    paradigm, iteratively executing tests to evaluate and refine patches. This execution-based
+    approach has become standard practice in state-of-the-art systems. However, executions
+    can be time-consuming and expensive, yet their impact on these agents remains
+    underexplored. In this paper, we conduct a two-stage empirical study over execution
+    behavior in LLM-based program repair. To characterize execution behavior at scale,
+    we first analyze 7,745 agent traces from SWE-bench leaderboard submissions. Second,
+    we evaluate 3,000 end-to-end repair attempts across 200 SWE-bench instances and
+    three agents (Claude Code, Codex, and the open-source OpenCode) under four execution
+    paradigms, which allows for a fine-grained comparison of performance and cost.
+    Our analysis reveals three key observations: (1) Code execution is used across
+    all agents and models analyzed, with an average of 8.8 test runs per task. Execution
+    behavior varies substantially across agents and models, with frequency ranging
+    from 2 to 19 per task, and late-stage executions consistently achieve higher success
+    rates than early-stage ones. (2) Execution restrictions have little effect on
+    repair success: on commercial agents with SOTA models the resolve-rate gap between
+    Prohibited and Unrestricted is only 1.25 percentage points and not statistically
+    significant, while Prohibited saves substantial token and wall-clock cost. (3)
+    Execution benefit is concentrated rather than uniform. These patterns suggest
+    that current agents apply execution indiscriminately, paying its cost on instances
+    where it provides little benefit. Execution, therefore, should be treated as a
+    resource with an explicit cost-benefit tradeoff, not a default capability.'
+  links:
+    arxiv: https://arxiv.org/abs/2606.26978
+- short_name: TraceView
+  title: 'TraceView: Interactive Visualization of Agentic Program Repair Trajectories'
+  authors: Amirali Sajadi, Tu Nguyen, Kimmie Huynh, Esteban Parra, Preetha Chatterjee
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.22110
+  month: 2026-06
+  abstract: LLM-based automated program repair (APR) agents generate patches to fix
+    software bugs with minimal human intervention. These agents often produce long
+    trajectories of reasoning, tool use, and feedback to produce candidate patches.
+    Final patch outcomes show whether a repair attempt succeeded or failed, but they
+    do not show how the agent reached that outcome, or where the process became repetitive
+    or misaligned with the task. This makes agentic repair failures difficult to diagnose,
+    reproduce, and prevent. To help developers address these challenges, we present
+    TraceView, an interactive tool for labeling and visualizing repair trajectories
+    from APR systems. TraceView organizes raw and pre-labeled agentic runs with Thought,
+    Action, and Result components to support semantic relation labeling and diagnosis,
+    and renders the resulting trajectory as graph views. Furthermore, TraceView provides
+    relation filters, patch outcome summaries, metrics, and node-level evidence panels
+    to help users inspect how reasoning, actions, and feedback connect across the
+    various steps of an agentic repair attempt. We evaluate TraceView with five researchers
+    through a survey-based user study. Participants reported that TraceView made trajectories
+    easier to scan and that its overview-to-detail workflow helped them better understand
+    repair behavior. The TraceView source code is available at https://github.com/SOAR-Lab/agent-traj-visualization.
+    A screencast of TraceView is available at https://youtu.be/9ZCh7Ifj2AQ.
+  links:
+    arxiv: https://arxiv.org/abs/2606.22110
+    github: https://github.com/SOAR-Lab/agent-traj-visualization
+- short_name: '"Refactoring Runaway"'
+  title: '"Refactoring Runaway": Understanding and Mitigating Tangled Refactorings
+    in Coding Agents for Issue Resolution'
+  authors: Zhao Tian, Zifan Zhang, Tao Xiao, Dong Wang, Masanari Kondo, Junjie Chen,
+    Yasutaka Kamei
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.22526
+  month: 2026-05
+  abstract: Recent advances in coding agents have shown remarkable progress in software
+    issue resolution. In practice, real-world issues are typically bug fixes or feature
+    requests in which human developers naturally incorporate refactoring as part of
+    the resolution process, resulting in tangled refactoring. Since LLMs are trained
+    on large-scale open-source repositories, coding agents may inherit such behaviors.
+    In this paper, we conduct an empirical study on Multi-SWE-bench, analyzing 3,691
+    valid patches generated by three agent frameworks with 12 LLMs. We find that coding
+    agents introduce tangled refactorings less frequently (21.43% vs. 36.72%) and
+    with lower intensity (0.66 vs. 1.75) than human developers, although they exhibit
+    a broader diversity of refactoring types. Logistic regression analysis further
+    shows that tangled refactorings are strongly associated with reduced compilability,
+    while exhibiting no significant association with functional correctness. Based
+    on these findings, we propose a refactoring-aware refinement approach that assesses
+    the necessity and safety of tangled refactorings and selectively removes or repairs
+    problematic operations. Our approach improves compilability from 19.34% to 38.33%,
+    and additionally resolves 2.79% previously unresolved issues. Overall, this work
+    presents the first step towards understanding tangled refactoring practices in
+    agentic issue resolution and opens up avenues for future work.
+  links:
+    arxiv: https://arxiv.org/abs/2605.22526
+- short_name: Characterizing the Failure Modes of LLMs in Resolving Real-World GitHub
+    Issues
+  title: Characterizing the Failure Modes of LLMs in Resolving Real-World GitHub Issues
+  authors: Yanjie Jiang, Yian Huang, Guancheng Wang, Junjie Chen, Hui Liu, Lionel
+    Briand
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.12270
+  month: 2026-05
+  abstract: Large Language Models (LLMs) are increasingly deployed to resolve real-world
+    GitHub issues. However, despite their potential, the specific failure modes of
+    these models in complex repair tasks remain poorly understood. To characterize
+    how LLM behavior diverges from human developer practices, this paper evaluates
+    three state-of-the-art models, i.e., Claude 4.5 Sonnet, Gemini 3 Pro, and GPT-5,
+    on the SWE-bench Verified dataset. We conduct a rigorous manual analysis of the
+    symptoms and root causes underlying 243 failed attempts across 900 total trials.
+    Our investigation first yields a unified failure taxonomy encompassing five distinct
+    stages of the repair pipeline, within which we categorize typical failure symptoms
+    and their prevalence. Secondly, our findings reveal that for all evaluated LLMs,
+    strategy formulation and logic synthesis constitutes the most error-prone stage,
+    followed by problem understanding, whereas localization exhibits the lowest failure
+    rate. This suggests that LLMs may excel at fault localization, a task traditionally
+    regarded as one of the most formidable challenges in automated program repair.
+    Furthermore, we observe that robustness and operational costs (particularly in
+    failure scenarios) vary significantly across different models. Finally, we uncover
+    the root causes of these failures and propose actionable strategies to mitigate
+    them. A particularly notable finding is that existing evaluation harnesses occasionally
+    misjudge correct patches due to superficial discrepancies or hidden constraints.
+    Collectively, our insights may provide promising directions for enhancing the
+    effectiveness and reliability of LLM-based issue resolution.
+  links:
+    arxiv: https://arxiv.org/abs/2605.12270
+- short_name: On the Role of Fault Localization Context for LLM-Based Program Repair
+  title: On the Role of Fault Localization Context for LLM-Based Program Repair
+  authors: Melika Sepidband, Hung Viet Pham, Hadi Hemmati
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.05481
+  month: 2026-04
+  abstract: Fault Localization (FL) is a key component of Large Language Model (LLM)-based
+    Automated Program Repair (APR), yet its impact remains underexplored. In particular,
+    it is unclear how much localization is needed, whether additional context beyond
+    the predicted buggy location is beneficial, and how such context should be retrieved.
+    We conduct a large-scale empirical study on 500 SWE-bench Verified instances using
+    GPT-5-mini, evaluating 61 configurations that vary file-level, element-level,
+    and line-level context. Our results show that more context does not consistently
+    improve repair performance. File-level localization is the dominant factor, yielding
+    a 15-17x improvement over a no-file baseline. Expanding file context is often
+    associated with improved performance, with successful repairs most commonly observed
+    in configurations with approximately 6-10 relevant files. Element-level context
+    expansion provides conditional gains that depend strongly on the file context
+    quality, while line-level context expansion frequently degrades performance due
+    to noise amplification. LLM-based retrieval generally outperforms structural heuristics
+    while using fewer files and tokens. Overall, the most effective FL context strategy
+    typically combines a broad semantic understanding at higher abstraction levels
+    with precise line-level localization. These findings challenge our assumption
+    that increasing the localization context uniformly improves APR, and provide practical
+    guidance for designing LLM-based FL strategies.
+  links:
+    arxiv: https://arxiv.org/abs/2604.05481
+- short_name: A Study on the Impact of Fault localization Granularity for Repository-Scale
+    Code Repair Tasks
+  title: A Study on the Impact of Fault localization Granularity for Repository-Scale
+    Code Repair Tasks
+  authors: Joseph Townsend, Chandresh Pravin, Kwun Ho Ngan, Matthieu Parizy
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.00167
+  month: 2026-03
+  abstract: Automatic program repair can be a challenging task, especially when resolving
+    complex issues at a repository-level, which often involves issue reproduction,
+    fault localization, code repair, testing and validation. Issues of this scale
+    can be commonly found in popular GitHub repositories or datasets that are derived
+    from them. Some repository-level approaches separate localization and repair into
+    distinct phases. Where this is the case, the fault localization approaches vary
+    in terms of the granularity of localization. Where the impact of granularity is
+    explored to some degree for smaller datasets, not all isolate this issue from
+    the separate question of localization accuracy by testing code repair under the
+    assumption of perfect fault localization. To the best of the authors' knowledge,
+    no repository-scale studies have explicitly investigated granularity under this
+    assumption, nor conducted a systematic empirical comparison of granularity levels
+    in isolation. We propose a framework for performing such tests by modifying the
+    localization phase of the Agentless framework to retrieve ground-truth localization
+    data and include this as context in the prompt fed to the repair phase. We show
+    that under this configuration and as a generalization over the SWE-Bench-Mini
+    dataset, function-level granularity yields the highest repair rate against line-level
+    and file-level. However, a deeper dive suggests that the ideal granularity may
+    in fact be task dependent. This study is not intended to improve on the state-of-the-art,
+    nor do we intend for results to be compared against any complete agentic frameworks.
+    Rather, we present a proof of concept for investigating how fault localization
+    may impact automatic code repair in repository-scale scenarios. We present preliminary
+    findings to this end and encourage further research into this relationship between
+    the two phases.
+  links:
+    arxiv: https://arxiv.org/abs/2604.00167
 - short_name: ContextBench
   title: 'ContextBench: A Benchmark for Context Retrieval in Coding Agents'
   authors: Han Li, Letian Zhu, Bohan Zhang, Rili Feng, Jiaming Wang, Yue Pan, Earl

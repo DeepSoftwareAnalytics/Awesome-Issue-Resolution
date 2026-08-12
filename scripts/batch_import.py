@@ -73,38 +73,76 @@ def check_duplicate(paper, papers):
     return None, None
 
 
-def parse_csv_line(line, line_num):
-    """Parse a CSV line into paper dict"""
-    if len(line) < 6:
-        print(f"❌ Line {line_num}: Need at least 6 fields (category, short_name, title, authors, venue, year)")
+LINK_TYPES = ['arxiv', 'github', 'huggingface', 'openreview', 'acl', 'doi', 'website']
+
+
+def parse_header(line):
+    """Build a {column_name: index} map from a '# category,short_name,...' header line."""
+    if not line or not line[0].strip().startswith('#'):
         return None
-    
-    category_id = line[0].strip()
-    if category_id not in VALID_CATEGORIES:
-        print(f"❌ Line {line_num}: Invalid category '{category_id}'")
+    names = [cell.strip() for cell in line]
+    if names[0] in ('# category', '#category'):
+        names[0] = 'category'
+    if 'short_name' not in names:
         return None
-    
-    paper = {
-        'short_name': line[1].strip() if len(line) > 1 else '',
-        'title': line[2].strip() if len(line) > 2 else '',
-        'authors': line[3].strip() if len(line) > 3 and line[3].strip() != '-' else '',
-        'venue': line[4].strip() if len(line) > 4 and line[4].strip() != '-' else '',
-        'year': line[5].strip() if len(line) > 5 else '',
-        'links': {}
-    }
-    
+    return {name: idx for idx, name in enumerate(names)}
+
+
+def parse_csv_line(line, line_num, columns=None):
+    """Parse a CSV line into paper dict.
+
+    `columns` is an optional {field: index} map from a header line. When absent,
+    the legacy positional layout is used (no month column).
+    """
+    if columns is None:
+        # Legacy positional layout: category, short_name, title, authors,
+        # venue, year, arxiv, github, huggingface, openreview, acl, doi, website
+        if len(line) < 6:
+            print(f"❌ Line {line_num}: Need at least 6 fields (category, short_name, title, authors, venue, year)")
+            return None
+        category_id = line[0].strip()
+        paper = {
+            'short_name': line[1].strip() if len(line) > 1 else '',
+            'title': line[2].strip() if len(line) > 2 else '',
+            'authors': line[3].strip() if len(line) > 3 and line[3].strip() != '-' else '',
+            'venue': line[4].strip() if len(line) > 4 and line[4].strip() != '-' else '',
+            'year': line[5].strip() if len(line) > 5 else '',
+        }
+        for i, link_type in enumerate(LINK_TYPES):
+            if len(line) > 6 + i:
+                url = line[6 + i].strip()
+                if url and url != '-':
+                    paper.setdefault('links', {})[link_type] = url
+    else:
+        def col(name, default=''):
+            idx = columns.get(name)
+            return line[idx].strip() if idx is not None and idx < len(line) else default
+
+        category_id = col('category')
+        paper = {
+            'short_name': col('short_name'),
+            'title': col('title'),
+            'authors': col('authors'),
+            'venue': col('venue'),
+            'year': col('year'),
+        }
+        for link_type in LINK_TYPES:
+            url = col(link_type)
+            if url and url != '-':
+                paper.setdefault('links', {})[link_type] = url
+        month = col('month')
+        if month and month != '-':
+            paper['month'] = month
+
+    paper.setdefault('links', {})
     if not paper['short_name'] or not paper['title'] or not paper['year']:
         print(f"❌ Line {line_num}: short_name, title, and year are required")
         return None
-    
-    # Parse links
-    link_types = ['arxiv', 'github', 'huggingface', 'openreview', 'acl', 'doi', 'website']
-    for i, link_type in enumerate(link_types):
-        if len(line) > 6 + i:
-            url = line[6 + i].strip()
-            if url and url != '-':
-                paper['links'][link_type] = url
-    
+
+    if category_id not in VALID_CATEGORIES:
+        print(f"❌ Line {line_num}: Invalid category '{category_id}'")
+        return None
+
     return category_id, paper
 
 
@@ -123,22 +161,29 @@ def import_papers_from_csv(csv_file):
     papers_by_category = {}
     line_num = 0
     skipped = 0
-    
+    columns = None
+
     try:
         with open(csv_file, 'r', encoding='utf-8') as f:
             reader = csv.reader(f)
             for line in reader:
                 line_num += 1
-                
-                # Skip empty lines and comments
-                if not line or not line[0].strip() or line[0].strip().startswith('#'):
+
+                # Skip empty lines
+                if not line or not line[0].strip():
                     continue
-                
-                result = parse_csv_line(line, line_num)
+
+                # Detect the header line ('# category,short_name,...') on first sight
+                if line[0].strip().startswith('#'):
+                    if columns is None:
+                        columns = parse_header(line)
+                    continue
+
+                result = parse_csv_line(line, line_num, columns=columns)
                 if not result:
                     skipped += 1
                     continue
-                
+
                 category_id, paper = result
                 if category_id not in papers_by_category:
                     papers_by_category[category_id] = []

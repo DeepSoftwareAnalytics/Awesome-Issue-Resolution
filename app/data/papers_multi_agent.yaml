@@ -1,3 +1,141 @@
+- short_name: AgenticRepair
+  title: 'AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability
+    Repair'
+  authors: Michael Fu, Qiyue Mei, Patanamon Thongtanunam, Kla Tantithamthavorn
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.29422
+  month: 2026-07
+  abstract: 'Automated vulnerability repair aims to reduce the time and effort required
+    to patch security flaws from a vulnerability triage report. Recent agentic AI
+    approaches have shown promising results in automated program repair. However,
+    vulnerability repair demands richer program context than general bug repair -
+    context that security engineers routinely assemble in practice but that existing
+    agentic approaches do not engineer. We identify three critical gaps: code-structure
+    context capturing cross-file data flows and memory operation patterns, runtime-execution
+    context revealing crash semantics and memory origins, and commit-history context
+    recovering how fragile code patterns were introduced. We present AgenticRepair,
+    an agentic vulnerability repair framework that addresses the gaps through multi-faceted
+    program context engineering. AgenticRepair orchestrates three specialized LLM
+    subagents to engineer the contexts, which are then embedded into the memory of
+    a dedicated repair subagent for context-conditioned patch synthesis. Evaluated
+    on SEC-Bench comprising 300 real-world instances with sanitizer-based patch verification,
+    AgenticRepair achieves a 73% success rate, substantially outperforming the strongest
+    baseline by 29%. Our ablation study confirms that the three context facets are
+    mutually complementary, and that multi-agent scaffolding and base-model capacity
+    each play an essential role. Collectively, these findings establish multi-faceted
+    program context engineering as a promising design direction for agentic vulnerability
+    repair.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.29422
+- short_name: MultiFixer
+  title: 'MultiFixer: A Coordinator-Proposer Based Multi-Agent Framework For Fixing
+    Multi-Hunk Bugs'
+  authors: Haichuan Hu, Chunrong Fang, Ye Shang, Jiawei Liu, Weifeng Sun, Guoqing
+    Xie, Chenxing Zhong, Quanjun Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.26591
+  month: 2026-07
+  abstract: Automated Program Repair (APR) has benefited greatly from Large Language
+    Models (LLMs), but existing LLM-based APR methods still struggle with multi-hunk
+    bugs that require coordinated changes across multiple locations. These bugs demand
+    repository-level context understanding, repair-order scheduling, and effective
+    hunk-level patch generation and selection. To address these challenges, we propose
+    MultiFixer, a novel Coordinator-Proposer based multi-agent framework for multi-hunk
+    repair. MultiFixer performs tool-augmented bug analysis, constructs fine-grained
+    repair context, iteratively generates patches through a Coordinator-Proposer architecture,
+    and applies two-stage patch refinement for syntactic and semantic correctness.
+    We evaluate MultiFixer on 835 bugs from Defects4J and three vulnerability benchmarks.
+    On Defects4J, MultiFixer fixes 326 bugs, including 62 multi-method and 27 multi-file
+    bugs, and outperforms prior APR baselines in the reported comparisons with the
+    same base model. Moreover, MultiFixer also fixes 46 multi-hunk bugs among 95 unique
+    fixes. When combined with Claude-3.5-Sonnet, MultiFixer repairs 420 bugs, establishing
+    a new state of the art on Defects4J. On VUL4J, MultiFixer repairs 24 real-world
+    vulnerabilities, including 5 multi-hunk cases. On the multi-hunk subsets of SEC-bench
+    and PatchEval, MultiFixer fixes 11 and 19 vulnerabilities, respectively, outperforming
+    all compared baselines under GPT-3.5. These results demonstrate the effectiveness
+    of MultiFixer for multi-hunk repair.
+  links:
+    arxiv: https://arxiv.org/abs/2607.26591
+- short_name: PhoenixRepair
+  title: 'PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents'
+  authors: Tianyue Jiang, Yanlin Wang, Xin He, Daya Guo, Jiachi Chen, Ming Wen, Ensheng
+    Shi, Xilin Liu, Yuchi Ma, Guanbin Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.18859
+  month: 2026-07
+  abstract: While Large Language Models have greatly advanced automated issue resolution,
+    existing agent-based methods exhibit a fundamental limitation in their insufficient
+    exploration of repair strategies. This insufficiency manifests in two key aspects.
+    First, the exploration of multiple potential edit locations is limited. Second,
+    the exploration of repair attempts at each location is also insufficient. To address
+    these challenges, we present PhoenixRepair, a multi-agent framework that systematically
+    explores multiple candidate edit locations and performs iterative reflection and
+    refinement on patch generation, thereby expanding the search space of repair strategies.
+    Our framework begins with multi-location sampling, optionally augmented with graph-based
+    localization information for difficult tasks, followed by iterative reflection
+    and refinement to generate better patches, culminating in final-round generation
+    guided by distilled insights from all historical attempts. Experiments on SWE-bench-Verified
+    demonstrate that PhoenixRepair achieves the largest relative improvement of 7.8\%
+    over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0\%
+    Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization accuracy
+    than existing approaches. Our code is available at https://github.com/DeepSoftwareAnalytics/PhoenixRepair.
+  links:
+    arxiv: https://arxiv.org/abs/2607.18859
+    github: https://github.com/DeepSoftwareAnalytics/PhoenixRepair
+- short_name: icat-agent
+  title: Unlocking Model Potentials Through Adaptive Multi-Agent Scaffolding for Efficient
+    Issue Resolution
+  authors: Yang Chen, Aliya Ahmad, Yiheng Zhou, Reyhaneh Jabbarvand
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.25514
+  month: 2026-06
+  abstract: 'Resolving issues with ambiguous and incomplete descriptions, particularly
+    concerning complex bugs, requires a sophisticated, long-horizon workflow. Agents
+    must navigate codebases to locate the root cause, reproduce the failure, implement
+    a fix, and validate the resulting patch. Inefficient context management, thereby,
+    can lead to rapid context degradation and context poisoning, preventing successful
+    resolution. We propose icat-agent, a decentralized, multi-agent scaffolding that
+    replaces shared context with synchronous, event-based message passing. Utilizing
+    a rubric-based issue quality check, icat-agent strategically pivots its workflow:
+    it initiates parallel patching and validation for well-defined issues, while deploying
+    preliminary exploration for low-quality ones. A comprehensive evaluation of icat-agent
+    on SWE-bench Verified and SWE-bench Pro demonstrates that it consistently outperforms
+    prominent baselines across all difficulty levels, including SWE-agent, mini-SWE-agent,
+    and Claude Code, while using the same underlying models, improving by 3.6-8.4%
+    on SWE-bench Verified and 6.3-18.5% on SWE-bench Pro. icat-agent is also computationally
+    efficient, reducing the average cost by $1.18 per instance compared with the multi-agent
+    Claude Code baseline. Our findings reveal that a robust scaffold such as icat-agent
+    unlocks substantial latent capability within a fixed model, with the same backbone
+    resolving markedly more issues under icat-agent than under existing scaffolds.
+    icat-agent +GPT-5.4-xhigh resolves 67.4% of SWE-bench Pro problems, outperforming
+    the current best result on SWE-bench Pro (59.10%, mini-SWE-agent+GPT-5.4-xhigh)
+    by 8.3 percentage points.'
+  links:
+    arxiv: https://arxiv.org/abs/2606.25514
+- short_name: Phoenix
+  title: 'Phoenix: Safe GitHub Issue Resolution via Multi-Agent LLMs'
+  authors: Kipngeno Koech, Muhammad Adam, Baimam Boukar Jean Jacques, Joao Barros
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.20243
+  month: 2026-06
+  abstract: We present Phoenix, a multi-agent LLM system that resolves GitHub issues
+    from triage through pull-request creation, combining seven layered safety controls
+    with a baseline-aware test evaluation strategy. Phoenix decomposes the work across
+    six specialized agents. Planner, reproducer, coder, tester, failure analyst and
+    Pull Request (PR) agent, all coordinated by a label-based GitHub webhook state
+    machine. Every change is checked against a baseline test run before a pull request
+    is opened. On a 24-instance slice of SWE-bench Lite. run on the production webhook
+    path, Phoenix oracle-resolves 75% of instances with no pass-to-pass regressions
+    on successful runs; this curated slice is not directly comparable to full-split
+    leaderboard results, and we discuss the limits of the comparison. A complementary
+    pilot on 42 real issues across 14 repositories yields 100% correctness preservation
+    (CP; mean 122s on the hard tier). Manual inspection shows that about half of the
+    resulting pull requests are well-targeted fixes. The other half place code at
+    incorrect paths, a planner localization limitation we are addressing with retrieval.
+    We also report the deployment failure modes (WAF filtering, token expiry, permission
+    boundaries, flaky CI) that motivated each safety mechanism.
+  links:
+    arxiv: https://arxiv.org/abs/2606.20243
 - short_name: AgentForge
   title: 'AgentForge: Execution-Grounded Multi-Agent LLM Framework for Autonomous
     Software Engineering'
@@ -27,6 +165,28 @@
   month: 2026-03
   links:
     arxiv: https://arxiv.org/abs/2603.01327
+- short_name: iSWE Agent
+  title: Resolving Java Code Repository Issues with iSWE Agent
+  authors: Jatin Ganhotra, Sami Serhan, Antonio Abu Nassar, Avraham Shinnar, Ziv Nevo,
+    Martin Hirzel
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.11356
+  month: 2026-03
+  abstract: Resolving issues on code repositories is an important part of software
+    engineering. Various recent systems automatically resolve issues using large language
+    models and agents, often with impressive performance. Unfortunately, most of these
+    models and agents focus primarily on Python, and their performance on other programming
+    languages is lower. In particular, a lot of enterprise software is written in
+    Java, yet automated issue resolution for Java is under-explored. This paper introduces
+    iSWE Agent, an automated issue resolver with an emphasis on Java. It consists
+    of two sub-agents, one for localization and the other for editing. Both have access
+    to novel tools based on rule-based Java static analysis and transformation. Using
+    this approach, iSWE achieves state-of-the-art issue resolution rates across the
+    Java splits of both Multi-SWE-bench and SWE-PolyBench. More generally, we hope
+    that by combining the best of rule-based and model-based techniques, this paper
+    contributes towards improving enterprise software development.
+  links:
+    arxiv: https://arxiv.org/abs/2603.11356
 - short_name: Meta-RAG
   title: Meta-RAG on Large Codebases Using Code Summarization
   authors: Vali Tawosi, Salwa Alamir, Xiaomo Liu, Manuela Veloso

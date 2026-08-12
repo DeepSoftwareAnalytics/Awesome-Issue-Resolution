@@ -1,9 +1,0 @@
-- short_name: SWE-Adept
-  title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and
-    Structured Issue Resolution'
-  authors: Kang He, Kaushik Roy
-  year: '2026'
-  venue: arXiv preprint arXiv:2603.01327
-  month: 2026-03
-  links:
-    arxiv: https://arxiv.org/abs/2603.01327

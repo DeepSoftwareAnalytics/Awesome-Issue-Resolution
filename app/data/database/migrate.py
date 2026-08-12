@@ -92,6 +92,7 @@ def migrate_papers():
                 authors=paper_data['authors'],
                 year=paper_data['year'],
                 venue=paper_data['venue'],
+                month=paper_data.get('month'),
                 category=category,
                 abstract=paper_data.get('abstract'),
                 arxiv_link=links.get('arxiv'),

@@ -1,3 +1,175 @@
+- short_name: STAIR
+  title: Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding
+    Agents
+  authors: Yisen Xu, Jiayuan Zhou, Ruiqi Pan, Tse-Hsun Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.29658
+  month: 2026-07
+  abstract: 'Although LLM-driven repair agents can tackle complex, repository-level
+    issues, they treat every issue independently and discard the procedural knowledge
+    accumulated from previous repairs. We introduce STAIR, a framework that converts
+    historical repair trajectories into hierarchical, reusable plans that can be adapted
+    to steer future repairs. Each past trajectory is transformed into a multi-level
+    tree that ranges from fine-grained diagnostic actions to high-level repair strategies,
+    encoding experience at several granularities. When a new issue arrives, STAIR
+    selects relevant plan nodes from multiple abstraction levels, tailors them into
+    executable, issue-specific plans, and supplies them to the agent through its prompt.
+    On SWE-bench Verified, STAIR integrated with Lingxi reaches 81.2% Pass@1 using
+    MiniMax M2.5 and 79.2% using GPT-5. The generated plans also generalize across
+    agents: without any code change, they lift the Pass@1 of a structurally different
+    agent, mini-SWE-agent v2, from 75.8% to 81.0%. Ablation experiments further show
+    that mixing multiple abstraction levels surpasses any single level and that raw,
+    unabstracted trajectories transfer substantially worse.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.29658
+- short_name: Know Before Fix
+  title: 'Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software
+    Issue Resolution'
+  authors: Haotian Lin, Silin Chen, Xiaodong Gu, Yuling Shi, Chengxi Pan, Jiaqi Ge,
+    Mengfan Li, Jianghong Huang, Mengchieh Chuang, Beijun Shen, Haibing Guan
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.11111
+  month: 2026-07
+  abstract: 'LLM-based coding agents have significantly advanced automated software
+    issue resolution, yet they remain highly prone to factual errors caused by insufficient
+    repository understanding. Recent methods attempt to mitigate this limitation through
+    pre-repair repository exploration; however, their fix-driven strategies explore
+    repositories without identifying the agent''s knowledge gaps, often yielding imprecise
+    context that fails to bridge the underlying understanding deficit. In this paper,
+    we propose ACQUIRE, a QA-driven framework for software issue resolution. Mirroring
+    how experienced developers first comprehend unfamiliar code before attempting
+    a fix, ACQUIRE explicitly acquires repository knowledge prior to repair. The framework
+    decouples knowledge acquisition from patch generation through two stages: in the
+    first stage, a Questioner and an Answerer collaborate to acquire structured repository
+    knowledge, where the Questioner poses targeted questions and the Answerer produces
+    evidence-grounded answers through autonomous exploration; in the second stage,
+    the Resolver leverages the resulting QA knowledge to generate informed patches.
+    By transforming implicit knowledge gaps into explicit, factually reliable understanding,
+    ACQUIRE accelerates knowledge-intensive repair stages and enables more accurate
+    resolution. Experiments on SWE-bench Verified demonstrate that ACQUIRE consistently
+    outperforms representative pre-repair methods, raising Pass@1 by up to 4.4 percentage
+    points with modest additional cost and time.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.11111
+- short_name: TrajSpec
+  title: Bug Report Specification Refinement with Trajectory Guidance for Automated
+    Program Repair
+  authors: S M Farah Al Fahim, Md Nakhla Rafi, Md Ahasanuzzaman, Zeyang Ma, Dong Jae
+    Kim, Shaowei Wang, Tse-Hsun, Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.07882
+  month: 2026-07
+  abstract: Bug reports serve as task specifications for repository-level automated
+    program repair (APR) agents, but they often describe only the observed failure
+    and omit repair-relevant information such as the failure-inducing behavior, behavioral
+    requirement, and implementation scope. As a result, a repair agent may inspect
+    irrelevant code, infer an incorrect requirement, or generate a patch that addresses
+    the reported symptom without restoring the intended repository behavior. We present
+    TrajSpec, a trajectory-guided approach for repository-supported bug report specification
+    refinement. Given an original report and a pre-fix repository, TrajSpec runs a
+    trajectory-collection agent and uses the resulting unverified trajectory as a
+    source of trajectory-derived specification evidence. It organizes this evidence
+    into a three-level representation consisting of a high-level interpretation of
+    the issue, diagnostic findings supporting that interpretation, and concrete repository
+    observations. TrajSpec then generates a draft refined report and applies repository-based
+    review to remove unsupported claims, revise uncertain claims, and add repository-supported
+    details. We evaluate TrajSpec on all 300 SWE-Bench Lite instances using Mini-SWE-Agent
+    V2. TrajSpec's refined reports improve Pass@1 from 41.00% to 59.67% with GPT-5-mini
+    and from 54.67% to 64.33% with MiniMax M2.5. On a stratified sample of 100 instances,
+    TrajSpec's refined reports also improve Pass@1 from 41.00% to 71.00% with Agentless
+    and from 47.00% to 72.00% with AutoCodeRover. Ablation results show that removing
+    repository-based review or the hierarchical evidence representation reduces Pass@1
+    from 59.67% to 48.00% and 47.67%, respectively. Overall, TrajSpec provides actionable
+    repository-supported context that consistently improves repair performance.
+  links:
+    arxiv: https://arxiv.org/abs/2607.07882
+- short_name: EvoRepair
+  title: 'EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based
+    Self-Evolution'
+  authors: Haichuan Hu, Guoqing Xie, Quanjun Zhang, Jiawei Liu, Shengcheng Yu, Chunrong
+    Fang, Zhenyu Chen, Liang Xiao
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.30105
+  month: 2026-05
+  abstract: Large Language Models (LLMs) have shown promise for automated vulnerability
+    repair (AVR), but they still face several limitations, including the lack of intra-vulnerability
+    experience accumulation and the lack of cross-vulnerability experience reuse.
+    As a result, LLMs may repeatedly make similar mistakes during iterative repair
+    and underutilize valuable repair knowledge from historical vulnerabilities. To
+    address these challenges, we propose EvoRepair, the first experience-based self-evolving
+    AVR agent framework that enables LLMs to accumulate, refine, and leverage domain-specific
+    knowledge across long-horizon vulnerability repairs. EvoRepair follows a cyclic
+    learn-and-repair process that retrieves relevant past experiences to guide repair,
+    extracts new experiences from repair trajectories, and updates an experience bank
+    using quality-aware scoring. We evaluate EvoRepair against 12 representative vulnerability
+    repair baselines on PATCHEVAL and SEC-bench using GPT-5-mini. Results show that
+    EvoRepair achieves the best overall performance, reaching 93.47% on PATCHEVAL,
+    87.00% on SEC-bench, and 90.46% overall. In particular, EvoRepair outperforms
+    latest LLM-based baseline LoopRepair by 39.56% and 33.50% on PATCHEVAL and SEC-bench,
+    respectively, and surpasses IntentFix by 70.86% and 50.50%. Across both benchmarks,
+    EvoRepair also exceeds the recent self-evolving agent Live-SWE-Agent by 6.98%
+    overall. Additional transfer experiments on VUL4J further demonstrate the robustness
+    of EvoRepair across models, programming languages, and datasets. These findings
+    demonstrate that experience-based self-evolution substantially strengthens agentic
+    AVR and goes beyond existing self-evolving techniques.
+  links:
+    arxiv: https://arxiv.org/abs/2605.30105
+- short_name: MemRepair
+  title: 'MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability
+    Repair'
+  authors: Simiao Liu, Li Zhang, Fang Liu, Xiaoli Lian, Yang Liu, Yinghao Zhu
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.17444
+  month: 2026-05
+  abstract: 'Modern software ecosystems face a rapidly growing number of disclosed
+    vulnerabilities, increasing the need for automated repair techniques that can
+    operate reliably at repository scale. Although Large Language Model (LLM)-based
+    agents have recently shown promise for automated vulnerability repair (AVR), most
+    existing systems still treat repair as a single generation step over the currently
+    visible code context. As a result, they lack a persistent mechanism for reusing
+    prior fixes or learning from failed validation attempts, which limits their effectiveness
+    on complex, multi-file repair tasks. We present MemRepair, a memory-augmented
+    agentic framework that formulates vulnerability repair as an iterative, experience-driven
+    process. MemRepair combines three complementary memory layers, i.e., History-Fix,
+    Security-Pattern, and Refinement-Trajectory memories, with a dynamic feedback-driven
+    refinement loop. This design allows the agent to retrieve repository-specific
+    repair conventions, apply reusable security defenses, and exploit prior "failure-to-success"
+    trajectories to revise semantically invalid patches based on runtime evidence.
+    We evaluate MemRepair on three representative repository-level vulnerability repair
+    benchmarks: SEC-Bench, PatchEval (Python, Go, JavaScript), and the C++ subset
+    of Multi-SWE-bench. MemRepair achieves state-of-the-art resolution rates of 58.0%,
+    58.2%, and 30.58%, respectively, outperforming strong general-purpose agents such
+    as OpenHands and SWE-agent, as well as the specialized AVR tool InfCode-C++, while
+    maintaining competitive repair cost. These results show that persistent, hierarchical
+    repair memory can substantially improve the reliability of agentic vulnerability
+    repair across diverse languages and repository settings.'
+  links:
+    arxiv: https://arxiv.org/abs/2605.17444
+    website: https://figshare.com/s/f2bbe7f7c8a759339368
+- short_name: FailureMem
+  title: 'FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software
+    Repair'
+  authors: Ruize Ma, Yilei Jiang, Shilin Zhang, Zheng Ma, Yi Feng, Vincent Ng, Zhi
+    Wang, Xiangyu Yue, Chuanyi Li, Lewei Lu
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.17826
+  month: 2026-03
+  abstract: 'Multimodal Automated Program Repair (MAPR) extends traditional program
+    repair by requiring models to jointly reason over source code, textual issue descriptions,
+    and visual artifacts such as GUI screenshots. While recent LLM-based repair systems
+    have shown promising results, existing approaches face several limitations: rigid
+    workflow pipelines restrict exploration during debugging, visual reasoning is
+    often performed over full-page screenshots without localized grounding, and failed
+    repair attempts are rarely transformed into reusable knowledge. To address these
+    challenges, we propose FailureMem, a multimodal repair framework that integrates
+    three key mechanisms: a hybrid workflow-agent architecture that balances structured
+    localization with flexible reasoning, active perception tools that enable region-level
+    visual grounding, and a Failure Memory Bank that converts past repair attempts
+    into reusable guidance. Experiments on SWE-bench Multimodal demonstrate FailureMem
+    improves the resolved rate over GUIRepair by 3.7%.'
+  links:
+    arxiv: https://arxiv.org/abs/2603.17826
+    github: https://github.com/Ruize-Ma/FailureMem
 - short_name: MemGovern
   title: 'MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences'
   authors: Qihao Wang, Ziming Cheng, Shuo Zhang, Fan Liu, Rui Xu, Heng Lian, Kunyi

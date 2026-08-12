@@ -1,3 +1,47 @@
+- short_name: Open-SWE-Traces
+  title: 'Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software
+    Engineering Agents'
+  authors: Wasi Uddin Ahmad, Nikolai Ludwig, Somshubra Majumdar, Boris Ginsburg
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.16038
+  month: 2026-06
+  links:
+    arxiv: https://arxiv.org/abs/2606.16038
+    huggingface: https://huggingface.co/collections/nvidia/open-swe-traces
+- short_name: From Patches to Trajectories
+  title: 'From Patches to Trajectories: Privileged Process Supervision for Software-Engineering
+    Agents'
+  authors: Murong Ma, Tianyu Chen, Yun Lin, Shuai Lu, Qinglin Zhu, Yeyun Gong, Zhiyong
+    Huang, Peng Cheng, Yan Lu, Jin Song Dong
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.21996
+  month: 2026-05
+  abstract: Supervised fine-tuning (SFT) on long teacher trajectories is the dominant
+    way to instill investigation and reasoning in open software-engineering (SWE)
+    agents. Since every retained response becomes an imitation target, the student
+    inherits the final outcome and intermediate flaws, including ungrounded leaps
+    and redundant loops. High-quality training data must be effective(each step is
+    grounded and narrows the agent's epistemic gap to the correct fix) and efficient(each
+    step is information-bearing rather than redundant or looping). Existing recipes
+    filter or relabel teacher rollouts using only a binary terminal verifier, which
+    does not directly target these axes and provides no supervision on instances where
+    the teacher fails. Most real issue includes a developer-authored reference patch,
+    $p^\star$, revealing the file paths, runtime behaviors, and coding conventions
+    presupposed by the correct fix, yet standard pipelines discard it. We propose
+    Patches-to-Trajectories (P2T), which uses $p^\star$ as privileged information
+    during curation and formulates trajectory construction as bi-objective optimization
+    over per-step effectiveness and trajectory length. A reverse phase distills $p^\star$
+    into a latent process graph, $G^\star$, of contextual facts and solution milestones.
+    A forward phase curates trajectories from blinded teacher continuations by scoring
+    per-step progress against $G^\star$ under a leakage-blocking groundedness check
+    and retaining the shortest effective segments. Using only 1.8k curated SWE-Gym
+    instances, P2T improves effectiveness and efficiency over outcome-filtered SFT
+    and its tool-error-masking variant. On SWE-bench Verified, it raises Pass@1 by
+    up to 10.8 points while reducing per-instance inference cost by ~15%, with consistent
+    gains on SWE-bench Lite. Size-matched ablations and qualitative analysis further
+    isolate trajectory quality from data scale.
+  links:
+    arxiv: https://arxiv.org/abs/2605.21996
 - short_name: SWE-AGILE
   title: 'SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning
     Context'
@@ -32,6 +76,34 @@
     arxiv: https://arxiv.org/abs/2603.13023
     github: https://github.com/GAIR-NLP/OpenSWE
     huggingface: https://huggingface.co/datasets/GAIR/OpenSWE
+- short_name: SWEzze
+  title: Compressing Code Context for LLM-based Issue Resolution
+  authors: Haoxiang Jia, Earl T. Barr, Sergey Mechtaev
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.28119
+  month: 2026-03
+  abstract: 'Large Language Models (LLMs) are now capable of resolving real-world
+    GitHub issues. However, current approaches overapproximate the code context and
+    suffer from two compounding problems: the prohibitive cost of processing massive
+    inputs, and low effectiveness as noise floods the context window and distracts
+    the model from the bug-fixing signal. Existing compression techniques fail to
+    resolve this tension: generic compressors compromise the semantic integrity of
+    code, while code-specific tools lack awareness of code structure and task context
+    to preserve essential patch ingredients. To address this, we propose a novel framework
+    consisting of two components. First, Oracle-guided Code Distillation (OCD), a
+    context distillation algorithm that combines genetic search and delta debugging
+    to systematically reduce code contexts to their minimal sufficient subsequence
+    - retaining only the ingredients required for a successful fix. We use this distilled
+    data to fine-tune SWEzze, a lightweight model that learns to compress code context
+    at inference time, filtering noise and combating distraction while preserving
+    fix ingredients. Evaluated on SWE-bench Verified across three frontier LLMs, SWEzze
+    maintains a stable compression rate of about 6 times across models, reduces the
+    total token budget by 51.8%-71.3% relative to the uncompressed setting, improves
+    issue resolution rates by 5.0%-9.2%, and delivers the best overall balance among
+    effectiveness, compression ratio, and latency compared with state-of-the-art context
+    compression baselines.'
+  links:
+    arxiv: https://arxiv.org/abs/2603.28119
 - short_name: Scale-SWE
   title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
   authors: Jiale Zhao, Guoxin Chen, Fanzhe Meng, Minghao Li, Jie Chen, Hui Xu, Yongshuai

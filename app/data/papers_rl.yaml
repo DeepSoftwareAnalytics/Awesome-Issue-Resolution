@@ -1,3 +1,25 @@
+- short_name: BoostAPR
+  title: 'BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement
+    Learning with Dual Reward Models'
+  authors: Yuanhao Li, Hongbo Wang, Xiaotang Shang, Xunzhu Tang, Yiming Cao, Xuhong
+    Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.09134
+  month: 2026-05
+  abstract: 'Reinforcement learning for program repair is hindered by sparse execution
+    feedback and coarse sequence-level rewards that obscure which edits actually fix
+    bugs. We present BoostAPR, a three-stage framework addressing these challenges:
+    (1) supervised fine-tuning on execution-verified demonstrations with reasoning
+    traces, (2) training dual reward models--a sequence-level assessor and a line-level
+    credit allocator--from execution outcomes, and (3) PPO optimization where the
+    line-level model redistributes rewards to critical edit regions. This line-level
+    credit assignment operates at an intermediate granularity naturally suited to
+    code changes. Trained on SWE-Gym and evaluated on four benchmarks, BoostAPR achieves
+    40.7% on SWE-bench Verified (+22.9pp over base model), 24.8% on Defects4J (Python-to-Java
+    transfer), 84.5% on HumanEval-Java, and 95.0% on QuixBugs, achieving competitive
+    results among open-source models with strong cross-language generalization.'
+  links:
+    arxiv: https://arxiv.org/abs/2605.09134
 - short_name: SWE-AGILE
   title: 'SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning
     Context'
@@ -17,6 +39,16 @@
   month: 2026-04
   links:
     arxiv: https://arxiv.org/abs/2604.11037
+- short_name: SWE-TRACE
+  title: 'SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward
+    Models and Heuristic Test-Time Scaling'
+  authors: Hao Han, Jin Xie, Xuehao Ma, Weiquan Zhu, Ziyao Zhang, ZhiLiang Long, Hongkai
+    Chen, Qingwen Ye
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.14820
+  month: 2026-04
+  links:
+    arxiv: https://arxiv.org/abs/2604.14820
 - short_name: SWE-Fuse
   title: 'SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning
     and Entropy-aware RLVR Training'

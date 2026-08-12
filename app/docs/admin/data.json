@@ -1,12 +1,714 @@
 {
-  "generated": "2026-04-22",
+  "generated": "2026-08-12",
   "stats": {
-    "total": 217,
-    "data": 59,
-    "methods": 138,
-    "analysis": 23
+    "total": 282,
+    "data": 78,
+    "methods": 178,
+    "analysis": 36
   },
   "papers": [
+    {
+      "id": 221,
+      "short_name": "Active-SWE",
+      "title": "Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports",
+      "authors": "Haobin Li, Ping Deng, Weizhong Qian, Liang Jiang, Zhenyu Huang, Mouxing Yang, Xi Peng",
+      "venue": "arXiv preprint arXiv:2608.04682",
+      "month": "2026-08",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2608.04682",
+        "github": "https://github.com/XLearning-SCU/Active-SWE",
+        "huggingface": "https://github.com/XLearning-SCU/Active-SWE"
+      }
+    },
+    {
+      "id": 220,
+      "short_name": "SWE-Bench ProMax",
+      "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+      "authors": "Yuling Shi, Jinghan Xu, Kelin Fu, Wenhao Zeng, Shilin He, Lei Zhang, Yue Liu, Zelin Zhao, Terry Yue Zhuo, Jialun Cao, Siyu Ye, Tianyu Liu, Kai Cai, Shing-Chi Cheung, Xiaodong Gu",
+      "venue": "arXiv preprint arXiv:2608.09802",
+      "month": "2026-08",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2608.09802",
+        "huggingface": "https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax"
+      }
+    },
+    {
+      "id": 274,
+      "short_name": "Rethinking Issue Resolution for AI/ML Systems",
+      "title": "Rethinking Issue Resolution for AI/ML Systems",
+      "authors": "Ahmed Adnan, Mushfiqur Rahman, Antu Saha, Oscar Chaparro",
+      "venue": "arXiv preprint arXiv:2607.14657",
+      "month": "2026-07",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.14657"
+      }
+    },
+    {
+      "id": 262,
+      "short_name": "SWE-Doctor",
+      "title": "SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests",
+      "authors": "Yaoqi Guo, Yang Liu, Jie M. Zhang, Yun Ma, Yiling Lou, Zhenpeng Chen",
+      "venue": "arXiv preprint arXiv:2607.00990",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.00990"
+      }
+    },
+    {
+      "id": 261,
+      "short_name": "A Single Patch Is Not Enough",
+      "title": "A Single Patch Is Not Enough: Deterministic Fusion of Repair Candidates",
+      "authors": "Boyang Yang, Xiangliang Hu, Luyao Ren, Yanjun Chen, Bach Le, Tegawendé F. Bissyandé, Haoye Tian",
+      "venue": "arXiv preprint arXiv:2607.01597",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.01597"
+      }
+    },
+    {
+      "id": 260,
+      "short_name": "ContextSniper",
+      "title": "ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair",
+      "authors": "Chiwang Luk, Matin Mohammad Najafi, Zhifeng Jia, Wei Yang, Xiuchang Li, Jinwei Zhu, Yang Ren, Lei Chen, Gao Cong",
+      "venue": "arXiv preprint arXiv:2607.01916",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.01916",
+        "website": "https://gitcode.com/lukchiwang/ContextSniper"
+      }
+    },
+    {
+      "id": 259,
+      "short_name": "Beyond Textual Repository Exploration",
+      "title": "Beyond Textual Repository Exploration: Dual-Modal Structural Reasoning for Agentic Issue Resolution",
+      "authors": "Jiayi Zhang, Kai Huang, Yang Liu, Chunyang Chen",
+      "venue": "arXiv preprint arXiv:2607.01929",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.01929"
+      }
+    },
+    {
+      "id": 258,
+      "short_name": "ReProAgent",
+      "title": "ReProAgent: Tool-Augmented Multi-Stage Agentic Generation of Bug Reproduction Tests from Issue Reports",
+      "authors": "Quanjun Zhang, Yi Zheng, Ye Shang, Weifeng Sun, Haichuan Hu, Chunrong Fang, Zhenyu Chen, Liang Xiao",
+      "venue": "arXiv preprint arXiv:2607.09123",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.09123"
+      }
+    },
+    {
+      "id": 257,
+      "short_name": "Retrieval-Oriented Code Representations in Agentic Bug Localization",
+      "title": "Retrieval-Oriented Code Representations in Agentic Bug Localization",
+      "authors": "Genevieve Caumartin, Tse-Hsun, Chen, Diego Elias Costa",
+      "venue": "arXiv preprint arXiv:2607.11046",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.11046"
+      }
+    },
+    {
+      "id": 256,
+      "short_name": "CT-Repair",
+      "title": "Multi-Perspective Agentic Program Repair via Code Property Graphs and Temporal Execution Graphs",
+      "authors": "Zhili Huang, Ling Xu, Hongyu Zhang",
+      "venue": "arXiv preprint arXiv:2607.12605",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.12605"
+      }
+    },
+    {
+      "id": 255,
+      "short_name": "VisualRepair",
+      "title": "VisualRepair: Dynamic Tool Calling and Region Focusing for Visual Software Issue Repair",
+      "authors": "Jingyu Xiao, Zhongyi Zhang, Haoran Hou, Yuxuan Wan, Yuan Jiang, Yintong Huo, Michael R. Lyu",
+      "venue": "arXiv preprint arXiv:2607.14075",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.14075"
+      }
+    },
+    {
+      "id": 254,
+      "short_name": "IssueExec",
+      "title": "IssueExec: A Test-Driven Approach for Localizing Software Engineering Issues",
+      "authors": "Jiawei Liu, Yun Lin, Chenyan Liu, Yu Qian, Yiming Liu, Jiaxin Chang, Weinan Zhang, Linpeng Huang",
+      "venue": "arXiv preprint arXiv:2607.17286",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.17286"
+      }
+    },
+    {
+      "id": 253,
+      "short_name": "Beyond Fail-to-Pass",
+      "title": "Beyond Fail-to-Pass: Iterative Hardening of Co-Generated Bug Reproduction Tests and Fixes",
+      "authors": "Yuhao Tan, Zhibang Yang, Fangkai Yang, Yuan Yao, Yu Kang, Lu Wang, Pu Zhao, Xin Zhang, Xiaoxing Ma, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang",
+      "venue": "arXiv preprint arXiv:2607.19843",
+      "month": "2026-07",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.19843"
+      }
+    },
+    {
+      "id": 246,
+      "short_name": "What Makes a Good Bug Report for an AI Agent?",
+      "title": "What Makes a Good Bug Report for an AI Agent?",
+      "authors": "Lara Khatib, Noble Saji Mathews, Meiyappan Nagappan, Pengyu Nie, Thomas Zimmermann",
+      "venue": "arXiv preprint arXiv:2607.07593",
+      "month": "2026-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.07593"
+      }
+    },
+    {
+      "id": 245,
+      "short_name": "Writing Bug Reports for Software Repair Agents",
+      "title": "Writing Bug Reports for Software Repair Agents: What Information Matters Most?",
+      "authors": "Vincenzo Luigi Bruno, Alessandro Giagnorio, Daniele Bifolco, Leon Wienges, Massimiliano Di Penta, Gabriele Bavota",
+      "venue": "arXiv preprint arXiv:2607.09553",
+      "month": "2026-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.09553"
+      }
+    },
+    {
+      "id": 244,
+      "short_name": "Semantic Drift in Bug Resolution",
+      "title": "Semantic Drift in Bug Resolution: How Behavioral Signals Propagate from Reports to Tests and Patches",
+      "authors": "Wendkûuni C. Ouédraogo, Yinghua Li, Xueqi Dang, Paweł Borsukiewicz, Liang Xiao, Lingfeng Bao, Anil Koyuncu, Jacques Klein, David Lo, Tegawendé F. Bissyandé",
+      "venue": "arXiv preprint arXiv:2607.18550",
+      "month": "2026-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.18550"
+      }
+    },
+    {
+      "id": 243,
+      "short_name": "How Do LLMs Read Bug Reports? An Empirical Study of Attention in LLMs for Automated Program Repair",
+      "title": "How Do LLMs Read Bug Reports? An Empirical Study of Attention in LLMs for Automated Program Repair",
+      "authors": "Ramtin Ehsani, Irene Manotas, Saurabh Pujar, Luca Buratti, Preetha Chatterjee",
+      "venue": "arXiv preprint arXiv:2607.25873",
+      "month": "2026-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.25873"
+      }
+    },
+    {
+      "id": 242,
+      "short_name": "Validation Evidence in LLM Repair Agents",
+      "title": "Validation Evidence in LLM Repair Agents: How Much of What Passes Actually Tests the Bug?",
+      "authors": "Xiaonan Xu, Wenjing Wu",
+      "venue": "arXiv preprint arXiv:2607.28871",
+      "month": "2026-07",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.28871"
+      }
+    },
+    {
+      "id": 238,
+      "short_name": "PhoenixRepair",
+      "title": "PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents",
+      "authors": "Tianyue Jiang, Yanlin Wang, Xin He, Daya Guo, Jiachi Chen, Ming Wen, Ensheng Shi, Xilin Liu, Yuchi Ma, Guanbin Li",
+      "venue": "arXiv preprint arXiv:2607.18859",
+      "month": "2026-07",
+      "category": "multi_agent, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.18859",
+        "github": "https://github.com/DeepSoftwareAnalytics/PhoenixRepair"
+      }
+    },
+    {
+      "id": 237,
+      "short_name": "MultiFixer",
+      "title": "MultiFixer: A Coordinator-Proposer Based Multi-Agent Framework For Fixing Multi-Hunk Bugs",
+      "authors": "Haichuan Hu, Chunrong Fang, Ye Shang, Jiawei Liu, Weifeng Sun, Guoqing Xie, Chenxing Zhong, Quanjun Zhang",
+      "venue": "arXiv preprint arXiv:2607.26591",
+      "month": "2026-07",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.26591"
+      }
+    },
+    {
+      "id": 236,
+      "short_name": "AgenticRepair",
+      "title": "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+      "authors": "Michael Fu, Qiyue Mei, Patanamon Thongtanunam, Kla Tantithamthavorn",
+      "venue": "arXiv preprint arXiv:2607.29422",
+      "month": "2026-07",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.29422"
+      }
+    },
+    {
+      "id": 232,
+      "short_name": "TrajSpec",
+      "title": "Bug Report Specification Refinement with Trajectory Guidance for Automated Program Repair",
+      "authors": "S M Farah Al Fahim, Md Nakhla Rafi, Md Ahasanuzzaman, Zeyang Ma, Dong Jae Kim, Shaowei Wang, Tse-Hsun, Chen",
+      "venue": "arXiv preprint arXiv:2607.07882",
+      "month": "2026-07",
+      "category": "memory, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.07882"
+      }
+    },
+    {
+      "id": 231,
+      "short_name": "Know Before Fix",
+      "title": "Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution",
+      "authors": "Haotian Lin, Silin Chen, Xiaodong Gu, Yuling Shi, Chengxi Pan, Jiaqi Ge, Mengfan Li, Jianghong Huang, Mengchieh Chuang, Beijun Shen, Haibing Guan",
+      "venue": "arXiv preprint arXiv:2607.11111",
+      "month": "2026-07",
+      "category": "memory, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.11111"
+      }
+    },
+    {
+      "id": 230,
+      "short_name": "STAIR",
+      "title": "Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents",
+      "authors": "Yisen Xu, Jiayuan Zhou, Ruiqi Pan, Tse-Hsun Chen",
+      "venue": "arXiv preprint arXiv:2607.29658",
+      "month": "2026-07",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.29658"
+      }
+    },
+    {
+      "id": 224,
+      "short_name": "LLVM-Bench",
+      "title": "LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution",
+      "authors": "Zhao Tian, Yingquan Zhao, Chenyao Suo, Meng Wang, Junjie Chen",
+      "venue": "arXiv preprint arXiv:2607.00700",
+      "month": "2026-07",
+      "category": "evaluation_datasets, tool, inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.00700"
+      }
+    },
+    {
+      "id": 223,
+      "short_name": "SWE-Review",
+      "title": "SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review",
+      "authors": "Ruoyu Wang, Jierun Chen, Shaowei Wang, Chaofan Tao, Sidi Yang, Yuxin Jiang, Kim-Hui Yap, Lifeng Shang, Xiaohui Li, Haoli Bai",
+      "venue": "arXiv preprint arXiv:2607.06065",
+      "month": "2026-07",
+      "category": "evaluation_datasets, methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.06065",
+        "github": "https://github.com/SWE-Lego/SWE-Review",
+        "huggingface": "https://huggingface.co/collections/SWE-Lego/swe-review"
+      }
+    },
+    {
+      "id": 222,
+      "short_name": "MM-IssueLoc",
+      "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+      "authors": "Shaoxiong Zhan, Shi Hu, Boyu Feng, Hai Lin, Andrew Gong, Zhengda Zhou, Jiaying Zhou, Yunyun Hou, Hao Su, Hai-Tao Zheng",
+      "venue": "arXiv preprint arXiv:2607.15205",
+      "month": "2026-07",
+      "category": "evaluation_datasets, tool, training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.15205",
+        "github": "https://github.com/Jasaxion/MM-IssueLoc-Bench"
+      }
+    },
+    {
+      "id": 284,
+      "short_name": "FrontierCode",
+      "title": "Introducing FrontierCode",
+      "authors": "Eric Lu, Ben Pan, Deniz Birlikci, Sam Lee, Ray Wang, Rohan Choudhury, Fermi Ma, TC Qin, Carlo Baronio, Silas Alberti, Katie Cheng, Joseph Alessio, Claudio Costa, Martin McKeaveny, Lance Fuchia, Merlijn Vos, Tomer Nosrati, Swyx",
+      "venue": "-",
+      "month": "2026-06",
+      "category": "evaluation_datasets",
+      "links": {
+        "website": "https://cognition.com/blog/frontier-code"
+      }
+    },
+    {
+      "id": 279,
+      "short_name": "Open-SWE-Traces",
+      "title": "Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software Engineering Agents",
+      "authors": "Wasi Uddin Ahmad, Nikolai Ludwig, Somshubra Majumdar, Boris Ginsburg",
+      "venue": "arXiv preprint arXiv:2606.16038",
+      "month": "2026-06",
+      "category": "sft,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.16038",
+        "huggingface": "https://huggingface.co/collections/nvidia/open-swe-traces"
+      }
+    },
+    {
+      "id": 278,
+      "short_name": "SWE-Together",
+      "title": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
+      "authors": "Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee, Jiacheng Zhu, Shirley Wu, Tianhe Yu, Serena Li, Lizhu Zhang, Xiangjun Fan, Shengzhi Li",
+      "venue": "arXiv preprint arXiv:2606.29957",
+      "month": "2026-06",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.29957",
+        "github": "https://github.com/Togetherbench/SWE-Together",
+        "website": "https://togetherbench.com/"
+      }
+    },
+    {
+      "id": 264,
+      "short_name": "PracRepair",
+      "title": "PracRepair: LLM-Empowered Automated Program Repair Inspired by Human-Like Debugging Practices",
+      "authors": "Yu Cheng, Zhongxin Liu, Zhenchang Xing, Chao Ni, Qing Huang, Xiaoxue Ren",
+      "venue": "arXiv preprint arXiv:2606.17612",
+      "month": "2026-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.17612"
+      }
+    },
+    {
+      "id": 263,
+      "short_name": "Loc2Repair",
+      "title": "Loc2Repair: A Framework for Evaluating the Impact of File-Level Issue Localization in Repo-Level LLM Repair",
+      "authors": "Mohammad Nour Al Awad, Sergey Ivanov",
+      "venue": "arXiv preprint arXiv:2606.30963",
+      "month": "2026-06",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.30963"
+      }
+    },
+    {
+      "id": 248,
+      "short_name": "TraceView",
+      "title": "TraceView: Interactive Visualization of Agentic Program Repair Trajectories",
+      "authors": "Amirali Sajadi, Tu Nguyen, Kimmie Huynh, Esteban Parra, Preetha Chatterjee",
+      "venue": "arXiv preprint arXiv:2606.22110",
+      "month": "2026-06",
+      "category": "methods_analysis, training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.22110",
+        "github": "https://github.com/SOAR-Lab/agent-traj-visualization"
+      }
+    },
+    {
+      "id": 247,
+      "short_name": "To Run or Not to Run",
+      "title": "To Run or Not to Run: Analyzing the Cost-Effectiveness of Code Execution in LLM-Based Program Repair",
+      "authors": "Zhihao Lin, Junhua Zhu, Mingyi Zhou, Xin Wang, Zhensu Sun, Renyu Yang, David Lo, Li Li",
+      "venue": "arXiv preprint arXiv:2606.26978",
+      "month": "2026-06",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.26978"
+      }
+    },
+    {
+      "id": 240,
+      "short_name": "Phoenix",
+      "title": "Phoenix: Safe GitHub Issue Resolution via Multi-Agent LLMs",
+      "authors": "Kipngeno Koech, Muhammad Adam, Baimam Boukar Jean Jacques, Joao Barros",
+      "venue": "arXiv preprint arXiv:2606.20243",
+      "month": "2026-06",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.20243"
+      }
+    },
+    {
+      "id": 239,
+      "short_name": "icat-agent",
+      "title": "Unlocking Model Potentials Through Adaptive Multi-Agent Scaffolding for Efficient Issue Resolution",
+      "authors": "Yang Chen, Aliya Ahmad, Yiheng Zhou, Reyhaneh Jabbarvand",
+      "venue": "arXiv preprint arXiv:2606.25514",
+      "month": "2026-06",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.25514"
+      }
+    },
+    {
+      "id": 226,
+      "short_name": "MPC-Patch-Bench",
+      "title": "MPC-Patch-Bench: Security-Aware LLM Code Patch for Multi-Party Computation",
+      "authors": "Yukuan Zhang, Mengxin Zheng, Qian Lou",
+      "venue": "arXiv preprint arXiv:2606.11416",
+      "month": "2026-06",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.11416"
+      }
+    },
+    {
+      "id": 225,
+      "short_name": "A11YRepair",
+      "title": "A11YRepair: Bridging Web Accessibility Barriers via Knowledge-Enhanced Divide-and-Conquer Repair",
+      "authors": "Kai Huang, Ling Zhu, Jian Zhang, Xiaofei Xie, Chunyang Chen",
+      "venue": "arXiv preprint arXiv:2606.21926",
+      "month": "2026-06",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.21926"
+      }
+    },
+    {
+      "id": 281,
+      "short_name": "SWE-Chain",
+      "title": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+      "authors": "Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, Jen-tse Huang, Terry Yue Zhuo, Michael R. Lyu",
+      "venue": "arXiv preprint arXiv:2605.14415",
+      "month": "2026-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.14415",
+        "github": "https://github.com/CUHK-ARISE/SWE-Chain",
+        "huggingface": "https://huggingface.co/datasets/mhlam/SWE-Chain"
+      }
+    },
+    {
+      "id": 277,
+      "short_name": "BoostAPR",
+      "title": "BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement Learning with Dual Reward Models",
+      "authors": "Yuanhao Li, Hongbo Wang, Xiaotang Shang, Xunzhu Tang, Yiming Cao, Xuhong Chen",
+      "venue": "arXiv preprint arXiv:2605.09134",
+      "month": "2026-05",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.09134"
+      }
+    },
+    {
+      "id": 275,
+      "short_name": "SmellBench",
+      "title": "SmellBench: Evaluating LLM Agents on Architectural Code Smell Repair",
+      "authors": "Ion George Dinu, Marian Cristian Mihăescu, Traian Rebedea",
+      "venue": "arXiv preprint arXiv:2605.07001",
+      "month": "2026-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.07001",
+        "website": "https://zenodo.org/records/19247588"
+      }
+    },
+    {
+      "id": 273,
+      "short_name": "From Patches to Trajectories",
+      "title": "From Patches to Trajectories: Privileged Process Supervision for Software-Engineering Agents",
+      "authors": "Murong Ma, Tianyu Chen, Yun Lin, Shuai Lu, Qinglin Zhu, Yeyun Gong, Zhiyong Huang, Peng Cheng, Yan Lu, Jin Song Dong",
+      "venue": "arXiv preprint arXiv:2605.21996",
+      "month": "2026-05",
+      "category": "training_datasets, sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.21996"
+      }
+    },
+    {
+      "id": 268,
+      "short_name": "ARISE",
+      "title": "ARISE: A Repository-level Graph Representation and Toolset for Agentic Program Repair and Fault Localization",
+      "authors": "Shahd Seddik, Fahd Seddik, Amirrezza Esmaeili, Mahdieh Sadatbenis, Fatemeh Fard",
+      "venue": "arXiv preprint arXiv:2605.03117",
+      "month": "2026-05",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.03117",
+        "website": "https://fard-lab.github.io/ARISE/"
+      }
+    },
+    {
+      "id": 267,
+      "short_name": "ContraFix",
+      "title": "ContraFix: Skill-Enhanced Contrastive Runtime Analysis for Vulnerability Repair",
+      "authors": "Simiao Liu, Fang Liu, Peiding Wang, Taichuan Li, Yinghao Zhu, Xiaoli Lian, Li Zhang",
+      "venue": "arXiv preprint arXiv:2605.17450",
+      "month": "2026-05",
+      "category": "tool, single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.17450",
+        "website": "https://figshare.com/s/f173c78e44bca88ebaea?file=66112583"
+      }
+    },
+    {
+      "id": 266,
+      "short_name": "BLAgent",
+      "title": "BLAgent: Agentic RAG for File-Level Bug Localization",
+      "authors": "Md Afif Al Mamun, Gias Uddin",
+      "venue": "arXiv preprint arXiv:2605.17965",
+      "month": "2026-05",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.17965"
+      }
+    },
+    {
+      "id": 265,
+      "short_name": "EviACT",
+      "title": "EviACT: An Evidence-to-Action Framework for Agentic Program Repair",
+      "authors": "Qianru Meng, Xiao Zhang, Zhaochun Ren, Joost Visser",
+      "venue": "arXiv preprint arXiv:2605.27238",
+      "month": "2026-05",
+      "category": "tool, single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.27238"
+      }
+    },
+    {
+      "id": 250,
+      "short_name": "Characterizing the Failure Modes of LLMs in Resolving Real-World GitHub Issues",
+      "title": "Characterizing the Failure Modes of LLMs in Resolving Real-World GitHub Issues",
+      "authors": "Yanjie Jiang, Yian Huang, Guancheng Wang, Junjie Chen, Hui Liu, Lionel Briand",
+      "venue": "arXiv preprint arXiv:2605.12270",
+      "month": "2026-05",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.12270"
+      }
+    },
+    {
+      "id": 249,
+      "short_name": "\"Refactoring Runaway\"",
+      "title": "\"Refactoring Runaway\": Understanding and Mitigating Tangled Refactorings in Coding Agents for Issue Resolution",
+      "authors": "Zhao Tian, Zifan Zhang, Tao Xiao, Dong Wang, Masanari Kondo, Junjie Chen, Yasutaka Kamei",
+      "venue": "arXiv preprint arXiv:2605.22526",
+      "month": "2026-05",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.22526"
+      }
+    },
+    {
+      "id": 234,
+      "short_name": "MemRepair",
+      "title": "MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair",
+      "authors": "Simiao Liu, Li Zhang, Fang Liu, Xiaoli Lian, Yang Liu, Yinghao Zhu",
+      "venue": "arXiv preprint arXiv:2605.17444",
+      "month": "2026-05",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.17444",
+        "website": "https://figshare.com/s/f2bbe7f7c8a759339368"
+      }
+    },
+    {
+      "id": 233,
+      "short_name": "EvoRepair",
+      "title": "EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based Self-Evolution",
+      "authors": "Haichuan Hu, Guoqing Xie, Quanjun Zhang, Jiawei Liu, Shengcheng Yu, Chunrong Fang, Zhenyu Chen, Liang Xiao",
+      "venue": "arXiv preprint arXiv:2605.30105",
+      "month": "2026-05",
+      "category": "memory, single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.30105"
+      }
+    },
+    {
+      "id": 227,
+      "short_name": "SWE-Cycle",
+      "title": "SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle",
+      "authors": "Hao Guan, Lingyue Fu, Shao Zhang, Yaoming Zhu, Kangning Zhang, Lin Qiu, Xunliang Cai, Xuezhi Cao, Weiwen Liu, Weinan Zhang, Yong Yu",
+      "venue": "arXiv preprint arXiv:2605.13139",
+      "month": "2026-05",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2605.13139"
+      }
+    },
+    {
+      "id": 280,
+      "short_name": "SWE-TRACE",
+      "title": "SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward Models and Heuristic Test-Time Scaling",
+      "authors": "Hao Han, Jin Xie, Xuehao Ma, Weiquan Zhu, Ziyao Zhang, ZhiLiang Long, Hongkai Chen, Qingwen Ye",
+      "venue": "arXiv preprint arXiv:2604.14820",
+      "month": "2026-04",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.14820"
+      }
+    },
+    {
+      "id": 271,
+      "short_name": "PROBE",
+      "title": "Probe to Generate: Program Variant-Guided Test Augmentation for Repository-Level Repair Benchmarks",
+      "authors": "Chenglin Li, Yisen Xu, Zehao Wang, Shin Hwei Tan, Tse-Hsun, Chen",
+      "venue": "arXiv preprint arXiv:2604.01518",
+      "month": "2026-04",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.01518"
+      }
+    },
+    {
+      "id": 270,
+      "short_name": "DebugHarness",
+      "title": "DebugHarness: Emulating Human Dynamic Debugging for Autonomous Program Repair",
+      "authors": "Maolin Sun, Yibiao Yang, Xuanlin Liu, Yuming Zhou, Baowen Xu",
+      "venue": "arXiv preprint arXiv:2604.03610",
+      "month": "2026-04",
+      "category": "tool, single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.03610"
+      }
+    },
+    {
+      "id": 269,
+      "short_name": "Empowering Autonomous Debugging Agents with Efficient Dynamic Analysis",
+      "title": "Empowering Autonomous Debugging Agents with Efficient Dynamic Analysis",
+      "authors": "Jiahong Xiang, Xiaoyang Xu, Xiaopan Chu, Hongliang Tian, Yuqun Zhang",
+      "venue": "arXiv preprint arXiv:2604.24212",
+      "month": "2026-04",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.24212"
+      }
+    },
+    {
+      "id": 251,
+      "short_name": "On the Role of Fault Localization Context for LLM-Based Program Repair",
+      "title": "On the Role of Fault Localization Context for LLM-Based Program Repair",
+      "authors": "Melika Sepidband, Hung Viet Pham, Hadi Hemmati",
+      "venue": "arXiv preprint arXiv:2604.05481",
+      "month": "2026-04",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.05481"
+      }
+    },
+    {
+      "id": 228,
+      "short_name": "CI-Repair-Bench",
+      "title": "CI-Repair-Bench: A Repository-Aware Benchmark for Automated Patch Validation via CI Workflows",
+      "authors": "Rabeya Khatun Muna, Md Nakhla Rafi, Tse-Hsun, Chen",
+      "venue": "arXiv preprint arXiv:2604.27148",
+      "month": "2026-04",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.27148"
+      }
+    },
     {
       "id": 219,
       "short_name": "Agent-CoEvo",
@@ -106,6 +808,95 @@
       "category": "single_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2604.06861"
+      }
+    },
+    {
+      "id": 282,
+      "short_name": "SWE-Milestone",
+      "title": "SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution",
+      "authors": "Gangda Deng, Zhaoling Chen, Zhongming Yu, Haoyang Fan, Yuhong Liu, Yuxin Yang, Dhruv Parikh, Rajgopal Kannan, Le Cong, Mengdi Wang, Qian Zhang, Viktor Prasanna, Xiangru Tang, Xingyao Wang",
+      "venue": "arXiv preprint arXiv:2603.13428",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.13428",
+        "github": "https://github.com/DeepCommit-ai/SWE-Milestone",
+        "huggingface": "https://huggingface.co/datasets/DeepCommit-ai/SWE-Milestone-data",
+        "website": "https://swe-milestone.com/"
+      }
+    },
+    {
+      "id": 276,
+      "short_name": "SWEzze",
+      "title": "Compressing Code Context for LLM-based Issue Resolution",
+      "authors": "Haoxiang Jia, Earl T. Barr, Sergey Mechtaev",
+      "venue": "arXiv preprint arXiv:2603.28119",
+      "month": "2026-03",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.28119"
+      }
+    },
+    {
+      "id": 272,
+      "short_name": "DAIRA",
+      "title": "Dynamic analysis enhances issue resolution",
+      "authors": "Mingwei Liu, Zihao Wang, Zhenxi Chen, Zheng Pei, Yanlin Wang, Zibin Zheng",
+      "venue": "arXiv preprint arXiv:2603.22048",
+      "month": "2026-03",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.22048",
+        "website": "https://anonymous.4open.science/r/DAIRA-80AC/README.md"
+      }
+    },
+    {
+      "id": 252,
+      "short_name": "A Study on the Impact of Fault localization Granularity for Repository-Scale Code Repair Tasks",
+      "title": "A Study on the Impact of Fault localization Granularity for Repository-Scale Code Repair Tasks",
+      "authors": "Joseph Townsend, Chandresh Pravin, Kwun Ho Ngan, Matthieu Parizy",
+      "venue": "arXiv preprint arXiv:2604.00167",
+      "month": "2026-03",
+      "category": "methods_analysis, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.00167"
+      }
+    },
+    {
+      "id": 241,
+      "short_name": "iSWE Agent",
+      "title": "Resolving Java Code Repository Issues with iSWE Agent",
+      "authors": "Jatin Ganhotra, Sami Serhan, Antonio Abu Nassar, Avraham Shinnar, Ziv Nevo, Martin Hirzel",
+      "venue": "arXiv preprint arXiv:2603.11356",
+      "month": "2026-03",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.11356"
+      }
+    },
+    {
+      "id": 235,
+      "short_name": "FailureMem",
+      "title": "FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair",
+      "authors": "Ruize Ma, Yilei Jiang, Shilin Zhang, Zheng Ma, Yi Feng, Vincent Ng, Zhi Wang, Xiangyu Yue, Chuanyi Li, Lewei Lu",
+      "venue": "arXiv preprint arXiv:2603.17826",
+      "month": "2026-03",
+      "category": "memory, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.17826",
+        "github": "https://github.com/Ruize-Ma/FailureMem"
+      }
+    },
+    {
+      "id": 229,
+      "short_name": "ComBench",
+      "title": "ComBench: A Repo-level Real-world Benchmark for Compilation Error Repair",
+      "authors": "Jia Li, Zeyang Zhuang, Zhuangbin Chen, Yuxin Su, Wei Meng, Michael R. Lyu",
+      "venue": "arXiv preprint arXiv:2603.27333",
+      "month": "2026-03",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2603.27333"
       }
     },
     {
@@ -248,6 +1039,19 @@
       "category": "tool, multi_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2603.01327"
+      }
+    },
+    {
+      "id": 283,
+      "short_name": "SWE-Refactor",
+      "title": "SWE-Refactor: A Repository-Level Benchmark for Real-World LLM-Based Code Refactoring",
+      "authors": "Yisen Xu, Jinqiu Yang,  Tse-Hsun,  Chen",
+      "venue": "arXiv preprint arXiv:2602.03712",
+      "month": "2026-02",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2602.03712",
+        "website": "https://zenodo.org/records/17655592"
       }
     },
     {

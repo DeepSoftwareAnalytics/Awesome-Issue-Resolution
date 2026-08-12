@@ -1,3 +1,105 @@
+- short_name: MM-IssueLoc
+  title: 'MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal
+    Repository-Level Issue Localization'
+  authors: Shaoxiong Zhan, Shi Hu, Boyu Feng, Hai Lin, Andrew Gong, Zhengda Zhou,
+    Jiaying Zhou, Yunyun Hou, Hao Su, Hai-Tao Zheng
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.15205
+  month: 2026-07
+  abstract: 'Real repository issues routinely include visual evidence such as screenshots,
+    error dialogs, rendered UI states, and logs, yet repository-level issue localization
+    is evaluated mostly as a text-only task. Existing multimodal SE benchmarks evaluate
+    end-to-end repair, entangling localization with patch synthesis and obscuring
+    whether visual input helped, hurt, or was ignored. We introduce \textbf{MM-IssueLoc},
+    a controlled benchmark and evaluation protocol for repository-level localization
+    with visual evidence. MM-IssueLoc contains 652 issue-PR instances across 23 languages,
+    with annotations for 7 image categories and 4 relevance levels. It provides file-level
+    and function-level gold labels, paired text-only and with-image evaluation, and
+    VCE-based diagnostics that convert images into structured textual evidence. We
+    evaluate LLM-based and retrieval-based systems, including MM-IssueLoc-VL-Emb as
+    a controlled multimodal retriever. Results show that existing systems remain far
+    from reliable multimodal repository localization: the strongest agent reaches
+    38.96 file Acc@5 and 22.45 function Acc@10, while the strongest retriever reaches
+    33.86 function Acc@10. Cross-benchmark comparisons show that high localization
+    scores on text-dominant SWE benchmarks do not transfer cleanly to multimodal issue
+    localization. MM-IssueLoc turns visual evidence into an explicit evaluation variable,
+    enabling future work to test whether systems improve by using visual evidence
+    for localization, rather than by relying on text-only cues or downstream patch-generation
+    effects.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.15205
+    github: https://github.com/Jasaxion/MM-IssueLoc-Bench
+- short_name: TraceView
+  title: 'TraceView: Interactive Visualization of Agentic Program Repair Trajectories'
+  authors: Amirali Sajadi, Tu Nguyen, Kimmie Huynh, Esteban Parra, Preetha Chatterjee
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.22110
+  month: 2026-06
+  abstract: LLM-based automated program repair (APR) agents generate patches to fix
+    software bugs with minimal human intervention. These agents often produce long
+    trajectories of reasoning, tool use, and feedback to produce candidate patches.
+    Final patch outcomes show whether a repair attempt succeeded or failed, but they
+    do not show how the agent reached that outcome, or where the process became repetitive
+    or misaligned with the task. This makes agentic repair failures difficult to diagnose,
+    reproduce, and prevent. To help developers address these challenges, we present
+    TraceView, an interactive tool for labeling and visualizing repair trajectories
+    from APR systems. TraceView organizes raw and pre-labeled agentic runs with Thought,
+    Action, and Result components to support semantic relation labeling and diagnosis,
+    and renders the resulting trajectory as graph views. Furthermore, TraceView provides
+    relation filters, patch outcome summaries, metrics, and node-level evidence panels
+    to help users inspect how reasoning, actions, and feedback connect across the
+    various steps of an agentic repair attempt. We evaluate TraceView with five researchers
+    through a survey-based user study. Participants reported that TraceView made trajectories
+    easier to scan and that its overview-to-detail workflow helped them better understand
+    repair behavior. The TraceView source code is available at https://github.com/SOAR-Lab/agent-traj-visualization.
+    A screencast of TraceView is available at https://youtu.be/9ZCh7Ifj2AQ.
+  links:
+    arxiv: https://arxiv.org/abs/2606.22110
+    github: https://github.com/SOAR-Lab/agent-traj-visualization
+- short_name: Open-SWE-Traces
+  title: 'Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software
+    Engineering Agents'
+  authors: Wasi Uddin Ahmad, Nikolai Ludwig, Somshubra Majumdar, Boris Ginsburg
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.16038
+  month: 2026-06
+  links:
+    arxiv: https://arxiv.org/abs/2606.16038
+    huggingface: https://huggingface.co/collections/nvidia/open-swe-traces
+- short_name: From Patches to Trajectories
+  title: 'From Patches to Trajectories: Privileged Process Supervision for Software-Engineering
+    Agents'
+  authors: Murong Ma, Tianyu Chen, Yun Lin, Shuai Lu, Qinglin Zhu, Yeyun Gong, Zhiyong
+    Huang, Peng Cheng, Yan Lu, Jin Song Dong
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.21996
+  month: 2026-05
+  abstract: Supervised fine-tuning (SFT) on long teacher trajectories is the dominant
+    way to instill investigation and reasoning in open software-engineering (SWE)
+    agents. Since every retained response becomes an imitation target, the student
+    inherits the final outcome and intermediate flaws, including ungrounded leaps
+    and redundant loops. High-quality training data must be effective(each step is
+    grounded and narrows the agent's epistemic gap to the correct fix) and efficient(each
+    step is information-bearing rather than redundant or looping). Existing recipes
+    filter or relabel teacher rollouts using only a binary terminal verifier, which
+    does not directly target these axes and provides no supervision on instances where
+    the teacher fails. Most real issue includes a developer-authored reference patch,
+    $p^\star$, revealing the file paths, runtime behaviors, and coding conventions
+    presupposed by the correct fix, yet standard pipelines discard it. We propose
+    Patches-to-Trajectories (P2T), which uses $p^\star$ as privileged information
+    during curation and formulates trajectory construction as bi-objective optimization
+    over per-step effectiveness and trajectory length. A reverse phase distills $p^\star$
+    into a latent process graph, $G^\star$, of contextual facts and solution milestones.
+    A forward phase curates trajectories from blinded teacher continuations by scoring
+    per-step progress against $G^\star$ under a leakage-blocking groundedness check
+    and retaining the shortest effective segments. Using only 1.8k curated SWE-Gym
+    instances, P2T improves effectiveness and efficiency over outcome-filtered SFT
+    and its tool-error-masking variant. On SWE-bench Verified, it raises Pass@1 by
+    up to 10.8 points while reducing per-instance inference cost by ~15%, with consistent
+    gains on SWE-bench Lite. Size-matched ablations and qualitative analysis further
+    isolate trajectory quality from data scale.
+  links:
+    arxiv: https://arxiv.org/abs/2605.21996
 - short_name: From SWE-ZERO to SWE-HERO
   title: 'From SWE-ZERO to SWE-HERO: Execution-free to Execution-based Fine-tuning
     for Software Engineering Agents'

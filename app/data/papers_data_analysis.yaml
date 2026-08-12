@@ -1,3 +1,27 @@
+- short_name: Rethinking Issue Resolution for AI/ML Systems
+  title: Rethinking Issue Resolution for AI/ML Systems
+  authors: Ahmed Adnan, Mushfiqur Rahman, Antu Saha, Oscar Chaparro
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.14657
+  month: 2026-07
+  abstract: 'We advocate for AI/ML issue resolution frameworks tailored to maintenance
+    workflows and the nature of modern AI/ML systems. Existing issue resolution frameworks
+    largely emerged for traditional software maintenance practices and do not explicitly
+    account for characteristics common in AI/ML systems, such as stochastic behavior,
+    experimentation-driven workflows, and heterogeneous artifacts beyond source code.
+    To identify the unique characteristics of issue resolution in AI/ML systems and
+    motivate the need for tailored frameworks, we conducted a qualitative study of
+    issue resolution workflows documented in 100 issue reports and pull requests across
+    four widely used AI/ML systems: TensorFlow, scikit-learn, MLflow, and AutoGPT.
+    Our findings suggest that issue resolution in AI/ML systems involves: recurring
+    AI/ML-related activities that span multiple resolution stages; iterative experimentation
+    and adaptive verification; and coordinated changes across artifacts such as datasets,
+    prompts, and model configurations. We also observed challenges related to reproducibility,
+    nondeterministic behavior, and artifact coordination. Building on these findings,
+    we present a vision for AI/ML issue resolution frameworks and discuss research
+    directions and tooling support needed to realize this vision.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.14657
 - short_name: Data contamination
   title: Does SWE-Bench-Verified Test Agent Ability or Model Memory?
   authors: Thanosan Prathifkumar, Noble Saji Mathews, Meiyappan Nagappan

@@ -1,3 +1,282 @@
+- short_name: SWE-Bench ProMax
+  title: 'SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring'
+  authors: Yuling Shi, Jinghan Xu, Kelin Fu, Wenhao Zeng, Shilin He, Lei Zhang, Yue
+    Liu, Zelin Zhao, Terry Yue Zhuo, Jialun Cao, Siyu Ye, Tianyu Liu, Kai Cai, Shing-Chi
+    Cheung, Xiaodong Gu
+  year: '2026'
+  venue: arXiv preprint arXiv:2608.09802
+  month: 2026-08
+  links:
+    arxiv: https://arxiv.org/abs/2608.09802
+    huggingface: https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax
+- short_name: Active-SWE
+  title: 'Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without
+    Issue Reports'
+  authors: Haobin Li, Ping Deng, Weizhong Qian, Liang Jiang, Zhenyu Huang, Mouxing
+    Yang, Xi Peng
+  year: '2026'
+  venue: arXiv preprint arXiv:2608.04682
+  month: 2026-08
+  abstract: Coding agents powered by large language models (LLMs) are increasingly
+    adopted in software engineering (SWE) scenarios, capable of fixing a specific
+    bug in large-scale codebase. However, existing SWE benchmarks typically assume
+    that high-quality issue reports with detailed information are always available,
+    which is easily violated in practice due to the complexity of report acquisition
+    and curation. To address this, we introduce Active-SWE, a benchmark for evaluating
+    coding agents on proactively discovering and fixing multiple bugs without report
+    guidance, covering 1,663 tasks across six bug categories and eight languages.
+    Beyond shifting the focus from existing reactive bug fixing to proactive bug fixing,
+    Active-SWE enables a more in-depth evaluation by expanding the scope from fixing
+    a specific recorded bug to multiple-bug fixing and potential bug discovery scenarios.
+    To construct Active-SWE, we propose a novel difficulty-aware task formulation
+    pipeline with a dual-track evaluation framework, facilitating comprehensive evaluation
+    of proactive bug-fixing capability. Extensive experiments reveal that most state-of-the-art
+    coding agents struggle with proactive bug-fixing tasks, demonstrating limited
+    performance in locating and resolving recorded bugs, handling multiple bug fixing
+    scenarios, and discovering valid potential bugs.
+  links:
+    arxiv: https://arxiv.org/abs/2608.04682
+    github: https://github.com/XLearning-SCU/Active-SWE
+    huggingface: https://github.com/XLearning-SCU/Active-SWE
+- short_name: MM-IssueLoc
+  title: 'MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal
+    Repository-Level Issue Localization'
+  authors: Shaoxiong Zhan, Shi Hu, Boyu Feng, Hai Lin, Andrew Gong, Zhengda Zhou,
+    Jiaying Zhou, Yunyun Hou, Hao Su, Hai-Tao Zheng
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.15205
+  month: 2026-07
+  abstract: 'Real repository issues routinely include visual evidence such as screenshots,
+    error dialogs, rendered UI states, and logs, yet repository-level issue localization
+    is evaluated mostly as a text-only task. Existing multimodal SE benchmarks evaluate
+    end-to-end repair, entangling localization with patch synthesis and obscuring
+    whether visual input helped, hurt, or was ignored. We introduce \textbf{MM-IssueLoc},
+    a controlled benchmark and evaluation protocol for repository-level localization
+    with visual evidence. MM-IssueLoc contains 652 issue-PR instances across 23 languages,
+    with annotations for 7 image categories and 4 relevance levels. It provides file-level
+    and function-level gold labels, paired text-only and with-image evaluation, and
+    VCE-based diagnostics that convert images into structured textual evidence. We
+    evaluate LLM-based and retrieval-based systems, including MM-IssueLoc-VL-Emb as
+    a controlled multimodal retriever. Results show that existing systems remain far
+    from reliable multimodal repository localization: the strongest agent reaches
+    38.96 file Acc@5 and 22.45 function Acc@10, while the strongest retriever reaches
+    33.86 function Acc@10. Cross-benchmark comparisons show that high localization
+    scores on text-dominant SWE benchmarks do not transfer cleanly to multimodal issue
+    localization. MM-IssueLoc turns visual evidence into an explicit evaluation variable,
+    enabling future work to test whether systems improve by using visual evidence
+    for localization, rather than by relying on text-only cues or downstream patch-generation
+    effects.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.15205
+    github: https://github.com/Jasaxion/MM-IssueLoc-Bench
+- short_name: SWE-Review
+  title: 'SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review'
+  authors: Ruoyu Wang, Jierun Chen, Shaowei Wang, Chaofan Tao, Sidi Yang, Yuxin Jiang,
+    Kim-Hui Yap, Lifeng Shang, Xiaohui Li, Haoli Bai
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.06065
+  month: 2026-07
+  abstract: 'Coding agents increasingly generate pull requests (PRs) for real-world
+    software issues, yet one-shot PR generation remains open-loop: the PR is proposed
+    without systematic review, diagnosis, or revision. We introduce \textbf{SWE-Review},
+    a framework for closing this loop with agentic code review. Given an issue and
+    an AI-generated PR, a reviewer agent explores the repository, decides whether
+    the PR should be accepted, and provides structured feedback for revision. We evaluate
+    this setting with our proposed \textbf{SWE-Review-Bench} to measure both review
+    correctness and downstream revision usefulness. We further curate \textbf{SWE-Review-Traj}
+    dataset to study broader applications of agentic review and fill the data-scarcity
+    gap for open reviewer training. Experiments show that agentic review continuously
+    improves PRs through a generate-review-revise loop, outperforms single-turn fixed-context
+    review in both decision accuracy and resolve rate after revision, transfers beyond
+    review to improve issue-resolution models, and enables effective and efficient
+    test-time scaling. These results position agentic code review as a practical mechanism
+    for moving AI coding agents from one-shot PR generation toward closed-loop issue
+    resolution.'
+  links:
+    arxiv: https://arxiv.org/abs/2607.06065
+    github: https://github.com/SWE-Lego/SWE-Review
+    huggingface: https://huggingface.co/collections/SWE-Lego/swe-review
+- short_name: LLVM-Bench
+  title: 'LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler
+    Issue Resolution'
+  authors: Zhao Tian, Yingquan Zhao, Chenyao Suo, Meng Wang, Junjie Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.00700
+  month: 2026-07
+  abstract: LLVM is a widely used compiler infrastructure whose scale and complexity
+    make issue resolution labor-intensive and challenging. Although large language
+    models (LLMs) have recently achieved remarkable success in issue resolution, their
+    effectiveness on complex system-level LLVM compiler remains largely unexplored.
+    To address this gap, we introduce LLVM-Bench, the first large-scale benchmark
+    for LLVM issue resolution, containing 423 real-world, validated tasks collected
+    from the LLVM project. We further develop LLVM-Gym, a scalable evaluation platform
+    that automates issue reproduction, patch application, compiler building, and test
+    execution. Using LLVM-Bench and LLVM-Gym, we conduct a comprehensive study of
+    four representative LLMs, six retrieval configurations, and three agents. Our
+    results show that current LLM-based issue resolution techniques remain limited
+    on LLVM-Bench, with patch invalidity and build failures as the dominant failure
+    modes. We further reveal a strong complementarity among different LLMs and agents,
+    motivating LLVM-Ens, a lightweight ensemble approach that expands the patch space
+    through integrating the patches generated by diverse techniques, filters incorrect
+    and redundant candidates, and identifies the most promising solution. Our results
+    show that LLVM-Ens achieves a resolution rate of up to 21.99%, further improving
+    LLVM issue resolution.
+  links:
+    arxiv: https://arxiv.org/abs/2607.00700
+- short_name: A11YRepair
+  title: 'A11YRepair: Bridging Web Accessibility Barriers via Knowledge-Enhanced Divide-and-Conquer
+    Repair'
+  authors: Kai Huang, Ling Zhu, Jian Zhang, Xiaofei Xie, Chunyang Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.21926
+  month: 2026-06
+  abstract: Web accessibility (A11Y), which ensures web content is perceivable and
+    usable for users with disabilities, is a critical requirement for modern web applications.
+    Yet existing tooling overwhelmingly focuses on detecting A11Y violations rather
+    than repairing them. Automated program repair (APR) techniques appear promising
+    for this setting, but our study shows that state-of-the-art APR systems perform
+    poorly when applied to real-world A11Y violations. Unlike conventional sparse-bug
+    scenarios, web A11Y issues often manifest as multiple structurally related violations
+    per page, requiring coordinated edits across multiple files. Existing repair systems
+    fail to manage this multi-fault scale, as they handle each bug individually without
+    considering their relationships or incorporating domain rules such as the Web
+    Content Accessibility Guidelines (WCAG). We propose A11YRepair, an LLM-based framework
+    for web A11Y repair. A11YRepair introduces a divide-and-conquer workflow that
+    first clusters violations requiring coordinated edits to reduce redundant localization,
+    and then decomposes each cluster by root cause so the LLM can generate focused
+    and consistent patches. The framework further incorporates WCAG-driven knowledge
+    to strengthen domain awareness during both fault localization and patch synthesis.
+    To support systematic evaluation, we construct A11YBench, a benchmark of 60 real-world
+    web projects collected from GitHub. Experimental results show that A11YRepair
+    achieves higher repair effectiveness and lower cost than state-of-the-art baselines,
+    and ablation studies confirm the importance of its divide-and-conquer design and
+    selective domain knowledge integration. Specifically, patches generated by A11YRepair
+    have been merged into open-source projects from Google, Microsoft, Facebook, IBM,
+    K8s, Docker, and Alibaba, demonstrating its practical value.
+  links:
+    arxiv: https://arxiv.org/abs/2606.21926
+- short_name: MPC-Patch-Bench
+  title: 'MPC-Patch-Bench: Security-Aware LLM Code Patch for Multi-Party Computation'
+  authors: Yukuan Zhang, Mengxin Zheng, Qian Lou
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.11416
+  month: 2026-06
+  abstract: 'Repository-level benchmarks for evaluating Large Language Model (LLM)
+    code repair on Secure Multi-Party Computation (MPC) software do not yet exist,
+    and directly transplanting general-purpose benchmarks such as SWE-bench fails
+    on three structural fronts: (i) MPC repositories are dominated by generic Python
+    infrastructure rather than cryptographic logic; (ii) high-value MPC fixes lack
+    the standardized tests rigid extraction pipelines require; and (iii) standard
+    fail-to-pass evaluation is insufficient for code that must also be cryptographically
+    safe. MPC is increasingly deployed for privacy-preserving machine learning, biomedical
+    collaboration, and secure analytics. Existing MPC-specific code-synthesis efforts
+    cover only operator-level or single-framework tasks; evaluating LLM agents on
+    real repository-level MPC repair instead demands MPC-aware data curation and a
+    verifier matched to the security and numerical-fidelity guarantees MPC programs
+    must obey neither of which existing benchmarks provide. We introduce MPC-Patch-Bench,
+    a repository-level benchmark organised around two frameworks. (1)The Data Curation
+    Framework combines a domain-specific curation agent that filters raw pull requests
+    through three cryptographic layers with a human-AI completion engine that synthesizes
+    missing problem statements and Fail-to-Pass/Pass-to-Pass tests, yielding 205 fully
+    verified instances. (2)The MPC Verifier provides dedicated security and numerical-fidelity
+    checks via dynamic differential testing against plaintext oracles and MPC-specific
+    static analysis rules that flag unsafe reveals, insecure arithmetic, and illegal
+    public/private casts. The strongest evaluated LLM functionally resolves only 22.9%
+    of MPC-Patch-Bench tasks; the MPC Verifier further reduces verified resolution
+    to 17.1%, with up to 40% of functionally-passing patches rejected for cryptographic
+    or numerical-fidelity violations.'
+  links:
+    arxiv: https://arxiv.org/abs/2606.11416
+- short_name: SWE-Together
+  title: 'SWE-Together: Evaluating Coding Agents in Interactive User Sessions'
+  authors: Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee, Jiacheng Zhu, Shirley Wu,
+    Tianhe Yu, Serena Li, Lizhu Zhang, Xiangjun Fan, Shengzhi Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.29957
+  month: 2026-06
+  links:
+    arxiv: https://arxiv.org/abs/2606.29957
+    github: https://github.com/Togetherbench/SWE-Together
+    website: https://togetherbench.com/
+- short_name: FrontierCode
+  title: Introducing FrontierCode
+  authors: Eric Lu, Ben Pan, Deniz Birlikci, Sam Lee, Ray Wang, Rohan Choudhury, Fermi
+    Ma, TC Qin, Carlo Baronio, Silas Alberti, Katie Cheng, Joseph Alessio, Claudio
+    Costa, Martin McKeaveny, Lance Fuchia, Merlijn Vos, Tomer Nosrati, Swyx
+  year: '2026'
+  venue: '-'
+  month: 2026-06
+  links:
+    website: https://cognition.com/blog/frontier-code
+- short_name: SWE-Cycle
+  title: 'SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution
+    Cycle'
+  authors: Hao Guan, Lingyue Fu, Shao Zhang, Yaoming Zhu, Kangning Zhang, Lin Qiu,
+    Xunliang Cai, Xuezhi Cao, Weiwen Liu, Weinan Zhang, Yong Yu
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.13139
+  month: 2026-05
+  abstract: As autonomous code agents move toward end-to-end software development,
+    evaluating their practical autonomy becomes critical. Current benchmarks hide
+    friction by testing agents in pre-configured environments, and their static evaluation
+    pipelines frequently fail when parsing fully autonomous trajectories. We address
+    these limitations with SWE-Cycle, a benchmark of 489 rigorously filtered instances.
+    SWE-Cycle evaluates agents across three isolated tasks, including environment
+    reconstruction, code implementation, and verification test generation, as well
+    as an end-to-end FullCycle task that integrates all three. The FullCycle task
+    requires agents to work autonomously in a bare repository without human scaffolding.
+    To reliably assess these complex execution paths, we developed SWE-Judge. By combining
+    static code review with dynamic testing, this execution-capable evaluation agent
+    accurately verifies functional correctness and eliminates the systematic measurement
+    errors of traditional static parsers. We evaluate code agents powered by six state-of-the-art
+    LLMs across these four tasks. The results reveal a sharp drop in solve rates when
+    transitioning from isolated tasks to FullCycle execution, exposing critical bottlenecks
+    in handling cross-phase dependencies and maintaining code quality. Together, SWE-Cycle
+    and SWE-Judge provide a comprehensive framework for accurately measuring the end-to-end
+    capabilities of autonomous software agents.
+  links:
+    arxiv: https://arxiv.org/abs/2605.13139
+- short_name: SmellBench
+  title: 'SmellBench: Evaluating LLM Agents on Architectural Code Smell Repair'
+  authors: Ion George Dinu, Marian Cristian Mihăescu, Traian Rebedea
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.07001
+  month: 2026-05
+  abstract: 'Architectural code smells erode software maintainability and are costly
+    to repair manually, yet unlike localized bugs, they require cross-module reasoning
+    about design intent that challenges both developers and automated tools. While
+    large language model agents excel at bug fixing and code-level refactoring, their
+    ability to repair architectural code smells remains unexplored. We present the
+    first empirical evaluation of LLM agents on architectural code smell repair. We
+    contribute SmellBench, a task orchestration framework that incorporates smell-type-specific
+    optimized prompts and supports iterative multi-step execution, together with a
+    scoring methodology that separately evaluates repair effectiveness, false positive
+    identification, and net codebase impact. We evaluate 11 agent configurations from
+    four model families (GPT, Claude, Gemini, Mistral) on 65 hard-severity architectural
+    smells detected by PyExamine in the Python project scikit-learn, validated against
+    expert judgments. Expert validation reveals that 63.1% of detected smells are
+    false positives, while the best agent achieves a 47.7% resolution rate. Agents
+    identify false positives with up to $κ= 0.94$ expert agreement, but repair aggressiveness
+    and net codebase quality are inversely related: the most aggressive agent introduces
+    140 new smells. These findings expose a gap between current LLM capabilities in
+    localized code transformations and the architectural understanding needed for
+    cross-module refactoring. SmellBench provides reusable infrastructure for tracking
+    progress on this underexplored dimension of automated software engineering. We
+    release our code and data at https://doi.org/10.5281/zenodo.19247588.'
+  links:
+    arxiv: https://arxiv.org/abs/2605.07001
+    website: https://zenodo.org/records/19247588
+- short_name: SWE-Chain
+  title: 'SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades'
+  authors: Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, Jen-tse
+    Huang, Terry Yue Zhuo, Michael R. Lyu
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.14415
+  month: 2026-05
+  links:
+    arxiv: https://arxiv.org/abs/2605.14415
+    github: https://github.com/CUHK-ARISE/SWE-Chain
+    huggingface: https://huggingface.co/datasets/mhlam/SWE-Chain
 - short_name: SWE-Shield
   title: Does Pass Rate Tell the Whole Story? Evaluating Design Constraint Compliance
     in LLM-based Issue Resolution
@@ -8,6 +287,35 @@
   month: 2026-04
   links:
     arxiv: https://arxiv.org/abs/2604.05955
+- short_name: CI-Repair-Bench
+  title: 'CI-Repair-Bench: A Repository-Aware Benchmark for Automated Patch Validation
+    via CI Workflows'
+  authors: Rabeya Khatun Muna, Md Nakhla Rafi, Tse-Hsun, Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.27148
+  month: 2026-04
+  abstract: 'Continuous Integration (CI) enforces repository-level correctness through
+    multi-stage workflows and is central to modern software development, yet diagnosing
+    and repairing CI failures remains challenging. Unlike traditional program repair,
+    CI failures frequently involve non-code artifacts, environment and dependency
+    issues, noisy execution logs, and workflow-level constraints. Existing program
+    repair benchmarks fall short in this setting: they are largely test-centric, restrict
+    repairs to source code, assume fixed execution environments, and evaluate under
+    simplified CI workflows that do not reflect real repository-level validation.
+    We introduce CI-Repair-Bench, a benchmark for CI-verified, repository-level program
+    repair constructed from real GitHub Actions executions. It contains 567 CI failure
+    instances from 103 repositories and evaluates repair correctness exclusively through
+    full CI re-execution under original workflows. Failures are categorized into 12
+    CI error types, enabling fine-grained, error-type-aware evaluation. To demonstrate
+    benchmark usage, we include a reference CI repair workflow that analyzes CI logs
+    to localize faults and generate candidate patches. Empirical results show that
+    automated repair is most effective for localized, tool-enforced failures such
+    as formatting and linting, while environment, dependency, and configuration-related
+    failures remain challenging; the best-performing LLM achieves an 18.9% repair
+    success rate. CI-Repair-Bench provides a realistic evaluation foundation for advancing
+    research on CI-native automated program repair.'
+  links:
+    arxiv: https://arxiv.org/abs/2604.27148
 - short_name: BeyondSWE
   title: 'BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing?'
   authors: Guoxin Chen, Fanzhe Meng, Jiale Zhao, Minghao Li, Daixuan Cheng, Huatong
@@ -59,6 +367,50 @@
   month: 2026-03
   links:
     arxiv: https://arxiv.org/abs/2603.24946
+- short_name: ComBench
+  title: 'ComBench: A Repo-level Real-world Benchmark for Compilation Error Repair'
+  authors: Jia Li, Zeyang Zhuang, Zhuangbin Chen, Yuxin Su, Wei Meng, Michael R. Lyu
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.27333
+  month: 2026-03
+  abstract: Compilation errors pose pervasive and critical challenges in software
+    development, significantly hindering productivity. Therefore, Automated Compilation
+    Error Repair (ACER) techniques are proposed to mitigate these issues. Despite
+    recent advancements in ACER, its real-world performance remains poorly evaluated.
+    This can be largely attributed to the limitations of existing benchmarks, \ie
+    decontextualized single-file data, lack of authentic source diversity, and biased
+    local task modeling that ignores crucial repository-level complexities. To bridge
+    this critical gap, we propose ComBench, the first repository-level, reproducible
+    real-world benchmark for C/C++ compilation error repair. ComBench is constructed
+    through a novel, automated framework that systematically mines real-world failures
+    from the GitHub CI histories of large-scale open-source projects. Our framework
+    contributes techniques for the high-precision identification of ground-truth repair
+    patches from complex version histories and a high-fidelity mechanism for reproducing
+    the original, ephemeral build environments. To ensure data quality, all samples
+    in ComBench are execution-verified -- guaranteeing reproducible failures and build
+    success with ground-truth patches. Using ComBench, we conduct a comprehensive
+    evaluation of 12 modern LLMs under both direct and agent-based repair settings.
+    Our experiments reveal a significant gap between a model's ability to achieve
+    syntactic correctness (a 73% success rate for GPT-5) and its ability to ensure
+    semantic correctness (only 41% of its patches are valid). We also find that different
+    models exhibit distinct specializations for different error types. ComBench provides
+    a robust and realistic platform to guide the future development of ACER techniques
+    capable of addressing the complexities of modern software development.
+  links:
+    arxiv: https://arxiv.org/abs/2603.27333
+- short_name: SWE-Milestone
+  title: 'SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution'
+  authors: Gangda Deng, Zhaoling Chen, Zhongming Yu, Haoyang Fan, Yuhong Liu, Yuxin
+    Yang, Dhruv Parikh, Rajgopal Kannan, Le Cong, Mengdi Wang, Qian Zhang, Viktor
+    Prasanna, Xiangru Tang, Xingyao Wang
+  year: '2026'
+  venue: arXiv preprint arXiv:2603.13428
+  month: 2026-03
+  links:
+    arxiv: https://arxiv.org/abs/2603.13428
+    github: https://github.com/DeepCommit-ai/SWE-Milestone
+    huggingface: https://huggingface.co/datasets/DeepCommit-ai/SWE-Milestone-data
+    website: https://swe-milestone.com/
 - short_name: SWE Context Bench
   title: 'SWE Context Bench: A Benchmark for Context Learning in Coding'
   authors: Jared Zhu, Minhao Hu, Junde Wu
@@ -98,6 +450,16 @@
   links:
     arxiv: https://arxiv.org/abs/2602.09540
     website: https://swebenchmobile.com/
+- short_name: SWE-Refactor
+  title: 'SWE-Refactor: A Repository-Level Benchmark for Real-World LLM-Based Code
+    Refactoring'
+  authors: Yisen Xu, Jinqiu Yang,  Tse-Hsun,  Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2602.03712
+  month: 2026-02
+  links:
+    arxiv: https://arxiv.org/abs/2602.03712
+    website: https://zenodo.org/records/17655592
 - short_name: SWE-InfraBench
   title: 'SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code'
   authors: Natalia Tarasova, Enrique Balp-Straffon, Aleksei Iancheruk, Yevhenii Sielskyi,

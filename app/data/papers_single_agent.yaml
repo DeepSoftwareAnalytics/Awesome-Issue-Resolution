@@ -1,3 +1,87 @@
+- short_name: EvoRepair
+  title: 'EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based
+    Self-Evolution'
+  authors: Haichuan Hu, Guoqing Xie, Quanjun Zhang, Jiawei Liu, Shengcheng Yu, Chunrong
+    Fang, Zhenyu Chen, Liang Xiao
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.30105
+  month: 2026-05
+  abstract: Large Language Models (LLMs) have shown promise for automated vulnerability
+    repair (AVR), but they still face several limitations, including the lack of intra-vulnerability
+    experience accumulation and the lack of cross-vulnerability experience reuse.
+    As a result, LLMs may repeatedly make similar mistakes during iterative repair
+    and underutilize valuable repair knowledge from historical vulnerabilities. To
+    address these challenges, we propose EvoRepair, the first experience-based self-evolving
+    AVR agent framework that enables LLMs to accumulate, refine, and leverage domain-specific
+    knowledge across long-horizon vulnerability repairs. EvoRepair follows a cyclic
+    learn-and-repair process that retrieves relevant past experiences to guide repair,
+    extracts new experiences from repair trajectories, and updates an experience bank
+    using quality-aware scoring. We evaluate EvoRepair against 12 representative vulnerability
+    repair baselines on PATCHEVAL and SEC-bench using GPT-5-mini. Results show that
+    EvoRepair achieves the best overall performance, reaching 93.47% on PATCHEVAL,
+    87.00% on SEC-bench, and 90.46% overall. In particular, EvoRepair outperforms
+    latest LLM-based baseline LoopRepair by 39.56% and 33.50% on PATCHEVAL and SEC-bench,
+    respectively, and surpasses IntentFix by 70.86% and 50.50%. Across both benchmarks,
+    EvoRepair also exceeds the recent self-evolving agent Live-SWE-Agent by 6.98%
+    overall. Additional transfer experiments on VUL4J further demonstrate the robustness
+    of EvoRepair across models, programming languages, and datasets. These findings
+    demonstrate that experience-based self-evolution substantially strengthens agentic
+    AVR and goes beyond existing self-evolving techniques.
+  links:
+    arxiv: https://arxiv.org/abs/2605.30105
+- short_name: EviACT
+  title: 'EviACT: An Evidence-to-Action Framework for Agentic Program Repair'
+  authors: Qianru Meng, Xiao Zhang, Zhaochun Ren, Joost Visser
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.27238
+  month: 2026-05
+  abstract: LLM-based agents have moved automated program repair (APR) from fixed-context
+    patch generation to interactive repository-level repair. However, existing agentic
+    APR systems still struggle to use execution evidence to guide localization, patch
+    generation, and validation. We propose EviACT (Evidence-to-Action), an agentic
+    APR framework that coordinates three evidence-driven guardrails across repair
+    stages. The retrieval scaffold grounds repair context, the compile gate filters
+    invalid edits, and the test-driven gate checks target-test recovery before full
+    regression. Across four benchmarks, EviACT improves resolve rate over the strongest
+    reported comparable baselines by 1.6-6.0 percentage points and shows 70.1-88.6%
+    lower reported per-bug API cost where baseline costs are available. Ablations
+    and diagnostics suggest that these gains are associated with the coordinated evidence-to-action
+    chain, making agentic APR more effective and efficient.
+  links:
+    arxiv: https://arxiv.org/abs/2605.27238
+- short_name: ContraFix
+  title: 'ContraFix: Skill-Enhanced Contrastive Runtime Analysis for Vulnerability
+    Repair'
+  authors: Simiao Liu, Fang Liu, Peiding Wang, Taichuan Li, Yinghao Zhu, Xiaoli Lian,
+    Li Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2605.17450
+  month: 2026-05
+  abstract: As software systems grow increasingly complex, automated vulnerability
+    repair (AVR) remains difficult because the materials available to a repair system
+    are usually failure artifacts rather than repair guidance. Traditional analysis
+    techniques can provide suspicious locations, reduced triggers, or constraints,
+    but they are costly to configure across repositories and seldom directly actionable
+    for patch generation. Recent LLM-based agents can edit and validate repository-level
+    patches, and experience-based systems can reuse prior repair traces or demonstrations,
+    but they still need current-instance evidence that turns a broad, symptom-level
+    failure report into a concrete repair decision. We present ContraFix, an agentic
+    AVR framework that constructs such evidence through contrastive runtime analysis.
+    Starting from a failing witness, ContraFix generates nearby failing and non-failing
+    variants, executes them through aligned probe sites, and compares their runtime
+    states to infer the repair boundary and guide source-level patching. Each candidate
+    patch is accepted only after build and validation. ContraFix also stores validated
+    repair episodes in a dual-track skill base, reusing mutation skills to construct
+    useful variants and correction skills to refine failed patches. On SEC-Bench,
+    ContraFix with GPT-5-mini achieves resolution rate of 92.0% over three repeated
+    runs and an average resolution rate of 91.8% +/- 0.8. On PatchEval, it resolves
+    73.8% of 225 Go, Python, and JavaScript instances. A semantic audit of benchmark-validated
+    SEC-Bench patches shows that 58.2% of ContraFix's patches are semantically correct,
+    compared with 31.3% for the strongest baseline, indicating that the proposed framework
+    improves semantic correctness beyond benchmark validation.
+  links:
+    arxiv: https://arxiv.org/abs/2605.17450
+    website: https://figshare.com/s/f173c78e44bca88ebaea?file=66112583
 - short_name: REAgent
   title: 'REAgent: Requirement-Driven LLM Agents for Software Issue Resolution'
   authors: Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, Shaowei Wang, Haoli Bai,
@@ -7,6 +91,35 @@
   month: 2026-04
   links:
     arxiv: https://arxiv.org/abs/2604.06861
+- short_name: DebugHarness
+  title: 'DebugHarness: Emulating Human Dynamic Debugging for Autonomous Program Repair'
+  authors: Maolin Sun, Yibiao Yang, Xuanlin Liu, Yuming Zhou, Baowen Xu
+  year: '2026'
+  venue: arXiv preprint arXiv:2604.03610
+  month: 2026-04
+  abstract: Patching severe security flaws in complex software remains a major challenge.
+    While automated tools like fuzzers efficiently discover bugs, fixing deep-rooted
+    low-level faults (e.g., use-after-free and memory corruption) still requires labor-intensive
+    manual analysis by experts. Emerging Large Language Model (LLM) agents attempt
+    to automate this pipeline, but they typically treat bug fixing as a purely static
+    code-generation task. Relying solely on static artifacts, these methods miss the
+    dynamic execution context strictly necessary for diagnosing intricate memory safety
+    violations. To overcome these limitations, we introduce DebugHarness, an autonomous
+    LLM-powered debugging agent harness that resolves complex vulnerabilities by emulating
+    the interactive debugging practices of human systems engineers. Instead of merely
+    examining static code, DebugHarness actively queries the live runtime environment.
+    Driven by a reproducible crash, it utilizes a pattern-guided investigation strategy
+    to formulate hypotheses, interactively probes program memory states and execution
+    paths, and synthesizes patches via a closed-loop validation cycle. We evaluate
+    DebugHarness on SEC-bench, a rigorous dataset of real-world C/C++ security vulnerabilities.
+    DebugHarness successfully patches approximately 90% of the evaluated bugs. This
+    yields a relative improvement of over 30% compared to state-of-the-art baselines,
+    demonstrating that dynamic debugging significantly enhances LLM diagnostic capabilities.
+    Overall, DebugHarness establishes a novel paradigm for automated program repair,
+    bridging the gap between static LLM reasoning and the dynamic intricacies of low-level
+    systems programming.
+  links:
+    arxiv: https://arxiv.org/abs/2604.03610
 - short_name: Confucius Code Agent
   title: 'Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases'
   authors: Sherman Wong, Zhenting Qi, Zhaodong Wang, Nathan Hu, Samuel Lin, Jun Ge,
