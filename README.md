@@ -490,10 +490,6 @@ Based on a systematic review of **281 papers and online resources**, this survey
 ---
 
 <!-- START TABLES -->
-## 📋 Statistical Tables
-
-Comprehensive tables and statistics about issue resolution datasets, methods, and benchmarks.
-
 
 ### Evaluation & Training Datasets
 
@@ -572,7 +568,7 @@ _Overview of SFT-based methods for issue resolution. This table categorizes mode
 | CGM-SWE-PY | Qwen2.5-Coder-72B | 72B | Dense | Graph RAG | 50.4 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/codefuse-ai/CodeFuse-CGM) | - | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/codefuse-ai/CodeFuse-CGM-72B) |
 | SWE-rebench-openhands-Qwen3-30B-A3B | Qwen3-30B-A3B | 30B-A3B | MoE | OpenHands | 49.7 | - | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories) | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/nebius/SWE-rebench-openhands-Qwen3-30B-A3B) |
 | Devstral | Mistral Small 3 | 22B | Dense | OpenHands | 46.8 | - | - | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/mistralai/Devstral-Small-2507) |
-| Co-PatcheR | Qwen2.5-Coder-14B | 3$	imes$14B | Dense | PatchPilot-mini | 46.0 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ucsb-mlsec/Co-PatcheR) | - | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/UCSB-SURFI/co-patcher) |
+| Co-PatcheR | Qwen2.5-Coder-14B | 3$\times$14B | Dense | PatchPilot-mini | 46.0 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ucsb-mlsec/Co-PatcheR) | - | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/UCSB-SURFI/co-patcher) |
 | SWE-Swiss-32B | Qwen2.5-32B-Instruct | 32B | Dense | Agentless | 45.0 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/zhenyuhe00/SWE-Swiss) | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Swiss/datasets) | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Swiss/models) |
 | SWE-Lego-Qwen3-8B | Qwen3-8B | 8B | Dense | OpenHands | 44.4 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Lego/datasets) | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/SWE-Lego/SWE-Lego-Qwen3-8B) |
 | Lingma SWE-GPT | Qwen2.5-72B-Instruct | 72B | Dense | SWESynInfer | 30.2 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/LingmaTongyi/Lingma-SWE-GPT) | - | - |
