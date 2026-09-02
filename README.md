@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-284-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-286-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -30,7 +30,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **284 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **286 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
@@ -49,6 +49,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 - **LLVM-Bench**: LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.00700)
 - **MM-IssueLoc**: MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.15205) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/Jasaxion/MM-IssueLoc-Bench)
 - **STAIR**: Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.29658)
+- **SWE-Pruner Pro**: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.18213) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/Ayanami1314/swe-pruner-pro)
 - **SWE-Review**: SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.06065) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Review) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/SWE-Lego/swe-review)
 <!-- END_RECENT_PAPERS -->
 
@@ -104,7 +105,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 284 works** across 14 categories
+> **Total: 286 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -216,6 +217,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 
 *Individual autonomous agents for issue resolution*
 
+- `(2026-07)` **SWE-Pruner Pro**: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.18213) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Ayanami1314/swe-pruner-pro)
 - `(2026-05)` **EvoRepair**: EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based Self-Evolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.30105)
 - `(2026-05)` **EviACT**: EviACT: An Evidence-to-Action Framework for Agentic Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.27238)
 - `(2026-05)` **ContraFix**: ContraFix: Skill-Enhanced Contrastive Runtime Analysis for Vulnerability Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.17450) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://figshare.com/s/f173c78e44bca88ebaea?file=66112583)
@@ -308,6 +310,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 - `(2026-03)` **DAIRA**: Dynamic analysis enhances issue resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.22048) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://anonymous.4open.science/r/DAIRA-80AC/README.md)
 - `(2026-02)` **Closing the Loop**: Closing the Loop: Universal Repository Representation with RPG-Encoder [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.02084) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://ayanami2003.github.io/RPG-Encoder/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/RPG-ZeroRepo)
 - `(2026-01)` **SWE-Tester**: SWE-Tester: Training Open-Source LLMs for Issue Reproduction in Real-World Repositories [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.13713)
+- `(2026-01)` **SWE-Pruner**: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.16746) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Ayanami1314/swe-pruner)
 - `(2025-12)` **GraphLocator**: GraphLocator: Graph-guided Causal Reasoning for Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22469)
 - `(2025-11)` **InfCode**: InfCode: Adversarial Iterative Refinement of Tests and Patches for Reliable Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.16004)
 - `(2025-10)` **BugPilot**: BugPilot: Complex Bug Generation for Efficient Learning of SWE Skills [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.19898)
@@ -361,6 +364,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 *Models trained via supervised learning*
 
 - `(2026-08)` **SWE-Prime**: SWE-Prime: Fewer Trajectories, Better Performance [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27449)
+- `(2026-07)` **SWE-Pruner Pro**: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.18213) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Ayanami1314/swe-pruner-pro)
 - `(2026-06)` **Open-SWE-Traces**: Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.16038) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/nvidia/open-swe-traces)
 - `(2026-05)` **From Patches to Trajectories**: From Patches to Trajectories: Privileged Process Supervision for Software-Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.21996)
 - `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
@@ -370,6 +374,7 @@ Based on a systematic review of **284 papers and online resources**, this survey
 - `(2026-02)` **Scale-SWE**: Immersion in the GitHub Universe: Scaling Coding Agents to Mastery [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09892) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/AweAI-Team/scale-swe)
 - `(2026-01)` **SWE-Lego**: SWE-Lego: Pushing the Limits of Supervised Fine-tuning for Software Issue Resolving [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.01426)
 - `(2026-01)` **SWE-Replay**: SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22129)
+- `(2026-01)` **SWE-Pruner**: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.16746) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Ayanami1314/swe-pruner)
 - `(2025-12)` **SWE-Compressor**: Context as a Tool: Context Management for Long-Horizon SWE-Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.22087)
 - `(2025-09)` **Devstral**: Devstral: Fine-tuning Language Models for Coding Agent Applications [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.25193)
 - `(2025-06)` **MCTS-Refined CoT**: MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.12728)

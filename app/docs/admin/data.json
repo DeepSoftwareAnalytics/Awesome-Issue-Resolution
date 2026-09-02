@@ -1,9 +1,9 @@
 {
   "generated": "2026-09-02",
   "stats": {
-    "total": 284,
+    "total": 286,
     "data": 79,
-    "methods": 179,
+    "methods": 181,
     "analysis": 36
   },
   "papers": [
@@ -72,6 +72,19 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2608.09802",
         "huggingface": "https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax"
+      }
+    },
+    {
+      "id": 289,
+      "short_name": "SWE-Pruner Pro",
+      "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
+      "authors": "Yuhang Wang, Yuling Shi, Shaoqiu Zhang, Jialiang Liang, Shilin He, Siyu Ye, Yuting Chen, Kai Cai, Xiaodong Gu",
+      "venue": "arXiv preprint arXiv:2607.18213",
+      "month": "2026-07",
+      "category": "sft,single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2607.18213",
+        "github": "https://github.com/Ayanami1314/swe-pruner-pro"
       }
     },
     {
@@ -1285,6 +1298,19 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2602.00592",
         "huggingface": "https://huggingface.co/collections/8sj7df9k8m5x8/docksmith"
+      }
+    },
+    {
+      "id": 288,
+      "short_name": "SWE-Pruner",
+      "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
+      "authors": "Yuhang Wang, Yuling Shi, Mo Yang, Rongrui Zhang, Shilin He, Heng Lian, Yuting Chen, Siyu Ye, Kai Cai, Xiaodong Gu",
+      "venue": "arXiv preprint arXiv:2601.16746",
+      "month": "2026-01",
+      "category": "sft,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2601.16746",
+        "github": "https://github.com/Ayanami1314/swe-pruner"
       }
     },
     {

@@ -7,6 +7,16 @@
   month: 2026-08
   links:
     arxiv: https://arxiv.org/abs/2608.27449
+- short_name: SWE-Pruner Pro
+  title: 'SWE-Pruner Pro: The Coder LLM Already Knows What to Prune'
+  authors: Yuhang Wang, Yuling Shi, Shaoqiu Zhang, Jialiang Liang, Shilin He, Siyu
+    Ye, Yuting Chen, Kai Cai, Xiaodong Gu
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.18213
+  month: 2026-07
+  links:
+    arxiv: https://arxiv.org/abs/2607.18213
+    github: https://github.com/Ayanami1314/swe-pruner-pro
 - short_name: Open-SWE-Traces
   title: 'Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software
     Engineering Agents'
@@ -143,6 +153,16 @@
   month: 2026-01
   links:
     arxiv: https://arxiv.org/abs/2601.22129
+- short_name: SWE-Pruner
+  title: 'SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents'
+  authors: Yuhang Wang, Yuling Shi, Mo Yang, Rongrui Zhang, Shilin He, Heng Lian,
+    Yuting Chen, Siyu Ye, Kai Cai, Xiaodong Gu
+  year: '2026'
+  venue: arXiv preprint arXiv:2601.16746
+  month: 2026-01
+  links:
+    arxiv: https://arxiv.org/abs/2601.16746
+    github: https://github.com/Ayanami1314/swe-pruner
 - short_name: SWE-Compressor
   title: 'Context as a Tool: Context Management for Long-Horizon SWE-Agents'
   authors: Shukai Liu, Jian Yang, Bo Jiang, Yizhi Li, Jinyang Guo, Xianglong Liu,

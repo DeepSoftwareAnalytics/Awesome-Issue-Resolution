@@ -1,3 +1,13 @@
+- short_name: SWE-Pruner Pro
+  title: 'SWE-Pruner Pro: The Coder LLM Already Knows What to Prune'
+  authors: Yuhang Wang, Yuling Shi, Shaoqiu Zhang, Jialiang Liang, Shilin He, Siyu
+    Ye, Yuting Chen, Kai Cai, Xiaodong Gu
+  year: '2026'
+  venue: arXiv preprint arXiv:2607.18213
+  month: 2026-07
+  links:
+    arxiv: https://arxiv.org/abs/2607.18213
+    github: https://github.com/Ayanami1314/swe-pruner-pro
 - short_name: EvoRepair
   title: 'EvoRepair: Enhancing Vulnerability Repair Agents Through Experience-Based
     Self-Evolution'
