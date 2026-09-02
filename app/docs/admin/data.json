@@ -1,12 +1,52 @@
 {
   "generated": "2026-09-02",
   "stats": {
-    "total": 281,
-    "data": 77,
-    "methods": 178,
+    "total": 284,
+    "data": 79,
+    "methods": 179,
     "analysis": 36
   },
   "papers": [
+    {
+      "id": 287,
+      "short_name": "SWE-Prime",
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "authors": "Dewu Zheng, Ruizhe Ye, Yanlin Wang, Yang Ye, Hongyu Zhang, Ensheng Shi, Xilin Liu, Yuchi Ma, Jianxing Yu, Zibin Zheng",
+      "venue": "arXiv preprint arXiv:2608.27449",
+      "month": "2026-08",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2608.27449"
+      }
+    },
+    {
+      "id": 286,
+      "short_name": "SWE Refactor Bench",
+      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "authors": "Deyao Hong, Yizhe Chi, Wenyi Li, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na",
+      "venue": "arXiv preprint arXiv:2608.23564",
+      "month": "2026-08",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2608.23564",
+        "website": "https://lab.einsia.ai/swe-refactor-bench/"
+      }
+    },
+    {
+      "id": 285,
+      "short_name": "SWE-bench Science",
+      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+      "authors": "Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu",
+      "venue": "arXiv preprint arXiv:2608.19799",
+      "month": "2026-08",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2608.19799",
+        "github": "https://github.com/OpenMOSS/SWE-bench-Science",
+        "huggingface": "https://huggingface.co/datasets/OpenMOSS-Team/SWE-bench-Science",
+        "website": "https://swescience.github.io/"
+      }
+    },
     {
       "id": 221,
       "short_name": "Active-SWE",

@@ -12,7 +12,7 @@
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-281-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-284-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 
@@ -30,7 +30,7 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **281 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on a systematic review of **284 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
@@ -41,13 +41,13 @@ Based on a systematic review of **281 papers and online resources**, this survey
 
 <!-- START_RECENT_PAPERS -->
 - **Active-SWE**: Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.04682) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/XLearning-SCU/Active-SWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://github.com/XLearning-SCU/Active-SWE)
+- **SWE Refactor Bench**: SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.23564) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://lab.einsia.ai/swe-refactor-bench/)
 - **SWE-Bench ProMax**: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.09802) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax)
-- **AgenticRepair**: AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.29422)
-- **TrajSpec**: Bug Report Specification Refinement with Trajectory Guidance for Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.07882)
+- **SWE-Prime**: SWE-Prime: Fewer Trajectories, Better Performance [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27449)
+- **SWE-bench Science**: SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.19799) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/OpenMOSS/SWE-bench-Science) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/OpenMOSS-Team/SWE-bench-Science) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://swescience.github.io/)
 - **Know Before Fix**: Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.11111)
 - **LLVM-Bench**: LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.00700)
 - **MM-IssueLoc**: MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.15205) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/Jasaxion/MM-IssueLoc-Bench)
-- **MultiFixer**: MultiFixer: A Coordinator-Proposer Based Multi-Agent Framework For Fixing Multi-Hunk Bugs [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.26591)
 - **STAIR**: Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.29658)
 - **SWE-Review**: SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.06065) [![GitHub](https://img.shields.io/badge/GitHub-code-181717?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Review) [![HuggingFace](https://img.shields.io/badge/HuggingFace-model-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/collections/SWE-Lego/swe-review)
 <!-- END_RECENT_PAPERS -->
@@ -104,7 +104,7 @@ Based on a systematic review of **281 papers and online resources**, this survey
 ## 📚 Complete Paper List
 
 
-> **Total: 281 works** across 14 categories
+> **Total: 284 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -113,6 +113,8 @@ Based on a systematic review of **281 papers and online resources**, this survey
 
 - `(2026-08)` **SWE-Bench ProMax**: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.09802) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax)
 - `(2026-08)` **Active-SWE**: Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.04682) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/XLearning-SCU/Active-SWE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://github.com/XLearning-SCU/Active-SWE)
+- `(2026-08)` **SWE-bench Science**: SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.19799) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://swescience.github.io/) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/OpenMOSS/SWE-bench-Science) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/OpenMOSS-Team/SWE-bench-Science)
+- `(2026-08)` **SWE Refactor Bench**: SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.23564) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://lab.einsia.ai/swe-refactor-bench/)
 - `(2026-07)` **MM-IssueLoc**: MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.15205) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Jasaxion/MM-IssueLoc-Bench)
 - `(2026-07)` **SWE-Review**: SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.06065) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Review) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/SWE-Lego/swe-review)
 - `(2026-07)` **LLVM-Bench**: LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.00700)
@@ -358,6 +360,7 @@ Based on a systematic review of **281 papers and online resources**, this survey
 
 *Models trained via supervised learning*
 
+- `(2026-08)` **SWE-Prime**: SWE-Prime: Fewer Trajectories, Better Performance [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27449)
 - `(2026-06)` **Open-SWE-Traces**: Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.16038) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/collections/nvidia/open-swe-traces)
 - `(2026-05)` **From Patches to Trajectories**: From Patches to Trajectories: Privileged Process Supervision for Software-Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.21996)
 - `(2026-04)` **SWE-AGILE**: SWE-AGILE: A Software Agent Framework for Efficiently Managing Dynamic Reasoning Context [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.11716) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/KDEGroup/SWE-AGILE) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/KDEGroup)
