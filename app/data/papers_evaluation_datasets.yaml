@@ -38,6 +38,28 @@
     arxiv: https://arxiv.org/abs/2608.04682
     github: https://github.com/XLearning-SCU/Active-SWE
     huggingface: https://github.com/XLearning-SCU/Active-SWE
+- short_name: SWE-bench Science
+  title: 'SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?'
+  authors: Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu
+  year: '2026'
+  venue: arXiv preprint arXiv:2608.19799
+  month: 2026-08
+  links:
+    arxiv: https://arxiv.org/abs/2608.19799
+    github: https://github.com/OpenMOSS/SWE-bench-Science
+    huggingface: https://huggingface.co/datasets/OpenMOSS-Team/SWE-bench-Science
+    website: https://swescience.github.io/
+- short_name: SWE Refactor Bench
+  title: 'SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository
+    Stack Migration?'
+  authors: Deyao Hong, Yizhe Chi, Wenyi Li, Xiaoqiu Wang, Mingju Gao, Kaisen Yang,
+    Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na
+  year: '2026'
+  venue: arXiv preprint arXiv:2608.23564
+  month: 2026-08
+  links:
+    arxiv: https://arxiv.org/abs/2608.23564
+    website: https://lab.einsia.ai/swe-refactor-bench/
 - short_name: MM-IssueLoc
   title: 'MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal
     Repository-Level Issue Localization'

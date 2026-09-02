@@ -1,3 +1,12 @@
+- short_name: SWE-Prime
+  title: 'SWE-Prime: Fewer Trajectories, Better Performance'
+  authors: Dewu Zheng, Ruizhe Ye, Yanlin Wang, Yang Ye, Hongyu Zhang, Ensheng Shi,
+    Xilin Liu, Yuchi Ma, Jianxing Yu, Zibin Zheng
+  year: '2026'
+  venue: arXiv preprint arXiv:2608.27449
+  month: 2026-08
+  links:
+    arxiv: https://arxiv.org/abs/2608.27449
 - short_name: Open-SWE-Traces
   title: 'Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software
     Engineering Agents'
