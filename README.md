@@ -30,7 +30,27 @@
 
 ## 📖 Abstract
 
-Based on a systematic review of **286 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on systematic review of **286 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+
+## 📖 Citation
+
+If you find this helpful, feel free to cite our survey 😊
+
+```bibtex
+@article{li2026advances,
+  title={Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey},
+  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
+  journal={arXiv preprint arXiv:2601.11655},
+  year={2026},
+  eprint={2601.11655},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE}
+}
+```
+
+> 📖 **[Full Citation & More Formats](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/)**
+
+---
 
 ## 📰 News
 
