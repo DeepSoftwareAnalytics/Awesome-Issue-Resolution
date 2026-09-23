@@ -11,10 +11,11 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2601.11655-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.11655)
 [![Hugging Face](https://img.shields.io/badge/HF_Paper-2601.11655-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/papers/2601.11655)
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
+[![Bib](https://img.shields.io/badge/Bib-Citation-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
 ![Papers Count](https://img.shields.io/badge/papers-286-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
-[**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
+[**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/) | [**📖 Citation**](#-citation)
 
 **🎙️ Interactive Exploration:**
 
@@ -31,26 +32,6 @@
 ## 📖 Abstract
 
 Based on systematic review of **286 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
-
-## 📖 Citation
-
-If you find this helpful, feel free to cite our survey 😊
-
-```bibtex
-@article{li2026advances,
-  title={Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey},
-  author={Li, Caihua and Guo, Lianghong and Wang, Yanlin and Guo, Daya and Tao, Wei and Shan, Zhenyu and Liu, Mingwei and Chen, Jiachi and Song, Haoyu and Tang, Duyu and Zhang, Hongyu and Zheng, Zibin},
-  journal={arXiv preprint arXiv:2601.11655},
-  year={2026},
-  eprint={2601.11655},
-  archivePrefix={arXiv},
-  primaryClass={cs.SE}
-}
-```
-
-> 📖 **[Full Citation & More Formats](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/)**
-
----
 
 ## 📰 News
 
