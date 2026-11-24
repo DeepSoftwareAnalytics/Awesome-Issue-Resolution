@@ -1,12 +1,1397 @@
 {
-  "generated": "2026-09-02",
+  "generated": "2026-11-24",
   "stats": {
-    "total": 286,
-    "data": 79,
-    "methods": 181,
-    "analysis": 36
+    "total": 397,
+    "data": 106,
+    "methods": 243,
+    "analysis": 79
   },
   "papers": [
+    {
+      "id": 398,
+      "short_name": "Adaptive Index Reuse",
+      "title": "When Should an Agent Refresh? Adaptive Index Reuse for Efficient Long-Horizon Reasoning",
+      "authors": "Guangyuan Wang, Yifan Zhang, Shilong Liu",
+      "venue": "arXiv preprint arXiv:2611.01429",
+      "month": "2026-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.01429"
+      }
+    },
+    {
+      "id": 397,
+      "short_name": "CR-Bench-v2",
+      "title": "CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents",
+      "authors": "Kristen Pereira, Neelabh Sinha, Rajat Ghosh, Debojyoti Dutta",
+      "venue": "arXiv preprint arXiv:2611.02566",
+      "month": "2026-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.02566"
+      }
+    },
+    {
+      "id": 396,
+      "short_name": "Termination Lag",
+      "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+      "authors": "Musa Cim, Burak Topcu, Mahmut Taylan Kandemir",
+      "venue": "arXiv preprint arXiv:2611.14960",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.14960"
+      }
+    },
+    {
+      "id": 395,
+      "short_name": "LGISPW",
+      "title": "Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)",
+      "authors": "Allen G. Roush, Minh Nhat Nguyen, Ravid Shwartz-Ziv, Judah Goldfeder, Sanjay Basu",
+      "venue": "arXiv preprint arXiv:2611.22148",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.22148"
+      }
+    },
+    {
+      "id": 394,
+      "short_name": "SLTWCL",
+      "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+      "authors": "Sikun Xu, Raphael Thomadsen, Dennis J. Zhang, Heng Zhang",
+      "venue": "arXiv preprint arXiv:2611.22227",
+      "month": "2026-11",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.22227"
+      }
+    },
+    {
+      "id": 393,
+      "short_name": "BuggyMLE",
+      "title": "BuggyMLE: Scaling Machine Learning Engineering Difficulty with Bug Injection",
+      "authors": "John Wu, Rushi Qiang, Yuchen Zhuang, Guowang Li, Girish Narayanswamy, Max Xu, Sam Schmidgall, Mark Malhotra, Shwetak Patel, Jimeng Sun, Daniel McDuff, Bo Dai, Xin Liu",
+      "venue": "arXiv preprint arXiv:2611.25088",
+      "month": "2026-11",
+      "category": "data_synthesis,evaluation_datasets,sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.25088"
+      }
+    },
+    {
+      "id": 386,
+      "short_name": "CompAct-Bench (Working-Context)",
+      "title": "CompAct-Bench: A Benchmark for Working-Context Compaction in Long-Horizon Agent Tasks",
+      "authors": "Jiayi Chen, Lizhe Chen, Yujia Chen, Shihan Dou, Ming Zhang, Chendi Ge, Shiguang Ni, Tao Gui, Qi Zhang, Xuanjing Huang, Maxm Pan",
+      "venue": "arXiv preprint arXiv:2611.25673",
+      "month": "2026-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.25673"
+      }
+    },
+    {
+      "id": 385,
+      "short_name": "Construct Validity of Coding Benchmarks",
+      "title": "Construct Validity of Coding Benchmarks for LLM-based Agentic Coding Tools",
+      "authors": "Alexander Berndt, Paul Ralph, Thomas Bach, Sebastian Baltes",
+      "venue": "arXiv preprint arXiv:2611.05665",
+      "month": "2026-11",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.05665"
+      }
+    },
+    {
+      "id": 384,
+      "short_name": "SWE-Trail",
+      "title": "SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training",
+      "authors": "Ziming Li, Lu Yu, Jiatan Huang, Qing Cui, Jun Zhou, Chuxu Zhang",
+      "venue": "arXiv preprint arXiv:2611.02074",
+      "month": "2026-11",
+      "category": "sft,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.02074"
+      }
+    },
+    {
+      "id": 382,
+      "short_name": "Learn then Bet",
+      "title": "Learn then Bet: Learning Interpretable Rules for Reliable Agent Intervention",
+      "authors": "You-Lin Chen, Xinyi Lisa Chen, Pedro Herrero-Vidal, Xiaojing Yu, Bingqing Song, Bin Xu",
+      "venue": "arXiv preprint arXiv:2611.17662",
+      "month": "2026-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.17662"
+      }
+    },
+    {
+      "id": 378,
+      "short_name": "Eliciting and Mitigating Specification Satisficing in Coding Agents",
+      "title": "Eliciting and Mitigating Specification Satisficing in Coding Agents",
+      "authors": "Ruixin Wang, Tianyi Zhang",
+      "venue": "arXiv preprint arXiv:2611.16289",
+      "month": "2026-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.16289"
+      }
+    },
+    {
+      "id": 372,
+      "short_name": "ToolPulse",
+      "title": "Beyond Clumsy Agentic Tool Calling: How Cueing and Spotting Make the Difference",
+      "authors": "Xindi Yang, Yan Liu, Jiajun Sun",
+      "venue": "arXiv preprint arXiv:2611.19275",
+      "month": "2026-11",
+      "category": "methods_analysis,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.19275"
+      }
+    },
+    {
+      "id": 368,
+      "short_name": "Repository-Context-Guided Image Understanding",
+      "title": "Repository-Context-Guided Image Understanding for Agentic Software Development",
+      "authors": "Fumiki Yohena, Toshiaki Sota, Shota Suzuki, Tomoko Okamoto, Michiaki Tatsubori",
+      "venue": "arXiv preprint arXiv:2611.13026",
+      "month": "2026-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.13026"
+      }
+    },
+    {
+      "id": 363,
+      "short_name": "SWE-OPD",
+      "title": "SWE-OPD: On-Policy Distillation for Agentic Coding",
+      "authors": "Yuhang He, Yanyu Chen, Chuanzhe Guo, Jie Zhu, Zichen Tian, Hongyu Ge, Zixuan Ren, Huang He, Bingjin Chen, Junyuan Shang, Shuohuan Wang, Yongqi Zhang, Irwin King, Jing Liu",
+      "venue": "arXiv preprint arXiv:2611.21020",
+      "month": "2026-11",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.21020"
+      }
+    },
+    {
+      "id": 349,
+      "short_name": "SWE-Growth",
+      "title": "SWE-growth: Teacher-Guided Adaptive Self-Play for Software Engineering Agents",
+      "authors": "Songshi Liang, Zixuan Huang, Mingxuan Song, Haoyu Tang, Shusheng Xu, Tongkai Yang, Zihe Wang, Rui Yan",
+      "venue": "arXiv preprint arXiv:2611.23876",
+      "month": "2026-11",
+      "category": "rl,sft,data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.23876"
+      }
+    },
+    {
+      "id": 347,
+      "short_name": "NINJA",
+      "title": "NINJA: A Navigator-Inspector Joint Architecture for Context-Efficient Issue Localization",
+      "authors": "Wenkai Fang, Shunyu Liu, Wei Luo, Zihao Wu, Yang Zhou, Tongya Zheng, Wotao Yin, Jialie Shen, Leszek Rutkowski, Mingli Song, Dacheng Tao",
+      "venue": "arXiv preprint arXiv:2611.10027",
+      "month": "2026-11",
+      "category": "sft,tool,multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.10027",
+        "github": "https://github.com/wantbook-book/NINJA"
+      }
+    },
+    {
+      "id": 344,
+      "short_name": "Harnesses That Improve Themselves",
+      "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+      "authors": "Deep Shah, Nehal Kathrotia",
+      "venue": "arXiv preprint arXiv:2611.22299",
+      "month": "2026-11",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.22299"
+      }
+    },
+    {
+      "id": 340,
+      "short_name": "ELITE",
+      "title": "Evaluation-Free Recursive Self-Improvement for Coding Agents",
+      "authors": "Zhe Ren, Guowei Rong, Yimeng Chen, Nanbo Li, Piotr Piękos, Mateusz Ostaszewski, Dandan Guo, Jürgen Schmidhuber",
+      "venue": "arXiv preprint arXiv:2611.21056",
+      "month": "2026-11",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.21056"
+      }
+    },
+    {
+      "id": 339,
+      "short_name": "FlowPlan",
+      "title": "FlowPlan: Reducing the Token Cost of Coding Agents with Abstraction-Guided Planning and Verification",
+      "authors": "Melika Sepidband, Jiho Shin, Song Wang, Hadi Hemmati",
+      "venue": "arXiv preprint arXiv:2611.13241",
+      "month": "2026-11",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.13241"
+      }
+    },
+    {
+      "id": 337,
+      "short_name": "Robo-SWE",
+      "title": "Robo-SWE: An Executable Issue-Resolution Dataset Mined from Robot Software Repositories",
+      "authors": "Vahid Haratian, Vahid Ansari, Mohammadhossein Malmir, Alois Knoll",
+      "venue": "arXiv preprint arXiv:2611.16116",
+      "month": "2026-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.16116"
+      }
+    },
+    {
+      "id": 335,
+      "short_name": "Longtail-SWE",
+      "title": "Longtail-SWE: High-Quality SWE Tasks for Underrepresented Languages",
+      "authors": "Vladimir Dobrovolskii, Ibragim Badertdinov, Alexander Golubev",
+      "venue": "arXiv preprint arXiv:2611.10304",
+      "month": "2026-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.10304"
+      }
+    },
+    {
+      "id": 334,
+      "short_name": "SIExBench",
+      "title": "SIExBench: A Benchmark for Automated Repair of Sensitive Information Exposure",
+      "authors": "Mingming Zhang, Xu Wang, Jian Zhang, Dihao Fan, Xiangxin Meng, Chunming Hu",
+      "venue": "arXiv preprint arXiv:2611.10776",
+      "month": "2026-11",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.10776"
+      }
+    },
+    {
+      "id": 331,
+      "short_name": "Repository-Grounded Rubrics",
+      "title": "Repository-Grounded Rubrics for Execution-Free Evaluation of Coding Agents",
+      "authors": "Matej Gerek, Danylo Zahorulko, Samuel Budai, Chris Rupley, Thierry Donneau-Golencer",
+      "venue": "arXiv preprint arXiv:2611.23309",
+      "month": "2026-11",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.23309"
+      }
+    },
+    {
+      "id": 323,
+      "short_name": "Continual Harness Evolution",
+      "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+      "authors": "Shangziqi Zhao, Yitong Zhang, Jia Li",
+      "venue": "arXiv preprint arXiv:2611.03219",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.03219"
+      }
+    },
+    {
+      "id": 320,
+      "short_name": "Agent Benchmarks Stop Ranking",
+      "title": "Agent Benchmarks Stop Ranking Before They Run Out of Tasks",
+      "authors": "Zihan Dong, Qishi Zhan, Minxuan Hu",
+      "venue": "arXiv preprint arXiv:2611.13541",
+      "month": "2026-11",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.13541"
+      }
+    },
+    {
+      "id": 314,
+      "short_name": "Done, But Still Working",
+      "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+      "authors": "Zerui Yang, Quan Xue, Miaomiao Dong, Chaorui Zhang, Xuanyu Zheng, Xiyuan Wang, Haolin Ruan, Xueyan Niu, Guangcheng Song, Weixi Zhang, Wei Han, Bo Bai",
+      "venue": "arXiv preprint arXiv:2611.22901",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.22901"
+      }
+    },
+    {
+      "id": 310,
+      "short_name": "Context Has a Price",
+      "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+      "authors": "Zerui Yang, Miaomiao Dong, Quan Xue, Chaorui Zhang, Xuanyu Zheng, Xiyuan Wang, Haolin Ruan, Xueyan Niu, Guangcheng Song, Weixi Zhang, Wei Han, Bo Bai",
+      "venue": "arXiv preprint arXiv:2611.22238",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.22238"
+      }
+    },
+    {
+      "id": 309,
+      "short_name": "Pdb or Not to Be",
+      "title": "Pdb or Not to Be: Comparing Debugging Interfaces With PassX@k",
+      "authors": "Ryan Magnuson, Ellie Kitanidis, Ariel Lee",
+      "venue": "arXiv preprint arXiv:2611.08666",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.08666"
+      }
+    },
+    {
+      "id": 308,
+      "short_name": "Hard Issue, Weak Model, or Bad Run?",
+      "title": "Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding Agents",
+      "authors": "Xingyue Shi, Wesley K. G. Assunção",
+      "venue": "arXiv preprint arXiv:2611.08285",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.08285"
+      }
+    },
+    {
+      "id": 303,
+      "short_name": "Beyond Surface Metrics",
+      "title": "Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks",
+      "authors": "Heeyong Eun",
+      "venue": "arXiv preprint arXiv:2611.03162",
+      "month": "2026-11",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.03162"
+      }
+    },
+    {
+      "id": 301,
+      "short_name": "Beyond Leaderboard Ranks",
+      "title": "Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints",
+      "authors": "Srinath Srinivasan, Tim Menzies",
+      "venue": "arXiv preprint arXiv:2611.21515",
+      "month": "2026-11",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.21515"
+      }
+    },
+    {
+      "id": 300,
+      "short_name": "How Should Agents See Code?",
+      "title": "How Should Agents See Code? Rethinking Code Representations for Agentic Software Engineering",
+      "authors": "Melika Sepidband, Jiho Shin, Song Wang, Hadi Hemmati",
+      "venue": "arXiv preprint arXiv:2611.07286",
+      "month": "2026-11",
+      "category": "methods_analysis,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.07286"
+      }
+    },
+    {
+      "id": 295,
+      "short_name": "Delivered, Not Used: Evaluating Agent Memory at Its Point of Use",
+      "title": "Delivered, Not Used: Evaluating Agent Memory at Its Point of Use",
+      "authors": "Changran Xu, Zeju Li, Qiang Xu",
+      "venue": "arXiv preprint arXiv:2611.01718",
+      "month": "2026-11",
+      "category": "methods_analysis,memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.01718"
+      }
+    },
+    {
+      "id": 408,
+      "short_name": "EnvAgent",
+      "title": "EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds",
+      "authors": "Yiming Cheng, Chris Low, Binrui Huang, Mengshi Zhang, Zihao Chen, Kate Keahey, Paul Marshall, Kexin Pei",
+      "venue": "arXiv preprint arXiv:2611.23258",
+      "month": "2026-10",
+      "category": "multi_agent,evaluation_datasets,data_collection",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2611.23258"
+      }
+    },
+    {
+      "id": 407,
+      "short_name": "RETRACE",
+      "title": "RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair",
+      "authors": "Rabeya Khatun Muna, Muhammad Ahasanuzzaman, Nakhla Rafi, Yisen Xu, Jinqiu Yang, Tse-Hsun Chen",
+      "venue": "arXiv preprint arXiv:2610.04658",
+      "month": "2026-10",
+      "category": "memory,data_collection,evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.04658"
+      }
+    },
+    {
+      "id": 406,
+      "short_name": "ThunderSync",
+      "title": "ThunderSync: Lossless Acceleration of Agentic Reinforcement Learning",
+      "authors": "Seil Kang, Hangoo Kang, Tarun Suresh, Youngeun Kim, Shreyas Pimpalgaonkar, Seong Jae Hwang, Azalia Mirhoseini",
+      "venue": "arXiv preprint arXiv:2610.05935",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.05935"
+      }
+    },
+    {
+      "id": 405,
+      "short_name": "OnTrack",
+      "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
+      "authors": "Babak Barazandeh, Connor Swanson, Chinmay Kulkarni, Nikhil Mungel",
+      "venue": "arXiv preprint arXiv:2610.12375",
+      "month": "2026-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.12375"
+      }
+    },
+    {
+      "id": 404,
+      "short_name": "OS-Bench",
+      "title": "OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration",
+      "authors": "Qirui Jin, Kenan Li, Liao Zhu, Lingching Tung, Yikai Zhang, Yijia Wu, Zijian Jin, Pengfei Gao, Yu Kang, Qingwei Lin, Wenke Lee",
+      "venue": "arXiv preprint arXiv:2610.19368",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.19368"
+      }
+    },
+    {
+      "id": 403,
+      "short_name": "Long-Horizon RL Needs Muon",
+      "title": "Long-Horizon RL Needs Muon",
+      "authors": "Kai Ruan, Jinghao Lin, Tao Chen, Ziqi Zhou, Qianshan Wei, Zihe Huang",
+      "venue": "arXiv preprint arXiv:2610.20256",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.20256"
+      }
+    },
+    {
+      "id": 402,
+      "short_name": "Priming Base Models for Agentic Post-Training",
+      "title": "Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe",
+      "authors": "Soumye Singhal, Joseph Jennings, Ka Shun Shum, Alexander Bukharin, Khushi Bhardwaj, Zirui Liu, Venkat Srinivasan, Jonathan Li, Yash Jain, Kezhi Kong, Markus Kliegl, Olivier Delalleau, Sanjeev Satheesh, Mostofa Patwary",
+      "venue": "arXiv preprint arXiv:2610.22019",
+      "month": "2026-10",
+      "category": "sft,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.22019"
+      }
+    },
+    {
+      "id": 401,
+      "short_name": "MLOps-Bench",
+      "title": "MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories",
+      "authors": "Quoc Co Tran, Hitesh Laxmichand Patel, Diwakar Mahajan, Kshitij Bakliwal, Avi Sil, Katrin Kirchhoff",
+      "venue": "arXiv preprint arXiv:2610.23506",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.23506"
+      }
+    },
+    {
+      "id": 400,
+      "short_name": "VibeTraining-Bench",
+      "title": "VibeTraining-Bench: Data-Trainer-Harness Co-Design for Iterative System Improvement",
+      "authors": "Ruotian Peng, Yuanyi Ren, Shuaiqi Liu, Xin Guo, Fang Zhu, Yangyi Huang, Yue Wu, Zheng Wang, Yandong Wen, Zhihang Fu",
+      "venue": "arXiv preprint arXiv:2610.26342",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.26342"
+      }
+    },
+    {
+      "id": 399,
+      "short_name": "When Coding Agents Outpace Review",
+      "title": "When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories",
+      "authors": "Tianqi Liu, Yandong Guan, Songze Li, Wenkai Wang, Gang Yu, Chengfei Lv",
+      "venue": "arXiv preprint arXiv:2610.26394",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.26394"
+      }
+    },
+    {
+      "id": 383,
+      "short_name": "SWE-Stream",
+      "title": "SWE-Stream: Scaling Executable Training Data for SWE Agents via Progressive Construction and Elastic Streaming",
+      "authors": "Chengyang Liu, Wen Yang, Shifeng Chen, Delai Qiu, Ji Yang, Junnan Zhu, Yining Wang, Shengping Liu",
+      "venue": "arXiv preprint arXiv:2610.20193",
+      "month": "2026-10",
+      "category": "data_collection,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.20193"
+      }
+    },
+    {
+      "id": 380,
+      "short_name": "JevCoder",
+      "title": "JevCoder: When Does Decision Delegation Pay Off in Code Repair?",
+      "authors": "Jiahao Zhang, Yifan Zhang, Yu Huang",
+      "venue": "arXiv preprint arXiv:2610.19596",
+      "month": "2026-10",
+      "category": "tool,single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.19596"
+      }
+    },
+    {
+      "id": 377,
+      "short_name": "Where Should a Stuck Agent Spend Its Next Tokens? Causal Attribution of Inference-Time Resources",
+      "title": "Where Should a Stuck Agent Spend Its Next Tokens? Causal Attribution of Inference-Time Resources",
+      "authors": "Saiyue Lyu, Jerrold Huang, Yunbei Zhang, Janet Wang, Zhenting Wang, Yingqiang Ge, Haibo Zhang",
+      "venue": "arXiv preprint arXiv:2610.28834",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.28834"
+      }
+    },
+    {
+      "id": 376,
+      "short_name": "PAUSE",
+      "title": "PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code Edit",
+      "authors": "Viral Patel, Boyin Tan, Jason Xue, Youcheng Sun",
+      "venue": "arXiv preprint arXiv:2610.29870",
+      "month": "2026-10",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.29870"
+      }
+    },
+    {
+      "id": 375,
+      "short_name": "TestGRAD",
+      "title": "TestGRAD: Evolving Test Suites via Failure Pattern Momentum for SWE-Agent Ensemble",
+      "authors": "Pengfei He, Jiayuan Zhou, Shaowei Wang, Ruiqi Pan",
+      "venue": "arXiv preprint arXiv:2610.10242",
+      "month": "2026-10",
+      "category": "inference_scaling,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.10242"
+      }
+    },
+    {
+      "id": 374,
+      "short_name": "Cadence",
+      "title": "Cadence: Strategic Guidance for Coding Agents",
+      "authors": "Minxing Wang, He Ye, Earl T. Barr, Yintong Huo",
+      "venue": "arXiv preprint arXiv:2610.12269",
+      "month": "2026-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.12269"
+      }
+    },
+    {
+      "id": 371,
+      "short_name": "CQ2-CARE",
+      "title": "Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files",
+      "authors": "Xiaocong Yang, Rishit Chatterjee, Himanshu Udupi, Vikram Ramavarapu, ChengXiang Zhai",
+      "venue": "arXiv preprint arXiv:2610.21073",
+      "month": "2026-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.21073"
+      }
+    },
+    {
+      "id": 370,
+      "short_name": "No One-Size-Fits-All",
+      "title": "No One-Size-Fits-All: Adaptive Code Editing with Feature-Based Strategy Selection",
+      "authors": "Jun Wan, Zhongxin Liu, Dajun Chen, Wei Jiang, Yong Li, Xiaoxue Ren",
+      "venue": "arXiv preprint arXiv:2610.22881",
+      "month": "2026-10",
+      "category": "sft,evaluation_datasets,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.22881"
+      }
+    },
+    {
+      "id": 369,
+      "short_name": "Agentic Interpretation",
+      "title": "Agentic Interpretation: Harness-Governed Evidence Construction for Software Agents",
+      "authors": "Yifeng He, Yanjun Wang, Siwei Cui, Aritra Sengupta, Murali Krishna Ramanathan",
+      "venue": "arXiv preprint arXiv:2610.23996",
+      "month": "2026-10",
+      "category": "tool,single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.23996"
+      }
+    },
+    {
+      "id": 366,
+      "short_name": "CuraLoc",
+      "title": "CuraLoc: Repository-Level Fault Localization via Planned Code Inspection",
+      "authors": "Sangeeta Warrier, Anush Sankaran, Ryen W. White",
+      "venue": "arXiv preprint arXiv:2610.31809",
+      "month": "2026-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.31809"
+      }
+    },
+    {
+      "id": 364,
+      "short_name": "Quality, Not Just Outcome: A Structural Scoring Framework for Selecting Coding-Agent Trajectories for Supervised Fine-Tuning",
+      "title": "Quality, Not Just Outcome: A Structural Scoring Framework for Selecting Coding-Agent Trajectories for Supervised Fine-Tuning",
+      "authors": "Sida Li, Yuanxin Liu, Shicheng Li, Linli Yao, Xu Sun, Haoli Bai, Xiaohui Li",
+      "venue": "arXiv preprint arXiv:2610.13152",
+      "month": "2026-10",
+      "category": "sft,data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.13152"
+      }
+    },
+    {
+      "id": 361,
+      "short_name": "Software Engineering LLMs",
+      "title": "Software Engineering LLMs: Why We Need Them and How Software Engineering Helps Build Them",
+      "authors": "Amir M. Ebrahimi, Mohammed Mehedi Hasan, Seyed Shayan Daneshvar, Jiahuei Lin, Gopi Krishnan Rajbahadur, Ahmed E. Hassan",
+      "venue": "arXiv preprint arXiv:2610.33851",
+      "month": "2026-10",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.33851"
+      }
+    },
+    {
+      "id": 360,
+      "short_name": "Arctic-SWE",
+      "title": "Arctic-SWE: Revisiting the Long Horizon Agent Training by Modeling-System Co-Design",
+      "authors": "Boyi Liu, Yite Wang, Xinyu Lian, Fan Shu, Sida Li, Feng Yan, Mingjia Zhang, Yuxiong He, Zhewei Yao",
+      "venue": "arXiv preprint arXiv:2610.24914",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.24914"
+      }
+    },
+    {
+      "id": 359,
+      "short_name": "Evo2",
+      "title": "Evo2: Evolving the Evolver through Weight-Harness Co-Evolution",
+      "authors": "Chejian Xu, Shujian Zhang, Wenxuan Zhou, John Lambert, Beck Chen, Bo Li, Andrew Hard, Rajiv Mathews",
+      "venue": "arXiv preprint arXiv:2610.13025",
+      "month": "2026-10",
+      "category": "sft,rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.13025"
+      }
+    },
+    {
+      "id": 358,
+      "short_name": "TreeFlex",
+      "title": "TreeFlex: Agents Navigating Their Own Search Trees",
+      "authors": "Dongzhuo Li, Fangzhou Cheng, Weiwei Li, Kevin Han, Haixu Ma, Zhongchang Sun, Ruiyi Li, Serena Li, Xiangjun Fan, Lizhu Zhang, Yuandong Tian",
+      "venue": "arXiv preprint arXiv:2610.20334",
+      "month": "2026-10",
+      "category": "rl, inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.20334"
+      }
+    },
+    {
+      "id": 355,
+      "short_name": "ColGREP",
+      "title": "Small Agents with Semantic Search: Efficient Multilingual Code Localization",
+      "authors": "Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé Seddah",
+      "venue": "arXiv preprint arXiv:2610.05099",
+      "month": "2026-10",
+      "category": "rl, sft, tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.05099"
+      }
+    },
+    {
+      "id": 354,
+      "short_name": "Teaching Agents to Code Reliably",
+      "title": "Teaching Agents to Code Reliably",
+      "authors": "Muhammad Ahmed Mohsin, Myeongsoo Kim, Kangrui Ruan, Shweta Garg, Varun Kumar, Murali Krishna Ramanathan",
+      "venue": "arXiv preprint arXiv:2610.03984",
+      "month": "2026-10",
+      "category": "rl, sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.03984"
+      }
+    },
+    {
+      "id": 353,
+      "short_name": "SWE-Ladder",
+      "title": "SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged Self-Distillation",
+      "authors": "Xudong Cai, Zhengxi Lu, Yuchen Yan, Jian Shao, Jun Xiao, Yueting Zhuang, Yongliang Shen",
+      "venue": "arXiv preprint arXiv:2610.33667",
+      "month": "2026-10",
+      "category": "rl, sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.33667"
+      }
+    },
+    {
+      "id": 352,
+      "short_name": "CoHARL",
+      "title": "CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement Learning",
+      "authors": "Jianwen Chen, Peng Xia, Kaide Zeng, Siwei Han, Zhen-Yu Zhang, Charles Fleming, Xinyu Ye, Huaxiu Yao",
+      "venue": "arXiv preprint arXiv:2610.36469",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.36469"
+      }
+    },
+    {
+      "id": 351,
+      "short_name": "Behavioral Self-Rewarding",
+      "title": "Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents",
+      "authors": "Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng",
+      "venue": "arXiv preprint arXiv:2610.12598",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.12598"
+      }
+    },
+    {
+      "id": 350,
+      "short_name": "OPRD",
+      "title": "OPRD: On-Policy Reminder Distillation for Long-Horizon Coding Agents",
+      "authors": "Yuechen Luo, Zhiyi Lai, Miao Ziqi, Zihang Xu, Jingxuan Xu, Songwei Yu, Wenqiang Zhu, Weihao Li, Junhao Fan, Haoyang Huang, Yanan Wu, Ken Deng",
+      "venue": "arXiv preprint arXiv:2610.21496",
+      "month": "2026-10",
+      "category": "sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.21496"
+      }
+    },
+    {
+      "id": 348,
+      "short_name": "FC-SWE",
+      "title": "FC-SWE: Failure-Conditioned RL for Long-Horizon Software Engineering Agents",
+      "authors": "Jia Liufu, Bin Hu, Linglin Jing, Terry Kong, Yuki Huang, Ashwath Aithal, Wenming Yang, Jun Yang",
+      "venue": "arXiv preprint arXiv:2610.07898",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.07898"
+      }
+    },
+    {
+      "id": 346,
+      "short_name": "OpenDraco",
+      "title": "OpenDraco: A Platform for Engineering and Experimenting with Configurable Multi-Agent Architectures for Software Engineering",
+      "authors": "Xiang Feng Ye Pan, Vincenzo De Martino, Matias Martinez",
+      "venue": "arXiv preprint arXiv:2610.32686",
+      "month": "2026-10",
+      "category": "multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.32686"
+      }
+    },
+    {
+      "id": 345,
+      "short_name": "AgentEvolver",
+      "title": "AgentEvolver: System-Wide Self-Evolution Through Task Execution",
+      "authors": "Wentao Zhang, Fuchao Yang, Yilei Zhao, Xinrun Wang, Bo An",
+      "venue": "arXiv preprint arXiv:2610.11613",
+      "month": "2026-10",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.11613"
+      }
+    },
+    {
+      "id": 342,
+      "short_name": "CTXAgent",
+      "title": "CTXAgent - Self-Controlled Context Management of LLM Agents",
+      "authors": "Matthias Busch, Marius Tacke, Roland C. Aydin, Christian Feiler, Christian J. Cyron",
+      "venue": "arXiv preprint arXiv:2610.34425",
+      "month": "2026-10",
+      "category": "memory,single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.34425"
+      }
+    },
+    {
+      "id": 341,
+      "short_name": "HarnessAdapt-RL",
+      "title": "Training the Whole Agent, Not Just the Model",
+      "authors": "Lingxiao Tang, Wei Tao, Yiwen Guo, Lingfeng Bao",
+      "venue": "arXiv preprint arXiv:2610.28069",
+      "month": "2026-10",
+      "category": "rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.28069"
+      }
+    },
+    {
+      "id": 338,
+      "short_name": "DeskCheck",
+      "title": "Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution",
+      "authors": "Changshu Liu, Ji young Kim, Alireza Ghazanfari, Saanvi Nallu, Reyhaneh Jabbarvand",
+      "venue": "arXiv preprint arXiv:2610.23782",
+      "month": "2026-10",
+      "category": "methods_analysis,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.23782"
+      }
+    },
+    {
+      "id": 336,
+      "short_name": "SWE-Duel",
+      "title": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
+      "authors": "Wei Minn, Zhensu Sun, Lwin Khin Shar, David Lo",
+      "venue": "arXiv preprint arXiv:2610.12569",
+      "month": "2026-10",
+      "category": "evaluation_datasets,data_synthesis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.12569"
+      }
+    },
+    {
+      "id": 333,
+      "short_name": "Measurement-First Auditing",
+      "title": "Measurement-First Auditing of Agentic Leaderboards: Contamination Susceptibility, Matched-Control Re-evaluation, and Scorer Validation",
+      "authors": "Dishu Yang, Qi Su, Hongbo Qin, Hansong Zhang",
+      "venue": "arXiv preprint arXiv:2610.05830",
+      "month": "2026-10",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.05830"
+      }
+    },
+    {
+      "id": 332,
+      "short_name": "SWE-TaskFlow",
+      "title": "Coding-Agent Benchmarks Should Match Their Users' Task Flows",
+      "authors": "Igor Slinko, Yaroslav Golubev, Sergey Titov",
+      "venue": "arXiv preprint arXiv:2610.09633",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.09633"
+      }
+    },
+    {
+      "id": 330,
+      "short_name": "SWEPatchTest",
+      "title": "SWEPatchTest: Evaluating Software Tests Beyond Reproduction",
+      "authors": "Hua Lu, Pengcheng Wang, Han Li, Zichen Tian, Yanyu Chen, Huang He, Bingjin Chen",
+      "venue": "arXiv preprint arXiv:2610.18004",
+      "month": "2026-10",
+      "category": "sft,data_analysis,training_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.18004"
+      }
+    },
+    {
+      "id": 329,
+      "short_name": "BenchChecker",
+      "title": "BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs",
+      "authors": "Di Wu, Xu He, Shu Wang, Kun Sun",
+      "venue": "arXiv preprint arXiv:2610.19447",
+      "month": "2026-10",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.19447"
+      }
+    },
+    {
+      "id": 328,
+      "short_name": "Compact-Bench",
+      "title": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+      "authors": "Ruopei Sun, Jianfeng Cai, Kangwen Zhao, Wengang Zhou, Houqiang Li",
+      "venue": "arXiv preprint arXiv:2610.31710",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.31710",
+        "github": "https://github.com/cai-jianfeng/compact-bench"
+      }
+    },
+    {
+      "id": 327,
+      "short_name": "SWE-Bench Pro V2",
+      "title": "SWE-Bench Pro V2: A Cleaner, Harder-to-Game Coding Benchmark",
+      "authors": "Soham Dan, Jeff Da, Sanyam Bhutani, Miguel Romero Calvo, Ivan Guevara, Fernando Carabedo, Jose Bernal, Julio Reyna, Luis Leandro Monsalve Mendez, Ying Liu, Daniel Yue Zhang",
+      "venue": "arXiv preprint arXiv:2610.24206",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.24206"
+      }
+    },
+    {
+      "id": 326,
+      "short_name": "SWE-DIVE",
+      "title": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
+      "authors": "Lorenz Brehme, Benjamin Steenhoek, Ruth Breu",
+      "venue": "arXiv preprint arXiv:2610.30047",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.30047",
+        "github": "https://github.com/lorenzbrehme/swe-dive_usersim"
+      }
+    },
+    {
+      "id": 325,
+      "short_name": "ExLabel",
+      "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "authors": "Zhonghao Jiang, Xuyang Zheng, Yanfu Yan, Zhongxin Liu, Lingfeng Bao, Shuiguang Deng",
+      "venue": "arXiv preprint arXiv:2610.39417",
+      "month": "2026-10",
+      "category": "data_analysis,evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.39417"
+      }
+    },
+    {
+      "id": 324,
+      "short_name": "SWE-CC",
+      "title": "Correct Code, Broken Contributions? SWE-CC: Benchmarking Repository Policy Compliance for Coding Agents",
+      "authors": "Hai Dang Truong, Rayner Goh, Thanh Le-Cong, Yintong Huo",
+      "venue": "arXiv preprint arXiv:2610.06193",
+      "month": "2026-10",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.06193"
+      }
+    },
+    {
+      "id": 322,
+      "short_name": "Monitor Accuracy Isn't the Answer",
+      "title": "Monitor Accuracy Isn't the Answer: A Decision-Value Framework for Evaluating AI Agent Restart Monitors",
+      "authors": "Siddharth Jain, Venkat N. Vedam",
+      "venue": "arXiv preprint arXiv:2610.36544",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.36544"
+      }
+    },
+    {
+      "id": 318,
+      "short_name": "Before They Can Solve",
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "authors": "Tan Yu, Alexander Bukharin, Khushi Bhardwaj, Jennifer Williams, Zirui Liu, Jonathan Lingjie Li, Soumye Singhal, Joseph Jennings, Sanjeev Satheesh, Yash Jain, Ashish Vaswani, Venkat Krishna Srinivasan, Matthew Papakipos, Hyunwoo Kim, Jian Zhang, Oleksii Kuchaiev, Markus Kliegl, Mostofa Patwary, Mohammad Shoeybi, Bryan Catanzaro, Jonathan Cohen, Jiantao Jiao",
+      "venue": "arXiv preprint arXiv:2610.10478",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.10478"
+      }
+    },
+    {
+      "id": 316,
+      "short_name": "Re-executing Coding-Agent Evaluations",
+      "title": "Re-executing Coding-Agent Evaluations: Unchanged Decisions and Unresolved Policy Risk",
+      "authors": "Tianyu Ding, Yaocheng Tong, Muzhi Yang, Fei Jiang, Lei Yang, Boya Yu",
+      "venue": "arXiv preprint arXiv:2610.14460",
+      "month": "2026-10",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.14460"
+      }
+    },
+    {
+      "id": 315,
+      "short_name": "How Do Coding-Agent Harnesses Self-Evolve?",
+      "title": "How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective Adaptation",
+      "authors": "Christoph Treude, Sebastian Baltes",
+      "venue": "arXiv preprint arXiv:2610.34938",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.34938"
+      }
+    },
+    {
+      "id": 313,
+      "short_name": "Executable Prefix Values",
+      "title": "Executable Prefix Values for Locating Agent Failures",
+      "authors": "Bingyu Shen, Jiaqi Tang, Lan Wei, Yi Sheng, J. Jenny Li, Boyang Li",
+      "venue": "arXiv preprint arXiv:2610.17633",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.17633"
+      }
+    },
+    {
+      "id": 311,
+      "short_name": "How Much Do Structural Tools Help Small Coding Agents?",
+      "title": "How Much Do Structural Tools Help Small Coding Agents? A Pre-Registered Scale Study of Code Localization",
+      "authors": "Saurav Bellam",
+      "venue": "arXiv preprint arXiv:2610.33958",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.33958"
+      }
+    },
+    {
+      "id": 307,
+      "short_name": "The Hidden Costs of Forgetting",
+      "title": "The Hidden Costs of Forgetting: A Study of Trajectory Deletion in Software Engineering Agents",
+      "authors": "Fernando Vallecillos-Ruiz, Islem Bouzenia, Michael Pradel, Leon Moonen",
+      "venue": "arXiv preprint arXiv:2610.35496",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.35496"
+      }
+    },
+    {
+      "id": 306,
+      "short_name": "Pairing Matters",
+      "title": "Pairing Matters: Performance, Failures, and Efficiency in Lightweight Coding Agents",
+      "authors": "Lu Zhao, Christopher M. Poskitt, David Lo",
+      "venue": "arXiv preprint arXiv:2610.32131",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.32131"
+      }
+    },
+    {
+      "id": 305,
+      "short_name": "What Does a Harness Buy?",
+      "title": "What Does a Harness Buy? Tokens, Mostly",
+      "authors": "Yangze Liu, Zhongyi Han",
+      "venue": "arXiv preprint arXiv:2610.04433",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.04433"
+      }
+    },
+    {
+      "id": 304,
+      "short_name": "From Faulty Claims to Incorrect Patches",
+      "title": "From Faulty Claims to Incorrect Patches: An Empirical Study of Task-Grounded Reasoning in Coding Agents",
+      "authors": "You Wang, Jinjun Huang, Zhonghao Jiang, Jialun Cao, Jiachi Chen, Zhongxin Liu",
+      "venue": "arXiv preprint arXiv:2610.32338",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.32338"
+      }
+    },
+    {
+      "id": 302,
+      "short_name": "From Finding to Fixing",
+      "title": "From Finding to Fixing: How Useful is Fault Localization for Agentic Program Repair?",
+      "authors": "Xinyu Shi, Zhou Yang, An Ran Chen",
+      "venue": "arXiv preprint arXiv:2610.25826",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.25826"
+      }
+    },
+    {
+      "id": 299,
+      "short_name": "Not All Correct Fixes Run Alike",
+      "title": "Not All Correct Fixes Run Alike: An Empirical Study of Patch Performance in Repository-Level Issue Resolution",
+      "authors": "Han Peng, Xing Hu, Feifei Niu, Huan Li, Xin Xia",
+      "venue": "arXiv preprint arXiv:2610.13563",
+      "month": "2026-10",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.13563"
+      }
+    },
+    {
+      "id": 294,
+      "short_name": "LAGO",
+      "title": "LAGO: Language Agents with Reusable Growing Options",
+      "authors": "Yuran Wu, Mengkang Hu, Qionglin Qiu, Fanqing Meng, Qiguang Chen, Yuhang Zhou, Qiudan Zhang, Xu Wang",
+      "venue": "arXiv preprint arXiv:2610.19843",
+      "month": "2026-10",
+      "category": "memory, multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.19843"
+      }
+    },
+    {
+      "id": 293,
+      "short_name": "Chronos",
+      "title": "Chronos Enables Code Agents to Reason over Software Evolution",
+      "authors": "Xin Yin, Yiang Zhang, Zhiyuan Peng, Chao Ni, Zhe Cui, Xiaohua Xin",
+      "venue": "arXiv preprint arXiv:2610.11578",
+      "month": "2026-10",
+      "category": "memory, multi_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.11578"
+      }
+    },
+    {
+      "id": 292,
+      "short_name": "TraceLite",
+      "title": "TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal",
+      "authors": "Jingyu Xiao, Qianxi Liu, Yintong Huo, Yuan Jiang, Michael R. Lyu",
+      "venue": "arXiv preprint arXiv:2610.28612",
+      "month": "2026-10",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2610.28612",
+        "github": "https://github.com/xjywhu/TraceLite"
+      }
+    },
+    {
+      "id": 410,
+      "short_name": "ENDROC",
+      "title": "Evaluating Name-Only Directory Routing for One-Shot Code Search",
+      "authors": "Manoj Bajaj",
+      "venue": "arXiv preprint arXiv:2609.35918",
+      "month": "2026-09",
+      "category": "methods_analysis,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.35918"
+      }
+    },
+    {
+      "id": 409,
+      "short_name": "CTATTO",
+      "title": "Can Terminal Agents Trust Their Own Verification? Diagnosing and Improving Self-Verification",
+      "authors": "Yingfeng Luo, Shaowei Wei, Daixin Wang, Dingyang Lin, Kaiyan Chang, Weiqiao Shan, Tong Zheng, Zhiqiang Zhang, Jingbo Zhu, Tong Xiao",
+      "venue": "arXiv preprint arXiv:2609.38812",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.38812"
+      }
+    },
+    {
+      "id": 392,
+      "short_name": "Canopy",
+      "title": "Canopy: Exploiting Piecewise Smooth Tree Priors for Multi-Fidelity Bandits",
+      "authors": "Michael Jerge, Suman Jana",
+      "venue": "arXiv preprint arXiv:2609.30017",
+      "month": "2026-09",
+      "category": "inference_scaling",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.30017"
+      }
+    },
+    {
+      "id": 391,
+      "short_name": "SCLATE",
+      "title": "SCLATE: a Substrate for Continual-Learning Agent Training and Evaluation",
+      "authors": "Youngmok Jung, Sirajul Salekin, Henry Tran, Javier Movellan, Zhao Huang, Manjot Bilkhu",
+      "venue": "arXiv preprint arXiv:2609.32391",
+      "month": "2026-09",
+      "category": "rl,memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.32391"
+      }
+    },
+    {
+      "id": 390,
+      "short_name": "Graph-Guided Repository Environment Construction",
+      "title": "Graph-Guided Repository Environment Construction",
+      "authors": "Jianying Pan, John Zhang, Hongyu Zhang",
+      "venue": "arXiv preprint arXiv:2609.33429",
+      "month": "2026-09",
+      "category": "data_collection,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.33429"
+      }
+    },
+    {
+      "id": 389,
+      "short_name": "EfficientAgent",
+      "title": "EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?",
+      "authors": "Kunming Shao, Jierun Chen, Jiangnan Yu, Xiao-Hui Li, Chaofan Tao, Yanli Wang, Huanxin Lin, Kwang-Ting Cheng, Chi Ying Tsui, Haoli Bai",
+      "venue": "arXiv preprint arXiv:2609.33762",
+      "month": "2026-09",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.33762"
+      }
+    },
+    {
+      "id": 388,
+      "short_name": "AgentPerfBench",
+      "title": "AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs",
+      "authors": "Cheuk Hang Lau, Zeyu Cao, Kevin Wong Cheuk Yin, Yao Lai, Haoran Wu, Nicholas D. Lane, Robert D. Mullins, Ilia Shumailov, Yiren Zhao",
+      "venue": "arXiv preprint arXiv:2609.34683",
+      "month": "2026-09",
+      "category": "evaluation_datasets",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.34683"
+      }
+    },
+    {
+      "id": 387,
+      "short_name": "TokenCast",
+      "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+      "authors": "Chaoqian Ouyang, Ling Yue, Libin Zheng, Hanghui Guo, Shengxiang Xu, YiShu Wang, Ran Li, Jian Yin, Shaowu Pan, Shimin Di",
+      "venue": "arXiv preprint arXiv:2609.35760",
+      "month": "2026-09",
+      "category": "methods_analysis,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.35760"
+      }
+    },
+    {
+      "id": 381,
+      "short_name": "Contextual Early Reward",
+      "title": "Before the Rollout Ends: Early Terminal Reward Prediction for Long-horizon Coding Agents",
+      "authors": "Jihan Yao, Sihan Zeng, Shangbin Feng, Zhiyuan Fan, Banghua Zhu, Yulia Tsvetkov",
+      "venue": "arXiv preprint arXiv:2609.31995",
+      "month": "2026-09",
+      "category": "inference_scaling,rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.31995"
+      }
+    },
+    {
+      "id": 379,
+      "short_name": "Planning-as-Routing",
+      "title": "Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution",
+      "authors": "Subba Reddy Oota, Francisco Herrera, Jordi Cabot Sagrera, Marcos López de Prado, Shadab Khan",
+      "venue": "arXiv preprint arXiv:2609.38108",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.38108"
+      }
+    },
+    {
+      "id": 367,
+      "short_name": "Semantic Navigation for Issue Localization in Code Repository",
+      "title": "Semantic Navigation for Issue Localization in Code Repository",
+      "authors": "Yunxiang Wei, Zhenyu Lei, Jundong Li",
+      "venue": "arXiv preprint arXiv:2609.31176",
+      "month": "2026-09",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.31176"
+      }
+    },
+    {
+      "id": 365,
+      "short_name": "Opera",
+      "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
+      "authors": "Kai Mei, Zhiyuan Hu, Yutong Dai, Juntao Tan, Yifan Zhang, Dingjie Song, Dimitris N. Metaxas, Silvio Savarese, Ran Xu, Zeyuan Chen",
+      "venue": "arXiv preprint arXiv:2609.33987",
+      "month": "2026-09",
+      "category": "sft,tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.33987",
+        "github": "https://github.com/dongyuanjushi/Opera"
+      }
+    },
+    {
+      "id": 362,
+      "short_name": "Improving Large Language Models for Code through Runtime Program-State Reasoning",
+      "title": "Improving Large Language Models for Code through Runtime Program-State Reasoning",
+      "authors": "Hongwei Li, Spandan Garg, Yufan Huang",
+      "venue": "arXiv preprint arXiv:2609.34359",
+      "month": "2026-09",
+      "category": "sft,rl",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.34359"
+      }
+    },
+    {
+      "id": 343,
+      "short_name": "Mixture of Self-Improving Branches",
+      "title": "Mixture of Self-Improving Branches For Agent Harness Optimization",
+      "authors": "Haoyu Dong, Yuhang Zhou, Zihao Lin, Yifan Wu, Bo Peng, Mingyi Wang, Xiangjun Fan, Lizhu Zhang, Zhuokai Zhao",
+      "venue": "arXiv preprint arXiv:2609.37834",
+      "month": "2026-09",
+      "category": "single_agent",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.37834"
+      }
+    },
+    {
+      "id": 321,
+      "short_name": "When Pair Count Is Not the Sample Size",
+      "title": "When Pair Count Is Not the Sample Size: What All-Pairs Agent Comparisons Estimate",
+      "authors": "Wei-Jung Huang",
+      "venue": "arXiv preprint arXiv:2609.33012",
+      "month": "2026-09",
+      "category": "data_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.33012"
+      }
+    },
+    {
+      "id": 319,
+      "short_name": "Frozen Judges, Moving Agents",
+      "title": "Frozen Judges, Moving Agents: Version-Dependent LLM-Judge Error and the Limits of Judge-Assisted Agent Evaluation",
+      "authors": "Jiapeng Li",
+      "venue": "arXiv preprint arXiv:2609.34198",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.34198"
+      }
+    },
+    {
+      "id": 317,
+      "short_name": "Beyond Token Savings",
+      "title": "Beyond Token Savings: A Systematic Study of Context Compression in LLM Agents",
+      "authors": "Ritul Satish, Prasoon Sinha, Akiho Kawada, Neeraja J. Yadwadkar",
+      "venue": "arXiv preprint arXiv:2609.32961",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.32961"
+      }
+    },
+    {
+      "id": 312,
+      "short_name": "Trajectory-Level Security Debt",
+      "title": "Trajectory-Level Security Debt in LLM Coding Agents",
+      "authors": "Prateek Kumar Rajput, Abdoul Kader Kabore, Yewei Song, Melissa Tessa, Tailia Malloy, Jacques Klein, Tegawendé F. Bissyandé",
+      "venue": "arXiv preprint arXiv:2609.35199",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.35199"
+      }
+    },
+    {
+      "id": 298,
+      "short_name": "Beyond the Model",
+      "title": "Beyond the Model: Demystifying Harness Effects in Software Engineering Agents",
+      "authors": "Haichuan Hu, Quanjun Zhang, Shengcheng Yu, Zhifei Chen, Tianyu Luo, Chunrong Fang, Zhenyu Chen, Liang Xiao",
+      "venue": "arXiv preprint arXiv:2609.32459",
+      "month": "2026-09",
+      "category": "methods_analysis",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.32459"
+      }
+    },
+    {
+      "id": 291,
+      "short_name": "XRepoSkill",
+      "title": "XRepoSkill: Learning Transferable Skills for Software Engineering Agents",
+      "authors": "Yaoqi Guo, Haoyang Zhou, Jiayi Zhang, Yiran Zhang, Yang Liu, Qiuyuan Chen, Qiang Lin, Hande Dong, Jie M. Zhang, Zhenpeng Chen",
+      "venue": "arXiv preprint arXiv:2609.36807",
+      "month": "2026-09",
+      "category": "memory",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.36807"
+      }
+    },
     {
       "id": 287,
       "short_name": "SWE-Prime",
@@ -390,6 +1775,20 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2607.15205",
         "github": "https://github.com/Jasaxion/MM-IssueLoc-Bench"
+      }
+    },
+    {
+      "id": 290,
+      "short_name": "Steer, Don't Solve",
+      "title": "Steer, Don't Solve: Training Small Critic Models for Large Code Agents",
+      "authors": "Shubham Gandhi, Yiqing Xie, Atharva Naik, Ruichen Zhu, Carolyn Rose",
+      "venue": "arXiv preprint arXiv:2606.21811",
+      "month": "2026-06",
+      "category": "inference_scaling,sft",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2606.21811",
+        "github": "https://github.com/shubhamrgandhi/critic-training",
+        "huggingface": "https://huggingface.co/code-critic-model"
       }
     },
     {
@@ -2430,25 +3829,13 @@
       }
     },
     {
-      "id": 182,
-      "short_name": "SWELoc",
-      "title": "SweRank: Software Issue Localization with Code Ranking",
-      "authors": "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz et al.",
-      "venue": "arXiv preprint arXiv:2505.07849",
-      "month": "2025-05",
-      "category": "training_datasets",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2505.07849"
-      }
-    },
-    {
       "id": 162,
       "short_name": "SWERank",
       "title": "SweRank: Software Issue Localization with Code Ranking",
       "authors": "Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz et al.",
       "venue": "arXiv preprint arXiv:2505.07849",
       "month": "2025-05",
-      "category": "tool",
+      "category": "training_datasets,tool",
       "links": {
         "arxiv": "https://arxiv.org/abs/2505.07849"
       }
@@ -2687,19 +4074,6 @@
       }
     },
     {
-      "id": 178,
-      "short_name": "Multi-SWE-RL",
-      "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
-      "authors": "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang, Qi Liu et al.",
-      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
-      "month": "2025-04",
-      "category": "training_datasets",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2504.02605v1",
-        "openreview": "https://openreview.net/forum?id=MhBZzkz4h9"
-      }
-    },
-    {
       "id": 113,
       "short_name": "Seed1.5-Thinking",
       "title": "Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning",
@@ -2755,7 +4129,7 @@
       "authors": "Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang, Qi Liu et al.",
       "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
       "month": "2025-04",
-      "category": "evaluation_datasets",
+      "category": "evaluation_datasets,training_datasets",
       "links": {
         "arxiv": "https://arxiv.org/abs/2504.02605v1",
         "openreview": "https://openreview.net/forum?id=MhBZzkz4h9"
@@ -2932,19 +4306,6 @@
       }
     },
     {
-      "id": 179,
-      "short_name": "LocAgent",
-      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
-      "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
-      "venue": "Forty-second International Conference on Machine Learning 2025",
-      "month": "2025-02",
-      "category": "training_datasets",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2502.00350v2",
-        "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
-      }
-    },
-    {
       "id": 157,
       "short_name": "Quadropic Insiders",
       "title": "Quadropic Insiders : Syntheo Tops Swelite Feb",
@@ -2967,19 +4328,6 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2502.05368v2",
         "openreview": "https://openreview.net/forum?id=b0jYs6JOZu"
-      }
-    },
-    {
-      "id": 154,
-      "short_name": "OrcaLoca",
-      "title": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
-      "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
-      "venue": "Forty-second International Conference on Machine Learning 2025",
-      "month": "2025-02",
-      "category": "tool",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2502.00350v2",
-        "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
       }
     },
     {
@@ -3027,7 +4375,7 @@
       "authors": "Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding, Jishen Zhao",
       "venue": "Forty-second International Conference on Machine Learning 2025",
       "month": "2025-02",
-      "category": "multi_agent",
+      "category": "training_datasets,tool,multi_agent",
       "links": {
         "arxiv": "https://arxiv.org/abs/2502.00350v2",
         "openreview": "https://openreview.net/forum?id=LyUfPOvM6I"
@@ -3113,7 +4461,7 @@
       "authors": "Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong, Shen, Bo, Liu, Tianyu et al.",
       "venue": "Findings of the Association for Computational Linguistics: ACL 2025 2025",
       "month": "2024-12",
-      "category": "workflow",
+      "category": "evaluation_datasets,workflow",
       "links": {
         "arxiv": "https://arxiv.org/abs/2412.17315v1",
         "doi": "http://dx.doi.org/10.18653/v1/2025.findings-acl.384"
@@ -3166,19 +4514,6 @@
       "category": "sft",
       "links": {
         "arxiv": "https://arxiv.org/abs/2412.19031"
-      }
-    },
-    {
-      "id": 27,
-      "short_name": "Visual SWE-bench",
-      "title": "CodeV: Issue Resolving with Visual Data",
-      "authors": "Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong, Shen, Bo, Liu, Tianyu et al.",
-      "venue": "Findings of the Association for Computational Linguistics: ACL 2025 2025",
-      "month": "2024-12",
-      "category": "evaluation_datasets",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2412.17315v1",
-        "doi": "http://dx.doi.org/10.18653/v1/2025.findings-acl.384"
       }
     },
     {

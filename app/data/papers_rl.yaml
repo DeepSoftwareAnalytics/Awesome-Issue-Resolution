@@ -1,3 +1,398 @@
+- short_name: SWE-Growth
+  title: 'SWE-growth: Teacher-Guided Adaptive Self-Play for Software Engineering Agents'
+  authors: Songshi Liang, Zixuan Huang, Mingxuan Song, Haoyu Tang, Shusheng Xu, Tongkai
+    Yang, Zihe Wang, Rui Yan
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23876
+  month: 2026-11
+  abstract: Self-play offers a scalable way to train software engineering agents by
+    generating repository-level repair tasks. However, with binary repair rewards
+    and finite rollout budgets, all-fail groups provide no reward-based group-relative
+    advantage. Such tasks may still offer learning opportunities when a Teacher can
+    provide verified repairs absent from the Student's own attempts. We introduce
+    SWE-Growth, a teacher-guided adaptive self-play framework that uses verified Teacher
+    outcomes to identify learning opportunities for the current Student. Tasks with
+    all students failure but reliable Teacher success provide demonstrations for supervised
+    fine-tuning (SFT), and post-SFT Student rollouts identify mixed-outcome tasks
+    with a positive Teacher--Student gap for reinforcement learning. Task eligibility
+    also guides Injector updates, connecting Student training with subsequent task
+    generation. Starting from 101 seed issues, \textsc{SWE-Growth} improves Qwen3-Coder-30B-A3B-Instruct
+    from 27.7% to 31.7% on SWE-bench Pro and from 11.0% to 17.2% on held-out TerminalBench
+    2.1 by Round~2. It exceeds Student-only self-play by 2.6 and 4.1 percentage points,
+    respectively, and Teacher-augmented self-play by 1.8 and 2.5 points under approximately
+    matched budgets. These results support adapting both supervision and task selection
+    to the Student's evolving repair capability.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23876
+- short_name: HarnessAdapt-RL
+  title: Training the Whole Agent, Not Just the Model
+  authors: Lingxiao Tang, Wei Tao, Yiwen Guo, Lingfeng Bao
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.28069
+  month: 2026-10
+  abstract: 'Training coding agents typically updates the policy while keeping the
+    harness fixed. During training, trajectories reveal flawed repair strategies and
+    interaction problems that vary across tasks and change as the policy learns. We
+    introduce HarnessAdapt-RL, which trains the policy and adapts its harness during
+    reinforcement learning. For flawed repair strategies, a frozen teacher generates
+    task-specific mechanism-level skills. For interaction problems recurring across
+    tasks, a separate teacher model evolves tools and hooks, keeping each change only
+    if it improves the observed pass rate or the observed trainable rate without lowering
+    either. The policy trains with the adapted harness, and its new trajectories guide
+    further adaptation. With a 9B base model, HarnessAdapt-RL improves pass@1 over
+    GRPO by 9.8, 12.6, and 6.4 percentage points on SWE-bench Verified, Multilingual,
+    and Pro, and outperforms GRPO with the human-designed OpenHands harness. Gains
+    from mechanism-level skills persist after their removal at evaluation. Re-evolving
+    tools and hooks as the policy changes outperforms freezing early versions. Removing
+    them at deployment, in contrast, costs up to 7.7 percentage points. Training therefore
+    produces a model-harness pair: the trained policy and the evolved tools and hooks,
+    with skills removed at deployment.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.28069
+- short_name: FC-SWE
+  title: 'FC-SWE: Failure-Conditioned RL for Long-Horizon Software Engineering Agents'
+  authors: Jia Liufu, Bin Hu, Linglin Jing, Terry Kong, Yuki Huang, Ashwath Aithal,
+    Wenming Yang, Jun Yang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.07898
+  month: 2026-10
+  abstract: 'Repository-level software engineering (SWE) is a challenging long-horizon
+    setting: agents must reason over extended interactions, use tools, and adapt to
+    stateful environments. Recent work trains SWE agents with reinforcement learning
+    methods such as Group Relative Policy Optimization (GRPO), which independently
+    sample multiple trajectories per issue, test the resulting patches, and compare
+    terminal rewards within a fixed group. However, this training setup does not reuse
+    verifier feedback from failed patches as context for subsequent attempts, even
+    though this feedback contains valuable diagnostic information about what went
+    wrong. Training on recovery trajectories is challenging because the preceding
+    outcome determines whether the next trajectory is generated, while the failed
+    execution determines its conditioning context. We introduce FC-SWE, a failure-conditioned
+    RL framework that incorporates recovery attempts into policy training. After a
+    patch fails verification, FC-SWE restores the repository to its original task
+    state and uses the failed patch and verifier feedback as context for a recovery
+    trajectory. FC-SWE adapts GRPO to these chains of complete, multi-turn tool-use
+    trajectories through two mechanisms. Trajectory-local rewards preserve each attempt''s
+    verifier outcome, preventing recovery success from rewarding an earlier failed
+    patch. Active-set advantage estimation forms a comparison group from all initial
+    and recovery trajectories actually executed for the same issue, so failed attempts
+    remain in the group while unexecuted attempts are excluded. On all 500 SWE-bench
+    Verified tasks under a verifier-assisted protocol, FC-SWE with Qwen3.5-4B and
+    SWE-agent achieves 41.7% Resolved@1 and 52.8% Resolved@2, compared with 38.9%
+    and 48.5% for GRPO. Although trained with at most two attempts per chain, FC-SWE
+    reaches 70.7% Resolved@11 under an eleven-attempt test-time budget.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.07898
+- short_name: Behavioral Self-Rewarding
+  title: 'Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents'
+  authors: Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.12598
+  month: 2026-10
+  abstract: Reinforcement learning with verifiable rewards (RLVR) provides reliable
+    supervision for software engineering agents through executable tests, but binary
+    rewards fail to distinguish trajectories with substantially different debugging
+    quality. We investigate whether the current policy can judge its own trajectories
+    and use these judgments to improve task performance without a separately trained
+    reward model. To this end, we introduce Behavioral Self-Rewarding (BSR), a reward-refinement
+    method that reuses the policy to compare observable debugging behavior among trajectories
+    from the same task with the same verifier outcome. BSR aggregates pairwise preferences
+    into task-local scores and converts them into bounded auxiliary rewards, introducing
+    reward contrast while preserving the verifier-defined pass/fail ordering. This
+    provides additional supervision from already-collected trajectories without requiring
+    new environment interactions. Experiments on SWE-bench Verified and SWE-bench-Live
+    show consistent improvements across the evaluated Qwen3-14B and Qwen3-32B configurations,
+    supporting using the policy's own comparative judgments as a complementary learning
+    signal for training software engineering agents.
+  links:
+    arxiv: https://arxiv.org/abs/2610.12598
+- short_name: CoHARL
+  title: 'CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement
+    Learning'
+  authors: Jianwen Chen, Peng Xia, Kaide Zeng, Siwei Han, Zhen-Yu Zhang, Charles Fleming,
+    Xinyu Ye, Huaxiu Yao
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.36469
+  month: 2026-10
+  abstract: Large language model (LLM) agents interact with their environments through
+    executable harnesses that govern tool use and feedback. Optimizing a harness for
+    a fixed policy overlooks how its behavior changes during learning, while training
+    a policy under a fixed harness leaves the interface that generates its training
+    experience unchanged. This motivates adapting the harness throughout policy training.
+    We introduce CoHARL, a population-based reinforcement learning framework that
+    co-evolves a shared policy and a population of executable harnesses. The policy
+    learns from rollouts across the population, and a proposer uses its execution
+    traces to revise harness code during training. CoHARL achieves a 27.6% mean resolved
+    rate on SWE-rebench, improving over harness-only search by 6.4 percentage points.
+    Experiments on SWE-bench Verified and Terminal-Bench 2.0 show gains in software
+    engineering and terminal-based tasks. Under matched training budgets, CoHARL also
+    outperforms searching for a harness once before RL and alternating policy updates
+    with revisions to a single active harness.
+  links:
+    arxiv: https://arxiv.org/abs/2610.36469
+- short_name: SWE-Ladder
+  title: 'SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged
+    Self-Distillation'
+  authors: Xudong Cai, Zhengxi Lu, Yuchen Yan, Jian Shao, Jun Xiao, Yueting Zhuang,
+    Yongliang Shen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.33667
+  month: 2026-10
+  abstract: 'Resolving a repository-level issue typically requires a software-engineering
+    (SWE) agent to localize the faulty code, reproduce the failure, and patch the
+    code. Reinforcement learning trains such agents from a single test result on the
+    final patch, while on-policy self-distillation (OPSD) adds token-level supervision
+    from a teacher with privileged evidence, exposing the full reference patch at
+    every step. Neither provides stage-specific guidance for localization or reproduction.
+    We propose SWE-Ladder, which turns the verified repair of each training instance
+    into stage-specific evidence: the changed files and lines for localization, the
+    fail-to-pass tests for reproduction, and the diff for patching. A rule-based router
+    assigns each step of an end-to-end rollout to a stage based on its tool call,
+    a frozen teacher sees only the matching evidence, and the stages are distilled
+    in repair order while GRPO optimizes the full trajectory. With Qwen3-4B-Instruct-2507
+    on SWE-bench Verified under the R2E-Gym scaffold, SWE-Ladder improves pass@1 from
+    9.6% to 16.4%, compared with 10.4% for GRPO and 12.4% for OPSD with the full patch.
+    Under the OpenHands scaffold, it improves pass@1 from 13.0% to 17.6%. Reversing
+    the stage order under R2E-Gym reduces pass@1 to 11.4%.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.33667
+- short_name: Teaching Agents to Code Reliably
+  title: Teaching Agents to Code Reliably
+  authors: Muhammad Ahmed Mohsin, Myeongsoo Kim, Kangrui Ruan, Shweta Garg, Varun
+    Kumar, Murali Krishna Ramanathan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.03984
+  month: 2026-10
+  abstract: Autonomous coding agents solve repository issues by reading code, running
+    commands, editing files, and submitting patches. Extra inference-time compute
+    yields gains only when it produces a useful repair and supplies reliable evidence
+    for choosing one. Three behaviors decide both, and we argue they are teachable
+    rather than byproducts of scale, so a policy can carry them instead of a scaffold.
+    Location diversity remains narrow, since attempts return to the same site and
+    extra samples add no coverage. Edit diversity is left unexploited, since methodologies
+    that differ resolve complementary issues no single run reaches. Verification misleads,
+    since a test the agent writes for its own patch accepts many incorrect ones. Directing
+    search by execution feedback and scoring each patch against its own reverted tree
+    resolves 52.8% of SWE-bench Verified using 48.1% of the agent-steps an eight-sample
+    baseline spends. Training moves these behaviors into the policy. On the 270 issues
+    held out from SFT and RL training, weighted supervised fine-tuning raises pass@1
+    from 31.9% to 35.2% and pass@8 from 46.7% to 51.1%. A reinforcement objective
+    then trains the verifier against gold-labeled repairs and incorrect variants,
+    crediting the assertions that detect them. It raises pass@1 to 43.0% and pass@8
+    to 60.7%, lifts verifier precision from 26.8% to 41.7%, and more than halves false
+    acceptance. Resolution improves on two of three out-of-distribution suites and
+    verifier precision on all three, and the gains hold at 7B, 14B, and 30B against
+    published coder baselines.
+  links:
+    arxiv: https://arxiv.org/abs/2610.03984
+- short_name: ColGREP
+  title: 'Small Agents with Semantic Search: Efficient Multilingual Code Localization'
+  authors: Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé
+    Seddah
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.05099
+  month: 2026-10
+  abstract: Locating relevant files from natural-language requests is a core subtask
+    for agents operating over code repositories. We investigate whether this task
+    can be delegated to compact, specialized models to enable on-device search while
+    reducing the token usage, latency, and inference cost of larger agents. We show
+    that semantic search improves file localization, with gains in accuracy, cross-language
+    transfer, and inference efficiency. To study this setting, we introduce a training
+    framework for file-localization agents built around ColGREP, a local semantic
+    search tool based on late-interaction retrieval models. Our recipe combines weighted
+    supervised fine-tuning on teacher trajectories, assigning turn-level credit based
+    on retrieval outcomes, with reinforcement learning on localization quality. We
+    train three model families with fewer than two billion parameters to formulate
+    search queries, inspect retrieved content, and identify relevant files. On localization
+    tasks derived from SWE-bench Lite and Multi-SWE-bench Flash, ColGREP-equipped
+    agents substantially improve over their base models and outperform corresponding
+    GREP-based agents. In addition to improving localization accuracy, ColGREP reduces
+    mean end-to-end trajectory latency by 44.1\% on CPU while using 29.1\% fewer tokens,
+    and enables better generalization to programming languages unseen during fine-tuning.
+    These results suggest that compact, tool-specialized localization agents can provide
+    an efficient interface between natural-language requests and large codebases.
+  links:
+    arxiv: https://arxiv.org/abs/2610.05099
+- short_name: TreeFlex
+  title: 'TreeFlex: Agents Navigating Their Own Search Trees'
+  authors: Dongzhuo Li, Fangzhou Cheng, Weiwei Li, Kevin Han, Haixu Ma, Zhongchang
+    Sun, Ruiyi Li, Serena Li, Xiangjun Fan, Lizhu Zhang, Yuandong Tian
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.20334
+  month: 2026-10
+  abstract: A ReAct-style agent accumulates observations, intermediate results, and
+    failed attempts in a single context. As this context grows, stale and off-path
+    information consumes its limited capacity and obscures relevant evidence, making
+    focused reasoning increasingly difficult. We introduce TreeFlex, a framework in
+    which the agent's own policy decides where to search. The agent records each intermediate
+    state, with a short summary, as a node in a search tree maintained by the harness.
+    The policy is a single language model that acts in two roles. In the Reflection
+    role, it has a global view of the tree through these summaries and picks a node
+    to resume, together with an instruction. In the Execution role, the harness restores
+    the path that led to that node, and the model carries out the instruction with
+    the usual task tools until it saves a new node or proposes a solution, which Reflection
+    then approves or sends back to another node. Through these choices, the policy
+    decides whether to deepen the current line, branch from or revisit an earlier
+    state, verify a proposal, or stop, without a fixed traversal order or a score
+    for each node. We train navigation, task actions, checkpointing, and proposal
+    review jointly with a tree-aware adaptation of GRPO, using task-level outcome
+    rewards augmented by process rewards. After small-scale RL of a 4B model, with
+    the same active-context limit for all methods, TreeFlex reaches 48.8% accuracy
+    on a challenging deep-research benchmark, versus 41.5% for flat ReAct and 42.8%
+    for FoldAgent, and its Pass@8 is about ten points higher than either. On SWE-bench
+    Verified, with all three systems trained with RL from the same 9B model, TreeFlex
+    resolves 54.9% of tasks, versus 43.3% for FoldAgent and 45.2% for its step-wise
+    variant.
+  links:
+    arxiv: https://arxiv.org/abs/2610.20334
+- short_name: Evo2
+  title: 'Evo2: Evolving the Evolver through Weight-Harness Co-Evolution'
+  authors: Chejian Xu, Shujian Zhang, Wenxuan Zhou, John Lambert, Beck Chen, Bo Li,
+    Andrew Hard, Rajiv Mathews
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.13025
+  month: 2026-10
+  abstract: 'Self-evolving agents are increasingly used to improve language model
+    systems without human intervention through either weight updates or harness improvements.
+    Existing approaches typically pursue these directions separately: some methods
+    update model weights using self-generated experience, while others rewrite the
+    harness that defines how an agent uses prompts, tools, context, and execution
+    feedback. However, these approaches overlook the relationship between model weights
+    and the agent harness. To connect these processes and ensure effective and smooth
+    agent self-evolving, we propose Evo$^2$, a framework for weight-harness co-evolution.
+    For harness updates, we design a unified dual-role pipeline that a single policy
+    serves as both a Proposer, which writes harness edits, and a Reflector, which
+    diagnoses their effects and guides revision. For weight updates, harness modifications
+    and their execution outcomes guide the training of both the Proposer and the Reflector.
+    We further develop EvoTIDE, a training pipeline that recovers usable trajectories
+    through edit extraction and prefix continuation, then combines SFT with interleaved
+    GRPO across the two roles. Extensive experiments across three coding benchmarks
+    demonstrate that Evo$^2$ significantly outperforms existing self-evolution methods.
+    It achieves 82.1% on Polyglot and 48.3% on SWE-bench Verified, compared with 62.6%
+    and 41.0% for the strongest baseline, respectively. We also show that the evolved
+    harnesses transfer to different tasks without further evolution and rank first
+    in cross-benchmark evaluations. Our dual-role harness improvement framework is
+    also able to extend to self-evolution with proprietary models, improving a GPT-5-mini
+    agent''s performance from 24.4% to 48.3%. These results demonstrate the applicability
+    of the framework Evo$^2$ across domains and its broad transferability across models
+    and tasks.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.13025
+- short_name: Arctic-SWE
+  title: 'Arctic-SWE: Revisiting the Long Horizon Agent Training by Modeling-System
+    Co-Design'
+  authors: Boyi Liu, Yite Wang, Xinyu Lian, Fan Shu, Sida Li, Feng Yan, Mingjia Zhang,
+    Yuxiong He, Zhewei Yao
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.24914
+  month: 2026-10
+  abstract: Studies an asynchronous reinforcement-learning recipe for repository repair,
+    combining reward controls, importance weighting, engine alignment and data curation.
+    Evaluation includes SWE-bench Verified and Pro.
+  links:
+    arxiv: https://arxiv.org/abs/2610.24914
+- short_name: Long-Horizon RL Needs Muon
+  title: Long-Horizon RL Needs Muon
+  authors: Kai Ruan, Jinghao Lin, Tao Chen, Ziqi Zhou, Qianshan Wei, Zihe Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.20256
+  month: 2026-10
+  abstract: Long-horizon agents must coordinate reasoning, tool use, and environment
+    feedback over extended interactions. Learning from sparse outcome rewards requires
+    weighting trajectories of different lengths and updating the policy while rollouts
+    are still being collected. We examine a single-rollout asynchronous recipe combining
+    Muon, token-averaged loss, truncated importance sampling, and auxiliary length
+    and tool-error penalties. Single-rollout sampling allows asynchronous learning
+    without waiting for multiple trajectories for the same issue. We study optimizer
+    choices and recipe components for repository-level issue resolution across two
+    model families. The evaluated training runs show higher training success with
+    the full recipe than with the baselines.
+  links:
+    arxiv: https://arxiv.org/abs/2610.20256
+- short_name: ThunderSync
+  title: 'ThunderSync: Lossless Acceleration of Agentic Reinforcement Learning'
+  authors: Seil Kang, Hangoo Kang, Tarun Suresh, Youngeun Kim, Shreyas Pimpalgaonkar,
+    Seong Jae Hwang, Azalia Mirhoseini
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.05935
+  month: 2026-10
+  abstract: Language models are moving beyond generating answers to pursuing long-horizon
+    goals in interactive environments. Post-training these agents requires long, heterogeneous
+    trajectories, and synchronous systems leave learner engines idle until rollout
+    and verification finish. To squeeze out these pipeline bubbles, asynchronous training
+    overlaps rollout and learning across updates, but comes at the cost of policy
+    staleness. We introduce ThunderSync, which starts gradient computation as soon
+    as all required inputs are fixed, without policy staleness. For group relative
+    policy optimization (GRPO), ThunderSync computes each trajectory's score gradient
+    as soon as the reward for that trajectory arrives, without waiting for the group.
+    For on-policy distillation (OPD), it computes gradients for each completed agentic
+    turn's teacher-scored actions while tool calls run in the sandbox. We prove that
+    gradient streaming produces the same GRPO and OPD updates as batch-synchronous
+    training, without changing either objective. On SWE-bench Verified and Terminal
+    Bench 4.0, we train models to the same performance up to $1.9 \times$ faster than
+    synchronous training. With zero policy staleness, ThunderSync also outperforms
+    asynchronous training at a fixed budget by up to $2.47$ percentage points.
+  links:
+    arxiv: https://arxiv.org/abs/2610.05935
+- short_name: Improving Large Language Models for Code through Runtime Program-State
+    Reasoning
+  title: Improving Large Language Models for Code through Runtime Program-State Reasoning
+  authors: Hongwei Li, Spandan Garg, Yufan Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.34359
+  month: 2026-09
+  abstract: Large language models receive limited explicit training in reasoning about
+    runtime program states. We study whether training models to reason about runtime
+    program states improves downstream software-engineering capabilities. We introduce
+    two complementary program-state reasoning tasks. Buggy input-output reasoning
+    requires a model to generate a concrete input that exposes a behavioral difference
+    between a buggy program and a hidden correct implementation and to predict the
+    resulting execution behavior. Precondition-postcondition reasoning requires an
+    agent to symbolically characterize a bug-triggering precondition, predict the
+    expected postcondition, explain their causal connection, and instantiate this
+    reasoning as an executable regression test. By incorporating these two tasks into
+    a staged post-training pipeline, we develop Comet-9B, a 9B language model based
+    on Qwen3.5-9B Base. We evaluate the resulting checkpoints on repository-level
+    patch generation, regression-test generation, and security PoC generation. Adding
+    both program-state reasoning tasks to supervised fine-tuning (SFT) on issue resolution
+    improves success rates by 7.25 percentage points on SWE-bench Pro and 9.70 points
+    on SWT-Bench Verified. Sequential reinforcement learning on the two tasks yields
+    further gains of 7.25, 26.79, and 4.67 percentage points on SWE-bench Pro, SWT-Bench
+    Verified, and CyberGym, respectively. Despite having only 9B parameters, Comet-9B
+    achieves a score comparable to the reported GPT-5.2 result on SWE-bench Pro and
+    matches the reported success rate of a GPT-4o-based agent on SWT-Bench Verified.
+  links:
+    arxiv: https://arxiv.org/abs/2609.34359
+- short_name: Contextual Early Reward
+  title: 'Before the Rollout Ends: Early Terminal Reward Prediction for Long-horizon
+    Coding Agents'
+  authors: Jihan Yao, Sihan Zeng, Shangbin Feng, Zhiyuan Fan, Banghua Zhu, Yulia Tsvetkov
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.31995
+  month: 2026-09
+  abstract: Long-horizon coding agents receive verifiable rewards only after completing
+    expensive sequences of tool calls. This increases inference cost, amplifies early
+    wrong hypotheses, and can lead to sparse terminal reward and unstable training.
+    We introduce Contextual Early Reward (CER), which predicts terminal reward through
+    behavioral evidence in a trajectory prefix. CER synthesizes adaptive rubrics specific
+    to the current task and stage through experiences summarized from related historical
+    tasks. In test-time scaling on SWE-bench Verified, CER improves RM@8 over the
+    strongest baseline by 4.2 percentage points (pp) on Nemotron 3 Ultra and 2.0 pp
+    on Qwen 3.6 27B; on Nemotron, it takes only 15.3% tokens to match the best baseline
+    performance. In RL training experiments, CER exceeds full-rollout TMax by 1.9
+    pp while using 52.7% fewer online policy-and-judge tokens. Together, CER provides
+    an interpretable, efficient, and dense evaluation method for long-horizon coding
+    agents.
+  links:
+    arxiv: https://arxiv.org/abs/2609.31995
+- short_name: SCLATE
+  title: 'SCLATE: a Substrate for Continual-Learning Agent Training and Evaluation'
+  authors: Youngmok Jung, Sirajul Salekin, Henry Tran, Javier Movellan, Zhao Huang,
+    Manjot Bilkhu
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.32391
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.32391
 - short_name: BoostAPR
   title: 'BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement
     Learning with Dual Reward Models'

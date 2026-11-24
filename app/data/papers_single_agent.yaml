@@ -1,3 +1,236 @@
+- short_name: FlowPlan
+  title: 'FlowPlan: Reducing the Token Cost of Coding Agents with Abstraction-Guided
+    Planning and Verification'
+  authors: Melika Sepidband, Jiho Shin, Song Wang, Hadi Hemmati
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.13241
+  month: 2026-11
+  abstract: 'LLM-based coding agents such as Claude Code can resolve real-world repository
+    issues, but their iterative interaction loop can be expensive. Existing approaches
+    reduce this cost primarily by limiting, compressing, or selectively avoiding information
+    and actions within the repair process. We investigate a complementary question:
+    Can an agent reason about a repair at an abstract program level, rather than repeatedly
+    operating over raw source code, to reduce both the exploration needed to identify
+    a repair and the repeated checking needed to verify it afterward? We present FlowPlan,
+    an abstraction-guided repair approach that structures localization, planning,
+    and verification around per-function control-flow or data-flow graphs. The agent
+    first localizes the candidate fault location on the program abstraction and expresses
+    the intended repair as explicit graph deltas before modifying the concrete source.
+    After the edit, FlowPlan reconstructs the same abstraction and compares the observed
+    structural change with the planned one. Then, a verification checks the complete
+    repair before termination. Across all six benchmark-model settings, FlowPlan does
+    not significantly change resolution rate relative to the vanilla agent while reducing
+    token consumption in every setting, significantly in five of six settings. With
+    Claude Haiku 4.5, it uses only 0.46-0.47x the baseline tokens on SWE-bench Pro,
+    0.32-0.35x on SWE-bench Verified, and 0.68-0.74x on SecBench; with Sonnet 5, it
+    uses 0.72-0.76x, 0.73-0.74x, and 0.92-0.94x, respectively. Overall, FlowPlan achieves
+    the largest token reduction among the compared methods in three of the six settings
+    and ties the strongest compared method in a fourth. Trajectory analysis shows
+    that FlowPlan saves tokens by replacing much of the costly post-edit re-reading
+    and testing with explicit verification and reducing per-call context.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.13241
+- short_name: ELITE
+  title: Evaluation-Free Recursive Self-Improvement for Coding Agents
+  authors: Zhe Ren, Guowei Rong, Yimeng Chen, Nanbo Li, Piotr Piękos, Mateusz Ostaszewski,
+    Dandan Guo, Jürgen Schmidhuber
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.21056
+  month: 2026-11
+  abstract: 'Recent self-improving coding agents have achieved strong benchmark performance
+    by iteratively modifying their own executable implementations. A common pattern
+    uses downstream task-derived evidence to decide which candidates or lineages continue
+    evolving, which we term evaluate-and-select. Obtaining this signal requires repeatedly
+    executing evolved agents on downstream tasks, so broader exploration incurs increasing
+    evaluation cost, while repeated optimization against a fixed evaluation distribution
+    may encourage benchmark-specific adaptation. We ask: can coding agents self-improve
+    without downstream task evaluation inside the evolution loop? We introduce Explore-then-Integrate
+    (ELITE), which integrates implementation mechanisms rather than selecting a single
+    exploratory child to continue the lineage. At each generation, ELITE proposes
+    diverse focused improvements, implements them independently from the same parent,
+    and inspects the resulting programs to identify complementary, redundant, and
+    conflicting mechanisms before reimplementing a compatible subset as one coherent
+    descendant. No downstream task outcomes or task-solving trajectories of evolved
+    candidates are used to guide evolution; only deterministic checks of structural
+    and operational validity are used inside the loop. On SWE-bench Pro, ELITE improves
+    the initial agent from 60.0% to 85.6%, compared with 86.7% for the Darwin Godel
+    Machine (DGM) and 88.3% for the Huxley-Godel Machine (HGM), while using zero candidate
+    task evaluations and reducing observed wall-clock evolution time by 8.8x and 3.2x,
+    respectively, under the evaluated configurations. In cross-benchmark transfer
+    without further adaptation, ELITE averages 73.3% on SWE-bench Verified and 69.3%
+    on Polyglot. Together, these results demonstrate the feasibility of coding-agent
+    self-improvement without downstream candidate task evaluation in our setting.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.21056
+- short_name: Harnesses That Improve Themselves
+  title: 'Harnesses That Improve Themselves: A Unifying Framework for Self-Improving
+    Agent Harnesses'
+  authors: Deep Shah, Nehal Kathrotia
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.22299
+  month: 2026-11
+  abstract: 'Whether a foundation model succeeds as an autonomous agent depends as
+    much on its runtime software as on its weights. This runtime, the agent harness,
+    manages context and memory, steers multi-turn control, executes tool actions in
+    sandboxes, and verifies work before stopping. Because models differ in how they
+    use tools and how they fail, a static harness tuned for one model or task often
+    stalls, wastes tokens, or regresses on another. This bottleneck has driven a shift
+    from prompt tuning to self-improving agent harnesses: systems that inspect their
+    own execution traces, separate runtime bugs from model limits, and rewrite their
+    own code. We present a unifying architectural and design framework for self-improving
+    agent harnesses. The framework pairs four editable runtime components (context
+    and state, agent control, action interfaces, and verification and recovery) with
+    a four-stage loop that diagnoses failures, proposes code patches, validates candidates,
+    and deploys updates. Using this framework, we show how optimizers trace errors
+    across long trajectories and discover reusable runtime mechanisms such as pre-stop
+    verifiers, loop breakers, and persistent memory. We further show why full-harness
+    rewrites overfit or break across modules, and how modular updates with validation
+    gates generalize across models while bounding token cost. To keep self-modification
+    safe, we establish practical defenses against recurring failure modes including
+    prompt bloat, benchmark gaming, and evaluator tampering. Finally, experiments
+    on SWE-bench Lite validate this framework, showing that gated modular evolution
+    outperforms prompt reflection and full-harness rewrites across models and repositories
+    at a fraction of the token cost.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.22299
+- short_name: CTXAgent
+  title: CTXAgent - Self-Controlled Context Management of LLM Agents
+  authors: Matthias Busch, Marius Tacke, Roland C. Aydin, Christian Feiler, Christian
+    J. Cyron
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.34425
+  month: 2026-10
+  abstract: 'Agent harnesses keep long sessions inside the context window by compacting
+    the history when a token threshold is crossed. We study an alternative in which
+    the model manages its own context: it decides when to compact, what to keep and
+    what to write as the hand-off, given two tools and one paragraph of guidance.
+    Since earlier work found that open-weight models cannot manage their own context
+    without scaffolding, we compare seven frontier models under identical conditions,
+    with and without the context tools, on token cost and benchmark score, and we
+    compare our harness with three widely used harnesses on two of these models. The
+    benchmark is assembled from existing ones: coding exercises, multi-step SciCode
+    problems and SWE-bench Pro and Terminal-Bench 4.0 tasks are interleaved with planted
+    facts, ephemeral observations and standing instructions, all checked deterministically,
+    in sessions of 35-212 turns that resemble a user working through different tasks
+    in one chat. Most of the strongest models manage their context: they compact and
+    curate regularly, the live context of the mixed sessions stays mostly below 100k
+    tokens, and their benchmark scores mostly do not drop significantly. For the models
+    that manage their context well, the cost reduction is substantial but varies between
+    models, because some models compact so often that other costs increase. With Claude
+    Opus 5.5, the self-managed harness matches Claude Code on task success at 34%
+    lower cost than its explicit 200k-window configuration and 49% lower than its
+    default, with no context window to choose. We release the agent, the benchmark
+    and all result rows.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.34425
+- short_name: AgentEvolver
+  title: 'AgentEvolver: System-Wide Self-Evolution Through Task Execution'
+  authors: Wentao Zhang, Fuchao Yang, Yilei Zhao, Xinrun Wang, Bo An
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.11613
+  month: 2026-10
+  abstract: An agent can complete a task without improving how it works. Turning task
+    experience into reusable capability requires connecting the changed component
+    to its evaluation and subsequent use. We present AgentEvolver, a system for developing
+    capabilities during task execution while keeping the foundation model fixed. Eight
+    entity families expose reusable operations, methods, agents, control flow, interfaces,
+    and supporting state to revision through a common versioned lifecycle. A shared
+    Runtime coordinates ongoing work, while persistent planning and recoverable context
+    preserve task direction and supporting evidence. We evaluate task outcomes on
+    SWE-bench Pro Public and examine capability changes in six application cases.
+    The team reports an 82.08\% resolution rate with evolution, exceeding its reported
+    baseline without evolution. The cases show retained capabilities entering later
+    website, game, and research work, while also documenting incomplete objectives
+    and an unsuccessful strategy. These findings distinguish improvement in a reusable
+    component from success on the final task. AgentEvolver provides a concrete basis
+    for studying capability accumulation through execution; independent-task transfer
+    and total development cost remain open questions.
+  links:
+    arxiv: https://arxiv.org/abs/2610.11613
+- short_name: Agentic Interpretation
+  title: 'Agentic Interpretation: Harness-Governed Evidence Construction for Software
+    Agents'
+  authors: Yifeng He, Yanjun Wang, Siwei Cui, Aritra Sengupta, Murali Krishna Ramanathan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.23996
+  month: 2026-10
+  abstract: 'Software agents answer behavioral questions about code, such as whether
+    a patch passes tests or which lines caused a failure. These tasks require repository-wide
+    evidence, yet most scaffolds leave intermediate findings in free-form trajectories,
+    making them hard to reuse and easy to disconnect from final answers. We present
+    Agentic Interpretation (AgInt), a framework for harness-governed evidence construction.
+    The model proposes typed records, while a deterministic harness admits, grades,
+    and persists them, reports unresolved requirements, and licenses answers under
+    task-specific rules. The resulting certificate gives the model persistent external
+    state and leaves an auditable decision record. Formally, append-only certificate
+    states form a grounding lattice ordered by record inclusion, where each admitted
+    record extends the state by union. We evaluate AgInt with four models on SWE-bench-Live
+    and DeepSWE for patch acceptance and Defects4J and GitBug-Java for fault localization.
+    AgInt outperforms the plain agent and Agentic Code Reasoning on all reported patch-acceptance
+    metrics and ranks responsible lines higher while inspecting fewer irrelevant lines
+    in fault localization. For GLM-5, reject-class F1 rises from 0.256 to 0.543 on
+    SWE-bench-Live, All@1 rises from 0.140 to 0.400 on Defects4J, and wasted inspected
+    lines fall from 31.5 to 11.7 on GitBug-Java. A matched-template control separates
+    the mechanism: the persistent scaffold drives most fault-localization gains, while
+    the certificate body and gate govern patch-acceptance calibration. With execution
+    licensed, AgInt produces harness-reproduced witnesses for 293 of 475 null-dereference
+    candidates versus 253 for a matched shell agent, and 62 of 117 resource-leak candidates
+    versus 58. Across reported efficiency measurements, it uses 35% fewer executions
+    and reduces cost per candidate by 59%.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.23996
+- short_name: JevCoder
+  title: 'JevCoder: When Does Decision Delegation Pay Off in Code Repair?'
+  authors: Jiahao Zhang, Yifan Zhang, Yu Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19596
+  month: 2026-10
+  abstract: 'A coding agent repeatedly makes decisions as it repairs code. These decisions
+    shape repair trajectories and affect the token cost of successive model requests.
+    We ask which repair decisions can be delegated to a low-cost probabilistic judge
+    to reduce token use while maintaining repair quality. The judges answer questions
+    with probabilities over predefined answers, without generating explanations. We
+    evaluate judgment quality across repair stages and test how individual interventions
+    change subsequent repair work. We compare these interventions with unguided repair,
+    which uses no judge, and with the same workflow using the repair model itself
+    as the judge. The benefit depends on the work an intervention changes, rather
+    than the cost of the judgment alone. Based on these studies, we propose JevCoder,
+    a workflow built around Jev, a low-cost probabilistic judge. It combines code-snippet
+    recommendations with action-type guidance and uses judgments to determine when
+    to submit. We evaluate three repair models, each on the same 400 tasks: 200 from
+    SWE-bench Verified and 200 from SWE-Bench Pro Verified. Compared to unguided repair,
+    JevCoder reduces mean repair-model token use by 21.6%-50.6%, with higher observed
+    repair rates across all three models.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.19596
+- short_name: Mixture of Self-Improving Branches
+  title: Mixture of Self-Improving Branches For Agent Harness Optimization
+  authors: Haoyu Dong, Yuhang Zhou, Zihao Lin, Yifan Wu, Bo Peng, Mingyi Wang, Xiangjun
+    Fan, Lizhu Zhang, Zhuokai Zhao
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.37834
+  month: 2026-09
+  abstract: Harness optimization provides a practical setting for recursive self-improvement
+    (RSI), where agent-generated modifications inform subsequent changes through execution
+    feedback. Recent work such as Meta-Harness implements this process through iterative
+    code generation and evaluation, but retains a fixed development set and proposal
+    policy. These constraints channel evolution along a single search trajectory,
+    increasing the risk of converging to a local optimum. We make the improvement
+    process itself adaptive by organizing search into branches with evolving development
+    subsets and proposal policies. Each branch retains development cases solved by
+    more of its leading harnesses than by those of other branches, drops cases solved
+    by every leading harness across all branches, and revises its proposal policy
+    using its own search history. To deploy the resulting complementary harnesses,
+    we propose a router to select one development-selected branch head for each new
+    input before execution. Across mathematical reasoning and agentic coding benchmarks,
+    our system achieves relative improvements over Meta-Harness of 34.8% on Olympiad-level
+    mathematical reasoning, 11.6% on Terminal-Bench 2.0, and 3.8% on SWE-bench Lite,
+    with harness selection and router configuration based solely on development data.
+    These results show that evolving branch objectives and proposal policies can yield
+    complementary harnesses whose strengths a router combines without access to test
+    outcomes.
+  links:
+    arxiv: https://arxiv.org/abs/2609.37834
 - short_name: SWE-Pruner Pro
   title: 'SWE-Pruner Pro: The Coder LLM Already Knows What to Prune'
   authors: Yuhang Wang, Yuling Shi, Shaoqiu Zhang, Jialiang Liang, Shilin He, Siyu

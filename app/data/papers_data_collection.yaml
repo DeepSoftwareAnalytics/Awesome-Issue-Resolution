@@ -1,3 +1,95 @@
+- short_name: SWE-Stream
+  title: 'SWE-Stream: Scaling Executable Training Data for SWE Agents via Progressive
+    Construction and Elastic Streaming'
+  authors: Chengyang Liu, Wen Yang, Shifeng Chen, Delai Qiu, Ji Yang, Junnan Zhu,
+    Yining Wang, Shengping Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.20193
+  month: 2026-10
+  abstract: Software engineering agents have advanced rapidly, but scaling their training
+    remains constrained by the limited availability of high-quality executable tasks.
+    Development histories contain valuable signals for constructing such tasks, yet
+    they often require substantial reconstruction due to incomplete environments,
+    missing tests, and inconsistent artifacts. We present SWE-Stream, a system for
+    scaling executable SWE training data through progressive construction and elastic
+    streaming execution. SWE-Stream progressively validates and refines task candidates,
+    reusing existing artifacts when possible and applying targeted completion only
+    when necessary. An elastic scheduler asynchronously coordinates construction stages
+    under shared resource constraints, adapting execution budgets based on observed
+    workload demands. Using development histories from 10,728 repositories across
+    six programming languages, SWE-Stream constructs 80,874 validated tasks and collects
+    118,688 successful trajectories. Fine-tuning Qwen3-30B-A3B-Thinking-2507 on these
+    trajectories achieves resolve rates of 69.0%, 49.3%, and 45.42% on SWE-bench Verified,
+    Multilingual, and Pro, respectively. In a controlled comparison with approximately
+    matched training budgets, SWE-Stream achieves a 45.6% resolve rate on SWE-bench
+    Verified, outperforming three existing data sources. Moreover, its streaming construction
+    strategy improves efficiency, delivering $1.45\times$ the accepted-task throughput
+    of batch construction and accepting 13.2% more tasks than fixed-limit streaming.
+  links:
+    arxiv: https://arxiv.org/abs/2610.20193
+- short_name: RETRACE
+  title: 'RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair'
+  authors: Rabeya Khatun Muna, Muhammad Ahasanuzzaman, Nakhla Rafi, Yisen Xu, Jinqiu
+    Yang, Tse-Hsun Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.04658
+  month: 2026-10
+  abstract: 'Large language model (LLM) agents increasingly reuse prior experience,
+    but most approaches assume that problems and solutions are already aligned. Software
+    histories rarely provide this alignment: a pull request (PR) may contain multiple
+    continuous integration (CI) problems, failed attempts, reverted edits, and unrelated
+    changes, obscuring which changes resolve each problem. We present RETRACE, a framework
+    for reconstructing problem-level repair experience from such histories. RETRACE
+    combines an endpoint view that reasons backward from changes retained in the passing
+    revision with a development view that traces repair evolution forward through
+    commit history. CI execution evidence reconciles the two views, and the recovered
+    experience is represented at three abstraction levels, from concrete fixes to
+    transferable repair patterns. For new failures, RETRACE retrieves relevant problem-level
+    experience to guide repair. On CI-REPAIR-BENCH, comprising 565 PR-level repairs
+    from 101 repositories across 12 failure categories, RETRACE improves mini-SWE-agent
+    Pass@1 from 19.6% to 31.9% with MiniMax-M2.5 and from 23.3% to 32.8% with DeepSeek-V4-Flash.
+    On a matched subset, Codex improves from 15.5% to 27.5%. Combining both views
+    consistently outperforms either alone, showing that recovering problem-change
+    alignment enables historical CI repairs to serve as reusable repair experience.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.04658
+- short_name: EnvAgent
+  title: 'EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds'
+  authors: Yiming Cheng, Chris Low, Binrui Huang, Mengshi Zhang, Zihao Chen, Kate
+    Keahey, Paul Marshall, Kexin Pei
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23258
+  month: 2026-10
+  abstract: AI agents are transforming scientific computing and software workflows,
+    but generating and executing code requires a correctly configured execution environment.
+    Automating environment construction remains difficult because repositories encode
+    heterogeneous, often incomplete requirements for operating systems, toolchains,
+    dependencies, and build procedures. Existing workflows thus rely on developer-maintained
+    Dockerfiles and setup scripts, making preparation labor-intensive, hard to scale,
+    and potentially biasing evaluations. We present ENVAGENT, an agentic framework
+    that synthesizes, builds, and verifies repository-level Docker environments. ENVAGENT
+    combines deterministic utilities for Docker execution and state management with
+    coordinated agents for repository analysis, planning, Dockerfile synthesis, and
+    iterative failure diagnosis and repair. We also introduce ENVBENCH, a benchmark
+    of 54 scientific artifacts and open-source repositories spanning seven languages
+    from Chameleon Trovi and Multi-SWE-bench. For each repository, we curate a declarative
+    rubric of required structure, configuration, and functionality, and a shared evaluator
+    applies 2,108 weighted checks across generated environments. Across four matched
+    language-model settings, ENVAGENT constructs 43.5 executable environments out
+    of 54 on average, versus 23.5 for Codex and Claude Code, and scores 62.02 versus
+    24.19 on a composite of executability and rubric satisfaction. These results show
+    that environment-specific agent orchestration substantially improves automated
+    environment construction.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23258
+- short_name: Graph-Guided Repository Environment Construction
+  title: Graph-Guided Repository Environment Construction
+  authors: Jianying Pan, John Zhang, Hongyu Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33429
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.33429
 - short_name: OpenSWE
   title: 'daVinci-Env: Open SWE Environment Synthesis at Scale'
   authors: Dayuan Fu, Shenyu Wu, Yunze Wu, Zerui Peng, Yaxing Huang, Jie Sun, Ji Zeng,

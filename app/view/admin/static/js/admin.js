@@ -1,6 +1,8 @@
 // Survey Database Admin - Frontend JavaScript with Full CRUD
 
-const API_BASE = 'http://localhost:5000/api';
+// Keep API requests on the same host/port as the Admin page. Using localhost
+// breaks when this server is reached through another loopback address.
+const API_BASE = '/api';
 let currentTab = 'papers';
 let currentPage = 1;
 let currentData = [];

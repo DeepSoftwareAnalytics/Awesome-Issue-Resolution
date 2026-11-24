@@ -1,3 +1,174 @@
+- short_name: NINJA
+  title: 'NINJA: A Navigator-Inspector Joint Architecture for Context-Efficient Issue
+    Localization'
+  authors: Wenkai Fang, Shunyu Liu, Wei Luo, Zihao Wu, Yang Zhou, Tongya Zheng, Wotao
+    Yin, Jialie Shen, Leszek Rutkowski, Mingli Song, Dacheng Tao
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.10027
+  month: 2026-11
+  abstract: 'Recent advances in agent-based methods have demonstrated strong promise
+    for issue localization, a critical prerequisite for software issue resolution.
+    However, most existing agent-based methods rely on a single agent with a growing
+    context, where long-context accumulation compresses the effective reasoning space.
+    Meanwhile, the flat exploration structure hinders the balance between file-level
+    breadth and function-level depth. To address these limitations, we propose NINJA,
+    a hierarchical Navigator-Inspector Joint Architecture for context-efficient issue
+    localization. NINJA decomposes repository exploration into global navigation and
+    local inspection: the navigator maintains the global search state, performs file-level
+    search, and dispatches selected entry files, while inspectors independently conduct
+    function-level exploration around the assigned files in separate contexts. Through
+    multi-round interactions, inspectors return suspicious locations as feedback,
+    and the navigator updates the global state to decide whether to continue exploration
+    or finalize localization. This hierarchical design balances file-level breadth
+    with function-level depth, while independent inspector contexts prevent local
+    exploration traces from accumulating in a single growing context. To further strengthen
+    both global coordination and local exploration, we introduce a two-stage agentic
+    fine-tuning strategy. Extensive experiments across multiple benchmarks and LLM
+    backbones show that NINJA consistently outperforms competitive baselines. Notably,
+    after fine-tuning, Qwen3-Coder-30B-A3B-Instruct surpasses the strong closed-source
+    Claude-Haiku-4.5 model. Our code is available at https://github.com/wantbook-book/NINJA.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.10027
+    github: https://github.com/wantbook-book/NINJA
+- short_name: Chronos
+  title: Chronos Enables Code Agents to Reason over Software Evolution
+  authors: Xin Yin, Yiang Zhang, Zhiyuan Peng, Chao Ni, Zhe Cui, Xiaohua Xin
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.11578
+  month: 2026-10
+  abstract: 'Historical pull requests record the design decisions, compatibility constraints,
+    and implementation patterns behind a codebase''s current state. Experience relevant
+    to a new task can span related changes whose descriptions emphasize different
+    concerns. We introduce Chronos, a test-time framework that makes this connected
+    history available to large language model (LLM)-based code agents. Chronos distills
+    merged pull requests into structured experience cards and connects them through
+    a typed graph of code-level, developer-intent, and organizational relations. Semantic
+    search identifies entry cards, and weighted multi-hop expansion retrieves connected
+    changes for selective reading. The same memory guides candidate generation and
+    patch selection: a patch-focused change agent and a validation-strategy agent
+    each develop a patch, and an evolution steward consults history to select between
+    them. On SWE-Bench Verified, the full workflow improves SWE-Agent across all six
+    evaluated LLM backbones, raising the mean resolution rate from 69.2% to 72.9%
+    and reaching 79.8% with MiniMax M2.5. With the same backbone, it raises resolution
+    rates from 48.3% to 51.7% on SWE-Bench Pro and from 41.0% to 43.5% on FEA-Bench
+    Lite. Both experience-guided single-agent variants also outperform the base agent.
+    In a human evaluation on 100 tasks with ten cards retrieved per task, graph-grounded
+    retrieval increases the mean number of useful cards from 1.24 to 2.87 over flat
+    semantic retrieval. These results demonstrate the value of PR relations for retrieving
+    useful repository experience and of the evaluated workflows for applying that
+    experience during patch generation and selection.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.11578
+- short_name: LAGO
+  title: 'LAGO: Language Agents with Reusable Growing Options'
+  authors: Yuran Wu, Mengkang Hu, Qionglin Qiu, Fanqing Meng, Qiguang Chen, Yuhang
+    Zhou, Qiudan Zhang, Xu Wang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19843
+  month: 2026-10
+  abstract: 'Long-horizon tasks expose a weakness of monolithic tool-use loops: one
+    agent must decompose, execute, and verify a task within a single trajectory. We
+    introduce LAGO, which treats specialized language agents as reusable temporally
+    extended options. A meta-agent retrieves options from a persistent library or
+    spawns new ones, dispatches sub-tasks, verifies results, and admits successful
+    novel options. The library grows across tasks without updating model weights.
+    On 500 SWE-bench Verified tasks, frozen Qwen3.5-35B-A3B in both roles resolves
+    58.6% under single-attempt evaluation with the official Docker evaluator. On a
+    fixed 150-task subset, we re-run mini-SWE-agent, Terminus 2, and LAGO with the
+    same policy, temperature, task IDs, and evaluator; their resolve rates are 49.3%,
+    57.3%, and 60.3%, respectively. Cross-model experiments provide evidence consistent
+    with a role for decomposition quality. A 50-task component ablation finds four
+    fewer resolved tasks without decomposition, two fewer with shuffled reused content,
+    and six fewer without the library. These results support reusable agent-options
+    as a practical abstraction for task streams, while leaving component-level causality
+    task- and model-dependent.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.19843
+- short_name: OpenDraco
+  title: 'OpenDraco: A Platform for Engineering and Experimenting with Configurable
+    Multi-Agent Architectures for Software Engineering'
+  authors: Xiang Feng Ye Pan, Vincenzo De Martino, Matias Martinez
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.32686
+  month: 2026-10
+  abstract: 'Experimenting with LLM-based multi-agent systems (MAS) involves an iterative
+    cycle of modeling configurations, executing and evaluating them, comparing results,
+    and refining system designs. Existing approaches provide limited end-to-end support
+    for this experimentation lifecycle. We present OpenDraco, an open-source platform
+    that integrates these activities into a single workflow. OpenDraco represents
+    agents, prompts, tools, models, parameters, and communication topology in exportable,
+    versioned JSON specifications, translated into executable LangGraph workflows
+    supporting different interaction structures. Users can modify and re-evaluate
+    configurations using local or cloud-based LLMs. We instantiate OpenDraco for automated
+    program repair (APR) and evaluate a sequential baseline and seven reconstructed
+    configurations on synthetic and real-world SWE-bench Lite issues. The results
+    reveal substantial cost differences among configurations with similar repair outcomes,
+    while the baseline resolves 12 of 77 SWE-bench issues using open-source LLMs.
+    Additional proof-of-concept tasks illustrate applicability beyond APR. OpenDraco
+    supports iterative experimentation with heterogeneous MAS configurations, enabling
+    researchers to examine their outcomes and costs within a common environment. Demonstration
+    video: https://youtu.be/278sOR4lBEk.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.32686
+- short_name: PAUSE
+  title: 'PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code
+    Edit'
+  authors: Viral Patel, Boyin Tan, Jason Xue, Youcheng Sun
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.29870
+  month: 2026-10
+  abstract: Coding agents can invest substantial effort in repository exploration
+    and testing yet still produce unsuccessful patches. Existing online steering methods
+    review trajectories periodically or invoke an advisor when a monitor detects behavioral
+    problems; frequent reviews are costly, and the absence of anomalous behavior does
+    not mean that an agent is on the right track. We propose PAUSE, a framework for
+    steering coding agents with a single planning intervention. Agents reach their
+    first source-code edit at a median of 60% of trajectory progress, after exploration,
+    bug reproduction, and testing. PAUSE intercepts this edit request before it executes,
+    which requires no learned monitor, no search over checkpoints, and no extra model
+    call (search-free). A separate Planner reads the task and the pre-edit transcript
+    and writes one repair plan; the same agent, the Executor, resumes with this plan,
+    keeping its context and workspace. PAUSE applies online, during a live run, and
+    offline, from a recorded trajectory prefix. We evaluate PAUSE on SWE-bench Verified
+    and SWE-bench Multilingual with two Executors and three agent harnesses. With
+    Qwen3-coder as Executor and GPT-5.6 Sol as Planner, online steering improves resolution
+    by 16.8% on Verified in OpenHands and by 14.7% on Multilingual in SWE-agent. In
+    SWE-agent, PAUSE outperforms LivePlan, a rule-triggered advisor, by 3.2% on Verified
+    and 3.7% on Multilingual at similar Planner cost, and is comparable to SICA's
+    periodic overseer at about 11-15% of its Planner cost. Offline, PAUSE recovers
+    35.4% of eligible failed Verified tasks, and resuming from the recorded prefix
+    uses 33-41% fewer Executor tokens than restarting.
+  links:
+    arxiv: https://arxiv.org/abs/2610.29870
+- short_name: EnvAgent
+  title: 'EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds'
+  authors: Yiming Cheng, Chris Low, Binrui Huang, Mengshi Zhang, Zihao Chen, Kate
+    Keahey, Paul Marshall, Kexin Pei
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23258
+  month: 2026-10
+  abstract: AI agents are transforming scientific computing and software workflows,
+    but generating and executing code requires a correctly configured execution environment.
+    Automating environment construction remains difficult because repositories encode
+    heterogeneous, often incomplete requirements for operating systems, toolchains,
+    dependencies, and build procedures. Existing workflows thus rely on developer-maintained
+    Dockerfiles and setup scripts, making preparation labor-intensive, hard to scale,
+    and potentially biasing evaluations. We present ENVAGENT, an agentic framework
+    that synthesizes, builds, and verifies repository-level Docker environments. ENVAGENT
+    combines deterministic utilities for Docker execution and state management with
+    coordinated agents for repository analysis, planning, Dockerfile synthesis, and
+    iterative failure diagnosis and repair. We also introduce ENVBENCH, a benchmark
+    of 54 scientific artifacts and open-source repositories spanning seven languages
+    from Chameleon Trovi and Multi-SWE-bench. For each repository, we curate a declarative
+    rubric of required structure, configuration, and functionality, and a shared evaluator
+    applies 2,108 weighted checks across generated environments. Across four matched
+    language-model settings, ENVAGENT constructs 43.5 executable environments out
+    of 54 on average, versus 23.5 for Codex and Claude Code, and scores 62.02 versus
+    24.19 on a composite of executability and rubric satisfaction. These results show
+    that environment-specific agent orchestration substantially improves automated
+    environment construction.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23258
 - short_name: AgenticRepair
   title: 'AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability
     Repair'

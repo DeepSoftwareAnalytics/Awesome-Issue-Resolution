@@ -2,8 +2,9 @@
 
 ## About This Project
 
-Based on a systematic review of 281 papers and online resources, this project establishes a holistic theoretical framework for Issue Resolution in software engineering. This website is designed to facilitate efficient literature retrieval and exploration.
+Based on a systematic review of 396 papers and online resources, this project establishes a holistic theoretical framework for Issue Resolution in software engineering. This website is designed to facilitate efficient literature retrieval and exploration.
 
+The collection currently contains 396 unique works represented by 396 database records. Works are deduplicated by arXiv ID (ignoring version suffixes), with normalized titles used for entries without an arXiv ID.
 
 ---
 

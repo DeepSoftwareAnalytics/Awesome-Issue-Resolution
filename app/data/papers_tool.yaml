@@ -1,3 +1,651 @@
+- short_name: How Should Agents See Code?
+  title: How Should Agents See Code? Rethinking Code Representations for Agentic Software
+    Engineering
+  authors: Melika Sepidband, Jiho Shin, Song Wang, Hadi Hemmati
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.07286
+  month: 2026-11
+  abstract: 'LLM agents are increasingly used for repository-level software engineering
+    tasks. However, most agents still access repositories through raw files, lexical
+    search, and shell commands, treating code primarily as text. This paper investigates
+    map-based code-representation workflows as a design variable in agentic software
+    engineering, examining how different repository views change agents'' retrieval
+    behavior, task success, token use, and latency. In this paper, we study five code-representation
+    workflows: abstract syntax trees, call graphs, module dependencies, documentation-enriched
+    search, and a hybrid workflow that combines them. Each workflow exposes a repository
+    map that the agent can query during a task. We evaluate Claude Code with Haiku
+    4.5 against a raw-tool baseline on four repository-level tasks: fault localization
+    with LinuxFLBench, repository-level code generation and repair with SWE-bench
+    Pro, test generation with SWT-bench, and security patching with SecBench. The
+    results show that representation workflows are most useful as token-saving tools
+    when localization is the bottleneck, while their success gains narrow when the
+    decisive step is patch or test authoring. On LinuxFLBench, all five workflows
+    improve recall@10 over the baseline (0.757-0.829 vs. 0.717) and reduce token usage
+    by 25-39%. On SWE-bench Pro, resolution remains close to the baseline (44.3-50.6%
+    vs. 49.0%) while token usage drops by 17-26%. On SecBench, Callgraph has the highest
+    patch-resolution rate in this sample (34.3% vs. 28.9%) and uses fewer tokens,
+    but all workflows increase latency. On SWT-bench, Hybrid and Docs have the highest
+    reproducing-test rates in this sample (47.8% and 47.2% vs. 44.7%), but all workflows
+    use more tokens and take longer. Overall, map-based workflows change both what
+    the agent inspects and how much it spends, but their benefits are task-dependent
+    rather than universal.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.07286
+- short_name: Repository-Grounded Rubrics
+  title: Repository-Grounded Rubrics for Execution-Free Evaluation of Coding Agents
+  authors: Matej Gerek, Danylo Zahorulko, Samuel Budai, Chris Rupley, Thierry Donneau-Golencer
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23309
+  month: 2026-11
+  abstract: Coding agents are usually evaluated by running task-specific tests, but
+    tests may be missing or incomplete, and running them requires a working environment
+    for each repository. We adapt agentic rubrics, introduced for selecting among
+    candidate patches, into an execution-free measure of how far a patch satisfies
+    a task's requirements. An agent explores the repository before the change and
+    writes weighted binary criteria, and a judge without tools scores a diff by the
+    weighted share of criteria it satisfies. We validate the ordering this score produces
+    against test outcomes on SWE-bench Verified, using 7,291 labeled patches from
+    fifteen systems. Within the 400 tasks that have both resolved and unresolved patches,
+    the mean per-task AUROC is 0.826 (0.838 on tasks not used to tune the rubric-generation
+    prompt), and ranking systems by their failing patches closely agrees with ranking
+    them by resolve rate (Spearman 0.968). Case analyses trace disagreements to tests
+    that do not match the task, execution-blocking defects that the textual assessment
+    misses, and errors in criteria or verdicts. The validation does not establish
+    absolute score magnitudes or requirement satisfaction beyond agreement with tests,
+    but rubric scores could complement tests where tests or execution environments
+    cannot be assumed.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23309
+- short_name: NINJA
+  title: 'NINJA: A Navigator-Inspector Joint Architecture for Context-Efficient Issue
+    Localization'
+  authors: Wenkai Fang, Shunyu Liu, Wei Luo, Zihao Wu, Yang Zhou, Tongya Zheng, Wotao
+    Yin, Jialie Shen, Leszek Rutkowski, Mingli Song, Dacheng Tao
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.10027
+  month: 2026-11
+  abstract: 'Recent advances in agent-based methods have demonstrated strong promise
+    for issue localization, a critical prerequisite for software issue resolution.
+    However, most existing agent-based methods rely on a single agent with a growing
+    context, where long-context accumulation compresses the effective reasoning space.
+    Meanwhile, the flat exploration structure hinders the balance between file-level
+    breadth and function-level depth. To address these limitations, we propose NINJA,
+    a hierarchical Navigator-Inspector Joint Architecture for context-efficient issue
+    localization. NINJA decomposes repository exploration into global navigation and
+    local inspection: the navigator maintains the global search state, performs file-level
+    search, and dispatches selected entry files, while inspectors independently conduct
+    function-level exploration around the assigned files in separate contexts. Through
+    multi-round interactions, inspectors return suspicious locations as feedback,
+    and the navigator updates the global state to decide whether to continue exploration
+    or finalize localization. This hierarchical design balances file-level breadth
+    with function-level depth, while independent inspector contexts prevent local
+    exploration traces from accumulating in a single growing context. To further strengthen
+    both global coordination and local exploration, we introduce a two-stage agentic
+    fine-tuning strategy. Extensive experiments across multiple benchmarks and LLM
+    backbones show that NINJA consistently outperforms competitive baselines. Notably,
+    after fine-tuning, Qwen3-Coder-30B-A3B-Instruct surpasses the strong closed-source
+    Claude-Haiku-4.5 model. Our code is available at https://github.com/wantbook-book/NINJA.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.10027
+    github: https://github.com/wantbook-book/NINJA
+- short_name: Repository-Context-Guided Image Understanding
+  title: Repository-Context-Guided Image Understanding for Agentic Software Development
+  authors: Fumiki Yohena, Toshiaki Sota, Shota Suzuki, Tomoko Okamoto, Michiaki Tatsubori
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.13026
+  month: 2026-11
+  abstract: 'Coding agents increasingly receive UI screenshots as part of bug reports,
+    yet degraded image quality - caused by low resolution, compression artifacts,
+    or small rendered text - can prevent them from identifying the relevant UI elements
+    and source files. Vision-language models become less reliable as image quality
+    deteriorates, while OCR-assisted approaches may propagate recognition errors from
+    degraded inputs. Both approaches are limited when the visual evidence required
+    for localization is no longer clearly observable in the query screenshot. We propose
+    augmenting coding agents with repository-rendered reference images: crisp screenshots
+    generated from the same codebase that the agent is tasked with modifying. These
+    references provide readable visual evidence of the application''s UI while preserving
+    the current, potentially bug-containing implementation state. Because they are
+    generated from the available repository rather than requiring a known bug-free
+    version, they can be produced automatically for reproducible application states
+    without manual image annotation. We evaluate the approach on a controlled benchmark
+    derived from SWE-bench Multimodal by injecting visual UI bugs into a real web
+    application. We vary screenshot degradation and reference-image provision and
+    measure whether the coding agent identifies the correct source file. The results
+    show that reference images improve file localization especially for degraded image
+    quality, increasing the gold file match rate under fourfold downsampling with
+    JPEG compression. We confirmed with further analysis that the proposed approach
+    recognizes text approximately 12 percentage points better than language biased
+    OCR under the same degradation.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.13026
+- short_name: ToolPulse
+  title: 'Beyond Clumsy Agentic Tool Calling: How Cueing and Spotting Make the Difference'
+  authors: Xindi Yang, Yan Liu, Jiajun Sun
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.19275
+  month: 2026-11
+  abstract: 'LLM-based task-oriented agents depend on tools to interact with their
+    environments, but may overlook execution feedback, repeat ineffective calls, or
+    persist with unproductive strategies. These behaviors can hinder agents'' ability
+    to use tools autonomously and sustain task progress. We characterize tool-use
+    symptoms at two temporal granularities: local clumsy tool-use behaviors and tool-use
+    detours spanning multiple interactions. Towards greater autonomy in tool use,
+    we present ToolPulse, an online middleware supporting autonomous tool use through
+    cueing and spotting. ToolPulse tracks execution state and temporal interaction
+    patterns, monitoring proposed calls before dispatch and inspecting execution feedback
+    prior to the agent resumes reasoning. It combines state-based rules, semantic
+    sequence analysis, and interaction-feature similarity to identify intervention
+    opportunities and provide verbal reminders, structured feedback, or context-specific
+    advice from auxiliary models. Our process-oriented evaluation distinguishes trigger
+    validity, behavioral cessation, and substantive correction alongside task outcomes
+    and resource costs. Using SWE-agent with three backbone models, we evaluate 1,350
+    trajectories on 90 Python, C++, and Java bug-fix tasks, comparing unassisted execution
+    with four assistance strategies. Substantive responses follow 61.6-90.9% of valid
+    triggers for tool-use detours. Concise reminders achieve the highest observed
+    aggregate substantive-response rate; more elaborate assistance offers symptom-dependent
+    benefits and can be less effective. Aggregate repair outcomes remain close to
+    baseline, with token savings in selected settings. These findings support proactive
+    runtime assistance for autonomous tool use. The gap between behavioral adjustment
+    and aggregate repair gains calls for careful decisions on intervention timing
+    and assistance strategy in autonomous agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.19275
+- short_name: Eliciting and Mitigating Specification Satisficing in Coding Agents
+  title: Eliciting and Mitigating Specification Satisficing in Coding Agents
+  authors: Ruixin Wang, Tianyi Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.16289
+  month: 2026-11
+  abstract: Coding agents often fail to meet all requirements in the task description.
+    In some of these failures, the agent considers an implementation choice that meets
+    a requirement, but later decides to commit to another one that does not meet the
+    requirement for a reason it finds acceptable. We call this specification satisficing.
+    It is challenging to identify and mitigate specification satisficing because the
+    agent accepts such choices for its own reasons, and existing self-correction methods
+    are biased toward them. We propose SatisFix, which guides a coding agent to report
+    these choices and their reasons, and then check each choice against the task description.
+    We evaluate SatisFix on DeepSWE and SWE-bench Pro with five LLMs as backbones
+    and two different agent frameworks, and compare it with three self-correction
+    methods. SatisFix improves the pass@1 of the base agent by an average of 5.09%
+    on DeepSWE and 7.06% on the hard subset of SWE-bench Pro. On DeepSWE, it outperforms
+    the best baseline by 3.98%. Our ablation study shows that both steps of SatisFix
+    contribute to the improvement.
+  links:
+    arxiv: https://arxiv.org/abs/2611.16289
+- short_name: Learn then Bet
+  title: 'Learn then Bet: Learning Interpretable Rules for Reliable Agent Intervention'
+  authors: You-Lin Chen, Xinyi Lisa Chen, Pedro Herrero-Vidal, Xiaojing Yu, Bingqing
+    Song, Bin Xu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.17662
+  month: 2026-11
+  abstract: Autonomous agents now run for hundreds of steps with little or no human
+    supervision. In practice, practitioners use runtime monitors such as turn limits
+    and keyword filters to decide when a run should be stopped, upgraded, or assisted.
+    However, these heuristics may stop runs that would otherwise succeed or allow
+    failing runs to continue. To address this limitation, we introduce LeBet (Learn
+    then Bet), a statistical learning framework that derives its learning objective
+    from sufficient conditions for valid and powerful intervention. In particular,
+    LeBet learns an interpretable OR-of-AND monitor and accumulates evidence through
+    a fixed betting statistic, intervening when the evidence reaches a prescribed
+    threshold. Under finite within-class exchangeability and leave-one-out stability,
+    we derive finite-sample guarantees for false-positive control (validity) and detection
+    power conditional on the training data, using the same trajectories for learning
+    and calibration without assuming independent and identically distributed trajectories.
+    To address the intractable combinatorial optimization problem in our learning
+    formulation, we use stochastic local search that leverages the monitor's Boolean
+    structure to propose rule edits aimed at improving empirical separation. On SWE-bench
+    Lite with Ministral 3 8B, the learned monitor saves $34.46\%$ of input-plus-output
+    tokens and increases output precision from $18.33\%$ to $21.59\%$. The empirical
+    false-positive rate is $13.64\%$. Our results show how to formalize the learning
+    problem over interpretable rule sets with statistical conditions and establish
+    training-conditional guarantees for reliable intervention based on partial histories.
+  links:
+    arxiv: https://arxiv.org/abs/2611.17662
+- short_name: Adaptive Index Reuse
+  title: When Should an Agent Refresh? Adaptive Index Reuse for Efficient Long-Horizon
+    Reasoning
+  authors: Guangyuan Wang, Yifan Zhang, Shilong Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.01429
+  month: 2026-11
+  abstract: Language agents read code, tool output, and dialogue in contexts that
+    grow at every step. Dynamic sparse attention lets a small indexer choose the earlier
+    tokens each query attends to, but the indexer still scores the whole prefix at
+    every layer. Cross-layer reuse methods such as IndexCache rerun the indexer at
+    only some layers, with one fixed pattern for every input. In an agent, the relevant
+    evidence can change abruptly when a traceback or test result arrives, so fresh
+    selections matter more at some steps than at others. We propose Adaptive Index
+    Reuse (AIR), which keeps IndexCache's execution and learns, for each segment of
+    an agent episode, how many layers refresh their selection. A small controller
+    reads signals from completed computation and the latest tool event, chooses a
+    pattern from a nested library, and learns from terminal task reward under an expected
+    compute budget. On Qwen3-4B-Instruct-2507 with a 128K context, AIR improves success
+    over the strongest static schedule at matched cost on SWE-bench Verified (27.0%
+    to 32.4%), Terminal-Bench 2.0, and three $τ^2$-bench domains, and it lowers time
+    per successful task on all five. Across 50 backbone, context, and benchmark settings,
+    it matches or exceeds that schedule in 44.
+  links:
+    arxiv: https://arxiv.org/abs/2611.01429
+- short_name: TraceLite
+  title: 'TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression
+    and Redundancy Removal'
+  authors: Jingyu Xiao, Qianxi Liu, Yintong Huo, Yuan Jiang, Michael R. Lyu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.28612
+  month: 2026-10
+  abstract: Software engineering agents solve repository-level tasks through iterative
+    tool use, but their continuously growing interaction traces incur substantial
+    token consumption and inference overhead. Existing compression approaches often
+    require model training, auxiliary LLM calls, or assumptions about specific content
+    such as source code. We present TraceLite, a simple yet effective, training-free
+    framework for compressing heterogeneous SWE-agent observations. Our preliminary
+    study shows that optical rendering preserves substantial textual and semantic
+    information under moderate compression, while agent trajectories exhibit both
+    cross-step and phase-level redundancy. Motivated by these findings, TraceLite
+    preserves recent observations as high-fidelity text, renders historical observations
+    as compact images, removes overlapping content, and discards phase-expired observation
+    payloads after code editing. It requires neither offline training nor auxiliary
+    LLM inference. We evaluate TraceLite on SWE-bench Verified and DeepSWE using GPT-5.6-Luna
+    and Gemini-3.8Flash as backbone models. On SWE-bench Verified, TraceLite achieves
+    78.25% resolve rate, outperforming the evaluated compression baselines while reducing
+    average input-token consumption and API cost by 33.05% and 21.30%, respectively.
+    Moreover, it introduces only 0.438 seconds of compression latency per observation.
+    These results demonstrate that TraceLite improves SWE-agent efficiency with low
+    processing overhead and without compromising issue-resolution capability. Our
+    code is available at https://github.com/xjywhu/TraceLite.
+  links:
+    arxiv: https://arxiv.org/abs/2610.28612
+    github: https://github.com/xjywhu/TraceLite
+- short_name: DeskCheck
+  title: Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution
+  authors: Changshu Liu, Ji young Kim, Alireza Ghazanfari, Saanvi Nallu, Reyhaneh
+    Jabbarvand
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.23782
+  month: 2026-10
+  abstract: 'Reasoning is central to ReAct-based programming agents, yet whether and
+    how they reason about code remains unclear. We study 7,955 issue-resolution trajectories
+    from six single- and multi-agent scaffolds across four programming languages on
+    SWE-bench-Verified, SWE-bench-Pro, and SWE-bench-Lite. We identify 12 forms of
+    code reasoning in 66.95% of trajectories. Code reasoning is associated with higher
+    resolution rates, and its intensity increases with task complexity. However, it
+    remains largely unguided: agents may focus on surface-level symptoms during localization,
+    fail to refine near-correct patches, overlook issue requirements, and generate
+    tests with limited behavioral diversity. To address these limitations, we propose
+    DeskCheck, an agentic scaffold that systematically guides code reasoning throughout
+    repository-level issue resolution. DeskCheck simulates execution paths to localize
+    root causes, simulates candidate patches to refine near-misses, audits patches
+    against issue requirements, and reasons about corner-case inputs and expected
+    outputs before generating tests. On 731 SWE-bench-Pro instances, DeskCheck improves
+    resolution rates over mini-SWE-Agent and Claude Code by 6.29% to 10.53%, at an
+    additional cost of $0.02-$0.28 per instance (average: $0.14). Per-phase analyses
+    show higher method-level localization recall, more successful repairs of imprecisely
+    localized issues, and better detection of missed corner cases in near-correct
+    patches. Exact McNemar tests show statistically significant improvements across
+    all subject LLMs (p < 10^-10), while repeated experiments support robustness to
+    agent nondeterminism. These findings motivate systematic code reasoning as a means
+    of improving programming agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.23782
+- short_name: ColGREP
+  title: 'Small Agents with Semantic Search: Efficient Multilingual Code Localization'
+  authors: Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé
+    Seddah
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.05099
+  month: 2026-10
+  abstract: Locating relevant files from natural-language requests is a core subtask
+    for agents operating over code repositories. We investigate whether this task
+    can be delegated to compact, specialized models to enable on-device search while
+    reducing the token usage, latency, and inference cost of larger agents. We show
+    that semantic search improves file localization, with gains in accuracy, cross-language
+    transfer, and inference efficiency. To study this setting, we introduce a training
+    framework for file-localization agents built around ColGREP, a local semantic
+    search tool based on late-interaction retrieval models. Our recipe combines weighted
+    supervised fine-tuning on teacher trajectories, assigning turn-level credit based
+    on retrieval outcomes, with reinforcement learning on localization quality. We
+    train three model families with fewer than two billion parameters to formulate
+    search queries, inspect retrieved content, and identify relevant files. On localization
+    tasks derived from SWE-bench Lite and Multi-SWE-bench Flash, ColGREP-equipped
+    agents substantially improve over their base models and outperform corresponding
+    GREP-based agents. In addition to improving localization accuracy, ColGREP reduces
+    mean end-to-end trajectory latency by 44.1\% on CPU while using 29.1\% fewer tokens,
+    and enables better generalization to programming languages unseen during fine-tuning.
+    These results suggest that compact, tool-specialized localization agents can provide
+    an efficient interface between natural-language requests and large codebases.
+  links:
+    arxiv: https://arxiv.org/abs/2610.05099
+- short_name: CuraLoc
+  title: 'CuraLoc: Repository-Level Fault Localization via Planned Code Inspection'
+  authors: Sangeeta Warrier, Anush Sankaran, Ryen W. White
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.31809
+  month: 2026-10
+  abstract: A bug report describes what went wrong, but rarely where the code should
+    change. Existing repository-level localization methods often let language models
+    iteratively decide what code to inspect next, requiring repeated model calls and
+    substantial token usage. We investigate whether these inspection decisions can
+    instead be planned before source retrieval. In this research, we introduce CuraLoc,
+    which first selects candidate files and represents their symbols using compact
+    behavioral and structural descriptions. In a single planning decision, the model
+    jointly selects starting symbols, chooses code relationships to inspect from each,
+    and forms hypotheses about likely edits. Deterministic retrieval collects the
+    requested source for a final ranking informed by those hypotheses, concentrating
+    model reasoning on choosing and comparing code rather than directing each retrieval
+    step. We demonstrate the efficacy of our proposed approach on the SWE-Bench Lite
+    and Verified datasets. On SWE Bench Verified with GPT-5.2, CuraLoc raises Func@1
+    from LocAgent's 53.8% to 59.3% while using 90.3% fewer recorded tokens, and also
+    outperforms RepoSearcher (56.2%) and Agentless (39.6%) on Func@1. On SWE-bench
+    Lite, CuraLoc achieves a high 83.8% Func@5 accuracy improving on Agentless by
+    more than 15% in relative accuracy. Additionally, CuraLoc supports different model
+    backbones, with strong localization accuracy demonstrated using both GPT-5.2 and
+    GPT-6 Astra. These results provide evidence that repository-level code inspection
+    can be planned effectively without iterative model-controlled navigation.
+  links:
+    arxiv: https://arxiv.org/abs/2610.31809
+- short_name: Agentic Interpretation
+  title: 'Agentic Interpretation: Harness-Governed Evidence Construction for Software
+    Agents'
+  authors: Yifeng He, Yanjun Wang, Siwei Cui, Aritra Sengupta, Murali Krishna Ramanathan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.23996
+  month: 2026-10
+  abstract: 'Software agents answer behavioral questions about code, such as whether
+    a patch passes tests or which lines caused a failure. These tasks require repository-wide
+    evidence, yet most scaffolds leave intermediate findings in free-form trajectories,
+    making them hard to reuse and easy to disconnect from final answers. We present
+    Agentic Interpretation (AgInt), a framework for harness-governed evidence construction.
+    The model proposes typed records, while a deterministic harness admits, grades,
+    and persists them, reports unresolved requirements, and licenses answers under
+    task-specific rules. The resulting certificate gives the model persistent external
+    state and leaves an auditable decision record. Formally, append-only certificate
+    states form a grounding lattice ordered by record inclusion, where each admitted
+    record extends the state by union. We evaluate AgInt with four models on SWE-bench-Live
+    and DeepSWE for patch acceptance and Defects4J and GitBug-Java for fault localization.
+    AgInt outperforms the plain agent and Agentic Code Reasoning on all reported patch-acceptance
+    metrics and ranks responsible lines higher while inspecting fewer irrelevant lines
+    in fault localization. For GLM-5, reject-class F1 rises from 0.256 to 0.543 on
+    SWE-bench-Live, All@1 rises from 0.140 to 0.400 on Defects4J, and wasted inspected
+    lines fall from 31.5 to 11.7 on GitBug-Java. A matched-template control separates
+    the mechanism: the persistent scaffold drives most fault-localization gains, while
+    the certificate body and gate govern patch-acceptance calibration. With execution
+    licensed, AgInt produces harness-reproduced witnesses for 293 of 475 null-dereference
+    candidates versus 253 for a matched shell agent, and 62 of 117 resource-leak candidates
+    versus 58. Across reported efficiency measurements, it uses 35% fewer executions
+    and reduces cost per candidate by 59%.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.23996
+- short_name: No One-Size-Fits-All
+  title: 'No One-Size-Fits-All: Adaptive Code Editing with Feature-Based Strategy
+    Selection'
+  authors: Jun Wan, Zhongxin Liu, Dajun Chen, Wei Jiang, Yong Li, Xiaoxue Ren
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.22881
+  month: 2026-10
+  abstract: 'Large language models have shown strong potential in automating code
+    editing (CE) tasks, yet most existing systems rely on a fixed CE strategy (i.e.,
+    one-step, search-replace, and plan-apply) across diverse scenarios. In practice,
+    CE tasks vary widely in code context, edit locality, and semantic complexity,
+    causing no single strategy to perform consistently well. Moreover, systematic
+    studies on the relationship between strategies and CE tasks remain scarce, limiting
+    further optimization of LLM-based code editing strategies. To address this gap,
+    we construct CEBench, comprising 500 real-world CE tasks curated from SWE-bench.
+    Then we compare three representative CE strategies (one-step, search-replace,
+    plan-apply). Our study reveals two key findings: (1) each strategy exhibits distinct
+    advantages for specific CE tasks, with no universal optimality; (2) strategy effectiveness
+    is significantly influenced by four core task features: total lines of code, modification
+    type, modification scope, and task type. Motivated by these findings, we propose
+    Ace, an adaptive code editing framework that dynamically selects optimal CE strategies
+    based on task features. Unlike classifier-based or instruction-prompting approaches,
+    Ace employs a fine-tuned LLM that learns feature-strategy mappings from empirical
+    data to recommend strategies with interpretable rationales. Extensive experiments
+    on our CEBench-verified show that Ace outperforms state-of-the-art baselines:
+    it boosts Pass@1 by 21.7% while reducing token consumption by 27.3% compared to
+    the best baseline (AutoCodeRover). Our strategy selector achieves 72.6% selection
+    accuracy with 69.9% rationale accuracy (Cohen''s Kappa = 0.807), providing transparent
+    and trustworthy decision-making for developers.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.22881
+- short_name: CQ2-CARE
+  title: 'Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole
+    Files'
+  authors: Xiaocong Yang, Rishit Chatterjee, Himanshu Udupi, Vikram Ramavarapu, ChengXiang
+    Zhai
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.21073
+  month: 2026-10
+  abstract: 'A coding agent works on repositories that can be far larger than its
+    context window can hold. Prompt compressors and retrievers offer solutions to
+    this problem, but patching an issue needs two things at once: the files that must
+    change, and their code exactly as written, since the model must reproduce the
+    lines it edits. Retrievers rank code by its similarity to the issue rather than
+    by whether it must change, and compressors delete text to fit the budget. We show
+    that at an equal token budget, an agent resolves more issues when the budget goes
+    to choosing which files to show verbatim, as our simple selector CQ2-CARE does,
+    than when it goes to pruning tokens or retrieving chunks. We fit every context
+    to the same per-issue budget on 300 recent SWE-rebench issues and grade each patch
+    with the benchmark''s tests. With GPT-5.6 and Claude Opus 5, CQ2-CARE resolves
+    43.7% and 46.7% of the issues, 6.3 points more than the best of three compressors
+    with either model, and 9.3 and 12.7 points more than the best of three retrievers.
+    CQ2-CARE even resolves more issues than two methods trained for issue resolution,
+    SweRank (by 0.7 and 1.7 points) and SWE-Pruner (by 2.0 and 7.3). Our analysis
+    shows the defects of the baseline methods: retrievers often miss the files to
+    edit, and compressors keep them but alter their text, so fewer patches apply.
+    Exact-file selection needs no compression model and shows every line as the repository
+    has it, so the model can quote the code it edits.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.21073
+- short_name: Cadence
+  title: 'Cadence: Strategic Guidance for Coding Agents'
+  authors: Minxing Wang, He Ye, Earl T. Barr, Yintong Huo
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.12269
+  month: 2026-10
+  abstract: 'Runtime monitors are increasingly used to improve the reliability of
+    LLM-based coding agents by inspecting execution trajectories and delivering corrective
+    guidance upon detecting misbehavior. However, their effectiveness remains limited
+    by static guidance triggering schemes. Existing monitors rely either on fixed
+    inspection intervals, missing timely guidance during severe misbehaviors while
+    incurring unnecessary overhead during healthy execution, or on rigid heuristic
+    rules, failing to detect complex reasoning errors. To address these limitations,
+    we propose Cadence, a dynamic monitoring framework that adaptively schedules inspections
+    and delivers guidance according to the agent''s real-time execution health. Cadence
+    consists of two core modules: a two-tier intervention module and an inspection
+    scheduler. The intervention module delivers advisory-level guidance for normal
+    executions and minor lapses, while providing replacement-level guidance for severe
+    misbehaviors. Driven by the intervention level, the scheduler adjusts the inspection
+    frequency by tightening supervision after replacement-level guidance and relaxing
+    it after advisory-level guidance. Evaluated on 300 SWE-bench Lite tasks across
+    two distinct agents, mini-swe-agent and Moatless, Cadence achieves the highest
+    resolve rate among all evaluated monitors. Specifically, Cadence outperforms vanilla
+    agents by 25.33\% (+76 resolved tasks) on mini-swe-agent and 15.67\% (+47 resolved
+    tasks) on Moatless, while maintaining competitive token efficiency compared to
+    state-of-the-art baselines.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.12269
+- short_name: TestGRAD
+  title: 'TestGRAD: Evolving Test Suites via Failure Pattern Momentum for SWE-Agent
+    Ensemble'
+  authors: Pengfei He, Jiayuan Zhou, Shaowei Wang, Ruiqi Pan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.10242
+  month: 2026-10
+  abstract: 'SWE-agent ensembles improve issue resolution by combining candidate patches
+    from different agents with complementary strengths. The central problem is therefore
+    test-based selection: generate tests, execute candidate patches, and identify
+    the best patch. We formulate this process as test-space optimization: evolving
+    an executable repository test suite until it distinguishes competing patches.
+    Existing test-generation methods are limited optimizers. They usually lack an
+    explicit loss for ensemble selection, optimize through incomplete directions that
+    mostly create new tests or delete old ones, and perform one-off generation without
+    feedback from repeated failures. Inspired by gradient descent with momentum, we
+    introduce TestGRAD, a framework for automatic test optimization. TestGRAD centers
+    on three concepts. Differential loss gives the optimizer an explicit execution-defined
+    target: useful tests should separate candidate patches by behavior. Full CRUD
+    gradients expand the update direction from merely creating or deleting tests to
+    reading existing test infrastructure, creating new tests, updating stale assertions,
+    and deleting only obsolete tests. Failure Pattern Momentum mines frequent failure
+    sequences from memory, allowing the optimizer to avoid repeated non-discriminative
+    directions while compressing the failure-history context. On SWE-bench Verified,
+    TestGRAD achieves 84.2% Pass@1 with a 4-agent ensemble, outperforming the strongest
+    baseline (80.6%) by an absolute improvement of 3.6 percentage points, while compressing
+    failure-history context by over $100\times$.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.10242
+- short_name: JevCoder
+  title: 'JevCoder: When Does Decision Delegation Pay Off in Code Repair?'
+  authors: Jiahao Zhang, Yifan Zhang, Yu Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19596
+  month: 2026-10
+  abstract: 'A coding agent repeatedly makes decisions as it repairs code. These decisions
+    shape repair trajectories and affect the token cost of successive model requests.
+    We ask which repair decisions can be delegated to a low-cost probabilistic judge
+    to reduce token use while maintaining repair quality. The judges answer questions
+    with probabilities over predefined answers, without generating explanations. We
+    evaluate judgment quality across repair stages and test how individual interventions
+    change subsequent repair work. We compare these interventions with unguided repair,
+    which uses no judge, and with the same workflow using the repair model itself
+    as the judge. The benefit depends on the work an intervention changes, rather
+    than the cost of the judgment alone. Based on these studies, we propose JevCoder,
+    a workflow built around Jev, a low-cost probabilistic judge. It combines code-snippet
+    recommendations with action-type guidance and uses judgments to determine when
+    to submit. We evaluate three repair models, each on the same 400 tasks: 200 from
+    SWE-bench Verified and 200 from SWE-Bench Pro Verified. Compared to unguided repair,
+    JevCoder reduces mean repair-model token use by 21.6%-50.6%, with higher observed
+    repair rates across all three models.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.19596
+- short_name: OnTrack
+  title: 'OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories
+    via Streaming Structure-Aware Optimal Transport'
+  authors: Babak Barazandeh, Connor Swanson, Chinmay Kulkarni, Nikhil Mungel
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.12375
+  month: 2026-10
+  abstract: 'Agents are deployed in applications from trip planners and stock trading
+    to IT incident triage. In most cases, LLM agents work autonomously with minimal
+    rule-based safeguarding, leading to cost and safety issues from irreversible actions.
+    Recent works resolve this either by using a safeguard agent to monitor behavior
+    or evaluating logs post-hoc. The first adds cost and latency to every step; the
+    second delivers its verdict after the run, when tokens are burned and damage is
+    done. To overcome this, we propose OnTrack, a streaming monitoring mechanism that
+    compares an agent''s steps and dependencies against recorded successful runs to
+    alert users or block the agent in about a millisecond per step. We study this
+    problem in three regimes of decreasing access: full reference access (historical
+    runs and tool schemas), intermediate access (only tool schemas), and no prior
+    knowledge (only step logs as generated). Expectation of OnTrack''s monitoring
+    capabilities reduces as data access drops, ranging from plan violation detection
+    to identifying loops, stalls, and repeated tool calls. Finally, we evaluate OnTrack
+    using SWE-bench trajectories. Based on the first 8 steps, our method ranks failing
+    trajectories below succeeding ones better than content similarity approaches (+0.057
+    AUROC). With an abort policy, we save about 18% of compute that would be burned
+    on failing runs, where 83% of interrupted runs were actually heading to failure
+    (5 out of 6 aborts were correct).'
+  links:
+    arxiv: https://arxiv.org/abs/2610.12375
+- short_name: Opera
+  title: 'Opera: A Verbal Critic Framework for Long-horizon Coding Agents'
+  authors: Kai Mei, Zhiyuan Hu, Yutong Dai, Juntao Tan, Yifan Zhang, Dingjie Song,
+    Dimitris N. Metaxas, Silvio Savarese, Ran Xu, Zeyuan Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33987
+  month: 2026-09
+  abstract: 'Long-horizon coding agents need timely corrections, yet feedback can
+    be ineffective or even harmful when it misjudges ongoing work or fails to address
+    the underlying problem. Existing critics focus on evaluating trajectories and
+    generating feedback, but rarely track what happens after feedback is delivered.
+    We present Opera, a verbal critic framework that treats each correction as a persistent
+    note, followed until the diagnosed problem is resolved. Opera decides when to
+    review through periodic and event-driven triggers, diagnoses issues with typed
+    operators, audits feedback against visible evidence before delivery, and tracks
+    the agent''s subsequent actions to distinguish mere compliance from actual resolution.
+    As a test-time critic, Opera improves the resolve rate of non-critic agents by
+    up to 12.4, 15.0, and 8.9 percentage points on Terminal-Bench 2.1, a SWE-Bench
+    Pro subset, and DeepSWE v1.1, respectively, across four policy models, and achieves
+    the highest mean resolve rate among competitive critic baselines on all three
+    benchmarks, and also improves policy models when the policy critiques itself.
+    Beyond inference, Opera-guided rollouts provide approximately on-policy training
+    data: fine-tuning Qwen3.5-9B on them improves its resolve rate on held-out SWE-Bench
+    Pro repositories by 10.2 percentage points without a critic at inference time,
+    matching fine-tuning on rollouts from a stronger model, while preserving its performance
+    when switching harness, i.e., from Openhands to Terminus-2, which the latter substantially
+    degrades. Our code is available at: https://github.com/dongyuanjushi/Opera.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.33987
+    github: https://github.com/dongyuanjushi/Opera
+- short_name: Semantic Navigation for Issue Localization in Code Repository
+  title: Semantic Navigation for Issue Localization in Code Repository
+  authors: Yunxiang Wei, Zhenyu Lei, Jundong Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.31176
+  month: 2026-09
+  abstract: 'Repository-level issue localization aims to identify and rank the files
+    and functions relevant to resolving a reported issue. LLM agents approach this
+    task iteratively: they identify a set of potentially relevant locations, inspect
+    the corresponding code, and revise their judgments about these candidates as new
+    evidence is acquired. Existing environments, however, provide limited support
+    for this loop: agents must search for unresolved relation targets, reconstruct
+    entity semantics from raw source code, and revise candidates without evidential
+    basis. To address these limitations, we present SemNav, a framework that leverages
+    deterministic retrieval to seed a broad candidate set and an LLM agent to continually
+    refine that set, thereby combining initial coverage with evidence-guided revision.
+    SemNav supports this process through three key components. A Semantic Navigation
+    Graph resolves program relations on demand through a language server, enabling
+    direct navigation to related entities across files. Issue-conditioned Semantic
+    Cards provide compact, source-grounded interpretations of each entity''s role
+    and relevance to the issue. A persistent Candidate Workspace records each candidate
+    together with its evidential basis, enabling grounded verification, revision,
+    and ranking. Across SWE-bench Lite and PLocBench, SemNav outperforms existing
+    baselines, improving File Hit@10 from 68.33\% to 82.67\% with Gemma 4B. Component
+    ablations and trajectory analysis support the complementary roles of all three
+    components, while Semantic Cards reduce working-context load by 48.2\% relative
+    to full-source reading. SemNav further ranks first on all seven evidence-quality
+    metrics on SWE-Explore and improves downstream issue resolution from 44.00\% to
+    52.33\%.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.31176
+- short_name: TokenCast
+  title: 'TokenCast: Forecasting Token Consumption During LLM Agent Execution'
+  authors: Chaoqian Ouyang, Ling Yue, Libin Zheng, Hanghui Guo, Shengxiang Xu, YiShu
+    Wang, Ran Li, Jian Yin, Shaowu Pan, Shimin Di
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.35760
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.35760
+- short_name: Graph-Guided Repository Environment Construction
+  title: Graph-Guided Repository Environment Construction
+  authors: Jianying Pan, John Zhang, Hongyu Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33429
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.33429
+- short_name: ENDROC
+  title: Evaluating Name-Only Directory Routing for One-Shot Code Search
+  authors: Manoj Bajaj
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.35918
+  month: 2026-09
+  abstract: Finding the right files is an early challenge for coding agents. We test
+    whether a language model can follow directory and file names to find annotated
+    code files missed by fixed lexical queries. Across 82 audited issues from 11 repositories
+    at pinned pre-fix commits, name-only directory routing recovered 0.465 of gold
+    files within eight candidates, compared with 0.352 for FTS5 and 0.245 for a fixed
+    full-issue rg query. The paired gain over FTS5 was 0.113 (95% repository-cluster
+    bootstrap interval, 0.053 to 0.168). Under a shared 16K-token context budget,
+    routing delivered 0.443 of annotated lines versus 0.246 for FTS5 on 55 cases with
+    fully aligned annotations. At the same eight-file limit, combining routing with
+    FTS5 reached 0.491 file recall, but its gain over routing alone was uncertain.
+    An exploratory flat path control reached 0.572 recall while using 24.6 model calls
+    per issue, compared with 8.9 for routing. Routing averaged 8.9 seconds per issue;
+    FTS5 took 7 milliseconds per query after a 0.9-second build. On this cohort, directory
+    routing added relevant file candidates to one-shot lexical search, but the study
+    cannot attribute the gain to hierarchy or show that it improves issue resolution.
+  links:
+    arxiv: https://arxiv.org/abs/2609.35918
 - short_name: MM-IssueLoc
   title: 'MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal
     Repository-Level Issue Localization'
@@ -1029,7 +1677,7 @@
   month: 2025-03
   links:
     arxiv: https://arxiv.org/abs/2503.22424v3
-- short_name: OrcaLoca
+- short_name: OrcaLora
   title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
   authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
     Jishen Zhao

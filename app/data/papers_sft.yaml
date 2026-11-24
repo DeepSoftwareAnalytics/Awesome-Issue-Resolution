@@ -1,3 +1,500 @@
+- short_name: NINJA
+  title: 'NINJA: A Navigator-Inspector Joint Architecture for Context-Efficient Issue
+    Localization'
+  authors: Wenkai Fang, Shunyu Liu, Wei Luo, Zihao Wu, Yang Zhou, Tongya Zheng, Wotao
+    Yin, Jialie Shen, Leszek Rutkowski, Mingli Song, Dacheng Tao
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.10027
+  month: 2026-11
+  abstract: 'Recent advances in agent-based methods have demonstrated strong promise
+    for issue localization, a critical prerequisite for software issue resolution.
+    However, most existing agent-based methods rely on a single agent with a growing
+    context, where long-context accumulation compresses the effective reasoning space.
+    Meanwhile, the flat exploration structure hinders the balance between file-level
+    breadth and function-level depth. To address these limitations, we propose NINJA,
+    a hierarchical Navigator-Inspector Joint Architecture for context-efficient issue
+    localization. NINJA decomposes repository exploration into global navigation and
+    local inspection: the navigator maintains the global search state, performs file-level
+    search, and dispatches selected entry files, while inspectors independently conduct
+    function-level exploration around the assigned files in separate contexts. Through
+    multi-round interactions, inspectors return suspicious locations as feedback,
+    and the navigator updates the global state to decide whether to continue exploration
+    or finalize localization. This hierarchical design balances file-level breadth
+    with function-level depth, while independent inspector contexts prevent local
+    exploration traces from accumulating in a single growing context. To further strengthen
+    both global coordination and local exploration, we introduce a two-stage agentic
+    fine-tuning strategy. Extensive experiments across multiple benchmarks and LLM
+    backbones show that NINJA consistently outperforms competitive baselines. Notably,
+    after fine-tuning, Qwen3-Coder-30B-A3B-Instruct surpasses the strong closed-source
+    Claude-Haiku-4.5 model. Our code is available at https://github.com/wantbook-book/NINJA.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.10027
+    github: https://github.com/wantbook-book/NINJA
+- short_name: SWE-Growth
+  title: 'SWE-growth: Teacher-Guided Adaptive Self-Play for Software Engineering Agents'
+  authors: Songshi Liang, Zixuan Huang, Mingxuan Song, Haoyu Tang, Shusheng Xu, Tongkai
+    Yang, Zihe Wang, Rui Yan
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23876
+  month: 2026-11
+  abstract: Self-play offers a scalable way to train software engineering agents by
+    generating repository-level repair tasks. However, with binary repair rewards
+    and finite rollout budgets, all-fail groups provide no reward-based group-relative
+    advantage. Such tasks may still offer learning opportunities when a Teacher can
+    provide verified repairs absent from the Student's own attempts. We introduce
+    SWE-Growth, a teacher-guided adaptive self-play framework that uses verified Teacher
+    outcomes to identify learning opportunities for the current Student. Tasks with
+    all students failure but reliable Teacher success provide demonstrations for supervised
+    fine-tuning (SFT), and post-SFT Student rollouts identify mixed-outcome tasks
+    with a positive Teacher--Student gap for reinforcement learning. Task eligibility
+    also guides Injector updates, connecting Student training with subsequent task
+    generation. Starting from 101 seed issues, \textsc{SWE-Growth} improves Qwen3-Coder-30B-A3B-Instruct
+    from 27.7% to 31.7% on SWE-bench Pro and from 11.0% to 17.2% on held-out TerminalBench
+    2.1 by Round~2. It exceeds Student-only self-play by 2.6 and 4.1 percentage points,
+    respectively, and Teacher-augmented self-play by 1.8 and 2.5 points under approximately
+    matched budgets. These results support adapting both supervision and task selection
+    to the Student's evolving repair capability.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23876
+- short_name: SWE-OPD
+  title: 'SWE-OPD: On-Policy Distillation for Agentic Coding'
+  authors: Yuhang He, Yanyu Chen, Chuanzhe Guo, Jie Zhu, Zichen Tian, Hongyu Ge, Zixuan
+    Ren, Huang He, Bingjin Chen, Junyuan Shang, Shuohuan Wang, Yongqi Zhang, Irwin
+    King, Jing Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.21020
+  month: 2026-11
+  abstract: 'In this work, we study on-policy distillation (OPD) for transferring
+    agentic coding capabilities from a large teacher model to a smaller student model.
+    Prior work has focused primarily on reasoning and short-horizon agentic tasks.
+    We present SWE-OPD, a minimal OPD study for software engineering, where the student
+    interacts with executable repositories and the teacher supervises the prefixes
+    visited by the student. Across three teacher--student pairs, two training sources,
+    and three SWE benchmarks, we find that on-policy supervision transfers coding
+    capability: supervision from Qwen3.6-27B increases the SWE-bench Pro resolve rate
+    of Qwen3.5-9B from 35.9% to 39.4%. Refreshing trajectories is not strictly required
+    either, as an offline variant with cached teacher scores still improves over the
+    student baselines while cutting end-to-end GPU-hours by 59.4%--72.6% and halving
+    peak GPU allocation, at benchmark-dependent accuracy. Furthermore, we extend the
+    offline variant to corss-tokenizer scenarios: distilling GLM-4.5-Air from DeepSeek-V4-Flash-0731
+    raises its SWE-bench Pro and Multilingual resolve rate from 35.8% to 39.7% and
+    from 41.8% to 46.2%, around 4% and 4.6% improvement, respectively. We also find
+    that a decreasing loss, however, does not necessarily indicate improved agent
+    performance: under top-$K$ reverse-KL loss, one student exhibits severe repetition
+    despite a decreasing loss. We identify a support-mass gradient term as a potential
+    mechanism underlying this failure.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.21020
+- short_name: SWE-Trail
+  title: 'SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training'
+  authors: Ziming Li, Lu Yu, Jiatan Huang, Qing Cui, Jun Zhou, Chuxu Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.02074
+  month: 2026-11
+  abstract: Coding agents solve repository issues through long sequences of exploration,
+    editing, and validation. These trajectories are increasingly used as post-training
+    data, so how they are collected shapes what the trained model learns. A common
+    approach is to sample multiple trajectories independently for each issue and then
+    select or curate them. However, as more trajectories are sampled independently,
+    later trajectories become increasingly redundant, even though earlier trajectories
+    could guide where subsequent collection effort should be spent. A natural way
+    to use this history is to expose it to the coding agent as advice. But training
+    on such trajectories can make the model rely on advice that is unavailable at
+    test time, creating a train-test mismatch. Instead, we argue that history should
+    guide where collection effort is spent, while the coding agent decides what to
+    generate. We introduce SWE-Trail, a trajectory collector that uses earlier trajectories
+    to guide subsequent collection while keeping that history outside the coding agent's
+    context. During a new rollout, SWE-Trail uses history to identify a state where
+    additional collection effort may be useful. There, the coding agent proposes candidate
+    next actions from its ordinary context, and SWE-Trail briefly executes them from
+    the same checkpoint to decide which route continues. We evaluate collection approaches
+    by training student models on the trajectories they produce. For a 124B student
+    initialized from Ling-3.0-flash-base, SWE-Trail improves mean resolution over
+    independent sampling by 2.33 and 1.60 percentage points on SWE-bench Multilingual
+    and SWE-bench Pro, respectively. Without history, the same pipeline produces more
+    resolved trajectories than independent sampling, but improves by only 0.11 points
+    on Multilingual. These results show the value of using history to guide collection
+    without exposing it to the coding agent.
+  links:
+    arxiv: https://arxiv.org/abs/2611.02074
+- short_name: BuggyMLE
+  title: 'BuggyMLE: Scaling Machine Learning Engineering Difficulty with Bug Injection'
+  authors: John Wu, Rushi Qiang, Yuchen Zhuang, Guowang Li, Girish Narayanswamy, Max
+    Xu, Sam Schmidgall, Mark Malhotra, Shwetak Patel, Jimeng Sun, Daniel McDuff, Bo
+    Dai, Xin Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.25088
+  month: 2026-11
+  abstract: Enabling AI systems to autonomously improve AI models requires agents
+    capable of performing machine learning engineering (MLE). In practice, designing,
+    training, and evaluating complex models demands modifying multi-file repositories
+    to reproduce results, debug training runs, integrate datasets, and port frameworks.
+    However, existing MLE benchmarks limit agents to single-file edits without full
+    repository or shell access, and common repository-level software engineering benchmarks
+    have rapidly saturated. To address this, we introduce the Code Complexity Index
+    (CCI), a difficulty metric based on ten structural features spanning repository
+    scale, dependency depth, and patch size. CCI strongly predicts average solve rates
+    across eight public coding benchmarks ($R^2 = 0.951$), identifying patch size
+    and complexity as top predictors. Guided by CCI, we develop BuggyMLE, a scalable
+    framework where agents inject controlled mutations into working ML repositories,
+    synthesizing over 6,600 bug-injected MLE repository variants and nearly 260K lines
+    of injected code based on 222 source repositories. Using BuggyMLE, we make two
+    contributions. First, we construct BuggyMLE-Bench-Lite, the first difficulty-graded,
+    repository-level variant of MLE-Bench Lite; across 14 evaluated models, the top
+    solve rate drops from 95% to 9% as difficulty is scaled from the easiest to the
+    hardest tier. Second, we synthesize a training curriculum across three difficulty
+    levels over 200 additional ML repositories, fine-tuning a Qwen3.5-9B model to
+    rival frontier models on BuggyMLE-Bench-Lite. Our trained model transfers beyond
+    ML, raising its SWE-bench Lite resolve rate from 24% to 33% and its LiveCodeBench
+    v6 pass@1 from 69% to 71%.
+  links:
+    arxiv: https://arxiv.org/abs/2611.25088
+- short_name: SWEPatchTest
+  title: 'SWEPatchTest: Evaluating Software Tests Beyond Reproduction'
+  authors: Hua Lu, Pengcheng Wang, Han Li, Zichen Tian, Yanyu Chen, Huang He, Bingjin
+    Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.18004
+  month: 2026-10
+  abstract: 'Coding agents use generated tests to decide whether a proposed patch
+    satisfies an issue''s requirements. A suite that fails on the buggy program and
+    passes after applying the reference patch can still accept an incorrect patch
+    or reject a correct patch. We introduce SWEPATCHTEST, a test-generation benchmark
+    with 619 tasks from SWE-bench Pro, SWE-bench Multilingual, and DeepSWE and 82,579
+    candidate patches collected from coding-agent trajectories. By replaying each
+    suite on the buggy and patched codebases, \benchmark jointly measures issue reproduction,
+    acceptance of correct patches, and rejection of incorrect patches. Joint Validation
+    Rate (JVR), which requires all three criteria on the same task, exposes failures
+    hidden by single-reference evaluation: the best-performing configuration achieves
+    only 9.21% JVR despite reproducing the reference transition on 59.29% of tasks.
+    We further use validation scores to select and scale demonstrations for supervised
+    fine-tuning (SFT). The resulting training recipe approximately triples JVR and
+    improves downstream repair across three SWE-bench benchmarks. Patch discrimination
+    thus provides both a diagnostic measure of test quality and an execution-based
+    signal for curating agent training data.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.18004
+- short_name: OPRD
+  title: 'OPRD: On-Policy Reminder Distillation for Long-Horizon Coding Agents'
+  authors: Yuechen Luo, Zhiyi Lai, Miao Ziqi, Zihang Xu, Jingxuan Xu, Songwei Yu,
+    Wenqiang Zhu, Weihao Li, Junhao Fan, Haoyang Huang, Yanan Wu, Ken Deng
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.21496
+  month: 2026-10
+  abstract: Reliable repository-level coding requires agents not only to generate
+    correct code but also to preserve constraints and respond to tool feedback across
+    long interactions. However, our diagnostic analysis shows that agents often fail
+    to act on relevant information already available in context, while final Pass/Fail
+    outcomes provide only sparse process supervision. We introduce On-Policy Reminder
+    Distillation (OPRD), which combines Multi-Scope Reminder supervision with outcome-based
+    routing on reminder-free student rollouts. Successful rollouts provide autoregressive
+    self-imitation targets, whereas failed rollouts receive Reminder-conditioned reverse-KL
+    supervision from a teacher that re-evaluates the same student-generated prefixes.
+    A Global Reminder converts final-test diagnostics into trajectory-level guidance,
+    while Turn-local Reminders apply only to the next decision following the relevant
+    environment observation. The teacher and student share a two-stage initialization
+    from Coding SFT and Instruction-Following (IF) SFT. At inference, the student
+    operates without Reminders. On SWE-bench Verified, SWE-bench Pro, and SWE-bench
+    Multilingual, OPRD improves the benchmark-averaged task resolution rate by 11.3
+    points over the open-source Qwen3.5-4B base model. Under the same diagnostic protocol,
+    it reduces the aggregate error-event count from 446 to 222, a 50.2% reduction.
+  links:
+    arxiv: https://arxiv.org/abs/2610.21496
+- short_name: SWE-Ladder
+  title: 'SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged
+    Self-Distillation'
+  authors: Xudong Cai, Zhengxi Lu, Yuchen Yan, Jian Shao, Jun Xiao, Yueting Zhuang,
+    Yongliang Shen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.33667
+  month: 2026-10
+  abstract: 'Resolving a repository-level issue typically requires a software-engineering
+    (SWE) agent to localize the faulty code, reproduce the failure, and patch the
+    code. Reinforcement learning trains such agents from a single test result on the
+    final patch, while on-policy self-distillation (OPSD) adds token-level supervision
+    from a teacher with privileged evidence, exposing the full reference patch at
+    every step. Neither provides stage-specific guidance for localization or reproduction.
+    We propose SWE-Ladder, which turns the verified repair of each training instance
+    into stage-specific evidence: the changed files and lines for localization, the
+    fail-to-pass tests for reproduction, and the diff for patching. A rule-based router
+    assigns each step of an end-to-end rollout to a stage based on its tool call,
+    a frozen teacher sees only the matching evidence, and the stages are distilled
+    in repair order while GRPO optimizes the full trajectory. With Qwen3-4B-Instruct-2507
+    on SWE-bench Verified under the R2E-Gym scaffold, SWE-Ladder improves pass@1 from
+    9.6% to 16.4%, compared with 10.4% for GRPO and 12.4% for OPSD with the full patch.
+    Under the OpenHands scaffold, it improves pass@1 from 13.0% to 17.6%. Reversing
+    the stage order under R2E-Gym reduces pass@1 to 11.4%.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.33667
+- short_name: Teaching Agents to Code Reliably
+  title: Teaching Agents to Code Reliably
+  authors: Muhammad Ahmed Mohsin, Myeongsoo Kim, Kangrui Ruan, Shweta Garg, Varun
+    Kumar, Murali Krishna Ramanathan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.03984
+  month: 2026-10
+  abstract: Autonomous coding agents solve repository issues by reading code, running
+    commands, editing files, and submitting patches. Extra inference-time compute
+    yields gains only when it produces a useful repair and supplies reliable evidence
+    for choosing one. Three behaviors decide both, and we argue they are teachable
+    rather than byproducts of scale, so a policy can carry them instead of a scaffold.
+    Location diversity remains narrow, since attempts return to the same site and
+    extra samples add no coverage. Edit diversity is left unexploited, since methodologies
+    that differ resolve complementary issues no single run reaches. Verification misleads,
+    since a test the agent writes for its own patch accepts many incorrect ones. Directing
+    search by execution feedback and scoring each patch against its own reverted tree
+    resolves 52.8% of SWE-bench Verified using 48.1% of the agent-steps an eight-sample
+    baseline spends. Training moves these behaviors into the policy. On the 270 issues
+    held out from SFT and RL training, weighted supervised fine-tuning raises pass@1
+    from 31.9% to 35.2% and pass@8 from 46.7% to 51.1%. A reinforcement objective
+    then trains the verifier against gold-labeled repairs and incorrect variants,
+    crediting the assertions that detect them. It raises pass@1 to 43.0% and pass@8
+    to 60.7%, lifts verifier precision from 26.8% to 41.7%, and more than halves false
+    acceptance. Resolution improves on two of three out-of-distribution suites and
+    verifier precision on all three, and the gains hold at 7B, 14B, and 30B against
+    published coder baselines.
+  links:
+    arxiv: https://arxiv.org/abs/2610.03984
+- short_name: ColGREP
+  title: 'Small Agents with Semantic Search: Efficient Multilingual Code Localization'
+  authors: Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé
+    Seddah
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.05099
+  month: 2026-10
+  abstract: Locating relevant files from natural-language requests is a core subtask
+    for agents operating over code repositories. We investigate whether this task
+    can be delegated to compact, specialized models to enable on-device search while
+    reducing the token usage, latency, and inference cost of larger agents. We show
+    that semantic search improves file localization, with gains in accuracy, cross-language
+    transfer, and inference efficiency. To study this setting, we introduce a training
+    framework for file-localization agents built around ColGREP, a local semantic
+    search tool based on late-interaction retrieval models. Our recipe combines weighted
+    supervised fine-tuning on teacher trajectories, assigning turn-level credit based
+    on retrieval outcomes, with reinforcement learning on localization quality. We
+    train three model families with fewer than two billion parameters to formulate
+    search queries, inspect retrieved content, and identify relevant files. On localization
+    tasks derived from SWE-bench Lite and Multi-SWE-bench Flash, ColGREP-equipped
+    agents substantially improve over their base models and outperform corresponding
+    GREP-based agents. In addition to improving localization accuracy, ColGREP reduces
+    mean end-to-end trajectory latency by 44.1\% on CPU while using 29.1\% fewer tokens,
+    and enables better generalization to programming languages unseen during fine-tuning.
+    These results suggest that compact, tool-specialized localization agents can provide
+    an efficient interface between natural-language requests and large codebases.
+  links:
+    arxiv: https://arxiv.org/abs/2610.05099
+- short_name: Evo2
+  title: 'Evo2: Evolving the Evolver through Weight-Harness Co-Evolution'
+  authors: Chejian Xu, Shujian Zhang, Wenxuan Zhou, John Lambert, Beck Chen, Bo Li,
+    Andrew Hard, Rajiv Mathews
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.13025
+  month: 2026-10
+  abstract: 'Self-evolving agents are increasingly used to improve language model
+    systems without human intervention through either weight updates or harness improvements.
+    Existing approaches typically pursue these directions separately: some methods
+    update model weights using self-generated experience, while others rewrite the
+    harness that defines how an agent uses prompts, tools, context, and execution
+    feedback. However, these approaches overlook the relationship between model weights
+    and the agent harness. To connect these processes and ensure effective and smooth
+    agent self-evolving, we propose Evo$^2$, a framework for weight-harness co-evolution.
+    For harness updates, we design a unified dual-role pipeline that a single policy
+    serves as both a Proposer, which writes harness edits, and a Reflector, which
+    diagnoses their effects and guides revision. For weight updates, harness modifications
+    and their execution outcomes guide the training of both the Proposer and the Reflector.
+    We further develop EvoTIDE, a training pipeline that recovers usable trajectories
+    through edit extraction and prefix continuation, then combines SFT with interleaved
+    GRPO across the two roles. Extensive experiments across three coding benchmarks
+    demonstrate that Evo$^2$ significantly outperforms existing self-evolution methods.
+    It achieves 82.1% on Polyglot and 48.3% on SWE-bench Verified, compared with 62.6%
+    and 41.0% for the strongest baseline, respectively. We also show that the evolved
+    harnesses transfer to different tasks without further evolution and rank first
+    in cross-benchmark evaluations. Our dual-role harness improvement framework is
+    also able to extend to self-evolution with proprietary models, improving a GPT-5-mini
+    agent''s performance from 24.4% to 48.3%. These results demonstrate the applicability
+    of the framework Evo$^2$ across domains and its broad transferability across models
+    and tasks.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.13025
+- short_name: Software Engineering LLMs
+  title: 'Software Engineering LLMs: Why We Need Them and How Software Engineering
+    Helps Build Them'
+  authors: Amir M. Ebrahimi, Mohammed Mehedi Hasan, Seyed Shayan Daneshvar, Jiahuei
+    Lin, Gopi Krishnan Rajbahadur, Ahmed E. Hassan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.33851
+  month: 2026-10
+  abstract: 'Software engineering (SE) expertise can shape how coding large language
+    models (LLMs) are trained and which engineering capabilities they acquire. We
+    examine this role through an industrial case study of capability-focused training
+    for a 92B-parameter coding LLM serving more than 100,000 developers. We demonstrate
+    how established SE knowledge can guide the selection of engineering capabilities,
+    the construction of verifiable training data, and the evaluation of model improvements.
+    To target repository-level refactoring, we developed RefactorForge, a pipeline
+    that combines refactoring knowledge, established SE tools, and verification techniques
+    to construct training data. Across 306 Python repositories, RefactorForge generated
+    5,704 executable tasks and retained 4,572 verified teacher trajectories totaling
+    72.51 million tokens. Incremental supervised fine-tuning on these trajectories,
+    accounting for 0.46% of the preceding coding mixture''s tokens, improved RefactorBench
+    performance by 18.00 percentage points and SWE-Bench ProMax performance by 7.06
+    points. Under OpenCode, these improvements extended to SWE issue resolution, with
+    gains of 4.97 points on SWE-Bench Verified and 1.23 points on SWE-Bench Pro. Improvements
+    also persisted across other coding-agent harnesses, while greenfield repository
+    generation showed mixed results. We report lessons from constructing capability-focused
+    training data and evaluating its effects across engineering workloads. Building
+    on this industrial experience, we propose a research agenda for expanding SE''s
+    role in transforming coding LLMs into SE LLMs: incorporating SE knowledge into
+    model training, applying engineering methods to model development and maintenance,
+    and systematically defining the engineering capabilities these models should acquire.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.33851
+- short_name: 'Quality, Not Just Outcome: A Structural Scoring Framework for Selecting
+    Coding-Agent Trajectories for Supervised Fine-Tuning'
+  title: 'Quality, Not Just Outcome: A Structural Scoring Framework for Selecting
+    Coding-Agent Trajectories for Supervised Fine-Tuning'
+  authors: Sida Li, Yuanxin Liu, Shicheng Li, Linli Yao, Xu Sun, Haoli Bai, Xiaohui
+    Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.13152
+  month: 2026-10
+  abstract: 'Open coding agents are commonly trained through supervised fine-tuning
+    on interaction trajectories whose final patches pass the benchmark test suite.
+    However, this outcome-level filtering criterion ignores process quality: trajectories
+    that eventually succeed may still contain inefficient interaction patterns such
+    as repetitive file inspection, unstable tool usage, or delayed modification behavior,
+    all of which become part of the imitation target. We propose TQS (Trajectory Quality
+    Score), a structural scoring framework for coding-agent trajectories that operates
+    directly on trajectory structure, requires no LLM judge, and runs in linear time.
+    TQS characterizes trajectory quality through structural signals organized around
+    structured convergence: information focus, intent--action alignment, and policy
+    dynamics. Using 155,144 successful trajectories from a public open-license corpus,
+    we rank trajectories by TQS and fine-tune coding agents on filtered subsets. Models
+    trained on top-ranked trajectories consistently outperform those trained on random
+    or bottom-ranked subsets on SWE-Bench-Verified. Our results suggest that process-level
+    trajectory quality is an important factor in coding-agent supervision and that
+    structural trajectory filtering provides an effective and scalable alternative
+    to LLM-based data selection.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.13152
+- short_name: No One-Size-Fits-All
+  title: 'No One-Size-Fits-All: Adaptive Code Editing with Feature-Based Strategy
+    Selection'
+  authors: Jun Wan, Zhongxin Liu, Dajun Chen, Wei Jiang, Yong Li, Xiaoxue Ren
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.22881
+  month: 2026-10
+  abstract: 'Large language models have shown strong potential in automating code
+    editing (CE) tasks, yet most existing systems rely on a fixed CE strategy (i.e.,
+    one-step, search-replace, and plan-apply) across diverse scenarios. In practice,
+    CE tasks vary widely in code context, edit locality, and semantic complexity,
+    causing no single strategy to perform consistently well. Moreover, systematic
+    studies on the relationship between strategies and CE tasks remain scarce, limiting
+    further optimization of LLM-based code editing strategies. To address this gap,
+    we construct CEBench, comprising 500 real-world CE tasks curated from SWE-bench.
+    Then we compare three representative CE strategies (one-step, search-replace,
+    plan-apply). Our study reveals two key findings: (1) each strategy exhibits distinct
+    advantages for specific CE tasks, with no universal optimality; (2) strategy effectiveness
+    is significantly influenced by four core task features: total lines of code, modification
+    type, modification scope, and task type. Motivated by these findings, we propose
+    Ace, an adaptive code editing framework that dynamically selects optimal CE strategies
+    based on task features. Unlike classifier-based or instruction-prompting approaches,
+    Ace employs a fine-tuned LLM that learns feature-strategy mappings from empirical
+    data to recommend strategies with interpretable rationales. Extensive experiments
+    on our CEBench-verified show that Ace outperforms state-of-the-art baselines:
+    it boosts Pass@1 by 21.7% while reducing token consumption by 27.3% compared to
+    the best baseline (AutoCodeRover). Our strategy selector achieves 72.6% selection
+    accuracy with 69.9% rationale accuracy (Cohen''s Kappa = 0.807), providing transparent
+    and trustworthy decision-making for developers.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.22881
+- short_name: Priming Base Models for Agentic Post-Training
+  title: 'Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe'
+  authors: Soumye Singhal, Joseph Jennings, Ka Shun Shum, Alexander Bukharin, Khushi
+    Bhardwaj, Zirui Liu, Venkat Srinivasan, Jonathan Li, Yash Jain, Kezhi Kong, Markus
+    Kliegl, Olivier Delalleau, Sanjeev Satheesh, Mostofa Patwary
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.22019
+  month: 2026-10
+  abstract: Frontier models, general-purpose and domain-specific alike, now include
+    a midtraining stage between pretraining and post-training, but little has been
+    published about how this stage is built. We present an open midtraining recipe
+    that primes base models for agentic post-training, and we show its effectiveness
+    on two Nemotron models of different sizes. Pretraining typically runs at short
+    context and sees almost no agent interactions, while SFT data is mostly synthetic,
+    and very long SFT stages can hurt the model's later RL trainability. Our midtraining
+    stage sits between the two. It trains at 256K context for hundreds of billions
+    of tokens on a diverse mixture of natural software-engineering data like packed
+    repositories, pull requests, commit histories, and build logs together with a
+    small share of agentic traces. On Nemotron 3.5 Lightning, 500B midtraining tokens
+    improve SWE-bench Verified from 60.7 to 64.5, SWE-bench Multilingual from 55.8
+    to 62.8, and SWE-bench Pro from 32.0 to 35.5 after identical full SFT. On the
+    larger Nemotron 3.5 Super, 280B midtraining tokens improve DeepSWE, a harder benchmark
+    of long-horizon tasks, from 11.7 to 15.7 and SWE-bench Verified from 72.9 to 74.3
+    after identical full SFT. Midtraining also improves robustness across agent harnesses
+    on both models. We report the ablations behind the recipe and an evaluation protocol
+    built on short fixed SFT runs, since base-model proxy metrics did not correlate
+    reliably with post-training results.
+  links:
+    arxiv: https://arxiv.org/abs/2610.22019
+- short_name: Improving Large Language Models for Code through Runtime Program-State
+    Reasoning
+  title: Improving Large Language Models for Code through Runtime Program-State Reasoning
+  authors: Hongwei Li, Spandan Garg, Yufan Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.34359
+  month: 2026-09
+  abstract: Large language models receive limited explicit training in reasoning about
+    runtime program states. We study whether training models to reason about runtime
+    program states improves downstream software-engineering capabilities. We introduce
+    two complementary program-state reasoning tasks. Buggy input-output reasoning
+    requires a model to generate a concrete input that exposes a behavioral difference
+    between a buggy program and a hidden correct implementation and to predict the
+    resulting execution behavior. Precondition-postcondition reasoning requires an
+    agent to symbolically characterize a bug-triggering precondition, predict the
+    expected postcondition, explain their causal connection, and instantiate this
+    reasoning as an executable regression test. By incorporating these two tasks into
+    a staged post-training pipeline, we develop Comet-9B, a 9B language model based
+    on Qwen3.5-9B Base. We evaluate the resulting checkpoints on repository-level
+    patch generation, regression-test generation, and security PoC generation. Adding
+    both program-state reasoning tasks to supervised fine-tuning (SFT) on issue resolution
+    improves success rates by 7.25 percentage points on SWE-bench Pro and 9.70 points
+    on SWT-Bench Verified. Sequential reinforcement learning on the two tasks yields
+    further gains of 7.25, 26.79, and 4.67 percentage points on SWE-bench Pro, SWT-Bench
+    Verified, and CyberGym, respectively. Despite having only 9B parameters, Comet-9B
+    achieves a score comparable to the reported GPT-5.2 result on SWE-bench Pro and
+    matches the reported success rate of a GPT-4o-based agent on SWT-Bench Verified.
+  links:
+    arxiv: https://arxiv.org/abs/2609.34359
+- short_name: Opera
+  title: 'Opera: A Verbal Critic Framework for Long-horizon Coding Agents'
+  authors: Kai Mei, Zhiyuan Hu, Yutong Dai, Juntao Tan, Yifan Zhang, Dingjie Song,
+    Dimitris N. Metaxas, Silvio Savarese, Ran Xu, Zeyuan Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33987
+  month: 2026-09
+  abstract: 'Long-horizon coding agents need timely corrections, yet feedback can
+    be ineffective or even harmful when it misjudges ongoing work or fails to address
+    the underlying problem. Existing critics focus on evaluating trajectories and
+    generating feedback, but rarely track what happens after feedback is delivered.
+    We present Opera, a verbal critic framework that treats each correction as a persistent
+    note, followed until the diagnosed problem is resolved. Opera decides when to
+    review through periodic and event-driven triggers, diagnoses issues with typed
+    operators, audits feedback against visible evidence before delivery, and tracks
+    the agent''s subsequent actions to distinguish mere compliance from actual resolution.
+    As a test-time critic, Opera improves the resolve rate of non-critic agents by
+    up to 12.4, 15.0, and 8.9 percentage points on Terminal-Bench 2.1, a SWE-Bench
+    Pro subset, and DeepSWE v1.1, respectively, across four policy models, and achieves
+    the highest mean resolve rate among competitive critic baselines on all three
+    benchmarks, and also improves policy models when the policy critiques itself.
+    Beyond inference, Opera-guided rollouts provide approximately on-policy training
+    data: fine-tuning Qwen3.5-9B on them improves its resolve rate on held-out SWE-Bench
+    Pro repositories by 10.2 percentage points without a critic at inference time,
+    matching fine-tuning on rollouts from a stronger model, while preserving its performance
+    when switching harness, i.e., from Openhands to Terminus-2, which the latter substantially
+    degrades. Our code is available at: https://github.com/dongyuanjushi/Opera.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.33987
+    github: https://github.com/dongyuanjushi/Opera
 - short_name: SWE-Prime
   title: 'SWE-Prime: Fewer Trajectories, Better Performance'
   authors: Dewu Zheng, Ruizhe Ye, Yanlin Wang, Yang Ye, Hongyu Zhang, Ensheng Shi,
@@ -27,6 +524,22 @@
   links:
     arxiv: https://arxiv.org/abs/2606.16038
     huggingface: https://huggingface.co/collections/nvidia/open-swe-traces
+- short_name: Steer, Don't Solve
+  title: 'Steer, Don''t Solve: Training Small Critic Models for Large Code Agents'
+  authors: Shubham Gandhi, Yiqing Xie, Atharva Naik, Ruichen Zhu, Carolyn Rose
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.21811
+  month: 2026-06
+  abstract: This work trains separate 4B and 8B critic models to guide larger coding
+    agents during inference. The critics periodically review agent trajectories, identify
+    mistakes, and provide high-level planning advice without producing concrete actions.
+    Training uses supervised fine-tuning followed by direct preference optimization.
+    Experiments on SWE-bench Verified report improvements across six coding agents
+    and lower inference costs for some agents through shorter solution trajectories.
+  links:
+    arxiv: https://arxiv.org/abs/2606.21811
+    github: https://github.com/shubhamrgandhi/critic-training
+    huggingface: https://huggingface.co/code-critic-model
 - short_name: From Patches to Trajectories
   title: 'From Patches to Trajectories: Privileged Process Supervision for Software-Engineering
     Agents'

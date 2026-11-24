@@ -1,3 +1,177 @@
+- short_name: 'Delivered, Not Used: Evaluating Agent Memory at Its Point of Use'
+  title: 'Delivered, Not Used: Evaluating Agent Memory at Its Point of Use'
+  authors: Changran Xu, Zeju Li, Qiang Xu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.01718
+  month: 2026-11
+  abstract: 'Task success, retrieval quality, and cost do not show whether an LLM
+    agent used a delivered memory or what followed from that use. We introduce MemUse,
+    which evaluates memory at its point of use in recorded trajectories: each memory
+    delivery is compared with what the agent could already see and followed through
+    the agent''s later actions and their consequences. An agentic judge rates each
+    delivered entry''s relevance, accuracy, novelty, influence, and observed effect;
+    programmatic checks enforce complete reading of cited evidence, and fixed rules
+    aggregate the ratings into verdicts linked to memory histories and delivery cost.
+    On 8,000 SWE-bench Verified episodes from three memory systems, resolve rates
+    stay within 0.4 percentage points of a no-memory baseline, yet MemUse shows that
+    most delivered entries were irrelevant, most relevant entries went unused, and
+    in two systems most deliveries restated content the agent could still see. It
+    also surfaces effects that outcomes hide: 23.2\% of episodes with beneficial memory
+    use still failed, and 5 of 16 with harmful use still succeeded.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.01718
+- short_name: Chronos
+  title: Chronos Enables Code Agents to Reason over Software Evolution
+  authors: Xin Yin, Yiang Zhang, Zhiyuan Peng, Chao Ni, Zhe Cui, Xiaohua Xin
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.11578
+  month: 2026-10
+  abstract: 'Historical pull requests record the design decisions, compatibility constraints,
+    and implementation patterns behind a codebase''s current state. Experience relevant
+    to a new task can span related changes whose descriptions emphasize different
+    concerns. We introduce Chronos, a test-time framework that makes this connected
+    history available to large language model (LLM)-based code agents. Chronos distills
+    merged pull requests into structured experience cards and connects them through
+    a typed graph of code-level, developer-intent, and organizational relations. Semantic
+    search identifies entry cards, and weighted multi-hop expansion retrieves connected
+    changes for selective reading. The same memory guides candidate generation and
+    patch selection: a patch-focused change agent and a validation-strategy agent
+    each develop a patch, and an evolution steward consults history to select between
+    them. On SWE-Bench Verified, the full workflow improves SWE-Agent across all six
+    evaluated LLM backbones, raising the mean resolution rate from 69.2% to 72.9%
+    and reaching 79.8% with MiniMax M2.5. With the same backbone, it raises resolution
+    rates from 48.3% to 51.7% on SWE-Bench Pro and from 41.0% to 43.5% on FEA-Bench
+    Lite. Both experience-guided single-agent variants also outperform the base agent.
+    In a human evaluation on 100 tasks with ten cards retrieved per task, graph-grounded
+    retrieval increases the mean number of useful cards from 1.24 to 2.87 over flat
+    semantic retrieval. These results demonstrate the value of PR relations for retrieving
+    useful repository experience and of the evaluated workflows for applying that
+    experience during patch generation and selection.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.11578
+- short_name: LAGO
+  title: 'LAGO: Language Agents with Reusable Growing Options'
+  authors: Yuran Wu, Mengkang Hu, Qionglin Qiu, Fanqing Meng, Qiguang Chen, Yuhang
+    Zhou, Qiudan Zhang, Xu Wang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19843
+  month: 2026-10
+  abstract: 'Long-horizon tasks expose a weakness of monolithic tool-use loops: one
+    agent must decompose, execute, and verify a task within a single trajectory. We
+    introduce LAGO, which treats specialized language agents as reusable temporally
+    extended options. A meta-agent retrieves options from a persistent library or
+    spawns new ones, dispatches sub-tasks, verifies results, and admits successful
+    novel options. The library grows across tasks without updating model weights.
+    On 500 SWE-bench Verified tasks, frozen Qwen3.5-35B-A3B in both roles resolves
+    58.6% under single-attempt evaluation with the official Docker evaluator. On a
+    fixed 150-task subset, we re-run mini-SWE-agent, Terminus 2, and LAGO with the
+    same policy, temperature, task IDs, and evaluator; their resolve rates are 49.3%,
+    57.3%, and 60.3%, respectively. Cross-model experiments provide evidence consistent
+    with a role for decomposition quality. A 50-task component ablation finds four
+    fewer resolved tasks without decomposition, two fewer with shuffled reused content,
+    and six fewer without the library. These results support reusable agent-options
+    as a practical abstraction for task streams, while leaving component-level causality
+    task- and model-dependent.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.19843
+- short_name: CTXAgent
+  title: CTXAgent - Self-Controlled Context Management of LLM Agents
+  authors: Matthias Busch, Marius Tacke, Roland C. Aydin, Christian Feiler, Christian
+    J. Cyron
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.34425
+  month: 2026-10
+  abstract: 'Agent harnesses keep long sessions inside the context window by compacting
+    the history when a token threshold is crossed. We study an alternative in which
+    the model manages its own context: it decides when to compact, what to keep and
+    what to write as the hand-off, given two tools and one paragraph of guidance.
+    Since earlier work found that open-weight models cannot manage their own context
+    without scaffolding, we compare seven frontier models under identical conditions,
+    with and without the context tools, on token cost and benchmark score, and we
+    compare our harness with three widely used harnesses on two of these models. The
+    benchmark is assembled from existing ones: coding exercises, multi-step SciCode
+    problems and SWE-bench Pro and Terminal-Bench 4.0 tasks are interleaved with planted
+    facts, ephemeral observations and standing instructions, all checked deterministically,
+    in sessions of 35-212 turns that resemble a user working through different tasks
+    in one chat. Most of the strongest models manage their context: they compact and
+    curate regularly, the live context of the mixed sessions stays mostly below 100k
+    tokens, and their benchmark scores mostly do not drop significantly. For the models
+    that manage their context well, the cost reduction is substantial but varies between
+    models, because some models compact so often that other costs increase. With Claude
+    Opus 5.5, the self-managed harness matches Claude Code on task success at 34%
+    lower cost than its explicit 200k-window configuration and 49% lower than its
+    default, with no context window to choose. We release the agent, the benchmark
+    and all result rows.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.34425
+- short_name: RETRACE
+  title: 'RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair'
+  authors: Rabeya Khatun Muna, Muhammad Ahasanuzzaman, Nakhla Rafi, Yisen Xu, Jinqiu
+    Yang, Tse-Hsun Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.04658
+  month: 2026-10
+  abstract: 'Large language model (LLM) agents increasingly reuse prior experience,
+    but most approaches assume that problems and solutions are already aligned. Software
+    histories rarely provide this alignment: a pull request (PR) may contain multiple
+    continuous integration (CI) problems, failed attempts, reverted edits, and unrelated
+    changes, obscuring which changes resolve each problem. We present RETRACE, a framework
+    for reconstructing problem-level repair experience from such histories. RETRACE
+    combines an endpoint view that reasons backward from changes retained in the passing
+    revision with a development view that traces repair evolution forward through
+    commit history. CI execution evidence reconciles the two views, and the recovered
+    experience is represented at three abstraction levels, from concrete fixes to
+    transferable repair patterns. For new failures, RETRACE retrieves relevant problem-level
+    experience to guide repair. On CI-REPAIR-BENCH, comprising 565 PR-level repairs
+    from 101 repositories across 12 failure categories, RETRACE improves mini-SWE-agent
+    Pass@1 from 19.6% to 31.9% with MiniMax-M2.5 and from 23.3% to 32.8% with DeepSeek-V4-Flash.
+    On a matched subset, Codex improves from 15.5% to 27.5%. Combining both views
+    consistently outperforms either alone, showing that recovering problem-change
+    alignment enables historical CI repairs to serve as reusable repair experience.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.04658
+- short_name: XRepoSkill
+  title: 'XRepoSkill: Learning Transferable Skills for Software Engineering Agents'
+  authors: Yaoqi Guo, Haoyang Zhou, Jiayi Zhang, Yiran Zhang, Yang Liu, Qiuyuan Chen,
+    Qiang Lin, Hande Dong, Jie M. Zhang, Zhenpeng Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.36807
+  month: 2026-09
+  abstract: 'Software engineering agents increasingly use reusable skills distilled
+    from prior experience to resolve repository-level issues, yet such skills often
+    fail to transfer across repositories. A central challenge is that a behavior appearing
+    in a successful trajectory is not necessarily responsible for the successful outcome:
+    it may be genuinely useful, merely incidental, or simply a recurring habit of
+    the model. We introduce XRepoSkill, a trajectory-based approach for learning transferable
+    skills. We represent a skill as a collection of rules, each specifying what action
+    to take and when to take it during issue resolution. XRepoSkill first contrasts
+    successful and failed trajectories of the same agent on the same issue and derives
+    candidate rules from where their execution paths diverge. Each rule is paired
+    with an executable predicate that enables its prescribed behavior to be evaluated
+    systematically on other trajectories. A rule is verified based on its association
+    with successful issue resolution and retained only when its prescribed behavior
+    recurs across multiple repositories; repository-specific variants of the same
+    behavior are then consolidated into transferable rules. For a new issue, XRepoSkill
+    selects relevant rules to guide the agent. We learn skills from publicly released
+    trajectories on the official SWE-bench Verified leaderboard and evaluate them
+    on SWE-bench Pro and DeepSWE using three backbone LLMs from different vendors;
+    none of the evaluation repositories appears in the skill-learning trajectory pool.
+    Against three recent skill learning methods, XRepoSkill achieves the highest issue
+    resolution rate in all six benchmark--LLM combinations. In particular, on the
+    challenging long-horizon DeepSWE benchmark, XRepoSkill improves issue resolution
+    by 10.3 percentage points over the same agent without learned skills and by 5.0
+    points over the strongest skill-learning baseline.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.36807
+- short_name: SCLATE
+  title: 'SCLATE: a Substrate for Continual-Learning Agent Training and Evaluation'
+  authors: Youngmok Jung, Sirajul Salekin, Henry Tran, Javier Movellan, Zhao Huang,
+    Manjot Bilkhu
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.32391
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.32391
 - short_name: STAIR
   title: Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding
     Agents

@@ -1,3 +1,888 @@
+- short_name: 'Delivered, Not Used: Evaluating Agent Memory at Its Point of Use'
+  title: 'Delivered, Not Used: Evaluating Agent Memory at Its Point of Use'
+  authors: Changran Xu, Zeju Li, Qiang Xu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.01718
+  month: 2026-11
+  abstract: 'Task success, retrieval quality, and cost do not show whether an LLM
+    agent used a delivered memory or what followed from that use. We introduce MemUse,
+    which evaluates memory at its point of use in recorded trajectories: each memory
+    delivery is compared with what the agent could already see and followed through
+    the agent''s later actions and their consequences. An agentic judge rates each
+    delivered entry''s relevance, accuracy, novelty, influence, and observed effect;
+    programmatic checks enforce complete reading of cited evidence, and fixed rules
+    aggregate the ratings into verdicts linked to memory histories and delivery cost.
+    On 8,000 SWE-bench Verified episodes from three memory systems, resolve rates
+    stay within 0.4 percentage points of a no-memory baseline, yet MemUse shows that
+    most delivered entries were irrelevant, most relevant entries went unused, and
+    in two systems most deliveries restated content the agent could still see. It
+    also surfaces effects that outcomes hide: 23.2\% of episodes with beneficial memory
+    use still failed, and 5 of 16 with harmful use still succeeded.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.01718
+- short_name: How Should Agents See Code?
+  title: How Should Agents See Code? Rethinking Code Representations for Agentic Software
+    Engineering
+  authors: Melika Sepidband, Jiho Shin, Song Wang, Hadi Hemmati
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.07286
+  month: 2026-11
+  abstract: 'LLM agents are increasingly used for repository-level software engineering
+    tasks. However, most agents still access repositories through raw files, lexical
+    search, and shell commands, treating code primarily as text. This paper investigates
+    map-based code-representation workflows as a design variable in agentic software
+    engineering, examining how different repository views change agents'' retrieval
+    behavior, task success, token use, and latency. In this paper, we study five code-representation
+    workflows: abstract syntax trees, call graphs, module dependencies, documentation-enriched
+    search, and a hybrid workflow that combines them. Each workflow exposes a repository
+    map that the agent can query during a task. We evaluate Claude Code with Haiku
+    4.5 against a raw-tool baseline on four repository-level tasks: fault localization
+    with LinuxFLBench, repository-level code generation and repair with SWE-bench
+    Pro, test generation with SWT-bench, and security patching with SecBench. The
+    results show that representation workflows are most useful as token-saving tools
+    when localization is the bottleneck, while their success gains narrow when the
+    decisive step is patch or test authoring. On LinuxFLBench, all five workflows
+    improve recall@10 over the baseline (0.757-0.829 vs. 0.717) and reduce token usage
+    by 25-39%. On SWE-bench Pro, resolution remains close to the baseline (44.3-50.6%
+    vs. 49.0%) while token usage drops by 17-26%. On SecBench, Callgraph has the highest
+    patch-resolution rate in this sample (34.3% vs. 28.9%) and uses fewer tokens,
+    but all workflows increase latency. On SWT-bench, Hybrid and Docs have the highest
+    reproducing-test rates in this sample (47.8% and 47.2% vs. 44.7%), but all workflows
+    use more tokens and take longer. Overall, map-based workflows change both what
+    the agent inspects and how much it spends, but their benefits are task-dependent
+    rather than universal.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.07286
+- short_name: Beyond Leaderboard Ranks
+  title: 'Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget
+    Constraints'
+  authors: Srinath Srinivasan, Tim Menzies
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.21515
+  month: 2026-11
+  abstract: Teams that adopt LLM agents for issue resolution must decide which agent
+    to pay for, and how much to spend finding out. Leaderboard ranks give weak evidence
+    for this decision. Accuracy differences may be statistically unresolved, reported
+    costs may be inconsistent, and evaluating candidate agents can itself be expensive.
+    We investigate budget-constrained agent selection using 58,197 run--task records
+    extracted from the Holistic Agent Leaderboard (HAL), focusing on SWE-bench and
+    six additional benchmarks. Across seven benchmarks, 27 of 35 steps along the accuracy--cost
+    Pareto frontiers are statistically unresolved. On SWE-bench, a run costing $34.16
+    trails the $170.78 leader by 14.6 percentage points, but the available tasks cannot
+    statistically distinguish their accuracy. Reported costs also differ from standardized
+    token-based estimates by up to 11.7x, while selective task evaluation can bias
+    estimates of full-benchmark execution cost. We therefore compare evaluation strategies
+    under explicit evaluation budgets and deployment-cost caps. Under advance knowledge
+    of task costs, successive halving reaches our uncertainty-aware selection target
+    on SWE-bench using 6.6% of exhaustive evaluation spend, achieving the lowest cost
+    on six of seven benchmarks and tying on the seventh. Its advantage narrows when
+    task costs are unknown before execution or exact-best selection is required. Our
+    findings motivate decision-oriented agent evaluation that accounts for accuracy
+    uncertainty, validates execution costs, and compares complex selection methods
+    against simple adaptive allocation.
+  links:
+    arxiv: https://arxiv.org/abs/2611.21515
+- short_name: Hard Issue, Weak Model, or Bad Run?
+  title: Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding
+    Agents
+  authors: Xingyue Shi, Wesley K. G. Assunção
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.08285
+  month: 2026-11
+  abstract: 'Trajectory-based failure predictors for software engineering (SE) agents
+    read the partial trajectory of a run to flag whether it is going right or wrong.
+    If it is going wrong, the run can be stopped, retried, or switched to another
+    model. We ask whether these predictors learn anything about the run itself. On
+    public SWE-bench Verified trajectories, where each model attempts each issue once,
+    two run-independent factors dominate predictor performance. The first is issue
+    difficulty: a reference score that never looks at the run, only at how hard the
+    issue is for other models, reaches 0.92 AUROC, whereas trajectory predictors reach
+    about 0.62. The second is model ability: within an issue, knowing which model
+    ran predicts failure better than our predictors do, and the predictors largely
+    reproduce the overall ability ranking of the models. Beyond difficulty and ability,
+    what predictors gain from the trajectory is statistically equivalent to zero.
+    This confusion carries over to the actions taken after a prediction. Model switching
+    is often motivated by the gap between the best single model''s resolution rate
+    and an any-model oracle. This gap is no larger than random variation alone produces.
+    Per-issue switching gains nothing on held-out runs. In a repeated-run pilot, the
+    same model often solves an issue in some runs and fails it in others. Retrying
+    thus has real room to repair failures, but it rescues only failures caused by
+    a bad run, not those on an issue beyond the model''s ability. Current predictors
+    cannot tell the causes apart, as they mostly predict the issue and the model,
+    not the run. We call for failure prediction that explains why a run fails, evaluated
+    on repeated-run benchmarks and in closed-loop, equal-budget settings.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.08285
+- short_name: Pdb or Not to Be
+  title: 'Pdb or Not to Be: Comparing Debugging Interfaces With PassX@k'
+  authors: Ryan Magnuson, Ellie Kitanidis, Ariel Lee
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.08666
+  month: 2026-11
+  abstract: Interactive debuggers are indispensable to human software development,
+    yet coding agents overwhelmingly rely on edit-execute-observe loops, using common
+    bash tools, test scripts, and print statements to debug via repeated shell commands.
+    Stepping through a debugger provides live access to runtime state, which may enable
+    different problem-solving capabilities. However, prior work typically introduces
+    the debugger as an additional tool or through a new subagent, making its individual
+    contribution difficult to isolate from the associated scaffold changes. To address
+    this, we compare a debugger-only agent against a bash-only agent on all 500 SWE-bench
+    Verified instances, holding the rest of the scaffold fixed. We evaluate both architectures
+    on two models, GPT-OSS-120B and Nemotron-3-Ultra-550B, with three independent
+    runs per architecture $\times$ model configuration. Crucially, to distinguish
+    interface specialization from expanded coverage under repeated sampling, we introduce
+    pass$_X$@$k$, a cross-agent pass@$k$ that provides an unbiased estimator of the
+    probability that at least one of $k$ agents is successful. Although the bash and
+    debugger agents solve partially disjoint subsets of the benchmark in any single
+    pair of runs, our pass$_X$@$2$ estimator reveals that this is largely due to run-to-run
+    variance rather than tool complementarity. Across both models, we find that two
+    bash rollouts outperform the combination of one bash and one debugger rollout.
+    Our findings highlight the importance of accounting for stochastic variance in
+    evaluating agent and tool diversity, and we hope that pass$_X$@$k$ will serve
+    as a useful framework for the community.
+  links:
+    arxiv: https://arxiv.org/abs/2611.08666
+- short_name: Context Has a Price
+  title: 'Context Has a Price: Adding and Removing Context for LLM Coding Agents under
+    Prefix Caching'
+  authors: Zerui Yang, Miaomiao Dong, Quan Xue, Chaorui Zhang, Xuanyu Zheng, Xiyuan
+    Wang, Haolin Ruan, Xueyan Niu, Guangcheng Song, Weixi Zhang, Wei Han, Bo Bai
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.22238
+  month: 2026-11
+  abstract: 'Coding agents repeatedly send their conversation history to a language
+    model. Adding useful code may reduce search, while removing old tool outputs may
+    shorten later prompts. But do these changes reduce the cost of solving a task?
+    We study this as a measurement problem in more than 20,000 runs of open models
+    on SWE-bench Verified, SWE-bench and Loc-Bench. We account separately for uncached
+    input, cached input and output tokens. Three findings emerge. First, in our main
+    evidence-package experiments, retrieved code reduces read and search commands
+    by 18--34%, but increases cost by 33--42% when cached input costs one tenth of
+    uncached input, without a measurable improvement in resolution. Second, removing
+    old observations can either save money or increase cost: the same approach saves
+    19--36% without a cache discount but increases cost by 38--116% with a tenth-price
+    cache. Third, shorter prompts do not guarantee cheaper runs because agents may
+    respond by taking more steps. We also find that concurrent experiments can share
+    cached prefixes and distort cost comparisons. These results show why context-management
+    methods should be evaluated using both token prices and the agent''s subsequent
+    behavior.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.22238
+- short_name: Done, But Still Working
+  title: 'Done, But Still Working: Anytime Evaluation of When Coding Agents Should
+    Stop'
+  authors: Zerui Yang, Quan Xue, Miaomiao Dong, Chaorui Zhang, Xuanyu Zheng, Xiyuan
+    Wang, Haolin Ruan, Xueyan Niu, Guangcheng Song, Weixi Zhang, Wei Han, Bo Bai
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.22901
+  month: 2026-11
+  abstract: 'Coding agents often continue working after their own tests pass. Does
+    this additional work improve the patch, and how much could be saved by stopping
+    earlier? We study these questions through anytime evaluation: replaying recorded
+    runs, scoring intermediate patches with hidden tests, and measuring the cost incurred
+    at each step. For policies that only stop a run or select an earlier patch, this
+    allows paired comparisons without generating new trajectories, provided replay
+    preserves the relevant states. Across about 6,000 runs of eight open models in
+    two scaffolds on SWE-bench Verified, we find substantial differences in the value
+    of continued work. The hindsight saving available at passing self-tests ranges
+    from under 1% to 57%, depending on the model and scaffold. A rule that stops after
+    the same patch passes twice saves 23% in a preregistered replication, but the
+    preregistered quality test does not establish non-inferiority. We explain these
+    differences by measuring how often a rule fires, how often the patch changes afterwards,
+    and whether those changes repair or break it. Fine-tuning agents to imitate the
+    rule saves 30% over six seeds, while quality preservation remains uncertain. Our
+    results help identify both the opportunities and the risks of early stopping.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.22901
+- short_name: Continual Harness Evolution
+  title: Can Coding Agents Sustain Continual Evolution without Forgetting?
+  authors: Shangziqi Zhao, Yitong Zhang, Jia Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.03219
+  month: 2026-11
+  abstract: Studies two harness evolution methods across six task-transition directions.
+    Reports substantial forgetting of previously learned software-engineering tasks,
+    including SWE-bench, after later evolution.
+  links:
+    arxiv: https://arxiv.org/abs/2611.03219
+- short_name: ToolPulse
+  title: 'Beyond Clumsy Agentic Tool Calling: How Cueing and Spotting Make the Difference'
+  authors: Xindi Yang, Yan Liu, Jiajun Sun
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.19275
+  month: 2026-11
+  abstract: 'LLM-based task-oriented agents depend on tools to interact with their
+    environments, but may overlook execution feedback, repeat ineffective calls, or
+    persist with unproductive strategies. These behaviors can hinder agents'' ability
+    to use tools autonomously and sustain task progress. We characterize tool-use
+    symptoms at two temporal granularities: local clumsy tool-use behaviors and tool-use
+    detours spanning multiple interactions. Towards greater autonomy in tool use,
+    we present ToolPulse, an online middleware supporting autonomous tool use through
+    cueing and spotting. ToolPulse tracks execution state and temporal interaction
+    patterns, monitoring proposed calls before dispatch and inspecting execution feedback
+    prior to the agent resumes reasoning. It combines state-based rules, semantic
+    sequence analysis, and interaction-feature similarity to identify intervention
+    opportunities and provide verbal reminders, structured feedback, or context-specific
+    advice from auxiliary models. Our process-oriented evaluation distinguishes trigger
+    validity, behavioral cessation, and substantive correction alongside task outcomes
+    and resource costs. Using SWE-agent with three backbone models, we evaluate 1,350
+    trajectories on 90 Python, C++, and Java bug-fix tasks, comparing unassisted execution
+    with four assistance strategies. Substantive responses follow 61.6-90.9% of valid
+    triggers for tool-use detours. Concise reminders achieve the highest observed
+    aggregate substantive-response rate; more elaborate assistance offers symptom-dependent
+    benefits and can be less effective. Aggregate repair outcomes remain close to
+    baseline, with token savings in selected settings. These findings support proactive
+    runtime assistance for autonomous tool use. The gap between behavioral adjustment
+    and aggregate repair gains calls for careful decisions on intervention timing
+    and assistance strategy in autonomous agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.19275
+- short_name: LGISPW
+  title: Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)
+  authors: Allen G. Roush, Minh Nhat Nguyen, Ravid Shwartz-Ziv, Judah Goldfeder, Sanjay
+    Basu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.22148
+  month: 2026-11
+  abstract: Open-weight language models are widely observed to get worse the longer
+    they generate. Often, attempts to fix this involve more training. At high temperature,
+    The sampler, i.e. the rule that picks the next token out of the model's probabilities,
+    decides whether long and agentic generation survives and/or thrives. We test 29
+    open-weight models from 1B to 122B parameters on ten established benchmarks plus
+    needle retrieval out to one million tokens, covering SWE-bench Verified coding
+    agents, long chain-of-thought reasoning, long-form writing, long structured output
+    and long-context reading. Samplers that keep their pool of candidate tokens small
+    and steady as temperature rises don't lose accuracy. Samplers that let in low-probability
+    tokens fall apart. At temperature 2, coding agents running top-p, top-k or Top-H
+    resolve 0 of 100 GitHub issues, while the same agents running top-nsigma resolve
+    46 to 62 and win every issue the two samplers disagree on, on three Qwen3.5 models.
+    Over all benchmarks top-nsigma keeps a median 100% of its temperature-1 score
+    where top-p keeps 26%. Counting how many tokens each sampler lets through explains
+    why. In one Llama-3.1-8B story, going from temperature 1 to 2 grows top-p's pool
+    from 4 tokens to 51,845 while top-nsigma stays at 3. Across 133 combinations of
+    sampler setting and temperature, the typical pool size predicts judged quality
+    (Spearman correlation of -0.77), and when we pick the pool at temperature 1 and
+    only apply temperature afterwards, Top-H, min-p and p-less stop collapsing. At
+    the default temperature of 1 most samplers perform about the same, We release
+    all code and data to the public.
+  links:
+    arxiv: https://arxiv.org/abs/2611.22148
+- short_name: Termination Lag
+  title: 'Termination Lag: Coding Agents Solve Early but Stop Late'
+  authors: Musa Cim, Burak Topcu, Mahmut Taylan Kandemir
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.14960
+  month: 2026-11
+  abstract: Coding agents can solve a task well before they stop working on it. We
+    characterize \emph{termination lag}--the number of steps between an agent's first
+    correct patch and the end of its run--across five models, two agent frameworks,
+    and three SWE-bench datasets by recording and testing every distinct repository
+    patch generated during execution. Our analysis reveals that 38--82% of successful
+    runs achieve a correct solution on their initial source-code edit. However, agents
+    continue to expend substantial effort after correct patches, with post-solution
+    steps accounting for a median of 35--37% for Qwen3-Coder and 54--60% for Laguna-XS.2
+    in successful runs on SWE-bench Verified and Multilingual. Agents spend most of
+    these additional steps verifying their work and exploring the repository. In a
+    small fraction of cases (1--8%), this continued activity leads agents to undo
+    their earlier correct patch, leaving the final solution incorrect.
+  links:
+    arxiv: https://arxiv.org/abs/2611.14960
+- short_name: Not All Correct Fixes Run Alike
+  title: 'Not All Correct Fixes Run Alike: An Empirical Study of Patch Performance
+    in Repository-Level Issue Resolution'
+  authors: Han Peng, Xing Hu, Feifei Niu, Huan Li, Xin Xia
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.13563
+  month: 2026-10
+  abstract: 'Repository-level issue-resolution benchmarks such as SWE-bench evaluate
+    submitted patches primarily based on whether they pass the correctness tests,
+    leaving the runtime performance of different test-passing patches largely unexplored.
+    Evaluating patch performance is essential but challenging since designing performance
+    workloads for each benchmark instance is costly. However, these benchmarks already
+    provide a natural candidate: the built-in \emph{FAIL\_TO\_PASS} (F2P) tests, which
+    exercise the behavior affected by the issue fix. We therefore investigate whether
+    the provided F2P tests can be repurposed to evaluate patch performance. Overall,
+    we choose four frontier models, Claude Opus~5, GPT~5.6, DeepSeek V4 Pro, and Qwen~3.8
+    Max, paired with SWE-agent to resolve the pre-filtered measurable corpus from
+    verified splits of SWE-bench and SWE-bench-Live, yielding 262 cases with at least
+    two different correct solutions, including the developer ground-truth patch. We
+    then measure each solution''s runtime performance in instruction count and wall-clock
+    time on the native F2P test, and use Welch ANOVA instead of the RSD proposed in
+    prior work as a more robust statistical discrimination criterion. We find that
+    this methodology exhibits notable discrimination capability in runtime performance
+    and identifies performance differences among patches in almost half of the instances.
+    Our empirical study shows that the runtime performance of generated patches is
+    independent of the issue resolution rate of LLMs, with nearly reversed model rankings.
+    The case study also shows that the performance analysis reveals architectural
+    regression in some patches that the correctness evaluation overlooked. These findings
+    suggest that resolution rate does not adequately characterize LLMs'' capability
+    for repository-level issue resolution, motivating future evaluations to consider
+    patch performance alongside it.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.13563
+- short_name: From Finding to Fixing
+  title: 'From Finding to Fixing: How Useful is Fault Localization for Agentic Program
+    Repair?'
+  authors: Xinyu Shi, Zhou Yang, An Ran Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.25826
+  month: 2026-10
+  abstract: Fault localization (FL) aims to identify code locations responsible for
+    software failures and is commonly evaluated by how accurately it ranks known fault
+    locations. Large language model (LLM) agents are changing program repair and are
+    increasingly used to search and reason over repositories. Although recent LLM-based
+    FL methods have improved localization accuracy, their impact on agentic repair
+    remains unclear. To address this gap, we conduct a systematic empirical study
+    of FL in agentic repair. We evaluate six recent FL methods on SWE-bench Verified
+    and Defects4J with three LLMs under a common repair framework and analyze 16,248
+    repair trajectories. We also examine gold locations and bug-cause descriptions
+    as forms of FL guidance across different repair contexts. The studied FL methods
+    do not consistently improve repair success, and higher localization accuracy does
+    not consistently lead to larger repair gains. Yet FL guides agents' early search
+    and helps them reach relevant code sooner. Accurate locations can reduce repair
+    token use by up to 39.2\%, but current FL methods often consume more tokens than
+    they save during repair. Experiments with gold guidance suggest that FL has greater
+    potential when bug inputs contain fewer location clues. Providing bug causes can
+    further improve repair success beyond locations alone. We also find that ground
+    truth from a single reference patch does not fully capture the locations used
+    by successful repairs. These findings help clarify the value of FL in agentic
+    repair and inform future work on its design and evaluation.
+  links:
+    arxiv: https://arxiv.org/abs/2610.25826
+- short_name: From Faulty Claims to Incorrect Patches
+  title: 'From Faulty Claims to Incorrect Patches: An Empirical Study of Task-Grounded
+    Reasoning in Coding Agents'
+  authors: You Wang, Jinjun Huang, Zhonghao Jiang, Jialun Cao, Jiachi Chen, Zhongxin
+    Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.32338
+  month: 2026-10
+  abstract: Large language model (LLM)-based coding agents increasingly resolve real-world
+    software engineering tasks, yet still fail on many of them. Prior trajectory studies
+    characterize these failures through task-agnostic patterns of agent behavior,
+    such as repeated actions. However, an agent may follow a sound workflow yet act
+    on a faulty understanding of the existing code, the task requirements, or a candidate
+    fix. Reasoning models, which power most state-of-the-art coding agents, reveal
+    this understanding in their native chain-of-thought (CoT), whose claims about
+    the task can be checked against the facts. Yet it remains unclear how many such
+    checkable claims the CoT contains, how many are faulty, and whether faulty claims
+    actually cause incorrect patches. We present the first empirical study of such
+    claims, which we term task-grounded reasoning, analyzing 400 trajectories of four
+    open-weight reasoning models on SWE-bench Pro. We extract atomic claims from the
+    CoT with an LLM, assess them against evidence gathered by an LLM agent, and manually
+    trace the defects of incorrect patches back to faulty claims, confirming each
+    link with a claim-corrected replay. Task-grounded reasoning covers only 18.5%
+    of the CoT tokens, yet yields 191 atomic claims per trajectory, at least 9.6%
+    of which are faulty. Faulty claims also occur in 96.7% of the resolved trajectories,
+    so their mere presence is a weak signal of failure. Yet two thirds of the 188
+    incorrect patches trace back to faulty claims. Correcting such a claim makes the
+    agent fix the linked defect in 89.0% of the cases, and correcting all such claims
+    resolves 11.7% of the failed tasks. Our findings show that the CoT carries task-specific
+    signals for diagnosing and repairing agent failures, but exploiting them requires
+    pinpointing the few faulty claims that actually cause patch defects.
+  links:
+    arxiv: https://arxiv.org/abs/2610.32338
+- short_name: What Does a Harness Buy?
+  title: What Does a Harness Buy? Tokens, Mostly
+  authors: Yangze Liu, Zhongyi Han
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.04433
+  month: 2026-10
+  abstract: 'A coding agent is a language model inside a harness: the system prompt,
+    the tools, and the context management that let a chat model work in a repository.
+    Most of the engineering on these agents goes into the harness, and vendors and
+    leaderboards credit it with score gains. Earlier studies have fixed the model
+    and swapped the harness, but have not measured whether the swap changes the pass
+    rate more than running the same harness again. We run seven models through three
+    production harnesses, Claude Code, mini-SWE-agent, and OpenCode, on SWE-bench
+    Verified and two benchmarks of other kinds, and rerun them unchanged. No harness
+    leads consistently across models. Where the data can bound the difference between
+    two harnesses, the bound is 2 to 5 points, and a harness swap changes about as
+    many task outcomes as a rerun. The exceptions are harness effects in particular
+    pairings of model and harness, whose direction changes with the model: OpenCode
+    trails by 8 to 9 points on one model and leads by 14 on another. Cost differences
+    between harnesses also depend on the model, from under 10% to 3 to 4 times. Which
+    harness is better therefore has no answer apart from the model, and a harness
+    difference should be reported next to a rerun.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.04433
+- short_name: Pairing Matters
+  title: 'Pairing Matters: Performance, Failures, and Efficiency in Lightweight Coding
+    Agents'
+  authors: Lu Zhao, Christopher M. Poskitt, David Lo
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.32131
+  month: 2026-10
+  abstract: 'Self-hosting coding agents is often necessary for software-engineering
+    teams that must keep proprietary code and development traces within controlled
+    infrastructure. Lightweight, open-weight models make such deployment more feasible
+    by reducing hardware requirements, while strong results on repository-level benchmarks
+    demonstrate their potential for demanding coding tasks. Deploying these models
+    as coding agents requires pairing them with an agent harness, making their joint
+    performance a key deployment consideration. Yet existing leaderboards primarily
+    report fixed harness-model configurations rather than controlled comparisons across
+    alternative pairings. To address this gap, we investigate harness-model interactions
+    through a controlled full-factorial evaluation of six open-source harnesses and
+    three lightweight coding models across 100 SWE-bench Verified tasks, producing
+    1,800 graded runs under common serving, metering, and grading conditions. For
+    the same model, resolution rates differ by up to 44 percentage points across harnesses,
+    while harness rankings change across models. We apply an evidence-based failure
+    taxonomy to 1,100 unsuccessful runs and find substantial differences in failure
+    patterns across harness-model pairings. A model''s dominant failure modes under
+    one harness need not dominate under another. Efficiency is similarly dependent
+    on the pairing: even among model-directed loop harnesses, charged tokens per resolved
+    task vary by more than 20-fold. These findings make harness-model selection a
+    central deployment decision for lightweight coding agents. Strong performance
+    with one harness or model does not guarantee similar results with another. We
+    translate these findings into practitioner guidance for pairing selection, token-efficiency
+    assessment, and trajectory-informed harness engineering, and release the complete
+    experimental records and analysis artifacts.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.32131
+- short_name: The Hidden Costs of Forgetting
+  title: 'The Hidden Costs of Forgetting: A Study of Trajectory Deletion in Software
+    Engineering Agents'
+  authors: Fernando Vallecillos-Ruiz, Islem Bouzenia, Michael Pradel, Leon Moonen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.35496
+  month: 2026-10
+  abstract: 'Software engineering agents resend their entire trajectory to an LLM
+    at every turn, motivating online trajectory reduction. Prior work shows that randomly
+    deleting 75% of tokens in old turns may preserve agent effectiveness, but it remains
+    unclear why, how agents compensate for missing content, and whether it actually
+    reduces costs. This paper presents an empirical study of 42 trajectory-reduction
+    configurations, focusing on effectiveness, agent behavior, and cost. We systematically
+    explore deleting content from old turns by varying the scope, granularity, amount,
+    and timing of deletion across 9,400 runs with two state-of-the-art agents on SWE-bench
+    Verified. We find deleting large amounts of trajectory content (e.g., up to 100%
+    of reasoning text) can preserve overall effectiveness. Importantly, such deletion
+    must be applied with a delay, as immediate deletion tends to significantly degrade
+    effectiveness. Agents often compensate for deleted content by re-fetching it,
+    increasing both the number of turns taken and the input/output tokens. Whether
+    trajectory reduction reduces costs depends on the pricing model: Under a flat
+    pricing model, estimated costs fall in 26 of 42 evaluations. Surprisingly, under
+    a caching-aware pricing model, zero evaluations yield lower costs, since reducing
+    the trajectory breaks the cached prefix billed at a lower rate. Our findings have
+    three implications: First, token counts alone are misleading; trajectory reduction
+    techniques must consider overall costs under a realistic pricing model. Second,
+    analyzing trajectories is crucial to understand agent behavior, as end-to-end
+    effectiveness hides differences such as excessive re-fetching. Finally, these
+    results highlight the need for future work on memory management to reduce costs
+    without sacrificing effectiveness.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.35496
+- short_name: How Much Do Structural Tools Help Small Coding Agents?
+  title: How Much Do Structural Tools Help Small Coding Agents? A Pre-Registered Scale
+    Study of Code Localization
+  authors: Saurav Bellam
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.33958
+  month: 2026-10
+  abstract: 'Code-graph and embedding tools are routinely added to LLM coding agents
+    on the premise that they supply repository structure the model lacks. We report
+    a pre-registered study of how much such tools help off-the-shelf agents localize
+    the code an issue requires changing and how the benefit varies with model size.
+    Nine open-weight models (Qwen3 0.6B to 32B, Gemma 4 E2B to 12B) run one fixed
+    localization harness on 500 held-out SWE-bench tasks under four tool sets (grep
+    only; plus embedding search; plus code-graph tools; both) and a placebo arm whose
+    structural tools return random entities, with five sampled seeds per condition:
+    170,500 episodes under hypotheses, tests and claim criteria frozen before the
+    runs. The tools raise canonical function Acc@10 by +0.06 to +0.10 for the Qwen3
+    models up to 14B and the two small Gemma 4 models, by +0.03 at 32B (a near miss
+    after correction), and not at all for Gemma 4 12B, which rarely submits; the gain
+    is larger for small models than for the largest model in both families. The placebo
+    shows that the gain is caused by what the tools return rather than by having them,
+    and that random tool output harms two small models. The pre-registered claim that
+    a 4B model with tools matches a 32B model without them fails. Secondary analyses
+    show that the embedding index, not the code graph, carries the gain; that the
+    gain replicates on tasks created after every model''s release and survives a shell
+    harness, thinking mode, FP8 serving and a file-level metric that output formatting
+    cannot inflate; and that it is mostly exposure: the tools show the gold code more
+    often. Injecting the gold code directly explains the size trend. A 32B model already
+    finds the code without the tools, so they add little exposure, while small models
+    act on a shown answer less often (conversion 0.09, 0.24 and 0.40 at 1.7B, 4B and
+    32B). We release registration, code, episodes and analyses.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.33958
+- short_name: Executable Prefix Values
+  title: Executable Prefix Values for Locating Agent Failures
+  authors: Bingyu Shen, Jiaqi Tang, Lan Wei, Yi Sheng, J. Jenny Li, Boyang Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.17633
+  month: 2026-10
+  abstract: 'Work on debugging LLM agents treats the "first mistake" marked by a human
+    or LLM judge as ground truth for where a trajectory failed. We ask whether such
+    labels point at causes or symptoms, and make the distinction executable: we restart
+    the agent from reconstructed intermediate states of a failed trajectory and estimate
+    its prefix value V(h_t), the probability of success from each step, with a certified
+    point of no return (PNR) for a failure. On 150 SWE-bench Verified tasks with two
+    frozen open-weight agents, we build such curves for 47 and 60 failed trajectories
+    and probe every step labeled by four frontier judges under the Traverse rubric.
+    We find that the labels do not mark what a controller needs. Judges of different
+    lineages agree on the exact step in only 21/57 cases, and the newest judges flag
+    mistakes in 8/10 and 10/10 successful runs. For 66% of the labels, the agent''s
+    success probability does not drop at the labeled step; only 7/188 answers name
+    the decisive step. Restarting at the measured restart point raises expected success
+    from 0.44 to 0.57 offline, and real restarts confirm the advantage, whereas restarting
+    at a judge''s label does not (-0.08 to -0.03). We release our code, curves, and
+    labels.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.17633
+- short_name: How Do Coding-Agent Harnesses Self-Evolve?
+  title: How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective
+    Adaptation
+  authors: Christoph Treude, Sebastian Baltes
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.34938
+  month: 2026-10
+  abstract: 'Coding agents can adapt their harnesses, the software, configuration,
+    and instructions used to run them, based on experience from earlier tasks, but
+    whether these adaptations improve their behavior on later tasks remains unclear.
+    We study \retro, a skill that asks an agent to review a completed session and
+    propose harness changes, and ask what changes it proposes and whether implemented
+    changes reduce repeated work on later tasks. We ran Claude Code on 30 SWE-bench
+    Verified issues, qualitatively coded the 125 proposals from \retro, implemented
+    24, and evaluated 12 harness changes on later issues from the same repositories
+    in fresh sessions with and without each change. Most proposals referred to an
+    event in the session, but 18 of 43 lint-related proposals recommended a practice
+    regardless of what had happened. Among the seven evaluations in which sessions
+    without the change encountered the targeted problem, two changes eliminated the
+    targeted action, one reduced its occurrence, four showed no reduction, and some
+    changes added work on unrelated issues. Harness self-evolution requires more than
+    generating and implementing changes: it needs ways to establish whether a change
+    helps on later tasks and to revise or remove changes that do not.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.34938
+- short_name: Before They Can Solve
+  title: 'Before They Can Solve: Predicting Post-Training Coding-Agent Performance
+    from Base Models'
+  authors: Tan Yu, Alexander Bukharin, Khushi Bhardwaj, Jennifer Williams, Zirui Liu,
+    Jonathan Lingjie Li, Soumye Singhal, Joseph Jennings, Sanjeev Satheesh, Yash Jain,
+    Ashish Vaswani, Venkat Krishna Srinivasan, Matthew Papakipos, Hyunwoo Kim, Jian
+    Zhang, Oleksii Kuchaiev, Markus Kliegl, Mostofa Patwary, Mohammad Shoeybi, Bryan
+    Catanzaro, Jonathan Cohen, Jiantao Jiao
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.10478
+  month: 2026-10
+  abstract: 'How can we predict which base checkpoint is worth an expensive round
+    of agentic post-training? End-to-end pass@$K$ tests whether successful behavior
+    already appears in a base model''s distribution, but it is a poor fit for agentic
+    coding: many base checkpoints cannot reliably produce the well-formed tool invocation
+    required to complete a task end-to-end. Single-shot or short-horizon tasks avoid
+    these tool-calling failures by collapsing a multi-step interaction into a fixed
+    prompt and a single patch, but they sidestep the core capability we care about:
+    maintaining coherent state over many tool-using steps as the repository evolves.
+    To bridge this gap, we treat successful post-trained agent trajectories as a lookahead
+    signal of base-model potential. Replaying each trajectory and rerunning tests
+    after every code-changing step identifies the decisive step: the first step whose
+    cumulative patch flips the repository from failing to passing, certifying that
+    the recorded action solves the task given the prior context. Motivated by a coverage
+    principle for agentic traces, we build three screens at this step that do not
+    require a base checkpoint to drive the harness from a cold start: (i) Decisive-Action
+    BPB (bits per byte) measures the probability mass on the certified action, (ii)
+    Patch MCQ tests the checkpoint''s choice between that action and alternatives
+    rejected by the same verifier, and (iii) prefix-conditioned pass@$K$ evaluates
+    support for functionally-correct generations and credits any continuation that
+    the tests accept. Across ten pairs of public base and post-trained models, all
+    three screens rank the cohort in close agreement with post-trained SWE-bench Verified
+    pass@$1$. As our methods need only a benchmark''s successful trajectories and
+    its verifier, they can be applied to turn future agentic coding benchmarks into
+    base-model evaluations.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.10478
+- short_name: Monitor Accuracy Isn't the Answer
+  title: 'Monitor Accuracy Isn''t the Answer: A Decision-Value Framework for Evaluating
+    AI Agent Restart Monitors'
+  authors: Siddharth Jain, Venkat N. Vedam
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.36544
+  month: 2026-10
+  abstract: Classification accuracy and true-positive and false-positive rates alone
+    do not determine whether restarting an AI agent improves success. Using an exact
+    alarm-to-action identity for an independent clean restart with zero monitoring
+    overhead, we show analytically that a monitor with fixed 90% accuracy can swing
+    from a five-percentage-point loss to a 35-point gain in success rate, depending
+    solely on the replacement attempt's residual-budget success probability. We introduce
+    two techniques for evaluating monitors and progress signals in decision terms.
+    First, a decision-sufficiency criterion, a binary-action specialization of Blackwell's
+    comparison of experiments, identifies which progress representations or context
+    compressions preserve the information needed to choose optimally between the specified
+    actions, independent of trace reconstruction fidelity. Second, a finite-sample,
+    model-free decision audit uses simultaneous binomial intervals over existing agent
+    traces, without additional model calls, to certify a preference for "restart"
+    or "continue" under stated sampling assumptions, or return "abstain" when evidence
+    is insufficient. In a study of 194 externally evaluated model executions on 19
+    selected SymPy issues from SWE-bench Verified, with a retrospective audit of 130
+    of these traces, we find a 2.29-point apparent restart gain traced to a single
+    surviving failed attempt, a 42.29-point loss on a second model, no positive replication
+    of the initial gain on prospective task cohorts, and zero of 103 live comparisons
+    meeting the specified certification bar. These results motivate evaluating agent
+    monitors through recovery opportunity, decision value, and statistical support,
+    rather than classification performance alone.
+  links:
+    arxiv: https://arxiv.org/abs/2610.36544
+- short_name: DeskCheck
+  title: Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution
+  authors: Changshu Liu, Ji young Kim, Alireza Ghazanfari, Saanvi Nallu, Reyhaneh
+    Jabbarvand
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.23782
+  month: 2026-10
+  abstract: 'Reasoning is central to ReAct-based programming agents, yet whether and
+    how they reason about code remains unclear. We study 7,955 issue-resolution trajectories
+    from six single- and multi-agent scaffolds across four programming languages on
+    SWE-bench-Verified, SWE-bench-Pro, and SWE-bench-Lite. We identify 12 forms of
+    code reasoning in 66.95% of trajectories. Code reasoning is associated with higher
+    resolution rates, and its intensity increases with task complexity. However, it
+    remains largely unguided: agents may focus on surface-level symptoms during localization,
+    fail to refine near-correct patches, overlook issue requirements, and generate
+    tests with limited behavioral diversity. To address these limitations, we propose
+    DeskCheck, an agentic scaffold that systematically guides code reasoning throughout
+    repository-level issue resolution. DeskCheck simulates execution paths to localize
+    root causes, simulates candidate patches to refine near-misses, audits patches
+    against issue requirements, and reasons about corner-case inputs and expected
+    outputs before generating tests. On 731 SWE-bench-Pro instances, DeskCheck improves
+    resolution rates over mini-SWE-Agent and Claude Code by 6.29% to 10.53%, at an
+    additional cost of $0.02-$0.28 per instance (average: $0.14). Per-phase analyses
+    show higher method-level localization recall, more successful repairs of imprecisely
+    localized issues, and better detection of missed corner cases in near-correct
+    patches. Exact McNemar tests show statistically significant improvements across
+    all subject LLMs (p < 10^-10), while repeated experiments support robustness to
+    agent nondeterminism. These findings motivate systematic code reasoning as a means
+    of improving programming agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.23782
+- short_name: Where Should a Stuck Agent Spend Its Next Tokens? Causal Attribution
+    of Inference-Time Resources
+  title: Where Should a Stuck Agent Spend Its Next Tokens? Causal Attribution of Inference-Time
+    Resources
+  authors: Saiyue Lyu, Jerrold Huang, Yunbei Zhang, Janet Wang, Zhenting Wang, Yingqiang
+    Ge, Haibo Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.28834
+  month: 2026-10
+  abstract: 'Inference-time scaling is often treated as a token-budget problem, but
+    a failed coding agent can seek qualitatively different resources: computation,
+    information, or feedback. We introduce Banzhaf Resource Attribution (BRA), a controlled
+    factorial framework that measures each resource''s marginal contribution to repair
+    and its interactions while holding the failed state and revision protocol fixed.
+    We evaluate six models on 194 function-level failures from MBPP+ and HumanEval+
+    and 126 repository-level failures from SWE-bench Verified. Task-relevant specifications
+    consistently improve repair, whereas public-test feedback provides small gains
+    and retrieved code little to none. The value of additional computation declines
+    with model capability, while information remains useful; resource channels largely
+    exhibit diminishing returns, although complementary information can reinforce
+    itself. Yet three of four frontier models select feedback in 95-100% of cases
+    and obtain lower gains than uniform random resource selection. BRA thus exposes
+    a gap between the resources agents prefer and those that measurably improve repair.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.28834
+- short_name: Beyond the Model
+  title: 'Beyond the Model: Demystifying Harness Effects in Software Engineering Agents'
+  authors: Haichuan Hu, Quanjun Zhang, Shengcheng Yu, Zhifei Chen, Tianyu Luo, Chunrong
+    Fang, Zhenyu Chen, Liang Xiao
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.32459
+  month: 2026-09
+  abstract: 'Large Language Model (LLM)-based agents are increasingly used for software
+    engineering tasks, yet their performance is not determined by the base model alone.
+    The agent harness substantially shapes how SE agents interact with repositories,
+    execute actions, and validate solutions. However, the role of harness design remains
+    insufficiently understood, especially across different models, tasks, and harness
+    components. In this paper, we present a systematic empirical study of harness
+    effects in SE agents. We first evaluate two representative harnesses, mini-SWE-agent
+    and OpenCode, with ten models from two prominent open-weight model families, Qwen
+    and DeepSeek, on three benchmarks: SWE-bench Pro, ProgramBench, and GitTaskBench.
+    We then construct NanoHarness, a lightweight modular harness built on top of mini-SWE-agent,
+    and use it to analyze five representative harness components: tool registry, context
+    compression, explicit planning, subagents, and lazy skills. Experimental results
+    show that harness effectiveness depends jointly on model capability and task type.
+    Complex harnesses provide diminishing marginal gains on SWE-style issue repair
+    as model capability improves, but can benefit stronger models on more complex
+    and open-ended repository-level tasks. Component-level analysis on ProgramBench
+    further shows that structured tool use and task-specific subagents provide the
+    most stable improvements, while context compression and general subagents can
+    hurt repository-generation performance. When combined, NanoHarness improves over
+    mini-SWE-agent by 7.37 and 6.21 percentage points on Qwen3.7-Max and DeepSeek-V4-Pro,
+    respectively, recovering most of the gains of product-level harnesses. These findings
+    highlight harness design as a first-class factor in SE-agent performance and provide
+    insights for building more effective and efficient coding agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.32459
+- short_name: Trajectory-Level Security Debt
+  title: Trajectory-Level Security Debt in LLM Coding Agents
+  authors: Prateek Kumar Rajput, Abdoul Kader Kabore, Yewei Song, Melissa Tessa, Tailia
+    Malloy, Jacques Klein, Tegawendé F. Bissyandé
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.35199
+  month: 2026-09
+  abstract: LLM coding agents can traverse hundreds of intermediate code states before
+    submitting a solution. Evaluating only the final artifact leaves the evolution
+    of security findings unmeasured. We introduce the Security Debt Line Integral
+    (SDLI), which accumulates static-analysis risk when an agent reaches a new best
+    test pass ratio. We instantiate it with four static application security testing
+    (SAST) tools and study artifacts from 830 passing SWE-bench runs, 712 ProgramBench
+    final workspaces, and 13 public MirrorCode trajectories. The two large populations
+    use the final-state special case of SDLI. Two-tool Common Weakness Enumeration
+    (CWE) class agreement occurs in 3.9% of SWE-bench runs and 26.2% of the 80 ProgramBench
+    runs passing at least 90% of official tests. These are scanner findings, not validated
+    vulnerability rates. Excluding three advisory-heavy classes reduces the latter
+    rate to 6.2%. Same-task runs differ in their measured scores, while one reconstructed
+    ProgramBench run exposes persistent findings from its first implementation write.
+    A repair case study reduces the scanner signal while preserving tested behavior,
+    but also reveals sensitivity to equivalent API rewrites. SDLI offers a way to
+    study progress and security findings together. Its value for steering agents and
+    confirming exploitable vulnerabilities remains to be established.
+  links:
+    arxiv: https://arxiv.org/abs/2609.35199
+- short_name: Beyond Token Savings
+  title: 'Beyond Token Savings: A Systematic Study of Context Compression in LLM Agents'
+  authors: Ritul Satish, Prasoon Sinha, Akiho Kawada, Neeraja J. Yadwadkar
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.32961
+  month: 2026-09
+  abstract: 'As LLM agents tackle longer tasks, they increasingly compress growing
+    histories of reasoning, actions, and tool outputs. Compression can reduce token
+    use, but it also changes the information available for later decisions. Existing
+    agentic harnesses bundle decisions about what to compress, when to compress, and
+    how much to remove into fixed policies. A systematic characterization is needed
+    to disentangle these decisions and reveal how each affects task success and execution
+    cost. We systematically vary these decisions across three open-weight models on
+    SWE-bench Verified and Terminal-Bench 1.0. Across nearly 35,000 agent runs, we
+    measure task success, token use, end-to-end latency, and estimated cost. We find
+    that fewer tokens need not mean faster or cheaper execution: on Terminal-Bench
+    with Qwen, policies using roughly one-third as many tokens can take 20-80% longer
+    than the uncompressed agent. Policies with similar overall success can solve different
+    tasks, while the same policy can perform quite differently across models. Our
+    results motivate evaluating compression by its effects on agent execution and
+    tailoring policies to the task, model, and workload.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.32961
+- short_name: Frozen Judges, Moving Agents
+  title: 'Frozen Judges, Moving Agents: Version-Dependent LLM-Judge Error and the
+    Limits of Judge-Assisted Agent Evaluation'
+  authors: Jiapeng Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.34198
+  month: 2026-09
+  abstract: Language-model judges compare agent upgrades with their predecessors,
+    but a fixed judge can make version-dependent mistakes. We analyze 35 public coding-agent
+    submissions (20 prespecified version pairs on 250 SWE-bench Verified issues),
+    two customer-service agents (155 tau-bench tasks), and 1,106 expert-labeled AgentRewardBench
+    trajectories. An upstream outage left three judges for the primary SWE-bench analysis
+    (8,743 aligned cells); the fourth is descriptive. All three coding-agent judges
+    and all four tau-bench judges reject task-conditioned error invariance after multiplicity
+    adjustment. On SWE-bench, 32 of 60 judge-by-pair units have a detectable differential
+    comparison component; eight judge-only intervals declare upgrades that execution-based
+    intervals cannot establish, despite rank correlations of 0.71-0.79. In tau-bench,
+    one judge reverses a nine-point reference-reward gap by penalizing a procedural
+    habit the reward ignores. False acceptance of failed coding patches rises with
+    agent capability conditional on task and execution outcome, while a task-solvability
+    prediction reverses sign across domains. A separately fixed post-submission OpenHands
+    follow-up on the same 250 issues (eight configurations, 1,981 three-judge cells)
+    reproduces the capability/false-acceptance association (mean Spearman +0.944,
+    exact p=0.000099) and decreasing Youden contrast (mean -0.937, p=0.000397); this
+    is observational, not a new-task replication. Transporting old-version calibration
+    raises SWE-bench comparison error from 3.8 to 19.5 points, with 24.6% undefined
+    bootstrap ratios. A paired audit saves only 5% in interval width at 80 labeled
+    tasks. A randomized self-report test is negative (three adjusted p-values=1.0).
+    These results favor paired audits of current outputs over judge-only release decisions
+    or transported calibration; independent human patch review remains pending.
+  links:
+    arxiv: https://arxiv.org/abs/2609.34198
+- short_name: Planning-as-Routing
+  title: Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration
+    to Pattern-Specific Execution
+  authors: Subba Reddy Oota, Francisco Herrera, Jordi Cabot Sagrera, Marcos López
+    de Prado, Shadab Khan
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.38108
+  month: 2026-09
+  abstract: 'Large language models (LLMs) enable agents to solve long-horizon tasks
+    by generating a plan and then executing it in an environment. However, successful
+    planning requires two distinct capabilities: selecting an appropriate plan for
+    the task and executing it faithfully. Existing planner--executor systems can fail
+    at either stage, while final task success alone cannot distinguish selection from
+    execution failures. We therefore study the Plan Declaration--Execution Gap and
+    introduce Planning-as-Routing, where an LLM declares one of four planning modes:
+    Predefined, Sequential, Hierarchical, or Search, and a deterministic router dispatches
+    the task to the corresponding pattern-specific executor. Across four benchmarks
+    and three LLMs, we find three consistent patterns. First, generic Plan+ReAct often
+    fails to preserve declared planning structure, especially for longer plans: across
+    three benchmarks, only (22)--(45%) of trajectories preserve it, whereas pattern-specific
+    executors enforce the intended structure. Second, planning-mode effectiveness
+    varies across environments and models: Search performs best on ALFWorld, Hierarchical
+    on SWE-bench, and the strongest pattern can vary across models within the same
+    benchmark. Third, the largest gains come from execution: pattern-specific executors
+    improve task success from (0.48) to (0.92) on ALFWorld and from (0.36) to (0.44)
+    on SWE-bench Verified over Plan+ReAct. Current LLMs, however, do not reliably
+    select the strongest mode for each task, although few-shot examples improve selection
+    in some benchmark--model combinations. Overall, reliable agent planning requires
+    both effective mode selection and faithful execution: routing substantially closes
+    the execution gap, while task-specific mode selection remains open.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.38108
+- short_name: TokenCast
+  title: 'TokenCast: Forecasting Token Consumption During LLM Agent Execution'
+  authors: Chaoqian Ouyang, Ling Yue, Libin Zheng, Hanghui Guo, Shengxiang Xu, YiShu
+    Wang, Ran Li, Jian Yin, Shaowu Pan, Shimin Di
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.35760
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.35760
+- short_name: CTATTO
+  title: Can Terminal Agents Trust Their Own Verification? Diagnosing and Improving
+    Self-Verification
+  authors: Yingfeng Luo, Shaowei Wei, Daixin Wang, Dingyang Lin, Kaiyan Chang, Weiqiao
+    Shan, Tong Zheng, Zhiqiang Zhang, Jingbo Zhu, Tong Xiao
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.38812
+  month: 2026-09
+  abstract: Terminal agents rely on self-verification to assess and correct their
+    solutions as they solve tasks through interaction with command-line environments.
+    Yet how trustworthy such self-verification is remains poorly understood. To investigate
+    this question systematically, we introduce a diagnostic framework that identifies
+    the first complete solution in each trajectory, determines whether it is objectively
+    correct, and uses this ground truth to quantify the agent's subsequent verification
+    and recovery behavior. Applying it to ten terminal agents on TerminalBench2.1,
+    we find that verification is nearly universal after a complete candidate is formed,
+    yet only 61.43\% of incorrect candidates are detected and only 49.36\% of detected
+    errors are successfully repaired. These results show that the main weakness in
+    self-verification lies not in initiating verification, but in detecting and repairing
+    errors. Motivated by these findings, we propose Student-Conditioned Verification
+    Distillation (SCVD), which lets the student first produce a candidate solution
+    and distills a stronger teacher's subsequent verification and recovery from the
+    same interaction context. Across three Qwen3.5 backbones, SCVD improves \textsc{Pass@1}
+    on TerminalBench2.1 by 9.74--16.85 percentage points over the corresponding base
+    models and by 4.49--8.61 points over the standard full-trajectory distillation,
+    while avoiding the pronounced out-of-distribution degradation of full-trajectory
+    distillation on SWE-bench Verified.
+  links:
+    arxiv: https://arxiv.org/abs/2609.38812
+- short_name: ENDROC
+  title: Evaluating Name-Only Directory Routing for One-Shot Code Search
+  authors: Manoj Bajaj
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.35918
+  month: 2026-09
+  abstract: Finding the right files is an early challenge for coding agents. We test
+    whether a language model can follow directory and file names to find annotated
+    code files missed by fixed lexical queries. Across 82 audited issues from 11 repositories
+    at pinned pre-fix commits, name-only directory routing recovered 0.465 of gold
+    files within eight candidates, compared with 0.352 for FTS5 and 0.245 for a fixed
+    full-issue rg query. The paired gain over FTS5 was 0.113 (95% repository-cluster
+    bootstrap interval, 0.053 to 0.168). Under a shared 16K-token context budget,
+    routing delivered 0.443 of annotated lines versus 0.246 for FTS5 on 55 cases with
+    fully aligned annotations. At the same eight-file limit, combining routing with
+    FTS5 reached 0.491 file recall, but its gain over routing alone was uncertain.
+    An exploratory flat path control reached 0.572 recall while using 24.6 model calls
+    per issue, compared with 8.9 for routing. Routing averaged 8.9 seconds per issue;
+    FTS5 took 7 milliseconds per query after a 0.9-second build. On this cohort, directory
+    routing added relevant file candidates to one-shot lexical search, but the study
+    cannot attribute the gain to hierarchy or show that it improves issue resolution.
+  links:
+    arxiv: https://arxiv.org/abs/2609.35918
 - short_name: SWE-Review
   title: 'SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review'
   authors: Ruoyu Wang, Jierun Chen, Shaowei Wang, Chaofan Tao, Sidi Yang, Yuxin Jiang,

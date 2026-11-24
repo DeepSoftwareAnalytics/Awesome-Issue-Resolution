@@ -1,3 +1,94 @@
+- short_name: TreeFlex
+  title: 'TreeFlex: Agents Navigating Their Own Search Trees'
+  authors: Dongzhuo Li, Fangzhou Cheng, Weiwei Li, Kevin Han, Haixu Ma, Zhongchang
+    Sun, Ruiyi Li, Serena Li, Xiangjun Fan, Lizhu Zhang, Yuandong Tian
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.20334
+  month: 2026-10
+  abstract: A ReAct-style agent accumulates observations, intermediate results, and
+    failed attempts in a single context. As this context grows, stale and off-path
+    information consumes its limited capacity and obscures relevant evidence, making
+    focused reasoning increasingly difficult. We introduce TreeFlex, a framework in
+    which the agent's own policy decides where to search. The agent records each intermediate
+    state, with a short summary, as a node in a search tree maintained by the harness.
+    The policy is a single language model that acts in two roles. In the Reflection
+    role, it has a global view of the tree through these summaries and picks a node
+    to resume, together with an instruction. In the Execution role, the harness restores
+    the path that led to that node, and the model carries out the instruction with
+    the usual task tools until it saves a new node or proposes a solution, which Reflection
+    then approves or sends back to another node. Through these choices, the policy
+    decides whether to deepen the current line, branch from or revisit an earlier
+    state, verify a proposal, or stop, without a fixed traversal order or a score
+    for each node. We train navigation, task actions, checkpointing, and proposal
+    review jointly with a tree-aware adaptation of GRPO, using task-level outcome
+    rewards augmented by process rewards. After small-scale RL of a 4B model, with
+    the same active-context limit for all methods, TreeFlex reaches 48.8% accuracy
+    on a challenging deep-research benchmark, versus 41.5% for flat ReAct and 42.8%
+    for FoldAgent, and its Pass@8 is about ten points higher than either. On SWE-bench
+    Verified, with all three systems trained with RL from the same 9B model, TreeFlex
+    resolves 54.9% of tasks, versus 43.3% for FoldAgent and 45.2% for its step-wise
+    variant.
+  links:
+    arxiv: https://arxiv.org/abs/2610.20334
+- short_name: TestGRAD
+  title: 'TestGRAD: Evolving Test Suites via Failure Pattern Momentum for SWE-Agent
+    Ensemble'
+  authors: Pengfei He, Jiayuan Zhou, Shaowei Wang, Ruiqi Pan
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.10242
+  month: 2026-10
+  abstract: 'SWE-agent ensembles improve issue resolution by combining candidate patches
+    from different agents with complementary strengths. The central problem is therefore
+    test-based selection: generate tests, execute candidate patches, and identify
+    the best patch. We formulate this process as test-space optimization: evolving
+    an executable repository test suite until it distinguishes competing patches.
+    Existing test-generation methods are limited optimizers. They usually lack an
+    explicit loss for ensemble selection, optimize through incomplete directions that
+    mostly create new tests or delete old ones, and perform one-off generation without
+    feedback from repeated failures. Inspired by gradient descent with momentum, we
+    introduce TestGRAD, a framework for automatic test optimization. TestGRAD centers
+    on three concepts. Differential loss gives the optimizer an explicit execution-defined
+    target: useful tests should separate candidate patches by behavior. Full CRUD
+    gradients expand the update direction from merely creating or deleting tests to
+    reading existing test infrastructure, creating new tests, updating stale assertions,
+    and deleting only obsolete tests. Failure Pattern Momentum mines frequent failure
+    sequences from memory, allowing the optimizer to avoid repeated non-discriminative
+    directions while compressing the failure-history context. On SWE-bench Verified,
+    TestGRAD achieves 84.2% Pass@1 with a 4-agent ensemble, outperforming the strongest
+    baseline (80.6%) by an absolute improvement of 3.6 percentage points, while compressing
+    failure-history context by over $100\times$.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.10242
+- short_name: Contextual Early Reward
+  title: 'Before the Rollout Ends: Early Terminal Reward Prediction for Long-horizon
+    Coding Agents'
+  authors: Jihan Yao, Sihan Zeng, Shangbin Feng, Zhiyuan Fan, Banghua Zhu, Yulia Tsvetkov
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.31995
+  month: 2026-09
+  abstract: Long-horizon coding agents receive verifiable rewards only after completing
+    expensive sequences of tool calls. This increases inference cost, amplifies early
+    wrong hypotheses, and can lead to sparse terminal reward and unstable training.
+    We introduce Contextual Early Reward (CER), which predicts terminal reward through
+    behavioral evidence in a trajectory prefix. CER synthesizes adaptive rubrics specific
+    to the current task and stage through experiences summarized from related historical
+    tasks. In test-time scaling on SWE-bench Verified, CER improves RM@8 over the
+    strongest baseline by 4.2 percentage points (pp) on Nemotron 3 Ultra and 2.0 pp
+    on Qwen 3.6 27B; on Nemotron, it takes only 15.3% tokens to match the best baseline
+    performance. In RL training experiments, CER exceeds full-rollout TMax by 1.9
+    pp while using 52.7% fewer online policy-and-judge tokens. Together, CER provides
+    an interpretable, efficient, and dense evaluation method for long-horizon coding
+    agents.
+  links:
+    arxiv: https://arxiv.org/abs/2609.31995
+- short_name: Canopy
+  title: 'Canopy: Exploiting Piecewise Smooth Tree Priors for Multi-Fidelity Bandits'
+  authors: Michael Jerge, Suman Jana
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.30017
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.30017
 - short_name: LLVM-Bench
   title: 'LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler
     Issue Resolution'
@@ -25,6 +116,22 @@
     LLVM issue resolution.
   links:
     arxiv: https://arxiv.org/abs/2607.00700
+- short_name: Steer, Don't Solve
+  title: 'Steer, Don''t Solve: Training Small Critic Models for Large Code Agents'
+  authors: Shubham Gandhi, Yiqing Xie, Atharva Naik, Ruichen Zhu, Carolyn Rose
+  year: '2026'
+  venue: arXiv preprint arXiv:2606.21811
+  month: 2026-06
+  abstract: This work trains separate 4B and 8B critic models to guide larger coding
+    agents during inference. The critics periodically review agent trajectories, identify
+    mistakes, and provide high-level planning advice without producing concrete actions.
+    Training uses supervised fine-tuning followed by direct preference optimization.
+    Experiments on SWE-bench Verified report improvements across six coding agents
+    and lower inference costs for some agents through shorter solution trajectories.
+  links:
+    arxiv: https://arxiv.org/abs/2606.21811
+    github: https://github.com/shubhamrgandhi/critic-training
+    huggingface: https://huggingface.co/code-critic-model
 - short_name: Agentic Rubrics
   title: Agentic Rubrics as Contextual Verifiers for SWE Agents
   authors: Mohit Raghavendra, Anisha Gunjal, Bing Liu, Yunzhong He

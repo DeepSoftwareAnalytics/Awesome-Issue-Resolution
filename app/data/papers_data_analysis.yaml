@@ -1,3 +1,300 @@
+- short_name: Beyond Surface Metrics
+  title: 'Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance
+    and AI Coding Benchmarks'
+  authors: Heeyong Eun
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.03162
+  month: 2026-11
+  abstract: 'Repository-level AI coding benchmarks measure task success but do not
+    directly capture the conditions required for software maintenance completion.
+    We study multi-condition fulfillment, where a maintenance task must satisfy multiple
+    operational conditions, sometimes with directional dependencies. Using a fixed
+    18-criterion taxonomy, we analyze 2,925 Apache Fineract issues and 944 tasks from
+    SWE-bench Pro, SWE-PolyBench Java, and SWE-EVO. We examine condition breadth,
+    corpus-level co-occurrence, and source-grounded directional requirement relationships.
+    Among 1,177 benchmark task pairs matched on issue classification, modified-file
+    count, and code churn, the mean fulfillment-set Jaccard distance is 0.8138, and
+    57.4% have disjoint condition sets. Condition count alone does not explain this
+    contrast: SWE-bench Pro averages 2.47 conditions per task, versus 1.78 for Fineract.
+    Temporal (B4) and numerical (B2) conditions have a phi coefficient of +0.430 in
+    Fineract versus -0.013 in the pooled benchmark corpus. Among temporally tagged
+    tasks, numerical conditions are also specified in 48.85% (254/520) of Fineract
+    cases versus 5.81% (5/86) of benchmark cases. We document 16 directional relationships
+    in Fineract requirements involving time, calculation, and state preservation,
+    and inspect four benchmark cases to illustrate how relevant conditions appear
+    in evaluation assertions. These examples do not quantify benchmark-wide oracle
+    omissions. The results show that similar surface task profiles can mask substantially
+    different fulfillment-condition sets. We recommend reporting condition breadth,
+    co-occurrence, and directional relationships separately. The corpus comparisons
+    are descriptive and may reflect domain differences; they do not establish causality
+    or production failure rates.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.03162
+- short_name: Agent Benchmarks Stop Ranking
+  title: Agent Benchmarks Stop Ranking Before They Run Out of Tasks
+  authors: Zihan Dong, Qishi Zhan, Minxuan Hu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.13541
+  month: 2026-11
+  abstract: 'Data-science and ML-engineering agents are evaluated on benchmarks such
+    as MLE-bench, ALE-Bench, SWE-fficiency and AlgoTune, whose tasks yield a quantity
+    (a Kaggle metric, contest score or speedup). When one stops separating the best
+    models, the usual remedy is a harder version. Re-scoring released runs of eight
+    benchmarks, including SWE-bench Verified and Terminal-Bench for breadth, we find
+    much of this saturation lies in the measurement, not the tasks. Most agent benchmarks
+    reduce a run to one pass/fail bit, which fails in two ways. It is too coarse:
+    neighbouring top-ten agents on SWE-bench Verified differ by less than its tests''
+    errors, and correcting them reorders neighbours no more than deleting a random
+    sixth of each agent''s passes. It is capped at the reference: ALE-Bench''s top
+    ten, separated by contest score, tie when graded against the median human, although
+    nearly half the runs beat that human. On fixed tasks, a higher bar only moves
+    the problem; graded credit fixes it. We derive a clipped log-ratio score with
+    dated anchors and cost as a separate axis. In a Terminal-Bench re-run, pass/fail-tied
+    models differ over tenfold on the quantity the tests discard.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.13541
+- short_name: Construct Validity of Coding Benchmarks
+  title: Construct Validity of Coding Benchmarks for LLM-based Agentic Coding Tools
+  authors: Alexander Berndt, Paul Ralph, Thomas Bach, Sebastian Baltes
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.05665
+  month: 2026-11
+  abstract: Examines the constructs, operational metrics and confounding factors of
+    nine agentic coding benchmarks, and proposes ways to improve the validity of benchmark
+    comparisons.
+  links:
+    arxiv: https://arxiv.org/abs/2611.05665
+- short_name: SLTWCL
+  title: SOTA or Luck? The Winner's Curse in LLM Leaderboards
+  authors: Sikun Xu, Raphael Thomadsen, Dennis J. Zhang, Heng Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.22227
+  month: 2026-11
+  abstract: Public LLM leaderboards guide model evaluation and adoption, yet the reported
+    performance of top-ranked models can be systematically overstated. This leaderboard
+    winner's curse arises because ranking noisy benchmark scores rewards sampling
+    luck alongside genuine ability. The same selection effect can distort scores throughout
+    the leaderboard, a phenomenon we call the rank-induced bias. We develop an $m$-out-of-$N$
+    bootstrap to correct for this bias. It assumes a fixed model pool with independent,
+    identically distributed bounded tasks while allowing arbitrary within-task correlation
+    among models. Under exact population tiers separated by positive gaps, we prove
+    that the bootstrap reduces $Θ(N^{-1/2})$ ranking bias to expected residual bias
+    $o(N^{-1/2})$. Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments
+    range from approximately 0.09 to 3.86 percentage points. In our SWE-bench Verified
+    snapshot, the tied leaders receive an adjustment of 0.90 percentage points. Such
+    overstatement is large enough to make the apparent winner statistically fragile.
+    Thus, we use the same bootstrap to further quantify the intervals of plausible
+    rank positions for each model and group models into tiers. We establish sufficient
+    conditions for consistent recovery of population tiers. On SWE-bench Verified,
+    this procedure places 13 of 173 models in the leading tier. We combine the score
+    adjustment and rank intervals in the Rank Uncertainty and Leaderboard Evaluation
+    Report (RULER). We validate its finite-sample performance using sample splitting
+    and calibrated simulations, and advocate publishing RULER alongside raw rankings
+    so readers can assess both reported performance and the precision of the ordering.
+    RULER also provides guidance for benchmark design that accounts for selection
+    effects and ranking uncertainty.
+  links:
+    arxiv: https://arxiv.org/abs/2611.22227
+- short_name: Re-executing Coding-Agent Evaluations
+  title: 'Re-executing Coding-Agent Evaluations: Unchanged Decisions and Unresolved
+    Policy Risk'
+  authors: Tianyu Ding, Yaocheng Tong, Muzhi Yang, Fei Jiang, Lei Yang, Boya Yu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.14460
+  month: 2026-10
+  abstract: Executable tests grade large language model (LLM) coding-agent patches
+    for leaderboards, rewards and self-improvement. Two preregistered re-execution
+    studies returned negative results. SWE-bench Pro v1's offline option rejected
+    none of 59 accepted Go patches whose grading configuration changed. Their exploratory,
+    unweighted upper confidence limit is 4.95% under candidate independence, leaving
+    a 3% exposed-patch risk unresolved; the preregistered estimator uses inverse sampling-probability
+    weights. An extension was inconclusive. In a selected stratum, a reconstructed
+    module cache built from the reference solution's dependencies rejected accepted
+    alternatives from four models that passed with their own dependencies. Re-executing
+    1,929 selected agent-version/task evaluations from the Darwin Gödel Machine's
+    archive preserved best-agent selection and system-variant ranking, with search
+    history and scores of evaluations not rerun fixed. Exploratory host, image and
+    adapted-grader comparisons also preserved them. Seven of 23 disagreements with
+    archived verdicts did not recur on a second host; rebuilt images changed 16 three-run
+    majority verdicts (0.83%) under four-CPU execution. We provide an evidence-to-claim
+    summary, lessons for grader audits and an anonymous replication package. These
+    results concern accepted patches and fixed-history decisions; general policy safety
+    and adaptive-learning robustness require broader evaluations.
+  links:
+    arxiv: https://arxiv.org/abs/2610.14460
+- short_name: ExLabel
+  title: Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a
+    Self-Evolving Agent
+  authors: Zhonghao Jiang, Xuyang Zheng, Yanfu Yan, Zhongxin Liu, Lingfeng Bao, Shuiguang
+    Deng
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.39417
+  month: 2026-10
+  abstract: Large language models (LLMs) have shown strong performance on software
+    engineering (SE) tasks, driving the need for high-quality datasets for reliable
+    training and evaluation. SWE-bench-style datasets (SWE datasets) are widely used
+    to evaluate LLM-based coding agents on real-world software issues, where task
+    clarity and test coverage directly affect whether instances are solvable and verifiable.
+    However, quality issues persist in existing SWE datasets, and manual annotation
+    is costly and labor-intensive, motivating LLM-based annotation. Existing approaches
+    typically rely on static, overly general rubrics, limiting their ability to handle
+    diverse and nuanced scenarios and often yielding high false positive rates. In
+    contrast, human annotators draw on accumulated experience to make context-aware
+    judgments. Inspired by this, we propose ExLabel, an LLM-based, self-evolving,
+    experience-guided assistant for task clarity and test coverage assessment in SWE
+    datasets. ExLabel maintains an evolving experience bank that distills cross-instance
+    knowledge into stable yet adaptive judgment criteria and reuses relevant experience
+    to guide the assessment of new instances. For systematic evaluation, we construct
+    SWE-TQ, a new benchmark spanning eight programming languages, by cleaning human
+    annotations from SWE-bench and Multi-SWE-bench. Experiments with three backbone
+    LLMs show that ExLabel achieves the best F1 across all settings, with relative
+    improvements of 44.2%/49.9% and 24.0%/18.4% over the best baseline for task clarity
+    and test coverage assessment on the Python/Multilingual subsets, respectively.
+    Moreover, a coding model fine-tuned on SWE-rebench data filtered by ExLabel resolves
+    66.2% of issues on SWE-bench Verified, outperforming the model trained on data
+    filtered by the best baseline by 14.5%.
+  links:
+    arxiv: https://arxiv.org/abs/2610.39417
+- short_name: BenchChecker
+  title: 'BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs'
+  authors: Di Wu, Xu He, Shu Wang, Kun Sun
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19447
+  month: 2026-10
+  abstract: While Large Language Models (LLMs) show promise for Automatic Program
+    Repair (APR), existing benchmarks suffer from data contamination, in which test
+    samples appear in training sets, artificially inflating performance. To address
+    this, we propose BenchChecker, a framework compatible with both open-source and
+    closed-source models that supports more credible evaluation by detecting such
+    contamination. Grounded in the observation that persistent patches likely remain
+    in recent repository snapshots used for training, BenchChecker employs a forensics-based
+    two-stage detection process using only textual model outputs together with public
+    repository history. The first stage conducts a repository presence test by probing
+    the model with code prefixes to infer training inclusion; the second stage performs
+    a patch presence test to verify patch persistence via similarity alignment and
+    test-suite verification. Evaluations using StarCoder-15B, StarCoder2-15B, and
+    CodeGen2-16B trained on The Stack v2 demonstrate that BenchChecker achieves robust
+    detection with AUC scores around 0.9 across six benchmarks. Furthermore, applying
+    BenchChecker to SWE-bench Verified and Multi-SWE-bench reveals that filtering
+    contaminated samples reduces the reported resolution rates of most LLMs by more
+    than 20% relative to the original rates on medium-difficulty tasks.
+  links:
+    arxiv: https://arxiv.org/abs/2610.19447
+- short_name: SWEPatchTest
+  title: 'SWEPatchTest: Evaluating Software Tests Beyond Reproduction'
+  authors: Hua Lu, Pengcheng Wang, Han Li, Zichen Tian, Yanyu Chen, Huang He, Bingjin
+    Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.18004
+  month: 2026-10
+  abstract: 'Coding agents use generated tests to decide whether a proposed patch
+    satisfies an issue''s requirements. A suite that fails on the buggy program and
+    passes after applying the reference patch can still accept an incorrect patch
+    or reject a correct patch. We introduce SWEPATCHTEST, a test-generation benchmark
+    with 619 tasks from SWE-bench Pro, SWE-bench Multilingual, and DeepSWE and 82,579
+    candidate patches collected from coding-agent trajectories. By replaying each
+    suite on the buggy and patched codebases, \benchmark jointly measures issue reproduction,
+    acceptance of correct patches, and rejection of incorrect patches. Joint Validation
+    Rate (JVR), which requires all three criteria on the same task, exposes failures
+    hidden by single-reference evaluation: the best-performing configuration achieves
+    only 9.21% JVR despite reproducing the reference transition on 59.29% of tasks.
+    We further use validation scores to select and scale demonstrations for supervised
+    fine-tuning (SFT). The resulting training recipe approximately triples JVR and
+    improves downstream repair across three SWE-bench benchmarks. Patch discrimination
+    thus provides both a diagnostic measure of test quality and an execution-based
+    signal for curating agent training data.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.18004
+- short_name: Measurement-First Auditing
+  title: 'Measurement-First Auditing of Agentic Leaderboards: Contamination Susceptibility,
+    Matched-Control Re-evaluation, and Scorer Validation'
+  authors: Dishu Yang, Qi Su, Hongbo Qin, Hansong Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.05830
+  month: 2026-10
+  abstract: 'Agentic leaderboards increasingly evaluate systems on public benchmarks
+    whose task statements and solution-bearing artifacts can remain accessible. We
+    propose a measurement-first audit framework that distinguishes contamination claims
+    according to the evidence required to support them. It separates three channels
+    that require different evidence: training-time exposure, evaluation-time retrieval,
+    and pipeline/scaffold leakage. Each channel is coded as open, partial, closed,
+    or unknown under a fail-closed rule. Across nine Holistic Agent Leaderboard (HAL)
+    configurations, none of the 27 channel assessments was coded closed, but incidents
+    were confirmed in four configurations. We then apply the behavioral component
+    of the framework to a reported file-localization gap on SWE-bench Verified, using
+    an outcome-blind, same-repository matched-control design with symmetric prompt-leakage
+    screening, paired and repository-aware uncertainty analyses, and scorer validation,
+    evaluated on GPT-4.1 and DeepSeek-V4-Flash. Among the 100 pairs retained after
+    symmetric screening and the pair-integrity exclusion, GPT-4.1 showed a $+10.0$-point
+    pair-weighted Top-3 benchmark-associated gap, but the 95\% intervals from both
+    the prespecified paired-bootstrap procedure and the post-hoc repository-balanced
+    analysis included zero, leaving the benchmark-associated gap inconclusive. The
+    reproduction scorer did not pass its validation gate: against consensus human
+    labels, sufficient scorer sensitivity could not be established for either model,
+    and both DeepSeek-V4-Flash firings on correct-gold comparisons were false positives.
+    Without provenance evidence, appropriate controls, symmetric leakage screening,
+    and validated scorers, stronger contamination claims are not warranted. The results
+    do not establish training-data membership, contamination prevalence, or benchmark-induced
+    score inflation.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.05830
+- short_name: 'Quality, Not Just Outcome: A Structural Scoring Framework for Selecting
+    Coding-Agent Trajectories for Supervised Fine-Tuning'
+  title: 'Quality, Not Just Outcome: A Structural Scoring Framework for Selecting
+    Coding-Agent Trajectories for Supervised Fine-Tuning'
+  authors: Sida Li, Yuanxin Liu, Shicheng Li, Linli Yao, Xu Sun, Haoli Bai, Xiaohui
+    Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.13152
+  month: 2026-10
+  abstract: 'Open coding agents are commonly trained through supervised fine-tuning
+    on interaction trajectories whose final patches pass the benchmark test suite.
+    However, this outcome-level filtering criterion ignores process quality: trajectories
+    that eventually succeed may still contain inefficient interaction patterns such
+    as repetitive file inspection, unstable tool usage, or delayed modification behavior,
+    all of which become part of the imitation target. We propose TQS (Trajectory Quality
+    Score), a structural scoring framework for coding-agent trajectories that operates
+    directly on trajectory structure, requires no LLM judge, and runs in linear time.
+    TQS characterizes trajectory quality through structural signals organized around
+    structured convergence: information focus, intent--action alignment, and policy
+    dynamics. Using 155,144 successful trajectories from a public open-license corpus,
+    we rank trajectories by TQS and fine-tune coding agents on filtered subsets. Models
+    trained on top-ranked trajectories consistently outperform those trained on random
+    or bottom-ranked subsets on SWE-Bench-Verified. Our results suggest that process-level
+    trajectory quality is an important factor in coding-agent supervision and that
+    structural trajectory filtering provides an effective and scalable alternative
+    to LLM-based data selection.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.13152
+- short_name: When Pair Count Is Not the Sample Size
+  title: 'When Pair Count Is Not the Sample Size: What All-Pairs Agent Comparisons
+    Estimate'
+  authors: Wei-Jung Huang
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33012
+  month: 2026-09
+  abstract: 'When an agent benchmark compares every pair of leaderboard entries, the
+    number of comparisons can look much larger than the independent evidence behind
+    them: A versus B and A versus C both reuse A. Whether this reuse affects inference
+    depends on what the analysis is meant to describe. If the board and its outcomes
+    are fixed, the all-pairs mean is an exact summary of those entries, and any interval
+    must come from another declared source of randomness. If the entries are instead
+    treated as iid draws from a population of future configurations and the pair rule
+    is regular and nondegenerate, the same mean is an order-two U-statistic whose
+    first-order uncertainty depends on the number of configurations, not the number
+    of pairs. We use near ties as the running example, but the distinction extends
+    to other symmetric pair summaries when their regularity conditions hold. We examine
+    both interpretations using a fixed SWE-bench Verified snapshot and an exact binary
+    model with known truth. On SWE-bench, intervals that accounted for shared configurations
+    were more than twice as wide as a pair-iid reference that treated the pairs as
+    independent. In the exact model, pair-iid coverage fell far below the nominal
+    level when edges shared endpoints but remained near nominal for matched independent
+    edges. Results on two other fixed leaderboards show that exact summaries also
+    depend on which pairs are included and how they are weighted. An all-pairs analysis
+    must therefore state what is fixed, what is sampled, and how it handles shared
+    entries and pair aggregation.'
+  links:
+    arxiv: https://arxiv.org/abs/2609.33012
 - short_name: Rethinking Issue Resolution for AI/ML Systems
   title: Rethinking Issue Resolution for AI/ML Systems
   authors: Ahmed Adnan, Mushfiqur Rahman, Antu Saha, Oscar Chaparro

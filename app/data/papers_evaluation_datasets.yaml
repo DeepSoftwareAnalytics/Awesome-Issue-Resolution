@@ -1,3 +1,574 @@
+- short_name: SIExBench
+  title: 'SIExBench: A Benchmark for Automated Repair of Sensitive Information Exposure'
+  authors: Mingming Zhang, Xu Wang, Jian Zhang, Dihao Fan, Xiangxin Meng, Chunming
+    Hu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.10776
+  month: 2026-11
+  abstract: Modern software systems routinely process credentials, personal records,
+    and other sensitive information. A sensitive information exposure (SIEx) defect
+    makes such information accessible to an unauthorized actor and can cause serious
+    and often irreversible disclosure. However, prior research has focused largely
+    on detecting such exposures rather than repairing the underlying defects, and
+    existing repository-level issue-resolution benchmarks do not specifically target
+    this defect class. We present SIExBench, to our knowledge the first benchmark
+    dedicated to automated repair of SIEx defects. SIExBench contains 161 execution-verified
+    instances from 64 widely used Python and Java repositories, each with an issue
+    report, buggy repository snapshot, developer patch, executable exposure and regression
+    tests, and defect characterization. We evaluate six repair systems with three
+    LLMs, yielding 18 configurations, and systematically analyze their overall effectiveness,
+    performance across defect characteristics, and failure mechanisms. The strongest
+    configuration resolves only 39.1% of the instances, while 40.4% remain unresolved
+    by all 18 configurations. More importantly, 62.1% of unsuccessful attempts produce
+    a valid patch that still leaves sensitive information exposed, making incomplete
+    exposure removal a central challenge. Systems often generate plausible patches
+    and modify relevant code without fully eliminating the exposure, indicating that
+    effective repair must ensure that all relevant paths to sensitive-information
+    exposure are closed. Overall, SIExBench provides a foundation for systematically
+    evaluating and advancing automated repair of sensitive information exposure defects.
+  links:
+    arxiv: https://arxiv.org/abs/2611.10776
+- short_name: Longtail-SWE
+  title: 'Longtail-SWE: High-Quality SWE Tasks for Underrepresented Languages'
+  authors: Vladimir Dobrovolskii, Ibragim Badertdinov, Alexander Golubev
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.10304
+  month: 2026-11
+  abstract: 'Challenging repository-level benchmarks remain limited for many programming
+    language ecosystems, where filtering scarce candidates with ambiguous descriptions
+    or defective tests can discard valuable engineering problems. We introduce Longtail-SWE,
+    a benchmark of 202 issue-resolution tasks across 13 languages with limited coverage
+    in existing repository-level benchmarks: Clojure, Dart, Elixir, Erlang, F#, Haskell,
+    Julia, Kotlin, Lua, OCaml, R, Scala, and Swift. Its construction uses a solver-judge-repairer
+    pipeline: a solver attempts each candidate task, and a judge reviews the task
+    together with the solver''s trajectory and test results to guide revisions to
+    tests and task descriptions. These revisions aim to correct tests that reject
+    valid alternative implementations or accept incorrect solutions while retaining
+    challenging tasks and preserving their intended requirements. We evaluate nine
+    model configurations, including frontier models, and analyze task-solving performance,
+    consistency across repeated attempts, and resource usage. We release all benchmark
+    instances, executable environments, complete construction and evaluation tooling,
+    and agent trajectories, together with an additional set of easier tasks to support
+    evaluation of smaller models.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.10304
+- short_name: Robo-SWE
+  title: 'Robo-SWE: An Executable Issue-Resolution Dataset Mined from Robot Software
+    Repositories'
+  authors: Vahid Haratian, Vahid Ansari, Mohammadhossein Malmir, Alois Knoll
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.16116
+  month: 2026-11
+  abstract: Introduces 236 executable repair tasks from 28 robotics repositories,
+    with container environments, developer patches and regression tests. Reports repeated
+    coding-agent evaluations and releases task provenance and trajectories.
+  links:
+    arxiv: https://arxiv.org/abs/2611.16116
+- short_name: CompAct-Bench (Working-Context)
+  title: 'CompAct-Bench: A Benchmark for Working-Context Compaction in Long-Horizon
+    Agent Tasks'
+  authors: Jiayi Chen, Lizhe Chen, Yujia Chen, Shihan Dou, Ming Zhang, Chendi Ge,
+    Shiguang Ni, Tao Gui, Qi Zhang, Xuanjing Huang, Maxm Pan
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.25673
+  month: 2026-11
+  abstract: 'As language-model agents are applied to increasingly extended tasks,
+    their working context continuously accumulates interaction history, tool observations,
+    intermediate decisions, and task progress. Context compaction offers a practical
+    way to reduce this growing history while allowing execution to continue, yet the
+    compaction ability of modern LLMs remains insufficiently understood. We introduce
+    CompAct-Bench, a benchmark for evaluating working-context compaction through its
+    downstream effect on agent task completion. Starting from successful agent trajectories,
+    we insert compaction boundaries at different stages of execution, compress the
+    preceding working context with the model under evaluation, and let the same executor
+    continue the original task. To enable fair comparison across compactors, we evaluate
+    them under controlled retention ratios using a lightweight iterative ratio-adjustment
+    procedure. CompAct-Bench covers information-seeking, software-engineering, and
+    workspace-oriented tasks through BrowseComp, SWE-bench, and an internal CompanyBench
+    evaluation. Our experiments show that working-context compaction remains highly
+    lossy even for frontier models: Claude- and GPT-family models perform strongest
+    overall, yet substantial degradation in downstream task accuracy persists under
+    aggressive compaction. Further analysis reveals that failures are often caused
+    not only by omitted information, but also by distorted task state, such as turning
+    unresolved issues into apparent conclusions or forgetting previously established
+    results, which can lead to incorrect decisions or redundant execution. These findings
+    highlight working-context compaction as a distinct and still challenging ability
+    for LLMs operating in extended agent tasks.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.25673
+- short_name: BuggyMLE
+  title: 'BuggyMLE: Scaling Machine Learning Engineering Difficulty with Bug Injection'
+  authors: John Wu, Rushi Qiang, Yuchen Zhuang, Guowang Li, Girish Narayanswamy, Max
+    Xu, Sam Schmidgall, Mark Malhotra, Shwetak Patel, Jimeng Sun, Daniel McDuff, Bo
+    Dai, Xin Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.25088
+  month: 2026-11
+  abstract: Enabling AI systems to autonomously improve AI models requires agents
+    capable of performing machine learning engineering (MLE). In practice, designing,
+    training, and evaluating complex models demands modifying multi-file repositories
+    to reproduce results, debug training runs, integrate datasets, and port frameworks.
+    However, existing MLE benchmarks limit agents to single-file edits without full
+    repository or shell access, and common repository-level software engineering benchmarks
+    have rapidly saturated. To address this, we introduce the Code Complexity Index
+    (CCI), a difficulty metric based on ten structural features spanning repository
+    scale, dependency depth, and patch size. CCI strongly predicts average solve rates
+    across eight public coding benchmarks ($R^2 = 0.951$), identifying patch size
+    and complexity as top predictors. Guided by CCI, we develop BuggyMLE, a scalable
+    framework where agents inject controlled mutations into working ML repositories,
+    synthesizing over 6,600 bug-injected MLE repository variants and nearly 260K lines
+    of injected code based on 222 source repositories. Using BuggyMLE, we make two
+    contributions. First, we construct BuggyMLE-Bench-Lite, the first difficulty-graded,
+    repository-level variant of MLE-Bench Lite; across 14 evaluated models, the top
+    solve rate drops from 95% to 9% as difficulty is scaled from the easiest to the
+    hardest tier. Second, we synthesize a training curriculum across three difficulty
+    levels over 200 additional ML repositories, fine-tuning a Qwen3.5-9B model to
+    rival frontier models on BuggyMLE-Bench-Lite. Our trained model transfers beyond
+    ML, raising its SWE-bench Lite resolve rate from 24% to 33% and its LiveCodeBench
+    v6 pass@1 from 69% to 71%.
+  links:
+    arxiv: https://arxiv.org/abs/2611.25088
+- short_name: CR-Bench-v2
+  title: 'CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents'
+  authors: Kristen Pereira, Neelabh Sinha, Rajat Ghosh, Debojyoti Dutta
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.02566
+  month: 2026-11
+  abstract: 'The rapid growth of automated code generation has created a pressing
+    need for automated code review. Yet code review resists full automation: it depends
+    on context beyond the \textit{diff}, on the author''s intent, and on judgments
+    about design and maintainability on which even expert reviewers disagree. Existing
+    code review benchmarks lack standardization and rely largely on noisy human review
+    comments scored with text-similarity metrics, which reward surface overlap and
+    fail to measure precision. We introduce \texttt{CR-Bench}, a defect-centric evaluation
+    framework that recasts SWE-Bench issues as pull-request review tasks with full
+    repository context. After filtering for review-detectable defects and grounding
+    each to a single originating pull request, \texttt{CR-Bench} contains 584 instances,
+    with a 174-instance \texttt{CR-Bench-Verified} subset derived from SWE-Bench Verified.
+    Each instance pairs a pull request with a known defect, its ground-truth fix,
+    and a taxonomy label for bug category, impact, and severity. We propose two complementary
+    metrics: \emph{Known-Defect Detection Rate} (KDDR), which measures whether an
+    agent identifies the labeled defect, and \emph{Usefulness Rate}, which measures
+    the fraction of review comments that are actionable. We evaluate eight code review
+    agents over four backbones, plus commercially available Gemini Code Assist, using
+    three independent LLM judges. Even the strongest systems detect only about one-third
+    of known defects (KDDR $\approx$ 33\%), and Gemini Code Assist detects 8.1\%.'
+  links:
+    arxiv: https://arxiv.org/abs/2611.02566
+- short_name: SWE-CC
+  title: 'Correct Code, Broken Contributions? SWE-CC: Benchmarking Repository Policy
+    Compliance for Coding Agents'
+  authors: Hai Dang Truong, Rayner Goh, Thanh Le-Cong, Yintong Huo
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.06193
+  month: 2026-10
+  abstract: 'Autonomous coding agents now resolve a substantial share of real-world
+    GitHub issues. However, passing functional tests differs fundamentally from producing
+    a high-quality contribution acceptable for merging. Mature open-source projects
+    publish repository-specific contribution policies, spanning style, git, testing
+    workflows, to ensure code quality and long-term maintainability. Because existing
+    benchmarks evaluate patches solely on unit tests, agent compliance with repository
+    governance remains unknown. In this paper, we introduce SWE-CC, a benchmark evaluating
+    code and process compliance in autonomous software engineering. We develop a semi-automated
+    pipeline that converts developer documentation across 12 open-source repositories
+    into 823 machine-checkable atomic policies. SWE-CC introduces two features: 1)
+    lightweight, deterministic checker functions that represent each policy, 2) a
+    comprehensive auditing mechanism that inspects both agent runtime behaviors and
+    final deliverables. We evaluate the compliance of agent workflows in 500 end-to-end
+    software contribution tasks extended from SWE-bench Verified. Our evaluation of
+    four LLMs under two agent scaffolds shows that modern agents suffer from coding
+    compliance issues: although agents produce functionally correct patches, they
+    still violate 43.1 percent of applicable project policies, with nearly half of
+    all violations occurring during intermediate execution steps. These results show
+    that functional correctness does not guarantee real-world readiness, highlighting
+    that future software engineering agents must reliably conform to repository governance
+    to enable safe and trustworthy deployment.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.06193
+- short_name: ExLabel
+  title: Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a
+    Self-Evolving Agent
+  authors: Zhonghao Jiang, Xuyang Zheng, Yanfu Yan, Zhongxin Liu, Lingfeng Bao, Shuiguang
+    Deng
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.39417
+  month: 2026-10
+  abstract: Large language models (LLMs) have shown strong performance on software
+    engineering (SE) tasks, driving the need for high-quality datasets for reliable
+    training and evaluation. SWE-bench-style datasets (SWE datasets) are widely used
+    to evaluate LLM-based coding agents on real-world software issues, where task
+    clarity and test coverage directly affect whether instances are solvable and verifiable.
+    However, quality issues persist in existing SWE datasets, and manual annotation
+    is costly and labor-intensive, motivating LLM-based annotation. Existing approaches
+    typically rely on static, overly general rubrics, limiting their ability to handle
+    diverse and nuanced scenarios and often yielding high false positive rates. In
+    contrast, human annotators draw on accumulated experience to make context-aware
+    judgments. Inspired by this, we propose ExLabel, an LLM-based, self-evolving,
+    experience-guided assistant for task clarity and test coverage assessment in SWE
+    datasets. ExLabel maintains an evolving experience bank that distills cross-instance
+    knowledge into stable yet adaptive judgment criteria and reuses relevant experience
+    to guide the assessment of new instances. For systematic evaluation, we construct
+    SWE-TQ, a new benchmark spanning eight programming languages, by cleaning human
+    annotations from SWE-bench and Multi-SWE-bench. Experiments with three backbone
+    LLMs show that ExLabel achieves the best F1 across all settings, with relative
+    improvements of 44.2%/49.9% and 24.0%/18.4% over the best baseline for task clarity
+    and test coverage assessment on the Python/Multilingual subsets, respectively.
+    Moreover, a coding model fine-tuned on SWE-rebench data filtered by ExLabel resolves
+    66.2% of issues on SWE-bench Verified, outperforming the model trained on data
+    filtered by the best baseline by 14.5%.
+  links:
+    arxiv: https://arxiv.org/abs/2610.39417
+- short_name: SWE-DIVE
+  title: 'SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation'
+  authors: Lorenz Brehme, Benjamin Steenhoek, Ruth Breu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.30047
+  month: 2026-10
+  abstract: Coding agents are typically evaluated using one-shot, well-formulated
+    prompts. Benchmarks such as SWE-bench use existing GitHub issues as input for
+    a coding agent and evaluate whether the agent successfully solves the task. However,
+    in real-world use cases, prompts are often not as well-formulated or structured
+    as existing GitHub issues. Additionally, a coding agent session is not limited
+    to a single prompt; it typically involves a multi-turn interaction in which the
+    user iteratively adds new tasks and requirements that the agent must fulfill.
+    To benchmark these abilities, we developed SWE-DIVE, a dynamic, interactive validation
+    and evaluation framework for benchmarking coding agents in a multi-turn environment.
+    To achieve this, we introduce a user simulator that can simulate different behavioral
+    patterns and communicate with the coding agent. We also introduce a conversation
+    validator that evaluates the user simulator's outputs to determine whether they
+    fulfill the initial requirements and guide the agent toward successfully solving
+    the task. The entire framework is embedded in a Harbor environment, which orchestrates
+    the coding agent, user simulator, and conversation validator, and executes the
+    test environment to determine whether the agent successfully solves the task.
+    Our results and source code are available in our GitHub repository (https://github.com/lorenzbrehme/swe-dive_usersim).
+  links:
+    arxiv: https://arxiv.org/abs/2610.30047
+    github: https://github.com/lorenzbrehme/swe-dive_usersim
+- short_name: SWE-Bench Pro V2
+  title: 'SWE-Bench Pro V2: A Cleaner, Harder-to-Game Coding Benchmark'
+  authors: Soham Dan, Jeff Da, Sanyam Bhutani, Miguel Romero Calvo, Ivan Guevara,
+    Fernando Carabedo, Jose Bernal, Julio Reyna, Luis Leandro Monsalve Mendez, Ying
+    Liu, Daniel Yue Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.24206
+  month: 2026-10
+  abstract: 'SWE-Bench Pro is a widely used benchmark of long-horizon software engineering
+    tasks for coding agents. As agents improve, they reach task issues earlier agents
+    never touched and interact with the evaluation environment in ways the original
+    harness did not anticipate. We present SWE-Bench Pro V2, a revised public split
+    built to keep the benchmark accurate as capabilities advance. Agentic audits,
+    expert adjudication and blind re-implementation repaired or retired 480 of the
+    731 tasks: 23 contracted engineers spent 404 hours, each working in a language
+    they write professionally, and every revised instruction was verified by a second
+    engineer solving the task from the text alone. A hardened protocol restricts network
+    access to the model endpoint and re-grades every patch in a clean container, so
+    agents cannot retrieve upstream fixes or get credit for changes outside their
+    patch. On the 642 V2 tasks frontier agents resolve up to 99.4% while other systems
+    stay clearly separated, and a 51-task Hard split spreads systems from 52.9% to
+    98.0%. We release the benchmark and distill lessons for maintaining agent benchmarks
+    over time.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.24206
+- short_name: Compact-Bench
+  title: 'Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding
+    Agents'
+  authors: Ruopei Sun, Jianfeng Cai, Kangwen Zhao, Wengang Zhou, Houqiang Li
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.31710
+  month: 2026-10
+  abstract: 'Context compaction lets long-horizon coding agents continue beyond their
+    context windows, but can erase the state needed to finish a task. Prior evaluations
+    measure efficiency, retained information, or end-to-end success, leaving the effect
+    of a specific history replacement difficult to isolate. Compact-Bench pairs full-history
+    and summary-only continuations from a shared repository state, and evaluates recurring
+    details and successive production compactions. It covers 35 SWE-bench repairs,
+    146 agentic sessions, and 106 production chains. Across 14 summarizer backbones,
+    stable damage ranges from 5-64% of 22 full-history successes: Claude Opus 4.8
+    preserves the most repairs, while DeepSeek-Flash damages the most. With Kimi-K3
+    as summarizer, the Kimi Code prompt preserves the most task continuations (19/22),
+    whereas Claude Code retains the most recurring details (15.0%). LLM summaries
+    retain at most 16.0% of recurring details, compared with 79.1% for mechanical
+    extraction; production summaries retain 15.7% at the first boundary. Failures
+    recur across methods: one repair is damaged by 13/14 backbones, and another by
+    all 5 prompts. These results show that reliable compaction requires preserving
+    the progress needed to complete a task, and that retaining relevant information
+    alone does not ensure successful continuation. Code is available at https://github.com/cai-jianfeng/compact-bench
+    and data is available at https://huggingface.co/datasets/caijanfeng/compact-bench.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.31710
+    github: https://github.com/cai-jianfeng/compact-bench
+- short_name: SWE-TaskFlow
+  title: Coding-Agent Benchmarks Should Match Their Users' Task Flows
+  authors: Igor Slinko, Yaroslav Golubev, Sergey Titov
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.09633
+  month: 2026-10
+  abstract: 'The evaluation of coding agents generally strives to be as realistic
+    as possible. In our study, we collect 4,782 agent sessions of real software engineers
+    in JetBrains IDEs, which we call Production Sessions. Since our subject is interactive
+    agents, we study the sessions with at least three user messages (33% of the sample).
+    These long sessions differ from issue-derived benchmark tasks in two ways: (i)
+    user requests span a far wider mix of task types - questions about the project''s
+    code, planning, review, refactoring, execution - and (ii) users switch between
+    types throughout a session. Long-session samples from three public interaction
+    corpora exhibit markedly different Task Flows (the distributions of session lengths,
+    task types, and type-to-type transitions), so no single interaction distribution
+    is universally realistic: benchmarks should name a target use case and calibrate
+    to measurements from it. We present SWE-TaskFlow, an approach for transforming
+    any issue-derived benchmark: it preserves the verified tasks and tests while steering
+    the interaction toward a target Task Flow through prompt splitting and verifiable
+    repository QA, with a TaskFlow Alignment Score (TFAS) for selecting among generated
+    trajectories. In a pilot on 700 SWE-Bench Pro tasks, solving the task sequentially
+    in several steps approximately doubles agent cost without a stable change in resolve
+    rate: the interaction protocol itself is an important dimension of evaluation.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.09633
+- short_name: SWE-Duel
+  title: 'SWE-Duel: Towards a Self-Scaling Arena for Coding Agents'
+  authors: Wei Minn, Zhensu Sun, Lwin Khin Shar, David Lo
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.12569
+  month: 2026-10
+  abstract: 'Static coding benchmarks are fixed at release. Over time their tasks
+    leak into training data, and stronger agents eventually saturate them. We argue
+    that a benchmark should instead aim to be self-scaling: its tasks and oracles
+    are created at evaluation time, so no content exists in advance to leak, and its
+    difficulty is set by the participating agents rather than fixed at release. We
+    introduce SWE-Duel, an arena in which two coding agents evaluate each other over
+    mirrored Red-Blue turns. In each turn, the Red agent works on a real repository
+    across three context-isolated sessions. It proposes and implements a new feature
+    with feature tests, then embeds a subtle bug in that feature along with sealed
+    bug-triggering tests. The resulting pull request is admitted only if (1) it passes
+    the feature tests and the repository''s existing tests while failing exactly the
+    bug tests, and (2) a fresh session of the same agent can repair the bug blind,
+    which rules out unsolvable tasks. The Blue agent then reviews the pull request
+    without being told a bug exists. It wins only if its revision passes all three
+    test suites, and then the two agents swap roles. We run a tournament among 11
+    model-harness participants on 15 repositories in five languages for 1,500 turns.
+    The leaders win in different ways. GPT-5.5 with Codex CLI ranks first as the strongest
+    solver, repairing 98.3% of the defects it reviews. Claude Opus 4.8 with mini-swe-agent
+    ranks second as the strongest task author, with a 27.3% Red win rate. Finally,
+    within one model family, tasks written by the newest version defeat a fixed-reference
+    solver far more often than those of older versions (42.9% vs. 4.0%), giving preliminary
+    evidence that task difficulty scales with task authoring capability.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.12569
+- short_name: No One-Size-Fits-All
+  title: 'No One-Size-Fits-All: Adaptive Code Editing with Feature-Based Strategy
+    Selection'
+  authors: Jun Wan, Zhongxin Liu, Dajun Chen, Wei Jiang, Yong Li, Xiaoxue Ren
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.22881
+  month: 2026-10
+  abstract: 'Large language models have shown strong potential in automating code
+    editing (CE) tasks, yet most existing systems rely on a fixed CE strategy (i.e.,
+    one-step, search-replace, and plan-apply) across diverse scenarios. In practice,
+    CE tasks vary widely in code context, edit locality, and semantic complexity,
+    causing no single strategy to perform consistently well. Moreover, systematic
+    studies on the relationship between strategies and CE tasks remain scarce, limiting
+    further optimization of LLM-based code editing strategies. To address this gap,
+    we construct CEBench, comprising 500 real-world CE tasks curated from SWE-bench.
+    Then we compare three representative CE strategies (one-step, search-replace,
+    plan-apply). Our study reveals two key findings: (1) each strategy exhibits distinct
+    advantages for specific CE tasks, with no universal optimality; (2) strategy effectiveness
+    is significantly influenced by four core task features: total lines of code, modification
+    type, modification scope, and task type. Motivated by these findings, we propose
+    Ace, an adaptive code editing framework that dynamically selects optimal CE strategies
+    based on task features. Unlike classifier-based or instruction-prompting approaches,
+    Ace employs a fine-tuned LLM that learns feature-strategy mappings from empirical
+    data to recommend strategies with interpretable rationales. Extensive experiments
+    on our CEBench-verified show that Ace outperforms state-of-the-art baselines:
+    it boosts Pass@1 by 21.7% while reducing token consumption by 27.3% compared to
+    the best baseline (AutoCodeRover). Our strategy selector achieves 72.6% selection
+    accuracy with 69.9% rationale accuracy (Cohen''s Kappa = 0.807), providing transparent
+    and trustworthy decision-making for developers.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.22881
+- short_name: When Coding Agents Outpace Review
+  title: 'When Coding Agents Outpace Review: Evaluating PRD-Driven Development in
+    Mature Enterprise Repositories'
+  authors: Tianqi Liu, Yandong Guan, Songze Li, Wenkai Wang, Gang Yu, Chengfei Lv
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.26394
+  month: 2026-10
+  abstract: 'Coding agents increasingly undertake development tasks in mature enterprise
+    repositories, yet existing benchmarks offer limited insight into whether they
+    fulfill complete Product Requirement Documents (PRDs) and where delivery breaks
+    down. Issue resolution and development from scratch leave incremental PRD fulfillment
+    underexplored, while isolated tests provide incomplete evidence of business and
+    integration requirements. We introduce PACE, a benchmark of 43 enterprise tasks
+    with 750 expert-audited Code Points. It combines requirement reconstruction, criterion
+    construction, and evidence-based evaluation to measure PRD fulfillment and connect
+    delivery gaps to agent behavior. Across 11 model--scaffold configurations, most
+    scores fall between 52.1 and 78.1; GPT-5.6-Sol achieves the highest complete-delivery
+    rate of 14.0\%. Incomplete implementation and missing integration are the principal
+    bottlenecks: producing individual components does not ensure a complete delivery.
+    Evaluation achieves 95.2\% agreement with expert consensus, with lower case-level
+    variation across judging records than repeated executions. Beyond model comparison,
+    the benchmark provides actionable feedback for harness refinement: diagnosis guides
+    targeted improvements, and successive harness releases raise mean performance
+    from 59.4 to 63.0 using the same model and task suite. Code is available at https://github.com/TianqiLiu1/PACE-Bench.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.26394
+- short_name: VibeTraining-Bench
+  title: 'VibeTraining-Bench: Data-Trainer-Harness Co-Design for Iterative System
+    Improvement'
+  authors: Ruotian Peng, Yuanyi Ren, Shuaiqi Liu, Xin Guo, Fang Zhu, Yangyi Huang,
+    Yue Wu, Zheng Wang, Yandong Wen, Zhihang Fu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.26342
+  month: 2026-10
+  abstract: 'Recursive self-improvement (RSI) requires agents to diagnose system bottlenecks
+    and coordinate improvements across training and inference. We refer to the agents''
+    capability to jointly optimize training data, the trainer, and the inference harness
+    as cross-component co-design. We introduce VibeTraining-Bench, a benchmark for
+    evaluating this capability across tasks spanning terminal operation, software
+    engineering, multi-turn tool use, and mathematical reasoning. Within each task,
+    research agents start from an identical initial agent system under a fixed resource
+    budget. Guided by validation feedback, they iteratively refine data, trainers,
+    and inference harnesses, then select and submit a final agent system for evaluation
+    on the test set. To prevent reward hacking, we enforce three safeguards: test
+    data isolation, separate research and grading containers, and network restrictions
+    for research agents. Our evaluation results show that frontier research agents
+    substantially improve target agent systems. For example, on SWE-bench Verified,
+    GPT-6-Astra raises the target agent system''s performance from 32.9% to 53.7%,
+    comparable to the human-developed instruct model''s 55.4%. However, there is still
+    room to improve their ability to co-design and iteratively refine data, trainer,
+    and harness to achieve cumulative performance gains. We hope that VibeTraining-Bench
+    will serve as a unified platform for advancing RSI, deepening our understanding
+    of cross-component optimization for agent systems. Code and data are available
+    at https://github.com/D2I-ai/VibeTraining-Bench.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.26342
+- short_name: MLOps-Bench
+  title: 'MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real
+    Repositories'
+  authors: Quoc Co Tran, Hitesh Laxmichand Patel, Diwakar Mahajan, Kshitij Bakliwal,
+    Avi Sil, Katrin Kirchhoff
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.23506
+  month: 2026-10
+  abstract: AI agents are increasingly expected to modify and maintain machine-learning
+    systems in production, yet existing benchmarks primarily evaluate either competition-style
+    ML experimentation or generic repository issue resolution. We introduce MLOps-Bench,
+    a repository-grounded benchmark for production ML engineering. Unlike prior ML-agent
+    benchmarks, MLOps-Bench evaluates executable lifecycle changes inside real ML
+    repositories, spanning data pipelines, feature engineering, model training, model
+    serving, monitoring, CI/CD and governance, and end-to-end integration. Each task
+    is grounded in repository evidence and includes a natural-language requirement,
+    oracle patch, plausible buggy baseline, fail-to-pass tests, pass-to-pass tests,
+    and provenance metadata. The benchmark contains 212 validated tasks from 31 public
+    ML repositories, with 636 fail-to-pass tests and 856 pass-to-pass tests. We evaluate
+    six agents and find that the best system solves 31.2% of tasks while passing 68.7%
+    of tests, showing that current agents often make partial progress but still fail
+    production-relevant behavioral requirements. MLOps-Bench shifts agent evaluation
+    beyond model building and issue fixing toward repository-native MLOps work where
+    correctness depends on lifecycle reasoning, behavioral robustness, and preservation
+    of existing system behavior.
+  links:
+    arxiv: https://arxiv.org/abs/2610.23506
+- short_name: OS-Bench
+  title: 'OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration'
+  authors: Qirui Jin, Kenan Li, Liao Zhu, Lingching Tung, Yikai Zhang, Yijia Wu, Zijian
+    Jin, Pengfei Gao, Yu Kang, Qingwei Lin, Wenke Lee
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.19368
+  month: 2026-10
+  abstract: 'Language-model (LM) agents are increasingly evaluated on repository-level
+    software engineering (SWE) benchmarks derived from GitHub issues and pull requests.
+    Although these benchmarks cover a broad range of development tasks, they provide
+    limited insight into a common yet technically distinct challenge: migrating an
+    existing implementation from one operating system (OS) to another while preserving
+    behavior on both. We introduce OS-Bench, an executable benchmark for cross-OS
+    code migration between Linux and Windows. Motivated by case studies showing that
+    cross-platform features are frequently implemented on one OS before support is
+    added for another, OS-Bench identifies migration opportunities by comparing execution
+    coverage collected from the same repository on both systems. Platform-specific
+    regions are then verified, organized into five migration scenarios, and transformed
+    into repository-level tasks with target-platform tests and source-platform regression
+    tests. The resulting benchmark contains 140 validated tasks from 111 repositories
+    across C, C++, C#, Go, and Rust, comprising 91 Windows-to-Linux and 49 Linux-to-Windows
+    migrations. We evaluate six models with SWE-agent, Claude Code, OpenHands, and
+    Win-agent. The best configurations achieve only 26.4% success on Linux-target
+    tasks and 20.4% on Windows-target tasks while preserving correctness across both
+    systems. These results indicate that cross-OS migration is a challenging and underexplored
+    capability, and OS-Bench is a testbed for improving platform-aware SWE agents.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.19368
+- short_name: RETRACE
+  title: 'RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair'
+  authors: Rabeya Khatun Muna, Muhammad Ahasanuzzaman, Nakhla Rafi, Yisen Xu, Jinqiu
+    Yang, Tse-Hsun Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.04658
+  month: 2026-10
+  abstract: 'Large language model (LLM) agents increasingly reuse prior experience,
+    but most approaches assume that problems and solutions are already aligned. Software
+    histories rarely provide this alignment: a pull request (PR) may contain multiple
+    continuous integration (CI) problems, failed attempts, reverted edits, and unrelated
+    changes, obscuring which changes resolve each problem. We present RETRACE, a framework
+    for reconstructing problem-level repair experience from such histories. RETRACE
+    combines an endpoint view that reasons backward from changes retained in the passing
+    revision with a development view that traces repair evolution forward through
+    commit history. CI execution evidence reconciles the two views, and the recovered
+    experience is represented at three abstraction levels, from concrete fixes to
+    transferable repair patterns. For new failures, RETRACE retrieves relevant problem-level
+    experience to guide repair. On CI-REPAIR-BENCH, comprising 565 PR-level repairs
+    from 101 repositories across 12 failure categories, RETRACE improves mini-SWE-agent
+    Pass@1 from 19.6% to 31.9% with MiniMax-M2.5 and from 23.3% to 32.8% with DeepSeek-V4-Flash.
+    On a matched subset, Codex improves from 15.5% to 27.5%. Combining both views
+    consistently outperforms either alone, showing that recovering problem-change
+    alignment enables historical CI repairs to serve as reusable repair experience.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.04658
+- short_name: EnvAgent
+  title: 'EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds'
+  authors: Yiming Cheng, Chris Low, Binrui Huang, Mengshi Zhang, Zihao Chen, Kate
+    Keahey, Paul Marshall, Kexin Pei
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.23258
+  month: 2026-10
+  abstract: AI agents are transforming scientific computing and software workflows,
+    but generating and executing code requires a correctly configured execution environment.
+    Automating environment construction remains difficult because repositories encode
+    heterogeneous, often incomplete requirements for operating systems, toolchains,
+    dependencies, and build procedures. Existing workflows thus rely on developer-maintained
+    Dockerfiles and setup scripts, making preparation labor-intensive, hard to scale,
+    and potentially biasing evaluations. We present ENVAGENT, an agentic framework
+    that synthesizes, builds, and verifies repository-level Docker environments. ENVAGENT
+    combines deterministic utilities for Docker execution and state management with
+    coordinated agents for repository analysis, planning, Dockerfile synthesis, and
+    iterative failure diagnosis and repair. We also introduce ENVBENCH, a benchmark
+    of 54 scientific artifacts and open-source repositories spanning seven languages
+    from Chameleon Trovi and Multi-SWE-bench. For each repository, we curate a declarative
+    rubric of required structure, configuration, and functionality, and a shared evaluator
+    applies 2,108 weighted checks across generated environments. Across four matched
+    language-model settings, ENVAGENT constructs 43.5 executable environments out
+    of 54 on average, versus 23.5 for Codex and Claude Code, and scores 62.02 versus
+    24.19 on a composite of executability and rubric satisfaction. These results show
+    that environment-specific agent orchestration substantially improves automated
+    environment construction.
+  links:
+    arxiv: https://arxiv.org/abs/2611.23258
+- short_name: AgentPerfBench
+  title: 'AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance
+    of Agentic LLMs'
+  authors: Cheuk Hang Lau, Zeyu Cao, Kevin Wong Cheuk Yin, Yao Lai, Haoran Wu, Nicholas
+    D. Lane, Robert D. Mullins, Ilia Shumailov, Yiren Zhao
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.34683
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.34683
+- short_name: EfficientAgent
+  title: 'EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?'
+  authors: Kunming Shao, Jierun Chen, Jiangnan Yu, Xiao-Hui Li, Chaofan Tao, Yanli
+    Wang, Huanxin Lin, Kwang-Ting Cheng, Chi Ying Tsui, Haoli Bai
+  year: '2026'
+  venue: arXiv preprint arXiv:2609.33762
+  month: 2026-09
+  links:
+    arxiv: https://arxiv.org/abs/2609.33762
 - short_name: SWE-Bench ProMax
   title: 'SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring'
   authors: Yuling Shi, Jinghan Xu, Kelin Fu, Wenhao Zeng, Shilin He, Lei Zhang, Yue
@@ -639,7 +1210,7 @@
   month: 2025-02
   links:
     arxiv: https://arxiv.org/abs/2502.12115v4
-- short_name: Visual SWE-bench
+- short_name: CodeV
   title: 'CodeV: Issue Resolving with Visual Data'
   authors: Zhang, Linhao, Zan, Daoguang, Yang, Quanshun, Huang, Zhirong, Chen, Dong,
     Shen, Bo, Liu, Tianyu et al.

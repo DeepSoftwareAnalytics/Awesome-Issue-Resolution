@@ -1,3 +1,118 @@
+- short_name: SWE-Trail
+  title: 'SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training'
+  authors: Ziming Li, Lu Yu, Jiatan Huang, Qing Cui, Jun Zhou, Chuxu Zhang
+  year: '2026'
+  venue: arXiv preprint arXiv:2611.02074
+  month: 2026-11
+  abstract: Coding agents solve repository issues through long sequences of exploration,
+    editing, and validation. These trajectories are increasingly used as post-training
+    data, so how they are collected shapes what the trained model learns. A common
+    approach is to sample multiple trajectories independently for each issue and then
+    select or curate them. However, as more trajectories are sampled independently,
+    later trajectories become increasingly redundant, even though earlier trajectories
+    could guide where subsequent collection effort should be spent. A natural way
+    to use this history is to expose it to the coding agent as advice. But training
+    on such trajectories can make the model rely on advice that is unavailable at
+    test time, creating a train-test mismatch. Instead, we argue that history should
+    guide where collection effort is spent, while the coding agent decides what to
+    generate. We introduce SWE-Trail, a trajectory collector that uses earlier trajectories
+    to guide subsequent collection while keeping that history outside the coding agent's
+    context. During a new rollout, SWE-Trail uses history to identify a state where
+    additional collection effort may be useful. There, the coding agent proposes candidate
+    next actions from its ordinary context, and SWE-Trail briefly executes them from
+    the same checkpoint to decide which route continues. We evaluate collection approaches
+    by training student models on the trajectories they produce. For a 124B student
+    initialized from Ling-3.0-flash-base, SWE-Trail improves mean resolution over
+    independent sampling by 2.33 and 1.60 percentage points on SWE-bench Multilingual
+    and SWE-bench Pro, respectively. Without history, the same pipeline produces more
+    resolved trajectories than independent sampling, but improves by only 0.11 points
+    on Multilingual. These results show the value of using history to guide collection
+    without exposing it to the coding agent.
+  links:
+    arxiv: https://arxiv.org/abs/2611.02074
+- short_name: SWEPatchTest
+  title: 'SWEPatchTest: Evaluating Software Tests Beyond Reproduction'
+  authors: Hua Lu, Pengcheng Wang, Han Li, Zichen Tian, Yanyu Chen, Huang He, Bingjin
+    Chen
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.18004
+  month: 2026-10
+  abstract: 'Coding agents use generated tests to decide whether a proposed patch
+    satisfies an issue''s requirements. A suite that fails on the buggy program and
+    passes after applying the reference patch can still accept an incorrect patch
+    or reject a correct patch. We introduce SWEPATCHTEST, a test-generation benchmark
+    with 619 tasks from SWE-bench Pro, SWE-bench Multilingual, and DeepSWE and 82,579
+    candidate patches collected from coding-agent trajectories. By replaying each
+    suite on the buggy and patched codebases, \benchmark jointly measures issue reproduction,
+    acceptance of correct patches, and rejection of incorrect patches. Joint Validation
+    Rate (JVR), which requires all three criteria on the same task, exposes failures
+    hidden by single-reference evaluation: the best-performing configuration achieves
+    only 9.21% JVR despite reproducing the reference transition on 59.29% of tasks.
+    We further use validation scores to select and scale demonstrations for supervised
+    fine-tuning (SFT). The resulting training recipe approximately triples JVR and
+    improves downstream repair across three SWE-bench benchmarks. Patch discrimination
+    thus provides both a diagnostic measure of test quality and an execution-based
+    signal for curating agent training data.'
+  links:
+    arxiv: https://arxiv.org/abs/2610.18004
+- short_name: SWE-Stream
+  title: 'SWE-Stream: Scaling Executable Training Data for SWE Agents via Progressive
+    Construction and Elastic Streaming'
+  authors: Chengyang Liu, Wen Yang, Shifeng Chen, Delai Qiu, Ji Yang, Junnan Zhu,
+    Yining Wang, Shengping Liu
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.20193
+  month: 2026-10
+  abstract: Software engineering agents have advanced rapidly, but scaling their training
+    remains constrained by the limited availability of high-quality executable tasks.
+    Development histories contain valuable signals for constructing such tasks, yet
+    they often require substantial reconstruction due to incomplete environments,
+    missing tests, and inconsistent artifacts. We present SWE-Stream, a system for
+    scaling executable SWE training data through progressive construction and elastic
+    streaming execution. SWE-Stream progressively validates and refines task candidates,
+    reusing existing artifacts when possible and applying targeted completion only
+    when necessary. An elastic scheduler asynchronously coordinates construction stages
+    under shared resource constraints, adapting execution budgets based on observed
+    workload demands. Using development histories from 10,728 repositories across
+    six programming languages, SWE-Stream constructs 80,874 validated tasks and collects
+    118,688 successful trajectories. Fine-tuning Qwen3-30B-A3B-Thinking-2507 on these
+    trajectories achieves resolve rates of 69.0%, 49.3%, and 45.42% on SWE-bench Verified,
+    Multilingual, and Pro, respectively. In a controlled comparison with approximately
+    matched training budgets, SWE-Stream achieves a 45.6% resolve rate on SWE-bench
+    Verified, outperforming three existing data sources. Moreover, its streaming construction
+    strategy improves efficiency, delivering $1.45\times$ the accepted-task throughput
+    of batch construction and accepting 13.2% more tasks than fixed-limit streaming.
+  links:
+    arxiv: https://arxiv.org/abs/2610.20193
+- short_name: Priming Base Models for Agentic Post-Training
+  title: 'Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe'
+  authors: Soumye Singhal, Joseph Jennings, Ka Shun Shum, Alexander Bukharin, Khushi
+    Bhardwaj, Zirui Liu, Venkat Srinivasan, Jonathan Li, Yash Jain, Kezhi Kong, Markus
+    Kliegl, Olivier Delalleau, Sanjeev Satheesh, Mostofa Patwary
+  year: '2026'
+  venue: arXiv preprint arXiv:2610.22019
+  month: 2026-10
+  abstract: Frontier models, general-purpose and domain-specific alike, now include
+    a midtraining stage between pretraining and post-training, but little has been
+    published about how this stage is built. We present an open midtraining recipe
+    that primes base models for agentic post-training, and we show its effectiveness
+    on two Nemotron models of different sizes. Pretraining typically runs at short
+    context and sees almost no agent interactions, while SFT data is mostly synthetic,
+    and very long SFT stages can hurt the model's later RL trainability. Our midtraining
+    stage sits between the two. It trains at 256K context for hundreds of billions
+    of tokens on a diverse mixture of natural software-engineering data like packed
+    repositories, pull requests, commit histories, and build logs together with a
+    small share of agentic traces. On Nemotron 3.5 Lightning, 500B midtraining tokens
+    improve SWE-bench Verified from 60.7 to 64.5, SWE-bench Multilingual from 55.8
+    to 62.8, and SWE-bench Pro from 32.0 to 35.5 after identical full SFT. On the
+    larger Nemotron 3.5 Super, 280B midtraining tokens improve DeepSWE, a harder benchmark
+    of long-horizon tasks, from 11.7 to 15.7 and SWE-bench Verified from 72.9 to 74.3
+    after identical full SFT. Midtraining also improves robustness across agent harnesses
+    on both models. We report the ablations behind the recipe and an evaluation protocol
+    built on short fixed SFT runs, since base-model proxy metrics did not correlate
+    reliably with post-training results.
+  links:
+    arxiv: https://arxiv.org/abs/2610.22019
 - short_name: MM-IssueLoc
   title: 'MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal
     Repository-Level Issue Localization'
@@ -174,7 +289,7 @@
   month: 2025-06
   links:
     arxiv: https://arxiv.org/abs/2506.19290
-- short_name: SWELoc
+- short_name: SWERank
   title: 'SweRank: Software Issue Localization with Code Ranking'
   authors: Revanth Gangi Reddy, Tarun Suresh, JaeHyeok Doo, Ye Liu, Xuan Phi Nguyen,
     Yingbo Zhou, Semih Yavuz et al.
@@ -183,7 +298,7 @@
   month: 2025-05
   links:
     arxiv: https://arxiv.org/abs/2505.07849
-- short_name: Multi-SWE-RL
+- short_name: Multi-SWE-bench
   title: 'Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving'
   authors: Daoguang Zan, Zhirong Huang, Wei Liu, Hanwu Chen, Shulin Xin, Linhao Zhang,
     Qi Liu et al.
@@ -205,7 +320,7 @@
   links:
     arxiv: https://arxiv.org/abs/2504.21798v2
     openreview: https://openreview.net/forum?id=63iVrXc8cC
-- short_name: LocAgent
+- short_name: OrcaLora
   title: 'OrcaLoca: An LLM Agent Framework for Software Issue Localization'
   authors: Zhongming Yu, Hejia Zhang, Yujie Zhao, Hanxian Huang, Matrix Yao, Ke Ding,
     Jishen Zhao
