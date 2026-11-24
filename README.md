@@ -58,11 +58,9 @@ Based on systematic review of **396 papers and online resources**, this survey e
 
 ### Recent Updates
 
-- **Survey Update (2026-11)**: Our repository now covers **396 works** on LLM-based GitHub issue resolution—including **62 works published in October alone**.
+- **Survey Update (2026-11)**: Our collection has grown to **396 works** on LLM-based GitHub issue resolution, with **62 published in October alone**. Stay tuned for **v2 of our survey, coming soon~**
 
   <img src="app/docs/images/monthly-publications-2026-11.png" alt="Monthly publication statistics highlighting 62 works in October 2026" width="50%">
-
-  <sub>Chart captured before deduplication; the current collection contains 396 unique works.</sub>
 
 - **Survey Update (2026-08)**: Our repository now covers 281 papers on LLM-based GitHub issue resolution!
 - **Survey Update (2026-03)**: Our repository now covers 200+ papers on LLM-based GitHub issue resolution!
