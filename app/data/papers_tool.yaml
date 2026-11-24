@@ -1375,6 +1375,21 @@
     test-strength problem.
   links:
     arxiv: https://arxiv.org/abs/2604.01518
+- short_name: CODESTRUCT
+  title: 'CODESTRUCT: Code Agents over Structured Action Spaces'
+  authors: Myeongsoo Kim, Joe Hsu, Dingmin Wang, Shweta Garg, Varun Kumar, Murali
+    Krishna Ramanathan
+  year: '2026'
+  venue: ACL 2026
+  month: 2026-04
+  abstract: CODESTRUCT gives coding agents AST-based readCode and editCode interfaces
+    for retrieving complete syntactic units and applying syntax-validated edits to
+    named program entities. Experiments on SWE-bench Verified and CodeAssistBench
+    evaluate repair effectiveness and token efficiency across multiple language models,
+    showing benefits from replacing brittle text-based editing with structured operations.
+  links:
+    arxiv: https://arxiv.org/abs/2604.05407
+    github: https://github.com/amazon-science/CodeStruct
 - short_name: SWE-Adept
   title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and
     Structured Issue Resolution'

@@ -2,8 +2,8 @@
   "generated": "2026-11-24",
   "stats": {
     "total": 397,
-    "data": 106,
-    "methods": 243,
+    "data": 105,
+    "methods": 244,
     "analysis": 79
   },
   "papers": [
@@ -2090,6 +2090,19 @@
       }
     },
     {
+      "id": 411,
+      "short_name": "CODESTRUCT",
+      "title": "CODESTRUCT: Code Agents over Structured Action Spaces",
+      "authors": "Myeongsoo Kim, Joe Hsu, Dingmin Wang, Shweta Garg, Varun Kumar, Murali Krishna Ramanathan",
+      "venue": "ACL 2026",
+      "month": "2026-04",
+      "category": "tool",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2604.05407",
+        "github": "https://github.com/amazon-science/CodeStruct"
+      }
+    },
+    {
       "id": 280,
       "short_name": "SWE-TRACE",
       "title": "SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward Models and Heuristic Test-Time Scaling",
@@ -4067,7 +4080,7 @@
       "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
       "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
       "month": "2025-04",
-      "category": "training_datasets, data_synthesis",
+      "category": "data_synthesis,evaluation_datasets,training_datasets",
       "links": {
         "arxiv": "https://arxiv.org/abs/2504.21798v2",
         "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
@@ -4095,19 +4108,6 @@
       "category": "methods_analysis",
       "links": {
         "arxiv": "https://arxiv.org/abs/2504.08696"
-      }
-    },
-    {
-      "id": 32,
-      "short_name": "SWE-bench Multilingual",
-      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
-      "authors": "John Yang, Kilian Lieret, Carlos E Jimenez, Alexander Wettig, Kabir Khandpur, Yanzhe Zhang, Binyuan Hui et al.",
-      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2025",
-      "month": "2025-04",
-      "category": "evaluation_datasets",
-      "links": {
-        "arxiv": "https://arxiv.org/abs/2504.21798v2",
-        "openreview": "https://openreview.net/forum?id=63iVrXc8cC"
       }
     },
     {
@@ -4881,6 +4881,20 @@
   ],
   "datasets": [
     {
+      "id": 42,
+      "name": "BeyondSWE",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "246",
+      "amount": "500",
+      "category": "single-pl",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/AweAI-Team/BeyondSWE",
+        "website": "https://huggingface.co/datasets/AweAI-Team/BeyondSWE"
+      }
+    },
+    {
       "id": 14,
       "name": "FEA-bench",
       "language": "Python",
@@ -4906,6 +4920,19 @@
       "links": {
         "github": "https://github.com/gersteinlab/LocAgent",
         "huggingface": "https://huggingface.co/datasets/czlll/Loc-Bench_V1"
+      }
+    },
+    {
+      "id": 44,
+      "name": "MobileDev-Bench (v2)",
+      "language": "Java, Kotlin, TS, Dart",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "19",
+      "amount": "407",
+      "category": "multi-pl",
+      "links": {
+        "website": "https://mobiledev-bench.github.io/"
       }
     },
     {
@@ -4937,6 +4964,20 @@
       }
     },
     {
+      "id": 49,
+      "name": "OpenSWE (environments)",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "12.8k+",
+      "amount": "45,320",
+      "category": "single-pl",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/GAIR/OpenSWE",
+        "website": "https://huggingface.co/datasets/GAIR/OpenSWE"
+      }
+    },
+    {
       "id": 8,
       "name": "R2E-Gym",
       "language": "Python",
@@ -4960,6 +5001,33 @@
       "amount": "7.3k",
       "category": "single-pl",
       "links": {}
+    },
+    {
+      "id": 40,
+      "name": "Rust-SWE-bench",
+      "language": "Rust",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "34",
+      "amount": "500",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/GhabiX/Rust-SWE-Bench",
+        "website": "https://github.com/GhabiX/Rust-SWE-Bench"
+      }
+    },
+    {
+      "id": 43,
+      "name": "SWE-Bench Mobile",
+      "language": "Swift, Objective-C",
+      "multimodal": "Yes",
+      "environment": "Hosted",
+      "repos": "1",
+      "amount": "50",
+      "category": "multi-pl",
+      "links": {
+        "website": "https://swebenchmobile.com/"
+      }
     },
     {
       "id": 30,
@@ -4986,6 +5054,20 @@
       "category": "single-pl",
       "links": {
         "github": "https://github.com/thomasjoshi/agents-never-forget"
+      }
+    },
+    {
+      "id": 41,
+      "name": "SWE-CI",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "-",
+      "amount": "100",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/SKYLENAGE-AI/SWE-CI",
+        "website": "https://github.com/SKYLENAGE-AI/SWE-CI"
       }
     },
     {
@@ -5134,6 +5216,21 @@
       "links": {}
     },
     {
+      "id": 48,
+      "name": "SWE-Next",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "311",
+      "amount": "2,308",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/TIGER-AI-Lab/SWE-Next",
+        "huggingface": "https://huggingface.co/datasets/TIGER-Lab/SWE-Next",
+        "website": "https://arxiv.org/html/2603.20691"
+      }
+    },
+    {
       "id": 22,
       "name": "SWE-Perf",
       "language": "Python",
@@ -5173,6 +5270,32 @@
       "links": {
         "github": "https://github.com/microsoft/prose/tree/main/misc/SWE-Sharp-Bench",
         "huggingface": "https://huggingface.co/datasets/microsoft/SWE-Sharp-Bench"
+      }
+    },
+    {
+      "id": 50,
+      "name": "SWE-Skills-Bench",
+      "language": "Python, TS, Java, ...",
+      "multimodal": "No",
+      "environment": "Images provided",
+      "repos": "-",
+      "amount": "565",
+      "category": "multi-pl",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/GeniusHTX/SWE-Skills-Bench"
+      }
+    },
+    {
+      "id": 47,
+      "name": "SWE-Universe (reported)",
+      "language": "Multilingual",
+      "multimodal": "No",
+      "environment": "Reported",
+      "repos": "52,960",
+      "amount": "807,693",
+      "category": "multi-pl",
+      "links": {
+        "website": "https://arxiv.org/html/2602.02361"
       }
     },
     {
@@ -5356,6 +5479,20 @@
       }
     },
     {
+      "id": 45,
+      "name": "SWE-rebench V2",
+      "language": "20 languages",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "3,600+",
+      "amount": "32,079",
+      "category": "multi-pl",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/nebius/SWE-rebench-V2",
+        "website": "https://huggingface.co/datasets/nebius/SWE-rebench-V2"
+      }
+    },
+    {
       "id": 2,
       "name": "SWE-smith",
       "language": "Python",
@@ -5367,6 +5504,20 @@
       "links": {
         "github": "https://github.com/SWE-bench/SWE-smith",
         "huggingface": "https://huggingface.co/datasets/SWE-bench/SWE-smith"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Scale-SWE (reported full set)",
+      "language": "Python",
+      "multimodal": "No",
+      "environment": "Yes",
+      "repos": "5,200",
+      "amount": "100,000",
+      "category": "single-pl",
+      "links": {
+        "github": "https://github.com/AweAI-Team/ScaleSWE",
+        "website": "https://arxiv.org/html/2602.09892"
       }
     },
     {
@@ -5407,6 +5558,16 @@
     }
   ],
   "training_datasets": [
+    {
+      "id": 10,
+      "name": "OpenSWE (curated trajectories)",
+      "language": "Python",
+      "repos": "-",
+      "amount": "~13,000",
+      "links": {
+        "huggingface": "https://huggingface.co/datasets/GAIR/OpenSWE"
+      }
+    },
     {
       "id": 3,
       "name": "R2E-Gym",
@@ -5462,6 +5623,17 @@
       }
     },
     {
+      "id": 9,
+      "name": "SWE-Next-SFT-Trajectories",
+      "language": "Python",
+      "repos": "-",
+      "amount": "3,693",
+      "links": {
+        "github": "https://github.com/TIGER-AI-Lab/SWE-Next",
+        "huggingface": "https://huggingface.co/datasets/TIGER-Lab/SWE-Next-SFT-Trajectories"
+      }
+    },
+    {
       "id": 4,
       "name": "SWE-Synth",
       "language": "Python",
@@ -5480,6 +5652,27 @@
       "amount": "67,074",
       "links": {
         "huggingface": "https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Scale-SWE (DeepSeek-V3.2 trajectories)",
+      "language": "Python",
+      "repos": "-",
+      "amount": "71,498",
+      "links": {
+        "github": "https://github.com/AweAI-Team/ScaleSWE"
+      }
+    },
+    {
+      "id": 11,
+      "name": "daVinci-Dev (passing rollouts)",
+      "language": "Python",
+      "repos": "-",
+      "amount": "~18,500",
+      "links": {
+        "github": "https://github.com/GAIR-NLP/daVinci-Dev",
+        "huggingface": "https://huggingface.co/datasets/GAIR/daVinci-Dev"
       }
     }
   ],

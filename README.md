@@ -13,7 +13,7 @@
 [![Tables](https://img.shields.io/badge/TABLES-Statistics-blue?style=for-the-badge&logo=databricks)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)
 [![Bib](https://img.shields.io/badge/Bib-Citation-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/cite/)
 [![Contributors](https://img.shields.io/github/contributors/DeepSoftwareAnalytics/Awesome-Issue-Resolution?style=for-the-badge&color=green&logo=github)](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/graphs/contributors)
-![Papers Count](https://img.shields.io/badge/papers-396-green?style=for-the-badge&logo=googlescholar&logoColor=white)
+![Papers Count](https://img.shields.io/badge/papers-397-green?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 [**📖 Documentation Website**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/) | [**📄 Full Paper**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/) | [**📋 Tables & Resources**](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/) | [**📖 Citation**](#-citation)
 
@@ -31,7 +31,7 @@
 
 ## 📖 Abstract
 
-Based on systematic review of **396 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
+Based on systematic review of **397 papers and online resources**, this survey establishes a holistic theoretical framework for Issue Resolution in software engineering. We examine how **Large Language Models (LLMs)** are transforming the automation of GitHub issue resolution. Beyond the theoretical analysis, we have curated a comprehensive collection of datasets and model training resources, which are continuously synchronized with our GitHub repository and project documentation website.
 
 ## 📰 News
 
@@ -112,7 +112,7 @@ Based on systematic review of **396 papers and online resources**, this survey e
 ## 📚 Complete Paper List
 
 
-> **Total: 396 unique works** across 14 categories
+> **Total: 397 works** across 14 categories
 
 
 ### 📊 Evaluation Datasets
@@ -181,7 +181,7 @@ Based on systematic review of **396 papers and online resources**, this survey e
 - `(2025-05)` **SWE-bench-Live**: SWE-bench Goes Live! [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.23419v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=OGWkr7gXka)
 - `(2025-04)` **Multi-SWE-bench**: Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.02605v1) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=MhBZzkz4h9)
 - `(2025-04)` **SWE-PolyBench**: SWE-PolyBench: A multi-language benchmark for repository level evaluation of coding agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.08703)
-- `(2025-04)` **SWE-bench Multilingual**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
+- `(2025-04)` **SWE-Smith**: SWE-smith: Scaling Data for Software Engineering Agents [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.21798v2) [![OpenReview](https://img.shields.io/badge/OpenReview-paper-8C1B13?logo=openreview&logoColor=white)](https://openreview.net/forum?id=63iVrXc8cC)
 - `(2025-03)` **FEA-Bench**: FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.06680v2)
 - `(2025-03)` **SetUpAgent, SWEE-bench, SWA-bench**: Automated Benchmark Generation for Repository-Level Coding Tasks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.07701)
 - `(2025-02)` **SWE-Lancer**: SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering? [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2502.12115v4)
@@ -381,6 +381,7 @@ Based on systematic review of **396 papers and online resources**, this survey e
 - `(2026-04)` **Empowering Autonomous Debugging Agents with Efficient Dynamic Analysis** [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.24212)
 - `(2026-04)` **DebugHarness**: DebugHarness: Emulating Human Dynamic Debugging for Autonomous Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.03610)
 - `(2026-04)` **PROBE**: Probe to Generate: Program Variant-Guided Test Augmentation for Repository-Level Repair Benchmarks [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.01518)
+- `(2026-04)` **CODESTRUCT**: CODESTRUCT: Code Agents over Structured Action Spaces [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.05407) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/amazon-science/CodeStruct)
 - `(2026-03)` **SWE-Adept**: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01327)
 - `(2026-03)` **RepoRepair**: RepoRepair: Leveraging Code Documentation for Repository-Level Automated Program Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.01048) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/ZhongQiangDev/RepoRepair)
 - `(2026-03)` **FailureMem**: FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.17826) [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/Ruize-Ma/FailureMem)
@@ -697,6 +698,12 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-Perf | Python | No | 12 | 140 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Perf/swe-perf) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Perf/SWE-Perf) |
 | Visual SWE-bench | Python | Yes | 11 | 133 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/luolin101/CodeV) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/luolin101/Visual-SWE-bench) |
 | SWE-EVO | Python | No | 7 | 48 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/bdqnghi/SWE-EVO) |
+| Rust-SWE-bench | Rust | No | 34 | 500 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GhabiX/Rust-SWE-Bench) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://github.com/GhabiX/Rust-SWE-Bench) |
+| SWE-CI | Python | No | - | 100 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://github.com/SKYLENAGE-AI/SWE-CI) |
+| BeyondSWE | Python | No | 246 | 500 | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) [![Website](https://img.shields.io/badge/Website-data-5B9BD5?logo=googlechrome&logoColor=white)](https://huggingface.co/datasets/AweAI-Team/BeyondSWE) |
+| Scale-SWE (reported full set) | Python | No | 5,200 | 100,000 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://arxiv.org/html/2602.09892) |
+| SWE-Next | Python | No | 311 | 2,308 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/TIGER-Lab/SWE-Next) [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://arxiv.org/html/2603.20691) |
+| OpenSWE (environments) | Python | No | 12.8k+ | 45,320 | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE) [![Website](https://img.shields.io/badge/Website-data-5B9BD5?logo=googlechrome&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE) |
 | **Multi-PL Datasets** |  |  |  |  |  |  |
 | SWE-Mirror | Python, Rust, Go | No | 40 | 60k | Yes | - |
 | Multi-SWE-bench | Java, JS, TS, Go, Rust, C, C++ | No | 76 | 4,723 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/multi-swe-bench/multi-swe-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench) |
@@ -713,6 +720,15 @@ _A comprehensive survey and statistical overview of issue resolution datasets. W
 | SWE-bench-Live-MultiLang \& Windows | Python, JS, TS, C, C++, C#, Java, Go, Rust | No | 238 | 418 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/microsoft/SWE-bench-Live) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/MultiLang) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench-Live/Windows) |
 | SWE-bench Multilingual | C, C++, Go, Java, JS, TS, Rust, Python, Ruby, PHP | No | 42 | 300 | Yes | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-bench/SWE-bench) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual) |
 | SWE-InfraBench | Python, TS | No | - | 100 | Yes | - |
+| SWE-Bench Mobile | Swift, Objective-C | Yes | 1 | 50 | Hosted | [![Website](https://img.shields.io/badge/Website-link-5B9BD5?logo=googlechrome&logoColor=white)](https://swebenchmobile.com/) |
+| MobileDev-Bench (v2) | Java, Kotlin, TS, Dart | No | 19 | 407 | Yes | [![Website](https://img.shields.io/badge/Website-website-5B9BD5?logo=googlechrome&logoColor=white)](https://mobiledev-bench.github.io/) |
+| SWE-rebench V2 | 20 languages | No | 3,600+ | 32,079 | Yes | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-rebench-V2) [![Website](https://img.shields.io/badge/Website-data-5B9BD5?logo=googlechrome&logoColor=white)](https://huggingface.co/datasets/nebius/SWE-rebench-V2) |
+| SWE-Universe (reported) | Multilingual | No | 52,960 | 807,693 | Reported | [![Website](https://img.shields.io/badge/Website-paper-5B9BD5?logo=googlechrome&logoColor=white)](https://arxiv.org/html/2602.02361) |
+| SWE-Skills-Bench | Python, TS, Java, ... | No | - | 565 | Images provided | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GeniusHTX/SWE-Skills-Bench) |
+
+Counts use the cited resource versions: MobileDev-Bench v2 has 407 tasks from 19 repositories; SWE-Next has 2,308 retained tasks from 311 repositories (3,971 seed repositories were processed). SWE-rebench V2 contains task instances, while OpenSWE reports executable environments. Scale-SWE and SWE-Universe rows describe paper-reported full corpora; their full counts do not imply that every artifact is publicly downloadable. SWE-Bench Mobile uses private, hosted evaluation. A dash indicates a value not established for that specific resource. [Sources and scope notes](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/blob/main/app/data/tables/pr2_verified_sources.json).
+
+SWE-Skills-Bench lists the dataset card’s 565 task instances across 49 skills; its file contains 49 skill-level rows. This release is distinct from paper v2’s 98 skills / 980 requirement pairs. Languages shown are examples, and the Docker image references have not been runtime-tested here.
 
 ---
 
@@ -729,6 +745,12 @@ _A survey of trajectory datasets used for agent training or analysis. We list th
 | SWE-Factory | Python | 10 | 2,809 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/DeepSoftwareAnalytics/swe-factory) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K) |
 | SWE-Gym | Python | 11 | 491 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Gym/SWE-Gym) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories) |
 | SWE-Lego | Python | 3251 | 14.6k | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/SWE-Lego/SWE-Lego) |
+| Scale-SWE (DeepSeek-V3.2 trajectories) | Python | - | 71,498 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/AweAI-Team/ScaleSWE) |
+| SWE-Next-SFT-Trajectories | Python | - | 3,693 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/TIGER-AI-Lab/SWE-Next) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/TIGER-Lab/SWE-Next-SFT-Trajectories) |
+| OpenSWE (curated trajectories) | Python | - | ~13,000 | [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/OpenSWE) |
+| daVinci-Dev (passing rollouts) | Python | - | ~18,500 | [![GitHub](https://img.shields.io/badge/GitHub-repo-24292F?logo=github&logoColor=white)](https://github.com/GAIR-NLP/daVinci-Dev) [![HuggingFace](https://img.shields.io/badge/HuggingFace-dataset-ff7e21?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GAIR/daVinci-Dev) |
+
+Amounts count agent trajectories, not task instances or Docker environments. SWE-Next lists the public 3,693-row training split. Scale-SWE lists 71,498 DeepSeek-V3.2 trajectories; later releases are separate resources. OpenSWE (~13,000) and daVinci-Dev passing rollouts (~18,500) retain the approximate precision reported by their sources. Repository counts are left unspecified where coverage of the trajectory subset was not independently established. [Sources and scope notes](https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution/blob/main/app/data/tables/pr2_verified_sources.json).
 
 ---
 

@@ -6,3 +6,7 @@ SWE-Synth,Python,11,"3,018",\ghlink{https://github.com/FSoft-AI4Code/SWE-Synth} 
 SWE-Factory,Python,10,"2,809",\ghlink{https://github.com/DeepSoftwareAnalytics/swe-factory} \hflink{https://huggingface.co/datasets/SWE-Factory/DeepSWE-Agent-Kimi-K2-Trajectories-2.8K}
 SWE-Gym,Python,11,491,\ghlink{https://github.com/SWE-Gym/SWE-Gym} \hflink{https://huggingface.co/datasets/SWE-Gym/OpenHands-SFT-Trajectories}
 SWE-Lego,Python,3251,14.6k,\ghlink{https://github.com/SWE-Lego/SWE-Lego}
+Scale-SWE (DeepSeek-V3.2 trajectories),Python,-,"71,498",\ghlink{https://github.com/AweAI-Team/ScaleSWE}
+SWE-Next-SFT-Trajectories,Python,-,"3,693",\ghlink{https://github.com/TIGER-AI-Lab/SWE-Next} \hflink{https://huggingface.co/datasets/TIGER-Lab/SWE-Next-SFT-Trajectories}
+OpenSWE (curated trajectories),Python,-,"~13,000",\hflink{https://huggingface.co/datasets/GAIR/OpenSWE}
+daVinci-Dev (passing rollouts),Python,-,"~18,500",\ghlink{https://github.com/GAIR-NLP/daVinci-Dev} \hflink{https://huggingface.co/datasets/GAIR/daVinci-Dev}
